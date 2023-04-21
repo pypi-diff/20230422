@@ -868,3 +868,52 @@
 [2023-04-22 01:51:39] INFO root fetch - main [MainThread]: End processing [cloudshell-snmp]: success
 [2023-04-22 01:51:39] INFO root fetch - main [MainThread]: End processing [trajdata]: success
 [2023-04-22 01:51:39] INFO root fetch - main [MainThread]: Store serial: [17809757]
+[2023-04-22 01:56:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17809757]
+[2023-04-22 01:56:47] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 01:56:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xeno
+[2023-04-22 01:56:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyudev
+[2023-04-22 01:56:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spiel
+[2023-04-22 01:56:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jkinpylib
+[2023-04-22 01:56:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ultima-scraper-api
+[2023-04-22 01:56:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xeno
+[2023-04-22 01:56:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pytplot-mpl-temp
+[2023-04-22 01:56:47] INFO root fetch - processPackages [ultima-scraper-api]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-22 01:56:47] INFO root fetch - processPackages [spiel]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-22 01:56:47] INFO root fetch - processPackages [jkinpylib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 01:56:47] INFO root fetch - processPackages [xeno]: New version: [5.1.1] Old Version: [5.1.0]
+[2023-04-22 01:56:47] INFO root fetch - processPackages [xeno]: New version: [5.1.1] Old Version: [5.1.0]
+[2023-04-22 01:56:47] INFO root fetch - processPackages [pytplot-mpl-temp]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-04-22 01:56:47] INFO root fetch - processPackages [pyudev]: New version: [0.9] Old Version: [0.8]
+[2023-04-22 01:56:47] INFO root fetch - processPackages [ultima-scraper-api]: Downloading https://files.pythonhosted.org/packages/e0/ff/dabdea3d8f1f24bc6bf364cf37c1398f47630a86054b9cafaca02b758835/ultima_scraper_api-1.0.4.tar.gz
+[2023-04-22 01:56:47] INFO root fetch - processPackages [xeno]: Downloading https://files.pythonhosted.org/packages/42/74/8d17d694d6326fbb72cdb9e3af322a1d9839a262944306d7c2128c7615db/xeno-5.1.0.tar.gz
+[2023-04-22 01:56:47] INFO root fetch - processPackages [xeno]: Downloading https://files.pythonhosted.org/packages/42/74/8d17d694d6326fbb72cdb9e3af322a1d9839a262944306d7c2128c7615db/xeno-5.1.0.tar.gz
+[2023-04-22 01:56:47] INFO root fetch - processPackages [jkinpylib]: Downloading https://files.pythonhosted.org/packages/9c/32/aaade08cebb833fd6a758c692faa69b480117160149d9d8e2bd88416e186/jkinpylib-0.0.8.tar.gz
+[2023-04-22 01:56:47] INFO root fetch - processPackages [spiel]: Downloading https://files.pythonhosted.org/packages/b1/2d/6a0adc568f756fa264c50680f20781a63bbcc83e5e4e9fe4dc88d1a9d646/spiel-0.5.0.tar.gz
+[2023-04-22 01:56:48] INFO root fetch - processPackages [pytplot-mpl-temp]: Downloading https://files.pythonhosted.org/packages/02/f0/c143c216ae1553f2355600fa936caf49108733ab308ac632ec1411082e9d/pytplot-mpl-temp-2.1.8.tar.gz
+[2023-04-22 01:56:48] INFO root fetch - processPackages [pyudev]: Downloading https://files.pythonhosted.org/packages/21/96/8833c52e5e559dc4377365194d4ec630f985c9e4a611c537450b819d33c3/pyudev-0.8.tar.gz
+[2023-04-22 01:56:48] INFO root fetch - processPackages [ultima-scraper-api]: executing diffoscope
+[2023-04-22 01:56:48] INFO root fetch - processPackages [ultima-scraper-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultima_scraper_api-1.0.3.tar.gz tmp/ultima_scraper_api-1.0.4.tar.gz --markdown 20230422/u/ultima-scraper-api/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-22 01:56:48] WARNING root fetch - processPackages [jkinpylib]: Skipping package: exceeds size limit 26881571>=10485760
+[2023-04-22 01:56:48] INFO root fetch - main [MainThread]: End processing [jkinpylib] error
+[2023-04-22 01:56:48] INFO root fetch - processPackages [xeno]: Downloading https://files.pythonhosted.org/packages/d9/51/de49c5136bd6a4fee769308f811b977503a73cad7ff6820618cc0aab2125/xeno-5.1.1.tar.gz
+[2023-04-22 01:56:48] INFO root fetch - processPackages [xeno]: Downloading https://files.pythonhosted.org/packages/d9/51/de49c5136bd6a4fee769308f811b977503a73cad7ff6820618cc0aab2125/xeno-5.1.1.tar.gz
+[2023-04-22 01:56:48] INFO root fetch - processPackages [spiel]: Downloading https://files.pythonhosted.org/packages/b8/f8/a5c4817f5b0911140e8fbb6a0ac27e85d11e0513b3d01816c4c73ad63c4c/spiel-0.5.1.tar.gz
+[2023-04-22 01:56:48] INFO root fetch - processPackages [pyudev]: Downloading https://files.pythonhosted.org/packages/90/97/44add096d9401d0b03d6b70898f622d6e7c549398b6e66d66b05b2cadc27/pyudev-0.9.tar.gz
+[2023-04-22 01:56:48] INFO root fetch - processPackages [xeno]: executing diffoscope
+[2023-04-22 01:56:48] INFO root fetch - processPackages [xeno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xeno-5.1.0.tar.gz tmp/xeno-5.1.1.tar.gz --markdown 20230422/x/xeno/5.1.0-5.1.1/diff.md --exclude *.pyd
+[2023-04-22 01:56:48] INFO root fetch - processPackages [xeno]: executing diffoscope
+[2023-04-22 01:56:48] INFO root fetch - processPackages [xeno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xeno-5.1.0.tar.gz tmp/xeno-5.1.1.tar.gz --markdown 20230422/x/xeno/5.1.0-5.1.1/diff.md --exclude *.pyd
+[2023-04-22 01:56:48] INFO root fetch - processPackages [spiel]: executing diffoscope
+[2023-04-22 01:56:48] INFO root fetch - processPackages [spiel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiel-0.5.0.tar.gz tmp/spiel-0.5.1.tar.gz --markdown 20230422/s/spiel/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-22 01:56:48] INFO root fetch - processPackages [pyudev]: executing diffoscope
+[2023-04-22 01:56:48] INFO root fetch - processPackages [pyudev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyudev-0.8.tar.gz tmp/pyudev-0.9.tar.gz --markdown 20230422/p/pyudev/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-22 01:56:48] INFO root fetch - processPackages [pytplot-mpl-temp]: Downloading https://files.pythonhosted.org/packages/09/31/eedb5f4882f434afd1af2edd3818b8602f6b1fa782e13fd7ae3ddf6af51f/pytplot-mpl-temp-2.1.9.tar.gz
+[2023-04-22 01:56:49] INFO root fetch - main [MainThread]: End processing [ultima-scraper-api]: success
+[2023-04-22 01:56:49] INFO root fetch - main [MainThread]: End processing [xeno]: success
+[2023-04-22 01:56:49] INFO root fetch - processPackages [pytplot-mpl-temp]: executing diffoscope
+[2023-04-22 01:56:49] INFO root fetch - processPackages [pytplot-mpl-temp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytplot-mpl-temp-2.1.8.tar.gz tmp/pytplot-mpl-temp-2.1.9.tar.gz --markdown 20230422/p/pytplot-mpl-temp/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-04-22 01:56:49] INFO root fetch - main [MainThread]: End processing [xeno]: success
+[2023-04-22 01:56:49] INFO root fetch - main [MainThread]: End processing [spiel]: success
+[2023-04-22 01:56:49] INFO root fetch - main [MainThread]: End processing [pyudev]: success
+[2023-04-22 01:56:51] INFO root fetch - main [MainThread]: End processing [pytplot-mpl-temp]: success
+[2023-04-22 01:56:51] INFO root fetch - main [MainThread]: Store serial: [17809776]
