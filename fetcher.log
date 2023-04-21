@@ -312,3 +312,44 @@
 [2023-04-22 00:36:16] INFO root fetch - main [MainThread]: End processing [gpttui]: success
 [2023-04-22 00:36:16] INFO root fetch - main [MainThread]: End processing [lytool]: success
 [2023-04-22 00:36:16] INFO root fetch - main [MainThread]: Store serial: [17809394]
+[2023-04-22 00:41:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17809394]
+[2023-04-22 00:41:24] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 00:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: znp
+[2023-04-22 00:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: evergreen.py
+[2023-04-22 00:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: snakelang
+[2023-04-22 00:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plain-db
+[2023-04-22 00:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: marenan
+[2023-04-22 00:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mypy-runner
+[2023-04-22 00:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: iqmotion
+[2023-04-22 00:41:25] INFO root fetch - processPackages [mypy-runner]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-22 00:41:25] INFO root fetch - processPackages [marenan]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 00:41:25] WARNING root fetch - processPackages [snakelang]: Skipping, unable to determine old version
+[2023-04-22 00:41:25] INFO root fetch - main [MainThread]: End processing [snakelang] error
+[2023-04-22 00:41:25] INFO root fetch - processPackages [iqmotion]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-22 00:41:25] INFO root fetch - processPackages [znp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 00:41:25] INFO root fetch - processPackages [evergreen.py]: New version: [3.5.7] Old Version: [3.5.6]
+[2023-04-22 00:41:25] INFO root fetch - processPackages [iqmotion]: executing diffoscope
+[2023-04-22 00:41:25] INFO root fetch - processPackages [iqmotion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iqmotion-0.9.2.tar.gz tmp/iqmotion-0.9.3.tar.gz --markdown 20230422/i/iqmotion/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-22 00:41:25] INFO root fetch - processPackages [plain-db]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 00:41:25] INFO root fetch - processPackages [mypy-runner]: executing diffoscope
+[2023-04-22 00:41:25] INFO root fetch - processPackages [mypy-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy-runner-0.4.0.tar.gz tmp/mypy_runner-0.5.0.tar.gz --markdown 20230422/m/mypy-runner/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-22 00:41:25] INFO root fetch - processPackages [marenan]: executing diffoscope
+[2023-04-22 00:41:25] INFO root fetch - processPackages [marenan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marenan-0.0.1-py3-none-any.whl.zip tmp/marenan-0.0.2-py3-none-any.whl.zip --markdown 20230422/m/marenan/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 00:41:25] INFO root fetch - processPackages [znp]: Downloading https://files.pythonhosted.org/packages/8e/6d/2542e4d86ab5dd4b9b6c33c415071f02f8362c4d7f8347d59d47dd601e67/znp-0.0.8.tar.gz
+[2023-04-22 00:41:25] INFO root fetch - processPackages [plain-db]: Downloading https://files.pythonhosted.org/packages/2c/a9/a582f5e79b912b68e0bc7a56969c29bb5d9bd88081c34ea2a057b482ceba/plain_db-0.0.8.tar.gz
+[2023-04-22 00:41:25] INFO root fetch - processPackages [evergreen.py]: Downloading https://files.pythonhosted.org/packages/25/c4/9ba00e66c3ad42b4e00179b7c355805f576302dd89eb94d00beed9945354/evergreen.py-3.5.7.tar.gz
+[2023-04-22 00:41:25] INFO root fetch - processPackages [evergreen.py]: executing diffoscope
+[2023-04-22 00:41:25] INFO root fetch - processPackages [evergreen.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evergreen.py-3.5.6.tar.gz tmp/evergreen.py-3.5.7.tar.gz --markdown 20230422/e/evergreen.py/3.5.6-3.5.7/diff.md --exclude *.pyd
+[2023-04-22 00:41:25] INFO root fetch - processPackages [znp]: Downloading https://files.pythonhosted.org/packages/2e/0b/cc1fc0eaa4ae3a8564bf9c83767d509ecfb3c63ab9e764fc71b0f5aae575/znp-0.0.9.tar.gz
+[2023-04-22 00:41:25] INFO root fetch - processPackages [plain-db]: Downloading https://files.pythonhosted.org/packages/9c/d6/511e82c6c0a9ecfae5cd4b9b392c341c456669c56610a09433e43dcdb638/plain_db-0.0.9.tar.gz
+[2023-04-22 00:41:25] INFO root fetch - processPackages [znp]: executing diffoscope
+[2023-04-22 00:41:25] INFO root fetch - processPackages [znp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/znp-0.0.8.tar.gz tmp/znp-0.0.9.tar.gz --markdown 20230422/z/znp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 00:41:25] INFO root fetch - processPackages [plain-db]: executing diffoscope
+[2023-04-22 00:41:25] INFO root fetch - processPackages [plain-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plain_db-0.0.8.tar.gz tmp/plain_db-0.0.9.tar.gz --markdown 20230422/p/plain-db/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 00:41:26] INFO root fetch - main [MainThread]: End processing [marenan]: success
+[2023-04-22 00:41:26] INFO root fetch - main [MainThread]: End processing [mypy-runner]: success
+[2023-04-22 00:41:26] INFO root fetch - main [MainThread]: End processing [iqmotion]: success
+[2023-04-22 00:41:26] INFO root fetch - main [MainThread]: End processing [plain-db]: success
+[2023-04-22 00:41:26] INFO root fetch - main [MainThread]: End processing [znp]: success
+[2023-04-22 00:41:27] INFO root fetch - main [MainThread]: End processing [evergreen.py]: success
+[2023-04-22 00:41:27] INFO root fetch - main [MainThread]: Store serial: [17809417]
