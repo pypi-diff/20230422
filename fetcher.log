@@ -762,3 +762,37 @@
 [2023-04-22 01:33:08] INFO root fetch - main [MainThread]: End processing [asposecellscloud]: success
 [2023-04-22 01:35:28] INFO root fetch - main [MainThread]: End processing [fastadmin]: success
 [2023-04-22 01:35:28] INFO root fetch - main [MainThread]: Store serial: [17809696]
+[2023-04-22 01:40:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17809696]
+[2023-04-22 01:40:39] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 01:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pywhiten
+[2023-04-22 01:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sentry-kafka-schemas
+[2023-04-22 01:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stogui
+[2023-04-22 01:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sdbhvkjsdfgvouikjsd
+[2023-04-22 01:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: volworld-common
+[2023-04-22 01:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aio-spamwatch
+[2023-04-22 01:40:39] WARNING root fetch - processPackages [sdbhvkjsdfgvouikjsd]: Skipping, unable to determine old version
+[2023-04-22 01:40:39] INFO root fetch - main [MainThread]: End processing [sdbhvkjsdfgvouikjsd] error
+[2023-04-22 01:40:39] INFO root fetch - processPackages [stogui]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-22 01:40:39] INFO root fetch - processPackages [pywhiten]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-22 01:40:39] INFO root fetch - processPackages [volworld-common]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 01:40:39] INFO root fetch - processPackages [sentry-kafka-schemas]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 01:40:39] WARNING root fetch - processPackages [aio-spamwatch]: Skipping, unable to determine old version
+[2023-04-22 01:40:39] INFO root fetch - main [MainThread]: End processing [aio-spamwatch] error
+[2023-04-22 01:40:39] INFO root fetch - processPackages [stogui]: Downloading https://files.pythonhosted.org/packages/04/01/a28f1ee827c0090776b7e25a7106f0515ce9ad97f4d02aca1dded8b9bcfe/stogui-0.1.4.tar.gz
+[2023-04-22 01:40:39] INFO root fetch - processPackages [volworld-common]: Downloading https://files.pythonhosted.org/packages/36/f5/04703f35fdba4fe396b51dd9a209f86f4b86ba14d4f6e3daf103a7c5f1be/volworld_common-0.1.8.tar.gz
+[2023-04-22 01:40:39] INFO root fetch - processPackages [pywhiten]: Downloading https://files.pythonhosted.org/packages/77/8c/543831e55ffb74934953846955f9fd5db4beb8072a5bef8ecd575ca0037e/pywhiten-1.1.1.tar.gz
+[2023-04-22 01:40:39] INFO root fetch - processPackages [sentry-kafka-schemas]: executing diffoscope
+[2023-04-22 01:40:39] INFO root fetch - processPackages [sentry-kafka-schemas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sentry-kafka-schemas-0.0.8.tar.gz tmp/sentry-kafka-schemas-0.0.9.tar.gz --markdown 20230422/s/sentry-kafka-schemas/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 01:40:39] INFO root fetch - processPackages [volworld-common]: Downloading https://files.pythonhosted.org/packages/02/36/ee40d29c97ab10ad17e2e9e1bc1421c09bf3b8e9938152ca40d63eba5559/volworld_common-0.1.9.tar.gz
+[2023-04-22 01:40:39] INFO root fetch - processPackages [pywhiten]: executing diffoscope
+[2023-04-22 01:40:39] INFO root fetch - processPackages [pywhiten]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywhiten-1.1.0.tar.gz tmp/pywhiten-1.1.1.tar.gz --markdown 20230422/p/pywhiten/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-22 01:40:40] INFO root fetch - processPackages [volworld-common]: executing diffoscope
+[2023-04-22 01:40:40] INFO root fetch - processPackages [volworld-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/volworld_common-0.1.8.tar.gz tmp/volworld_common-0.1.9.tar.gz --markdown 20230422/v/volworld-common/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 01:40:40] INFO root fetch - processPackages [stogui]: Downloading https://files.pythonhosted.org/packages/9a/40/683f505f62eb4142c1aeb0a670c614df7772d7bdf4284c2b3e9ac80230ce/stogui-0.1.5.tar.gz
+[2023-04-22 01:40:40] INFO root fetch - main [MainThread]: End processing [volworld-common]: success
+[2023-04-22 01:40:41] INFO root fetch - processPackages [stogui]: executing diffoscope
+[2023-04-22 01:40:41] INFO root fetch - processPackages [stogui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stogui-0.1.4.tar.gz tmp/stogui-0.1.5.tar.gz --markdown 20230422/s/stogui/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-22 01:40:41] INFO root fetch - main [MainThread]: End processing [pywhiten]: success
+[2023-04-22 01:40:41] INFO root fetch - main [MainThread]: End processing [sentry-kafka-schemas]: success
+[2023-04-22 01:41:09] INFO root fetch - main [MainThread]: End processing [stogui]: success
+[2023-04-22 01:41:09] INFO root fetch - main [MainThread]: Store serial: [17809716]
