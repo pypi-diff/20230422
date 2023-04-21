@@ -353,3 +353,42 @@
 [2023-04-22 00:41:26] INFO root fetch - main [MainThread]: End processing [znp]: success
 [2023-04-22 00:41:27] INFO root fetch - main [MainThread]: End processing [evergreen.py]: success
 [2023-04-22 00:41:27] INFO root fetch - main [MainThread]: Store serial: [17809417]
+[2023-04-22 00:46:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17809417]
+[2023-04-22 00:46:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 00:46:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sql-automations
+[2023-04-22 00:46:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: djaodjin-signup
+[2023-04-22 00:46:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pseudopeople
+[2023-04-22 00:46:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mongo-db-operation
+[2023-04-22 00:46:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: circt
+[2023-04-22 00:46:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: snakelang
+[2023-04-22 00:46:36] INFO root fetch - processPackages [snakelang]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 00:46:36] INFO root fetch - processPackages [mongo-db-operation]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-22 00:46:36] INFO root fetch - processPackages [pseudopeople]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-22 00:46:36] INFO root fetch - processPackages [djaodjin-signup]: New version: [0.8.0] Old Version: [0.7.7]
+[2023-04-22 00:46:36] INFO root fetch - processPackages [pseudopeople]: Downloading https://files.pythonhosted.org/packages/ea/b8/4efaf6811d6bd604b8b51936e12651923e8af9348eec0be8e9792f0d65f7/pseudopeople-0.6.0.tar.gz
+[2023-04-22 00:46:36] INFO root fetch - processPackages [mongo-db-operation]: executing diffoscope
+[2023-04-22 00:46:36] INFO root fetch - processPackages [mongo-db-operation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mongo_db_operation-1.0.8.tar.gz tmp/mongo_db_operation-1.0.9.tar.gz --markdown 20230422/m/mongo-db-operation/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-22 00:46:36] INFO root fetch - processPackages [sql-automations]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-22 00:46:36] INFO root fetch - processPackages [circt]: New version: [1.39.0] Old Version: [1.38.0]
+[2023-04-22 00:46:36] INFO root fetch - processPackages [djaodjin-signup]: executing diffoscope
+[2023-04-22 00:46:36] INFO root fetch - processPackages [djaodjin-signup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djaodjin-signup-0.7.7.tar.gz tmp/djaodjin-signup-0.8.0.tar.gz --markdown 20230422/d/djaodjin-signup/0.7.7-0.8.0/diff.md --exclude *.pyd
+[2023-04-22 00:46:36] WARNING root fetch - processPackages [pseudopeople]: Skipping package: exceeds size limit 11621566>=10485760
+[2023-04-22 00:46:36] INFO root fetch - main [MainThread]: End processing [pseudopeople] error
+[2023-04-22 00:46:36] INFO root fetch - processPackages [snakelang]: Downloading https://files.pythonhosted.org/packages/b5/61/2d170e9b43c7c64c9711b09998b6222f9257ceec9d65c52dea0eeca19a66/snakelang-0.0.1.tar.gz
+[2023-04-22 00:46:36] INFO root fetch - processPackages [sql-automations]: Downloading https://files.pythonhosted.org/packages/37/b8/f07ac2a5fe63015424f1cc3cd0af6283d57e7fc96079d110d3aef2a3809b/sql_automations-0.0.3-py3-none-any.whl
+[2023-04-22 00:46:36] INFO root fetch - processPackages [circt]: Downloading https://files.pythonhosted.org/packages/c7/be/673c089df752e057e7b7be7515d5ae96a99ebbe5f1da489b539b9639f6be/circt-1.38.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-22 00:46:36] INFO root fetch - processPackages [snakelang]: Downloading https://files.pythonhosted.org/packages/64/86/90d522c4d7a05247b8ebb5511c406677097e8b4c5748f5090ed6434010ce/snakelang-0.0.2.tar.gz
+[2023-04-22 00:46:36] INFO root fetch - processPackages [sql-automations]: executing diffoscope
+[2023-04-22 00:46:36] INFO root fetch - processPackages [sql-automations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sql_automations-0.0.2-py3-none-any.whl.zip tmp/sql_automations-0.0.3-py3-none-any.whl.zip --markdown 20230422/s/sql-automations/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-22 00:46:36] INFO root fetch - processPackages [snakelang]: executing diffoscope
+[2023-04-22 00:46:36] INFO root fetch - processPackages [snakelang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snakelang-0.0.1.tar.gz tmp/snakelang-0.0.2.tar.gz --markdown 20230422/s/snakelang/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 00:46:37] INFO root fetch - main [MainThread]: End processing [mongo-db-operation]: success
+[2023-04-22 00:46:37] INFO root fetch - main [MainThread]: End processing [sql-automations]: success
+[2023-04-22 00:46:37] INFO root fetch - processPackages [circt]: Downloading https://files.pythonhosted.org/packages/47/7b/b3c758fab428db3ddc6159c5dcbef23e2d3b165bc8093b1d5c00e3c430be/circt-1.39.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-22 00:46:37] INFO root fetch - main [MainThread]: End processing [snakelang]: success
+[2023-04-22 00:46:38] INFO root fetch - processPackages [circt]: executing diffoscope
+[2023-04-22 00:46:38] INFO root fetch - processPackages [circt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circt-1.38.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/circt-1.39.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230422/c/circt/1.38.0-1.39.0/diff.md --exclude *.pyd
+[2023-04-22 00:46:39] INFO root fetch - main [MainThread]: End processing [djaodjin-signup]: success
+[2023-04-22 00:49:38] ERROR root fetch - processPackages [circt]: Timeout during execution of pkgdiff
+[2023-04-22 00:49:38] INFO root fetch - main [MainThread]: End processing [circt] error
+[2023-04-22 00:49:38] INFO root fetch - main [MainThread]: Store serial: [17809434]
