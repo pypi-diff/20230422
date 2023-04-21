@@ -1,0 +1,53 @@
+[2023-04-22 00:04:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17809181]
+[2023-04-22 00:04:21] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 00:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-diff
+[2023-04-22 00:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mongo-db-operation
+[2023-04-22 00:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fixieai
+[2023-04-22 00:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: getblocks
+[2023-04-22 00:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pybricks
+[2023-04-22 00:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: OMGITSLACKO
+[2023-04-22 00:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xia-scw-forward
+[2023-04-22 00:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ds-format
+[2023-04-22 00:04:21] INFO root fetch - processPackages [mongo-db-operation]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-22 00:04:21] INFO root fetch - processPackages [OMGITSLACKO]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-22 00:04:21] INFO root fetch - processPackages [mongo-db-operation]: executing diffoscope
+[2023-04-22 00:04:21] INFO root fetch - processPackages [mongo-db-operation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mongo_db_operation-1.0.8.tar.gz tmp/mongo_db_operation-1.0.9.tar.gz --markdown 20230422/m/mongo-db-operation/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-22 00:04:21] INFO root fetch - processPackages [xia-scw-forward]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-22 00:04:21] INFO root fetch - processPackages [data-diff]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-22 00:04:21] INFO root fetch - processPackages [fixieai]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-22 00:04:21] INFO root fetch - processPackages [getblocks]: New version: [0.2.0] Old Version: [0.1.5]
+[2023-04-22 00:04:21] INFO root fetch - processPackages [pybricks]: New version: [3.3.0a4] Old Version: [3.2.0rc2]
+[2023-04-22 00:04:21] INFO root fetch - processPackages [ds-format]: New version: [3.6.1] Old Version: [3.6.0]
+[2023-04-22 00:04:21] INFO root fetch - processPackages [OMGITSLACKO]: Downloading https://files.pythonhosted.org/packages/b8/1c/43b8193761bc2ebf707c4398c9db591390fbc95c1482e5462c3cd5e8f3c6/OMGITSLACKO-0.1.2.tar.gz
+[2023-04-22 00:04:21] INFO root fetch - processPackages [getblocks]: Downloading https://files.pythonhosted.org/packages/61/4f/4d2f75145751bf12480d2f5b3ee496792ff69cfea041a662f0a66a73eabd/getblocks-0.1.5.tar.gz
+[2023-04-22 00:04:22] INFO root fetch - processPackages [xia-scw-forward]: Downloading https://files.pythonhosted.org/packages/2f/d2/46102cc1a0e6b2779657b460f5de36def08125d2f017ff251fba180c5f59/xia_scw_forward-0.0.2-cp39-none-win_amd64.whl
+[2023-04-22 00:04:22] INFO root fetch - processPackages [ds-format]: Downloading https://files.pythonhosted.org/packages/78/21/b99fbdf475ac073344c386dc9ee7ff3e51f3d82ff0716a2b0dfc9984be82/ds-format-3.6.0.tar.gz
+[2023-04-22 00:04:22] INFO root fetch - processPackages [OMGITSLACKO]: executing diffoscope
+[2023-04-22 00:04:22] INFO root fetch - processPackages [OMGITSLACKO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OMGITSLACKO-0.1.1.tar.gz tmp/OMGITSLACKO-0.1.2.tar.gz --markdown 20230422/O/OMGITSLACKO/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-22 00:04:22] INFO root fetch - processPackages [pybricks]: Downloading https://files.pythonhosted.org/packages/31/e0/70ac89eeb1753417bc337762c46908c86bde4688aad68c58f1140cdecfbf/pybricks-3.2.0rc2.tar.gz
+[2023-04-22 00:04:22] INFO root fetch - processPackages [data-diff]: Downloading https://files.pythonhosted.org/packages/13/82/440387a6c5ab4828f122fbd9dfef250211b137922c19aec36d6a15aba2e5/data_diff-0.7.3.tar.gz
+[2023-04-22 00:04:22] INFO root fetch - processPackages [fixieai]: executing diffoscope
+[2023-04-22 00:04:22] INFO root fetch - processPackages [fixieai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fixieai-0.2.8.tar.gz tmp/fixieai-0.2.9.tar.gz --markdown 20230422/f/fixieai/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-22 00:04:22] INFO root fetch - processPackages [getblocks]: Downloading https://files.pythonhosted.org/packages/06/9d/643e75da6e58734fadf8c0d1b020aa7d108f2b168bc3ddbf4217f0e12aa1/getblocks-0.2.0.tar.gz
+[2023-04-22 00:04:22] INFO root fetch - processPackages [ds-format]: Downloading https://files.pythonhosted.org/packages/0a/33/76531d0ce2f027b6ffeaa57d122925a26ac6af018ed6e55d3cc895408c81/ds-format-3.6.1.tar.gz
+[2023-04-22 00:04:22] INFO root fetch - processPackages [pybricks]: Downloading https://files.pythonhosted.org/packages/05/a9/bd134c77f63d1a2eb2fa9148c03f6c7254628a6d463b9a03f8586fc72466/pybricks-3.3.0a4.tar.gz
+[2023-04-22 00:04:22] INFO root fetch - processPackages [xia-scw-forward]: Downloading https://files.pythonhosted.org/packages/97/3f/36575f6a3206815ba0a06463e30389eb89e83778eac034e1ac36c4609881/xia_scw_forward-0.0.3-cp39-none-macosx_11_0_x86_64.whl
+[2023-04-22 00:04:22] INFO root fetch - processPackages [data-diff]: executing diffoscope
+[2023-04-22 00:04:22] INFO root fetch - processPackages [data-diff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_diff-0.7.2.tar.gz tmp/data_diff-0.7.3.tar.gz --markdown 20230422/d/data-diff/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-04-22 00:04:22] INFO root fetch - processPackages [getblocks]: executing diffoscope
+[2023-04-22 00:04:22] INFO root fetch - processPackages [getblocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getblocks-0.1.5.tar.gz tmp/getblocks-0.2.0.tar.gz --markdown 20230422/g/getblocks/0.1.5-0.2.0/diff.md --exclude *.pyd
+[2023-04-22 00:04:22] INFO root fetch - processPackages [ds-format]: executing diffoscope
+[2023-04-22 00:04:22] INFO root fetch - processPackages [ds-format]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ds-format-3.6.0.tar.gz tmp/ds-format-3.6.1.tar.gz --markdown 20230422/d/ds-format/3.6.0-3.6.1/diff.md --exclude *.pyd
+[2023-04-22 00:04:22] INFO root fetch - processPackages [pybricks]: executing diffoscope
+[2023-04-22 00:04:22] INFO root fetch - processPackages [pybricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybricks-3.2.0rc2.tar.gz tmp/pybricks-3.3.0a4.tar.gz --markdown 20230422/p/pybricks/3.2.0rc2-3.3.0a4/diff.md --exclude *.pyd
+[2023-04-22 00:04:22] INFO root fetch - processPackages [xia-scw-forward]: executing diffoscope
+[2023-04-22 00:04:22] INFO root fetch - processPackages [xia-scw-forward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_scw_forward-0.0.2-cp39-none-win_amd64.whl.zip tmp/xia_scw_forward-0.0.3-cp39-none-macosx_11_0_x86_64.whl.zip --markdown 20230422/x/xia-scw-forward/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-22 00:04:23] INFO root fetch - main [MainThread]: End processing [OMGITSLACKO]: success
+[2023-04-22 00:04:23] INFO root fetch - main [MainThread]: End processing [mongo-db-operation]: success
+[2023-04-22 00:04:23] INFO root fetch - main [MainThread]: End processing [getblocks]: success
+[2023-04-22 00:04:23] INFO root fetch - main [MainThread]: End processing [xia-scw-forward]: success
+[2023-04-22 00:04:23] INFO root fetch - main [MainThread]: End processing [data-diff]: success
+[2023-04-22 00:04:23] INFO root fetch - main [MainThread]: End processing [pybricks]: success
+[2023-04-22 00:04:23] INFO root fetch - main [MainThread]: End processing [ds-format]: success
+[2023-04-22 00:04:40] INFO root fetch - main [MainThread]: End processing [fixieai]: success
+[2023-04-22 00:04:40] INFO root fetch - main [MainThread]: Store serial: [17809211]
