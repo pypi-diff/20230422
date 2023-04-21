@@ -465,3 +465,45 @@
 [2023-04-22 01:00:01] WARNING root fetch - processPackages [pythoness]: Skipping, unable to determine old version
 [2023-04-22 01:00:01] INFO root fetch - main [MainThread]: End processing [pythoness] error
 [2023-04-22 01:00:01] INFO root fetch - main [MainThread]: Store serial: [17809491]
+[2023-04-22 01:05:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17809491]
+[2023-04-22 01:05:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 01:05:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: q2gui
+[2023-04-22 01:05:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tmnt-cu101
+[2023-04-22 01:05:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tmnt
+[2023-04-22 01:05:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flwr-nightly
+[2023-04-22 01:05:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: strongmind-deployment
+[2023-04-22 01:05:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: NEMO
+[2023-04-22 01:05:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: qutewindow
+[2023-04-22 01:05:12] INFO root fetch - processPackages [flwr-nightly]: New version: [1.4.0.dev20230420] Old Version: [1.4.0.dev20230419]
+[2023-04-22 01:05:12] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230420] Old Version: [0.7.0b20230419]
+[2023-04-22 01:05:12] INFO root fetch - processPackages [tmnt-cu101]: New version: [0.7.0b20230420] Old Version: [0.7.0b20230419]
+[2023-04-22 01:05:12] INFO root fetch - processPackages [q2gui]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 01:05:12] WARNING root fetch - processPackages [strongmind-deployment]: Skipping, unable to determine old version
+[2023-04-22 01:05:12] INFO root fetch - main [MainThread]: End processing [strongmind-deployment] error
+[2023-04-22 01:05:12] INFO root fetch - processPackages [NEMO]: New version: [4.5.4] Old Version: [4.5.3]
+[2023-04-22 01:05:12] INFO root fetch - processPackages [qutewindow]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 01:05:12] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-04-22 01:05:12] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230419.tar.gz tmp/tmnt-0.7.0b20230420.tar.gz --markdown 20230422/t/tmnt/0.7.0b20230419-0.7.0b20230420/diff.md --exclude *.pyd
+[2023-04-22 01:05:12] INFO root fetch - processPackages [tmnt-cu101]: executing diffoscope
+[2023-04-22 01:05:12] INFO root fetch - processPackages [tmnt-cu101]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-cu101-0.7.0b20230419.tar.gz tmp/tmnt-cu101-0.7.0b20230420.tar.gz --markdown 20230422/t/tmnt-cu101/0.7.0b20230419-0.7.0b20230420/diff.md --exclude *.pyd
+[2023-04-22 01:05:12] INFO root fetch - processPackages [q2gui]: Downloading https://files.pythonhosted.org/packages/9a/a2/5eacaae9ddf4507f7a4ed7f51bad562d106fb13a8108e60650e7737d0cd6/q2gui-0.1.8.tar.gz
+[2023-04-22 01:05:12] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/72/11/cfbaf19d0c76304c9eff6c47937b1fc1d327a059d67982b2f23d685ad2a0/flwr_nightly-1.4.0.dev20230420.tar.gz
+[2023-04-22 01:05:12] INFO root fetch - processPackages [qutewindow]: Downloading https://files.pythonhosted.org/packages/be/41/fab4a7afc9f1cb1fb6f0030dd8d9297f2247fa4bf4f7d8ab1668750e5f95/qutewindow-0.1.8.tar.gz
+[2023-04-22 01:05:12] INFO root fetch - processPackages [NEMO]: Downloading https://files.pythonhosted.org/packages/06/71/2fb9f618d19bba96dc8c1da30f5ef7a14edd7edea2d15612d558dc6045af/NEMO-4.5.4.tar.gz
+[2023-04-22 01:05:12] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2023-04-22 01:05:12] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.4.0.dev20230419.tar.gz tmp/flwr_nightly-1.4.0.dev20230420.tar.gz --markdown 20230422/f/flwr-nightly/1.4.0.dev20230419-1.4.0.dev20230420/diff.md --exclude *.pyd
+[2023-04-22 01:05:12] INFO root fetch - processPackages [q2gui]: Downloading https://files.pythonhosted.org/packages/b5/70/466f2fbec4a72f00c6f07fdce89a2bfb0a1200b6742c61d2c09e405775c6/q2gui-0.1.9.tar.gz
+[2023-04-22 01:05:13] INFO root fetch - processPackages [q2gui]: executing diffoscope
+[2023-04-22 01:05:13] INFO root fetch - processPackages [q2gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2gui-0.1.8.tar.gz tmp/q2gui-0.1.9.tar.gz --markdown 20230422/q/q2gui/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 01:05:13] INFO root fetch - processPackages [NEMO]: executing diffoscope
+[2023-04-22 01:05:13] INFO root fetch - processPackages [NEMO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NEMO-4.5.3.tar.gz tmp/NEMO-4.5.4.tar.gz --markdown 20230422/N/NEMO/4.5.3-4.5.4/diff.md --exclude *.pyd
+[2023-04-22 01:05:13] INFO root fetch - main [MainThread]: End processing [tmnt-cu101]: success
+[2023-04-22 01:05:13] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2023-04-22 01:05:14] INFO root fetch - main [MainThread]: End processing [q2gui]: success
+[2023-04-22 01:05:14] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
+[2023-04-22 01:05:15] INFO root fetch - processPackages [qutewindow]: Downloading https://files.pythonhosted.org/packages/9e/1f/abf3e1627ee648b7a7723a4a650225912bcb139925b63dd5ebe18b0448e3/qutewindow-0.1.9.tar.gz
+[2023-04-22 01:05:16] INFO root fetch - processPackages [qutewindow]: executing diffoscope
+[2023-04-22 01:05:16] INFO root fetch - processPackages [qutewindow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qutewindow-0.1.8.tar.gz tmp/qutewindow-0.1.9.tar.gz --markdown 20230422/q/qutewindow/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 01:05:17] INFO root fetch - main [MainThread]: End processing [qutewindow]: success
+[2023-04-22 01:05:18] INFO root fetch - main [MainThread]: End processing [NEMO]: success
+[2023-04-22 01:05:18] INFO root fetch - main [MainThread]: Store serial: [17809519]
