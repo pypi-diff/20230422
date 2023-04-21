@@ -133,3 +133,58 @@
 [2023-04-22 00:15:05] INFO root fetch - main [MainThread]: End processing [allianceauth-afat]: success
 [2023-04-22 00:15:15] INFO root fetch - main [MainThread]: End processing [open-space-toolkit-io]: success
 [2023-04-22 00:15:15] INFO root fetch - main [MainThread]: Store serial: [17809261]
+[2023-04-22 00:20:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17809261]
+[2023-04-22 00:20:27] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 00:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mongo-db-operation
+[2023-04-22 00:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: embykeeper
+[2023-04-22 00:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tkchart
+[2023-04-22 00:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: czech-workdays-holidays
+[2023-04-22 00:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alacorder
+[2023-04-22 00:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kcli
+[2023-04-22 00:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: timetagger
+[2023-04-22 00:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: regpredict
+[2023-04-22 00:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: CrossPy
+[2023-04-22 00:20:28] INFO root fetch - processPackages [mongo-db-operation]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-22 00:20:28] INFO root fetch - processPackages [CrossPy]: New version: [0.0.0a3.dev9] Old Version: [0.0.0a3.dev8]
+[2023-04-22 00:20:28] INFO root fetch - processPackages [czech-workdays-holidays]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 00:20:28] INFO root fetch - processPackages [regpredict]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 00:20:28] INFO root fetch - processPackages [kcli]: New version: [99.0.202304211740] Old Version: [99.0.202304211158]
+[2023-04-22 00:20:28] INFO root fetch - processPackages [tkchart]: New version: [0.0.4] Old Version: [0.0.3.1]
+[2023-04-22 00:20:28] INFO root fetch - processPackages [embykeeper]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-22 00:20:28] INFO root fetch - processPackages [timetagger]: New version: [23.4.1] Old Version: [23.2.1]
+[2023-04-22 00:20:28] INFO root fetch - processPackages [mongo-db-operation]: executing diffoscope
+[2023-04-22 00:20:28] INFO root fetch - processPackages [mongo-db-operation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mongo_db_operation-1.0.8.tar.gz tmp/mongo_db_operation-1.0.9.tar.gz --markdown 20230422/m/mongo-db-operation/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-22 00:20:28] INFO root fetch - processPackages [alacorder]: New version: [79.6.1] Old Version: [79.6.0]
+[2023-04-22 00:20:28] INFO root fetch - processPackages [CrossPy]: executing diffoscope
+[2023-04-22 00:20:28] INFO root fetch - processPackages [CrossPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CrossPy-0.0.0a3.dev8.tar.gz tmp/CrossPy-0.0.0a3.dev9.tar.gz --markdown 20230422/C/CrossPy/0.0.0a3.dev8-0.0.0a3.dev9/diff.md --exclude *.pyd
+[2023-04-22 00:20:28] INFO root fetch - processPackages [regpredict]: executing diffoscope
+[2023-04-22 00:20:28] INFO root fetch - processPackages [regpredict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regpredict-0.0.8.tar.gz tmp/regpredict-0.0.9.tar.gz --markdown 20230422/r/regpredict/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 00:20:28] INFO root fetch - processPackages [czech-workdays-holidays]: executing diffoscope
+[2023-04-22 00:20:28] INFO root fetch - processPackages [czech-workdays-holidays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czech_workdays_holidays-0.0.8.tar.gz tmp/czech_workdays_holidays-0.0.9.tar.gz --markdown 20230422/c/czech-workdays-holidays/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 00:20:28] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-22 00:20:28] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304211158-py3-none-any.whl.zip tmp/kcli-99.0.202304211740-py3-none-any.whl.zip --markdown 20230422/k/kcli/99.0.202304211158-99.0.202304211740/diff.md --exclude *.pyd
+[2023-04-22 00:20:28] INFO root fetch - processPackages [tkchart]: Downloading https://files.pythonhosted.org/packages/8e/98/1fb387efd36745987aef92a96446828323a926eab34e6dcbda512dc577a0/tkchart-0.0.3.1.tar.gz
+[2023-04-22 00:20:28] INFO root fetch - processPackages [timetagger]: Downloading https://files.pythonhosted.org/packages/35/d1/ea86a311daca3e4a541b683486e9935bd4595d24a678a4ae41be48037530/timetagger-23.2.1.tar.gz
+[2023-04-22 00:20:28] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/d2/9b/fe493eaaacfc87372f10f14b438321dd4928f65eefadda095cff0f6ffe07/alacorder-79.6.0.tar.gz
+[2023-04-22 00:20:28] INFO root fetch - processPackages [embykeeper]: Downloading https://files.pythonhosted.org/packages/ec/83/907254058ca341691a913812243011b96321f947b575d9bdcde0b2c023c2/embykeeper-2.0.9.tar.gz
+[2023-04-22 00:20:28] INFO root fetch - processPackages [tkchart]: Downloading https://files.pythonhosted.org/packages/a3/7f/692e0f6ec425d64b12a60c6972541aac1e84be8d397770a25412e500a722/tkchart-0.0.4.tar.gz
+[2023-04-22 00:20:28] INFO root fetch - processPackages [embykeeper]: executing diffoscope
+[2023-04-22 00:20:28] INFO root fetch - processPackages [embykeeper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embykeeper-2.0.8.tar.gz tmp/embykeeper-2.0.9.tar.gz --markdown 20230422/e/embykeeper/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-04-22 00:20:28] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/46/ab/9a4903d5eea704cb3ffea52debd905fd2dff7ba990cceb6d6ceccd459eeb/alacorder-79.6.1.tar.gz
+[2023-04-22 00:20:28] INFO root fetch - processPackages [tkchart]: executing diffoscope
+[2023-04-22 00:20:28] INFO root fetch - processPackages [tkchart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkchart-0.0.3.1.tar.gz tmp/tkchart-0.0.4.tar.gz --markdown 20230422/t/tkchart/0.0.3.1-0.0.4/diff.md --exclude *.pyd
+[2023-04-22 00:20:28] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-04-22 00:20:28] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-79.6.0.tar.gz tmp/alacorder-79.6.1.tar.gz --markdown 20230422/a/alacorder/79.6.0-79.6.1/diff.md --exclude *.pyd
+[2023-04-22 00:20:29] INFO root fetch - processPackages [timetagger]: Downloading https://files.pythonhosted.org/packages/c5/cc/36473a7a768bce9eb26845f534fc9990ca5776da47c8891004fe991d67b4/timetagger-23.4.1.tar.gz
+[2023-04-22 00:20:29] INFO root fetch - main [MainThread]: End processing [mongo-db-operation]: success
+[2023-04-22 00:20:29] INFO root fetch - main [MainThread]: End processing [czech-workdays-holidays]: success
+[2023-04-22 00:20:29] INFO root fetch - processPackages [timetagger]: executing diffoscope
+[2023-04-22 00:20:29] INFO root fetch - processPackages [timetagger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timetagger-23.2.1.tar.gz tmp/timetagger-23.4.1.tar.gz --markdown 20230422/t/timetagger/23.2.1-23.4.1/diff.md --exclude *.pyd
+[2023-04-22 00:20:29] INFO root fetch - main [MainThread]: End processing [tkchart]: success
+[2023-04-22 00:20:29] INFO root fetch - main [MainThread]: End processing [CrossPy]: success
+[2023-04-22 00:20:30] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-04-22 00:20:30] INFO root fetch - main [MainThread]: End processing [embykeeper]: success
+[2023-04-22 00:20:31] INFO root fetch - main [MainThread]: End processing [regpredict]: success
+[2023-04-22 00:20:31] INFO root fetch - main [MainThread]: End processing [timetagger]: success
+[2023-04-22 00:20:36] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-22 00:20:36] INFO root fetch - main [MainThread]: Store serial: [17809287]
