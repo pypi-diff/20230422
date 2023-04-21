@@ -796,3 +796,52 @@
 [2023-04-22 01:40:41] INFO root fetch - main [MainThread]: End processing [sentry-kafka-schemas]: success
 [2023-04-22 01:41:09] INFO root fetch - main [MainThread]: End processing [stogui]: success
 [2023-04-22 01:41:09] INFO root fetch - main [MainThread]: Store serial: [17809716]
+[2023-04-22 01:46:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17809716]
+[2023-04-22 01:46:25] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 01:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fluxrpc
+[2023-04-22 01:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ultima-scraper-collection
+[2023-04-22 01:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sdbhvkjsdfgvouikjsd
+[2023-04-22 01:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ta-cmi
+[2023-04-22 01:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cwsearch-utils
+[2023-04-22 01:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: preemo-worker-sdk
+[2023-04-22 01:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fluxvault
+[2023-04-22 01:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PySide6-QtAds
+[2023-04-22 01:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: concertina
+[2023-04-22 01:46:25] INFO root fetch - processPackages [ultima-scraper-collection]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-22 01:46:25] INFO root fetch - processPackages [sdbhvkjsdfgvouikjsd]: New version: [2.7.13] Old Version: [2.7.12]
+[2023-04-22 01:46:25] INFO root fetch - processPackages [ta-cmi]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-22 01:46:25] INFO root fetch - processPackages [cwsearch-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 01:46:25] INFO root fetch - processPackages [preemo-worker-sdk]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-22 01:46:25] INFO root fetch - processPackages [ultima-scraper-collection]: Downloading https://files.pythonhosted.org/packages/77/d3/44f7177621ed5a4b1e9564b91243f0495e7c17a33254dfe5f223721c618f/ultima_scraper_collection-1.0.1.tar.gz
+[2023-04-22 01:46:25] INFO root fetch - processPackages [ta-cmi]: executing diffoscope
+[2023-04-22 01:46:25] INFO root fetch - processPackages [ta-cmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ta_cmi-2.0.0-py3-none-any.whl.zip tmp/ta-cmi-2.0.1.tar.gz --markdown 20230422/t/ta-cmi/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-22 01:46:25] INFO root fetch - processPackages [cwsearch-utils]: executing diffoscope
+[2023-04-22 01:46:25] INFO root fetch - processPackages [cwsearch-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwsearch_utils-0.1.8-py3-none-any.whl.zip tmp/cwsearch_utils-0.1.9-py3-none-any.whl.zip --markdown 20230422/c/cwsearch-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 01:46:25] INFO root fetch - processPackages [fluxrpc]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 01:46:25] WARNING root fetch - processPackages [concertina]: Skipping, unable to determine old version
+[2023-04-22 01:46:25] INFO root fetch - main [MainThread]: End processing [concertina] error
+[2023-04-22 01:46:25] INFO root fetch - processPackages [PySide6-QtAds]: New version: [4.0.1.3] Old Version: [4.0.1.2]
+[2023-04-22 01:46:25] INFO root fetch - processPackages [fluxvault]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 01:46:25] INFO root fetch - processPackages [preemo-worker-sdk]: executing diffoscope
+[2023-04-22 01:46:25] INFO root fetch - processPackages [preemo-worker-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/preemo_worker_sdk-0.3.0.tar.gz tmp/preemo_worker_sdk-0.4.0.tar.gz --markdown 20230422/p/preemo-worker-sdk/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-22 01:46:25] INFO root fetch - processPackages [sdbhvkjsdfgvouikjsd]: Downloading https://files.pythonhosted.org/packages/85/45/f87518e1a2d9293f22b957a7c8c5edc7b4b86c5ec520200bcdd6dad2618b/sdbhvkjsdfgvouikjsd-2.7.12.tar.gz
+[2023-04-22 01:46:25] INFO root fetch - processPackages [ultima-scraper-collection]: executing diffoscope
+[2023-04-22 01:46:25] INFO root fetch - processPackages [PySide6-QtAds]: Downloading https://files.pythonhosted.org/packages/19/76/d9aa9bc66b53b45f0320bd8c1e49cbe039e274ca0132666eac81a3546f43/PySide6-QtAds-4.0.1.2.tar.gz
+[2023-04-22 01:46:25] INFO root fetch - processPackages [ultima-scraper-collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultima_scraper_collection-1.0.0.tar.gz tmp/ultima_scraper_collection-1.0.1.tar.gz --markdown 20230422/u/ultima-scraper-collection/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 01:46:25] INFO root fetch - processPackages [fluxrpc]: executing diffoscope
+[2023-04-22 01:46:25] INFO root fetch - processPackages [fluxrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxrpc-0.9.8.tar.gz tmp/fluxrpc-0.9.9.tar.gz --markdown 20230422/f/fluxrpc/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 01:46:25] INFO root fetch - processPackages [fluxvault]: executing diffoscope
+[2023-04-22 01:46:25] INFO root fetch - processPackages [fluxvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxvault-0.9.8.tar.gz tmp/fluxvault-0.9.9.tar.gz --markdown 20230422/f/fluxvault/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 01:46:25] INFO root fetch - processPackages [sdbhvkjsdfgvouikjsd]: Downloading https://files.pythonhosted.org/packages/9d/8a/3ec21ab8615b413f36528d9af16d3720af521491ce2a8360086454ca7082/sdbhvkjsdfgvouikjsd-2.7.13.tar.gz
+[2023-04-22 01:46:25] WARNING root fetch - processPackages [PySide6-QtAds]: Skipping package: exceeds size limit 15448246>=10485760
+[2023-04-22 01:46:25] INFO root fetch - main [MainThread]: End processing [PySide6-QtAds] error
+[2023-04-22 01:46:25] INFO root fetch - processPackages [sdbhvkjsdfgvouikjsd]: executing diffoscope
+[2023-04-22 01:46:25] INFO root fetch - processPackages [sdbhvkjsdfgvouikjsd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdbhvkjsdfgvouikjsd-2.7.12.tar.gz tmp/sdbhvkjsdfgvouikjsd-2.7.13.tar.gz --markdown 20230422/s/sdbhvkjsdfgvouikjsd/2.7.12-2.7.13/diff.md --exclude *.pyd
+[2023-04-22 01:46:26] INFO root fetch - main [MainThread]: End processing [cwsearch-utils]: success
+[2023-04-22 01:46:26] INFO root fetch - main [MainThread]: End processing [ta-cmi]: success
+[2023-04-22 01:46:26] INFO root fetch - main [MainThread]: End processing [ultima-scraper-collection]: success
+[2023-04-22 01:46:26] INFO root fetch - main [MainThread]: End processing [fluxrpc]: success
+[2023-04-22 01:46:26] INFO root fetch - main [MainThread]: End processing [sdbhvkjsdfgvouikjsd]: success
+[2023-04-22 01:46:27] INFO root fetch - main [MainThread]: End processing [fluxvault]: success
+[2023-04-22 01:46:27] INFO root fetch - main [MainThread]: End processing [preemo-worker-sdk]: success
+[2023-04-22 01:46:27] INFO root fetch - main [MainThread]: Store serial: [17809749]
