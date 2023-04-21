@@ -507,3 +507,67 @@
 [2023-04-22 01:05:17] INFO root fetch - main [MainThread]: End processing [qutewindow]: success
 [2023-04-22 01:05:18] INFO root fetch - main [MainThread]: End processing [NEMO]: success
 [2023-04-22 01:05:18] INFO root fetch - main [MainThread]: Store serial: [17809519]
+[2023-04-22 01:10:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17809519]
+[2023-04-22 01:10:28] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-22 01:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: minimizers
+[2023-04-22 01:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-connectwise
+[2023-04-22 01:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zeno-evals
+[2023-04-22 01:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pepperize.cdk-ses-smtp-credentials
+[2023-04-22 01:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: canvasapi
+[2023-04-22 01:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyfaust
+[2023-04-22 01:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyfaust-openblaso
+[2023-04-22 01:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyfaust-torch
+[2023-04-22 01:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ta-cmi
+[2023-04-22 01:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ghastoolkit
+[2023-04-22 01:10:28] INFO root fetch - processPackages [zeno-evals]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 01:10:28] INFO root fetch - processPackages [django-connectwise]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-22 01:10:28] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.282] Old Version: [0.3.281]
+[2023-04-22 01:10:28] WARNING root fetch - processPackages [minimizers]: Skipping, unable to determine old version
+[2023-04-22 01:10:28] INFO root fetch - processPackages [minimizers]: Start processing: crowdcores
+[2023-04-22 01:10:28] INFO root fetch - main [MainThread]: End processing [minimizers] error
+[2023-04-22 01:10:28] INFO root fetch - processPackages [canvasapi]: New version: [3.1.0] Old Version: [3.0.0]
+[2023-04-22 01:10:28] INFO root fetch - processPackages [ta-cmi]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-22 01:10:28] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-04-22 01:10:28] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.281.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.282.tar.gz --markdown 20230422/p/pepperize.cdk-ses-smtp-credentials/0.3.281-0.3.282/diff.md --exclude *.pyd
+[2023-04-22 01:10:28] INFO root fetch - processPackages [pyfaust-torch]: New version: [3.38.2] Old Version: [3.38.1]
+[2023-04-22 01:10:28] WARNING root fetch - processPackages [ghastoolkit]: Skipping, unable to determine old version
+[2023-04-22 01:10:28] INFO root fetch - main [MainThread]: End processing [ghastoolkit] error
+[2023-04-22 01:10:28] INFO root fetch - processPackages [django-connectwise]: executing diffoscope
+[2023-04-22 01:10:28] INFO root fetch - processPackages [django-connectwise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-connectwise-1.0.0.tar.gz tmp/django-connectwise-1.0.1.tar.gz --markdown 20230422/d/django-connectwise/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 01:10:28] INFO root fetch - processPackages [pyfaust-openblaso]: New version: [3.38.2] Old Version: [3.38.1]
+[2023-04-22 01:10:28] INFO root fetch - processPackages [pyfaust]: New version: [3.9.1] Old Version: [3.9.0]
+[2023-04-22 01:10:29] INFO root fetch - processPackages [crowdcores]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-22 01:10:29] INFO root fetch - processPackages [zeno-evals]: Downloading https://files.pythonhosted.org/packages/a9/2f/4d3f899f3dd0ea7401af5f8baf6490490f6e3517794c3d5b045d4d0f6546/zeno_evals-0.1.9.tar.gz
+[2023-04-22 01:10:29] INFO root fetch - processPackages [pyfaust]: Downloading https://files.pythonhosted.org/packages/18/b5/0740195b9ccd0e43e427280344d5fb3706996ff6f66655fe6f79cd230aaa/pyfaust-3.9.0-cp39-cp39-win_amd64.whl
+[2023-04-22 01:10:29] INFO root fetch - processPackages [pyfaust-torch]: Downloading https://files.pythonhosted.org/packages/cd/40/a4cba8194b168ed2be5a47eaf0ff4f7b08325e183e1728eaf1d1999160fe/pyfaust_torch-3.38.1-cp39-cp39-macosx_10_9_x86_64.whl
+[2023-04-22 01:10:29] INFO root fetch - processPackages [pyfaust-openblaso]: Downloading https://files.pythonhosted.org/packages/00/2f/0fb191b34b5fe7b1313c5f3937e4982c465c458245fda79135e9ad6c200b/pyfaust_openblaso-3.38.1-cp39-cp39-manylinux1_x86_64.whl
+[2023-04-22 01:10:29] INFO root fetch - processPackages [crowdcores]: Downloading https://files.pythonhosted.org/packages/e0/36/630be1cebc068ab940679c14ddc38eba6998f4d8f3e291cba875c7ffbc2d/crowdcores-1.0.3.tar.gz
+[2023-04-22 01:10:29] INFO root fetch - processPackages [ta-cmi]: Downloading https://files.pythonhosted.org/packages/3c/32/92ea01943beee4d9c4265a96d626521461625edae15d10fa7868f0920887/ta-cmi-2.0.1.tar.gz
+[2023-04-22 01:10:29] INFO root fetch - processPackages [zeno-evals]: executing diffoscope
+[2023-04-22 01:10:29] INFO root fetch - processPackages [zeno-evals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zeno_evals-0.1.8.tar.gz tmp/zeno_evals-0.1.9.tar.gz --markdown 20230422/z/zeno-evals/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 01:10:29] INFO root fetch - processPackages [canvasapi]: Downloading https://files.pythonhosted.org/packages/f4/ba/9fde328f6f26df041c50d942ffed25bc73d7bf19111804a184195ffaf40d/canvasapi-3.0.0.tar.gz
+[2023-04-22 01:10:29] INFO root fetch - processPackages [ta-cmi]: executing diffoscope
+[2023-04-22 01:10:29] INFO root fetch - processPackages [ta-cmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ta_cmi-2.0.0-py3-none-any.whl.zip tmp/ta-cmi-2.0.1.tar.gz --markdown 20230422/t/ta-cmi/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-22 01:10:29] INFO root fetch - processPackages [crowdcores]: Downloading https://files.pythonhosted.org/packages/d0/d7/a347cc54d9be78a22a241c2d4535bfbf990ac3e47e46c0c5629382523040/crowdcores-1.0.4.tar.gz
+[2023-04-22 01:10:29] WARNING root fetch - processPackages [pyfaust-openblaso]: Skipping package: exceeds size limit 21904909>=10485760
+[2023-04-22 01:10:29] INFO root fetch - main [MainThread]: End processing [pyfaust-openblaso] error
+[2023-04-22 01:10:29] INFO root fetch - processPackages [crowdcores]: executing diffoscope
+[2023-04-22 01:10:29] INFO root fetch - processPackages [crowdcores]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crowdcores-1.0.3.tar.gz tmp/crowdcores-1.0.4.tar.gz --markdown 20230422/c/crowdcores/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-22 01:10:29] INFO root fetch - processPackages [canvasapi]: Downloading https://files.pythonhosted.org/packages/7d/63/5ceae8bb638fac587c9c4ffaa3d7d524260c82f6d0d314f6c08863e3d00c/canvasapi-3.1.0.tar.gz
+[2023-04-22 01:10:29] INFO root fetch - processPackages [canvasapi]: executing diffoscope
+[2023-04-22 01:10:29] INFO root fetch - processPackages [canvasapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canvasapi-3.0.0.tar.gz tmp/canvasapi-3.1.0.tar.gz --markdown 20230422/c/canvasapi/3.0.0-3.1.0/diff.md --exclude *.pyd
+[2023-04-22 01:10:29] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ses-smtp-credentials]: success
+[2023-04-22 01:10:30] INFO root fetch - processPackages [pyfaust-torch]: Downloading https://files.pythonhosted.org/packages/35/8d/a61e320ee17d8e9bbdf2b3592f7cabd0a9f02f8750767b5a988d10d65b58/pyfaust_torch-3.38.2-cp39-cp39-macosx_10_9_x86_64.whl
+[2023-04-22 01:10:30] INFO root fetch - main [MainThread]: End processing [zeno-evals]: success
+[2023-04-22 01:10:30] INFO root fetch - main [MainThread]: End processing [ta-cmi]: success
+[2023-04-22 01:10:30] INFO root fetch - main [MainThread]: End processing [crowdcores]: success
+[2023-04-22 01:10:30] INFO root fetch - processPackages [pyfaust-torch]: executing diffoscope
+[2023-04-22 01:10:30] INFO root fetch - processPackages [pyfaust-torch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfaust_torch-3.38.1-cp39-cp39-macosx_10_9_x86_64.whl.zip tmp/pyfaust_torch-3.38.2-cp39-cp39-macosx_10_9_x86_64.whl.zip --markdown 20230422/p/pyfaust-torch/3.38.1-3.38.2/diff.md --exclude *.pyd
+[2023-04-22 01:10:31] INFO root fetch - processPackages [pyfaust]: Downloading https://files.pythonhosted.org/packages/34/28/ab7cd91f9611bbe2d9ff5bfc6934eb6af283249b75ac68c9d0b6befcd0b5/pyfaust-3.9.1-cp39-cp39-win_amd64.whl
+[2023-04-22 01:10:31] INFO root fetch - main [MainThread]: End processing [canvasapi]: success
+[2023-04-22 01:10:33] INFO root fetch - processPackages [pyfaust]: executing diffoscope
+[2023-04-22 01:10:33] INFO root fetch - processPackages [pyfaust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfaust-3.9.0-cp39-cp39-win_amd64.whl.zip tmp/pyfaust-3.9.1-cp39-cp39-win_amd64.whl.zip --markdown 20230422/p/pyfaust/3.9.0-3.9.1/diff.md --exclude *.pyd
+[2023-04-22 01:10:34] INFO root fetch - main [MainThread]: End processing [django-connectwise]: success
+[2023-04-22 01:11:00] INFO root fetch - main [MainThread]: End processing [pyfaust-torch]: success
+[2023-04-22 01:11:09] INFO root fetch - main [MainThread]: End processing [pyfaust]: success
+[2023-04-22 01:11:09] INFO root fetch - main [MainThread]: Store serial: [17809559]
