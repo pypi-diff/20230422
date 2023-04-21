@@ -716,3 +716,49 @@
 [2023-04-22 01:27:50] INFO root fetch - main [MainThread]: End processing [meshparty]: success
 [2023-04-22 01:27:55] INFO root fetch - main [MainThread]: End processing [maialib]: success
 [2023-04-22 01:27:55] INFO root fetch - main [MainThread]: Store serial: [17809676]
+[2023-04-22 01:32:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17809676]
+[2023-04-22 01:33:04] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 01:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: twitter-api-client
+[2023-04-22 01:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastadmin
+[2023-04-22 01:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: psyke
+[2023-04-22 01:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: twitter-api-client
+[2023-04-22 01:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: TPLUtils
+[2023-04-22 01:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: asposecellscloud
+[2023-04-22 01:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: twitter-api-client
+[2023-04-22 01:33:04] WARNING root fetch - processPackages [TPLUtils]: Skipping, unable to determine old version
+[2023-04-22 01:33:04] INFO root fetch - main [MainThread]: End processing [TPLUtils] error
+[2023-04-22 01:33:04] INFO root fetch - processPackages [asposecellscloud]: New version: [23.4] Old Version: [22.9]
+[2023-04-22 01:33:04] INFO root fetch - processPackages [fastadmin]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-22 01:33:04] INFO root fetch - processPackages [psyke]: New version: [0.3.3.dev9] Old Version: [0.3.3.dev8]
+[2023-04-22 01:33:04] INFO root fetch - processPackages [twitter-api-client]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-04-22 01:33:04] INFO root fetch - processPackages [twitter-api-client]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-04-22 01:33:04] INFO root fetch - processPackages [twitter-api-client]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-04-22 01:33:04] INFO root fetch - processPackages [asposecellscloud]: Downloading https://files.pythonhosted.org/packages/49/aa/9bb1568e1808fe97caa249f1cc01c6a5aa21c0e41fa356a51cde415d6e14/asposecellscloud-22.9.tar.gz
+[2023-04-22 01:33:04] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/3e/e6/75b84aa6fc40b38412d0c82b83438448e2d09d1c5d9ec910470b4ab29814/twitter-api-client-0.7.1.tar.gz
+[2023-04-22 01:33:04] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/3e/e6/75b84aa6fc40b38412d0c82b83438448e2d09d1c5d9ec910470b4ab29814/twitter-api-client-0.7.1.tar.gz
+[2023-04-22 01:33:04] INFO root fetch - processPackages [fastadmin]: Downloading https://files.pythonhosted.org/packages/71/02/7668642f0d1fac4fb5e07ec7941670fd3db65b7c2d96bc9a061498177cdc/fastadmin-0.1.6.tar.gz
+[2023-04-22 01:33:04] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/3e/e6/75b84aa6fc40b38412d0c82b83438448e2d09d1c5d9ec910470b4ab29814/twitter-api-client-0.7.1.tar.gz
+[2023-04-22 01:33:04] INFO root fetch - processPackages [psyke]: executing diffoscope
+[2023-04-22 01:33:04] INFO root fetch - processPackages [psyke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyke-0.3.3.dev8.tar.gz tmp/psyke-0.3.3.dev9.tar.gz --markdown 20230422/p/psyke/0.3.3.dev8-0.3.3.dev9/diff.md --exclude *.pyd
+[2023-04-22 01:33:04] INFO root fetch - processPackages [asposecellscloud]: Downloading https://files.pythonhosted.org/packages/29/27/8711d18c4fc6be86f144d0cf9d33e493f7013ef09d6886da9d3eca29f191/asposecellscloud-23.4.tar.gz
+[2023-04-22 01:33:04] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/b2/46/4f46f95180f0d5548fb07f6acd266c201668479474b6a3e7ce1ce9d7b1ca/twitter-api-client-0.7.2.tar.gz
+[2023-04-22 01:33:04] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/b2/46/4f46f95180f0d5548fb07f6acd266c201668479474b6a3e7ce1ce9d7b1ca/twitter-api-client-0.7.2.tar.gz
+[2023-04-22 01:33:04] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/b2/46/4f46f95180f0d5548fb07f6acd266c201668479474b6a3e7ce1ce9d7b1ca/twitter-api-client-0.7.2.tar.gz
+[2023-04-22 01:33:05] INFO root fetch - processPackages [fastadmin]: Downloading https://files.pythonhosted.org/packages/32/ba/06424e44dd1c0d49272ec7ad8e93f8b15e665c7c818a0cbd0b8b3ba2a4e4/fastadmin-0.1.7.tar.gz
+[2023-04-22 01:33:05] INFO root fetch - processPackages [twitter-api-client]: executing diffoscope
+[2023-04-22 01:33:05] INFO root fetch - processPackages [twitter-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter-api-client-0.7.1.tar.gz tmp/twitter-api-client-0.7.2.tar.gz --markdown 20230422/t/twitter-api-client/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-04-22 01:33:05] INFO root fetch - processPackages [twitter-api-client]: executing diffoscope
+[2023-04-22 01:33:05] INFO root fetch - processPackages [twitter-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter-api-client-0.7.1.tar.gz tmp/twitter-api-client-0.7.2.tar.gz --markdown 20230422/t/twitter-api-client/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-04-22 01:33:05] INFO root fetch - processPackages [asposecellscloud]: executing diffoscope
+[2023-04-22 01:33:05] INFO root fetch - processPackages [asposecellscloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asposecellscloud-22.9.tar.gz tmp/asposecellscloud-23.4.tar.gz --markdown 20230422/a/asposecellscloud/22.9-23.4/diff.md --exclude *.pyd
+[2023-04-22 01:33:05] INFO root fetch - processPackages [twitter-api-client]: executing diffoscope
+[2023-04-22 01:33:05] INFO root fetch - processPackages [twitter-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter-api-client-0.7.1.tar.gz tmp/twitter-api-client-0.7.2.tar.gz --markdown 20230422/t/twitter-api-client/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-04-22 01:33:05] INFO root fetch - processPackages [fastadmin]: executing diffoscope
+[2023-04-22 01:33:05] INFO root fetch - processPackages [fastadmin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastadmin-0.1.6.tar.gz tmp/fastadmin-0.1.7.tar.gz --markdown 20230422/f/fastadmin/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-22 01:33:06] INFO root fetch - main [MainThread]: End processing [twitter-api-client]: success
+[2023-04-22 01:33:06] INFO root fetch - main [MainThread]: End processing [twitter-api-client]: success
+[2023-04-22 01:33:06] INFO root fetch - main [MainThread]: End processing [twitter-api-client]: success
+[2023-04-22 01:33:07] INFO root fetch - main [MainThread]: End processing [psyke]: success
+[2023-04-22 01:33:08] INFO root fetch - main [MainThread]: End processing [asposecellscloud]: success
+[2023-04-22 01:35:28] INFO root fetch - main [MainThread]: End processing [fastadmin]: success
+[2023-04-22 01:35:28] INFO root fetch - main [MainThread]: Store serial: [17809696]
