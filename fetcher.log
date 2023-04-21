@@ -96,3 +96,40 @@
 [2023-04-22 00:09:53] INFO root fetch - main [MainThread]: End processing [oaklib]: success
 [2023-04-22 00:09:54] INFO root fetch - main [MainThread]: End processing [alcf]: success
 [2023-04-22 00:09:54] INFO root fetch - main [MainThread]: Store serial: [17809239]
+[2023-04-22 00:14:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17809239]
+[2023-04-22 00:15:02] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 00:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: accentcolordetect
+[2023-04-22 00:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: allianceauth-afat
+[2023-04-22 00:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: open-space-toolkit-io
+[2023-04-22 00:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ovos-workshop
+[2023-04-22 00:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pepperize.cdk-serverless-cluster-from-snapshot
+[2023-04-22 00:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gmn-python-api
+[2023-04-22 00:15:03] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 00:15:03] WARNING root fetch - processPackages [accentcolordetect]: Skipping, unable to determine old version
+[2023-04-22 00:15:03] INFO root fetch - main [MainThread]: End processing [accentcolordetect] error
+[2023-04-22 00:15:03] INFO root fetch - processPackages [open-space-toolkit-io]: New version: [0.5.0] Old Version: [0.4.6]
+[2023-04-22 00:15:03] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: executing diffoscope
+[2023-04-22 00:15:03] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.98.tar.gz tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.99.tar.gz --markdown 20230422/p/pepperize.cdk-serverless-cluster-from-snapshot/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 00:15:03] INFO root fetch - processPackages [allianceauth-afat]: New version: [2.9.7] Old Version: [2.9.6]
+[2023-04-22 00:15:03] INFO root fetch - processPackages [gmn-python-api]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 00:15:03] INFO root fetch - processPackages [ovos-workshop]: New version: [0.0.9a1] Old Version: [0.0.9]
+[2023-04-22 00:15:03] INFO root fetch - processPackages [ovos-workshop]: executing diffoscope
+[2023-04-22 00:15:03] INFO root fetch - processPackages [ovos-workshop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_workshop-0.0.9-py3-none-any.whl.zip tmp/ovos_workshop-0.0.9a1-py3-none-any.whl.zip --markdown 20230422/o/ovos-workshop/0.0.9-0.0.9a1/diff.md --exclude *.pyd
+[2023-04-22 00:15:03] INFO root fetch - processPackages [gmn-python-api]: Downloading https://files.pythonhosted.org/packages/47/04/9dde7d471f2a1e2c399551c21a0b96a1cab133a308643c5664bd01e91f7d/gmn-python-api-0.0.8.tar.gz
+[2023-04-22 00:15:03] INFO root fetch - processPackages [allianceauth-afat]: Downloading https://files.pythonhosted.org/packages/38/37/fe37fc95609c20d8ff996ecee073d3ac8d2f801661bc71021c032b8f5b60/allianceauth_afat-2.9.6.tar.gz
+[2023-04-22 00:15:03] INFO root fetch - processPackages [open-space-toolkit-io]: Downloading https://files.pythonhosted.org/packages/2c/d0/639df8f4873c65f7dc3e05be824b1ae5e5ea21ed825fe550daaeddc243d9/open_space_toolkit_io-0.4.6-py39-none-any.whl
+[2023-04-22 00:15:03] INFO root fetch - processPackages [gmn-python-api]: Downloading https://files.pythonhosted.org/packages/45/65/037d7d4e0ae5e5c1d6a79b5a3ad3b18673815d6a2d39b8bce1e53d4463f4/gmn-python-api-0.0.9.tar.gz
+[2023-04-22 00:15:03] INFO root fetch - processPackages [open-space-toolkit-io]: Downloading https://files.pythonhosted.org/packages/8e/f6/650a1117b8e780f5003f4ad8fb49f6987024b05cf55d805425a66234d12b/open_space_toolkit_io-0.5.0-py39-none-any.whl
+[2023-04-22 00:15:03] INFO root fetch - processPackages [allianceauth-afat]: Downloading https://files.pythonhosted.org/packages/c7/98/1e23cfa7156a0c959ab2d32fe542b856b1ceb4c2fe51b84ab0f87647300e/allianceauth_afat-2.9.7.tar.gz
+[2023-04-22 00:15:03] INFO root fetch - processPackages [gmn-python-api]: executing diffoscope
+[2023-04-22 00:15:03] INFO root fetch - processPackages [gmn-python-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmn-python-api-0.0.8.tar.gz tmp/gmn-python-api-0.0.9.tar.gz --markdown 20230422/g/gmn-python-api/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 00:15:03] INFO root fetch - processPackages [open-space-toolkit-io]: executing diffoscope
+[2023-04-22 00:15:03] INFO root fetch - processPackages [open-space-toolkit-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_space_toolkit_io-0.4.6-py39-none-any.whl.zip tmp/open_space_toolkit_io-0.5.0-py39-none-any.whl.zip --markdown 20230422/o/open-space-toolkit-io/0.4.6-0.5.0/diff.md --exclude *.pyd
+[2023-04-22 00:15:03] INFO root fetch - processPackages [allianceauth-afat]: executing diffoscope
+[2023-04-22 00:15:03] INFO root fetch - processPackages [allianceauth-afat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/allianceauth_afat-2.9.6.tar.gz tmp/allianceauth_afat-2.9.7.tar.gz --markdown 20230422/a/allianceauth-afat/2.9.6-2.9.7/diff.md --exclude *.pyd
+[2023-04-22 00:15:04] INFO root fetch - main [MainThread]: End processing [ovos-workshop]: success
+[2023-04-22 00:15:04] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-serverless-cluster-from-snapshot]: success
+[2023-04-22 00:15:04] INFO root fetch - main [MainThread]: End processing [gmn-python-api]: success
+[2023-04-22 00:15:05] INFO root fetch - main [MainThread]: End processing [allianceauth-afat]: success
+[2023-04-22 00:15:15] INFO root fetch - main [MainThread]: End processing [open-space-toolkit-io]: success
+[2023-04-22 00:15:15] INFO root fetch - main [MainThread]: Store serial: [17809261]
