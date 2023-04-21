@@ -459,3 +459,9 @@
 [2023-04-22 00:54:51] INFO root fetch - main [MainThread]: End processing [feast]: success
 [2023-04-22 00:54:51] INFO root fetch - main [MainThread]: End processing [djaodjin-saas]: success
 [2023-04-22 00:54:51] INFO root fetch - main [MainThread]: Store serial: [17809482]
+[2023-04-22 00:59:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17809482]
+[2023-04-22 01:00:01] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-22 01:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pythoness
+[2023-04-22 01:00:01] WARNING root fetch - processPackages [pythoness]: Skipping, unable to determine old version
+[2023-04-22 01:00:01] INFO root fetch - main [MainThread]: End processing [pythoness] error
+[2023-04-22 01:00:01] INFO root fetch - main [MainThread]: Store serial: [17809491]
