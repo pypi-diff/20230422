@@ -51,3 +51,48 @@
 [2023-04-22 00:04:23] INFO root fetch - main [MainThread]: End processing [ds-format]: success
 [2023-04-22 00:04:40] INFO root fetch - main [MainThread]: End processing [fixieai]: success
 [2023-04-22 00:04:40] INFO root fetch - main [MainThread]: Store serial: [17809211]
+[2023-04-22 00:09:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17809211]
+[2023-04-22 00:09:49] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 00:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ds-format
+[2023-04-22 00:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oaklib
+[2023-04-22 00:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: trailwatch
+[2023-04-22 00:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fiddler-client
+[2023-04-22 00:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vule-sparksql-syntaxhighlight
+[2023-04-22 00:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mongo-db-operation
+[2023-04-22 00:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alcf
+[2023-04-22 00:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pepperize.cdk-serverless-cluster-from-snapshot
+[2023-04-22 00:09:49] INFO root fetch - processPackages [alcf]: New version: [1.4.1] Old Version: [1.4.0.post1]
+[2023-04-22 00:09:49] INFO root fetch - processPackages [fiddler-client]: New version: [1.7.1.dev1] Old Version: [1.7.1]
+[2023-04-22 00:09:49] INFO root fetch - processPackages [mongo-db-operation]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-22 00:09:49] INFO root fetch - processPackages [trailwatch]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-22 00:09:49] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 00:09:50] INFO root fetch - processPackages [oaklib]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-22 00:09:50] WARNING root fetch - processPackages [vule-sparksql-syntaxhighlight]: Skipping, unable to determine old version
+[2023-04-22 00:09:50] INFO root fetch - main [MainThread]: End processing [vule-sparksql-syntaxhighlight] error
+[2023-04-22 00:09:50] INFO root fetch - processPackages [fiddler-client]: executing diffoscope
+[2023-04-22 00:09:50] INFO root fetch - processPackages [fiddler-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fiddler-client-1.7.1.tar.gz tmp/fiddler-client-1.7.1.dev1.tar.gz --markdown 20230422/f/fiddler-client/1.7.1-1.7.1.dev1/diff.md --exclude *.pyd
+[2023-04-22 00:09:50] INFO root fetch - processPackages [mongo-db-operation]: executing diffoscope
+[2023-04-22 00:09:50] INFO root fetch - processPackages [mongo-db-operation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mongo_db_operation-1.0.8.tar.gz tmp/mongo_db_operation-1.0.9.tar.gz --markdown 20230422/m/mongo-db-operation/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-22 00:09:50] INFO root fetch - processPackages [ds-format]: New version: [3.6.1] Old Version: [3.6.0]
+[2023-04-22 00:09:50] INFO root fetch - processPackages [alcf]: Downloading https://files.pythonhosted.org/packages/a6/a8/9fa8c8a77de6413162c60dddfdd48a27311dd72610d7522684d1ef5c6e63/alcf-1.4.1.tar.gz
+[2023-04-22 00:09:50] INFO root fetch - processPackages [ds-format]: executing diffoscope
+[2023-04-22 00:09:50] INFO root fetch - processPackages [ds-format]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ds-format-3.6.0.tar.gz tmp/ds-format-3.6.1.tar.gz --markdown 20230422/d/ds-format/3.6.0-3.6.1/diff.md --exclude *.pyd
+[2023-04-22 00:09:50] INFO root fetch - processPackages [trailwatch]: Downloading https://files.pythonhosted.org/packages/3a/42/e4a6a2d5623e3d7830d444879db269c1bdb8517739f702bbc926dde9be05/trailwatch-0.3.2.tar.gz
+[2023-04-22 00:09:50] INFO root fetch - processPackages [oaklib]: Downloading https://files.pythonhosted.org/packages/8f/f6/337c41829b8590ec16616b44843c4361e7deceed7950d311d418bffc3ab4/oaklib-0.5.1.tar.gz
+[2023-04-22 00:09:50] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: executing diffoscope
+[2023-04-22 00:09:50] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.98.tar.gz tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.99.tar.gz --markdown 20230422/p/pepperize.cdk-serverless-cluster-from-snapshot/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 00:09:50] INFO root fetch - processPackages [alcf]: executing diffoscope
+[2023-04-22 00:09:50] INFO root fetch - processPackages [alcf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alcf-1.4.0.post1.tar.gz tmp/alcf-1.4.1.tar.gz --markdown 20230422/a/alcf/1.4.0.post1-1.4.1/diff.md --exclude *.pyd
+[2023-04-22 00:09:50] INFO root fetch - processPackages [trailwatch]: executing diffoscope
+[2023-04-22 00:09:50] INFO root fetch - processPackages [trailwatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trailwatch-0.3.1.tar.gz tmp/trailwatch-0.3.2.tar.gz --markdown 20230422/t/trailwatch/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-22 00:09:50] INFO root fetch - processPackages [oaklib]: Downloading https://files.pythonhosted.org/packages/63/83/4af29bee856df001e1995d4ca774fceed24a28fe7af795eda5e739bc1e02/oaklib-0.5.2.tar.gz
+[2023-04-22 00:09:50] INFO root fetch - processPackages [oaklib]: executing diffoscope
+[2023-04-22 00:09:50] INFO root fetch - processPackages [oaklib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oaklib-0.5.1.tar.gz tmp/oaklib-0.5.2.tar.gz --markdown 20230422/o/oaklib/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-22 00:09:51] INFO root fetch - main [MainThread]: End processing [mongo-db-operation]: success
+[2023-04-22 00:09:51] INFO root fetch - main [MainThread]: End processing [trailwatch]: success
+[2023-04-22 00:09:51] INFO root fetch - main [MainThread]: End processing [fiddler-client]: success
+[2023-04-22 00:09:51] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-serverless-cluster-from-snapshot]: success
+[2023-04-22 00:09:51] INFO root fetch - main [MainThread]: End processing [ds-format]: success
+[2023-04-22 00:09:53] INFO root fetch - main [MainThread]: End processing [oaklib]: success
+[2023-04-22 00:09:54] INFO root fetch - main [MainThread]: End processing [alcf]: success
+[2023-04-22 00:09:54] INFO root fetch - main [MainThread]: Store serial: [17809239]
