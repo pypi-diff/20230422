@@ -8002,3 +8002,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 12:19:02] INFO root fetch - main [MainThread]: End processing [llpy-helper-lib]: success
 [2023-04-22 12:19:03] INFO root fetch - main [MainThread]: End processing [voyager-cpu]: success
 [2023-04-22 12:19:03] INFO root fetch - main [MainThread]: Store serial: [17813838]
+[2023-04-22 12:24:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813838]
+[2023-04-22 12:24:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 12:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-intent-plugin-adapt
+[2023-04-22 12:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MGD-Outliers
+[2023-04-22 12:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yadisk
+[2023-04-22 12:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OctoBot-Trading
+[2023-04-22 12:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yadisk-async
+[2023-04-22 12:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: statistical-fairness
+[2023-04-22 12:24:12] INFO root fetch - processPackages [OctoBot-Trading]: New version: [2.3.7] Old Version: [2.3.4]
+[2023-04-22 12:24:12] INFO root fetch - processPackages [ovos-intent-plugin-adapt]: New version: [0.0.0a8] Old Version: [0.0.0a7]
+[2023-04-22 12:24:12] INFO root fetch - processPackages [yadisk-async]: New version: [1.4.3] Old Version: [1.4.2]
+[2023-04-22 12:24:12] INFO root fetch - processPackages [MGD-Outliers]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-22 12:24:12] INFO root fetch - processPackages [yadisk]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-04-22 12:24:12] WARNING root fetch - processPackages [statistical-fairness]: Skipping, unable to determine old version
+[2023-04-22 12:24:12] INFO root fetch - main [MainThread]: End processing [statistical-fairness] error
+[2023-04-22 12:24:12] INFO root fetch - processPackages [MGD-Outliers]: Downloading https://files.pythonhosted.org/packages/f9/e2/2fa094a7860d62cb6b6a8aa89a6f48f59fdd9dff17812bb6ea8e04843a6f/MGD_Outliers-0.1.1.tar.gz
+[2023-04-22 12:24:12] INFO root fetch - processPackages [yadisk]: Downloading https://files.pythonhosted.org/packages/e9/b3/7bb83d136c1ae6cbb2ea0cbaac5ea1311170cf01439bbf1f72056a3ccdb7/yadisk-1.3.2.tar.gz
+[2023-04-22 12:24:12] INFO root fetch - processPackages [yadisk-async]: Downloading https://files.pythonhosted.org/packages/50/f8/0b24606b2e129d63dbfc0e70fc91d7d35c4e61098eae125ebb90863ec1c6/yadisk-async-1.4.2.tar.gz
+[2023-04-22 12:24:12] INFO root fetch - processPackages [ovos-intent-plugin-adapt]: Downloading https://files.pythonhosted.org/packages/d1/ad/7b097ba10780e98b89d651fbcd906e4a2fb67dac8b2c61178fb8f12d501f/ovos_intent_plugin_adapt-0.0.0a8-py3-none-any.whl
+[2023-04-22 12:24:12] INFO root fetch - processPackages [ovos-intent-plugin-adapt]: executing diffoscope
+[2023-04-22 12:24:12] INFO root fetch - processPackages [ovos-intent-plugin-adapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_intent_plugin_adapt-0.0.0a7-py3-none-any.whl.zip tmp/ovos_intent_plugin_adapt-0.0.0a8-py3-none-any.whl.zip --markdown 20230422/o/ovos-intent-plugin-adapt/0.0.0a7-0.0.0a8/diff.md --exclude *.pyd
+[2023-04-22 12:24:12] INFO root fetch - processPackages [OctoBot-Trading]: executing diffoscope
+[2023-04-22 12:24:12] INFO root fetch - processPackages [OctoBot-Trading]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoBot-Trading-2.3.4.tar.gz tmp/OctoBot-Trading-2.3.7.tar.gz --markdown 20230422/O/OctoBot-Trading/2.3.4-2.3.7/diff.md --exclude *.pyd
+[2023-04-22 12:24:12] INFO root fetch - processPackages [MGD-Outliers]: Downloading https://files.pythonhosted.org/packages/de/57/abe25691f50f2927b54010f2509c00c7fcf29dade9b86a40bcc6a23abac6/MGD_Outliers-0.1.2-py3-none-any.whl
+[2023-04-22 12:24:12] INFO root fetch - processPackages [yadisk-async]: Downloading https://files.pythonhosted.org/packages/3c/78/7899ff60317024ccac6aec31c5031bade279b35c51781924035b6caea1d2/yadisk-async-1.4.3.tar.gz
+[2023-04-22 12:24:12] INFO root fetch - processPackages [MGD-Outliers]: executing diffoscope
+[2023-04-22 12:24:12] INFO root fetch - processPackages [MGD-Outliers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MGD_Outliers-0.1.1.tar.gz tmp/MGD_Outliers-0.1.2-py3-none-any.whl.zip --markdown 20230422/M/MGD-Outliers/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-22 12:24:12] INFO root fetch - processPackages [yadisk]: Downloading https://files.pythonhosted.org/packages/51/d0/7b1201ffba35e869a8c0e72c104fb6525d37eed7a1a8ce23e28ce24200f4/yadisk-1.3.3.tar.gz
+[2023-04-22 12:24:12] INFO root fetch - processPackages [yadisk-async]: executing diffoscope
+[2023-04-22 12:24:12] INFO root fetch - processPackages [yadisk-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yadisk-async-1.4.2.tar.gz tmp/yadisk-async-1.4.3.tar.gz --markdown 20230422/y/yadisk-async/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2023-04-22 12:24:12] INFO root fetch - processPackages [yadisk]: executing diffoscope
+[2023-04-22 12:24:12] INFO root fetch - processPackages [yadisk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yadisk-1.3.2.tar.gz tmp/yadisk-1.3.3.tar.gz --markdown 20230422/y/yadisk/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-04-22 12:24:13] INFO root fetch - main [MainThread]: End processing [ovos-intent-plugin-adapt]: success
+[2023-04-22 12:24:13] INFO root fetch - main [MainThread]: End processing [MGD-Outliers]: success
+[2023-04-22 12:24:14] INFO root fetch - main [MainThread]: End processing [yadisk-async]: success
+[2023-04-22 12:24:14] INFO root fetch - main [MainThread]: End processing [yadisk]: success
+[2023-04-22 12:24:21] INFO root fetch - main [MainThread]: End processing [OctoBot-Trading]: success
+[2023-04-22 12:24:21] INFO root fetch - main [MainThread]: Store serial: [17813855]
