@@ -11016,3 +11016,87 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 17:47:56] INFO root fetch - main [MainThread]: End processing [zuspec-be-sw]: success
 [2023-04-22 17:48:06] INFO root fetch - main [MainThread]: End processing [zuspec-arl-dm]: success
 [2023-04-22 17:48:06] INFO root fetch - main [MainThread]: Store serial: [17815560]
+[2023-04-22 17:53:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815560]
+[2023-04-22 17:53:22] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-22 17:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lccpy
+[2023-04-22 17:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coolmysql
+[2023-04-22 17:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mlms
+[2023-04-22 17:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: embedindb
+[2023-04-22 17:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: asymysql
+[2023-04-22 17:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cooldfa
+[2023-04-22 17:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yashpy
+[2023-04-22 17:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jupylite-duckdb
+[2023-04-22 17:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: kcli
+[2023-04-22 17:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: embedin
+[2023-04-22 17:53:22] INFO root fetch - processPackages [lccpy]: New version: [1.4.5] Old Version: [1.4.4]
+[2023-04-22 17:53:22] INFO root fetch - processPackages [mlms]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-22 17:53:22] INFO root fetch - processPackages [yashpy]: New version: [0.3] Old Version: [0.2]
+[2023-04-22 17:53:22] INFO root fetch - processPackages [coolmysql]: New version: [1.4.3] Old Version: [1.4.2]
+[2023-04-22 17:53:22] WARNING root fetch - processPackages [embedindb]: Skipping, unable to determine old version
+[2023-04-22 17:53:22] WARNING root fetch - processPackages [embedin]: Skipping, unable to determine old version
+[2023-04-22 17:53:22] INFO root fetch - processPackages [cooldfa]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-22 17:53:22] INFO root fetch - processPackages [embedindb]: Start processing: ypmp-example
+[2023-04-22 17:53:22] INFO root fetch - processPackages [jupylite-duckdb]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 17:53:22] INFO root fetch - processPackages [embedin]: Start processing: kcli
+[2023-04-22 17:53:22] INFO root fetch - processPackages [asymysql]: New version: [1.3.1] Old Version: [1.3]
+[2023-04-22 17:53:22] INFO root fetch - main [MainThread]: End processing [embedindb] error
+[2023-04-22 17:53:22] INFO root fetch - main [MainThread]: End processing [embedin] error
+[2023-04-22 17:53:22] INFO root fetch - processPackages [ypmp-example]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-22 17:53:22] INFO root fetch - processPackages [kcli]: New version: [99.0.202304221551] Old Version: [99.0.202304221550]
+[2023-04-22 17:53:22] INFO root fetch - processPackages [kcli]: New version: [99.0.202304221551] Old Version: [99.0.202304221550]
+[2023-04-22 17:53:22] INFO root fetch - processPackages [asymysql]: Downloading https://files.pythonhosted.org/packages/d5/41/bd9708389b903803dae0fd4f930a8cf446d363672292c258e7d1ff914ed4/asymysql-1.3.tar.gz
+[2023-04-22 17:53:22] INFO root fetch - processPackages [mlms]: executing diffoscope
+[2023-04-22 17:53:22] INFO root fetch - processPackages [mlms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlms-0.8.0.tar.gz tmp/mlms-0.9.0.tar.gz --markdown 20230422/m/mlms/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-22 17:53:22] INFO root fetch - processPackages [ypmp-example]: Downloading https://files.pythonhosted.org/packages/1d/0e/81722bca17cc223ca9937c3927d4f776d16c2eebc6ea8d73a70771d71f21/ypmp_example-0.1.1.tar.gz
+[2023-04-22 17:53:22] INFO root fetch - processPackages [jupylite-duckdb]: executing diffoscope
+[2023-04-22 17:53:22] INFO root fetch - processPackages [jupylite-duckdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupylite_duckdb-0.0.8-py3-none-any.whl.zip tmp/jupylite_duckdb-0.0.9-py3-none-any.whl.zip --markdown 20230422/j/jupylite-duckdb/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 17:53:22] INFO root fetch - processPackages [cooldfa]: Downloading https://files.pythonhosted.org/packages/b9/d6/28a31663e158fbfb4a366c97522da988c0556f88f5adb3a48803ba4df30c/cooldfa-1.0.1.tar.gz
+[2023-04-22 17:53:22] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/3a/6f/4844e9834daaabd1be0687f17cd39d3cb8bec942fd3cfb859b2da9e66092/kcli-99.0.202304221550-py3-none-any.whl
+[2023-04-22 17:53:22] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/3a/6f/4844e9834daaabd1be0687f17cd39d3cb8bec942fd3cfb859b2da9e66092/kcli-99.0.202304221550-py3-none-any.whl
+[2023-04-22 17:53:22] INFO root fetch - processPackages [yashpy]: Downloading https://files.pythonhosted.org/packages/22/52/d4de91db701a6da6541865346a623efeaed5fb4cb142b59c1e6de35126c2/yashpy-0.3.tar.gz
+[2023-04-22 17:53:22] INFO root fetch - processPackages [yashpy]: executing diffoscope
+[2023-04-22 17:53:22] INFO root fetch - processPackages [yashpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yashpy-0.2.tar.gz tmp/yashpy-0.3.tar.gz --markdown 20230422/y/yashpy/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-22 17:53:22] INFO root fetch - processPackages [lccpy]: Downloading https://files.pythonhosted.org/packages/47/07/f8e50643bd199fd3a9b708d84fd18ead96a6d5b724a92a1aac78186c1b8b/lccpy-1.4.5.tar.gz
+[2023-04-22 17:53:22] INFO root fetch - processPackages [coolmysql]: Downloading https://files.pythonhosted.org/packages/a5/11/0529a2b3b4525848c1328fe76b323c94c787a7b7f632f736eb1c3830ce96/coolmysql-1.4.3.tar.gz
+[2023-04-22 17:53:22] INFO root fetch - processPackages [lccpy]: executing diffoscope
+[2023-04-22 17:53:22] INFO root fetch - processPackages [lccpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lccpy-1.4.4.tar.gz tmp/lccpy-1.4.5.tar.gz --markdown 20230422/l/lccpy/1.4.4-1.4.5/diff.md --exclude *.pyd
+[2023-04-22 17:53:22] INFO root fetch - processPackages [coolmysql]: executing diffoscope
+[2023-04-22 17:53:22] INFO root fetch - processPackages [coolmysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coolmysql-1.4.2.tar.gz tmp/coolmysql-1.4.3.tar.gz --markdown 20230422/c/coolmysql/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2023-04-22 17:53:22] INFO root fetch - processPackages [asymysql]: Downloading https://files.pythonhosted.org/packages/58/21/9715accdfb608607378f03b9e5fe7ce80ddf721bddd440a7f018bb54e66a/asymysql-1.3.1.tar.gz
+[2023-04-22 17:53:22] INFO root fetch - processPackages [ypmp-example]: Downloading https://files.pythonhosted.org/packages/34/d9/38275e31739092516cfe45d1115d6a6b26edc430e2287398165ebcfa6e1d/ypmp_example-0.2.0.tar.gz
+[2023-04-22 17:53:22] INFO root fetch - processPackages [asymysql]: executing diffoscope
+[2023-04-22 17:53:22] INFO root fetch - processPackages [asymysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asymysql-1.3.tar.gz tmp/asymysql-1.3.1.tar.gz --markdown 20230422/a/asymysql/1.3-1.3.1/diff.md --exclude *.pyd
+[2023-04-22 17:53:22] INFO root fetch - processPackages [ypmp-example]: executing diffoscope
+[2023-04-22 17:53:22] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/42/53/c579f5fb11f008ffbbb9370e25300310842f03910018490137bfb9af01db/kcli-99.0.202304221551-py3-none-any.whl
+[2023-04-22 17:53:22] INFO root fetch - processPackages [ypmp-example]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ypmp_example-0.1.1.tar.gz tmp/ypmp_example-0.2.0.tar.gz --markdown 20230422/y/ypmp-example/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-22 17:53:22] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/42/53/c579f5fb11f008ffbbb9370e25300310842f03910018490137bfb9af01db/kcli-99.0.202304221551-py3-none-any.whl
+[2023-04-22 17:53:22] INFO root fetch - processPackages [cooldfa]: Downloading https://files.pythonhosted.org/packages/e0/29/f8ed5bc6b5394089cb3fdd0eed07e69b72fbbbf82d428459b4e6ddf539c6/cooldfa-1.0.2.tar.gz
+[2023-04-22 17:53:22] INFO root fetch - processPackages [cooldfa]: executing diffoscope
+[2023-04-22 17:53:22] INFO root fetch - processPackages [cooldfa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cooldfa-1.0.1.tar.gz tmp/cooldfa-1.0.2.tar.gz --markdown 20230422/c/cooldfa/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-22 17:53:23] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-22 17:53:23] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-22 17:53:23] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304221550-py3-none-any.whl.zip tmp/kcli-99.0.202304221551-py3-none-any.whl.zip --markdown 20230422/k/kcli/99.0.202304221550-99.0.202304221551/diff.md --exclude *.pyd
+[2023-04-22 17:53:23] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304221550-py3-none-any.whl.zip tmp/kcli-99.0.202304221551-py3-none-any.whl.zip --markdown 20230422/k/kcli/99.0.202304221550-99.0.202304221551/diff.md --exclude *.pyd
+[2023-04-22 17:53:24] INFO root fetch - processPackages [jupylite-duckdb]: Start processing: podcast-archiver
+[2023-04-22 17:53:24] INFO root fetch - main [MainThread]: End processing [jupylite-duckdb]: success
+[2023-04-22 17:53:24] INFO root fetch - processPackages [podcast-archiver]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-04-22 17:53:24] INFO root fetch - processPackages [yashpy]: Start processing: liftcord
+[2023-04-22 17:53:24] INFO root fetch - main [MainThread]: End processing [yashpy]: success
+[2023-04-22 17:53:24] INFO root fetch - main [MainThread]: End processing [mlms]: success
+[2023-04-22 17:53:24] INFO root fetch - processPackages [liftcord]: New version: [7.1] Old Version: [26.0]
+[2023-04-22 17:53:24] INFO root fetch - processPackages [liftcord]: Downloading https://files.pythonhosted.org/packages/fc/84/9d5ddad4b8fef33639386870dc7f080e9dbe62e10be06ff2d319eabf1dfb/liftcord-26.0.tar.gz
+[2023-04-22 17:53:24] INFO root fetch - main [MainThread]: End processing [asymysql]: success
+[2023-04-22 17:53:24] INFO root fetch - processPackages [podcast-archiver]: Downloading https://files.pythonhosted.org/packages/5f/ba/40eec4e296d745fdefef889557b871b9ca7c40c97adad89b8beb32ed7851/podcast_archiver-0.4.3.tar.gz
+[2023-04-22 17:53:24] INFO root fetch - main [MainThread]: End processing [coolmysql]: success
+[2023-04-22 17:53:24] INFO root fetch - processPackages [podcast-archiver]: executing diffoscope
+[2023-04-22 17:53:24] INFO root fetch - processPackages [podcast-archiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/podcast_archiver-0.4.2.tar.gz tmp/podcast_archiver-0.4.3.tar.gz --markdown 20230422/p/podcast-archiver/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-04-22 17:53:24] INFO root fetch - main [MainThread]: End processing [ypmp-example]: success
+[2023-04-22 17:53:24] INFO root fetch - processPackages [liftcord]: executing diffoscope
+[2023-04-22 17:53:24] INFO root fetch - processPackages [liftcord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liftcord-26.0.tar.gz tmp/liftcord-7.1.tar.gz --markdown 20230422/l/liftcord/26.0-7.1/diff.md --exclude *.pyd
+[2023-04-22 17:53:24] INFO root fetch - main [MainThread]: End processing [lccpy]: success
+[2023-04-22 17:53:25] INFO root fetch - main [MainThread]: End processing [podcast-archiver]: success
+[2023-04-22 17:53:26] INFO root fetch - main [MainThread]: End processing [cooldfa]: success
+[2023-04-22 17:53:27] INFO root fetch - main [MainThread]: End processing [liftcord]: success
+[2023-04-22 17:53:31] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-22 17:53:31] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-22 17:53:31] INFO root fetch - main [MainThread]: Store serial: [17815603]
