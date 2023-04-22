@@ -3703,3 +3703,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 03:27:26] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-kinesis]: success
 [2023-04-22 03:27:26] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-config]: success
 [2023-04-22 03:27:26] INFO root fetch - main [MainThread]: Store serial: [17811067]
+[2023-04-22 03:32:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811067]
+[2023-04-22 03:32:36] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 03:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bioregistry
+[2023-04-22 03:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rewards-api
+[2023-04-22 03:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-wordpress
+[2023-04-22 03:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-hr-attendance-reason
+[2023-04-22 03:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rewards-api
+[2023-04-22 03:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pokepastes-scraper
+[2023-04-22 03:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nbdev-stdlib
+[2023-04-22 03:32:36] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 03:32:36] INFO root fetch - processPackages [cdk-wordpress]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 03:32:36] INFO root fetch - processPackages [odoo14-addon-hr-attendance-reason]: New version: [14.0.1.1.1.dev4] Old Version: [14.0.1.1.1.dev3]
+[2023-04-22 03:32:36] INFO root fetch - processPackages [rewards-api]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-22 03:32:36] INFO root fetch - processPackages [rewards-api]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-22 03:32:36] INFO root fetch - processPackages [pokepastes-scraper]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-22 03:32:36] INFO root fetch - processPackages [bioregistry]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-22 03:32:36] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-04-22 03:32:36] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230422/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 03:32:36] INFO root fetch - processPackages [cdk-wordpress]: executing diffoscope
+[2023-04-22 03:32:36] INFO root fetch - processPackages [cdk-wordpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-wordpress-0.0.98.tar.gz tmp/cdk-wordpress-0.0.99.tar.gz --markdown 20230422/c/cdk-wordpress/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 03:32:36] INFO root fetch - processPackages [rewards-api]: Downloading https://files.pythonhosted.org/packages/89/5b/74f7d88663477051707e332237852d0d6c7ba7cc642c34a3373d03307ca1/rewards_api-0.0.7.tar.gz
+[2023-04-22 03:32:36] INFO root fetch - processPackages [rewards-api]: Downloading https://files.pythonhosted.org/packages/89/5b/74f7d88663477051707e332237852d0d6c7ba7cc642c34a3373d03307ca1/rewards_api-0.0.7.tar.gz
+[2023-04-22 03:32:36] INFO root fetch - processPackages [odoo14-addon-hr-attendance-reason]: Downloading https://files.pythonhosted.org/packages/50/12/7da5bd0d650e112984860e785d312f50478a892135035760521e470e1781/odoo14_addon_hr_attendance_reason-14.0.1.1.1.dev3-py3-none-any.whl
+[2023-04-22 03:32:36] INFO root fetch - processPackages [pokepastes-scraper]: Downloading https://files.pythonhosted.org/packages/34/80/be393ab78aaa1379fb04ea8560ca1e3cc8fd3eaf91d4ad2907f6f61e81e5/pokepastes-scraper-0.2.1.tar.gz
+[2023-04-22 03:32:36] INFO root fetch - processPackages [odoo14-addon-hr-attendance-reason]: Downloading https://files.pythonhosted.org/packages/bb/6f/f9528d30a0b3bd2e54bdd518cd0486e01bff30d475c045227ebc8ab6d863/odoo14_addon_hr_attendance_reason-14.0.1.1.1.dev4-py3-none-any.whl
+[2023-04-22 03:32:36] INFO root fetch - processPackages [rewards-api]: Downloading https://files.pythonhosted.org/packages/bb/07/165c41303f1df0fea3579c5f789f53dd2582e296cd9ae28d563960ba8347/rewards_api-0.0.8.tar.gz
+[2023-04-22 03:32:36] INFO root fetch - processPackages [rewards-api]: Downloading https://files.pythonhosted.org/packages/bb/07/165c41303f1df0fea3579c5f789f53dd2582e296cd9ae28d563960ba8347/rewards_api-0.0.8.tar.gz
+[2023-04-22 03:32:36] INFO root fetch - processPackages [bioregistry]: executing diffoscope
+[2023-04-22 03:32:36] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.8.8.tar.gz tmp/bioregistry-0.8.9.tar.gz --markdown 20230422/b/bioregistry/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-22 03:32:36] INFO root fetch - processPackages [odoo14-addon-hr-attendance-reason]: executing diffoscope
+[2023-04-22 03:32:36] INFO root fetch - processPackages [odoo14-addon-hr-attendance-reason]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_hr_attendance_reason-14.0.1.1.1.dev3-py3-none-any.whl.zip tmp/odoo14_addon_hr_attendance_reason-14.0.1.1.1.dev4-py3-none-any.whl.zip --markdown 20230422/o/odoo14-addon-hr-attendance-reason/14.0.1.1.1.dev3-14.0.1.1.1.dev4/diff.md --exclude *.pyd
+[2023-04-22 03:32:36] INFO root fetch - processPackages [pokepastes-scraper]: executing diffoscope
+[2023-04-22 03:32:36] INFO root fetch - processPackages [pokepastes-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pokepastes-scraper-0.2.0.tar.gz tmp/pokepastes-scraper-0.2.1.tar.gz --markdown 20230422/p/pokepastes-scraper/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-22 03:32:36] INFO root fetch - processPackages [rewards-api]: executing diffoscope
+[2023-04-22 03:32:36] INFO root fetch - processPackages [rewards-api]: executing diffoscope
+[2023-04-22 03:32:36] INFO root fetch - processPackages [rewards-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rewards_api-0.0.7.tar.gz tmp/rewards_api-0.0.8.tar.gz --markdown 20230422/r/rewards-api/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-22 03:32:36] INFO root fetch - processPackages [rewards-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rewards_api-0.0.7.tar.gz tmp/rewards_api-0.0.8.tar.gz --markdown 20230422/r/rewards-api/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-22 03:32:37] INFO root fetch - main [MainThread]: End processing [cdk-wordpress]: success
+[2023-04-22 03:32:37] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-04-22 03:32:38] INFO root fetch - main [MainThread]: End processing [odoo14-addon-hr-attendance-reason]: success
+[2023-04-22 03:32:38] INFO root fetch - main [MainThread]: End processing [pokepastes-scraper]: success
+[2023-04-22 03:32:38] INFO root fetch - main [MainThread]: End processing [rewards-api]: success
+[2023-04-22 03:32:38] INFO root fetch - main [MainThread]: End processing [rewards-api]: success
+[2023-04-22 03:33:46] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
+[2023-04-22 03:33:46] INFO root fetch - main [MainThread]: Store serial: [17811342]
