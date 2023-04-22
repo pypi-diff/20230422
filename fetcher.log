@@ -3889,3 +3889,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 03:49:27] INFO root fetch - main [MainThread]: End processing [celldancer]: success
 [2023-04-22 03:50:07] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
 [2023-04-22 03:50:07] INFO root fetch - main [MainThread]: Store serial: [17811498]
+[2023-04-22 03:55:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811498]
+[2023-04-22 03:55:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-22 03:55:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fluxvault
+[2023-04-22 03:55:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: teelebot
+[2023-04-22 03:55:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nagerapi
+[2023-04-22 03:55:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: strongmind-deployment
+[2023-04-22 03:55:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fluxvault
+[2023-04-22 03:55:17] INFO root fetch - processPackages [strongmind-deployment]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-22 03:55:17] INFO root fetch - processPackages [fluxvault]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 03:55:17] INFO root fetch - processPackages [fluxvault]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 03:55:17] INFO root fetch - processPackages [teelebot]: New version: [1.24.0] Old Version: [1.23.1]
+[2023-04-22 03:55:17] INFO root fetch - processPackages [nagerapi]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-22 03:55:17] INFO root fetch - processPackages [nagerapi]: Downloading https://files.pythonhosted.org/packages/74/83/84ff705971edb933e117fd372d079a87e03a9937426329ebd411ebac6a07/nagerapi-0.1.0.tar.gz
+[2023-04-22 03:55:17] INFO root fetch - processPackages [strongmind-deployment]: Downloading https://files.pythonhosted.org/packages/35/90/e58eb699811c4366c10290ab0ec52652bfd91cf7025040de2ed27957ae58/strongmind_deployment-0.0.2-py3-none-any.whl
+[2023-04-22 03:55:17] INFO root fetch - processPackages [teelebot]: Downloading https://files.pythonhosted.org/packages/2f/52/fc2b54699024748e75868071f6a2cd2cf23617eeb5813f1548d580a8cdce/teelebot-1.24.0-py3-none-any.whl
+[2023-04-22 03:55:17] INFO root fetch - processPackages [fluxvault]: executing diffoscope
+[2023-04-22 03:55:17] INFO root fetch - processPackages [fluxvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxvault-0.9.8.tar.gz tmp/fluxvault-0.9.9.tar.gz --markdown 20230422/f/fluxvault/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 03:55:17] INFO root fetch - processPackages [fluxvault]: executing diffoscope
+[2023-04-22 03:55:17] INFO root fetch - processPackages [fluxvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxvault-0.9.8.tar.gz tmp/fluxvault-0.9.9.tar.gz --markdown 20230422/f/fluxvault/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 03:55:17] INFO root fetch - processPackages [strongmind-deployment]: Downloading https://files.pythonhosted.org/packages/8b/40/70aba068ef7146e4b9e5e9fad771b5b86f0655f3da53f803e20cbaebe47c/strongmind_deployment-0.0.3-py3-none-any.whl
+[2023-04-22 03:55:17] INFO root fetch - processPackages [nagerapi]: Downloading https://files.pythonhosted.org/packages/9a/12/8d468160fef365ab718ae6d2a8acec206310d8b8540ce2132e34f413b750/nagerapi-0.2.0.tar.gz
+[2023-04-22 03:55:17] INFO root fetch - processPackages [teelebot]: executing diffoscope
+[2023-04-22 03:55:17] INFO root fetch - processPackages [teelebot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teelebot-1.23.1-py3-none-any.whl.zip tmp/teelebot-1.24.0-py3-none-any.whl.zip --markdown 20230422/t/teelebot/1.23.1-1.24.0/diff.md --exclude *.pyd
+[2023-04-22 03:55:17] INFO root fetch - processPackages [strongmind-deployment]: executing diffoscope
+[2023-04-22 03:55:17] INFO root fetch - processPackages [strongmind-deployment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strongmind_deployment-0.0.2-py3-none-any.whl.zip tmp/strongmind_deployment-0.0.3-py3-none-any.whl.zip --markdown 20230422/s/strongmind-deployment/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-22 03:55:17] INFO root fetch - processPackages [nagerapi]: executing diffoscope
+[2023-04-22 03:55:17] INFO root fetch - processPackages [nagerapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nagerapi-0.1.0.tar.gz tmp/nagerapi-0.2.0.tar.gz --markdown 20230422/n/nagerapi/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-22 03:55:18] INFO root fetch - main [MainThread]: End processing [fluxvault]: success
+[2023-04-22 03:55:18] INFO root fetch - main [MainThread]: End processing [teelebot]: success
+[2023-04-22 03:55:18] INFO root fetch - main [MainThread]: End processing [strongmind-deployment]: success
+[2023-04-22 03:55:18] INFO root fetch - main [MainThread]: End processing [nagerapi]: success
+[2023-04-22 03:55:19] INFO root fetch - main [MainThread]: End processing [fluxvault]: success
+[2023-04-22 03:55:19] INFO root fetch - main [MainThread]: Store serial: [17811511]
