@@ -5649,3 +5649,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 07:27:03] INFO root fetch - main [MainThread]: End processing [lndb]: success
 [2023-04-22 07:27:03] INFO root fetch - main [MainThread]: End processing [odoo12-addon-mrp-production-request]: success
 [2023-04-22 07:27:03] INFO root fetch - main [MainThread]: Store serial: [17812401]
+[2023-04-22 07:32:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812401]
+[2023-04-22 07:32:12] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 07:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lnbase_biolab
+[2023-04-22 07:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crazy-thursday
+[2023-04-22 07:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plastic-balanced-network
+[2023-04-22 07:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: copier-template-tester
+[2023-04-22 07:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: StringFix
+[2023-04-22 07:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mrdoxmrgt
+[2023-04-22 07:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pmserializer
+[2023-04-22 07:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tcod-ecs
+[2023-04-22 07:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: wizcli
+[2023-04-22 07:32:12] WARNING root fetch - processPackages [wizcli]: Skipping, unable to determine old version
+[2023-04-22 07:32:12] INFO root fetch - main [MainThread]: End processing [wizcli] error
+[2023-04-22 07:32:12] INFO root fetch - processPackages [mrdoxmrgt]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-22 07:32:12] WARNING root fetch - processPackages [plastic-balanced-network]: Skipping, unable to determine old version
+[2023-04-22 07:32:12] INFO root fetch - processPackages [StringFix]: New version: [0.6.7] Old Version: [0.6.5]
+[2023-04-22 07:32:12] INFO root fetch - main [MainThread]: End processing [plastic-balanced-network] error
+[2023-04-22 07:32:12] WARNING root fetch - processPackages [pmserializer]: Skipping, unable to determine old version
+[2023-04-22 07:32:12] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.4.9.1] Old Version: [2023.4.9.0]
+[2023-04-22 07:32:12] INFO root fetch - main [MainThread]: End processing [pmserializer] error
+[2023-04-22 07:32:12] INFO root fetch - processPackages [copier-template-tester]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-04-22 07:32:12] WARNING root fetch - processPackages [lnbase_biolab]: Skipping, unable to determine old version
+[2023-04-22 07:32:12] INFO root fetch - main [MainThread]: End processing [lnbase_biolab] error
+[2023-04-22 07:32:12] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-04-22 07:32:12] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.4.9.0.tar.gz tmp/crazy-thursday-2023.4.9.1.tar.gz --markdown 20230422/c/crazy-thursday/2023.4.9.0-2023.4.9.1/diff.md --exclude *.pyd
+[2023-04-22 07:32:12] INFO root fetch - processPackages [tcod-ecs]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-22 07:32:12] INFO root fetch - processPackages [StringFix]: executing diffoscope
+[2023-04-22 07:32:12] INFO root fetch - processPackages [StringFix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/StringFix-0.6.5.tar.gz tmp/StringFix-0.6.7.tar.gz --markdown 20230422/S/StringFix/0.6.5-0.6.7/diff.md --exclude *.pyd
+[2023-04-22 07:32:12] INFO root fetch - processPackages [mrdoxmrgt]: Downloading https://files.pythonhosted.org/packages/74/96/8f729f03f5958d38156cb041580f1a91c781f58b2ea25fce9830c085de1b/mrdoxmrgt-0.0.4.tar.gz
+[2023-04-22 07:32:12] INFO root fetch - processPackages [tcod-ecs]: Downloading https://files.pythonhosted.org/packages/d6/11/c2474f3479beb50b57bae3c4cf6232e8893df190971d47dedb58a7951743/tcod-ecs-1.0.0.tar.gz
+[2023-04-22 07:32:12] INFO root fetch - processPackages [mrdoxmrgt]: executing diffoscope
+[2023-04-22 07:32:12] INFO root fetch - processPackages [mrdoxmrgt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrdoxmrgt-0.0.3.tar.gz tmp/mrdoxmrgt-0.0.4.tar.gz --markdown 20230422/m/mrdoxmrgt/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-22 07:32:12] INFO root fetch - processPackages [tcod-ecs]: Downloading https://files.pythonhosted.org/packages/ff/66/3a2ae8fdf809a65ca0279a1aba5e022d99d8f77dfb7c8c5fbd0a9fafdd8c/tcod-ecs-1.1.0.tar.gz
+[2023-04-22 07:32:12] INFO root fetch - processPackages [copier-template-tester]: Downloading https://files.pythonhosted.org/packages/5f/fe/8db180bc3cb888ae6a1317d37c406bb2c449cbf797d075a8bc3c38cebe26/copier_template_tester-1.0.2.tar.gz
+[2023-04-22 07:32:12] INFO root fetch - processPackages [tcod-ecs]: executing diffoscope
+[2023-04-22 07:32:12] INFO root fetch - processPackages [tcod-ecs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcod-ecs-1.0.0.tar.gz tmp/tcod-ecs-1.1.0.tar.gz --markdown 20230422/t/tcod-ecs/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-22 07:32:12] INFO root fetch - processPackages [copier-template-tester]: Downloading https://files.pythonhosted.org/packages/5c/aa/9dc58df32b977cc55769e5540e1980d9216c284bfe1e983cdb4eda8200d8/copier_template_tester-1.1.0.tar.gz
+[2023-04-22 07:32:13] INFO root fetch - processPackages [copier-template-tester]: executing diffoscope
+[2023-04-22 07:32:13] INFO root fetch - processPackages [copier-template-tester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copier_template_tester-1.0.2.tar.gz tmp/copier_template_tester-1.1.0.tar.gz --markdown 20230422/c/copier-template-tester/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-04-22 07:32:13] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-04-22 07:32:13] INFO root fetch - main [MainThread]: End processing [mrdoxmrgt]: success
+[2023-04-22 07:32:13] INFO root fetch - main [MainThread]: End processing [StringFix]: success
+[2023-04-22 07:32:13] INFO root fetch - main [MainThread]: End processing [copier-template-tester]: success
+[2023-04-22 07:32:29] INFO root fetch - main [MainThread]: End processing [tcod-ecs]: success
+[2023-04-22 07:32:29] INFO root fetch - main [MainThread]: Store serial: [17812429]
