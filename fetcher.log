@@ -11421,3 +11421,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 18:30:23] INFO root fetch - processPackages [dbxconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbxconfig-2.0.0.tar.gz tmp/dbxconfig-2.0.1.tar.gz --markdown 20230422/d/dbxconfig/2.0.0-2.0.1/diff.md --exclude *.pyd
 [2023-04-22 18:30:24] INFO root fetch - main [MainThread]: End processing [dbxconfig]: success
 [2023-04-22 18:30:24] INFO root fetch - main [MainThread]: Store serial: [17815818]
+[2023-04-22 18:35:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815818]
+[2023-04-22 18:35:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-22 18:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: buteo
+[2023-04-22 18:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: featurizerai
+[2023-04-22 18:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: newick-tree-builder
+[2023-04-22 18:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aesara-nightly
+[2023-04-22 18:35:35] INFO root fetch - processPackages [newick-tree-builder]: New version: [0.4.8] Old Version: [0.4.7]
+[2023-04-22 18:35:35] INFO root fetch - processPackages [buteo]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-22 18:35:35] INFO root fetch - processPackages [featurizerai]: New version: [1.3.7] Old Version: [1.3.6]
+[2023-04-22 18:35:36] INFO root fetch - processPackages [aesara-nightly]: New version: [2.8.9.post118] Old Version: [2.8.9.post117]
+[2023-04-22 18:35:36] INFO root fetch - processPackages [featurizerai]: Downloading https://files.pythonhosted.org/packages/16/6a/f8835a7e7d0ff6e3f11a15c1080652c9fa81a11a57bf55f9c93eaac0fd62/featurizerai-1.3.7.tar.gz
+[2023-04-22 18:35:36] INFO root fetch - processPackages [featurizerai]: executing diffoscope
+[2023-04-22 18:35:36] INFO root fetch - processPackages [featurizerai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featurizerai-1.3.6.tar.gz tmp/featurizerai-1.3.7.tar.gz --markdown 20230422/f/featurizerai/1.3.6-1.3.7/diff.md --exclude *.pyd
+[2023-04-22 18:35:36] INFO root fetch - processPackages [newick-tree-builder]: Downloading https://files.pythonhosted.org/packages/30/b3/67214d63d50384126e498d729caac1b7e3e5b85b0952421f45f2436e45f1/newick-tree-builder-0.4.8.tar.gz
+[2023-04-22 18:35:36] INFO root fetch - processPackages [buteo]: executing diffoscope
+[2023-04-22 18:35:36] INFO root fetch - processPackages [buteo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buteo-0.8.8.tar.gz tmp/buteo-0.8.9.tar.gz --markdown 20230422/b/buteo/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-22 18:35:36] INFO root fetch - processPackages [aesara-nightly]: executing diffoscope
+[2023-04-22 18:35:36] INFO root fetch - processPackages [aesara-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aesara-nightly-2.8.9.post117.tar.gz tmp/aesara-nightly-2.8.9.post118.tar.gz --markdown 20230422/a/aesara-nightly/2.8.9.post117-2.8.9.post118/diff.md --exclude *.pyd
+[2023-04-22 18:35:36] INFO root fetch - processPackages [newick-tree-builder]: executing diffoscope
+[2023-04-22 18:35:36] INFO root fetch - processPackages [newick-tree-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/newick-tree-builder-0.4.7.tar.gz tmp/newick-tree-builder-0.4.8.tar.gz --markdown 20230422/n/newick-tree-builder/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2023-04-22 18:35:37] INFO root fetch - main [MainThread]: End processing [featurizerai]: success
+[2023-04-22 18:35:37] INFO root fetch - main [MainThread]: End processing [newick-tree-builder]: success
+[2023-04-22 18:35:37] INFO root fetch - main [MainThread]: End processing [buteo]: success
+[2023-04-22 18:35:40] INFO root fetch - main [MainThread]: End processing [aesara-nightly]: success
+[2023-04-22 18:35:40] INFO root fetch - main [MainThread]: Store serial: [17815828]
