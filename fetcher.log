@@ -13812,3 +13812,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 23:29:04] INFO root fetch - main [MainThread]: End processing [fastapi-class]: success
 [2023-04-22 23:29:05] INFO root fetch - main [MainThread]: End processing [voyager-cpu]: success
 [2023-04-22 23:29:05] INFO root fetch - main [MainThread]: Store serial: [17817279]
+[2023-04-22 23:34:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17817279]
+[2023-04-22 23:34:14] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 23:34:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: numpy
+[2023-04-22 23:34:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vule-magics-python2
+[2023-04-22 23:34:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: adam-sim
+[2023-04-22 23:34:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: freva-deployment
+[2023-04-22 23:34:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: coconut-develop
+[2023-04-22 23:34:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mutyper
+[2023-04-22 23:34:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fakeredis
+[2023-04-22 23:34:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kicad-package-manager
+[2023-04-22 23:34:14] WARNING root fetch - processPackages [vule-magics-python2]: Skipping, unable to determine old version
+[2023-04-22 23:34:14] INFO root fetch - main [MainThread]: End processing [vule-magics-python2] error
+[2023-04-22 23:34:14] INFO root fetch - processPackages [fakeredis]: New version: [2.9.2] Old Version: [2.9.1]
+[2023-04-22 23:34:14] INFO root fetch - processPackages [coconut-develop]: New version: [3.0.0a0.dev9] Old Version: [3.0.0a0.dev8]
+[2023-04-22 23:34:14] INFO root fetch - processPackages [adam-sim]: New version: [1.0.0] Old Version: [0.4.1]
+[2023-04-22 23:34:14] INFO root fetch - processPackages [mutyper]: New version: [1.0.0] Old Version: [0.7.1]
+[2023-04-22 23:34:14] INFO root fetch - processPackages [freva-deployment]: New version: [2304.0.1] Old Version: [2304.0.0]
+[2023-04-22 23:34:14] INFO root fetch - processPackages [kicad-package-manager]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 23:34:14] INFO root fetch - processPackages [numpy]: New version: [1.9.3] Old Version: [1.9.2]
+[2023-04-22 23:34:14] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2023-04-22 23:34:14] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.0.0a0.dev8.tar.gz tmp/coconut-develop-3.0.0a0.dev9.tar.gz --markdown 20230422/c/coconut-develop/3.0.0a0.dev8-3.0.0a0.dev9/diff.md --exclude *.pyd
+[2023-04-22 23:34:14] INFO root fetch - processPackages [kicad-package-manager]: executing diffoscope
+[2023-04-22 23:34:14] INFO root fetch - processPackages [kicad-package-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kicad_package_manager-0.0.8.tar.gz tmp/kicad_package_manager-0.0.9.tar.gz --markdown 20230422/k/kicad-package-manager/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 23:34:14] INFO root fetch - processPackages [fakeredis]: Downloading https://files.pythonhosted.org/packages/27/c5/a8bb6a94bad96b40a7e760bbbac99c73a6868017ab58c54a66bf62d6041d/fakeredis-2.9.1.tar.gz
+[2023-04-22 23:34:14] INFO root fetch - processPackages [adam-sim]: Downloading https://files.pythonhosted.org/packages/64/b0/0d109b7ef12446122f2c198c82ef1e5118479b1eda1acf08819e40a3cc85/adam_sim-0.4.1.tar.gz
+[2023-04-22 23:34:14] INFO root fetch - processPackages [mutyper]: Downloading https://files.pythonhosted.org/packages/78/a2/5bf630126eb758d413dc97ede7376f47d391c2a137dfa078ec0ed85a87fe/mutyper-0.7.1.tar.gz
+[2023-04-22 23:34:14] INFO root fetch - processPackages [freva-deployment]: Downloading https://files.pythonhosted.org/packages/b0/f9/3f392505af80e8dd423b98a514bb1e369c9ec24fcadab46da8e3b2ac8eba/freva_deployment-2304.0.0.tar.gz
+[2023-04-22 23:34:14] INFO root fetch - processPackages [numpy]: Downloading https://files.pythonhosted.org/packages/bb/b1/5a87c6cc7ab5201ad0552a5f84e194f822693ea59b0b97dc77a18f04554a/numpy-1.9.2.zip
+[2023-04-22 23:34:14] INFO root fetch - processPackages [freva-deployment]: Downloading https://files.pythonhosted.org/packages/18/d8/3d1991cdaa82f49822a0da5d4d7c0d3303acd821d712b674789555661219/freva_deployment-2304.0.1.tar.gz
+[2023-04-22 23:34:14] INFO root fetch - processPackages [fakeredis]: Downloading https://files.pythonhosted.org/packages/c9/d0/063259876691b0c48dfa578a01777c92875d9f234e1ac49900f305c4a9aa/fakeredis-2.9.2.tar.gz
+[2023-04-22 23:34:15] INFO root fetch - processPackages [mutyper]: Downloading https://files.pythonhosted.org/packages/68/eb/2c8cb80559aec05df86fd08f862046ec9e2b2ff98c9144d14190eb3745eb/mutyper-1.0.0.tar.gz
+[2023-04-22 23:34:15] INFO root fetch - processPackages [freva-deployment]: executing diffoscope
+[2023-04-22 23:34:15] INFO root fetch - processPackages [freva-deployment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freva_deployment-2304.0.0.tar.gz tmp/freva_deployment-2304.0.1.tar.gz --markdown 20230422/f/freva-deployment/2304.0.0-2304.0.1/diff.md --exclude *.pyd
+[2023-04-22 23:34:15] INFO root fetch - processPackages [fakeredis]: executing diffoscope
+[2023-04-22 23:34:15] INFO root fetch - processPackages [fakeredis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fakeredis-2.9.1.tar.gz tmp/fakeredis-2.9.2.tar.gz --markdown 20230422/f/fakeredis/2.9.1-2.9.2/diff.md --exclude *.pyd
+[2023-04-22 23:34:15] INFO root fetch - processPackages [mutyper]: executing diffoscope
+[2023-04-22 23:34:15] INFO root fetch - processPackages [mutyper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mutyper-0.7.1.tar.gz tmp/mutyper-1.0.0.tar.gz --markdown 20230422/m/mutyper/0.7.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-22 23:34:15] INFO root fetch - processPackages [numpy]: Downloading https://files.pythonhosted.org/packages/d9/da/8f6fa7d5d76fc78c11fb56a48dfb51d6321bc1e7631e5ad32c228284005f/numpy-1.9.3.zip
+[2023-04-22 23:34:15] INFO root fetch - processPackages [numpy]: executing diffoscope
+[2023-04-22 23:34:15] INFO root fetch - processPackages [numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numpy-1.9.2.zip tmp/numpy-1.9.3.zip --markdown 20230422/n/numpy/1.9.2-1.9.3/diff.md --exclude *.pyd
+[2023-04-22 23:34:15] INFO root fetch - main [MainThread]: End processing [kicad-package-manager]: success
+[2023-04-22 23:34:16] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
+[2023-04-22 23:34:16] INFO root fetch - main [MainThread]: End processing [mutyper]: success
+[2023-04-22 23:34:16] INFO root fetch - processPackages [adam-sim]: Downloading https://files.pythonhosted.org/packages/9e/51/648c6fa241686de5f650a2436a6607fc947dd0abb1adb51624f9152048a6/adam_sim-1.0.0.tar.gz
+[2023-04-22 23:34:16] INFO root fetch - main [MainThread]: End processing [freva-deployment]: success
+[2023-04-22 23:34:17] INFO root fetch - main [MainThread]: End processing [fakeredis]: success
+[2023-04-22 23:34:17] INFO root fetch - processPackages [adam-sim]: executing diffoscope
+[2023-04-22 23:34:17] INFO root fetch - processPackages [adam-sim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adam_sim-0.4.1.tar.gz tmp/adam_sim-1.0.0.tar.gz --markdown 20230422/a/adam-sim/0.4.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-22 23:34:20] INFO root fetch - main [MainThread]: End processing [adam-sim]: success
+[2023-04-22 23:34:32] INFO root fetch - main [MainThread]: End processing [numpy]: success
+[2023-04-22 23:34:32] INFO root fetch - main [MainThread]: Store serial: [17817320]
