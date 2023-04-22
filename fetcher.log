@@ -8680,3 +8680,53 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 13:40:16] INFO root fetch - main [MainThread]: End processing [munet]: success
 [2023-04-22 13:40:16] INFO root fetch - main [MainThread]: End processing [elevenlabslib]: success
 [2023-04-22 13:40:16] INFO root fetch - main [MainThread]: Store serial: [17814212]
+[2023-04-22 13:45:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814212]
+[2023-04-22 13:45:26] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 13:45:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: transon
+[2023-04-22 13:45:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nlpannotator
+[2023-04-22 13:45:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dphelper
+[2023-04-22 13:45:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: neat-tool
+[2023-04-22 13:45:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jija
+[2023-04-22 13:45:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: featurizerai
+[2023-04-22 13:45:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kcli
+[2023-04-22 13:45:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: modoboa
+[2023-04-22 13:45:26] INFO root fetch - processPackages [nlpannotator]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-22 13:45:26] INFO root fetch - processPackages [transon]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-22 13:45:26] INFO root fetch - processPackages [modoboa]: New version: [2.1.3.dev0] Old Version: [2.1.2.dev0]
+[2023-04-22 13:45:26] INFO root fetch - processPackages [jija]: New version: [0.3.1] Old Version: [0.3]
+[2023-04-22 13:45:26] WARNING root fetch - processPackages [neat-tool]: Skipping, unable to determine old version
+[2023-04-22 13:45:26] INFO root fetch - main [MainThread]: End processing [neat-tool] error
+[2023-04-22 13:45:26] INFO root fetch - processPackages [featurizerai]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-04-22 13:45:26] INFO root fetch - processPackages [dphelper]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-04-22 13:45:26] INFO root fetch - processPackages [kcli]: New version: [99.0.202304221143] Old Version: [99.0.202304221034]
+[2023-04-22 13:45:26] INFO root fetch - processPackages [modoboa]: Downloading https://files.pythonhosted.org/packages/88/64/2b146a0105816c837d201760902c06170d85260a1d0ab297dbdb7cae189e/modoboa-2.1.2.dev0.tar.gz
+[2023-04-22 13:45:26] INFO root fetch - processPackages [transon]: Downloading https://files.pythonhosted.org/packages/4f/28/560e3ca68151a11191074b1f5be622477bf3a72315ce3c31d51eb1b132b1/transon-0.0.6.tar.gz
+[2023-04-22 13:45:26] INFO root fetch - processPackages [nlpannotator]: Downloading https://files.pythonhosted.org/packages/f9/13/22d375888269375c1006d2959846d24896a76868ab4234e82151c6684e1c/nlpannotator-1.0.3.tar.gz
+[2023-04-22 13:45:26] INFO root fetch - processPackages [dphelper]: Downloading https://files.pythonhosted.org/packages/24/01/032e30d3db09095900277a773b2b1ce92f6b7445f378d730d16c34b495a6/dphelper-0.0.3.tar.gz
+[2023-04-22 13:45:26] WARNING root fetch - processPackages [modoboa]: Skipping package: exceeds size limit 11884233>=10485760
+[2023-04-22 13:45:26] INFO root fetch - main [MainThread]: End processing [modoboa] error
+[2023-04-22 13:45:26] INFO root fetch - processPackages [featurizerai]: Downloading https://files.pythonhosted.org/packages/f4/22/5d6f63bf92deb71c0675a9c83403148760e5bb4d5c6d287118691fe4eea7/featurizerai-1.3.1.tar.gz
+[2023-04-22 13:45:26] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/64/6d/adf69ea0567639c6bc364ca309fd47d8aa1af298d6bd97b9b6b92e757bc5/kcli-99.0.202304221143-py3-none-any.whl
+[2023-04-22 13:45:26] INFO root fetch - processPackages [jija]: Downloading https://files.pythonhosted.org/packages/31/1b/1e7214eb54b4ff8d9237d0e8d973f2d85fdcc940f02f44f78462f83deb36/jija-0.3.1.tar.gz
+[2023-04-22 13:45:26] INFO root fetch - processPackages [featurizerai]: executing diffoscope
+[2023-04-22 13:45:26] INFO root fetch - processPackages [featurizerai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featurizerai-1.3.0.tar.gz tmp/featurizerai-1.3.1.tar.gz --markdown 20230422/f/featurizerai/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-04-22 13:45:27] INFO root fetch - processPackages [dphelper]: Downloading https://files.pythonhosted.org/packages/12/58/46d09ca39d61ee14a098915ae169a67a834e96904fa3d6d32baa8388a16b/dphelper-0.0.5.tar.gz
+[2023-04-22 13:45:27] INFO root fetch - processPackages [transon]: Downloading https://files.pythonhosted.org/packages/ec/25/d5cbf22373efe9ec9e6e04466768984f1b3a942fbbe034f55707f63b8afd/transon-0.0.7.tar.gz
+[2023-04-22 13:45:27] INFO root fetch - processPackages [nlpannotator]: Downloading https://files.pythonhosted.org/packages/8e/c0/648393f87de78c6878d94a6f0a2e1f5a29cb632fdad10c1efe3ec4fcaca2/nlpannotator-1.0.4.tar.gz
+[2023-04-22 13:45:27] INFO root fetch - processPackages [jija]: executing diffoscope
+[2023-04-22 13:45:27] INFO root fetch - processPackages [jija]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jija-0.3.tar.gz tmp/jija-0.3.1.tar.gz --markdown 20230422/j/jija/0.3-0.3.1/diff.md --exclude *.pyd
+[2023-04-22 13:45:27] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-22 13:45:27] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304221034-py3-none-any.whl.zip tmp/kcli-99.0.202304221143-py3-none-any.whl.zip --markdown 20230422/k/kcli/99.0.202304221034-99.0.202304221143/diff.md --exclude *.pyd
+[2023-04-22 13:45:27] INFO root fetch - processPackages [dphelper]: executing diffoscope
+[2023-04-22 13:45:27] INFO root fetch - processPackages [dphelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dphelper-0.0.3.tar.gz tmp/dphelper-0.0.5.tar.gz --markdown 20230422/d/dphelper/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-04-22 13:45:27] INFO root fetch - processPackages [nlpannotator]: executing diffoscope
+[2023-04-22 13:45:27] INFO root fetch - processPackages [nlpannotator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlpannotator-1.0.3.tar.gz tmp/nlpannotator-1.0.4.tar.gz --markdown 20230422/n/nlpannotator/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-22 13:45:27] INFO root fetch - processPackages [transon]: executing diffoscope
+[2023-04-22 13:45:27] INFO root fetch - processPackages [transon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transon-0.0.6.tar.gz tmp/transon-0.0.7.tar.gz --markdown 20230422/t/transon/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-22 13:45:28] INFO root fetch - main [MainThread]: End processing [featurizerai]: success
+[2023-04-22 13:45:28] INFO root fetch - main [MainThread]: End processing [jija]: success
+[2023-04-22 13:45:28] INFO root fetch - main [MainThread]: End processing [dphelper]: success
+[2023-04-22 13:45:28] INFO root fetch - main [MainThread]: End processing [nlpannotator]: success
+[2023-04-22 13:45:28] INFO root fetch - main [MainThread]: End processing [transon]: success
+[2023-04-22 13:45:34] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-22 13:45:34] INFO root fetch - main [MainThread]: Store serial: [17814245]
