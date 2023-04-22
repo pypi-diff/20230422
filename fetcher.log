@@ -13045,3 +13045,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 21:58:24] INFO root fetch - main [MainThread]: End processing [python-project-structure]: success
 [2023-04-22 21:58:38] INFO root fetch - main [MainThread]: End processing [erscipcard]: success
 [2023-04-22 21:58:38] INFO root fetch - main [MainThread]: Store serial: [17816745]
+[2023-04-22 22:03:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816745]
+[2023-04-22 22:03:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-22 22:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ox-script
+[2023-04-22 22:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vollseg
+[2023-04-22 22:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vesper-api
+[2023-04-22 22:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: corolab
+[2023-04-22 22:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-file-type
+[2023-04-22 22:03:48] INFO root fetch - processPackages [corolab]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-22 22:03:48] INFO root fetch - processPackages [vesper-api]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-22 22:03:48] INFO root fetch - processPackages [py-file-type]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-22 22:03:48] INFO root fetch - processPackages [ox-script]: New version: [0.3.2] Old Version: [0.3.0]
+[2023-04-22 22:03:48] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-22 22:03:48] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-22 22:03:48] INFO root fetch - processPackages [py-file-type]: executing diffoscope
+[2023-04-22 22:03:48] INFO root fetch - processPackages [py-file-type]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_file_type-1.0.0.tar.gz tmp/py_file_type-1.1.0.tar.gz --markdown 20230422/p/py-file-type/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-22 22:03:49] INFO root fetch - processPackages [ox-script]: Downloading https://files.pythonhosted.org/packages/56/98/1384828913e6136b27034e0f1253f10a01d1486f0e180e687ba97898a31f/ox_script-0.3.0.tar.gz
+[2023-04-22 22:03:49] INFO root fetch - processPackages [corolab]: Downloading https://files.pythonhosted.org/packages/29/46/a50041f03fad4e3d644e4b79d65783ff74dff54c1a96e5b43ae11fdd8ade/corolab-0.1.8-cp39-cp39-win_amd64.whl
+[2023-04-22 22:03:49] INFO root fetch - processPackages [vesper-api]: Downloading https://files.pythonhosted.org/packages/5e/e9/a98e69c0b7c6273bd7b8cc33d664d3cace4da727aa8d980c1b36e889ec65/vesper_api-0.1.8-cp39-cp39-win_amd64.whl
+[2023-04-22 22:03:49] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-22 22:03:49] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-22 22:03:49] INFO root fetch - processPackages [ox-script]: Downloading https://files.pythonhosted.org/packages/73/08/2d78788d2c42e010f5d75705a943c172b493cb5cad86c00714b699509528/ox_script-0.3.2.tar.gz
+[2023-04-22 22:03:49] INFO root fetch - processPackages [vesper-api]: executing diffoscope
+[2023-04-22 22:03:49] INFO root fetch - processPackages [vesper-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vesper_api-0.1.7-cp39-cp39-win_amd64.whl.zip tmp/vesper_api-0.1.8-cp39-cp39-win_amd64.whl.zip --markdown 20230422/v/vesper-api/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-22 22:03:49] INFO root fetch - processPackages [ox-script]: executing diffoscope
+[2023-04-22 22:03:49] INFO root fetch - processPackages [ox-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ox_script-0.3.0.tar.gz tmp/ox_script-0.3.2.tar.gz --markdown 20230422/o/ox-script/0.3.0-0.3.2/diff.md --exclude *.pyd
+[2023-04-22 22:03:50] INFO root fetch - main [MainThread]: End processing [vesper-api]: success
+[2023-04-22 22:03:50] INFO root fetch - main [MainThread]: End processing [ox-script]: success
+[2023-04-22 22:03:50] INFO root fetch - processPackages [corolab]: executing diffoscope
+[2023-04-22 22:03:50] INFO root fetch - processPackages [corolab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corolab-0.1.7-cp39-cp39-win_amd64.whl.zip tmp/corolab-0.1.8-cp39-cp39-win_amd64.whl.zip --markdown 20230422/c/corolab/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-22 22:03:51] INFO root fetch - main [MainThread]: End processing [py-file-type]: success
+[2023-04-22 22:03:51] INFO root fetch - main [MainThread]: End processing [corolab]: success
+[2023-04-22 22:03:51] INFO root fetch - main [MainThread]: Store serial: [17816761]
