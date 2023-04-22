@@ -6772,3 +6772,76 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 09:33:44] INFO root fetch - main [MainThread]: End processing [pmserializer]: success
 [2023-04-22 09:33:44] INFO root fetch - main [MainThread]: End processing [vocode]: success
 [2023-04-22 09:33:44] INFO root fetch - main [MainThread]: Store serial: [17813015]
+[2023-04-22 09:38:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813015]
+[2023-04-22 09:38:53] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-22 09:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vicops-api
+[2023-04-22 09:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dqrobotics
+[2023-04-22 09:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dvinfo
+[2023-04-22 09:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yzhanurlparser
+[2023-04-22 09:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dqrobotics
+[2023-04-22 09:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: streaming-form-data
+[2023-04-22 09:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo8-addon-website-slides
+[2023-04-22 09:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dpsa4fl-bindings
+[2023-04-22 09:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: wbBase
+[2023-04-22 09:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: scSAMP
+[2023-04-22 09:38:53] INFO root fetch - processPackages [dvinfo]: New version: [0.2] Old Version: [0.1.2]
+[2023-04-22 09:38:53] INFO root fetch - processPackages [streaming-form-data]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-04-22 09:38:53] INFO root fetch - processPackages [yzhanurlparser]: New version: [0.0.9] Old Version: [0.0.1]
+[2023-04-22 09:38:53] INFO root fetch - processPackages [vicops-api]: New version: [1.1.0] Old Version: [1.0.3]
+[2023-04-22 09:38:53] INFO root fetch - processPackages [dpsa4fl-bindings]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 09:38:53] INFO root fetch - processPackages [odoo8-addon-website-slides]: New version: [8.0.2.0.1.99.dev6] Old Version: [8.0.2.0.1.99.dev5]
+[2023-04-22 09:38:53] WARNING root fetch - processPackages [scSAMP]: Skipping, unable to determine old version
+[2023-04-22 09:38:53] INFO root fetch - processPackages [scSAMP]: Start processing: yzhanurlparser
+[2023-04-22 09:38:53] INFO root fetch - main [MainThread]: End processing [scSAMP] error
+[2023-04-22 09:38:53] INFO root fetch - processPackages [dqrobotics]: New version: [23.4.0a9] Old Version: [23.4.0a8]
+[2023-04-22 09:38:53] INFO root fetch - processPackages [dqrobotics]: New version: [23.4.0a9] Old Version: [23.4.0a8]
+[2023-04-22 09:38:53] INFO root fetch - processPackages [wbBase]: New version: [0.1.53] Old Version: [0.1.52]
+[2023-04-22 09:38:53] INFO root fetch - processPackages [yzhanurlparser]: New version: [0.0.9] Old Version: [0.0.1]
+[2023-04-22 09:38:53] INFO root fetch - processPackages [dvinfo]: Downloading https://files.pythonhosted.org/packages/02/5b/a265f11bc4278926b4def68bfb12d130668af33e8776891e25e5a91720f9/dvinfo-0.1.2.tar.gz
+[2023-04-22 09:38:53] INFO root fetch - processPackages [dpsa4fl-bindings]: executing diffoscope
+[2023-04-22 09:38:53] INFO root fetch - processPackages [dpsa4fl-bindings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dpsa4fl_bindings-0.1.8.tar.gz tmp/dpsa4fl_bindings-0.1.9.tar.gz --markdown 20230422/d/dpsa4fl-bindings/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 09:38:53] INFO root fetch - processPackages [yzhanurlparser]: Downloading https://files.pythonhosted.org/packages/24/38/e3fc3b70a077a1df59ab6c83ee0180bb673db58b2b00da1a288980d8902c/yzhanurlparser-0.0.1.tar.gz
+[2023-04-22 09:38:54] INFO root fetch - processPackages [yzhanurlparser]: Downloading https://files.pythonhosted.org/packages/24/38/e3fc3b70a077a1df59ab6c83ee0180bb673db58b2b00da1a288980d8902c/yzhanurlparser-0.0.1.tar.gz
+[2023-04-22 09:38:54] INFO root fetch - processPackages [streaming-form-data]: Downloading https://files.pythonhosted.org/packages/a0/08/d7b9a11cbb17cbd8957d6cd827dd65b042823ba3d1c11320a70fdb3b807e/streaming-form-data-1.8.1.tar.gz
+[2023-04-22 09:38:54] INFO root fetch - processPackages [wbBase]: Downloading https://files.pythonhosted.org/packages/3e/c1/c5867200ce7583341dc20b8da7f5b845b98dfa41273619e2fc013191e0f5/wbBase-0.1.52.tar.gz
+[2023-04-22 09:38:54] INFO root fetch - processPackages [dqrobotics]: Downloading https://files.pythonhosted.org/packages/e1/20/7e3adf96ec8fad28b2b946fbe1237e08eb8e48ccaefe5d66bf4ec72e71f9/dqrobotics-23.4.0a8-cp39-cp39-win_amd64.whl
+[2023-04-22 09:38:54] INFO root fetch - processPackages [dqrobotics]: Downloading https://files.pythonhosted.org/packages/e1/20/7e3adf96ec8fad28b2b946fbe1237e08eb8e48ccaefe5d66bf4ec72e71f9/dqrobotics-23.4.0a8-cp39-cp39-win_amd64.whl
+[2023-04-22 09:38:54] INFO root fetch - processPackages [odoo8-addon-website-slides]: Downloading https://files.pythonhosted.org/packages/45/2a/f7d9e4c533724eaf50e219ba067d519d21296b2e212d6f3a9828850c5f15/odoo8_addon_website_slides-8.0.2.0.1.99.dev5-py2-none-any.whl
+[2023-04-22 09:38:54] INFO root fetch - processPackages [vicops-api]: Downloading https://files.pythonhosted.org/packages/c1/96/760c4fac29d62a5aaa0c44a5e8a12abd31d192baf23c25df24287a649c3f/vicops_api-1.1.0.tar.gz
+[2023-04-22 09:38:54] INFO root fetch - processPackages [dvinfo]: Downloading https://files.pythonhosted.org/packages/6f/a0/95b8e4535b87a384d916178a36533faf2f27fde4a20504a49239f62ac407/dvinfo-0.2.tar.gz
+[2023-04-22 09:38:54] INFO root fetch - processPackages [vicops-api]: executing diffoscope
+[2023-04-22 09:38:54] INFO root fetch - processPackages [vicops-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vicops_api-1.0.3.tar.gz tmp/vicops_api-1.1.0.tar.gz --markdown 20230422/v/vicops-api/1.0.3-1.1.0/diff.md --exclude *.pyd
+[2023-04-22 09:38:54] INFO root fetch - processPackages [yzhanurlparser]: Downloading https://files.pythonhosted.org/packages/16/43/8d9a8849b8f73d7c1893c6a8b1d8cdb0053c38cff2babafc8f3e8a7825de/yzhanurlparser-0.0.9.tar.gz
+[2023-04-22 09:38:54] INFO root fetch - processPackages [yzhanurlparser]: Downloading https://files.pythonhosted.org/packages/16/43/8d9a8849b8f73d7c1893c6a8b1d8cdb0053c38cff2babafc8f3e8a7825de/yzhanurlparser-0.0.9.tar.gz
+[2023-04-22 09:38:54] INFO root fetch - processPackages [streaming-form-data]: Downloading https://files.pythonhosted.org/packages/8e/c9/35cd71c7b1afbea8a7132081cb32a44c476f3bf9936137afe17c01ab6daf/streaming-form-data-1.9.0.tar.gz
+[2023-04-22 09:38:54] INFO root fetch - processPackages [dvinfo]: executing diffoscope
+[2023-04-22 09:38:54] INFO root fetch - processPackages [dvinfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvinfo-0.1.2.tar.gz tmp/dvinfo-0.2.tar.gz --markdown 20230422/d/dvinfo/0.1.2-0.2/diff.md --exclude *.pyd
+[2023-04-22 09:38:54] INFO root fetch - processPackages [wbBase]: Downloading https://files.pythonhosted.org/packages/12/7f/7c91c2143676aa89beafbc5efc1c4f5396626add31110ed0f085e284c805/wbBase-0.1.53.tar.gz
+[2023-04-22 09:38:54] INFO root fetch - processPackages [yzhanurlparser]: executing diffoscope
+[2023-04-22 09:38:54] INFO root fetch - processPackages [yzhanurlparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yzhanurlparser-0.0.1.tar.gz tmp/yzhanurlparser-0.0.9.tar.gz --markdown 20230422/y/yzhanurlparser/0.0.1-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 09:38:54] INFO root fetch - processPackages [dqrobotics]: Downloading https://files.pythonhosted.org/packages/dc/81/3a8a4c69b5c1fbe191b5af3e7cedb114e090700ee6499e36456b97c7ad75/dqrobotics-23.4.0a9-cp39-cp39-win_amd64.whl
+[2023-04-22 09:38:54] INFO root fetch - processPackages [dqrobotics]: Downloading https://files.pythonhosted.org/packages/dc/81/3a8a4c69b5c1fbe191b5af3e7cedb114e090700ee6499e36456b97c7ad75/dqrobotics-23.4.0a9-cp39-cp39-win_amd64.whl
+[2023-04-22 09:38:54] INFO root fetch - processPackages [yzhanurlparser]: executing diffoscope
+[2023-04-22 09:38:54] INFO root fetch - processPackages [yzhanurlparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yzhanurlparser-0.0.1.tar.gz tmp/yzhanurlparser-0.0.9.tar.gz --markdown 20230422/y/yzhanurlparser/0.0.1-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 09:38:54] INFO root fetch - processPackages [dqrobotics]: executing diffoscope
+[2023-04-22 09:38:54] INFO root fetch - processPackages [dqrobotics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dqrobotics-23.4.0a8-cp39-cp39-win_amd64.whl.zip tmp/dqrobotics-23.4.0a9-cp39-cp39-win_amd64.whl.zip --markdown 20230422/d/dqrobotics/23.4.0a8-23.4.0a9/diff.md --exclude *.pyd
+[2023-04-22 09:38:54] INFO root fetch - processPackages [dqrobotics]: executing diffoscope
+[2023-04-22 09:38:54] INFO root fetch - processPackages [dqrobotics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dqrobotics-23.4.0a8-cp39-cp39-win_amd64.whl.zip tmp/dqrobotics-23.4.0a9-cp39-cp39-win_amd64.whl.zip --markdown 20230422/d/dqrobotics/23.4.0a8-23.4.0a9/diff.md --exclude *.pyd
+[2023-04-22 09:38:54] INFO root fetch - processPackages [wbBase]: executing diffoscope
+[2023-04-22 09:38:54] INFO root fetch - processPackages [wbBase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wbBase-0.1.52.tar.gz tmp/wbBase-0.1.53.tar.gz --markdown 20230422/w/wbBase/0.1.52-0.1.53/diff.md --exclude *.pyd
+[2023-04-22 09:38:54] INFO root fetch - processPackages [streaming-form-data]: executing diffoscope
+[2023-04-22 09:38:54] INFO root fetch - processPackages [streaming-form-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streaming-form-data-1.8.1.tar.gz tmp/streaming-form-data-1.9.0.tar.gz --markdown 20230422/s/streaming-form-data/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-04-22 09:38:55] INFO root fetch - processPackages [odoo8-addon-website-slides]: Downloading https://files.pythonhosted.org/packages/08/01/2ee2603713263417105552a25296d5ac581ed441199411d1392669a9d935/odoo8_addon_website_slides-8.0.2.0.1.99.dev6-py2-none-any.whl
+[2023-04-22 09:38:55] INFO root fetch - main [MainThread]: End processing [dvinfo]: success
+[2023-04-22 09:38:55] INFO root fetch - processPackages [odoo8-addon-website-slides]: executing diffoscope
+[2023-04-22 09:38:55] INFO root fetch - processPackages [odoo8-addon-website-slides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_website_slides-8.0.2.0.1.99.dev5-py2-none-any.whl.zip tmp/odoo8_addon_website_slides-8.0.2.0.1.99.dev6-py2-none-any.whl.zip --markdown 20230422/o/odoo8-addon-website-slides/8.0.2.0.1.99.dev5-8.0.2.0.1.99.dev6/diff.md --exclude *.pyd
+[2023-04-22 09:38:55] INFO root fetch - main [MainThread]: End processing [vicops-api]: success
+[2023-04-22 09:38:55] INFO root fetch - main [MainThread]: End processing [yzhanurlparser]: success
+[2023-04-22 09:38:55] INFO root fetch - main [MainThread]: End processing [yzhanurlparser]: success
+[2023-04-22 09:38:56] INFO root fetch - main [MainThread]: End processing [dpsa4fl-bindings]: success
+[2023-04-22 09:38:56] INFO root fetch - main [MainThread]: End processing [dqrobotics]: success
+[2023-04-22 09:38:56] INFO root fetch - main [MainThread]: End processing [dqrobotics]: success
+[2023-04-22 09:38:56] INFO root fetch - main [MainThread]: End processing [wbBase]: success
+[2023-04-22 09:38:58] INFO root fetch - main [MainThread]: End processing [odoo8-addon-website-slides]: success
+[2023-04-22 09:38:58] INFO root fetch - main [MainThread]: End processing [streaming-form-data]: success
+[2023-04-22 09:38:58] INFO root fetch - main [MainThread]: Store serial: [17813072]
