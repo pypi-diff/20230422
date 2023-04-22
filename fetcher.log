@@ -4767,3 +4767,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 05:58:33] INFO root fetch - main [MainThread]: End processing [karrio.dpdhl]: success
 [2023-04-22 05:58:34] INFO root fetch - main [MainThread]: End processing [TPLUtils]: success
 [2023-04-22 05:58:34] INFO root fetch - main [MainThread]: Store serial: [17811983]
+[2023-04-22 06:03:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811983]
+[2023-04-22 06:03:42] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 06:03:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gqylpy-dict
+[2023-04-22 06:03:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: StringFix
+[2023-04-22 06:03:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uwdtool
+[2023-04-22 06:03:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spycy-aneeshdurg
+[2023-04-22 06:03:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: HHLtools
+[2023-04-22 06:03:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: search-hound-ai
+[2023-04-22 06:03:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: voice100
+[2023-04-22 06:03:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: frechet-audio-distance
+[2023-04-22 06:03:42] INFO root fetch - processPackages [search-hound-ai]: New version: [0.1.4] Old Version: [0.1.1]
+[2023-04-22 06:03:42] INFO root fetch - processPackages [HHLtools]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-22 06:03:42] INFO root fetch - processPackages [uwdtool]: New version: [1.0.1] Old Version: [1.0]
+[2023-04-22 06:03:42] INFO root fetch - processPackages [StringFix]: New version: [0.6.7] Old Version: [0.6.5]
+[2023-04-22 06:03:42] INFO root fetch - processPackages [spycy-aneeshdurg]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 06:03:42] INFO root fetch - processPackages [voice100]: New version: [1.6.0] Old Version: [1.3.2]
+[2023-04-22 06:03:42] INFO root fetch - processPackages [gqylpy-dict]: New version: [1.2] Old Version: [1.1.4]
+[2023-04-22 06:03:42] INFO root fetch - processPackages [frechet-audio-distance]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-04-22 06:03:43] INFO root fetch - processPackages [uwdtool]: executing diffoscope
+[2023-04-22 06:03:43] INFO root fetch - processPackages [uwdtool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uwdtool-1.0.tar.gz tmp/uwdtool-1.0.1.tar.gz --markdown 20230422/u/uwdtool/1.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 06:03:43] INFO root fetch - processPackages [search-hound-ai]: executing diffoscope
+[2023-04-22 06:03:43] INFO root fetch - processPackages [search-hound-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/search_hound_ai-0.1.1.tar.gz tmp/search_hound_ai-0.1.4.tar.gz --markdown 20230422/s/search-hound-ai/0.1.1-0.1.4/diff.md --exclude *.pyd
+[2023-04-22 06:03:43] INFO root fetch - processPackages [spycy-aneeshdurg]: Downloading https://files.pythonhosted.org/packages/f0/1b/dbef977e161416a8f3a4974402cb0f5f8a3105903d989da7b7f412edbcb5/spycy_aneeshdurg-0.0.1.tar.gz
+[2023-04-22 06:03:43] INFO root fetch - processPackages [HHLtools]: Downloading https://files.pythonhosted.org/packages/4d/f2/31a9381e111fdad1ac25bf3cf6503aa669c963a85d2c3740510bb0037f6f/HHLtools-1.2.0-py2.py3-none-any.whl
+[2023-04-22 06:03:43] INFO root fetch - processPackages [frechet-audio-distance]: Downloading https://files.pythonhosted.org/packages/fd/2a/11763576b169883d8937c4e9a26c65587467c9c8676779cbde2a7590c6eb/frechet_audio_distance-0.0.4.tar.gz
+[2023-04-22 06:03:43] INFO root fetch - processPackages [voice100]: Downloading https://files.pythonhosted.org/packages/a0/59/3923402ef063d9d7e9355febe2f085810afbf57a831e2924be7117dfceab/voice100-1.3.2.tar.gz
+[2023-04-22 06:03:43] INFO root fetch - processPackages [gqylpy-dict]: Downloading https://files.pythonhosted.org/packages/f6/4d/24cca35eb5e0e7cbc8612e5ad99d12fb2df31fc6a78ac5855dc68ea420d0/gqylpy_dict-1.1.4.tar.gz
+[2023-04-22 06:03:43] INFO root fetch - processPackages [StringFix]: Downloading https://files.pythonhosted.org/packages/8b/f1/b81d0808f5fafd029ef44edba610eb8b9cb63cbddd0d58b5e6b8f1037621/StringFix-0.6.7.tar.gz
+[2023-04-22 06:03:43] WARNING root fetch - processPackages [spycy-aneeshdurg]: Skipping package: exceeds size limit 18780099>=10485760
+[2023-04-22 06:03:43] INFO root fetch - main [MainThread]: End processing [spycy-aneeshdurg] error
+[2023-04-22 06:03:43] INFO root fetch - processPackages [HHLtools]: executing diffoscope
+[2023-04-22 06:03:43] INFO root fetch - processPackages [HHLtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HHLtools-1.1.0-py2.py3-none-any.whl.zip tmp/HHLtools-1.2.0-py2.py3-none-any.whl.zip --markdown 20230422/H/HHLtools/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-22 06:03:43] INFO root fetch - processPackages [StringFix]: executing diffoscope
+[2023-04-22 06:03:43] INFO root fetch - processPackages [StringFix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/StringFix-0.6.5.tar.gz tmp/StringFix-0.6.7.tar.gz --markdown 20230422/S/StringFix/0.6.5-0.6.7/diff.md --exclude *.pyd
+[2023-04-22 06:03:43] INFO root fetch - processPackages [frechet-audio-distance]: Downloading https://files.pythonhosted.org/packages/2f/fc/d42da3bca83296e208c1268f0280732b5badbd7ce32fb1e637ed6b1a5169/frechet_audio_distance-0.1.0.tar.gz
+[2023-04-22 06:03:43] INFO root fetch - processPackages [voice100]: Downloading https://files.pythonhosted.org/packages/87/29/bf07019715058f27fcaef2c49808456cf2fcd3e87e7163ff6ea5ffd3d51e/voice100-1.6.0.tar.gz
+[2023-04-22 06:03:43] INFO root fetch - processPackages [gqylpy-dict]: Downloading https://files.pythonhosted.org/packages/f4/71/c77a0384bf19d8c915b042fb29e337f64a07187d089d37c2866cdf773c68/gqylpy_dict-1.2.tar.gz
+[2023-04-22 06:03:43] INFO root fetch - processPackages [frechet-audio-distance]: executing diffoscope
+[2023-04-22 06:03:43] INFO root fetch - processPackages [frechet-audio-distance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frechet_audio_distance-0.0.4.tar.gz tmp/frechet_audio_distance-0.1.0.tar.gz --markdown 20230422/f/frechet-audio-distance/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-04-22 06:03:43] INFO root fetch - processPackages [voice100]: executing diffoscope
+[2023-04-22 06:03:43] INFO root fetch - processPackages [voice100]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voice100-1.3.2.tar.gz tmp/voice100-1.6.0.tar.gz --markdown 20230422/v/voice100/1.3.2-1.6.0/diff.md --exclude *.pyd
+[2023-04-22 06:03:43] INFO root fetch - processPackages [gqylpy-dict]: executing diffoscope
+[2023-04-22 06:03:43] INFO root fetch - processPackages [gqylpy-dict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gqylpy_dict-1.1.4.tar.gz tmp/gqylpy_dict-1.2.tar.gz --markdown 20230422/g/gqylpy-dict/1.1.4-1.2/diff.md --exclude *.pyd
+[2023-04-22 06:03:44] INFO root fetch - main [MainThread]: End processing [uwdtool]: success
+[2023-04-22 06:03:44] INFO root fetch - main [MainThread]: End processing [search-hound-ai]: success
+[2023-04-22 06:03:44] INFO root fetch - main [MainThread]: End processing [HHLtools]: success
+[2023-04-22 06:03:44] INFO root fetch - main [MainThread]: End processing [gqylpy-dict]: success
+[2023-04-22 06:03:44] INFO root fetch - main [MainThread]: End processing [StringFix]: success
+[2023-04-22 06:03:45] INFO root fetch - main [MainThread]: End processing [frechet-audio-distance]: success
+[2023-04-22 06:03:45] INFO root fetch - main [MainThread]: End processing [voice100]: success
+[2023-04-22 06:03:45] INFO root fetch - main [MainThread]: Store serial: [17812009]
