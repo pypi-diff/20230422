@@ -3938,3 +3938,34 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 04:00:29] INFO root fetch - main [MainThread]: End processing [fluxvault]: success
 [2023-04-22 04:00:29] INFO root fetch - main [MainThread]: End processing [fluxrpc]: success
 [2023-04-22 04:00:29] INFO root fetch - main [MainThread]: Store serial: [17811524]
+[2023-04-22 04:05:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811524]
+[2023-04-22 04:05:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 04:05:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ladybug-rhino
+[2023-04-22 04:05:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: open-space-toolkit-physics
+[2023-04-22 04:05:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ctep
+[2023-04-22 04:05:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fluxrpc
+[2023-04-22 04:05:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fluxvault
+[2023-04-22 04:05:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ivan-pro
+[2023-04-22 04:05:38] INFO root fetch - processPackages [fluxrpc]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 04:05:38] INFO root fetch - processPackages [fluxvault]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 04:05:38] WARNING root fetch - processPackages [ivan-pro]: Skipping, unable to determine old version
+[2023-04-22 04:05:38] WARNING root fetch - processPackages [ctep]: Skipping, unable to determine old version
+[2023-04-22 04:05:38] INFO root fetch - main [MainThread]: End processing [ivan-pro] error
+[2023-04-22 04:05:38] INFO root fetch - main [MainThread]: End processing [ctep] error
+[2023-04-22 04:05:38] INFO root fetch - processPackages [ladybug-rhino]: New version: [1.9.0] Old Version: [1.8.2]
+[2023-04-22 04:05:38] INFO root fetch - processPackages [fluxrpc]: executing diffoscope
+[2023-04-22 04:05:38] INFO root fetch - processPackages [fluxrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxrpc-0.9.8.tar.gz tmp/fluxrpc-0.9.9.tar.gz --markdown 20230422/f/fluxrpc/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 04:05:38] INFO root fetch - processPackages [fluxvault]: executing diffoscope
+[2023-04-22 04:05:38] INFO root fetch - processPackages [fluxvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxvault-0.9.8.tar.gz tmp/fluxvault-0.9.9.tar.gz --markdown 20230422/f/fluxvault/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 04:05:38] INFO root fetch - processPackages [open-space-toolkit-physics]: New version: [0.6.0] Old Version: [0.5.9]
+[2023-04-22 04:05:38] INFO root fetch - processPackages [open-space-toolkit-physics]: Downloading https://files.pythonhosted.org/packages/43/58/9e296f84436f8a7098f41e4cab8bb2630361973a254a7134f5524898aae0/open_space_toolkit_physics-0.5.9-py39-none-any.whl
+[2023-04-22 04:05:38] INFO root fetch - processPackages [ladybug-rhino]: executing diffoscope
+[2023-04-22 04:05:38] INFO root fetch - processPackages [ladybug-rhino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ladybug-rhino-1.8.2.tar.gz tmp/ladybug-rhino-1.9.0.tar.gz --markdown 20230422/l/ladybug-rhino/1.8.2-1.9.0/diff.md --exclude *.pyd
+[2023-04-22 04:05:39] INFO root fetch - main [MainThread]: End processing [fluxvault]: success
+[2023-04-22 04:05:39] INFO root fetch - main [MainThread]: End processing [fluxrpc]: success
+[2023-04-22 04:05:39] INFO root fetch - processPackages [open-space-toolkit-physics]: Downloading https://files.pythonhosted.org/packages/33/b6/1c038eaaf7ce2992dec628d9399ac02c5aa1dd88e32492d1351ebbdbb842/open_space_toolkit_physics-0.6.0-py39-none-any.whl
+[2023-04-22 04:05:39] INFO root fetch - main [MainThread]: End processing [ladybug-rhino]: success
+[2023-04-22 04:05:40] INFO root fetch - processPackages [open-space-toolkit-physics]: executing diffoscope
+[2023-04-22 04:05:40] INFO root fetch - processPackages [open-space-toolkit-physics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_space_toolkit_physics-0.5.9-py39-none-any.whl.zip tmp/open_space_toolkit_physics-0.6.0-py39-none-any.whl.zip --markdown 20230422/o/open-space-toolkit-physics/0.5.9-0.6.0/diff.md --exclude *.pyd
+[2023-04-22 04:06:05] INFO root fetch - main [MainThread]: End processing [open-space-toolkit-physics]: success
+[2023-04-22 04:06:05] INFO root fetch - main [MainThread]: Store serial: [17811553]
