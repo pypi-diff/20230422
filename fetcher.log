@@ -4331,3 +4331,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 05:09:17] INFO root fetch - main [MainThread]: End processing [hagis]: success
 [2023-04-22 05:09:17] INFO root fetch - main [MainThread]: End processing [aioqzone]: success
 [2023-04-22 05:09:17] INFO root fetch - main [MainThread]: Store serial: [17811766]
+[2023-04-22 05:14:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811766]
+[2023-04-22 05:14:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-22 05:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: foursight-core
+[2023-04-22 05:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: labcrawler
+[2023-04-22 05:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: GANDLF
+[2023-04-22 05:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: foursight-core
+[2023-04-22 05:14:25] INFO root fetch - processPackages [GANDLF]: New version: [0.0.16.dev20230421] Old Version: [0.0.16.dev20230420]
+[2023-04-22 05:14:25] INFO root fetch - processPackages [labcrawler]: New version: [1.0.0] Old Version: [0.4.2]
+[2023-04-22 05:14:25] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b9] Old Version: [4.1.0.1b8]
+[2023-04-22 05:14:25] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b9] Old Version: [4.1.0.1b8]
+[2023-04-22 05:14:26] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/4f/b8/9b7075d235d93ceb9a115fdaf02d3e5116ea226efb1df74dd2e22a0c6b20/GANDLF-0.0.16.dev20230421.tar.gz
+[2023-04-22 05:14:26] INFO root fetch - processPackages [labcrawler]: Downloading https://files.pythonhosted.org/packages/05/3a/adc8aad3c27eb0d750b703e33d90e746be55c5f3df79c4c0c034f7f8b5bd/labcrawler-0.4.2.tar.gz
+[2023-04-22 05:14:26] INFO root fetch - processPackages [GANDLF]: executing diffoscope
+[2023-04-22 05:14:26] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.16.dev20230420.tar.gz tmp/GANDLF-0.0.16.dev20230421.tar.gz --markdown 20230422/G/GANDLF/0.0.16.dev20230420-0.0.16.dev20230421/diff.md --exclude *.pyd
+[2023-04-22 05:14:26] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/28/00/c2f186cd59eb7e20964edfb9e74557cd88edb9469869196f0f2d45012219/foursight_core-4.1.0.1b8.tar.gz
+[2023-04-22 05:14:26] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/28/00/c2f186cd59eb7e20964edfb9e74557cd88edb9469869196f0f2d45012219/foursight_core-4.1.0.1b8.tar.gz
+[2023-04-22 05:14:26] INFO root fetch - processPackages [labcrawler]: Downloading https://files.pythonhosted.org/packages/8f/81/139a065d6d4539fbaacf497fb7815bdf76164bd2ff91ba6724505e9d19c0/labcrawler-1.0.0.tar.gz
+[2023-04-22 05:14:26] INFO root fetch - processPackages [labcrawler]: executing diffoscope
+[2023-04-22 05:14:26] INFO root fetch - processPackages [labcrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/labcrawler-0.4.2.tar.gz tmp/labcrawler-1.0.0.tar.gz --markdown 20230422/l/labcrawler/0.4.2-1.0.0/diff.md --exclude *.pyd
+[2023-04-22 05:14:26] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/b0/76/0a2f4e1556f109173b6bb3012d373ce3f0feca676897b98e71defeb1714a/foursight_core-4.1.0.1b9-py3-none-any.whl
+[2023-04-22 05:14:26] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/b0/76/0a2f4e1556f109173b6bb3012d373ce3f0feca676897b98e71defeb1714a/foursight_core-4.1.0.1b9-py3-none-any.whl
+[2023-04-22 05:14:26] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 05:14:26] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b8.tar.gz tmp/foursight_core-4.1.0.1b9-py3-none-any.whl.zip --markdown 20230422/f/foursight-core/4.1.0.1b8-4.1.0.1b9/diff.md --exclude *.pyd
+[2023-04-22 05:14:26] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 05:14:26] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b8.tar.gz tmp/foursight_core-4.1.0.1b9-py3-none-any.whl.zip --markdown 20230422/f/foursight-core/4.1.0.1b8-4.1.0.1b9/diff.md --exclude *.pyd
+[2023-04-22 05:14:27] INFO root fetch - main [MainThread]: End processing [labcrawler]: success
+[2023-04-22 05:14:28] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
+[2023-04-22 05:14:29] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 05:14:29] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 05:14:29] INFO root fetch - main [MainThread]: Store serial: [17811775]
