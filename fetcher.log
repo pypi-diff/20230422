@@ -7709,3 +7709,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 11:37:17] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
 [2023-04-22 11:37:17] INFO root fetch - main [MainThread]: End processing [diffusionjax]: success
 [2023-04-22 11:37:17] INFO root fetch - main [MainThread]: Store serial: [17813628]
+[2023-04-22 11:42:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813628]
+[2023-04-22 11:42:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-22 11:42:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ganga
+[2023-04-22 11:42:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sosse
+[2023-04-22 11:42:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: auto-screener
+[2023-04-22 11:42:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: watex
+[2023-04-22 11:42:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sohuprompt
+[2023-04-22 11:42:26] WARNING root fetch - processPackages [sosse]: Skipping, unable to determine old version
+[2023-04-22 11:42:26] INFO root fetch - main [MainThread]: End processing [sosse] error
+[2023-04-22 11:42:26] INFO root fetch - processPackages [watex]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-22 11:42:26] INFO root fetch - processPackages [ganga]: New version: [8.6.5] Old Version: [8.6.4]
+[2023-04-22 11:42:26] INFO root fetch - processPackages [auto-screener]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-22 11:42:26] WARNING root fetch - processPackages [sohuprompt]: Skipping, unable to determine old version
+[2023-04-22 11:42:26] INFO root fetch - main [MainThread]: End processing [sohuprompt] error
+[2023-04-22 11:42:26] INFO root fetch - processPackages [watex]: Downloading https://files.pythonhosted.org/packages/1e/69/648e526633f74947079c4b9982d75ebc46e04f8f69a39b88f8a784b7a18c/watex-0.2.1.tar.gz
+[2023-04-22 11:42:26] INFO root fetch - processPackages [ganga]: Downloading https://files.pythonhosted.org/packages/19/2b/2796a3e2da8b8e24d773b3eb9a6faefd2ffb6776d037c7b6883ba74a7842/ganga-8.6.4.tar.gz
+[2023-04-22 11:42:26] INFO root fetch - processPackages [auto-screener]: Downloading https://files.pythonhosted.org/packages/9e/f7/ee0fe57fc8510d92751ed25f6deee6d3f0511d7f05b6a4786c7a89e22a9f/auto-screener-0.0.6.tar.gz
+[2023-04-22 11:42:26] WARNING root fetch - processPackages [watex]: Skipping package: exceeds size limit 10629244>=10485760
+[2023-04-22 11:42:26] INFO root fetch - main [MainThread]: End processing [watex] error
+[2023-04-22 11:42:26] INFO root fetch - processPackages [auto-screener]: executing diffoscope
+[2023-04-22 11:42:26] INFO root fetch - processPackages [auto-screener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-screener-0.0.5.tar.gz tmp/auto-screener-0.0.6.tar.gz --markdown 20230422/a/auto-screener/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-22 11:42:27] INFO root fetch - processPackages [ganga]: Downloading https://files.pythonhosted.org/packages/23/6a/342a3fccb07ed83287becfea64aaf585c8199059333321a84c3efbba1902/ganga-8.6.5.tar.gz
+[2023-04-22 11:42:27] INFO root fetch - main [MainThread]: End processing [auto-screener]: success
+[2023-04-22 11:42:27] INFO root fetch - processPackages [ganga]: executing diffoscope
+[2023-04-22 11:42:27] INFO root fetch - processPackages [ganga]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ganga-8.6.4.tar.gz tmp/ganga-8.6.5.tar.gz --markdown 20230422/g/ganga/8.6.4-8.6.5/diff.md --exclude *.pyd
+[2023-04-22 11:42:38] INFO root fetch - main [MainThread]: End processing [ganga]: success
+[2023-04-22 11:42:38] INFO root fetch - main [MainThread]: Store serial: [17813646]
