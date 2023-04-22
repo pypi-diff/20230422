@@ -12813,3 +12813,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 21:25:54] INFO root fetch - main [MainThread]: End processing [bizlogic]: success
 [2023-04-22 21:26:10] INFO root fetch - main [MainThread]: End processing [pCrunch]: success
 [2023-04-22 21:26:10] INFO root fetch - main [MainThread]: Store serial: [17816622]
+[2023-04-22 21:31:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816622]
+[2023-04-22 21:31:20] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 21:31:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opentsdb2py
+[2023-04-22 21:31:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alacorder
+[2023-04-22 21:31:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vtece4564-gamelib
+[2023-04-22 21:31:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: neuralforecast
+[2023-04-22 21:31:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: piknik
+[2023-04-22 21:31:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: zuspec-parser
+[2023-04-22 21:31:20] INFO root fetch - processPackages [neuralforecast]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-04-22 21:31:20] INFO root fetch - processPackages [opentsdb2py]: New version: [0.1.3] Old Version: [0.1.1]
+[2023-04-22 21:31:20] INFO root fetch - processPackages [vtece4564-gamelib]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-22 21:31:20] INFO root fetch - processPackages [piknik]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-22 21:31:20] INFO root fetch - processPackages [zuspec-parser]: New version: [0.0.1.4774281909] Old Version: [0.0.1.4669246303]
+[2023-04-22 21:31:20] INFO root fetch - processPackages [alacorder]: New version: [79.6.3] Old Version: [79.6.2]
+[2023-04-22 21:31:20] INFO root fetch - processPackages [opentsdb2py]: Downloading https://files.pythonhosted.org/packages/2c/e5/271fe3c382b302148f0a400f6736d28bb13408146485cf86c245a6f9bbe8/opentsdb2py-0.1.1.tar.gz
+[2023-04-22 21:31:20] INFO root fetch - processPackages [piknik]: executing diffoscope
+[2023-04-22 21:31:20] INFO root fetch - processPackages [piknik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piknik-0.3.8.tar.gz tmp/piknik-0.3.9.tar.gz --markdown 20230422/p/piknik/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-22 21:31:20] INFO root fetch - processPackages [zuspec-parser]: executing diffoscope
+[2023-04-22 21:31:20] INFO root fetch - processPackages [zuspec-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_parser-0.0.1.4669246303-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_parser-0.0.1.4774281909-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230422/z/zuspec-parser/0.0.1.4669246303-0.0.1.4774281909/diff.md --exclude *.pyd
+[2023-04-22 21:31:20] INFO root fetch - processPackages [neuralforecast]: Downloading https://files.pythonhosted.org/packages/57/b1/174eb93890c7545fd886ffe2375b3436afe890915541df615dede24e44c3/neuralforecast-1.4.0.tar.gz
+[2023-04-22 21:31:20] INFO root fetch - processPackages [vtece4564-gamelib]: Downloading https://files.pythonhosted.org/packages/6c/56/0f8212677ea8619be5df88c9a050d82cab519a46a7cee87778636920924e/vtece4564-gamelib-0.0.6.tar.gz
+[2023-04-22 21:31:20] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/8f/f8/26ed7a5ec1b21199ce5820302853ec1577046b5a27967e3b3487944c8f24/alacorder-79.6.3.tar.gz
+[2023-04-22 21:31:20] INFO root fetch - processPackages [vtece4564-gamelib]: executing diffoscope
+[2023-04-22 21:31:20] INFO root fetch - processPackages [vtece4564-gamelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vtece4564-gamelib-0.0.5.tar.gz tmp/vtece4564-gamelib-0.0.6.tar.gz --markdown 20230422/v/vtece4564-gamelib/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-22 21:31:20] INFO root fetch - processPackages [neuralforecast]: Downloading https://files.pythonhosted.org/packages/5c/fb/83a5e7ce61f7e3abb0ed0e3889f8dc0f19b04c57b434314cdea527d3d1ef/neuralforecast-1.5.0.tar.gz
+[2023-04-22 21:31:20] INFO root fetch - processPackages [opentsdb2py]: Downloading https://files.pythonhosted.org/packages/1d/2f/4b2cd476c59375105e1f69206d84d9ff1124c21b88e84f6ccb922c9278ad/opentsdb2py-0.1.3.tar.gz
+[2023-04-22 21:31:20] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-04-22 21:31:20] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-79.6.2.tar.gz tmp/alacorder-79.6.3.tar.gz --markdown 20230422/a/alacorder/79.6.2-79.6.3/diff.md --exclude *.pyd
+[2023-04-22 21:31:20] INFO root fetch - processPackages [neuralforecast]: executing diffoscope
+[2023-04-22 21:31:20] INFO root fetch - processPackages [neuralforecast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuralforecast-1.4.0.tar.gz tmp/neuralforecast-1.5.0.tar.gz --markdown 20230422/n/neuralforecast/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-04-22 21:31:20] INFO root fetch - processPackages [opentsdb2py]: executing diffoscope
+[2023-04-22 21:31:20] INFO root fetch - processPackages [opentsdb2py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opentsdb2py-0.1.1.tar.gz tmp/opentsdb2py-0.1.3.tar.gz --markdown 20230422/o/opentsdb2py/0.1.1-0.1.3/diff.md --exclude *.pyd
+[2023-04-22 21:31:21] INFO root fetch - main [MainThread]: End processing [piknik]: success
+[2023-04-22 21:31:21] INFO root fetch - main [MainThread]: End processing [vtece4564-gamelib]: success
+[2023-04-22 21:31:21] INFO root fetch - main [MainThread]: End processing [opentsdb2py]: success
+[2023-04-22 21:31:22] INFO root fetch - main [MainThread]: End processing [neuralforecast]: success
+[2023-04-22 21:31:23] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-04-22 21:32:17] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
+[2023-04-22 21:32:17] INFO root fetch - main [MainThread]: Store serial: [17816642]
