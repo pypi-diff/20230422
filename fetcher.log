@@ -9026,3 +9026,49 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 14:27:57] INFO root fetch - main [MainThread]: End processing [promptest]: success
 [2023-04-22 14:28:01] INFO root fetch - main [MainThread]: End processing [django-deno]: success
 [2023-04-22 14:28:01] INFO root fetch - main [MainThread]: Store serial: [17814427]
+[2023-04-22 14:33:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814427]
+[2023-04-22 14:33:09] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 14:33:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyHRM
+[2023-04-22 14:33:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: otlmow-model
+[2023-04-22 14:33:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymultigit
+[2023-04-22 14:33:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jsl-django-sitemap
+[2023-04-22 14:33:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: curriculum-analysis
+[2023-04-22 14:33:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: telenvi
+[2023-04-22 14:33:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dm-reverb-nightly
+[2023-04-22 14:33:09] WARNING root fetch - processPackages [pyHRM]: Skipping, unable to determine old version
+[2023-04-22 14:33:09] INFO root fetch - main [MainThread]: End processing [pyHRM] error
+[2023-04-22 14:33:10] INFO root fetch - processPackages [pymultigit]: New version: [0.0.78] Old Version: [0.0.77]
+[2023-04-22 14:33:10] INFO root fetch - processPackages [curriculum-analysis]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 14:33:10] INFO root fetch - processPackages [jsl-django-sitemap]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-22 14:33:10] INFO root fetch - processPackages [telenvi]: New version: [5.0.4] Old Version: [5.0.3]
+[2023-04-22 14:33:10] INFO root fetch - processPackages [otlmow-model]: New version: [2.7.3] Old Version: [2.7.2]
+[2023-04-22 14:33:10] INFO root fetch - processPackages [dm-reverb-nightly]: New version: [0.9.0.dev20221207] Old Version: [0.9.0.dev20221206]
+[2023-04-22 14:33:10] INFO root fetch - processPackages [otlmow-model]: Downloading https://files.pythonhosted.org/packages/aa/fe/b117b46e1427a81fa8fa05468cad3e7015a78cc6443ee4b9520533cc5a4b/otlmow_model-2.7.2.tar.gz
+[2023-04-22 14:33:10] INFO root fetch - processPackages [curriculum-analysis]: Downloading https://files.pythonhosted.org/packages/d9/95/60e7905e2ac519d24d42d3f5a8e4e751ef76c213b1c6e48c7777ec005678/curriculum_analysis-0.1.0.tar.gz
+[2023-04-22 14:33:10] INFO root fetch - processPackages [jsl-django-sitemap]: Downloading https://files.pythonhosted.org/packages/26/8e/d6b4fac52bd8b85954661999cbe4e8baba921acb3f05695d267b2719c545/jsl_django_sitemap-1.2.3.tar.gz
+[2023-04-22 14:33:10] INFO root fetch - processPackages [pymultigit]: Downloading https://files.pythonhosted.org/packages/dc/c8/82d24a8fd3dacd7943c77e94534aba91d9f0b69fd2376197668ce767f81a/pymultigit-0.0.77.tar.gz
+[2023-04-22 14:33:10] INFO root fetch - processPackages [dm-reverb-nightly]: Downloading https://files.pythonhosted.org/packages/b4/60/e92fdb2c772dd865b56f7c50bfc1c4bffe5431b4007700cd760900e7aaf2/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-22 14:33:10] INFO root fetch - processPackages [telenvi]: Downloading https://files.pythonhosted.org/packages/a8/f3/6b195734ae66b4552b462f0a374da65963e91d93d267941d200c7d8ffb20/telenvi-5.0.4.tar.gz
+[2023-04-22 14:33:10] INFO root fetch - processPackages [jsl-django-sitemap]: executing diffoscope
+[2023-04-22 14:33:10] INFO root fetch - processPackages [jsl-django-sitemap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsl_django_sitemap-1.2.2.tar.gz tmp/jsl_django_sitemap-1.2.3.tar.gz --markdown 20230422/j/jsl-django-sitemap/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-22 14:33:10] INFO root fetch - processPackages [curriculum-analysis]: Downloading https://files.pythonhosted.org/packages/79/da/5a4922e1696dc81e2ccb5b411e185a98280568cdd63644390eee9b5b1d76/curriculum_analysis-0.1.1.tar.gz
+[2023-04-22 14:33:10] INFO root fetch - processPackages [pymultigit]: Downloading https://files.pythonhosted.org/packages/4b/f1/2062e9db33863bdb2f5e0c7057ab75765447e1089d3b40cd4c0e0aa7e6d2/pymultigit-0.0.78.tar.gz
+[2023-04-22 14:33:10] INFO root fetch - processPackages [telenvi]: executing diffoscope
+[2023-04-22 14:33:10] INFO root fetch - processPackages [telenvi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telenvi-5.0.3.tar.gz tmp/telenvi-5.0.4.tar.gz --markdown 20230422/t/telenvi/5.0.3-5.0.4/diff.md --exclude *.pyd
+[2023-04-22 14:33:10] INFO root fetch - processPackages [otlmow-model]: Downloading https://files.pythonhosted.org/packages/1e/d1/d66367cc39810d80836a2f7a587a089861d10e8404e356bb1242f29c2dc1/otlmow_model-2.7.3.tar.gz
+[2023-04-22 14:33:10] INFO root fetch - processPackages [curriculum-analysis]: executing diffoscope
+[2023-04-22 14:33:10] INFO root fetch - processPackages [curriculum-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/curriculum_analysis-0.1.0.tar.gz tmp/curriculum_analysis-0.1.1.tar.gz --markdown 20230422/c/curriculum-analysis/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 14:33:10] INFO root fetch - processPackages [pymultigit]: executing diffoscope
+[2023-04-22 14:33:10] INFO root fetch - processPackages [pymultigit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymultigit-0.0.77.tar.gz tmp/pymultigit-0.0.78.tar.gz --markdown 20230422/p/pymultigit/0.0.77-0.0.78/diff.md --exclude *.pyd
+[2023-04-22 14:33:10] INFO root fetch - processPackages [otlmow-model]: executing diffoscope
+[2023-04-22 14:33:10] INFO root fetch - processPackages [otlmow-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otlmow_model-2.7.2.tar.gz tmp/otlmow_model-2.7.3.tar.gz --markdown 20230422/o/otlmow-model/2.7.2-2.7.3/diff.md --exclude *.pyd
+[2023-04-22 14:33:11] INFO root fetch - main [MainThread]: End processing [jsl-django-sitemap]: success
+[2023-04-22 14:33:11] INFO root fetch - processPackages [dm-reverb-nightly]: Downloading https://files.pythonhosted.org/packages/07/ba/e9ef4e61b606a17814023d4b0a99ebf04f48787449f89134eb770db70591/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-22 14:33:11] INFO root fetch - main [MainThread]: End processing [curriculum-analysis]: success
+[2023-04-22 14:33:11] INFO root fetch - main [MainThread]: End processing [pymultigit]: success
+[2023-04-22 14:33:12] INFO root fetch - processPackages [dm-reverb-nightly]: executing diffoscope
+[2023-04-22 14:33:12] INFO root fetch - processPackages [dm-reverb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230422/d/dm-reverb-nightly/0.9.0.dev20221206-0.9.0.dev20221207/diff.md --exclude *.pyd
+[2023-04-22 14:33:23] INFO root fetch - main [MainThread]: End processing [telenvi]: success
+[2023-04-22 14:33:37] INFO root fetch - main [MainThread]: End processing [otlmow-model]: success
+[2023-04-22 14:34:06] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
+[2023-04-22 14:34:06] INFO root fetch - main [MainThread]: Store serial: [17814448]
