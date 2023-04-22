@@ -7112,3 +7112,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 10:20:44] INFO root fetch - processPackages [telespider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telespider-0.1.0.tar.gz tmp/telespider-0.1.1.tar.gz --markdown 20230422/t/telespider/0.1.0-0.1.1/diff.md --exclude *.pyd
 [2023-04-22 10:20:45] INFO root fetch - main [MainThread]: End processing [telespider]: success
 [2023-04-22 10:20:45] INFO root fetch - main [MainThread]: Store serial: [17813246]
+[2023-04-22 10:25:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813246]
+[2023-04-22 10:25:54] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 10:25:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OLG4P
+[2023-04-22 10:25:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vprikol-api-python
+[2023-04-22 10:25:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nparse
+[2023-04-22 10:25:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nparse
+[2023-04-22 10:25:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: baysalt-christmas
+[2023-04-22 10:25:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ankitdiscountcalculator
+[2023-04-22 10:25:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Office365-REST-Python-Client
+[2023-04-22 10:25:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: imp3
+[2023-04-22 10:25:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: AISimuToolKit
+[2023-04-22 10:25:54] WARNING root fetch - processPackages [OLG4P]: Skipping, unable to determine old version
+[2023-04-22 10:25:54] INFO root fetch - main [MainThread]: End processing [OLG4P] error
+[2023-04-22 10:25:54] INFO root fetch - processPackages [vprikol-api-python]: New version: [1.4] Old Version: [1.3]
+[2023-04-22 10:25:54] INFO root fetch - processPackages [nparse]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 10:25:54] WARNING root fetch - processPackages [ankitdiscountcalculator]: Skipping, unable to determine old version
+[2023-04-22 10:25:54] INFO root fetch - main [MainThread]: End processing [ankitdiscountcalculator] error
+[2023-04-22 10:25:54] INFO root fetch - processPackages [nparse]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 10:25:54] INFO root fetch - processPackages [Office365-REST-Python-Client]: New version: [2.4.1] Old Version: [2.4.0]
+[2023-04-22 10:25:54] INFO root fetch - processPackages [baysalt-christmas]: New version: [0.1.7.0] Old Version: [0.1.6.9]
+[2023-04-22 10:25:54] WARNING root fetch - processPackages [imp3]: Skipping, unable to determine old version
+[2023-04-22 10:25:54] INFO root fetch - main [MainThread]: End processing [imp3] error
+[2023-04-22 10:25:54] WARNING root fetch - processPackages [AISimuToolKit]: Skipping, unable to determine old version
+[2023-04-22 10:25:54] INFO root fetch - main [MainThread]: End processing [AISimuToolKit] error
+[2023-04-22 10:25:54] INFO root fetch - processPackages [nparse]: Downloading https://files.pythonhosted.org/packages/07/32/3592f854f62a3b98a6787c7c32eb1ab2f9da830d03e6576252659d76d17e/nparse-0.0.1.tar.gz
+[2023-04-22 10:25:54] INFO root fetch - processPackages [nparse]: Downloading https://files.pythonhosted.org/packages/07/32/3592f854f62a3b98a6787c7c32eb1ab2f9da830d03e6576252659d76d17e/nparse-0.0.1.tar.gz
+[2023-04-22 10:25:54] INFO root fetch - processPackages [Office365-REST-Python-Client]: Downloading https://files.pythonhosted.org/packages/98/11/38ec155a5897ec11bd3cb82774505151589c9aa6eb9102b6aaafc866a583/Office365-REST-Python-Client-2.4.0.tar.gz
+[2023-04-22 10:25:54] INFO root fetch - processPackages [vprikol-api-python]: Downloading https://files.pythonhosted.org/packages/44/85/baa3ef08503d565718717a38a7d31c586a2bc465d098012ee139cab98a9c/vprikol_api_python-1.4.tar.gz
+[2023-04-22 10:25:54] INFO root fetch - processPackages [baysalt-christmas]: Downloading https://files.pythonhosted.org/packages/30/21/2ae60c75ddb60e3c86ddd0f72d9592424d07d493d20013a1e5f0a1b0fa83/baysalt_christmas-0.1.7.0.tar.gz
+[2023-04-22 10:25:54] INFO root fetch - processPackages [nparse]: Downloading https://files.pythonhosted.org/packages/c4/37/b5bea1670143d8fe7d29e1c01000d9250ee3cbbd94741e350970867b3aae/nparse-0.0.2.tar.gz
+[2023-04-22 10:25:54] INFO root fetch - processPackages [nparse]: Downloading https://files.pythonhosted.org/packages/c4/37/b5bea1670143d8fe7d29e1c01000d9250ee3cbbd94741e350970867b3aae/nparse-0.0.2.tar.gz
+[2023-04-22 10:25:54] INFO root fetch - processPackages [vprikol-api-python]: executing diffoscope
+[2023-04-22 10:25:54] INFO root fetch - processPackages [vprikol-api-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vprikol_api_python-1.3.tar.gz tmp/vprikol_api_python-1.4.tar.gz --markdown 20230422/v/vprikol-api-python/1.3-1.4/diff.md --exclude *.pyd
+[2023-04-22 10:25:54] INFO root fetch - processPackages [baysalt-christmas]: executing diffoscope
+[2023-04-22 10:25:54] INFO root fetch - processPackages [baysalt-christmas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baysalt_christmas-0.1.6.9.tar.gz tmp/baysalt_christmas-0.1.7.0.tar.gz --markdown 20230422/b/baysalt-christmas/0.1.6.9-0.1.7.0/diff.md --exclude *.pyd
+[2023-04-22 10:25:54] INFO root fetch - processPackages [Office365-REST-Python-Client]: Downloading https://files.pythonhosted.org/packages/40/36/654255a941246916a91887a14b8f34d1c5249e3a67c80f390d8eabf320d6/Office365-REST-Python-Client-2.4.1.tar.gz
+[2023-04-22 10:25:55] INFO root fetch - processPackages [nparse]: executing diffoscope
+[2023-04-22 10:25:55] INFO root fetch - processPackages [nparse]: executing diffoscope
+[2023-04-22 10:25:55] INFO root fetch - processPackages [nparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nparse-0.0.1.tar.gz tmp/nparse-0.0.2.tar.gz --markdown 20230422/n/nparse/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 10:25:55] INFO root fetch - processPackages [nparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nparse-0.0.1.tar.gz tmp/nparse-0.0.2.tar.gz --markdown 20230422/n/nparse/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 10:25:55] INFO root fetch - processPackages [Office365-REST-Python-Client]: executing diffoscope
+[2023-04-22 10:25:55] INFO root fetch - processPackages [Office365-REST-Python-Client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Office365-REST-Python-Client-2.4.0.tar.gz tmp/Office365-REST-Python-Client-2.4.1.tar.gz --markdown 20230422/O/Office365-REST-Python-Client/2.4.0-2.4.1/diff.md --exclude *.pyd
+[2023-04-22 10:25:55] INFO root fetch - main [MainThread]: End processing [vprikol-api-python]: success
+[2023-04-22 10:25:56] INFO root fetch - main [MainThread]: End processing [nparse]: success
+[2023-04-22 10:25:56] INFO root fetch - main [MainThread]: End processing [baysalt-christmas]: success
+[2023-04-22 10:25:56] INFO root fetch - main [MainThread]: End processing [nparse]: success
+[2023-04-22 10:26:15] INFO root fetch - main [MainThread]: End processing [Office365-REST-Python-Client]: success
+[2023-04-22 10:26:15] INFO root fetch - main [MainThread]: Store serial: [17813279]
