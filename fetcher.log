@@ -11995,3 +11995,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 19:28:54] INFO root fetch - main [MainThread]: End processing [eds-utils]: success
 [2023-04-22 19:28:54] INFO root fetch - main [MainThread]: End processing [chesscomwrapper]: success
 [2023-04-22 19:28:54] INFO root fetch - main [MainThread]: Store serial: [17816176]
+[2023-04-22 19:33:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816176]
+[2023-04-22 19:34:04] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 19:34:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cnki-html2json
+[2023-04-22 19:34:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gen-odoo-readme
+[2023-04-22 19:34:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fints
+[2023-04-22 19:34:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: medium-api
+[2023-04-22 19:34:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: je-load-density
+[2023-04-22 19:34:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ctef
+[2023-04-22 19:34:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jupylite-duckdb
+[2023-04-22 19:34:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Simba-UW-tf-dev
+[2023-04-22 19:34:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: filewiz
+[2023-04-22 19:34:04] INFO root fetch - processPackages [je-load-density]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 19:34:04] INFO root fetch - processPackages [cnki-html2json]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 19:34:04] INFO root fetch - processPackages [gen-odoo-readme]: New version: [1.0.8] Old Version: [0.1.7]
+[2023-04-22 19:34:04] INFO root fetch - processPackages [medium-api]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-22 19:34:04] INFO root fetch - processPackages [fints]: New version: [4.0.0] Old Version: [3.1.0]
+[2023-04-22 19:34:04] WARNING root fetch - processPackages [ctef]: Skipping, unable to determine old version
+[2023-04-22 19:34:04] INFO root fetch - processPackages [filewiz]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-22 19:34:04] INFO root fetch - processPackages [jupylite-duckdb]: New version: [0.0.17] Old Version: [0.0.16]
+[2023-04-22 19:34:04] INFO root fetch - main [MainThread]: End processing [ctef] error
+[2023-04-22 19:34:04] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.57.4] Old Version: [1.57.3]
+[2023-04-22 19:34:04] INFO root fetch - processPackages [gen-odoo-readme]: Downloading https://files.pythonhosted.org/packages/71/de/472f99e2e3997da64faf1a5baa7b4103bda51c8da78b594f2f50a830c627/gen-odoo-readme-1.0.8.tar.gz
+[2023-04-22 19:34:04] INFO root fetch - processPackages [medium-api]: Downloading https://files.pythonhosted.org/packages/06/f2/92884b910d3cae0860dd3dd57b13437625437822685a309933b8ed1b8ed2/medium-api-0.5.1.tar.gz
+[2023-04-22 19:34:04] INFO root fetch - processPackages [fints]: Downloading https://files.pythonhosted.org/packages/5e/75/d4f62f22d46229ceaa54b9fe8f6a5e714732eaf5dc6c2cf39d6cc575fcce/fints-3.1.0.tar.gz
+[2023-04-22 19:34:04] INFO root fetch - processPackages [filewiz]: Downloading https://files.pythonhosted.org/packages/fc/96/20b6a98fee7b8c03807c938b3d300c1912f92d486fa174902f5e85881df3/filewiz-1.0.2.tar.gz
+[2023-04-22 19:34:04] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/c5/5b/758779d5ed2784139995614daaa4c02f9401f085aab3efe0029f332ef0aa/Simba-UW-tf-dev-1.57.4.tar.gz
+[2023-04-22 19:34:04] INFO root fetch - processPackages [jupylite-duckdb]: Downloading https://files.pythonhosted.org/packages/77/8d/8872c1d1040a28466c9e7bf4cdd31afdadbece61bf1a43e913ba01721708/jupylite_duckdb-0.0.16-py3-none-any.whl
+[2023-04-22 19:34:04] INFO root fetch - processPackages [cnki-html2json]: Downloading https://files.pythonhosted.org/packages/70/49/b438b8b58fa04bae9dbf490065d459c307910ba0169c5cd10ab00bca3bc0/cnki_html2json-0.1.1.tar.gz
+[2023-04-22 19:34:04] INFO root fetch - processPackages [gen-odoo-readme]: executing diffoscope
+[2023-04-22 19:34:04] INFO root fetch - processPackages [gen-odoo-readme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gen-odoo-readme-0.1.7.tar.gz tmp/gen-odoo-readme-1.0.8.tar.gz --markdown 20230422/g/gen-odoo-readme/0.1.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-22 19:34:04] INFO root fetch - processPackages [je-load-density]: executing diffoscope
+[2023-04-22 19:34:04] INFO root fetch - processPackages [je-load-density]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_load_density-0.0.8.tar.gz tmp/je_load_density-0.0.9.tar.gz --markdown 20230422/j/je-load-density/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 19:34:04] INFO root fetch - processPackages [filewiz]: Downloading https://files.pythonhosted.org/packages/df/cf/807d9052f112bdd14eb89555b2d0cc0761b0f081c92498d40d51a23070c5/filewiz-1.0.3.tar.gz
+[2023-04-22 19:34:05] INFO root fetch - processPackages [fints]: Downloading https://files.pythonhosted.org/packages/e5/be/67522811578dd6e337a25c286eccda02513af1dbbcab8c9b8e003f51c0ab/fints-4.0.0.tar.gz
+[2023-04-22 19:34:05] INFO root fetch - processPackages [jupylite-duckdb]: Downloading https://files.pythonhosted.org/packages/72/0c/1deb7a4e3d41c43cd1b5a8a0131b4e9eec159c63d636c43f37f18c99681e/jupylite_duckdb-0.0.17-py3-none-any.whl
+[2023-04-22 19:34:05] INFO root fetch - processPackages [cnki-html2json]: executing diffoscope
+[2023-04-22 19:34:05] INFO root fetch - processPackages [cnki-html2json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnki_html2json-0.1.0.tar.gz tmp/cnki_html2json-0.1.1.tar.gz --markdown 20230422/c/cnki-html2json/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 19:34:05] INFO root fetch - processPackages [filewiz]: executing diffoscope
+[2023-04-22 19:34:05] INFO root fetch - processPackages [filewiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/filewiz-1.0.2.tar.gz tmp/filewiz-1.0.3.tar.gz --markdown 20230422/f/filewiz/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-22 19:34:05] INFO root fetch - processPackages [fints]: executing diffoscope
+[2023-04-22 19:34:05] INFO root fetch - processPackages [fints]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fints-3.1.0.tar.gz tmp/fints-4.0.0.tar.gz --markdown 20230422/f/fints/3.1.0-4.0.0/diff.md --exclude *.pyd
+[2023-04-22 19:34:05] INFO root fetch - processPackages [medium-api]: Downloading https://files.pythonhosted.org/packages/20/b4/4eb2ce307c39fac23701c5c55968d9dd5be191ede2bfdc1e471058963907/medium-api-0.5.2.tar.gz
+[2023-04-22 19:34:05] INFO root fetch - processPackages [jupylite-duckdb]: executing diffoscope
+[2023-04-22 19:34:05] INFO root fetch - processPackages [jupylite-duckdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupylite_duckdb-0.0.16-py3-none-any.whl.zip tmp/jupylite_duckdb-0.0.17-py3-none-any.whl.zip --markdown 20230422/j/jupylite-duckdb/0.0.16-0.0.17/diff.md --exclude *.pyd
+[2023-04-22 19:34:05] INFO root fetch - processPackages [medium-api]: executing diffoscope
+[2023-04-22 19:34:05] INFO root fetch - processPackages [medium-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medium-api-0.5.1.tar.gz tmp/medium-api-0.5.2.tar.gz --markdown 20230422/m/medium-api/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-22 19:34:05] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2023-04-22 19:34:05] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.57.3.tar.gz tmp/Simba-UW-tf-dev-1.57.4.tar.gz --markdown 20230422/S/Simba-UW-tf-dev/1.57.3-1.57.4/diff.md --exclude *.pyd
+[2023-04-22 19:34:06] INFO root fetch - main [MainThread]: End processing [je-load-density]: success
+[2023-04-22 19:34:06] INFO root fetch - main [MainThread]: End processing [jupylite-duckdb]: success
+[2023-04-22 19:34:06] INFO root fetch - main [MainThread]: End processing [filewiz]: success
+[2023-04-22 19:34:06] INFO root fetch - main [MainThread]: End processing [cnki-html2json]: success
+[2023-04-22 19:34:06] INFO root fetch - main [MainThread]: End processing [gen-odoo-readme]: success
+[2023-04-22 19:34:06] INFO root fetch - main [MainThread]: End processing [fints]: success
+[2023-04-22 19:34:08] INFO root fetch - main [MainThread]: End processing [medium-api]: success
+[2023-04-22 19:34:12] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2023-04-22 19:34:12] INFO root fetch - main [MainThread]: Store serial: [17816204]
