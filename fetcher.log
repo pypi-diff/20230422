@@ -1738,3 +1738,62 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 02:54:31] INFO root fetch - main [MainThread]: End processing [pycde] error
 [2023-04-22 02:54:59] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2023-04-22 02:54:59] INFO root fetch - main [MainThread]: Store serial: [17810197]
+[2023-04-22 03:00:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17810197]
+[2023-04-22 03:00:09] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-22 03:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spotify-to-musi
+[2023-04-22 03:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-lambda-layer-wget
+[2023-04-22 03:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-sns-notify
+[2023-04-22 03:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ml-botting-core
+[2023-04-22 03:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-emrserverless-with-delta-lake
+[2023-04-22 03:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mastodon-2-album
+[2023-04-22 03:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: strongmind-deployment
+[2023-04-22 03:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aemcmc-nightly
+[2023-04-22 03:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdk-lambda-layer-curl
+[2023-04-22 03:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: structure-py
+[2023-04-22 03:00:09] WARNING root fetch - processPackages [strongmind-deployment]: Skipping, unable to determine old version
+[2023-04-22 03:00:09] INFO root fetch - main [MainThread]: End processing [strongmind-deployment] error
+[2023-04-22 03:00:09] INFO root fetch - processPackages [aemcmc-nightly]: New version: [0.0.8.dev20230421] Old Version: [0.0.8.dev20230420]
+[2023-04-22 03:00:09] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-22 03:00:09] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-22 03:00:09] INFO root fetch - processPackages [spotify-to-musi]: New version: [2.0.0] Old Version: [1.0.2]
+[2023-04-22 03:00:09] INFO root fetch - processPackages [mastodon-2-album]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-22 03:00:09] INFO root fetch - processPackages [structure-py]: New version: [0.3.0] Old Version: [0.1.1]
+[2023-04-22 03:00:09] INFO root fetch - processPackages [ml-botting-core]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-22 03:00:09] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: executing diffoscope
+[2023-04-22 03:00:09] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_emrserverless_with_delta_lake-2.0.98.tar.gz tmp/cdk_emrserverless_with_delta_lake-2.0.99.tar.gz --markdown 20230422/c/cdk-emrserverless-with-delta-lake/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-22 03:00:09] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-22 03:00:09] INFO root fetch - processPackages [cdk-sns-notify]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 03:00:10] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-04-22 03:00:10] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230422/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-22 03:00:10] INFO root fetch - processPackages [mastodon-2-album]: Downloading https://files.pythonhosted.org/packages/c8/d4/6d67af3be4d5c7f849f49c871d4b0c4e43e5f269126bfb7fe19b8784a78d/mastodon_2_album-0.0.5.tar.gz
+[2023-04-22 03:00:10] INFO root fetch - processPackages [aemcmc-nightly]: Downloading https://files.pythonhosted.org/packages/84/21/d32c26000db5b4da59f9f0ac26121075b4c73a182932e6ee6bb520ef45eb/aemcmc-nightly-0.0.8.dev20230421.tar.gz
+[2023-04-22 03:00:10] INFO root fetch - processPackages [spotify-to-musi]: Downloading https://files.pythonhosted.org/packages/6c/74/61068a03d5bd6b210c01063045918fb1456faa1756bc7f47b329c4aceb6b/spotify-to-musi-1.0.2.tar.gz
+[2023-04-22 03:00:10] INFO root fetch - processPackages [structure-py]: Downloading https://files.pythonhosted.org/packages/3c/c5/326afe77bcc8cf39021b35d10dee0dcee4cebfeec941fbac2ffc0a6c658d/structure_py-0.1.1.tar.gz
+[2023-04-22 03:00:10] INFO root fetch - processPackages [aemcmc-nightly]: executing diffoscope
+[2023-04-22 03:00:10] INFO root fetch - processPackages [aemcmc-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aemcmc-nightly-0.0.8.dev20230420.tar.gz tmp/aemcmc-nightly-0.0.8.dev20230421.tar.gz --markdown 20230422/a/aemcmc-nightly/0.0.8.dev20230420-0.0.8.dev20230421/diff.md --exclude *.pyd
+[2023-04-22 03:00:10] INFO root fetch - processPackages [ml-botting-core]: Downloading https://files.pythonhosted.org/packages/3a/0a/dae5e7627f89f46d1a63aa58e10717de100be0392ea9315c02fec80ee8ff/ml_botting_core-1.0.3.tar.gz
+[2023-04-22 03:00:10] INFO root fetch - processPackages [mastodon-2-album]: Downloading https://files.pythonhosted.org/packages/2d/89/1ee07cf396d8f25820556c89ca65ce769f33a3a52306cfd941abf42a189b/mastodon_2_album-0.0.6.tar.gz
+[2023-04-22 03:00:10] INFO root fetch - processPackages [spotify-to-musi]: Downloading https://files.pythonhosted.org/packages/e7/98/4b01c10713dba01dee98df97e831167274c05117bc39e8d222c949b30c78/spotify_to_musi-2.0.0.tar.gz
+[2023-04-22 03:00:10] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-04-22 03:00:10] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230422/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-22 03:00:10] INFO root fetch - processPackages [cdk-sns-notify]: executing diffoscope
+[2023-04-22 03:00:10] INFO root fetch - processPackages [cdk-sns-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sns-notify-0.0.98.tar.gz tmp/cdk-sns-notify-0.0.99.tar.gz --markdown 20230422/c/cdk-sns-notify/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 03:00:10] INFO root fetch - processPackages [structure-py]: Downloading https://files.pythonhosted.org/packages/5b/93/5c01e64363ca3d0677e5005fbbc71d5bb9685f6c43c270784b1c3c3356a0/structure_py-0.3.0.tar.gz
+[2023-04-22 03:00:10] INFO root fetch - processPackages [ml-botting-core]: executing diffoscope
+[2023-04-22 03:00:10] INFO root fetch - processPackages [ml-botting-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_botting_core-1.0.2.tar.gz tmp/ml_botting_core-1.0.3.tar.gz --markdown 20230422/m/ml-botting-core/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-22 03:00:10] INFO root fetch - processPackages [mastodon-2-album]: executing diffoscope
+[2023-04-22 03:00:10] INFO root fetch - processPackages [mastodon-2-album]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mastodon_2_album-0.0.5.tar.gz tmp/mastodon_2_album-0.0.6.tar.gz --markdown 20230422/m/mastodon-2-album/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-22 03:00:10] INFO root fetch - processPackages [spotify-to-musi]: executing diffoscope
+[2023-04-22 03:00:10] INFO root fetch - processPackages [spotify-to-musi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotify-to-musi-1.0.2.tar.gz tmp/spotify_to_musi-2.0.0.tar.gz --markdown 20230422/s/spotify-to-musi/1.0.2-2.0.0/diff.md --exclude *.pyd
+[2023-04-22 03:00:10] INFO root fetch - processPackages [structure-py]: executing diffoscope
+[2023-04-22 03:00:10] INFO root fetch - processPackages [structure-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structure_py-0.1.1.tar.gz tmp/structure_py-0.3.0.tar.gz --markdown 20230422/s/structure-py/0.1.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-22 03:00:11] INFO root fetch - main [MainThread]: End processing [mastodon-2-album]: success
+[2023-04-22 03:00:11] INFO root fetch - main [MainThread]: End processing [ml-botting-core]: success
+[2023-04-22 03:00:11] INFO root fetch - main [MainThread]: End processing [cdk-sns-notify]: success
+[2023-04-22 03:00:11] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-04-22 03:00:11] INFO root fetch - main [MainThread]: End processing [spotify-to-musi]: success
+[2023-04-22 03:00:11] INFO root fetch - main [MainThread]: End processing [structure-py]: success
+[2023-04-22 03:00:12] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-04-22 03:00:12] INFO root fetch - main [MainThread]: End processing [aemcmc-nightly]: success
+[2023-04-22 03:00:13] INFO root fetch - main [MainThread]: End processing [cdk-emrserverless-with-delta-lake]: success
+[2023-04-22 03:00:13] INFO root fetch - main [MainThread]: Store serial: [17810229]
