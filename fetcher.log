@@ -9930,3 +9930,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 16:05:31] INFO root fetch - main [MainThread]: End processing [alphaz]: success
 [2023-04-22 16:05:43] INFO root fetch - main [MainThread]: End processing [df-websockets]: success
 [2023-04-22 16:05:43] INFO root fetch - main [MainThread]: Store serial: [17814931]
+[2023-04-22 16:10:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814931]
+[2023-04-22 16:10:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-22 16:10:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flaskapiRequest
+[2023-04-22 16:10:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drummachine
+[2023-04-22 16:10:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-fuckyou
+[2023-04-22 16:10:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stravalib
+[2023-04-22 16:10:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sphere-base
+[2023-04-22 16:10:52] WARNING root fetch - processPackages [flaskapiRequest]: Skipping, unable to determine old version
+[2023-04-22 16:10:52] INFO root fetch - main [MainThread]: End processing [flaskapiRequest] error
+[2023-04-22 16:10:52] INFO root fetch - processPackages [sphere-base]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-22 16:10:52] INFO root fetch - processPackages [drummachine]: New version: [0.1.3] Old Version: [0.0.2]
+[2023-04-22 16:10:52] INFO root fetch - processPackages [nonebot-plugin-fuckyou]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-22 16:10:52] INFO root fetch - processPackages [stravalib]: New version: [1.3.0rc0] Old Version: [1.3.0]
+[2023-04-22 16:10:52] INFO root fetch - processPackages [stravalib]: Downloading https://files.pythonhosted.org/packages/b0/87/1ad8603ef97886b65e4aea9087de2f314d2811f5df5360097d02ce123a79/stravalib-1.3.0.tar.gz
+[2023-04-22 16:10:52] INFO root fetch - processPackages [nonebot-plugin-fuckyou]: Downloading https://files.pythonhosted.org/packages/c8/e3/87e2aab2c7341b51eaac9c8a27f80f428acfa571f6ac0c926ab121ac0ae4/nonebot-plugin-fuckyou-0.1.1.tar.gz
+[2023-04-22 16:10:52] INFO root fetch - processPackages [drummachine]: Downloading https://files.pythonhosted.org/packages/ca/7b/e4938c79b26a1b9dc296a7e0ffcab57bba746393fd02b4c65490656e3c03/drummachine-0.1.3.tar.gz
+[2023-04-22 16:10:52] INFO root fetch - processPackages [drummachine]: executing diffoscope
+[2023-04-22 16:10:52] INFO root fetch - processPackages [drummachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drummachine-0.0.2.tar.gz tmp/drummachine-0.1.3.tar.gz --markdown 20230422/d/drummachine/0.0.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-22 16:10:52] INFO root fetch - processPackages [sphere-base]: Downloading https://files.pythonhosted.org/packages/4d/77/e85c3e4e2f7caffc004da70004a933bf683c847ea3f4660693ed23c7ccfb/sphere_base-0.1.4.tar.gz
+[2023-04-22 16:10:52] INFO root fetch - processPackages [sphere-base]: executing diffoscope
+[2023-04-22 16:10:52] INFO root fetch - processPackages [sphere-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphere_base-0.1.3.tar.gz tmp/sphere_base-0.1.4.tar.gz --markdown 20230422/s/sphere-base/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-22 16:10:52] INFO root fetch - processPackages [nonebot-plugin-fuckyou]: Downloading https://files.pythonhosted.org/packages/0c/8c/715c0aeb7f5d2f39a6c8dd99f15cb7be05690bb6c68f58e6c9f67ba70101/nonebot-plugin-fuckyou-0.1.2.tar.gz
+[2023-04-22 16:10:53] INFO root fetch - processPackages [stravalib]: Downloading https://files.pythonhosted.org/packages/46/45/31442086a54c9b72c19b949355da70ab2d5ec786b3e751f4253f739a6670/stravalib-1.3.0rc0.tar.gz
+[2023-04-22 16:10:53] INFO root fetch - processPackages [nonebot-plugin-fuckyou]: executing diffoscope
+[2023-04-22 16:10:53] INFO root fetch - processPackages [nonebot-plugin-fuckyou]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-fuckyou-0.1.1.tar.gz tmp/nonebot-plugin-fuckyou-0.1.2.tar.gz --markdown 20230422/n/nonebot-plugin-fuckyou/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-22 16:10:53] INFO root fetch - processPackages [stravalib]: executing diffoscope
+[2023-04-22 16:10:53] INFO root fetch - processPackages [stravalib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stravalib-1.3.0.tar.gz tmp/stravalib-1.3.0rc0.tar.gz --markdown 20230422/s/stravalib/1.3.0-1.3.0rc0/diff.md --exclude *.pyd
+[2023-04-22 16:10:53] INFO root fetch - main [MainThread]: End processing [drummachine]: success
+[2023-04-22 16:10:54] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-fuckyou]: success
+[2023-04-22 16:10:54] INFO root fetch - main [MainThread]: End processing [sphere-base]: success
+[2023-04-22 16:10:55] INFO root fetch - main [MainThread]: End processing [stravalib]: success
+[2023-04-22 16:10:55] INFO root fetch - main [MainThread]: Store serial: [17814950]
