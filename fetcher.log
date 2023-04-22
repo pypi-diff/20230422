@@ -11933,3 +11933,65 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 19:23:38] INFO root fetch - main [MainThread]: End processing [safe-ds-examples]: success
 [2023-04-22 19:23:43] INFO root fetch - main [MainThread]: End processing [prettyqt]: success
 [2023-04-22 19:23:43] INFO root fetch - main [MainThread]: Store serial: [17816142]
+[2023-04-22 19:28:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816142]
+[2023-04-22 19:28:52] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-22 19:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ox-script
+[2023-04-22 19:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mammath
+[2023-04-22 19:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: recon-lw
+[2023-04-22 19:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: typedboto3
+[2023-04-22 19:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: eds-utils
+[2023-04-22 19:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chesscomwrapper
+[2023-04-22 19:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: crazy-thursday
+[2023-04-22 19:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: docbuild
+[2023-04-22 19:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: je-load-density-dev
+[2023-04-22 19:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: wizlib
+[2023-04-22 19:28:52] WARNING root fetch - processPackages [ox-script]: Skipping, unable to determine old version
+[2023-04-22 19:28:52] INFO root fetch - processPackages [ox-script]: Start processing: dbxconfig
+[2023-04-22 19:28:52] INFO root fetch - main [MainThread]: End processing [ox-script] error
+[2023-04-22 19:28:52] WARNING root fetch - processPackages [typedboto3]: Skipping, unable to determine old version
+[2023-04-22 19:28:52] INFO root fetch - processPackages [mammath]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-22 19:28:52] INFO root fetch - processPackages [eds-utils]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-22 19:28:52] INFO root fetch - processPackages [chesscomwrapper]: New version: [0.0.8] Old Version: [0.0.6]
+[2023-04-22 19:28:52] INFO root fetch - processPackages [recon-lw]: New version: [2.0.0.dev4773922411] Old Version: [2.0.0.dev4757666702]
+[2023-04-22 19:28:52] INFO root fetch - main [MainThread]: End processing [typedboto3] error
+[2023-04-22 19:28:52] INFO root fetch - processPackages [docbuild]: New version: [0.1.103] Old Version: [0.1.102]
+[2023-04-22 19:28:52] INFO root fetch - processPackages [dbxconfig]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-04-22 19:28:52] INFO root fetch - processPackages [je-load-density-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 19:28:52] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.4.9.1] Old Version: [2023.4.9.0]
+[2023-04-22 19:28:52] INFO root fetch - processPackages [wizlib]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-22 19:28:52] INFO root fetch - processPackages [dbxconfig]: executing diffoscope
+[2023-04-22 19:28:52] INFO root fetch - processPackages [dbxconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbxconfig-2.0.4.tar.gz tmp/dbxconfig-2.0.5.tar.gz --markdown 20230422/d/dbxconfig/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-04-22 19:28:52] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-04-22 19:28:52] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.4.9.0.tar.gz tmp/crazy-thursday-2023.4.9.1.tar.gz --markdown 20230422/c/crazy-thursday/2023.4.9.0-2023.4.9.1/diff.md --exclude *.pyd
+[2023-04-22 19:28:52] INFO root fetch - processPackages [mammath]: Downloading https://files.pythonhosted.org/packages/79/8c/33585921d05961999adcf6453cdeefd53e9a4bb1c606d476970abbbf495b/mammath-0.1.7.tar.gz
+[2023-04-22 19:28:52] INFO root fetch - processPackages [chesscomwrapper]: Downloading https://files.pythonhosted.org/packages/c3/48/4c1f2e0016247d54da0919066d36e2605b7568ecd0471636e0599934d5ce/chesscomwrapper-0.0.8.tar.gz
+[2023-04-22 19:28:52] INFO root fetch - processPackages [docbuild]: Downloading https://files.pythonhosted.org/packages/6e/9e/814f0cd796139bfb16c45af289e3b416709aed0efba6aa7383f74b82989a/docbuild-0.1.103.tar.gz
+[2023-04-22 19:28:52] INFO root fetch - processPackages [docbuild]: executing diffoscope
+[2023-04-22 19:28:52] INFO root fetch - processPackages [docbuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docbuild-0.1.102.tar.gz tmp/docbuild-0.1.103.tar.gz --markdown 20230422/d/docbuild/0.1.102-0.1.103/diff.md --exclude *.pyd
+[2023-04-22 19:28:52] INFO root fetch - processPackages [chesscomwrapper]: executing diffoscope
+[2023-04-22 19:28:52] INFO root fetch - processPackages [chesscomwrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chesscomwrapper-0.0.6.tar.gz tmp/chesscomwrapper-0.0.8.tar.gz --markdown 20230422/c/chesscomwrapper/0.0.6-0.0.8/diff.md --exclude *.pyd
+[2023-04-22 19:28:52] INFO root fetch - processPackages [wizlib]: Downloading https://files.pythonhosted.org/packages/5c/ef/20c8fa38c36b3a97c0fe88be191cdb5edc4671c7aae49e68ae1d4a258f0c/wizlib-0.2.2.tar.gz
+[2023-04-22 19:28:52] INFO root fetch - processPackages [recon-lw]: Downloading https://files.pythonhosted.org/packages/6a/a6/e280698bee379a8339e52e1bf74cdda8205b04dfc522147fc95442698738/recon_lw-2.0.0.dev4773922411.tar.gz
+[2023-04-22 19:28:52] INFO root fetch - processPackages [eds-utils]: Downloading https://files.pythonhosted.org/packages/92/c8/f428a3164d8ab5f5befcfd46d8dc40e68fff7d5b6de8be8bdf82216f2c32/eds-utils-0.3.1.tar.gz
+[2023-04-22 19:28:52] INFO root fetch - processPackages [je-load-density-dev]: executing diffoscope
+[2023-04-22 19:28:52] INFO root fetch - processPackages [je-load-density-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_load_density_dev-0.0.8.tar.gz tmp/je_load_density_dev-0.0.9.tar.gz --markdown 20230422/j/je-load-density-dev/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 19:28:52] INFO root fetch - processPackages [eds-utils]: executing diffoscope
+[2023-04-22 19:28:52] INFO root fetch - processPackages [eds-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eds-utils-0.3.0.tar.gz tmp/eds-utils-0.3.1.tar.gz --markdown 20230422/e/eds-utils/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-22 19:28:52] INFO root fetch - processPackages [recon-lw]: executing diffoscope
+[2023-04-22 19:28:52] INFO root fetch - processPackages [recon-lw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recon_lw-2.0.0.dev4757666702.tar.gz tmp/recon_lw-2.0.0.dev4773922411.tar.gz --markdown 20230422/r/recon-lw/2.0.0.dev4757666702-2.0.0.dev4773922411/diff.md --exclude *.pyd
+[2023-04-22 19:28:53] INFO root fetch - processPackages [wizlib]: Downloading https://files.pythonhosted.org/packages/f0/dc/f4d359489d68db1e90f9a336970b169ec2021dc2660a8f5abb63544f6ea0/wizlib-0.2.3.tar.gz
+[2023-04-22 19:28:53] INFO root fetch - processPackages [wizlib]: executing diffoscope
+[2023-04-22 19:28:53] INFO root fetch - processPackages [wizlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizlib-0.2.2.tar.gz tmp/wizlib-0.2.3.tar.gz --markdown 20230422/w/wizlib/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-22 19:28:53] INFO root fetch - processPackages [mammath]: Downloading https://files.pythonhosted.org/packages/69/ab/86e30e7972a1f9589d5b99fad0dd398059c5b3f08571e96c7c173feb1ca0/mammath-0.1.8.tar.gz
+[2023-04-22 19:28:53] INFO root fetch - processPackages [mammath]: executing diffoscope
+[2023-04-22 19:28:53] INFO root fetch - processPackages [mammath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mammath-0.1.7.tar.gz tmp/mammath-0.1.8.tar.gz --markdown 20230422/m/mammath/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-22 19:28:54] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-04-22 19:28:54] INFO root fetch - main [MainThread]: End processing [dbxconfig]: success
+[2023-04-22 19:28:54] INFO root fetch - main [MainThread]: End processing [docbuild]: success
+[2023-04-22 19:28:54] INFO root fetch - main [MainThread]: End processing [recon-lw]: success
+[2023-04-22 19:28:54] INFO root fetch - main [MainThread]: End processing [je-load-density-dev]: success
+[2023-04-22 19:28:54] INFO root fetch - main [MainThread]: End processing [wizlib]: success
+[2023-04-22 19:28:54] INFO root fetch - main [MainThread]: End processing [mammath]: success
+[2023-04-22 19:28:54] INFO root fetch - main [MainThread]: End processing [eds-utils]: success
+[2023-04-22 19:28:54] INFO root fetch - main [MainThread]: End processing [chesscomwrapper]: success
+[2023-04-22 19:28:54] INFO root fetch - main [MainThread]: Store serial: [17816176]
