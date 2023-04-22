@@ -10404,3 +10404,53 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 16:53:18] INFO root fetch - main [MainThread]: End processing [sphere-base]: success
 [2023-04-22 16:53:31] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 16:53:31] INFO root fetch - main [MainThread]: Store serial: [17815221]
+[2023-04-22 16:58:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815221]
+[2023-04-22 16:58:40] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 16:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iode
+[2023-04-22 16:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pancakekit
+[2023-04-22 16:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: foursight-core
+[2023-04-22 16:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-l10n-es-vat-prorate
+[2023-04-22 16:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aliendev-cdk
+[2023-04-22 16:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torchgating
+[2023-04-22 16:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: herojson
+[2023-04-22 16:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: brownian-stock
+[2023-04-22 16:58:40] INFO root fetch - processPackages [iode]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-22 16:58:40] INFO root fetch - processPackages [brownian-stock]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 16:58:40] INFO root fetch - processPackages [pancakekit]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-22 16:58:40] INFO root fetch - processPackages [aliendev-cdk]: New version: [0.1.38] Old Version: [0.1.37]
+[2023-04-22 16:58:40] INFO root fetch - processPackages [odoo14-addon-l10n-es-vat-prorate]: New version: [14.0.1.0.4] Old Version: [14.0.1.0.3]
+[2023-04-22 16:58:40] WARNING root fetch - processPackages [herojson]: Skipping, unable to determine old version
+[2023-04-22 16:58:40] INFO root fetch - main [MainThread]: End processing [herojson] error
+[2023-04-22 16:58:40] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.4b1] Old Version: [4.0.0]
+[2023-04-22 16:58:40] INFO root fetch - processPackages [brownian-stock]: executing diffoscope
+[2023-04-22 16:58:40] INFO root fetch - processPackages [brownian-stock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brownian-stock-0.0.8.tar.gz tmp/brownian-stock-0.0.9.tar.gz --markdown 20230422/b/brownian-stock/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 16:58:40] INFO root fetch - processPackages [torchgating]: New version: [0.1.2a0] Old Version: [0.1.1a0]
+[2023-04-22 16:58:40] INFO root fetch - processPackages [aliendev-cdk]: Downloading https://files.pythonhosted.org/packages/a7/dc/3fa12e0ee89fd1148f6074a359b91662c07e10b57855d720e5293db83392/aliendev_cdk-0.1.38.tar.gz
+[2023-04-22 16:58:40] INFO root fetch - processPackages [iode]: Downloading https://files.pythonhosted.org/packages/a2/c5/a5786104de0ef7eb28056a82a18331a03cab0b80a35ad9a0e3170fc06d08/iode-0.0.2.tar.gz
+[2023-04-22 16:58:40] INFO root fetch - processPackages [pancakekit]: Downloading https://files.pythonhosted.org/packages/59/26/5925db1dacd8201e365b7bf43abeb8b7ee7074e85c96955c5a5b89dea774/pancakekit-0.2.1.tar.gz
+[2023-04-22 16:58:40] INFO root fetch - processPackages [odoo14-addon-l10n-es-vat-prorate]: Downloading https://files.pythonhosted.org/packages/06/63/85a4dfdcf69e91aca972b6089a57947501458d79ffa00189734a2e07afd6/odoo14_addon_l10n_es_vat_prorate-14.0.1.0.3-py3-none-any.whl
+[2023-04-22 16:58:40] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/b7/f4/bbc8c5cf95eb810d7befaeb6e154fc8a950406ce2f1001601d3813f689e8/foursight_core-4.1.0.4b1.tar.gz
+[2023-04-22 16:58:41] INFO root fetch - processPackages [torchgating]: Downloading https://files.pythonhosted.org/packages/9f/5e/dc97ae8034a2e90cbd08032bdcf39114f49735e28d1f20af5efd3c1c878c/torchgating-0.1.1a0.tar.gz
+[2023-04-22 16:58:41] INFO root fetch - processPackages [aliendev-cdk]: executing diffoscope
+[2023-04-22 16:58:41] INFO root fetch - processPackages [aliendev-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliendev_cdk-0.1.37.tar.gz tmp/aliendev_cdk-0.1.38.tar.gz --markdown 20230422/a/aliendev-cdk/0.1.37-0.1.38/diff.md --exclude *.pyd
+[2023-04-22 16:58:41] INFO root fetch - processPackages [pancakekit]: executing diffoscope
+[2023-04-22 16:58:41] INFO root fetch - processPackages [pancakekit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pancakekit-0.2.0.tar.gz tmp/pancakekit-0.2.1.tar.gz --markdown 20230422/p/pancakekit/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-22 16:58:41] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 16:58:41] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.0.0.tar.gz tmp/foursight_core-4.1.0.4b1.tar.gz --markdown 20230422/f/foursight-core/4.0.0-4.1.0.4b1/diff.md --exclude *.pyd
+[2023-04-22 16:58:41] INFO root fetch - processPackages [odoo14-addon-l10n-es-vat-prorate]: Downloading https://files.pythonhosted.org/packages/92/d2/eb925d6a06daecf5c668920326067a4f9b2c6c7232770f5d36eb5a1b8597/odoo14_addon_l10n_es_vat_prorate-14.0.1.0.4-py3-none-any.whl
+[2023-04-22 16:58:41] INFO root fetch - processPackages [iode]: Downloading https://files.pythonhosted.org/packages/ac/71/18bc526b1a96a36edb95843464c6a410d0b2389a679ecf7cac030eb5ba53/iode-0.0.3-py3-none-any.whl
+[2023-04-22 16:58:41] INFO root fetch - processPackages [torchgating]: Downloading https://files.pythonhosted.org/packages/98/7f/741a9c4d7739523d9dfe16f81bf655d1f1fc902b38ad3070705ac8086253/torchgating-0.1.2a0.tar.gz
+[2023-04-22 16:58:41] INFO root fetch - processPackages [odoo14-addon-l10n-es-vat-prorate]: executing diffoscope
+[2023-04-22 16:58:41] INFO root fetch - processPackages [odoo14-addon-l10n-es-vat-prorate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_es_vat_prorate-14.0.1.0.3-py3-none-any.whl.zip tmp/odoo14_addon_l10n_es_vat_prorate-14.0.1.0.4-py3-none-any.whl.zip --markdown 20230422/o/odoo14-addon-l10n-es-vat-prorate/14.0.1.0.3-14.0.1.0.4/diff.md --exclude *.pyd
+[2023-04-22 16:58:41] INFO root fetch - processPackages [torchgating]: executing diffoscope
+[2023-04-22 16:58:41] INFO root fetch - processPackages [torchgating]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchgating-0.1.1a0.tar.gz tmp/torchgating-0.1.2a0.tar.gz --markdown 20230422/t/torchgating/0.1.1a0-0.1.2a0/diff.md --exclude *.pyd
+[2023-04-22 16:58:41] INFO root fetch - processPackages [iode]: executing diffoscope
+[2023-04-22 16:58:41] INFO root fetch - processPackages [iode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iode-0.0.2.tar.gz tmp/iode-0.0.3-py3-none-any.whl.zip --markdown 20230422/i/iode/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-22 16:58:42] INFO root fetch - main [MainThread]: End processing [brownian-stock]: success
+[2023-04-22 16:58:42] INFO root fetch - main [MainThread]: End processing [aliendev-cdk]: success
+[2023-04-22 16:58:42] INFO root fetch - main [MainThread]: End processing [pancakekit]: success
+[2023-04-22 16:58:42] INFO root fetch - main [MainThread]: End processing [iode]: success
+[2023-04-22 16:58:42] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-es-vat-prorate]: success
+[2023-04-22 16:58:42] INFO root fetch - main [MainThread]: End processing [torchgating]: success
+[2023-04-22 16:58:57] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 16:58:57] INFO root fetch - main [MainThread]: Store serial: [17815248]
