@@ -7758,3 +7758,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 11:47:50] INFO root fetch - main [MainThread]: End processing [micromechanics-indentationGUI]: success
 [2023-04-22 11:47:50] INFO root fetch - main [MainThread]: End processing [micropy-cli]: success
 [2023-04-22 11:47:50] INFO root fetch - main [MainThread]: Store serial: [17813668]
+[2023-04-22 11:52:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813668]
+[2023-04-22 11:52:59] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 11:52:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: maddaq
+[2023-04-22 11:52:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dfsjson
+[2023-04-22 11:52:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nanolayer
+[2023-04-22 11:52:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyathena
+[2023-04-22 11:52:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: styledlogger
+[2023-04-22 11:52:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: D3adC0re-Tools
+[2023-04-22 11:52:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pydflow
+[2023-04-22 11:52:59] INFO root fetch - processPackages [pyathena]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-04-22 11:52:59] WARNING root fetch - processPackages [D3adC0re-Tools]: Skipping, unable to determine old version
+[2023-04-22 11:52:59] INFO root fetch - main [MainThread]: End processing [D3adC0re-Tools] error
+[2023-04-22 11:52:59] INFO root fetch - processPackages [maddaq]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-04-22 11:52:59] INFO root fetch - processPackages [dfsjson]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-22 11:52:59] WARNING root fetch - processPackages [styledlogger]: Skipping, unable to determine old version
+[2023-04-22 11:52:59] INFO root fetch - main [MainThread]: End processing [styledlogger] error
+[2023-04-22 11:52:59] INFO root fetch - processPackages [nanolayer]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-22 11:52:59] INFO root fetch - processPackages [pydflow]: New version: [1.6.99] Old Version: [1.6.98]
+[2023-04-22 11:52:59] INFO root fetch - processPackages [dfsjson]: Downloading https://files.pythonhosted.org/packages/a1/b2/1bf389148065cb91f4a6292c0f2248d517c7c6cdf436ffd32a13e1e56d72/dfsjson-1.1.1.tar.gz
+[2023-04-22 11:52:59] INFO root fetch - processPackages [pyathena]: Downloading https://files.pythonhosted.org/packages/83/e8/82b62383ebd2a1f43d29ca765053e1f52eb55a1139dfd7203ebf040cbc0e/PyAthena-2.9.5.tar.gz
+[2023-04-22 11:52:59] INFO root fetch - processPackages [maddaq]: Downloading https://files.pythonhosted.org/packages/8e/bf/bb6dba9153903fb676861a7dfa50e55049c98508d0c30d2e286bdffd24af/maddaq-0.7.4.tar.gz
+[2023-04-22 11:52:59] INFO root fetch - processPackages [dfsjson]: executing diffoscope
+[2023-04-22 11:52:59] INFO root fetch - processPackages [dfsjson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfsjson-1.1.0.tar.gz tmp/dfsjson-1.1.1.tar.gz --markdown 20230422/d/dfsjson/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-22 11:52:59] INFO root fetch - processPackages [nanolayer]: executing diffoscope
+[2023-04-22 11:52:59] INFO root fetch - processPackages [nanolayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanolayer-0.4.8-py3-none-any.whl.zip tmp/nanolayer-0.4.9-py3-none-any.whl.zip --markdown 20230422/n/nanolayer/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-22 11:52:59] INFO root fetch - processPackages [pydflow]: executing diffoscope
+[2023-04-22 11:52:59] INFO root fetch - processPackages [pydflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydflow-1.6.98.tar.gz tmp/pydflow-1.6.99.tar.gz --markdown 20230422/p/pydflow/1.6.98-1.6.99/diff.md --exclude *.pyd
+[2023-04-22 11:53:00] INFO root fetch - processPackages [maddaq]: executing diffoscope
+[2023-04-22 11:53:00] INFO root fetch - processPackages [maddaq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maddaq-0.7.3.tar.gz tmp/maddaq-0.7.4.tar.gz --markdown 20230422/m/maddaq/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-04-22 11:53:00] INFO root fetch - processPackages [pyathena]: Downloading https://files.pythonhosted.org/packages/fe/d0/1d42ee02f8c5180d7b51cec5ba9a6b8c49317e9499139cbad947a348c5d4/PyAthena-2.9.6.tar.gz
+[2023-04-22 11:53:00] INFO root fetch - processPackages [pyathena]: executing diffoscope
+[2023-04-22 11:53:00] INFO root fetch - processPackages [pyathena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAthena-2.9.5.tar.gz tmp/PyAthena-2.9.6.tar.gz --markdown 20230422/p/pyathena/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-04-22 11:53:00] INFO root fetch - main [MainThread]: End processing [dfsjson]: success
+[2023-04-22 11:53:01] INFO root fetch - main [MainThread]: End processing [maddaq]: success
+[2023-04-22 11:53:01] INFO root fetch - main [MainThread]: End processing [nanolayer]: success
+[2023-04-22 11:53:01] INFO root fetch - main [MainThread]: End processing [pyathena]: success
+[2023-04-22 11:53:01] INFO root fetch - main [MainThread]: End processing [pydflow]: success
+[2023-04-22 11:53:01] INFO root fetch - main [MainThread]: Store serial: [17813710]
