@@ -8859,3 +8859,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 14:06:21] INFO root fetch - main [MainThread]: End processing [wgdi]: success
 [2023-04-22 14:06:22] INFO root fetch - main [MainThread]: End processing [esmerald]: success
 [2023-04-22 14:06:22] INFO root fetch - main [MainThread]: Store serial: [17814327]
+[2023-04-22 14:11:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814327]
+[2023-04-22 14:11:31] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 14:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: esprepomanager
+[2023-04-22 14:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fmdt-python
+[2023-04-22 14:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shellextools
+[2023-04-22 14:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyHRM
+[2023-04-22 14:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-localflavor
+[2023-04-22 14:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: confattr
+[2023-04-22 14:11:31] INFO root fetch - processPackages [esprepomanager]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-22 14:11:31] WARNING root fetch - processPackages [pyHRM]: Skipping, unable to determine old version
+[2023-04-22 14:11:31] INFO root fetch - main [MainThread]: End processing [pyHRM] error
+[2023-04-22 14:11:31] INFO root fetch - processPackages [confattr]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-22 14:11:31] WARNING root fetch - processPackages [shellextools]: Skipping, unable to determine old version
+[2023-04-22 14:11:31] INFO root fetch - main [MainThread]: End processing [shellextools] error
+[2023-04-22 14:11:31] INFO root fetch - processPackages [fmdt-python]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 14:11:31] INFO root fetch - processPackages [django-localflavor]: New version: [4.0] Old Version: [3.1]
+[2023-04-22 14:11:31] INFO root fetch - processPackages [confattr]: Downloading https://files.pythonhosted.org/packages/e0/3d/676c9829500ccdbc350423ed2b5e28aba80e42d64a6226d75cca28e78178/confattr-0.9.0.tar.gz
+[2023-04-22 14:11:31] INFO root fetch - processPackages [django-localflavor]: Downloading https://files.pythonhosted.org/packages/c8/9f/2a07563b1ea8d018473637bab86436ad3768c47798a793ca0c03d56f8b7e/django-localflavor-3.1.tar.gz
+[2023-04-22 14:11:31] INFO root fetch - processPackages [fmdt-python]: Downloading https://files.pythonhosted.org/packages/49/5e/c47f9b0c04e341c7127896823ac58cb461a14a3ce1ed5c1a7c57abd0b127/fmdt_python-0.0.8.tar.gz
+[2023-04-22 14:11:31] INFO root fetch - processPackages [esprepomanager]: Downloading https://files.pythonhosted.org/packages/df/6d/e4d8e9d911a90acb30eca48076a475b82d18c6929fd6c2a46933963694e8/esprepomanager-1.2.3.tar.gz
+[2023-04-22 14:11:31] INFO root fetch - processPackages [esprepomanager]: executing diffoscope
+[2023-04-22 14:11:31] INFO root fetch - processPackages [esprepomanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esprepomanager-1.2.2.tar.gz tmp/esprepomanager-1.2.3.tar.gz --markdown 20230422/e/esprepomanager/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-22 14:11:32] INFO root fetch - processPackages [fmdt-python]: Downloading https://files.pythonhosted.org/packages/5f/32/3ae1eeeda4aa46f137714f767f143842a2e80ed46a8463cab4d86454c3de/fmdt_python-0.0.9.tar.gz
+[2023-04-22 14:11:32] INFO root fetch - processPackages [fmdt-python]: executing diffoscope
+[2023-04-22 14:11:32] INFO root fetch - processPackages [fmdt-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fmdt_python-0.0.8.tar.gz tmp/fmdt_python-0.0.9.tar.gz --markdown 20230422/f/fmdt-python/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 14:11:32] INFO root fetch - processPackages [confattr]: Downloading https://files.pythonhosted.org/packages/a6/17/73ce7e383a16ae83a2768ebc6e64315ac4a7ece6c6cd12952e99e107efe8/confattr-0.9.1.tar.gz
+[2023-04-22 14:11:32] INFO root fetch - processPackages [confattr]: executing diffoscope
+[2023-04-22 14:11:32] INFO root fetch - processPackages [confattr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/confattr-0.9.0.tar.gz tmp/confattr-0.9.1.tar.gz --markdown 20230422/c/confattr/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-22 14:11:32] INFO root fetch - processPackages [django-localflavor]: Downloading https://files.pythonhosted.org/packages/b9/31/18b46a206ee2c96997e8d5f49db7bb2cc8cc463fa90829545583c7042ad4/django-localflavor-4.0.tar.gz
+[2023-04-22 14:11:32] INFO root fetch - processPackages [django-localflavor]: executing diffoscope
+[2023-04-22 14:11:32] INFO root fetch - processPackages [django-localflavor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-localflavor-3.1.tar.gz tmp/django-localflavor-4.0.tar.gz --markdown 20230422/d/django-localflavor/3.1-4.0/diff.md --exclude *.pyd
+[2023-04-22 14:11:32] INFO root fetch - main [MainThread]: End processing [esprepomanager]: success
+[2023-04-22 14:11:35] INFO root fetch - main [MainThread]: End processing [confattr]: success
+[2023-04-22 14:11:46] INFO root fetch - main [MainThread]: End processing [fmdt-python]: success
+[2023-04-22 14:12:07] INFO root fetch - main [MainThread]: End processing [django-localflavor]: success
+[2023-04-22 14:12:07] INFO root fetch - main [MainThread]: Store serial: [17814346]
