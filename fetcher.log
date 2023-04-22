@@ -3859,3 +3859,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 03:44:11] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
 [2023-04-22 03:44:14] INFO root fetch - main [MainThread]: End processing [pysnmp-lextudio]: success
 [2023-04-22 03:44:14] INFO root fetch - main [MainThread]: Store serial: [17811480]
+[2023-04-22 03:49:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811480]
+[2023-04-22 03:49:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-22 03:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: homeassistant-stubs
+[2023-04-22 03:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: proactive-jupyter-kernel
+[2023-04-22 03:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gpt-gateway
+[2023-04-22 03:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: celldancer
+[2023-04-22 03:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fluxrpc
+[2023-04-22 03:49:23] INFO root fetch - processPackages [fluxrpc]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 03:49:23] INFO root fetch - processPackages [gpt-gateway]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-22 03:49:23] INFO root fetch - processPackages [celldancer]: New version: [1.1.6] Old Version: [1.1.4]
+[2023-04-22 03:49:23] INFO root fetch - processPackages [homeassistant-stubs]: New version: [2023.4.6] Old Version: [2023.4.5]
+[2023-04-22 03:49:23] INFO root fetch - processPackages [fluxrpc]: executing diffoscope
+[2023-04-22 03:49:23] INFO root fetch - processPackages [fluxrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxrpc-0.9.8.tar.gz tmp/fluxrpc-0.9.9.tar.gz --markdown 20230422/f/fluxrpc/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 03:49:23] INFO root fetch - processPackages [gpt-gateway]: executing diffoscope
+[2023-04-22 03:49:23] INFO root fetch - processPackages [gpt-gateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_gateway-0.0.4.tar.gz tmp/gpt_gateway-0.0.5.tar.gz --markdown 20230422/g/gpt-gateway/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-22 03:49:23] INFO root fetch - processPackages [proactive-jupyter-kernel]: New version: [13.1.1.2212191832.dev0] Old Version: [13.1.1.2212191149.dev0]
+[2023-04-22 03:49:23] INFO root fetch - processPackages [proactive-jupyter-kernel]: executing diffoscope
+[2023-04-22 03:49:23] INFO root fetch - processPackages [proactive-jupyter-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proactive-jupyter-kernel-13.1.1.2212191149.dev0.zip tmp/proactive-jupyter-kernel-13.1.1.2212191832.dev0.zip --markdown 20230422/p/proactive-jupyter-kernel/13.1.1.2212191149.dev0-13.1.1.2212191832.dev0/diff.md --exclude *.pyd
+[2023-04-22 03:49:23] INFO root fetch - processPackages [homeassistant-stubs]: Downloading https://files.pythonhosted.org/packages/a4/1d/3908686489d6c521b103fff51bc095ff2fe7f9cbbb241f27a82766f7df3e/homeassistant_stubs-2023.4.6.tar.gz
+[2023-04-22 03:49:23] INFO root fetch - processPackages [celldancer]: Downloading https://files.pythonhosted.org/packages/c2/a0/ebf63fe340f3a1fd2f024aea5a844f5ec45631bd6124ebebd2c46e387dea/celldancer-1.1.6.tar.gz
+[2023-04-22 03:49:23] INFO root fetch - processPackages [homeassistant-stubs]: executing diffoscope
+[2023-04-22 03:49:23] INFO root fetch - processPackages [homeassistant-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homeassistant_stubs-2023.4.5.tar.gz tmp/homeassistant_stubs-2023.4.6.tar.gz --markdown 20230422/h/homeassistant-stubs/2023.4.5-2023.4.6/diff.md --exclude *.pyd
+[2023-04-22 03:49:24] INFO root fetch - main [MainThread]: End processing [gpt-gateway]: success
+[2023-04-22 03:49:24] INFO root fetch - main [MainThread]: End processing [fluxrpc]: success
+[2023-04-22 03:49:24] INFO root fetch - main [MainThread]: End processing [proactive-jupyter-kernel]: success
+[2023-04-22 03:49:25] INFO root fetch - processPackages [celldancer]: executing diffoscope
+[2023-04-22 03:49:25] INFO root fetch - processPackages [celldancer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/celldancer-1.1.4.tar.gz tmp/celldancer-1.1.6.tar.gz --markdown 20230422/c/celldancer/1.1.4-1.1.6/diff.md --exclude *.pyd
+[2023-04-22 03:49:27] INFO root fetch - main [MainThread]: End processing [celldancer]: success
+[2023-04-22 03:50:07] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
+[2023-04-22 03:50:07] INFO root fetch - main [MainThread]: Store serial: [17811498]
