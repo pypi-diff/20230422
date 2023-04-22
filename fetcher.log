@@ -6908,3 +6908,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 09:49:28] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2023-04-22 09:49:29] INFO root fetch - main [MainThread]: End processing [open-space-toolkit-astrodynamics]: success
 [2023-04-22 09:49:29] INFO root fetch - main [MainThread]: Store serial: [17813131]
+[2023-04-22 09:54:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813131]
+[2023-04-22 09:54:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 09:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sfstart
+[2023-04-22 09:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly-cpu
+[2023-04-22 09:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dvinfo
+[2023-04-22 09:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yuna-db
+[2023-04-22 09:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: djino
+[2023-04-22 09:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dvinfo
+[2023-04-22 09:54:38] WARNING root fetch - processPackages [sfstart]: Skipping, unable to determine old version
+[2023-04-22 09:54:38] INFO root fetch - main [MainThread]: End processing [sfstart] error
+[2023-04-22 09:54:38] INFO root fetch - processPackages [dvinfo]: New version: [1.3] Old Version: [1.2.1]
+[2023-04-22 09:54:38] INFO root fetch - processPackages [dvinfo]: New version: [1.3] Old Version: [1.2.1]
+[2023-04-22 09:54:38] INFO root fetch - processPackages [yuna-db]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-22 09:54:38] WARNING root fetch - processPackages [djino]: Skipping, unable to determine old version
+[2023-04-22 09:54:38] INFO root fetch - main [MainThread]: End processing [djino] error
+[2023-04-22 09:54:39] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.13.0.dev20230422] Old Version: [2.13.0.dev20230421]
+[2023-04-22 09:54:39] INFO root fetch - processPackages [dvinfo]: Downloading https://files.pythonhosted.org/packages/aa/c3/f09c331c87448bce2b6f4b98afd310afad023fb47f98ced1c0d7204294d0/dvinfo-1.2.1.tar.gz
+[2023-04-22 09:54:39] INFO root fetch - processPackages [dvinfo]: Downloading https://files.pythonhosted.org/packages/aa/c3/f09c331c87448bce2b6f4b98afd310afad023fb47f98ced1c0d7204294d0/dvinfo-1.2.1.tar.gz
+[2023-04-22 09:54:39] INFO root fetch - processPackages [yuna-db]: Downloading https://files.pythonhosted.org/packages/40/ca/e80b736e116ffbe30677a736435dcb15315d86b1f2e72ff9603e7dd1c0cd/yuna-db-0.0.2.tar.gz
+[2023-04-22 09:54:39] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/cb/be/c1a64a43028e18d12aaf80a985231451b4b2aea70710de01e311b2f6c091/tf_nightly_cpu-2.13.0.dev20230422-cp39-cp39-win_amd64.whl
+[2023-04-22 09:54:39] INFO root fetch - processPackages [dvinfo]: Downloading https://files.pythonhosted.org/packages/ad/48/5a92c411c69d02dc0e98adf54cbcfa10fdfc483f45d4a99091c43ff84f2d/dvinfo-1.3.tar.gz
+[2023-04-22 09:54:39] INFO root fetch - processPackages [dvinfo]: Downloading https://files.pythonhosted.org/packages/ad/48/5a92c411c69d02dc0e98adf54cbcfa10fdfc483f45d4a99091c43ff84f2d/dvinfo-1.3.tar.gz
+[2023-04-22 09:54:39] INFO root fetch - processPackages [yuna-db]: Downloading https://files.pythonhosted.org/packages/b9/2f/8298bab633b9470e09114fd59540b9ec65fd1e44b6b0af091b99d3b19725/yuna-db-0.0.3.tar.gz
+[2023-04-22 09:54:39] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2023-04-22 09:54:39] INFO root fetch - processPackages [dvinfo]: executing diffoscope
+[2023-04-22 09:54:39] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.13.0.dev20230421-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.13.0.dev20230422-cp39-cp39-win_amd64.whl.zip --markdown 20230422/t/tf-nightly-cpu/2.13.0.dev20230421-2.13.0.dev20230422/diff.md --exclude *.pyd
+[2023-04-22 09:54:39] INFO root fetch - processPackages [dvinfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvinfo-1.2.1.tar.gz tmp/dvinfo-1.3.tar.gz --markdown 20230422/d/dvinfo/1.2.1-1.3/diff.md --exclude *.pyd
+[2023-04-22 09:54:39] INFO root fetch - processPackages [dvinfo]: executing diffoscope
+[2023-04-22 09:54:39] INFO root fetch - processPackages [dvinfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvinfo-1.2.1.tar.gz tmp/dvinfo-1.3.tar.gz --markdown 20230422/d/dvinfo/1.2.1-1.3/diff.md --exclude *.pyd
+[2023-04-22 09:54:39] INFO root fetch - processPackages [yuna-db]: executing diffoscope
+[2023-04-22 09:54:39] INFO root fetch - processPackages [yuna-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yuna-db-0.0.2.tar.gz tmp/yuna-db-0.0.3.tar.gz --markdown 20230422/y/yuna-db/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-22 09:54:40] INFO root fetch - main [MainThread]: End processing [dvinfo]: success
+[2023-04-22 09:54:40] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2023-04-22 09:54:40] INFO root fetch - main [MainThread]: End processing [dvinfo]: success
+[2023-04-22 09:54:40] INFO root fetch - main [MainThread]: End processing [yuna-db]: success
+[2023-04-22 09:54:40] INFO root fetch - main [MainThread]: Store serial: [17813157]
