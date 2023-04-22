@@ -4495,3 +4495,82 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 05:30:38] INFO root fetch - main [MainThread]: End processing [pypcapkit]: success
 [2023-04-22 05:32:20] INFO root fetch - main [MainThread]: End processing [now-lms]: success
 [2023-04-22 05:32:20] INFO root fetch - main [MainThread]: Store serial: [17811847]
+[2023-04-22 05:37:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811847]
+[2023-04-22 05:37:30] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-22 05:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-core
+[2023-04-22 05:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gqylpy-exception
+[2023-04-22 05:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bacpypes3
+[2023-04-22 05:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: high-order-layers-torch
+[2023-04-22 05:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: karrio.dpdhl
+[2023-04-22 05:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: funccache
+[2023-04-22 05:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scidb-bridge
+[2023-04-22 05:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo13-addon-contract
+[2023-04-22 05:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: odoo12-addon-contract
+[2023-04-22 05:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: uwdtool
+[2023-04-22 05:37:30] INFO root fetch - processPackages [karrio.dpdhl]: New version: [2023.4.1] Old Version: [2023.4]
+[2023-04-22 05:37:30] INFO root fetch - processPackages [bacpypes3]: New version: [0.0.71] Old Version: [0.0.70]
+[2023-04-22 05:37:30] INFO root fetch - processPackages [high-order-layers-torch]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-04-22 05:37:30] INFO root fetch - processPackages [gqylpy-exception]: New version: [2.0.1] Old Version: [2.0]
+[2023-04-22 05:37:30] WARNING root fetch - processPackages [uwdtool]: Skipping, unable to determine old version
+[2023-04-22 05:37:30] INFO root fetch - processPackages [funccache]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-04-22 05:37:30] INFO root fetch - processPackages [uwdtool]: Start processing: odoo-addon-contract
+[2023-04-22 05:37:30] INFO root fetch - main [MainThread]: End processing [uwdtool] error
+[2023-04-22 05:37:30] INFO root fetch - processPackages [odoo13-addon-contract]: New version: [13.0.2.9.1.dev1] Old Version: [13.0.2.9.0]
+[2023-04-22 05:37:30] INFO root fetch - processPackages [scidb-bridge]: New version: [19.11.6] Old Version: [19.11.5]
+[2023-04-22 05:37:30] INFO root fetch - processPackages [odoo12-addon-contract]: New version: [12.0.8.6.1.99.dev6] Old Version: [12.0.8.6.1.99.dev5]
+[2023-04-22 05:37:30] INFO root fetch - processPackages [ovos-core]: New version: [0.0.8a5] Old Version: [0.0.8a4]
+[2023-04-22 05:37:30] INFO root fetch - processPackages [odoo-addon-contract]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-04-22 05:37:30] INFO root fetch - processPackages [high-order-layers-torch]: Downloading https://files.pythonhosted.org/packages/07/89/404164d785aff136fe90dbc09ba44e110b13c4ff70cb5459805baf8fc6fb/high_order_layers_torch-1.3.2.tar.gz
+[2023-04-22 05:37:30] INFO root fetch - processPackages [scidb-bridge]: Downloading https://files.pythonhosted.org/packages/1b/32/70a6e024b4e0bfe72588eea4ae11a82846552b90a29a70b19a248fadd231/scidb-bridge-19.11.5.tar.gz
+[2023-04-22 05:37:30] INFO root fetch - processPackages [funccache]: Downloading https://files.pythonhosted.org/packages/c9/8c/69393b12417742b7c2f2412c18ebc37dc4fba243e9303bc3c7649421202c/funccache-1.5.0.tar.gz
+[2023-04-22 05:37:30] INFO root fetch - processPackages [odoo12-addon-contract]: Downloading https://files.pythonhosted.org/packages/94/c9/db9f13c330dae0ef75be18fdec071e772985482824292dfa397dd5fa7b72/odoo12_addon_contract-12.0.8.6.1.99.dev5-py3-none-any.whl
+[2023-04-22 05:37:30] INFO root fetch - processPackages [odoo13-addon-contract]: Downloading https://files.pythonhosted.org/packages/f7/df/4dc600af8051b6b5cb2b7d3908996f6b655632c07a04b5dbe21ba071777d/odoo13_addon_contract-13.0.2.9.0-py3-none-any.whl
+[2023-04-22 05:37:30] INFO root fetch - processPackages [karrio.dpdhl]: Downloading https://files.pythonhosted.org/packages/48/1c/0b9e040803fc5e2c7d1c4da3e182a824336a48bbe953a11a6737278eb3c2/karrio.dpdhl-2023.4.1-py3-none-any.whl
+[2023-04-22 05:37:30] INFO root fetch - processPackages [odoo-addon-contract]: Downloading https://files.pythonhosted.org/packages/cd/ad/7f948653fb48630655be583d451e2b9e530f5abe966464325a42c775d025/odoo_addon_contract-16.0.1.0.0.2-py3-none-any.whl
+[2023-04-22 05:37:30] INFO root fetch - processPackages [bacpypes3]: Downloading https://files.pythonhosted.org/packages/b3/6f/2529ce12b4a8e2a579095f1c8f3d376121cbfcadab1fa4f4d6988a7622f9/bacpypes3-0.0.71-py3-none-any.whl
+[2023-04-22 05:37:30] INFO root fetch - processPackages [gqylpy-exception]: Downloading https://files.pythonhosted.org/packages/6c/3e/84974f0dab5a1c76333c04902acb086a6419141421a46a30cc4b5d9cae88/gqylpy_exception-2.0.1.tar.gz
+[2023-04-22 05:37:30] INFO root fetch - processPackages [ovos-core]: Downloading https://files.pythonhosted.org/packages/e3/db/fe57695ae5635c0c7bb69d32bce2d036f248b07ef611b47813c87c4db7dd/ovos_core-0.0.8a5-py3-none-any.whl
+[2023-04-22 05:37:30] INFO root fetch - processPackages [karrio.dpdhl]: executing diffoscope
+[2023-04-22 05:37:30] INFO root fetch - processPackages [karrio.dpdhl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karrio.dpdhl-2023.4-py3-none-any.whl.zip tmp/karrio.dpdhl-2023.4.1-py3-none-any.whl.zip --markdown 20230422/k/karrio.dpdhl/2023.4-2023.4.1/diff.md --exclude *.pyd
+[2023-04-22 05:37:30] INFO root fetch - processPackages [bacpypes3]: executing diffoscope
+[2023-04-22 05:37:30] INFO root fetch - processPackages [bacpypes3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bacpypes3-0.0.70-py3-none-any.whl.zip tmp/bacpypes3-0.0.71-py3-none-any.whl.zip --markdown 20230422/b/bacpypes3/0.0.70-0.0.71/diff.md --exclude *.pyd
+[2023-04-22 05:37:30] INFO root fetch - processPackages [scidb-bridge]: Downloading https://files.pythonhosted.org/packages/6a/4e/5f483f9273f4205a9a5622bcdb5bf5bc5cb93ce0248a5639eca2816f9c8f/scidb-bridge-19.11.6.tar.gz
+[2023-04-22 05:37:30] INFO root fetch - processPackages [funccache]: Downloading https://files.pythonhosted.org/packages/4a/26/700ebd30523663ec015fc7586bafeb1af6c4cf2bc934982c634b2912bdbe/funccache-1.5.1.tar.gz
+[2023-04-22 05:37:30] INFO root fetch - processPackages [gqylpy-exception]: executing diffoscope
+[2023-04-22 05:37:30] INFO root fetch - processPackages [gqylpy-exception]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gqylpy_exception-2.0.tar.gz tmp/gqylpy_exception-2.0.1.tar.gz --markdown 20230422/g/gqylpy-exception/2.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-22 05:37:30] INFO root fetch - processPackages [high-order-layers-torch]: Downloading https://files.pythonhosted.org/packages/a8/74/793571bdd1f5b0cb1687e0c917945bd83579af7b230709f7701826980e2c/high_order_layers_torch-1.3.3.tar.gz
+[2023-04-22 05:37:30] INFO root fetch - processPackages [ovos-core]: executing diffoscope
+[2023-04-22 05:37:30] INFO root fetch - processPackages [ovos-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_core-0.0.8a4-py3-none-any.whl.zip tmp/ovos_core-0.0.8a5-py3-none-any.whl.zip --markdown 20230422/o/ovos-core/0.0.8a4-0.0.8a5/diff.md --exclude *.pyd
+[2023-04-22 05:37:30] INFO root fetch - processPackages [odoo12-addon-contract]: Downloading https://files.pythonhosted.org/packages/33/64/4cbce78af33321074cdb086b92fe5f95b38f2243e3a21213c54ef9899133/odoo12_addon_contract-12.0.8.6.1.99.dev6-py3-none-any.whl
+[2023-04-22 05:37:30] INFO root fetch - processPackages [odoo13-addon-contract]: Downloading https://files.pythonhosted.org/packages/c6/21/5c0951f9c3753b06a951edf2dfb795d545b370ec330ddcdfa4de1e4afac5/odoo13_addon_contract-13.0.2.9.1.dev1-py3-none-any.whl
+[2023-04-22 05:37:30] INFO root fetch - processPackages [scidb-bridge]: executing diffoscope
+[2023-04-22 05:37:30] INFO root fetch - processPackages [scidb-bridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scidb-bridge-19.11.5.tar.gz tmp/scidb-bridge-19.11.6.tar.gz --markdown 20230422/s/scidb-bridge/19.11.5-19.11.6/diff.md --exclude *.pyd
+[2023-04-22 05:37:30] INFO root fetch - processPackages [funccache]: executing diffoscope
+[2023-04-22 05:37:30] INFO root fetch - processPackages [funccache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funccache-1.5.0.tar.gz tmp/funccache-1.5.1.tar.gz --markdown 20230422/f/funccache/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-04-22 05:37:30] INFO root fetch - processPackages [high-order-layers-torch]: executing diffoscope
+[2023-04-22 05:37:30] INFO root fetch - processPackages [high-order-layers-torch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/high_order_layers_torch-1.3.2.tar.gz tmp/high_order_layers_torch-1.3.3.tar.gz --markdown 20230422/h/high-order-layers-torch/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-04-22 05:37:30] INFO root fetch - processPackages [odoo-addon-contract]: Downloading https://files.pythonhosted.org/packages/32/7b/93565093c2570f58b208994a6dd8200813797df08efb10c52e78aa1f5431/odoo_addon_contract-16.0.1.0.0.3-py3-none-any.whl
+[2023-04-22 05:37:31] INFO root fetch - processPackages [odoo12-addon-contract]: executing diffoscope
+[2023-04-22 05:37:31] INFO root fetch - processPackages [odoo12-addon-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_contract-12.0.8.6.1.99.dev5-py3-none-any.whl.zip tmp/odoo12_addon_contract-12.0.8.6.1.99.dev6-py3-none-any.whl.zip --markdown 20230422/o/odoo12-addon-contract/12.0.8.6.1.99.dev5-12.0.8.6.1.99.dev6/diff.md --exclude *.pyd
+[2023-04-22 05:37:31] INFO root fetch - processPackages [odoo-addon-contract]: executing diffoscope
+[2023-04-22 05:37:31] INFO root fetch - processPackages [odoo-addon-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_contract-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_contract-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230422/o/odoo-addon-contract/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-04-22 05:37:31] INFO root fetch - processPackages [odoo13-addon-contract]: executing diffoscope
+[2023-04-22 05:37:31] INFO root fetch - processPackages [odoo13-addon-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_contract-13.0.2.9.0-py3-none-any.whl.zip tmp/odoo13_addon_contract-13.0.2.9.1.dev1-py3-none-any.whl.zip --markdown 20230422/o/odoo13-addon-contract/13.0.2.9.0-13.0.2.9.1.dev1/diff.md --exclude *.pyd
+[2023-04-22 05:37:32] INFO root fetch - processPackages [karrio.dpdhl]: Start processing: odoo14-addon-contract
+[2023-04-22 05:37:32] INFO root fetch - main [MainThread]: End processing [karrio.dpdhl]: success
+[2023-04-22 05:37:32] INFO root fetch - processPackages [odoo14-addon-contract]: New version: [14.0.2.9.5.dev2] Old Version: [14.0.2.9.5.dev1]
+[2023-04-22 05:37:32] INFO root fetch - processPackages [odoo14-addon-contract]: Downloading https://files.pythonhosted.org/packages/dc/cc/b9f045c6fd2779ca9368a74c955322f94cc77fc73a15b6132a90f1945a42/odoo14_addon_contract-14.0.2.9.5.dev1-py3-none-any.whl
+[2023-04-22 05:37:32] INFO root fetch - main [MainThread]: End processing [gqylpy-exception]: success
+[2023-04-22 05:37:32] INFO root fetch - main [MainThread]: End processing [high-order-layers-torch]: success
+[2023-04-22 05:37:32] INFO root fetch - main [MainThread]: End processing [scidb-bridge]: success
+[2023-04-22 05:37:32] INFO root fetch - main [MainThread]: End processing [funccache]: success
+[2023-04-22 05:37:32] INFO root fetch - processPackages [odoo14-addon-contract]: Downloading https://files.pythonhosted.org/packages/85/80/fa2b3f96da4d6346224a003ef95545165051c2cc98d411b8865efbad54c8/odoo14_addon_contract-14.0.2.9.5.dev2-py3-none-any.whl
+[2023-04-22 05:37:32] INFO root fetch - main [MainThread]: End processing [bacpypes3]: success
+[2023-04-22 05:37:33] INFO root fetch - processPackages [odoo14-addon-contract]: executing diffoscope
+[2023-04-22 05:37:33] INFO root fetch - processPackages [odoo14-addon-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_contract-14.0.2.9.5.dev1-py3-none-any.whl.zip tmp/odoo14_addon_contract-14.0.2.9.5.dev2-py3-none-any.whl.zip --markdown 20230422/o/odoo14-addon-contract/14.0.2.9.5.dev1-14.0.2.9.5.dev2/diff.md --exclude *.pyd
+[2023-04-22 05:37:33] INFO root fetch - main [MainThread]: End processing [odoo12-addon-contract]: success
+[2023-04-22 05:37:35] INFO root fetch - main [MainThread]: End processing [odoo14-addon-contract]: success
+[2023-04-22 05:37:36] INFO root fetch - main [MainThread]: End processing [odoo-addon-contract]: success
+[2023-04-22 05:37:36] INFO root fetch - main [MainThread]: End processing [odoo13-addon-contract]: success
+[2023-04-22 05:37:41] INFO root fetch - main [MainThread]: End processing [ovos-core]: success
+[2023-04-22 05:37:41] INFO root fetch - main [MainThread]: Store serial: [17811887]
