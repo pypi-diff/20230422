@@ -8411,3 +8411,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 13:14:10] INFO root fetch - main [MainThread]: End processing [medspellchecker]: success
 [2023-04-22 13:14:12] INFO root fetch - main [MainThread]: End processing [affine-transform]: success
 [2023-04-22 13:14:12] INFO root fetch - main [MainThread]: Store serial: [17814063]
+[2023-04-22 13:19:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814063]
+[2023-04-22 13:19:21] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 13:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snif
+[2023-04-22 13:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: exciton
+[2023-04-22 13:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: amanda-rerp-ols
+[2023-04-22 13:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: buildington
+[2023-04-22 13:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-marina
+[2023-04-22 13:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: andtate
+[2023-04-22 13:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bigdl-dllib
+[2023-04-22 13:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: esprepomanager
+[2023-04-22 13:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: buildington
+[2023-04-22 13:19:21] WARNING root fetch - processPackages [snif]: Skipping, unable to determine old version
+[2023-04-22 13:19:21] INFO root fetch - main [MainThread]: End processing [snif] error
+[2023-04-22 13:19:21] INFO root fetch - processPackages [buildington]: New version: [1.0] Old Version: [0.1]
+[2023-04-22 13:19:21] INFO root fetch - processPackages [buildington]: New version: [1.0] Old Version: [0.1]
+[2023-04-22 13:19:21] INFO root fetch - processPackages [django-marina]: New version: [23.2] Old Version: [23.1]
+[2023-04-22 13:19:21] WARNING root fetch - processPackages [andtate]: Skipping, unable to determine old version
+[2023-04-22 13:19:21] INFO root fetch - main [MainThread]: End processing [andtate] error
+[2023-04-22 13:19:21] INFO root fetch - processPackages [exciton]: New version: [1.4.5] Old Version: [1.4.3]
+[2023-04-22 13:19:21] INFO root fetch - processPackages [esprepomanager]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-22 13:19:21] INFO root fetch - processPackages [amanda-rerp-ols]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 13:19:21] INFO root fetch - processPackages [bigdl-dllib]: New version: [2.4.0b20230421] Old Version: [2.3.0b20230420]
+[2023-04-22 13:19:21] INFO root fetch - processPackages [esprepomanager]: executing diffoscope
+[2023-04-22 13:19:21] INFO root fetch - processPackages [esprepomanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esprepomanager-1.1.0.tar.gz tmp/esprepomanager-1.1.1.tar.gz --markdown 20230422/e/esprepomanager/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-22 13:19:21] INFO root fetch - processPackages [buildington]: Downloading https://files.pythonhosted.org/packages/8f/a1/b0714c992e441d9a39036ae9777ece10befd33c3b66363d28cfc9c4d31e2/buildington-0.1.tar.gz
+[2023-04-22 13:19:21] INFO root fetch - processPackages [buildington]: Downloading https://files.pythonhosted.org/packages/8f/a1/b0714c992e441d9a39036ae9777ece10befd33c3b66363d28cfc9c4d31e2/buildington-0.1.tar.gz
+[2023-04-22 13:19:21] INFO root fetch - processPackages [exciton]: Downloading https://files.pythonhosted.org/packages/4f/61/98ad4f82e67a9aabd8381bb4e698a1f707b1665c49e31848162516dcccbe/exciton-1.4.3-py3-none-any.whl
+[2023-04-22 13:19:21] INFO root fetch - processPackages [bigdl-dllib]: Downloading https://files.pythonhosted.org/packages/74/24/627f900161272bf271de9f2c2ac9411c7434b7221383b16da0261927d71c/bigdl-dllib-2.3.0b20230420.tar.gz
+[2023-04-22 13:19:21] INFO root fetch - processPackages [amanda-rerp-ols]: Downloading https://files.pythonhosted.org/packages/6b/fb/b8c32428a2b6ef1b9673a7b15061be1913a0881b28f6e933ae7ac7535bd7/amanda_rerp_ols-0.0.1.tar.gz
+[2023-04-22 13:19:21] WARNING root fetch - processPackages [bigdl-dllib]: Skipping package: exceeds size limit 53559961>=10485760
+[2023-04-22 13:19:21] INFO root fetch - main [MainThread]: End processing [bigdl-dllib] error
+[2023-04-22 13:19:21] INFO root fetch - processPackages [django-marina]: Downloading https://files.pythonhosted.org/packages/18/08/6f3969827fa8b5bf2188557eeaf8ac36e22a66180b2877c67043c29f5e44/django-marina-23.2.tar.gz
+[2023-04-22 13:19:22] INFO root fetch - processPackages [exciton]: Downloading https://files.pythonhosted.org/packages/d4/65/a7e53333cebb72e9d5ec949db437a5d6183490cb8d989c3179d8498aa291/exciton-1.4.5-py3-none-any.whl
+[2023-04-22 13:19:22] INFO root fetch - processPackages [amanda-rerp-ols]: Downloading https://files.pythonhosted.org/packages/7c/09/03fdd53e90f35c743e2fc728f133d9d38c9654dc7fccfb6742528ace4826/amanda_rerp_ols-0.0.2.tar.gz
+[2023-04-22 13:19:22] INFO root fetch - processPackages [django-marina]: executing diffoscope
+[2023-04-22 13:19:22] INFO root fetch - processPackages [django-marina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-marina-23.1.tar.gz tmp/django-marina-23.2.tar.gz --markdown 20230422/d/django-marina/23.1-23.2/diff.md --exclude *.pyd
+[2023-04-22 13:19:22] INFO root fetch - processPackages [buildington]: Downloading https://files.pythonhosted.org/packages/80/ec/ee8e1e2c9a3bd482929c6ba97a784fa122f4ec704350b0e84675fa001de0/buildington-1.0.tar.gz
+[2023-04-22 13:19:22] INFO root fetch - processPackages [buildington]: Downloading https://files.pythonhosted.org/packages/80/ec/ee8e1e2c9a3bd482929c6ba97a784fa122f4ec704350b0e84675fa001de0/buildington-1.0.tar.gz
+[2023-04-22 13:19:22] INFO root fetch - processPackages [amanda-rerp-ols]: executing diffoscope
+[2023-04-22 13:19:22] INFO root fetch - processPackages [amanda-rerp-ols]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amanda_rerp_ols-0.0.1.tar.gz tmp/amanda_rerp_ols-0.0.2.tar.gz --markdown 20230422/a/amanda-rerp-ols/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 13:19:22] INFO root fetch - processPackages [exciton]: executing diffoscope
+[2023-04-22 13:19:22] INFO root fetch - processPackages [exciton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exciton-1.4.3-py3-none-any.whl.zip tmp/exciton-1.4.5-py3-none-any.whl.zip --markdown 20230422/e/exciton/1.4.3-1.4.5/diff.md --exclude *.pyd
+[2023-04-22 13:19:22] INFO root fetch - processPackages [buildington]: executing diffoscope
+[2023-04-22 13:19:22] INFO root fetch - processPackages [buildington]: executing diffoscope
+[2023-04-22 13:19:22] INFO root fetch - processPackages [buildington]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buildington-0.1.tar.gz tmp/buildington-1.0.tar.gz --markdown 20230422/b/buildington/0.1-1.0/diff.md --exclude *.pyd
+[2023-04-22 13:19:22] INFO root fetch - processPackages [buildington]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buildington-0.1.tar.gz tmp/buildington-1.0.tar.gz --markdown 20230422/b/buildington/0.1-1.0/diff.md --exclude *.pyd
+[2023-04-22 13:19:23] INFO root fetch - main [MainThread]: End processing [django-marina]: success
+[2023-04-22 13:19:23] INFO root fetch - main [MainThread]: End processing [amanda-rerp-ols]: success
+[2023-04-22 13:19:23] INFO root fetch - main [MainThread]: End processing [buildington]: success
+[2023-04-22 13:19:23] INFO root fetch - main [MainThread]: End processing [esprepomanager]: success
+[2023-04-22 13:19:23] INFO root fetch - main [MainThread]: End processing [buildington]: success
+[2023-04-22 13:19:23] INFO root fetch - main [MainThread]: End processing [exciton]: success
+[2023-04-22 13:19:23] INFO root fetch - main [MainThread]: Store serial: [17814100]
