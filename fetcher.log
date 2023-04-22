@@ -8772,3 +8772,11 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 13:50:45] INFO root fetch - main [MainThread]: End processing [graphql-http-server]: success
 [2023-04-22 13:50:45] INFO root fetch - main [MainThread]: End processing [asyncio-simple-http-server]: success
 [2023-04-22 13:50:45] INFO root fetch - main [MainThread]: Store serial: [17814281]
+[2023-04-22 13:55:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814281]
+[2023-04-22 13:55:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-22 13:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wafl
+[2023-04-22 13:55:55] INFO root fetch - processPackages [wafl]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 13:55:55] INFO root fetch - processPackages [wafl]: executing diffoscope
+[2023-04-22 13:55:55] INFO root fetch - processPackages [wafl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wafl-0.0.8-py3-none-any.whl.zip tmp/wafl-0.0.9-py3-none-any.whl.zip --markdown 20230422/w/wafl/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 13:55:56] INFO root fetch - main [MainThread]: End processing [wafl]: success
+[2023-04-22 13:55:56] INFO root fetch - main [MainThread]: Store serial: [17814283]
