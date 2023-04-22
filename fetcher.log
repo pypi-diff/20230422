@@ -7508,3 +7508,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 11:11:16] INFO root fetch - main [MainThread]: End processing [pyrew]: success
 [2023-04-22 11:11:17] INFO root fetch - main [MainThread]: End processing [liftcord]: success
 [2023-04-22 11:11:17] INFO root fetch - main [MainThread]: Store serial: [17813521]
+[2023-04-22 11:16:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813521]
+[2023-04-22 11:16:25] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 11:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: auto-screener
+[2023-04-22 11:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: markit-gateway
+[2023-04-22 11:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nais-processor
+[2023-04-22 11:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: auto-screener
+[2023-04-22 11:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ssb-sgis
+[2023-04-22 11:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: telespider
+[2023-04-22 11:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tbp-nightly
+[2023-04-22 11:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tf-nightly
+[2023-04-22 11:16:25] INFO root fetch - processPackages [markit-gateway]: New version: [2.0.1] Old Version: [1.8.4]
+[2023-04-22 11:16:25] INFO root fetch - processPackages [auto-screener]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-22 11:16:25] INFO root fetch - processPackages [telespider]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-22 11:16:25] INFO root fetch - processPackages [auto-screener]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-22 11:16:25] INFO root fetch - processPackages [ssb-sgis]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 11:16:25] INFO root fetch - processPackages [nais-processor]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 11:16:25] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2023-04-22 11:16:25] INFO root fetch - processPackages [tf-nightly]: New version: [2.13.0.dev20230422] Old Version: [2.13.0.dev20230421]
+[2023-04-22 11:16:25] INFO root fetch - processPackages [auto-screener]: Downloading https://files.pythonhosted.org/packages/e8/aa/a30754c9f4c901256b99368707558ef401fa1cddd38b98cccd4f3e1938c7/auto-screener-0.0.3.tar.gz
+[2023-04-22 11:16:25] INFO root fetch - processPackages [auto-screener]: Downloading https://files.pythonhosted.org/packages/e8/aa/a30754c9f4c901256b99368707558ef401fa1cddd38b98cccd4f3e1938c7/auto-screener-0.0.3.tar.gz
+[2023-04-22 11:16:25] INFO root fetch - processPackages [markit-gateway]: Downloading https://files.pythonhosted.org/packages/10/45/99b72b5dd4feed45c29ac52a733ba2c8bcfc8fef0058cd6bd685a37dcbdd/markit-gateway-1.8.4.tar.gz
+[2023-04-22 11:16:25] INFO root fetch - processPackages [telespider]: Downloading https://files.pythonhosted.org/packages/65/da/7359a9505558f48299073814fb210c90a21bae2642ddca1254b66e496106/telespider-0.2.1.tar.gz
+[2023-04-22 11:16:25] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2023-04-22 11:16:25] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20230422/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
+[2023-04-22 11:16:26] INFO root fetch - processPackages [nais-processor]: executing diffoscope
+[2023-04-22 11:16:26] INFO root fetch - processPackages [nais-processor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nais-processor-0.0.8.tar.gz tmp/nais-processor-0.0.9.tar.gz --markdown 20230422/n/nais-processor/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 11:16:26] INFO root fetch - processPackages [telespider]: executing diffoscope
+[2023-04-22 11:16:26] INFO root fetch - processPackages [telespider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telespider-0.2.0.tar.gz tmp/telespider-0.2.1.tar.gz --markdown 20230422/t/telespider/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-22 11:16:26] INFO root fetch - processPackages [ssb-sgis]: executing diffoscope
+[2023-04-22 11:16:26] INFO root fetch - processPackages [ssb-sgis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssb_sgis-0.1.8.tar.gz tmp/ssb_sgis-0.1.9.tar.gz --markdown 20230422/s/ssb-sgis/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 11:16:26] INFO root fetch - processPackages [markit-gateway]: Downloading https://files.pythonhosted.org/packages/38/dd/2ba403292070580c8099f433fc4e131bea5e5123062264a70072ad75d02d/markit-gateway-2.0.1.tar.gz
+[2023-04-22 11:16:26] INFO root fetch - processPackages [auto-screener]: Downloading https://files.pythonhosted.org/packages/1c/db/3ebf95f5f2fb802533ac1599e548ee5c9bb2d22a8308f14a907f6c170cb1/auto-screener-0.0.4.tar.gz
+[2023-04-22 11:16:26] INFO root fetch - processPackages [auto-screener]: Downloading https://files.pythonhosted.org/packages/1c/db/3ebf95f5f2fb802533ac1599e548ee5c9bb2d22a8308f14a907f6c170cb1/auto-screener-0.0.4.tar.gz
+[2023-04-22 11:16:26] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/8a/13/34848a0b8f301c2bfca406fb91d4ca7d8f2b6cabf5fdf85e65370683cbb9/tf_nightly-2.13.0.dev20230422-cp39-cp39-win_amd64.whl
+[2023-04-22 11:16:26] INFO root fetch - processPackages [auto-screener]: executing diffoscope
+[2023-04-22 11:16:26] INFO root fetch - processPackages [auto-screener]: executing diffoscope
+[2023-04-22 11:16:26] INFO root fetch - processPackages [auto-screener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-screener-0.0.3.tar.gz tmp/auto-screener-0.0.4.tar.gz --markdown 20230422/a/auto-screener/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-22 11:16:26] INFO root fetch - processPackages [auto-screener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-screener-0.0.3.tar.gz tmp/auto-screener-0.0.4.tar.gz --markdown 20230422/a/auto-screener/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-22 11:16:26] INFO root fetch - processPackages [markit-gateway]: executing diffoscope
+[2023-04-22 11:16:26] INFO root fetch - processPackages [markit-gateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/markit-gateway-1.8.4.tar.gz tmp/markit-gateway-2.0.1.tar.gz --markdown 20230422/m/markit-gateway/1.8.4-2.0.1/diff.md --exclude *.pyd
+[2023-04-22 11:16:26] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2023-04-22 11:16:26] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.13.0.dev20230421-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.13.0.dev20230422-cp39-cp39-win_amd64.whl.zip --markdown 20230422/t/tf-nightly/2.13.0.dev20230421-2.13.0.dev20230422/diff.md --exclude *.pyd
+[2023-04-22 11:16:27] INFO root fetch - main [MainThread]: End processing [telespider]: success
+[2023-04-22 11:16:27] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2023-04-22 11:16:27] INFO root fetch - main [MainThread]: End processing [ssb-sgis]: success
+[2023-04-22 11:16:27] INFO root fetch - main [MainThread]: End processing [auto-screener]: success
+[2023-04-22 11:16:27] INFO root fetch - main [MainThread]: End processing [markit-gateway]: success
+[2023-04-22 11:16:27] INFO root fetch - main [MainThread]: End processing [auto-screener]: success
+[2023-04-22 11:16:28] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2023-04-22 11:16:29] INFO root fetch - main [MainThread]: End processing [nais-processor]: success
+[2023-04-22 11:16:29] INFO root fetch - main [MainThread]: Store serial: [17813554]
