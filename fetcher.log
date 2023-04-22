@@ -5012,3 +5012,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 06:22:24] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-hr]: success
 [2023-04-22 06:22:24] INFO root fetch - main [MainThread]: End processing [loopgpt]: success
 [2023-04-22 06:22:24] INFO root fetch - main [MainThread]: Store serial: [17812105]
+[2023-04-22 06:27:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812105]
+[2023-04-22 06:27:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-22 06:27:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: voice100-runtime
+[2023-04-22 06:27:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plastic-balanced-network
+[2023-04-22 06:27:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: athena-ai
+[2023-04-22 06:27:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo12-addon-iot
+[2023-04-22 06:27:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alice-skills-maneger
+[2023-04-22 06:27:33] INFO root fetch - processPackages [athena-ai]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-22 06:27:33] INFO root fetch - processPackages [voice100-runtime]: New version: [1.6.0] Old Version: [1.3.1]
+[2023-04-22 06:27:33] INFO root fetch - processPackages [odoo12-addon-iot]: New version: [12.0.1.3.1.99.dev4] Old Version: [12.0.1.3.1.99.dev3]
+[2023-04-22 06:27:33] WARNING root fetch - processPackages [plastic-balanced-network]: Skipping, unable to determine old version
+[2023-04-22 06:27:33] INFO root fetch - main [MainThread]: End processing [plastic-balanced-network] error
+[2023-04-22 06:27:33] WARNING root fetch - processPackages [alice-skills-maneger]: Skipping, unable to determine old version
+[2023-04-22 06:27:33] INFO root fetch - main [MainThread]: End processing [alice-skills-maneger] error
+[2023-04-22 06:27:33] INFO root fetch - processPackages [voice100-runtime]: Downloading https://files.pythonhosted.org/packages/7f/f5/60462a4eafd72dcf220787c9238f21801429f686ec1fdf68cbce028da420/voice100-runtime-1.3.1.tar.gz
+[2023-04-22 06:27:33] INFO root fetch - processPackages [athena-ai]: Downloading https://files.pythonhosted.org/packages/13/0b/0ab97a9e7c7d6f88d57fd19b438d3e9a0f3ad5c246f3318cc1105a267394/athena_ai-0.0.4.tar.gz
+[2023-04-22 06:27:33] INFO root fetch - processPackages [athena-ai]: executing diffoscope
+[2023-04-22 06:27:33] INFO root fetch - processPackages [athena-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athena_ai-0.0.3.tar.gz tmp/athena_ai-0.0.4.tar.gz --markdown 20230422/a/athena-ai/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-22 06:27:33] INFO root fetch - processPackages [odoo12-addon-iot]: Downloading https://files.pythonhosted.org/packages/ec/ac/7405ec23a91160730c9554a465cd764106c9317ac24e6e9271872febe014/odoo12_addon_iot-12.0.1.3.1.99.dev4-py3-none-any.whl
+[2023-04-22 06:27:33] INFO root fetch - processPackages [voice100-runtime]: Downloading https://files.pythonhosted.org/packages/82/a6/7213b16da6496ed26f7224cb390ba283ef6e4b74f92a178ee64039f79f5c/voice100_runtime-1.6.0.tar.gz
+[2023-04-22 06:27:33] INFO root fetch - processPackages [odoo12-addon-iot]: executing diffoscope
+[2023-04-22 06:27:33] INFO root fetch - processPackages [odoo12-addon-iot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_iot-12.0.1.3.1.99.dev3-py3-none-any.whl.zip tmp/odoo12_addon_iot-12.0.1.3.1.99.dev4-py3-none-any.whl.zip --markdown 20230422/o/odoo12-addon-iot/12.0.1.3.1.99.dev3-12.0.1.3.1.99.dev4/diff.md --exclude *.pyd
+[2023-04-22 06:27:33] INFO root fetch - processPackages [voice100-runtime]: executing diffoscope
+[2023-04-22 06:27:33] INFO root fetch - processPackages [voice100-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voice100-runtime-1.3.1.tar.gz tmp/voice100_runtime-1.6.0.tar.gz --markdown 20230422/v/voice100-runtime/1.3.1-1.6.0/diff.md --exclude *.pyd
+[2023-04-22 06:27:34] INFO root fetch - main [MainThread]: End processing [athena-ai]: success
+[2023-04-22 06:27:34] INFO root fetch - main [MainThread]: End processing [voice100-runtime]: success
+[2023-04-22 06:27:34] INFO root fetch - main [MainThread]: End processing [odoo12-addon-iot]: success
+[2023-04-22 06:27:34] INFO root fetch - main [MainThread]: Store serial: [17812123]
