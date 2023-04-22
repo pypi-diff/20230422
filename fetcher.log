@@ -10574,3 +10574,93 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 17:10:21] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
 [2023-04-22 17:10:22] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 17:10:22] INFO root fetch - main [MainThread]: Store serial: [17815321]
+[2023-04-22 17:15:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815321]
+[2023-04-22 17:15:31] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-22 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iode
+[2023-04-22 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jupylite-duckdb
+[2023-04-22 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: blurry-cli
+[2023-04-22 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: iode
+[2023-04-22 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bgutils-hddly
+[2023-04-22 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jupylite-duckdb
+[2023-04-22 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mixalime
+[2023-04-22 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: zyf
+[2023-04-22 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mlms
+[2023-04-22 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: propan
+[2023-04-22 17:15:31] INFO root fetch - processPackages [jupylite-duckdb]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-22 17:15:31] INFO root fetch - processPackages [blurry-cli]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-22 17:15:31] INFO root fetch - processPackages [mlms]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-22 17:15:31] INFO root fetch - processPackages [jupylite-duckdb]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-22 17:15:31] INFO root fetch - processPackages [iode]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 17:15:31] INFO root fetch - processPackages [iode]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 17:15:31] INFO root fetch - processPackages [zyf]: New version: [1.2] Old Version: [1.1]
+[2023-04-22 17:15:31] INFO root fetch - processPackages [mixalime]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-04-22 17:15:31] INFO root fetch - processPackages [bgutils-hddly]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-22 17:15:31] INFO root fetch - processPackages [propan]: New version: [0.0.9.2] Old Version: [0.0.9.1]
+[2023-04-22 17:15:32] INFO root fetch - processPackages [mixalime]: executing diffoscope
+[2023-04-22 17:15:32] INFO root fetch - processPackages [mixalime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixalime-2.9.8.tar.gz tmp/mixalime-2.9.9.tar.gz --markdown 20230422/m/mixalime/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-04-22 17:15:32] INFO root fetch - processPackages [iode]: Downloading https://files.pythonhosted.org/packages/a8/e7/8edd8b3407393c7361eac0794802dfb10adeeccefc6249b6692382d1b833/iode-0.1.0-py3-none-any.whl
+[2023-04-22 17:15:32] INFO root fetch - processPackages [iode]: Downloading https://files.pythonhosted.org/packages/a8/e7/8edd8b3407393c7361eac0794802dfb10adeeccefc6249b6692382d1b833/iode-0.1.0-py3-none-any.whl
+[2023-04-22 17:15:32] INFO root fetch - processPackages [bgutils-hddly]: executing diffoscope
+[2023-04-22 17:15:32] INFO root fetch - processPackages [bgutils-hddly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip tmp/bgutils_hddly-1.1.9.tar.gz --markdown 20230422/b/bgutils-hddly/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-22 17:15:32] INFO root fetch - processPackages [jupylite-duckdb]: Downloading https://files.pythonhosted.org/packages/fa/d6/a7995c15fd9db0c8f62b099d9ae47cdeac6817b65021379bfc61544e2c06/jupylite_duckdb-0.0.5-py3-none-any.whl
+[2023-04-22 17:15:32] INFO root fetch - processPackages [jupylite-duckdb]: Downloading https://files.pythonhosted.org/packages/fa/d6/a7995c15fd9db0c8f62b099d9ae47cdeac6817b65021379bfc61544e2c06/jupylite_duckdb-0.0.5-py3-none-any.whl
+[2023-04-22 17:15:32] INFO root fetch - processPackages [blurry-cli]: Downloading https://files.pythonhosted.org/packages/b0/ca/679753615c0d647d88251ede2533bc0b3a43e08121cb35a73a8588ee100d/blurry_cli-0.1.0.tar.gz
+[2023-04-22 17:15:32] INFO root fetch - processPackages [zyf]: Downloading https://files.pythonhosted.org/packages/f8/9b/109c81c67bb7e3deedefd0a1cd6ad0f7a200bae8aa0a069d28496d60f0b5/zyf-1.2.tar.gz
+[2023-04-22 17:15:32] INFO root fetch - processPackages [zyf]: executing diffoscope
+[2023-04-22 17:15:32] INFO root fetch - processPackages [zyf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zyf-1.1.tar.gz tmp/zyf-1.2.tar.gz --markdown 20230422/z/zyf/1.1-1.2/diff.md --exclude *.pyd
+[2023-04-22 17:15:32] INFO root fetch - processPackages [mlms]: Downloading https://files.pythonhosted.org/packages/46/74/b8dbb0c88f6c4fee43d4fcf995c6a2d6a7a8473d126e0bbc36984701ed73/mlms-0.9.0.tar.gz
+[2023-04-22 17:15:32] INFO root fetch - processPackages [mlms]: executing diffoscope
+[2023-04-22 17:15:32] INFO root fetch - processPackages [mlms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlms-0.8.0.tar.gz tmp/mlms-0.9.0.tar.gz --markdown 20230422/m/mlms/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-22 17:15:32] INFO root fetch - processPackages [jupylite-duckdb]: Downloading https://files.pythonhosted.org/packages/12/77/15af2ff8e9fdc5ea303c7e372827e2b96f614374b8ba7651c37281251272/jupylite_duckdb-0.0.6-py3-none-any.whl
+[2023-04-22 17:15:32] INFO root fetch - processPackages [jupylite-duckdb]: Downloading https://files.pythonhosted.org/packages/12/77/15af2ff8e9fdc5ea303c7e372827e2b96f614374b8ba7651c37281251272/jupylite_duckdb-0.0.6-py3-none-any.whl
+[2023-04-22 17:15:32] INFO root fetch - processPackages [jupylite-duckdb]: executing diffoscope
+[2023-04-22 17:15:32] INFO root fetch - processPackages [jupylite-duckdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupylite_duckdb-0.0.5-py3-none-any.whl.zip tmp/jupylite_duckdb-0.0.6-py3-none-any.whl.zip --markdown 20230422/j/jupylite-duckdb/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-22 17:15:32] INFO root fetch - processPackages [jupylite-duckdb]: executing diffoscope
+[2023-04-22 17:15:32] INFO root fetch - processPackages [jupylite-duckdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupylite_duckdb-0.0.5-py3-none-any.whl.zip tmp/jupylite_duckdb-0.0.6-py3-none-any.whl.zip --markdown 20230422/j/jupylite-duckdb/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-22 17:15:32] INFO root fetch - processPackages [propan]: Downloading https://files.pythonhosted.org/packages/81/a9/366e3cca67a7a13b70feecac96a8f1d1ad1df1ce331235130760b76fcf7d/propan-0.0.9.2.tar.gz
+[2023-04-22 17:15:32] INFO root fetch - processPackages [iode]: Downloading https://files.pythonhosted.org/packages/99/87/0c5700470f0b9b1cd27da35ae9d7318453f93d8f275a534f1565d543f850/iode-0.1.1-py3-none-any.whl
+[2023-04-22 17:15:32] INFO root fetch - processPackages [iode]: Downloading https://files.pythonhosted.org/packages/99/87/0c5700470f0b9b1cd27da35ae9d7318453f93d8f275a534f1565d543f850/iode-0.1.1-py3-none-any.whl
+[2023-04-22 17:15:32] INFO root fetch - processPackages [blurry-cli]: Downloading https://files.pythonhosted.org/packages/e1/9c/f2c4eb21ce3db69c370b859102f5c9a71e998c2eb99bc5d9651cf7532bf4/blurry_cli-0.2.0.tar.gz
+[2023-04-22 17:15:32] INFO root fetch - processPackages [propan]: executing diffoscope
+[2023-04-22 17:15:32] INFO root fetch - processPackages [propan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/propan-0.0.9.1.tar.gz tmp/propan-0.0.9.2.tar.gz --markdown 20230422/p/propan/0.0.9.1-0.0.9.2/diff.md --exclude *.pyd
+[2023-04-22 17:15:32] INFO root fetch - processPackages [iode]: executing diffoscope
+[2023-04-22 17:15:32] INFO root fetch - processPackages [iode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iode-0.1.0-py3-none-any.whl.zip tmp/iode-0.1.1-py3-none-any.whl.zip --markdown 20230422/i/iode/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 17:15:32] INFO root fetch - processPackages [iode]: executing diffoscope
+[2023-04-22 17:15:32] INFO root fetch - processPackages [iode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iode-0.1.0-py3-none-any.whl.zip tmp/iode-0.1.1-py3-none-any.whl.zip --markdown 20230422/i/iode/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 17:15:32] INFO root fetch - processPackages [blurry-cli]: executing diffoscope
+[2023-04-22 17:15:32] INFO root fetch - processPackages [blurry-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blurry_cli-0.1.0.tar.gz tmp/blurry_cli-0.2.0.tar.gz --markdown 20230422/b/blurry-cli/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-22 17:15:33] INFO root fetch - processPackages [bgutils-hddly]: Start processing: ddtcv
+[2023-04-22 17:15:33] INFO root fetch - main [MainThread]: End processing [bgutils-hddly]: success
+[2023-04-22 17:15:33] INFO root fetch - processPackages [ddtcv]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-22 17:15:33] INFO root fetch - processPackages [ddtcv]: Downloading https://files.pythonhosted.org/packages/86/81/949cb42f4b2ff0bfcbd768a62b88bb1eba5ebd309b36c29eb99f25e6f5d9/ddtcv-0.1.1.tar.gz
+[2023-04-22 17:15:33] INFO root fetch - processPackages [mlms]: Start processing: syncdsgen
+[2023-04-22 17:15:33] INFO root fetch - main [MainThread]: End processing [mlms]: success
+[2023-04-22 17:15:33] INFO root fetch - processPackages [syncdsgen]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-22 17:15:33] INFO root fetch - processPackages [iode]: Start processing: wbBase
+[2023-04-22 17:15:33] INFO root fetch - main [MainThread]: End processing [iode]: success
+[2023-04-22 17:15:33] INFO root fetch - processPackages [wbBase]: New version: [0.1.54] Old Version: [0.1.53]
+[2023-04-22 17:15:33] INFO root fetch - processPackages [iode]: Start processing: GridCal
+[2023-04-22 17:15:33] INFO root fetch - main [MainThread]: End processing [iode]: success
+[2023-04-22 17:15:33] INFO root fetch - processPackages [GridCal]: New version: [4.7.0] Old Version: [4.6.6]
+[2023-04-22 17:15:34] INFO root fetch - main [MainThread]: End processing [jupylite-duckdb]: success
+[2023-04-22 17:15:34] INFO root fetch - main [MainThread]: End processing [zyf]: success
+[2023-04-22 17:15:34] INFO root fetch - processPackages [wbBase]: Downloading https://files.pythonhosted.org/packages/f9/da/fe51a102dbf935fcc23fad6e268089d2c4ea8f6303df66cd5ae8aa197a46/wbBase-0.1.54.tar.gz
+[2023-04-22 17:15:34] INFO root fetch - main [MainThread]: End processing [jupylite-duckdb]: success
+[2023-04-22 17:15:34] INFO root fetch - processPackages [GridCal]: Downloading https://files.pythonhosted.org/packages/80/9d/61dfdbf9ead2e717f2f57cdf457e4d24c99946ad42316eb3ccaff60f951c/GridCal-4.6.6.tar.gz
+[2023-04-22 17:15:34] INFO root fetch - processPackages [wbBase]: executing diffoscope
+[2023-04-22 17:15:34] INFO root fetch - processPackages [wbBase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wbBase-0.1.53.tar.gz tmp/wbBase-0.1.54.tar.gz --markdown 20230422/w/wbBase/0.1.53-0.1.54/diff.md --exclude *.pyd
+[2023-04-22 17:15:34] INFO root fetch - processPackages [ddtcv]: Downloading https://files.pythonhosted.org/packages/33/76/23c04319881573c1bf7a11d78f6f30486746e25af46636929f59c20dcdcb/ddtcv-0.1.2.tar.gz
+[2023-04-22 17:15:34] INFO root fetch - processPackages [syncdsgen]: Downloading https://files.pythonhosted.org/packages/42/f5/fcbc3d356829430ae9e4072dff1b760a52e840dc340cdfcb877efde987b5/syncdsgen-0.0.8.tar.gz
+[2023-04-22 17:15:34] INFO root fetch - processPackages [syncdsgen]: executing diffoscope
+[2023-04-22 17:15:34] INFO root fetch - processPackages [syncdsgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncdsgen-0.0.7.tar.gz tmp/syncdsgen-0.0.8.tar.gz --markdown 20230422/s/syncdsgen/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-22 17:15:34] INFO root fetch - main [MainThread]: End processing [blurry-cli]: success
+[2023-04-22 17:15:34] INFO root fetch - processPackages [ddtcv]: executing diffoscope
+[2023-04-22 17:15:34] INFO root fetch - processPackages [ddtcv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddtcv-0.1.1.tar.gz tmp/ddtcv-0.1.2.tar.gz --markdown 20230422/d/ddtcv/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-22 17:15:34] WARNING root fetch - processPackages [GridCal]: Skipping package: exceeds size limit 28181879>=10485760
+[2023-04-22 17:15:34] INFO root fetch - main [MainThread]: End processing [GridCal] error
+[2023-04-22 17:15:34] INFO root fetch - main [MainThread]: End processing [propan]: success
+[2023-04-22 17:15:35] INFO root fetch - main [MainThread]: End processing [syncdsgen]: success
+[2023-04-22 17:15:35] INFO root fetch - main [MainThread]: End processing [ddtcv]: success
+[2023-04-22 17:15:37] INFO root fetch - main [MainThread]: End processing [mixalime]: success
+[2023-04-22 17:15:50] INFO root fetch - main [MainThread]: End processing [wbBase]: success
+[2023-04-22 17:15:50] INFO root fetch - main [MainThread]: Store serial: [17815362]
