@@ -4139,3 +4139,34 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 04:32:12] INFO root fetch - main [MainThread]: End processing [aegea]: success
 [2023-04-22 04:32:16] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2023-04-22 04:32:16] INFO root fetch - main [MainThread]: Store serial: [17811650]
+[2023-04-22 04:37:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811650]
+[2023-04-22 04:37:25] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 04:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: markit-processing
+[2023-04-22 04:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nh3
+[2023-04-22 04:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mpb-lib
+[2023-04-22 04:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vellum-ai
+[2023-04-22 04:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: TTT-CLI
+[2023-04-22 04:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo8-addon-account-cutoff-base
+[2023-04-22 04:37:25] INFO root fetch - processPackages [nh3]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-22 04:37:25] WARNING root fetch - processPackages [vellum-ai]: Skipping, unable to determine old version
+[2023-04-22 04:37:25] INFO root fetch - main [MainThread]: End processing [vellum-ai] error
+[2023-04-22 04:37:25] WARNING root fetch - processPackages [markit-processing]: Skipping, unable to determine old version
+[2023-04-22 04:37:25] INFO root fetch - main [MainThread]: End processing [markit-processing] error
+[2023-04-22 04:37:25] WARNING root fetch - processPackages [TTT-CLI]: Skipping, unable to determine old version
+[2023-04-22 04:37:25] INFO root fetch - main [MainThread]: End processing [TTT-CLI] error
+[2023-04-22 04:37:25] INFO root fetch - processPackages [mpb-lib]: New version: [0.1.81] Old Version: [0.1.80]
+[2023-04-22 04:37:25] INFO root fetch - processPackages [nh3]: executing diffoscope
+[2023-04-22 04:37:25] INFO root fetch - processPackages [nh3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nh3-0.2.8.tar.gz tmp/nh3-0.2.9.tar.gz --markdown 20230422/n/nh3/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-22 04:37:25] INFO root fetch - processPackages [odoo8-addon-account-cutoff-base]: New version: [8.0.0.1.0.99.dev66] Old Version: [8.0.0.1.0.99.dev65]
+[2023-04-22 04:37:25] INFO root fetch - processPackages [mpb-lib]: Downloading https://files.pythonhosted.org/packages/92/68/9207ff8b21eb5945a550d466cf7e1c26467ae511c3cbfd0350cbe362a7f7/mpb_lib-0.1.80.tar.gz
+[2023-04-22 04:37:25] INFO root fetch - processPackages [odoo8-addon-account-cutoff-base]: Downloading https://files.pythonhosted.org/packages/74/cd/7a1517424563931a79f82770fca260ee0653c6d411324621109c4fe31816/odoo8_addon_account_cutoff_base-8.0.0.1.0.99.dev65-py2-none-any.whl
+[2023-04-22 04:37:25] INFO root fetch - processPackages [mpb-lib]: Downloading https://files.pythonhosted.org/packages/4a/fc/c8cf1bfbfcca84e1c29e75cede7dee0c5dbfd0de6619ca024c745f3e40dc/mpb_lib-0.1.81.tar.gz
+[2023-04-22 04:37:26] INFO root fetch - processPackages [odoo8-addon-account-cutoff-base]: Downloading https://files.pythonhosted.org/packages/32/90/bcc67654d1d2ed2a61885f9647434396e084471f4eb8697cf177c83ab65c/odoo8_addon_account_cutoff_base-8.0.0.1.0.99.dev66-py2-none-any.whl
+[2023-04-22 04:37:26] INFO root fetch - processPackages [odoo8-addon-account-cutoff-base]: executing diffoscope
+[2023-04-22 04:37:26] INFO root fetch - processPackages [odoo8-addon-account-cutoff-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_account_cutoff_base-8.0.0.1.0.99.dev65-py2-none-any.whl.zip tmp/odoo8_addon_account_cutoff_base-8.0.0.1.0.99.dev66-py2-none-any.whl.zip --markdown 20230422/o/odoo8-addon-account-cutoff-base/8.0.0.1.0.99.dev65-8.0.0.1.0.99.dev66/diff.md --exclude *.pyd
+[2023-04-22 04:37:26] INFO root fetch - processPackages [mpb-lib]: executing diffoscope
+[2023-04-22 04:37:26] INFO root fetch - processPackages [mpb-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpb_lib-0.1.80.tar.gz tmp/mpb_lib-0.1.81.tar.gz --markdown 20230422/m/mpb-lib/0.1.80-0.1.81/diff.md --exclude *.pyd
+[2023-04-22 04:37:26] INFO root fetch - main [MainThread]: End processing [nh3]: success
+[2023-04-22 04:37:27] INFO root fetch - main [MainThread]: End processing [mpb-lib]: success
+[2023-04-22 04:37:27] INFO root fetch - main [MainThread]: End processing [odoo8-addon-account-cutoff-base]: success
+[2023-04-22 04:37:27] INFO root fetch - main [MainThread]: Store serial: [17811682]
