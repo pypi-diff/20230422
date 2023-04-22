@@ -9186,3 +9186,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 14:49:44] INFO root fetch - main [MainThread]: End processing [zigzag-dse]: success
 [2023-04-22 14:49:44] INFO root fetch - main [MainThread]: End processing [zigzag-dse]: success
 [2023-04-22 14:49:44] INFO root fetch - main [MainThread]: Store serial: [17814528]
+[2023-04-22 14:54:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814528]
+[2023-04-22 14:54:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-22 14:54:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: imp3
+[2023-04-22 14:54:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyHRM
+[2023-04-22 14:54:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: materialyoucolor
+[2023-04-22 14:54:54] WARNING root fetch - processPackages [materialyoucolor]: Skipping, unable to determine old version
+[2023-04-22 14:54:54] WARNING root fetch - processPackages [pyHRM]: Skipping, unable to determine old version
+[2023-04-22 14:54:54] INFO root fetch - processPackages [imp3]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-22 14:54:54] INFO root fetch - main [MainThread]: End processing [materialyoucolor] error
+[2023-04-22 14:54:54] INFO root fetch - main [MainThread]: End processing [pyHRM] error
+[2023-04-22 14:54:55] INFO root fetch - processPackages [imp3]: Downloading https://files.pythonhosted.org/packages/d2/b1/8a2cb275f985d329e8c241860e9b94dcf8fbc8e6fffb442287869783331a/imp3-0.1.3.tar.gz
+[2023-04-22 14:54:55] INFO root fetch - processPackages [imp3]: executing diffoscope
+[2023-04-22 14:54:55] INFO root fetch - processPackages [imp3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imp3-0.1.2.tar.gz tmp/imp3-0.1.3.tar.gz --markdown 20230422/i/imp3/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-22 14:54:56] INFO root fetch - main [MainThread]: End processing [imp3]: success
+[2023-04-22 14:54:56] INFO root fetch - main [MainThread]: Store serial: [17814540]
