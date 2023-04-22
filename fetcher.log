@@ -5446,3 +5446,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 07:02:11] INFO root fetch - main [MainThread]: End processing [lnhub_rest]: success
 [2023-04-22 07:02:11] INFO root fetch - main [MainThread]: End processing [pypcapkit]: success
 [2023-04-22 07:02:11] INFO root fetch - main [MainThread]: Store serial: [17812302]
+[2023-04-22 07:07:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812302]
+[2023-04-22 07:07:20] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 07:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cwsearch-utils
+[2023-04-22 07:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hyperfast-python-template
+[2023-04-22 07:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pythesyncer
+[2023-04-22 07:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OLG4P
+[2023-04-22 07:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rapid-pe
+[2023-04-22 07:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: JsonDatabaseZ
+[2023-04-22 07:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mkdocs-htmlproofer-plugin
+[2023-04-22 07:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: multi-model-server
+[2023-04-22 07:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dragonfile
+[2023-04-22 07:07:20] WARNING root fetch - processPackages [JsonDatabaseZ]: Skipping, unable to determine old version
+[2023-04-22 07:07:20] INFO root fetch - main [MainThread]: End processing [JsonDatabaseZ] error
+[2023-04-22 07:07:20] INFO root fetch - processPackages [hyperfast-python-template]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-22 07:07:20] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230421] Old Version: [1.1.8b20230420]
+[2023-04-22 07:07:20] INFO root fetch - processPackages [dragonfile]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-22 07:07:20] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.1.dev20230421] Old Version: [0.1.0]
+[2023-04-22 07:07:20] INFO root fetch - processPackages [cwsearch-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 07:07:20] INFO root fetch - processPackages [pythesyncer]: New version: [23.4.22.13] Old Version: [23.4.16.11]
+[2023-04-22 07:07:20] WARNING root fetch - processPackages [OLG4P]: Skipping, unable to determine old version
+[2023-04-22 07:07:20] INFO root fetch - main [MainThread]: End processing [OLG4P] error
+[2023-04-22 07:07:20] INFO root fetch - processPackages [hyperfast-python-template]: executing diffoscope
+[2023-04-22 07:07:20] INFO root fetch - processPackages [hyperfast-python-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperfast_python_template-0.2.8.tar.gz tmp/hyperfast_python_template-0.2.9.tar.gz --markdown 20230422/h/hyperfast-python-template/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-22 07:07:20] INFO root fetch - processPackages [mkdocs-htmlproofer-plugin]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-22 07:07:20] INFO root fetch - processPackages [dragonfile]: executing diffoscope
+[2023-04-22 07:07:20] INFO root fetch - processPackages [dragonfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfile-1.0.0-py3-none-any.whl.zip tmp/dragonfile-1.0.1-py3-none-any.whl.zip --markdown 20230422/d/dragonfile/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 07:07:20] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-04-22 07:07:20] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230420-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230421-py2.py3-none-any.whl.zip --markdown 20230422/m/multi-model-server/1.1.8b20230420-1.1.8b20230421/diff.md --exclude *.pyd
+[2023-04-22 07:07:20] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-04-22 07:07:20] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.0.tar.gz tmp/rapid_pe-0.1.1.dev20230421.tar.gz --markdown 20230422/r/rapid-pe/0.1.0-0.1.1.dev20230421/diff.md --exclude *.pyd
+[2023-04-22 07:07:21] INFO root fetch - processPackages [mkdocs-htmlproofer-plugin]: Downloading https://files.pythonhosted.org/packages/ec/65/117fd2be049f305bc768f33f90f6e3f340b3b997d0829adc16e108bfafc2/mkdocs-htmlproofer-plugin-0.8.1.tar.gz
+[2023-04-22 07:07:21] INFO root fetch - processPackages [pythesyncer]: Downloading https://files.pythonhosted.org/packages/7f/c1/0ce57862975e51f21b58793f767e4a2ba05f4cc6f9766221fecc97787f8f/pythesyncer-23.4.22.13.tar.gz
+[2023-04-22 07:07:21] INFO root fetch - processPackages [cwsearch-utils]: executing diffoscope
+[2023-04-22 07:07:21] INFO root fetch - processPackages [cwsearch-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwsearch_utils-0.1.8-py3-none-any.whl.zip tmp/cwsearch_utils-0.1.9-py3-none-any.whl.zip --markdown 20230422/c/cwsearch-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 07:07:21] INFO root fetch - processPackages [pythesyncer]: executing diffoscope
+[2023-04-22 07:07:21] INFO root fetch - processPackages [pythesyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythesyncer-23.4.16.11.tar.gz tmp/pythesyncer-23.4.22.13.tar.gz --markdown 20230422/p/pythesyncer/23.4.16.11-23.4.22.13/diff.md --exclude *.pyd
+[2023-04-22 07:07:21] INFO root fetch - processPackages [mkdocs-htmlproofer-plugin]: Downloading https://files.pythonhosted.org/packages/06/65/86a6fd0b19278a9f674917401ce88d33740c0acdac915515d1028561e533/mkdocs-htmlproofer-plugin-0.9.0.tar.gz
+[2023-04-22 07:07:21] INFO root fetch - processPackages [mkdocs-htmlproofer-plugin]: executing diffoscope
+[2023-04-22 07:07:21] INFO root fetch - processPackages [mkdocs-htmlproofer-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-htmlproofer-plugin-0.8.1.tar.gz tmp/mkdocs-htmlproofer-plugin-0.9.0.tar.gz --markdown 20230422/m/mkdocs-htmlproofer-plugin/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-22 07:07:22] INFO root fetch - main [MainThread]: End processing [hyperfast-python-template]: success
+[2023-04-22 07:07:22] INFO root fetch - main [MainThread]: End processing [dragonfile]: success
+[2023-04-22 07:07:22] INFO root fetch - main [MainThread]: End processing [cwsearch-utils]: success
+[2023-04-22 07:07:22] INFO root fetch - main [MainThread]: End processing [pythesyncer]: success
+[2023-04-22 07:07:22] INFO root fetch - main [MainThread]: End processing [mkdocs-htmlproofer-plugin]: success
+[2023-04-22 07:07:23] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-04-22 07:10:13] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
+[2023-04-22 07:10:13] INFO root fetch - main [MainThread]: Store serial: [17812327]
