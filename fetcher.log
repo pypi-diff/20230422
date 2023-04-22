@@ -3969,3 +3969,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 04:05:40] INFO root fetch - processPackages [open-space-toolkit-physics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_space_toolkit_physics-0.5.9-py39-none-any.whl.zip tmp/open_space_toolkit_physics-0.6.0-py39-none-any.whl.zip --markdown 20230422/o/open-space-toolkit-physics/0.5.9-0.6.0/diff.md --exclude *.pyd
 [2023-04-22 04:06:05] INFO root fetch - main [MainThread]: End processing [open-space-toolkit-physics]: success
 [2023-04-22 04:06:05] INFO root fetch - main [MainThread]: Store serial: [17811553]
+[2023-04-22 04:11:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811553]
+[2023-04-22 04:11:18] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 04:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smartchart
+[2023-04-22 04:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fluxrpc
+[2023-04-22 04:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coiled
+[2023-04-22 04:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fluxvault
+[2023-04-22 04:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flowtask
+[2023-04-22 04:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fmot
+[2023-04-22 04:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: prettyqt
+[2023-04-22 04:11:18] INFO root fetch - processPackages [fluxrpc]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 04:11:18] INFO root fetch - processPackages [prettyqt]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-04-22 04:11:18] INFO root fetch - processPackages [fluxvault]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 04:11:18] INFO root fetch - processPackages [flowtask]: New version: [4.3.9] Old Version: [4.3.8]
+[2023-04-22 04:11:18] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-22 04:11:18] INFO root fetch - processPackages [smartchart]: New version: [6.5.1] Old Version: [6.5]
+[2023-04-22 04:11:18] INFO root fetch - processPackages [fmot]: New version: [1.5.6] Old Version: [1.3.4]
+[2023-04-22 04:11:18] INFO root fetch - processPackages [fluxrpc]: executing diffoscope
+[2023-04-22 04:11:18] INFO root fetch - processPackages [fluxrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxrpc-0.9.8.tar.gz tmp/fluxrpc-0.9.9.tar.gz --markdown 20230422/f/fluxrpc/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 04:11:18] INFO root fetch - processPackages [prettyqt]: executing diffoscope
+[2023-04-22 04:11:18] INFO root fetch - processPackages [prettyqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prettyqt-1.9.1.tar.gz tmp/prettyqt-1.9.2.tar.gz --markdown 20230422/p/prettyqt/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-04-22 04:11:18] INFO root fetch - processPackages [fluxvault]: executing diffoscope
+[2023-04-22 04:11:18] INFO root fetch - processPackages [fluxvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxvault-0.9.8.tar.gz tmp/fluxvault-0.9.9.tar.gz --markdown 20230422/f/fluxvault/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 04:11:18] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-22 04:11:18] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230422/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-22 04:11:18] INFO root fetch - processPackages [flowtask]: executing diffoscope
+[2023-04-22 04:11:18] INFO root fetch - processPackages [flowtask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowtask-4.3.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/flowtask-4.3.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230422/f/flowtask/4.3.8-4.3.9/diff.md --exclude *.pyd
+[2023-04-22 04:11:18] INFO root fetch - processPackages [fmot]: Downloading https://files.pythonhosted.org/packages/7c/e1/e00306e4afe661961f95369b015f78cd078a50b9468bed24d4c05cc83c81/fmot-1.3.4-py3-none-any.whl
+[2023-04-22 04:11:18] INFO root fetch - processPackages [smartchart]: Downloading https://files.pythonhosted.org/packages/0a/5f/00a91da3a10fd21a4043423eae6cd8043d126c01aac3738ff7b91ae940a4/smartchart-6.5.1.tar.gz
+[2023-04-22 04:11:19] INFO root fetch - processPackages [smartchart]: executing diffoscope
+[2023-04-22 04:11:19] INFO root fetch - processPackages [smartchart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartchart-6.5.tar.gz tmp/smartchart-6.5.1.tar.gz --markdown 20230422/s/smartchart/6.5-6.5.1/diff.md --exclude *.pyd
+[2023-04-22 04:11:19] INFO root fetch - processPackages [fmot]: Downloading https://files.pythonhosted.org/packages/d3/69/91262e3190777219fcaf4db0780217e6835cd94f1903c8ccaf3277c1487b/fmot-1.5.6-py3-none-any.whl
+[2023-04-22 04:11:19] INFO root fetch - processPackages [fmot]: executing diffoscope
+[2023-04-22 04:11:19] INFO root fetch - processPackages [fmot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fmot-1.3.4-py3-none-any.whl.zip tmp/fmot-1.5.6-py3-none-any.whl.zip --markdown 20230422/f/fmot/1.3.4-1.5.6/diff.md --exclude *.pyd
+[2023-04-22 04:11:19] INFO root fetch - main [MainThread]: End processing [fluxrpc]: success
+[2023-04-22 04:11:20] INFO root fetch - main [MainThread]: End processing [fluxvault]: success
+[2023-04-22 04:11:21] INFO root fetch - main [MainThread]: End processing [fmot]: success
+[2023-04-22 04:11:22] INFO root fetch - main [MainThread]: End processing [flowtask]: success
+[2023-04-22 04:11:25] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-04-22 04:11:27] INFO root fetch - main [MainThread]: End processing [prettyqt]: success
+[2023-04-22 04:11:27] INFO root fetch - main [MainThread]: End processing [smartchart]: success
+[2023-04-22 04:11:27] INFO root fetch - main [MainThread]: Store serial: [17811572]
