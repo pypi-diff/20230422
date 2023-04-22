@@ -4361,3 +4361,65 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 05:14:29] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 05:14:29] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 05:14:29] INFO root fetch - main [MainThread]: Store serial: [17811775]
+[2023-04-22 05:19:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811775]
+[2023-04-22 05:19:45] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 05:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: foursight-core
+[2023-04-22 05:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdktf-cdktf-provider-spotinst
+[2023-04-22 05:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: finlogic
+[2023-04-22 05:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: teller-cli
+[2023-04-22 05:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdktf-cdktf-provider-boundary
+[2023-04-22 05:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dragonfile
+[2023-04-22 05:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: foursight-core
+[2023-04-22 05:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdktf-cdktf-provider-digitalocean
+[2023-04-22 05:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: scidb-strm
+[2023-04-22 05:19:45] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b9] Old Version: [4.1.0.1b10]
+[2023-04-22 05:19:45] INFO root fetch - processPackages [teller-cli]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-22 05:19:45] INFO root fetch - processPackages [scidb-strm]: New version: [19.3.1] Old Version: [19.3.0]
+[2023-04-22 05:19:45] INFO root fetch - processPackages [dragonfile]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 05:19:45] INFO root fetch - processPackages [cdktf-cdktf-provider-boundary]: New version: [4.0.1] Old Version: [4.0.0]
+[2023-04-22 05:19:45] INFO root fetch - processPackages [finlogic]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-04-22 05:19:45] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b9] Old Version: [4.1.0.1b10]
+[2023-04-22 05:19:45] INFO root fetch - processPackages [cdktf-cdktf-provider-digitalocean]: New version: [6.0.1] Old Version: [6.0.0]
+[2023-04-22 05:19:45] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: New version: [7.0.1] Old Version: [7.0.0]
+[2023-04-22 05:19:45] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/d0/ff/824d3a857072845df085ea9974e932b0d09cab8ca648c2b35f0c8870cad9/foursight_core-4.1.0.1b10.tar.gz
+[2023-04-22 05:19:45] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/d0/ff/824d3a857072845df085ea9974e932b0d09cab8ca648c2b35f0c8870cad9/foursight_core-4.1.0.1b10.tar.gz
+[2023-04-22 05:19:45] INFO root fetch - processPackages [teller-cli]: Downloading https://files.pythonhosted.org/packages/a9/d2/7ffa96cc05426827cdf5826f416c884dcc681117553d74910f74e78d3f59/teller_cli-0.3.8.tar.gz
+[2023-04-22 05:19:45] INFO root fetch - processPackages [scidb-strm]: Downloading https://files.pythonhosted.org/packages/36/73/b39d555d9a7f7caf8ae166dab189182652774ed539d3372a7845e5a26572/scidb-strm-19.3.0.tar.gz
+[2023-04-22 05:19:45] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: Downloading https://files.pythonhosted.org/packages/2c/52/61bf77ba1741217fb52e23b6d02fbb8d3776cbc1ebbe4f71ee845fb876de/cdktf-cdktf-provider-spotinst-7.0.0.tar.gz
+[2023-04-22 05:19:45] INFO root fetch - processPackages [cdktf-cdktf-provider-boundary]: Downloading https://files.pythonhosted.org/packages/0e/12/eab2873a07c271f0f837ff1f0f3fe9b98d7e97d978c279f733139b0eecda/cdktf-cdktf-provider-boundary-4.0.1.tar.gz
+[2023-04-22 05:19:45] INFO root fetch - processPackages [dragonfile]: Downloading https://files.pythonhosted.org/packages/d3/82/bc41f2a088c3cdedd44faa8600e93c18ff066d66950433af69f8f7039c1d/dragonfile-0.1.1.tar.gz
+[2023-04-22 05:19:45] INFO root fetch - processPackages [cdktf-cdktf-provider-digitalocean]: Downloading https://files.pythonhosted.org/packages/36/ec/01de45f1b98f78e31a4a3a7d594c02d80cc71067d275cf07c1f875b15897/cdktf-cdktf-provider-digitalocean-6.0.1.tar.gz
+[2023-04-22 05:19:45] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/69/fb/adfb84de0c5a724a98f61bc835a60365ac94bafa726555626b65a28fb9a3/foursight_core-4.1.0.1b9.tar.gz
+[2023-04-22 05:19:45] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/69/fb/adfb84de0c5a724a98f61bc835a60365ac94bafa726555626b65a28fb9a3/foursight_core-4.1.0.1b9.tar.gz
+[2023-04-22 05:19:45] INFO root fetch - processPackages [teller-cli]: Downloading https://files.pythonhosted.org/packages/2b/71/46638c729a7ffd675d4342974c927c13b2ff0dd081397615f110fc3f2b90/teller_cli-0.3.9.tar.gz
+[2023-04-22 05:19:45] INFO root fetch - processPackages [cdktf-cdktf-provider-boundary]: executing diffoscope
+[2023-04-22 05:19:45] INFO root fetch - processPackages [cdktf-cdktf-provider-boundary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-boundary-4.0.0.tar.gz tmp/cdktf-cdktf-provider-boundary-4.0.1.tar.gz --markdown 20230422/c/cdktf-cdktf-provider-boundary/4.0.0-4.0.1/diff.md --exclude *.pyd
+[2023-04-22 05:19:45] INFO root fetch - processPackages [dragonfile]: executing diffoscope
+[2023-04-22 05:19:45] INFO root fetch - processPackages [dragonfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfile-0.1.0.tar.gz tmp/dragonfile-0.1.1.tar.gz --markdown 20230422/d/dragonfile/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 05:19:45] INFO root fetch - processPackages [scidb-strm]: Downloading https://files.pythonhosted.org/packages/dc/5c/1575c35dc12640734d8184740436a134cefe37d6cb026c02981395b7487f/scidb-strm-19.3.1.tar.gz
+[2023-04-22 05:19:45] INFO root fetch - processPackages [teller-cli]: executing diffoscope
+[2023-04-22 05:19:45] INFO root fetch - processPackages [teller-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teller_cli-0.3.8.tar.gz tmp/teller_cli-0.3.9.tar.gz --markdown 20230422/t/teller-cli/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-22 05:19:45] INFO root fetch - processPackages [scidb-strm]: executing diffoscope
+[2023-04-22 05:19:45] INFO root fetch - processPackages [scidb-strm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scidb-strm-19.3.0.tar.gz tmp/scidb-strm-19.3.1.tar.gz --markdown 20230422/s/scidb-strm/19.3.0-19.3.1/diff.md --exclude *.pyd
+[2023-04-22 05:19:45] INFO root fetch - processPackages [finlogic]: Downloading https://files.pythonhosted.org/packages/04/dd/8dc3c4fdb5cbadfcdabc534d0d855cccb97e029d3916dd9f480eeb6a4cd1/FinLogic-0.3.7.tar.gz
+[2023-04-22 05:19:46] INFO root fetch - processPackages [cdktf-cdktf-provider-digitalocean]: executing diffoscope
+[2023-04-22 05:19:46] INFO root fetch - processPackages [cdktf-cdktf-provider-digitalocean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf_cdktf_provider_digitalocean-6.0.0-py3-none-any.whl.zip tmp/cdktf-cdktf-provider-digitalocean-6.0.1.tar.gz --markdown 20230422/c/cdktf-cdktf-provider-digitalocean/6.0.0-6.0.1/diff.md --exclude *.pyd
+[2023-04-22 05:19:46] INFO root fetch - processPackages [finlogic]: executing diffoscope
+[2023-04-22 05:19:46] INFO root fetch - processPackages [finlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FinLogic-0.3.6.tar.gz tmp/FinLogic-0.3.7.tar.gz --markdown 20230422/f/finlogic/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-04-22 05:19:46] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 05:19:46] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b10.tar.gz tmp/foursight_core-4.1.0.1b9.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b10-4.1.0.1b9/diff.md --exclude *.pyd
+[2023-04-22 05:19:46] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 05:19:46] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b10.tar.gz tmp/foursight_core-4.1.0.1b9.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b10-4.1.0.1b9/diff.md --exclude *.pyd
+[2023-04-22 05:19:46] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: Downloading https://files.pythonhosted.org/packages/88/eb/90121e72043f4ee40e1e78f573063a69d7deffc3906c217e199cc690be69/cdktf-cdktf-provider-spotinst-7.0.1.tar.gz
+[2023-04-22 05:19:46] INFO root fetch - main [MainThread]: End processing [dragonfile]: success
+[2023-04-22 05:19:47] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: executing diffoscope
+[2023-04-22 05:19:47] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-spotinst-7.0.0.tar.gz tmp/cdktf-cdktf-provider-spotinst-7.0.1.tar.gz --markdown 20230422/c/cdktf-cdktf-provider-spotinst/7.0.0-7.0.1/diff.md --exclude *.pyd
+[2023-04-22 05:19:47] INFO root fetch - main [MainThread]: End processing [scidb-strm]: success
+[2023-04-22 05:19:47] INFO root fetch - main [MainThread]: End processing [teller-cli]: success
+[2023-04-22 05:19:47] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-boundary]: success
+[2023-04-22 05:19:47] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 05:19:47] INFO root fetch - main [MainThread]: End processing [finlogic]: success
+[2023-04-22 05:19:49] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 05:19:50] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-digitalocean]: success
+[2023-04-22 05:19:51] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-spotinst]: success
+[2023-04-22 05:19:51] INFO root fetch - main [MainThread]: Store serial: [17811804]
