@@ -3922,3 +3922,19 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 03:55:18] INFO root fetch - main [MainThread]: End processing [nagerapi]: success
 [2023-04-22 03:55:19] INFO root fetch - main [MainThread]: End processing [fluxvault]: success
 [2023-04-22 03:55:19] INFO root fetch - main [MainThread]: Store serial: [17811511]
+[2023-04-22 04:00:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811511]
+[2023-04-22 04:00:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-22 04:00:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fluxrpc
+[2023-04-22 04:00:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fluxvault
+[2023-04-22 04:00:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: markit-gateway
+[2023-04-22 04:00:28] INFO root fetch - processPackages [fluxrpc]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 04:00:28] INFO root fetch - processPackages [fluxvault]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 04:00:28] WARNING root fetch - processPackages [markit-gateway]: Skipping, unable to determine old version
+[2023-04-22 04:00:28] INFO root fetch - main [MainThread]: End processing [markit-gateway] error
+[2023-04-22 04:00:28] INFO root fetch - processPackages [fluxrpc]: executing diffoscope
+[2023-04-22 04:00:28] INFO root fetch - processPackages [fluxrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxrpc-0.9.8.tar.gz tmp/fluxrpc-0.9.9.tar.gz --markdown 20230422/f/fluxrpc/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 04:00:28] INFO root fetch - processPackages [fluxvault]: executing diffoscope
+[2023-04-22 04:00:28] INFO root fetch - processPackages [fluxvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxvault-0.9.8.tar.gz tmp/fluxvault-0.9.9.tar.gz --markdown 20230422/f/fluxvault/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 04:00:29] INFO root fetch - main [MainThread]: End processing [fluxvault]: success
+[2023-04-22 04:00:29] INFO root fetch - main [MainThread]: End processing [fluxrpc]: success
+[2023-04-22 04:00:29] INFO root fetch - main [MainThread]: Store serial: [17811524]
