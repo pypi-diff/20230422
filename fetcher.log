@@ -10026,3 +10026,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 16:16:20] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 16:16:22] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 16:16:22] INFO root fetch - main [MainThread]: Store serial: [17814986]
+[2023-04-22 16:21:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814986]
+[2023-04-22 16:21:31] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 16:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: je-api-testka-dev
+[2023-04-22 16:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neatmesh
+[2023-04-22 16:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pinpal
+[2023-04-22 16:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: baopig
+[2023-04-22 16:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2023-04-22 16:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: binooculars
+[2023-04-22 16:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spanishconjugator
+[2023-04-22 16:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: je-api-testka-dev
+[2023-04-22 16:21:31] INFO root fetch - processPackages [je-api-testka-dev]: New version: [0.0.9] Old Version: [0.0.83]
+[2023-04-22 16:21:31] INFO root fetch - processPackages [je-api-testka-dev]: New version: [0.0.9] Old Version: [0.0.83]
+[2023-04-22 16:21:31] WARNING root fetch - processPackages [pinpal]: Skipping, unable to determine old version
+[2023-04-22 16:21:31] INFO root fetch - main [MainThread]: End processing [pinpal] error
+[2023-04-22 16:21:31] INFO root fetch - processPackages [neatmesh]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-22 16:21:31] INFO root fetch - processPackages [baopig]: New version: [0.20.4] Old Version: [0.20.3]
+[2023-04-22 16:21:31] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-22 16:21:31] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-22 16:21:31] WARNING root fetch - processPackages [binooculars]: Skipping, unable to determine old version
+[2023-04-22 16:21:31] INFO root fetch - main [MainThread]: End processing [binooculars] error
+[2023-04-22 16:21:32] INFO root fetch - processPackages [neatmesh]: Downloading https://files.pythonhosted.org/packages/a0/c9/1bd97531da1c3244c5ffc6ae6cdf599b743066cfdb73aab8df068fff24aa/neatmesh-0.0.6.tar.gz
+[2023-04-22 16:21:32] INFO root fetch - processPackages [je-api-testka-dev]: Downloading https://files.pythonhosted.org/packages/e0/d1/2d64b1aa9800b34623b1a3ba08865055404e3e48301c8f603072697babb6/je_api_testka_dev-0.0.83.tar.gz
+[2023-04-22 16:21:32] INFO root fetch - processPackages [je-api-testka-dev]: Downloading https://files.pythonhosted.org/packages/e0/d1/2d64b1aa9800b34623b1a3ba08865055404e3e48301c8f603072697babb6/je_api_testka_dev-0.0.83.tar.gz
+[2023-04-22 16:21:32] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-22 16:21:32] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230422/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-22 16:21:32] INFO root fetch - processPackages [baopig]: Downloading https://files.pythonhosted.org/packages/01/52/3fef6f788ff54341c604717c1b7ee6349a5f4c6cc2bdb830dde2f5b34787/baopig-0.20.4-py3-none-any.whl
+[2023-04-22 16:21:32] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-22 16:21:32] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230422/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-22 16:21:32] INFO root fetch - processPackages [baopig]: executing diffoscope
+[2023-04-22 16:21:32] INFO root fetch - processPackages [baopig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baopig-0.20.3-py3-none-any.whl.zip tmp/baopig-0.20.4-py3-none-any.whl.zip --markdown 20230422/b/baopig/0.20.3-0.20.4/diff.md --exclude *.pyd
+[2023-04-22 16:21:32] INFO root fetch - processPackages [je-api-testka-dev]: executing diffoscope
+[2023-04-22 16:21:32] INFO root fetch - processPackages [je-api-testka-dev]: executing diffoscope
+[2023-04-22 16:21:32] INFO root fetch - processPackages [je-api-testka-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_api_testka_dev-0.0.83.tar.gz tmp/je_api_testka_dev-0.0.9.tar.gz --markdown 20230422/j/je-api-testka-dev/0.0.83-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 16:21:32] INFO root fetch - processPackages [je-api-testka-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_api_testka_dev-0.0.83.tar.gz tmp/je_api_testka_dev-0.0.9.tar.gz --markdown 20230422/j/je-api-testka-dev/0.0.83-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 16:21:32] INFO root fetch - processPackages [neatmesh]: Downloading https://files.pythonhosted.org/packages/6b/60/6cdf278cdc073d8045e60313c2422394e2953f4eaf3d1de691b6c4e91e6e/neatmesh-0.0.7.tar.gz
+[2023-04-22 16:21:32] INFO root fetch - processPackages [neatmesh]: executing diffoscope
+[2023-04-22 16:21:32] INFO root fetch - processPackages [neatmesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neatmesh-0.0.6.tar.gz tmp/neatmesh-0.0.7.tar.gz --markdown 20230422/n/neatmesh/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-22 16:21:33] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-22 16:21:33] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-22 16:21:33] INFO root fetch - main [MainThread]: End processing [neatmesh]: success
+[2023-04-22 16:21:33] INFO root fetch - main [MainThread]: End processing [je-api-testka-dev]: success
+[2023-04-22 16:21:33] INFO root fetch - main [MainThread]: End processing [je-api-testka-dev]: success
+[2023-04-22 16:21:36] INFO root fetch - main [MainThread]: End processing [baopig]: success
+[2023-04-22 16:21:36] INFO root fetch - main [MainThread]: Store serial: [17815015]
