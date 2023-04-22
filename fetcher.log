@@ -12052,3 +12052,46 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 19:34:08] INFO root fetch - main [MainThread]: End processing [medium-api]: success
 [2023-04-22 19:34:12] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2023-04-22 19:34:12] INFO root fetch - main [MainThread]: Store serial: [17816204]
+[2023-04-22 19:39:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816204]
+[2023-04-22 19:39:21] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 19:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ForgePy
+[2023-04-22 19:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ox-script
+[2023-04-22 19:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: typedboto3
+[2023-04-22 19:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mb-pytorch
+[2023-04-22 19:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ForgePy
+[2023-04-22 19:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: adafruit-circuitpython-requests
+[2023-04-22 19:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: humanreadable
+[2023-04-22 19:39:21] INFO root fetch - processPackages [adafruit-circuitpython-requests]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-22 19:39:21] INFO root fetch - processPackages [ForgePy]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-22 19:39:21] INFO root fetch - processPackages [humanreadable]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-22 19:39:21] INFO root fetch - processPackages [ForgePy]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-22 19:39:21] WARNING root fetch - processPackages [typedboto3]: Skipping, unable to determine old version
+[2023-04-22 19:39:21] INFO root fetch - main [MainThread]: End processing [typedboto3] error
+[2023-04-22 19:39:21] WARNING root fetch - processPackages [ox-script]: Skipping, unable to determine old version
+[2023-04-22 19:39:21] INFO root fetch - main [MainThread]: End processing [ox-script] error
+[2023-04-22 19:39:21] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.202304221736] Old Version: [1.0.202304210107]
+[2023-04-22 19:39:22] INFO root fetch - processPackages [ForgePy]: Downloading https://files.pythonhosted.org/packages/52/66/4826d72860f752f6bfe77e7ba09a497b221171c89e1f02c09daf5096fdb9/ForgePy-1.0.0.tar.gz
+[2023-04-22 19:39:22] INFO root fetch - processPackages [ForgePy]: Downloading https://files.pythonhosted.org/packages/52/66/4826d72860f752f6bfe77e7ba09a497b221171c89e1f02c09daf5096fdb9/ForgePy-1.0.0.tar.gz
+[2023-04-22 19:39:22] INFO root fetch - processPackages [humanreadable]: Downloading https://files.pythonhosted.org/packages/a5/f7/390b7d609b3000405f5b3bac62f9cb0cd1bcd8b97b92e8d9e4530edf6879/humanreadable-0.2.0.tar.gz
+[2023-04-22 19:39:22] INFO root fetch - processPackages [adafruit-circuitpython-requests]: Downloading https://files.pythonhosted.org/packages/7a/75/13bbc3c50d643889515b78c9cfc95eb47995df7538459e99fcaad3e95009/adafruit-circuitpython-requests-1.9.8.tar.gz
+[2023-04-22 19:39:22] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/b1/9b/942447fb264cffaa5bbcd9f197b3bcf4988376eae68d967a68acf1110851/mb_pytorch-1.0.202304221736-py3-none-any.whl
+[2023-04-22 19:39:22] INFO root fetch - processPackages [ForgePy]: Downloading https://files.pythonhosted.org/packages/8d/e8/fe7c65c509a263a73b73e3313566189423a1eff24d820a7247bc71c098aa/ForgePy-1.0.1.tar.gz
+[2023-04-22 19:39:22] INFO root fetch - processPackages [ForgePy]: Downloading https://files.pythonhosted.org/packages/8d/e8/fe7c65c509a263a73b73e3313566189423a1eff24d820a7247bc71c098aa/ForgePy-1.0.1.tar.gz
+[2023-04-22 19:39:22] INFO root fetch - processPackages [ForgePy]: executing diffoscope
+[2023-04-22 19:39:22] INFO root fetch - processPackages [ForgePy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ForgePy-1.0.0.tar.gz tmp/ForgePy-1.0.1.tar.gz --markdown 20230422/F/ForgePy/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 19:39:22] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2023-04-22 19:39:22] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.202304210107-py3-none-any.whl.zip tmp/mb_pytorch-1.0.202304221736-py3-none-any.whl.zip --markdown 20230422/m/mb-pytorch/1.0.202304210107-1.0.202304221736/diff.md --exclude *.pyd
+[2023-04-22 19:39:22] INFO root fetch - processPackages [ForgePy]: executing diffoscope
+[2023-04-22 19:39:22] INFO root fetch - processPackages [ForgePy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ForgePy-1.0.0.tar.gz tmp/ForgePy-1.0.1.tar.gz --markdown 20230422/F/ForgePy/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 19:39:22] INFO root fetch - processPackages [humanreadable]: Downloading https://files.pythonhosted.org/packages/f6/64/b79577649ff6bb9d6677c8c13632a5b03b8bd80100df6d67307db9fe0cf8/humanreadable-0.3.0.tar.gz
+[2023-04-22 19:39:22] INFO root fetch - processPackages [adafruit-circuitpython-requests]: Downloading https://files.pythonhosted.org/packages/a0/0b/413eb4417ae990eb0822830f84f4060bd05b75f51e0ea489915839cceb0e/adafruit-circuitpython-requests-1.9.9.tar.gz
+[2023-04-22 19:39:22] INFO root fetch - processPackages [humanreadable]: executing diffoscope
+[2023-04-22 19:39:22] INFO root fetch - processPackages [humanreadable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/humanreadable-0.2.0.tar.gz tmp/humanreadable-0.3.0.tar.gz --markdown 20230422/h/humanreadable/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-22 19:39:22] INFO root fetch - processPackages [adafruit-circuitpython-requests]: executing diffoscope
+[2023-04-22 19:39:22] INFO root fetch - processPackages [adafruit-circuitpython-requests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit-circuitpython-requests-1.9.8.tar.gz tmp/adafruit-circuitpython-requests-1.9.9.tar.gz --markdown 20230422/a/adafruit-circuitpython-requests/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-22 19:39:23] INFO root fetch - main [MainThread]: End processing [ForgePy]: success
+[2023-04-22 19:39:23] INFO root fetch - main [MainThread]: End processing [ForgePy]: success
+[2023-04-22 19:39:23] INFO root fetch - main [MainThread]: End processing [mb-pytorch]: success
+[2023-04-22 19:39:23] INFO root fetch - main [MainThread]: End processing [humanreadable]: success
+[2023-04-22 19:39:24] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-requests]: success
+[2023-04-22 19:39:24] INFO root fetch - main [MainThread]: Store serial: [17816226]
