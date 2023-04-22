@@ -12770,3 +12770,46 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 21:19:36] INFO root fetch - processPackages [zuspec-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_parser-0.0.1.4669246303-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_parser-0.0.1.4774281909-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230422/z/zuspec-parser/0.0.1.4669246303-0.0.1.4774281909/diff.md --exclude *.pyd
 [2023-04-22 21:20:32] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
 [2023-04-22 21:20:32] INFO root fetch - main [MainThread]: Store serial: [17816605]
+[2023-04-22 21:25:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816605]
+[2023-04-22 21:25:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 21:25:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: secure-package-template
+[2023-04-22 21:25:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pCrunch
+[2023-04-22 21:25:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monitorcontrol
+[2023-04-22 21:25:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bizlogic
+[2023-04-22 21:25:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vtece4564-gamelib
+[2023-04-22 21:25:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: OmniBridge
+[2023-04-22 21:25:52] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 21:25:52] INFO root fetch - processPackages [pCrunch]: New version: [1.0.1] Old Version: [0.1.1]
+[2023-04-22 21:25:52] INFO root fetch - processPackages [vtece4564-gamelib]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-22 21:25:52] INFO root fetch - processPackages [secure-package-template]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-22 21:25:52] INFO root fetch - processPackages [bizlogic]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 21:25:52] INFO root fetch - processPackages [monitorcontrol]: New version: [3.0.3] Old Version: [3.0.2]
+[2023-04-22 21:25:52] INFO root fetch - processPackages [vtece4564-gamelib]: Downloading https://files.pythonhosted.org/packages/97/2e/6005a7d6e9aeb61eb3504eb28d4f016e12168c746c5850d525dd250e9758/vtece4564-gamelib-0.0.4.tar.gz
+[2023-04-22 21:25:52] INFO root fetch - processPackages [pCrunch]: Downloading https://files.pythonhosted.org/packages/16/b3/25f21ed488952c14c052878626a04dac4efdec27f4bf4051f8c229d8cc00/pCrunch-0.1.1.tar.gz
+[2023-04-22 21:25:52] INFO root fetch - processPackages [secure-package-template]: Downloading https://files.pythonhosted.org/packages/83/0d/dd688bc92d07161f858a3d89c82aa5a26f1eb44d8101e8f31d49af177d64/secure_package_template-0.6.0.tar.gz
+[2023-04-22 21:25:52] INFO root fetch - processPackages [bizlogic]: Downloading https://files.pythonhosted.org/packages/4e/53/1e801b2e0fa18a9623aa5d056fa7680cf12b9904f23333b76239eda2e467/bizlogic-0.0.1.tar.gz
+[2023-04-22 21:25:52] INFO root fetch - processPackages [monitorcontrol]: Downloading https://files.pythonhosted.org/packages/04/b7/8cb7d11d531d9b483377c4b68cc83a0ede1f90b14719bcc20f884ebc4f74/monitorcontrol-3.0.2.tar.gz
+[2023-04-22 21:25:52] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-22 21:25:52] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230422/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 21:25:53] INFO root fetch - processPackages [vtece4564-gamelib]: Downloading https://files.pythonhosted.org/packages/a4/b7/385e9f765cd7d656c74bc5a0d5ea5a01ed75a5bad4bb78fb4480e261d528/vtece4564-gamelib-0.0.5.tar.gz
+[2023-04-22 21:25:53] INFO root fetch - processPackages [monitorcontrol]: Downloading https://files.pythonhosted.org/packages/44/fe/ed6cc5556fe9793ea081d7f3d63ab4fbfd037fa83415651a8fa4646eb942/monitorcontrol-3.0.3.tar.gz
+[2023-04-22 21:25:53] INFO root fetch - processPackages [pCrunch]: Downloading https://files.pythonhosted.org/packages/e4/4f/4a7ca670493cbc295e1f2ae27dfa894f82324c318a48d967bb36346f1d80/pCrunch-1.0.1.tar.gz
+[2023-04-22 21:25:53] INFO root fetch - processPackages [bizlogic]: Downloading https://files.pythonhosted.org/packages/25/20/f6a3dad3d05e22dfc07f86e27c2a28824ced6d408f17b1f41d92a5c97d95/bizlogic-0.0.2.tar.gz
+[2023-04-22 21:25:53] INFO root fetch - processPackages [monitorcontrol]: executing diffoscope
+[2023-04-22 21:25:53] INFO root fetch - processPackages [monitorcontrol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monitorcontrol-3.0.2.tar.gz tmp/monitorcontrol-3.0.3.tar.gz --markdown 20230422/m/monitorcontrol/3.0.2-3.0.3/diff.md --exclude *.pyd
+[2023-04-22 21:25:53] INFO root fetch - processPackages [secure-package-template]: Downloading https://files.pythonhosted.org/packages/b8/18/a6da94ef8a528a772affdc76b3dc4a2d09c35ea1e50161804b792f2f97a2/secure_package_template-0.7.0.tar.gz
+[2023-04-22 21:25:53] INFO root fetch - processPackages [vtece4564-gamelib]: executing diffoscope
+[2023-04-22 21:25:53] INFO root fetch - processPackages [vtece4564-gamelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vtece4564-gamelib-0.0.4.tar.gz tmp/vtece4564-gamelib-0.0.5.tar.gz --markdown 20230422/v/vtece4564-gamelib/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-22 21:25:53] INFO root fetch - processPackages [pCrunch]: executing diffoscope
+[2023-04-22 21:25:53] INFO root fetch - processPackages [pCrunch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pCrunch-0.1.1.tar.gz tmp/pCrunch-1.0.1.tar.gz --markdown 20230422/p/pCrunch/0.1.1-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 21:25:53] INFO root fetch - processPackages [bizlogic]: executing diffoscope
+[2023-04-22 21:25:53] INFO root fetch - processPackages [bizlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bizlogic-0.0.1.tar.gz tmp/bizlogic-0.0.2.tar.gz --markdown 20230422/b/bizlogic/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 21:25:53] INFO root fetch - processPackages [secure-package-template]: executing diffoscope
+[2023-04-22 21:25:53] INFO root fetch - processPackages [secure-package-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secure_package_template-0.6.0.tar.gz tmp/secure_package_template-0.7.0.tar.gz --markdown 20230422/s/secure-package-template/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-22 21:25:54] INFO root fetch - main [MainThread]: End processing [OmniBridge]: success
+[2023-04-22 21:25:54] INFO root fetch - main [MainThread]: End processing [monitorcontrol]: success
+[2023-04-22 21:25:54] INFO root fetch - main [MainThread]: End processing [vtece4564-gamelib]: success
+[2023-04-22 21:25:54] INFO root fetch - main [MainThread]: End processing [secure-package-template]: success
+[2023-04-22 21:25:54] INFO root fetch - main [MainThread]: End processing [bizlogic]: success
+[2023-04-22 21:26:10] INFO root fetch - main [MainThread]: End processing [pCrunch]: success
+[2023-04-22 21:26:10] INFO root fetch - main [MainThread]: Store serial: [17816622]
