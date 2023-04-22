@@ -13379,3 +13379,83 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 22:40:30] INFO root fetch - main [MainThread]: End processing [polars]: success
 [2023-04-22 22:40:43] INFO root fetch - main [MainThread]: End processing [polars-lts-cpu]: success
 [2023-04-22 22:40:43] INFO root fetch - main [MainThread]: Store serial: [17816962]
+[2023-04-22 22:45:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816962]
+[2023-04-22 22:45:52] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-22 22:45:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unwanted-content-detector
+[2023-04-22 22:45:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vollseg
+[2023-04-22 22:45:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cwsearch-utils
+[2023-04-22 22:45:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-project-structure
+[2023-04-22 22:45:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: polars-u64-idx
+[2023-04-22 22:45:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Conanmail
+[2023-04-22 22:45:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bitdust
+[2023-04-22 22:45:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: circuitpython-gp2y0e02b
+[2023-04-22 22:45:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: unwanted-content-detector
+[2023-04-22 22:45:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: graphscope
+[2023-04-22 22:45:52] INFO root fetch - processPackages [python-project-structure]: New version: [0.8.9b7] Old Version: [0.8.9b0]
+[2023-04-22 22:45:52] INFO root fetch - processPackages [unwanted-content-detector]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-22 22:45:52] INFO root fetch - processPackages [unwanted-content-detector]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-22 22:45:52] INFO root fetch - processPackages [cwsearch-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 22:45:52] WARNING root fetch - processPackages [circuitpython-gp2y0e02b]: Skipping, unable to determine old version
+[2023-04-22 22:45:52] INFO root fetch - processPackages [circuitpython-gp2y0e02b]: Start processing: graphscope-client
+[2023-04-22 22:45:52] INFO root fetch - main [MainThread]: End processing [circuitpython-gp2y0e02b] error
+[2023-04-22 22:45:52] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-22 22:45:52] WARNING root fetch - processPackages [Conanmail]: Skipping, unable to determine old version
+[2023-04-22 22:45:52] INFO root fetch - processPackages [polars-u64-idx]: New version: [0.17.7] Old Version: [0.17.6]
+[2023-04-22 22:45:52] INFO root fetch - processPackages [Conanmail]: Start processing: gs-apps
+[2023-04-22 22:45:52] INFO root fetch - main [MainThread]: End processing [Conanmail] error
+[2023-04-22 22:45:52] INFO root fetch - processPackages [bitdust]: New version: [0.1.8.234] Old Version: [0.1.7.233]
+[2023-04-22 22:45:52] INFO root fetch - processPackages [graphscope]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-22 22:45:52] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-22 22:45:52] INFO root fetch - processPackages [cwsearch-utils]: executing diffoscope
+[2023-04-22 22:45:52] INFO root fetch - processPackages [cwsearch-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwsearch_utils-0.1.8-py3-none-any.whl.zip tmp/cwsearch_utils-0.1.9-py3-none-any.whl.zip --markdown 20230422/c/cwsearch-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 22:45:53] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-22 22:45:53] INFO root fetch - processPackages [vollseg]: Start processing: gs-coordinator
+[2023-04-22 22:45:53] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-22 22:45:53] INFO root fetch - processPackages [graphscope-client]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-22 22:45:53] INFO root fetch - processPackages [gs-apps]: New version: [0.21.0a20230422] Old Version: [0.21.0a20230421]
+[2023-04-22 22:45:53] INFO root fetch - processPackages [unwanted-content-detector]: Downloading https://files.pythonhosted.org/packages/d0/6e/3042759b5ef7365dae47d4b8c4f0e6760f3aa9dad23f3f11951cbdea1c2c/unwanted_content_detector-0.1.1.tar.gz
+[2023-04-22 22:45:53] INFO root fetch - processPackages [unwanted-content-detector]: Downloading https://files.pythonhosted.org/packages/d0/6e/3042759b5ef7365dae47d4b8c4f0e6760f3aa9dad23f3f11951cbdea1c2c/unwanted_content_detector-0.1.1.tar.gz
+[2023-04-22 22:45:53] INFO root fetch - processPackages [python-project-structure]: executing diffoscope
+[2023-04-22 22:45:53] INFO root fetch - processPackages [python-project-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-project-structure-0.8.9b0.tar.gz tmp/python-project-structure-0.8.9b7.tar.gz --markdown 20230422/p/python-project-structure/0.8.9b0-0.8.9b7/diff.md --exclude *.pyd
+[2023-04-22 22:45:53] INFO root fetch - processPackages [gs-coordinator]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-22 22:45:53] INFO root fetch - processPackages [graphscope-client]: Downloading https://files.pythonhosted.org/packages/f7/53/c1ffb245684956bc30883fd2945f3e1677b030e8d69945fbfca28db2b46a/graphscope_client-0.9.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-22 22:45:53] INFO root fetch - processPackages [gs-apps]: Downloading https://files.pythonhosted.org/packages/ae/7b/6334459262c114d65edc25510cdb65dff31caf0b81ddf1653a857ee146a8/gs_apps-0.21.0a20230421-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-22 22:45:53] INFO root fetch - processPackages [bitdust]: Downloading https://files.pythonhosted.org/packages/08/3e/89cc5945e31bfff70239ee0aa082f8064cdd66457c649eaae712882ee879/bitdust-0.1.8.234.tar.gz
+[2023-04-22 22:45:53] INFO root fetch - processPackages [polars-u64-idx]: Downloading https://files.pythonhosted.org/packages/fe/77/63f73bbe7d06f464e9ed8ebea9415bc573c094c67b88d25904941dff57fc/polars_u64_idx-0.17.7.tar.gz
+[2023-04-22 22:45:53] INFO root fetch - processPackages [graphscope]: executing diffoscope
+[2023-04-22 22:45:53] INFO root fetch - processPackages [graphscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphscope-0.9.0-py2.py3-none-macosx_10_9_x86_64.whl.zip tmp/graphscope-0.9.1-py2.py3-none-macosx_11_0_arm64.whl.zip --markdown 20230422/g/graphscope/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-22 22:45:53] INFO root fetch - processPackages [unwanted-content-detector]: Downloading https://files.pythonhosted.org/packages/bf/4b/824e479e7c38d343944f648874fd899621d0d87510f7e321101b528e0c30/unwanted_content_detector-0.1.2.tar.gz
+[2023-04-22 22:45:53] INFO root fetch - processPackages [unwanted-content-detector]: Downloading https://files.pythonhosted.org/packages/bf/4b/824e479e7c38d343944f648874fd899621d0d87510f7e321101b528e0c30/unwanted_content_detector-0.1.2.tar.gz
+[2023-04-22 22:45:53] WARNING root fetch - processPackages [gs-apps]: Skipping package: exceeds size limit 47786981>=10485760
+[2023-04-22 22:45:53] INFO root fetch - processPackages [gs-apps]: Start processing: gs-engine
+[2023-04-22 22:45:53] INFO root fetch - main [MainThread]: End processing [gs-apps] error
+[2023-04-22 22:45:53] INFO root fetch - processPackages [gs-coordinator]: executing diffoscope
+[2023-04-22 22:45:53] INFO root fetch - processPackages [gs-coordinator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_coordinator-0.9.0-py2.py3-none-macosx_10_9_x86_64.whl.zip tmp/gs_coordinator-0.9.1-py2.py3-none-macosx_11_0_arm64.whl.zip --markdown 20230422/g/gs-coordinator/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-22 22:45:53] INFO root fetch - processPackages [gs-engine]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-22 22:45:53] INFO root fetch - processPackages [bitdust]: executing diffoscope
+[2023-04-22 22:45:53] INFO root fetch - processPackages [bitdust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitdust-0.1.7.233.tar.gz tmp/bitdust-0.1.8.234.tar.gz --markdown 20230422/b/bitdust/0.1.7.233-0.1.8.234/diff.md --exclude *.pyd
+[2023-04-22 22:45:53] INFO root fetch - processPackages [unwanted-content-detector]: executing diffoscope
+[2023-04-22 22:45:53] INFO root fetch - processPackages [unwanted-content-detector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unwanted_content_detector-0.1.1.tar.gz tmp/unwanted_content_detector-0.1.2.tar.gz --markdown 20230422/u/unwanted-content-detector/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-22 22:45:53] INFO root fetch - processPackages [polars-u64-idx]: executing diffoscope
+[2023-04-22 22:45:53] INFO root fetch - processPackages [polars-u64-idx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars_u64_idx-0.17.6.tar.gz tmp/polars_u64_idx-0.17.7.tar.gz --markdown 20230422/p/polars-u64-idx/0.17.6-0.17.7/diff.md --exclude *.pyd
+[2023-04-22 22:45:53] INFO root fetch - processPackages [unwanted-content-detector]: executing diffoscope
+[2023-04-22 22:45:53] INFO root fetch - processPackages [unwanted-content-detector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unwanted_content_detector-0.1.1.tar.gz tmp/unwanted_content_detector-0.1.2.tar.gz --markdown 20230422/u/unwanted-content-detector/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-22 22:45:53] WARNING root fetch - processPackages [graphscope-client]: Skipping package: exceeds size limit 48560616>=10485760
+[2023-04-22 22:45:53] INFO root fetch - processPackages [graphscope-client]: Start processing: gs-include
+[2023-04-22 22:45:53] INFO root fetch - main [MainThread]: End processing [graphscope-client] error
+[2023-04-22 22:45:53] INFO root fetch - processPackages [gs-engine]: Downloading https://files.pythonhosted.org/packages/bd/b0/b9b1a1a65be3a78a220a726aa90bda0d1e1a17bbc47999c157c784a7320e/gs_engine-0.9.0-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-22 22:45:53] INFO root fetch - processPackages [gs-include]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-22 22:45:53] WARNING root fetch - processPackages [gs-engine]: Skipping package: exceeds size limit 88119450>=10485760
+[2023-04-22 22:45:53] INFO root fetch - main [MainThread]: End processing [gs-engine] error
+[2023-04-22 22:45:53] INFO root fetch - processPackages [gs-include]: Downloading https://files.pythonhosted.org/packages/14/24/6aa7d96461fb18c825639db76c5c3edc7abfca148e3e55cc010cbf4d9a02/gs_include-0.9.0-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-22 22:45:54] INFO root fetch - main [MainThread]: End processing [cwsearch-utils]: success
+[2023-04-22 22:45:54] WARNING root fetch - processPackages [gs-include]: Skipping package: exceeds size limit 73794505>=10485760
+[2023-04-22 22:45:54] INFO root fetch - main [MainThread]: End processing [gs-include] error
+[2023-04-22 22:45:54] INFO root fetch - main [MainThread]: End processing [graphscope]: success
+[2023-04-22 22:45:54] INFO root fetch - main [MainThread]: End processing [unwanted-content-detector]: success
+[2023-04-22 22:45:54] INFO root fetch - main [MainThread]: End processing [python-project-structure]: success
+[2023-04-22 22:45:55] INFO root fetch - main [MainThread]: End processing [gs-coordinator]: success
+[2023-04-22 22:45:55] INFO root fetch - main [MainThread]: End processing [unwanted-content-detector]: success
+[2023-04-22 22:45:57] INFO root fetch - main [MainThread]: End processing [bitdust]: success
+[2023-04-22 22:46:10] INFO root fetch - main [MainThread]: End processing [polars-u64-idx]: success
+[2023-04-22 22:46:10] INFO root fetch - main [MainThread]: Store serial: [17817006]
