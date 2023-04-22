@@ -7097,3 +7097,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 10:15:32] INFO root fetch - main [MainThread]: End processing [thonny]: success
 [2023-04-22 10:15:35] INFO root fetch - main [MainThread]: End processing [pex]: success
 [2023-04-22 10:15:35] INFO root fetch - main [MainThread]: Store serial: [17813240]
+[2023-04-22 10:20:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813240]
+[2023-04-22 10:20:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-22 10:20:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: modoboa
+[2023-04-22 10:20:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: telespider
+[2023-04-22 10:20:44] INFO root fetch - processPackages [modoboa]: New version: [2.1.0] Old Version: [2.0.5]
+[2023-04-22 10:20:44] INFO root fetch - processPackages [telespider]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 10:20:44] INFO root fetch - processPackages [telespider]: Downloading https://files.pythonhosted.org/packages/6c/0d/fba7f0eeef34f6e144568e0c17519e6f562b14d7f87c720328912d3e4c25/telespider-0.1.0.tar.gz
+[2023-04-22 10:20:44] INFO root fetch - processPackages [modoboa]: Downloading https://files.pythonhosted.org/packages/88/9c/204a2ac1dc17a2e4e7525e10a14091c0a1e8d78919b1bca368144e7bb46e/modoboa-2.0.5.tar.gz
+[2023-04-22 10:20:44] WARNING root fetch - processPackages [modoboa]: Skipping package: exceeds size limit 11418956>=10485760
+[2023-04-22 10:20:44] INFO root fetch - main [MainThread]: End processing [modoboa] error
+[2023-04-22 10:20:44] INFO root fetch - processPackages [telespider]: Downloading https://files.pythonhosted.org/packages/40/a9/bd8f1972a668b56a4e0da7e3e72d95289a3c90b765415bf0151a7e960a3d/telespider-0.1.1.tar.gz
+[2023-04-22 10:20:44] INFO root fetch - processPackages [telespider]: executing diffoscope
+[2023-04-22 10:20:44] INFO root fetch - processPackages [telespider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telespider-0.1.0.tar.gz tmp/telespider-0.1.1.tar.gz --markdown 20230422/t/telespider/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 10:20:45] INFO root fetch - main [MainThread]: End processing [telespider]: success
+[2023-04-22 10:20:45] INFO root fetch - main [MainThread]: Store serial: [17813246]
