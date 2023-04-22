@@ -6428,3 +6428,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 09:01:57] INFO root fetch - main [MainThread]: End processing [pymediawikidocker]: success
 [2023-04-22 09:02:16] INFO root fetch - main [MainThread]: End processing [fedml]: success
 [2023-04-22 09:02:16] INFO root fetch - main [MainThread]: Store serial: [17812841]
+[2023-04-22 09:07:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812841]
+[2023-04-22 09:07:24] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 09:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seqio-nightly
+[2023-04-22 09:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: volsite-postgres-common
+[2023-04-22 09:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: html2notion
+[2023-04-22 09:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: robotframework-kubelibrary
+[2023-04-22 09:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: raga-cli
+[2023-04-22 09:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyrew
+[2023-04-22 09:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scSAMP
+[2023-04-22 09:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pygismeteo-base
+[2023-04-22 09:07:24] INFO root fetch - processPackages [volsite-postgres-common]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 09:07:24] INFO root fetch - processPackages [pyrew]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-04-22 09:07:24] WARNING root fetch - processPackages [scSAMP]: Skipping, unable to determine old version
+[2023-04-22 09:07:24] INFO root fetch - main [MainThread]: End processing [scSAMP] error
+[2023-04-22 09:07:24] INFO root fetch - processPackages [raga-cli]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-22 09:07:24] INFO root fetch - processPackages [pygismeteo-base]: New version: [4.3.0] Old Version: [4.2.0]
+[2023-04-22 09:07:24] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2023-04-22 09:07:24] INFO root fetch - processPackages [html2notion]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 09:07:24] INFO root fetch - processPackages [robotframework-kubelibrary]: New version: [0.8.5] Old Version: [0.8.4]
+[2023-04-22 09:07:24] INFO root fetch - processPackages [raga-cli]: executing diffoscope
+[2023-04-22 09:07:24] INFO root fetch - processPackages [raga-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raga-cli-0.0.6.tar.gz tmp/raga-cli-0.0.7.tar.gz --markdown 20230422/r/raga-cli/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-22 09:07:25] INFO root fetch - processPackages [volsite-postgres-common]: executing diffoscope
+[2023-04-22 09:07:25] INFO root fetch - processPackages [volsite-postgres-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/volsite_postgres_common-0.1.8.tar.gz tmp/volsite_postgres_common-0.1.9.tar.gz --markdown 20230422/v/volsite-postgres-common/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 09:07:25] INFO root fetch - processPackages [pyrew]: Downloading https://files.pythonhosted.org/packages/de/2c/8b006d1d5ce9bc8eedc4a81e37affb284c2007dbdde4adcf2cc207b7e93c/pyrew-0.6.3.tar.gz
+[2023-04-22 09:07:25] INFO root fetch - processPackages [pygismeteo-base]: Downloading https://files.pythonhosted.org/packages/dc/09/14f42a82a01a5da79c4fdb034c3eff585ef6abef347ccba96133c677aaf3/pygismeteo_base-4.3.0.tar.gz
+[2023-04-22 09:07:25] INFO root fetch - processPackages [html2notion]: Downloading https://files.pythonhosted.org/packages/85/b1/c4d8f569e74e772c3c843145cd326af30839ef3f9486a25d880f5c13262f/html2notion-0.1.0.tar.gz
+[2023-04-22 09:07:25] INFO root fetch - processPackages [robotframework-kubelibrary]: Downloading https://files.pythonhosted.org/packages/a8/0d/d4898ff652c365455585b0924c9444cfcab5af129b7471c9f9722a8f8645/robotframework-kubelibrary-0.8.4.tar.gz
+[2023-04-22 09:07:25] INFO root fetch - processPackages [pyrew]: executing diffoscope
+[2023-04-22 09:07:25] INFO root fetch - processPackages [pyrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrew-0.6.2.tar.gz tmp/pyrew-0.6.3.tar.gz --markdown 20230422/p/pyrew/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-04-22 09:07:25] INFO root fetch - processPackages [pygismeteo-base]: executing diffoscope
+[2023-04-22 09:07:25] INFO root fetch - processPackages [pygismeteo-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygismeteo_base-4.2.0.tar.gz tmp/pygismeteo_base-4.3.0.tar.gz --markdown 20230422/p/pygismeteo-base/4.2.0-4.3.0/diff.md --exclude *.pyd
+[2023-04-22 09:07:25] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2023-04-22 09:07:25] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20230422/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/diff.md --exclude *.pyd
+[2023-04-22 09:07:25] INFO root fetch - processPackages [html2notion]: Downloading https://files.pythonhosted.org/packages/4e/18/51d95ca8bcfdbee1398c897647f85b41f288f41f2faae0b7947f19e52a77/html2notion-0.1.1.tar.gz
+[2023-04-22 09:07:25] INFO root fetch - processPackages [robotframework-kubelibrary]: Downloading https://files.pythonhosted.org/packages/a4/49/e473b09b6af22e2b3be416da2c921193dd96b6ccda069f57d0e07b18a420/robotframework-kubelibrary-0.8.5.tar.gz
+[2023-04-22 09:07:25] INFO root fetch - processPackages [html2notion]: executing diffoscope
+[2023-04-22 09:07:25] INFO root fetch - processPackages [html2notion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/html2notion-0.1.0.tar.gz tmp/html2notion-0.1.1.tar.gz --markdown 20230422/h/html2notion/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 09:07:25] INFO root fetch - processPackages [robotframework-kubelibrary]: executing diffoscope
+[2023-04-22 09:07:25] INFO root fetch - processPackages [robotframework-kubelibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotframework-kubelibrary-0.8.4.tar.gz tmp/robotframework-kubelibrary-0.8.5.tar.gz --markdown 20230422/r/robotframework-kubelibrary/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2023-04-22 09:07:26] INFO root fetch - main [MainThread]: End processing [pyrew]: success
+[2023-04-22 09:07:26] INFO root fetch - main [MainThread]: End processing [raga-cli]: success
+[2023-04-22 09:07:26] INFO root fetch - main [MainThread]: End processing [volsite-postgres-common]: success
+[2023-04-22 09:07:26] INFO root fetch - main [MainThread]: End processing [pygismeteo-base]: success
+[2023-04-22 09:07:26] INFO root fetch - main [MainThread]: End processing [robotframework-kubelibrary]: success
+[2023-04-22 09:07:26] INFO root fetch - main [MainThread]: End processing [html2notion]: success
+[2023-04-22 09:07:26] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2023-04-22 09:07:26] INFO root fetch - main [MainThread]: Store serial: [17812870]
