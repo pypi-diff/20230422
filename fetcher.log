@@ -6721,3 +6721,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 09:28:33] INFO root fetch - main [MainThread]: End processing [corolab]: success
 [2023-04-22 09:28:33] INFO root fetch - main [MainThread]: End processing [xknx]: success
 [2023-04-22 09:28:33] INFO root fetch - main [MainThread]: Store serial: [17812986]
+[2023-04-22 09:33:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812986]
+[2023-04-22 09:33:42] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 09:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-appinsights
+[2023-04-22 09:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-async-langchain
+[2023-04-22 09:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pmserializer
+[2023-04-22 09:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: parser-scrapper
+[2023-04-22 09:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ProfiWiki
+[2023-04-22 09:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vocode
+[2023-04-22 09:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: py-yprinciple-gen
+[2023-04-22 09:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sharingiscaring
+[2023-04-22 09:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: athena-ai
+[2023-04-22 09:33:42] INFO root fetch - processPackages [ProfiWiki]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-22 09:33:42] WARNING root fetch - processPackages [parser-scrapper]: Skipping, unable to determine old version
+[2023-04-22 09:33:42] INFO root fetch - main [MainThread]: End processing [parser-scrapper] error
+[2023-04-22 09:33:42] INFO root fetch - processPackages [fastapi-async-langchain]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 09:33:42] INFO root fetch - processPackages [py-yprinciple-gen]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-22 09:33:42] INFO root fetch - processPackages [sharingiscaring]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-22 09:33:42] INFO root fetch - processPackages [pmserializer]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-04-22 09:33:42] INFO root fetch - processPackages [athena-ai]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-22 09:33:42] INFO root fetch - processPackages [vocode]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-22 09:33:42] WARNING root fetch - processPackages [nonebot-plugin-appinsights]: Skipping, unable to determine old version
+[2023-04-22 09:33:42] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-appinsights] error
+[2023-04-22 09:33:42] INFO root fetch - processPackages [sharingiscaring]: executing diffoscope
+[2023-04-22 09:33:42] INFO root fetch - processPackages [sharingiscaring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharingiscaring-0.2.8.tar.gz tmp/sharingiscaring-0.2.9.tar.gz --markdown 20230422/s/sharingiscaring/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-22 09:33:42] INFO root fetch - processPackages [vocode]: executing diffoscope
+[2023-04-22 09:33:42] INFO root fetch - processPackages [vocode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vocode-0.1.98.tar.gz tmp/vocode-0.1.99.tar.gz --markdown 20230422/v/vocode/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-22 09:33:42] INFO root fetch - processPackages [py-yprinciple-gen]: Downloading https://files.pythonhosted.org/packages/be/32/09a27a6deb348e8c7c3f4514268eb44d5e9bb23cae2d57c66a963882404e/py_yprinciple_gen-0.2.9.tar.gz
+[2023-04-22 09:33:42] INFO root fetch - processPackages [fastapi-async-langchain]: Downloading https://files.pythonhosted.org/packages/70/0f/a19d0835890aa3b536c4286c390ac8163235d68f7f7f83f737411f8fb7eb/fastapi_async_langchain-0.1.0.tar.gz
+[2023-04-22 09:33:42] INFO root fetch - processPackages [pmserializer]: Downloading https://files.pythonhosted.org/packages/b0/4e/a74c2c8357908780825d5b2f5a8ff3ea326d7dffd05bd3232a5ca0995caf/pmserializer-2.0.2.tar.gz
+[2023-04-22 09:33:42] INFO root fetch - processPackages [py-yprinciple-gen]: executing diffoscope
+[2023-04-22 09:33:42] INFO root fetch - processPackages [py-yprinciple-gen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_yprinciple_gen-0.2.8.tar.gz tmp/py_yprinciple_gen-0.2.9.tar.gz --markdown 20230422/p/py-yprinciple-gen/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-22 09:33:42] INFO root fetch - processPackages [athena-ai]: Downloading https://files.pythonhosted.org/packages/c6/ea/8c2adc2d5899ec49d0497668d34f438c9f237e45613b0130a8bf9175a95d/athena_ai-0.0.8.tar.gz
+[2023-04-22 09:33:43] INFO root fetch - processPackages [ProfiWiki]: Downloading https://files.pythonhosted.org/packages/fa/60/34166b65e8b72ed4b277257700d79a4a27ab3061cc838bddfb709a09b83f/profiwiki-0.1.4.tar.gz
+[2023-04-22 09:33:43] INFO root fetch - processPackages [ProfiWiki]: executing diffoscope
+[2023-04-22 09:33:43] INFO root fetch - processPackages [ProfiWiki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profiwiki-0.1.3.tar.gz tmp/profiwiki-0.1.4.tar.gz --markdown 20230422/P/ProfiWiki/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-22 09:33:43] INFO root fetch - processPackages [athena-ai]: executing diffoscope
+[2023-04-22 09:33:43] INFO root fetch - processPackages [athena-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athena_ai-0.0.7.tar.gz tmp/athena_ai-0.0.8.tar.gz --markdown 20230422/a/athena-ai/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-22 09:33:43] INFO root fetch - processPackages [fastapi-async-langchain]: Downloading https://files.pythonhosted.org/packages/a6/9a/54ee9e3c67e69b70895ad8777f734db7a9176ad6dc650fc10e5a60bd6a9e/fastapi_async_langchain-0.1.1.tar.gz
+[2023-04-22 09:33:43] INFO root fetch - processPackages [fastapi-async-langchain]: executing diffoscope
+[2023-04-22 09:33:43] INFO root fetch - processPackages [fastapi-async-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_async_langchain-0.1.0.tar.gz tmp/fastapi_async_langchain-0.1.1.tar.gz --markdown 20230422/f/fastapi-async-langchain/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 09:33:43] INFO root fetch - processPackages [pmserializer]: Downloading https://files.pythonhosted.org/packages/fc/92/5c8c6af6e2c50f6e63dded1183b34b61b38565081135aa7904da84148427/pmserializer-2.0.3.tar.gz
+[2023-04-22 09:33:43] INFO root fetch - processPackages [pmserializer]: executing diffoscope
+[2023-04-22 09:33:43] INFO root fetch - processPackages [pmserializer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pmserializer-2.0.2.tar.gz tmp/pmserializer-2.0.3.tar.gz --markdown 20230422/p/pmserializer/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-04-22 09:33:44] INFO root fetch - main [MainThread]: End processing [py-yprinciple-gen]: success
+[2023-04-22 09:33:44] INFO root fetch - main [MainThread]: End processing [athena-ai]: success
+[2023-04-22 09:33:44] INFO root fetch - main [MainThread]: End processing [ProfiWiki]: success
+[2023-04-22 09:33:44] INFO root fetch - main [MainThread]: End processing [fastapi-async-langchain]: success
+[2023-04-22 09:33:44] INFO root fetch - main [MainThread]: End processing [sharingiscaring]: success
+[2023-04-22 09:33:44] INFO root fetch - main [MainThread]: End processing [pmserializer]: success
+[2023-04-22 09:33:44] INFO root fetch - main [MainThread]: End processing [vocode]: success
+[2023-04-22 09:33:44] INFO root fetch - main [MainThread]: Store serial: [17813015]
