@@ -12521,3 +12521,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 20:37:33] INFO root fetch - main [MainThread]: End processing [pyfredapi]: success
 [2023-04-22 20:37:33] INFO root fetch - main [MainThread]: End processing [pandasflow]: success
 [2023-04-22 20:37:33] INFO root fetch - main [MainThread]: Store serial: [17816449]
+[2023-04-22 20:42:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816449]
+[2023-04-22 20:42:42] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-22 20:42:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sneakpeek-py
+[2023-04-22 20:42:42] INFO root fetch - processPackages [sneakpeek-py]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-22 20:42:42] INFO root fetch - processPackages [sneakpeek-py]: Downloading https://files.pythonhosted.org/packages/09/3f/cd25c16ed1313e5f12bb63ec89ab27bb8b735796612491513cb6323ac435/sneakpeek_py-0.1.3.tar.gz
+[2023-04-22 20:42:42] INFO root fetch - processPackages [sneakpeek-py]: executing diffoscope
+[2023-04-22 20:42:42] INFO root fetch - processPackages [sneakpeek-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sneakpeek_py-0.1.2.tar.gz tmp/sneakpeek_py-0.1.3.tar.gz --markdown 20230422/s/sneakpeek-py/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-22 20:42:44] INFO root fetch - main [MainThread]: End processing [sneakpeek-py]: success
+[2023-04-22 20:42:44] INFO root fetch - main [MainThread]: Store serial: [17816452]
