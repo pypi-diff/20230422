@@ -9843,3 +9843,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 15:55:05] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 15:55:05] INFO root fetch - main [MainThread]: End processing [brownian-stock]: success
 [2023-04-22 15:55:05] INFO root fetch - main [MainThread]: Store serial: [17814892]
+[2023-04-22 16:00:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814892]
+[2023-04-22 16:00:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 16:00:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyathena
+[2023-04-22 16:00:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deew
+[2023-04-22 16:00:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plone.app.standardtiles
+[2023-04-22 16:00:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: czech-workdays-holidays
+[2023-04-22 16:00:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: signify
+[2023-04-22 16:00:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ezstools
+[2023-04-22 16:00:13] INFO root fetch - processPackages [czech-workdays-holidays]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-22 16:00:13] INFO root fetch - processPackages [plone.app.standardtiles]: New version: [3.0.1] Old Version: [3.0.0b1]
+[2023-04-22 16:00:14] INFO root fetch - processPackages [deew]: New version: [3.0.0] Old Version: [2.9.5]
+[2023-04-22 16:00:14] INFO root fetch - processPackages [pyathena]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-04-22 16:00:14] INFO root fetch - processPackages [signify]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-22 16:00:14] INFO root fetch - processPackages [czech-workdays-holidays]: executing diffoscope
+[2023-04-22 16:00:14] INFO root fetch - processPackages [czech-workdays-holidays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czech_workdays_holidays-0.1.2.tar.gz tmp/czech_workdays_holidays-0.1.3.tar.gz --markdown 20230422/c/czech-workdays-holidays/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-22 16:00:14] INFO root fetch - processPackages [ezstools]: New version: [2.5] Old Version: [2.4]
+[2023-04-22 16:00:14] INFO root fetch - processPackages [pyathena]: executing diffoscope
+[2023-04-22 16:00:14] INFO root fetch - processPackages [pyathena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAthena-2.9.5.tar.gz tmp/PyAthena-2.9.6.tar.gz --markdown 20230422/p/pyathena/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-04-22 16:00:14] INFO root fetch - processPackages [plone.app.standardtiles]: Downloading https://files.pythonhosted.org/packages/39/9a/5616c9afba892a23b5e1102a3535ae3ac186c2ce5f3fcc9446674abf00fd/plone.app.standardtiles-3.0.0b1.tar.gz
+[2023-04-22 16:00:14] INFO root fetch - processPackages [deew]: Downloading https://files.pythonhosted.org/packages/ce/eb/59edf508728957f2a9756c6cd5dd47cbc0644218e3175e34f1e534d5974d/deew-2.9.5.tar.gz
+[2023-04-22 16:00:14] INFO root fetch - processPackages [signify]: Downloading https://files.pythonhosted.org/packages/a1/9b/ed473c0bab7bf13d8835c243608d91e9b6b913f901c7d9ce90bf87374f25/signify-0.5.1.tar.gz
+[2023-04-22 16:00:14] INFO root fetch - processPackages [ezstools]: Downloading https://files.pythonhosted.org/packages/68/1b/a2e2e5eade81c332caccda8dcf6e71ef6850f5e67287d0db944919607e38/ezstools-2.4.tar.gz
+[2023-04-22 16:00:14] INFO root fetch - processPackages [deew]: Downloading https://files.pythonhosted.org/packages/a6/1e/7702a25c9b6ff72b3ec4c97c8cccc9139785835e1e61823613563eede3f7/deew-3.0.0.tar.gz
+[2023-04-22 16:00:14] INFO root fetch - processPackages [signify]: Downloading https://files.pythonhosted.org/packages/09/e2/8d02ca5ae62bbb98836699d5d0b9bcc88540af4f4d28c3f52c07f2acf9bd/signify-0.5.2.tar.gz
+[2023-04-22 16:00:14] INFO root fetch - processPackages [ezstools]: Downloading https://files.pythonhosted.org/packages/cf/ef/c8942504b670b39478a5610451ea864cfee59459e347ca395ba7eabe690f/ezstools-2.5.tar.gz
+[2023-04-22 16:00:14] INFO root fetch - processPackages [plone.app.standardtiles]: Downloading https://files.pythonhosted.org/packages/f9/ed/e2047e3fad2027113d00fb9257f27e70f354acbfc34a6fddd5bcbb72d650/plone.app.standardtiles-3.0.1.tar.gz
+[2023-04-22 16:00:14] INFO root fetch - processPackages [deew]: executing diffoscope
+[2023-04-22 16:00:14] INFO root fetch - processPackages [deew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deew-2.9.5.tar.gz tmp/deew-3.0.0.tar.gz --markdown 20230422/d/deew/2.9.5-3.0.0/diff.md --exclude *.pyd
+[2023-04-22 16:00:14] INFO root fetch - processPackages [ezstools]: executing diffoscope
+[2023-04-22 16:00:14] INFO root fetch - processPackages [ezstools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezstools-2.4.tar.gz tmp/ezstools-2.5.tar.gz --markdown 20230422/e/ezstools/2.4-2.5/diff.md --exclude *.pyd
+[2023-04-22 16:00:14] INFO root fetch - processPackages [signify]: executing diffoscope
+[2023-04-22 16:00:14] INFO root fetch - processPackages [signify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/signify-0.5.1.tar.gz tmp/signify-0.5.2.tar.gz --markdown 20230422/s/signify/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-22 16:00:14] INFO root fetch - processPackages [plone.app.standardtiles]: executing diffoscope
+[2023-04-22 16:00:14] INFO root fetch - processPackages [plone.app.standardtiles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.standardtiles-3.0.0b1.tar.gz tmp/plone.app.standardtiles-3.0.1.tar.gz --markdown 20230422/p/plone.app.standardtiles/3.0.0b1-3.0.1/diff.md --exclude *.pyd
+[2023-04-22 16:00:15] INFO root fetch - main [MainThread]: End processing [czech-workdays-holidays]: success
+[2023-04-22 16:00:15] INFO root fetch - main [MainThread]: End processing [pyathena]: success
+[2023-04-22 16:00:15] INFO root fetch - main [MainThread]: End processing [deew]: success
+[2023-04-22 16:00:15] INFO root fetch - main [MainThread]: End processing [ezstools]: success
+[2023-04-22 16:00:16] INFO root fetch - main [MainThread]: End processing [plone.app.standardtiles]: success
+[2023-04-22 16:00:16] INFO root fetch - main [MainThread]: End processing [signify]: success
+[2023-04-22 16:00:16] INFO root fetch - main [MainThread]: Store serial: [17814909]
