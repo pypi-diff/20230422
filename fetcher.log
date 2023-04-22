@@ -5541,3 +5541,59 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 07:15:26] INFO root fetch - main [MainThread]: End processing [jarvis-ironman]: success
 [2023-04-22 07:15:29] INFO root fetch - main [MainThread]: End processing [pypcapkit]: success
 [2023-04-22 07:15:29] INFO root fetch - main [MainThread]: Store serial: [17812352]
+[2023-04-22 07:20:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812352]
+[2023-04-22 07:20:39] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 07:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rapidpe-rift-pipe
+[2023-04-22 07:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-osubot
+[2023-04-22 07:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mrdoxmrgt
+[2023-04-22 07:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-mgmtsystem-audit
+[2023-04-22 07:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: policyengine-us
+[2023-04-22 07:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addon-mgmtsystem-claim
+[2023-04-22 07:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-addon-mgmtsystem-hazard
+[2023-04-22 07:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo-addon-mgmtsystem-action
+[2023-04-22 07:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: corallium
+[2023-04-22 07:20:39] INFO root fetch - processPackages [rapidpe-rift-pipe]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-22 07:20:39] INFO root fetch - processPackages [mrdoxmrgt]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 07:20:39] INFO root fetch - processPackages [nonebot-plugin-osubot]: New version: [1.7.1] Old Version: [1.7.0]
+[2023-04-22 07:20:39] INFO root fetch - processPackages [policyengine-us]: New version: [0.298.0] Old Version: [0.297.0]
+[2023-04-22 07:20:39] INFO root fetch - processPackages [nonebot-plugin-osubot]: Downloading https://files.pythonhosted.org/packages/20/0c/ac2fc6f7b078bd7e0704cf2157b1650ed6d0bf6aa2c4884a82520439d5e5/nonebot-plugin-osubot-1.7.0.tar.gz
+[2023-04-22 07:20:39] INFO root fetch - processPackages [odoo-addon-mgmtsystem-claim]: New version: [16.0.1.0.0.8] Old Version: [16.0.1.0.0.7]
+[2023-04-22 07:20:39] INFO root fetch - processPackages [mrdoxmrgt]: executing diffoscope
+[2023-04-22 07:20:39] INFO root fetch - processPackages [mrdoxmrgt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrdoxmrgt-0.0.1.tar.gz tmp/mrdoxmrgt-0.0.2.tar.gz --markdown 20230422/m/mrdoxmrgt/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 07:20:39] INFO root fetch - processPackages [odoo-addon-mgmtsystem-audit]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.8]
+[2023-04-22 07:20:39] INFO root fetch - processPackages [odoo-addon-mgmtsystem-hazard]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.8]
+[2023-04-22 07:20:39] INFO root fetch - processPackages [corallium]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-22 07:20:39] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.8]
+[2023-04-22 07:20:39] WARNING root fetch - processPackages [nonebot-plugin-osubot]: Skipping package: exceeds size limit 29656857>=10485760
+[2023-04-22 07:20:39] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-osubot] error
+[2023-04-22 07:20:39] INFO root fetch - processPackages [rapidpe-rift-pipe]: Downloading https://files.pythonhosted.org/packages/36/a7/d8b7f3d67de2efeca36817506e070afdacafe260b0c05907c37e76450da8/rapidpe_rift_pipe-0.2.1.tar.gz
+[2023-04-22 07:20:39] INFO root fetch - processPackages [odoo-addon-mgmtsystem-claim]: Downloading https://files.pythonhosted.org/packages/68/f8/1aca352b71926aead871709ebd4f19fab968505c4d568d874c71765930c8/odoo_addon_mgmtsystem_claim-16.0.1.0.0.7-py3-none-any.whl
+[2023-04-22 07:20:39] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/3f/d0/f86500195a6f0ec06bb21a98f8afa12caff0c0db3584df08c3be25232a02/policyengine-us-0.298.0.tar.gz
+[2023-04-22 07:20:39] INFO root fetch - processPackages [odoo-addon-mgmtsystem-hazard]: Downloading https://files.pythonhosted.org/packages/41/56/0313a735834a9d65e9291c8bfcdffaf3e555be70f46b27c7d1cbb7944eab/odoo_addon_mgmtsystem_hazard-16.0.1.0.0.8-py3-none-any.whl
+[2023-04-22 07:20:39] INFO root fetch - processPackages [corallium]: Downloading https://files.pythonhosted.org/packages/60/8f/477b864c307686d2fc8a3cb4990ef0f8cd8829119dd2ba9d9ab4653976f8/corallium-0.1.1.tar.gz
+[2023-04-22 07:20:39] INFO root fetch - processPackages [rapidpe-rift-pipe]: executing diffoscope
+[2023-04-22 07:20:39] INFO root fetch - processPackages [rapidpe-rift-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpe_rift_pipe-0.2.0.tar.gz tmp/rapidpe_rift_pipe-0.2.1.tar.gz --markdown 20230422/r/rapidpe-rift-pipe/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-22 07:20:39] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: executing diffoscope
+[2023-04-22 07:20:39] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mgmtsystem_action-16.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_mgmtsystem_action-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230422/o/odoo-addon-mgmtsystem-action/16.0.1.0.0.8-16.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-04-22 07:20:39] INFO root fetch - processPackages [odoo-addon-mgmtsystem-audit]: executing diffoscope
+[2023-04-22 07:20:39] INFO root fetch - processPackages [odoo-addon-mgmtsystem-audit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mgmtsystem_audit-16.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_mgmtsystem_audit-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230422/o/odoo-addon-mgmtsystem-audit/16.0.1.0.0.8-16.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-04-22 07:20:39] INFO root fetch - processPackages [odoo-addon-mgmtsystem-claim]: Downloading https://files.pythonhosted.org/packages/32/fd/80401e39d19b44848cfb39efb34f674f29f3956523ff61af5e26b5370cd2/odoo_addon_mgmtsystem_claim-16.0.1.0.0.8-py3-none-any.whl
+[2023-04-22 07:20:39] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-04-22 07:20:39] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.297.0.tar.gz tmp/policyengine-us-0.298.0.tar.gz --markdown 20230422/p/policyengine-us/0.297.0-0.298.0/diff.md --exclude *.pyd
+[2023-04-22 07:20:39] INFO root fetch - processPackages [corallium]: Downloading https://files.pythonhosted.org/packages/30/0a/7d3c5d62e90d29db96819fecd838acd4f28f9396ca6fe89a1fbff9de97df/corallium-0.2.0.tar.gz
+[2023-04-22 07:20:39] INFO root fetch - processPackages [odoo-addon-mgmtsystem-claim]: executing diffoscope
+[2023-04-22 07:20:39] INFO root fetch - processPackages [odoo-addon-mgmtsystem-claim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mgmtsystem_claim-16.0.1.0.0.7-py3-none-any.whl.zip tmp/odoo_addon_mgmtsystem_claim-16.0.1.0.0.8-py3-none-any.whl.zip --markdown 20230422/o/odoo-addon-mgmtsystem-claim/16.0.1.0.0.7-16.0.1.0.0.8/diff.md --exclude *.pyd
+[2023-04-22 07:20:40] INFO root fetch - processPackages [corallium]: executing diffoscope
+[2023-04-22 07:20:40] INFO root fetch - processPackages [corallium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corallium-0.1.1.tar.gz tmp/corallium-0.2.0.tar.gz --markdown 20230422/c/corallium/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-22 07:20:40] INFO root fetch - processPackages [odoo-addon-mgmtsystem-hazard]: Downloading https://files.pythonhosted.org/packages/6c/e3/f077ebcc5baae36c49e626ea67db779fa59960fb04b7738481cda05399cc/odoo_addon_mgmtsystem_hazard-16.0.1.0.0.9-py3-none-any.whl
+[2023-04-22 07:20:40] INFO root fetch - processPackages [odoo-addon-mgmtsystem-hazard]: executing diffoscope
+[2023-04-22 07:20:40] INFO root fetch - processPackages [odoo-addon-mgmtsystem-hazard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mgmtsystem_hazard-16.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_mgmtsystem_hazard-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230422/o/odoo-addon-mgmtsystem-hazard/16.0.1.0.0.8-16.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-04-22 07:20:40] INFO root fetch - main [MainThread]: End processing [mrdoxmrgt]: success
+[2023-04-22 07:20:41] INFO root fetch - main [MainThread]: End processing [odoo-addon-mgmtsystem-audit]: success
+[2023-04-22 07:20:41] INFO root fetch - main [MainThread]: End processing [odoo-addon-mgmtsystem-action]: success
+[2023-04-22 07:20:41] INFO root fetch - main [MainThread]: End processing [odoo-addon-mgmtsystem-claim]: success
+[2023-04-22 07:20:41] INFO root fetch - main [MainThread]: End processing [corallium]: success
+[2023-04-22 07:20:41] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
+[2023-04-22 07:20:41] INFO root fetch - main [MainThread]: End processing [odoo-addon-mgmtsystem-hazard]: success
+[2023-04-22 07:21:51] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2023-04-22 07:21:51] INFO root fetch - main [MainThread]: Store serial: [17812376]
