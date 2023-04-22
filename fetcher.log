@@ -13077,3 +13077,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 22:03:51] INFO root fetch - main [MainThread]: End processing [py-file-type]: success
 [2023-04-22 22:03:51] INFO root fetch - main [MainThread]: End processing [corolab]: success
 [2023-04-22 22:03:51] INFO root fetch - main [MainThread]: Store serial: [17816761]
+[2023-04-22 22:08:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816761]
+[2023-04-22 22:09:00] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 22:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vtece4564-gamelib
+[2023-04-22 22:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ompl-thin
+[2023-04-22 22:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyhtml-desktop
+[2023-04-22 22:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: embedin
+[2023-04-22 22:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyhtml-desktop
+[2023-04-22 22:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: py-audio-extract
+[2023-04-22 22:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vtece4564-gamelib
+[2023-04-22 22:09:00] INFO root fetch - processPackages [pyhtml-desktop]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-22 22:09:00] INFO root fetch - processPackages [pyhtml-desktop]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-22 22:09:00] INFO root fetch - processPackages [vtece4564-gamelib]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-22 22:09:00] INFO root fetch - processPackages [ompl-thin]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 22:09:00] ERROR root fetch - processPackages [py-audio-extract]: Unable to get metadata: No such project 'py-audio-extract'
+[2023-04-22 22:09:00] INFO root fetch - processPackages [embedin]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 22:09:00] INFO root fetch - main [MainThread]: End processing [py-audio-extract] error
+[2023-04-22 22:09:00] INFO root fetch - processPackages [vtece4564-gamelib]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-22 22:09:00] INFO root fetch - processPackages [ompl-thin]: Downloading https://files.pythonhosted.org/packages/3e/90/cec582913ea72eb60810b9db91eab2c913b0883c118f71158450f8c285e0/ompl-thin-0.0.8.tar.gz
+[2023-04-22 22:09:00] WARNING root fetch - processPackages [ompl-thin]: Skipping package: exceeds size limit 24096571>=10485760
+[2023-04-22 22:09:00] INFO root fetch - main [MainThread]: End processing [ompl-thin] error
+[2023-04-22 22:09:01] INFO root fetch - processPackages [pyhtml-desktop]: Downloading https://files.pythonhosted.org/packages/f9/74/ed474ef8fad6f0728cb42d78805a0ad9a53f39d04e75f2da03da9ae21723/pyhtml_desktop-1.1.1.tar.gz
+[2023-04-22 22:09:01] INFO root fetch - processPackages [pyhtml-desktop]: Downloading https://files.pythonhosted.org/packages/f9/74/ed474ef8fad6f0728cb42d78805a0ad9a53f39d04e75f2da03da9ae21723/pyhtml_desktop-1.1.1.tar.gz
+[2023-04-22 22:09:01] INFO root fetch - processPackages [embedin]: Downloading https://files.pythonhosted.org/packages/a2/53/c0096583f51cd0f8b33baa002e08a555046cce3d8bc44d36b49705982901/embedin-0.1.0.tar.gz
+[2023-04-22 22:09:01] INFO root fetch - processPackages [pyhtml-desktop]: Downloading https://files.pythonhosted.org/packages/63/2c/f04f537be681af97f55a565c2d2396a966abc9a926971bfb2862675fa0e9/pyhtml_desktop-1.1.2.tar.gz
+[2023-04-22 22:09:01] INFO root fetch - processPackages [pyhtml-desktop]: Downloading https://files.pythonhosted.org/packages/63/2c/f04f537be681af97f55a565c2d2396a966abc9a926971bfb2862675fa0e9/pyhtml_desktop-1.1.2.tar.gz
+[2023-04-22 22:09:01] INFO root fetch - processPackages [vtece4564-gamelib]: Downloading https://files.pythonhosted.org/packages/9e/c7/5a9649e42e44f0d545673583bd78da320e4df0301288c4e2c209bd555fb4/vtece4564-gamelib-0.0.8.tar.gz
+[2023-04-22 22:09:01] INFO root fetch - processPackages [embedin]: Downloading https://files.pythonhosted.org/packages/21/0d/dc73755148093b01f07ea133ee5ff3616f78d5b9eda70c52a8104423e36d/embedin-0.1.1.tar.gz
+[2023-04-22 22:09:01] INFO root fetch - processPackages [pyhtml-desktop]: executing diffoscope
+[2023-04-22 22:09:01] INFO root fetch - processPackages [pyhtml-desktop]: executing diffoscope
+[2023-04-22 22:09:01] INFO root fetch - processPackages [pyhtml-desktop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhtml_desktop-1.1.1.tar.gz tmp/pyhtml_desktop-1.1.2.tar.gz --markdown 20230422/p/pyhtml-desktop/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-22 22:09:01] INFO root fetch - processPackages [pyhtml-desktop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhtml_desktop-1.1.1.tar.gz tmp/pyhtml_desktop-1.1.2.tar.gz --markdown 20230422/p/pyhtml-desktop/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-22 22:09:01] INFO root fetch - processPackages [vtece4564-gamelib]: Downloading https://files.pythonhosted.org/packages/9e/c7/5a9649e42e44f0d545673583bd78da320e4df0301288c4e2c209bd555fb4/vtece4564-gamelib-0.0.8.tar.gz
+[2023-04-22 22:09:01] INFO root fetch - processPackages [vtece4564-gamelib]: executing diffoscope
+[2023-04-22 22:09:01] INFO root fetch - processPackages [vtece4564-gamelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vtece4564-gamelib-0.0.7.tar.gz tmp/vtece4564-gamelib-0.0.8.tar.gz --markdown 20230422/v/vtece4564-gamelib/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-22 22:09:01] INFO root fetch - processPackages [embedin]: executing diffoscope
+[2023-04-22 22:09:01] INFO root fetch - processPackages [embedin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedin-0.1.0.tar.gz tmp/embedin-0.1.1.tar.gz --markdown 20230422/e/embedin/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 22:09:01] INFO root fetch - processPackages [vtece4564-gamelib]: executing diffoscope
+[2023-04-22 22:09:01] INFO root fetch - processPackages [vtece4564-gamelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vtece4564-gamelib-0.0.7.tar.gz tmp/vtece4564-gamelib-0.0.8.tar.gz --markdown 20230422/v/vtece4564-gamelib/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-22 22:09:02] INFO root fetch - main [MainThread]: End processing [vtece4564-gamelib]: success
+[2023-04-22 22:09:02] INFO root fetch - main [MainThread]: End processing [pyhtml-desktop]: success
+[2023-04-22 22:09:02] INFO root fetch - main [MainThread]: End processing [vtece4564-gamelib]: success
+[2023-04-22 22:09:02] INFO root fetch - main [MainThread]: End processing [pyhtml-desktop]: success
+[2023-04-22 22:09:02] INFO root fetch - main [MainThread]: End processing [embedin]: success
+[2023-04-22 22:09:02] INFO root fetch - main [MainThread]: Store serial: [17816786]
