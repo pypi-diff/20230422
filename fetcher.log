@@ -12889,3 +12889,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 21:37:36] INFO root fetch - main [MainThread]: End processing [aa-package-monitor]: success
 [2023-04-22 21:37:36] INFO root fetch - main [MainThread]: End processing [pycyphal]: success
 [2023-04-22 21:37:36] INFO root fetch - main [MainThread]: Store serial: [17816663]
+[2023-04-22 21:42:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816663]
+[2023-04-22 21:42:46] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 21:42:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asgi-correlation-id
+[2023-04-22 21:42:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vollseg
+[2023-04-22 21:42:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flet-material
+[2023-04-22 21:42:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: voyager-cpu
+[2023-04-22 21:42:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: withwait
+[2023-04-22 21:42:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: llvm-installer
+[2023-04-22 21:42:46] WARNING root fetch - processPackages [flet-material]: Skipping, unable to determine old version
+[2023-04-22 21:42:46] INFO root fetch - main [MainThread]: End processing [flet-material] error
+[2023-04-22 21:42:46] WARNING root fetch - processPackages [withwait]: Skipping, unable to determine old version
+[2023-04-22 21:42:46] INFO root fetch - processPackages [llvm-installer]: New version: [1.3.0] Old Version: [1.2.9]
+[2023-04-22 21:42:46] INFO root fetch - main [MainThread]: End processing [withwait] error
+[2023-04-22 21:42:46] INFO root fetch - processPackages [voyager-cpu]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-22 21:42:46] INFO root fetch - processPackages [asgi-correlation-id]: New version: [4.2.0] Old Version: [4.1.0]
+[2023-04-22 21:42:46] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-22 21:42:46] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-22 21:42:47] INFO root fetch - processPackages [asgi-correlation-id]: Downloading https://files.pythonhosted.org/packages/3e/19/b0028004a81882283bed4ea376aff03cffbc2a7920df87ae9d979ec229c5/asgi_correlation_id-4.1.0.tar.gz
+[2023-04-22 21:42:47] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-22 21:42:47] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-22 21:42:47] INFO root fetch - processPackages [llvm-installer]: Downloading https://files.pythonhosted.org/packages/53/14/16c831df7fb6a962f1d5bb9ce1ce8bdb44b2e4ca50ae99ccfc04caf8963f/llvm-installer-1.3.0.tar.gz
+[2023-04-22 21:42:47] INFO root fetch - processPackages [voyager-cpu]: Downloading https://files.pythonhosted.org/packages/42/bd/bad30b2b1ffd532907d66675ec3e5483247f5d93b08e986facfa145e6997/voyager_cpu-0.2.2.tar.gz
+[2023-04-22 21:42:47] INFO root fetch - processPackages [voyager-cpu]: executing diffoscope
+[2023-04-22 21:42:47] INFO root fetch - processPackages [voyager-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voyager_cpu-0.2.1.tar.gz tmp/voyager_cpu-0.2.2.tar.gz --markdown 20230422/v/voyager-cpu/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-22 21:42:47] INFO root fetch - processPackages [llvm-installer]: executing diffoscope
+[2023-04-22 21:42:47] INFO root fetch - processPackages [llvm-installer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llvm-installer-1.2.9.tar.gz tmp/llvm-installer-1.3.0.tar.gz --markdown 20230422/l/llvm-installer/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2023-04-22 21:42:47] INFO root fetch - processPackages [asgi-correlation-id]: Downloading https://files.pythonhosted.org/packages/d7/15/cf3a0c746a1e5061589a9271bec880e64e5175f2efc4c1584a0b9a1bd46e/asgi_correlation_id-4.2.0.tar.gz
+[2023-04-22 21:42:47] INFO root fetch - processPackages [asgi-correlation-id]: executing diffoscope
+[2023-04-22 21:42:47] INFO root fetch - processPackages [asgi-correlation-id]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asgi_correlation_id-4.1.0.tar.gz tmp/asgi_correlation_id-4.2.0.tar.gz --markdown 20230422/a/asgi-correlation-id/4.1.0-4.2.0/diff.md --exclude *.pyd
+[2023-04-22 21:42:48] INFO root fetch - main [MainThread]: End processing [asgi-correlation-id]: success
+[2023-04-22 21:42:48] INFO root fetch - main [MainThread]: End processing [llvm-installer]: success
+[2023-04-22 21:42:49] INFO root fetch - main [MainThread]: End processing [voyager-cpu]: success
+[2023-04-22 21:42:49] INFO root fetch - main [MainThread]: Store serial: [17816687]
