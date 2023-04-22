@@ -4265,3 +4265,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 04:53:44] INFO root fetch - main [MainThread]: End processing [importlib-metadata]: success
 [2023-04-22 04:53:46] INFO root fetch - main [MainThread]: End processing [pypcapkit]: success
 [2023-04-22 04:53:46] INFO root fetch - main [MainThread]: Store serial: [17811737]
+[2023-04-22 04:58:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811737]
+[2023-04-22 04:58:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-22 04:58:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poe-api
+[2023-04-22 04:58:55] INFO root fetch - processPackages [poe-api]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-22 04:58:55] INFO root fetch - processPackages [poe-api]: Downloading https://files.pythonhosted.org/packages/ee/c6/136acbcce3a127aa7fbe44298b8a05469e9c67478ff66143d79511e0d75f/poe_api-0.3.1-py3-none-any.whl
+[2023-04-22 04:58:55] INFO root fetch - processPackages [poe-api]: executing diffoscope
+[2023-04-22 04:58:55] INFO root fetch - processPackages [poe-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poe_api-0.3.0-py3-none-any.whl.zip tmp/poe_api-0.3.1-py3-none-any.whl.zip --markdown 20230422/p/poe-api/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-22 04:58:56] INFO root fetch - main [MainThread]: End processing [poe-api]: success
+[2023-04-22 04:58:56] INFO root fetch - main [MainThread]: Store serial: [17811740]
