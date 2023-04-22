@@ -7297,3 +7297,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 10:44:28] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
 [2023-04-22 10:44:34] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-04-22 10:44:34] INFO root fetch - main [MainThread]: Store serial: [17813363]
+[2023-04-22 10:49:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813363]
+[2023-04-22 10:49:45] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 10:49:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfp-nightly
+[2023-04-22 10:49:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aliendev-api
+[2023-04-22 10:49:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sondehub
+[2023-04-22 10:49:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aliendev-cdk
+[2023-04-22 10:49:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yeref
+[2023-04-22 10:49:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: featurebyte-freeware
+[2023-04-22 10:49:45] INFO root fetch - processPackages [featurebyte-freeware]: New version: [0.2.12] Old Version: [0.0.1a1]
+[2023-04-22 10:49:45] INFO root fetch - processPackages [yeref]: New version: [0.1.40] Old Version: [0.1.39]
+[2023-04-22 10:49:45] INFO root fetch - processPackages [aliendev-api]: New version: [0.1.7] Old Version: [0.1.5]
+[2023-04-22 10:49:45] INFO root fetch - processPackages [sondehub]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-22 10:49:45] INFO root fetch - processPackages [aliendev-cdk]: New version: [0.1.34] Old Version: [0.1.33]
+[2023-04-22 10:49:45] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2023-04-22 10:49:45] INFO root fetch - processPackages [featurebyte-freeware]: Downloading https://files.pythonhosted.org/packages/cf/8e/259fffe66ff7ba9757817a952533cd399d52f9d63462eaf9803042d772d8/featurebyte_freeware-0.0.1a1.tar.gz
+[2023-04-22 10:49:45] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ae/60/d74a8785fa994c92bd2e5c373ab3247713167ec184a8abab920d43ee6c0f/yeref-0.1.40.tar.gz
+[2023-04-22 10:49:45] INFO root fetch - processPackages [sondehub]: Downloading https://files.pythonhosted.org/packages/2f/50/d46d34921227ef2397e0ba924e5253f7270c20f8be77f69dcf9570263a15/sondehub-0.3.1.tar.gz
+[2023-04-22 10:49:45] INFO root fetch - processPackages [aliendev-cdk]: Downloading https://files.pythonhosted.org/packages/8f/10/c5f588570a3ae486543be57893b161fa5b315500c838e2696b5ef310ece0/aliendev_cdk-0.1.34.tar.gz
+[2023-04-22 10:49:45] INFO root fetch - processPackages [aliendev-cdk]: executing diffoscope
+[2023-04-22 10:49:45] INFO root fetch - processPackages [aliendev-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliendev_cdk-0.1.33.tar.gz tmp/aliendev_cdk-0.1.34.tar.gz --markdown 20230422/a/aliendev-cdk/0.1.33-0.1.34/diff.md --exclude *.pyd
+[2023-04-22 10:49:45] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2023-04-22 10:49:45] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.1.39.tar.gz tmp/yeref-0.1.40.tar.gz --markdown 20230422/y/yeref/0.1.39-0.1.40/diff.md --exclude *.pyd
+[2023-04-22 10:49:45] INFO root fetch - processPackages [featurebyte-freeware]: Downloading https://files.pythonhosted.org/packages/84/a3/af703c770de50a0d7ff9c96cb053b9d5f96f02773267daaa9fed6737cd58/featurebyte_freeware-0.2.12-cp39-cp39-win_amd64.whl
+[2023-04-22 10:49:45] INFO root fetch - processPackages [sondehub]: Downloading https://files.pythonhosted.org/packages/0a/6d/0951dc1d442e648f38e4b4b9a630def52ef5c337451adca6b2bae14e7112/sondehub-0.3.2.tar.gz
+[2023-04-22 10:49:45] INFO root fetch - processPackages [sondehub]: executing diffoscope
+[2023-04-22 10:49:45] INFO root fetch - processPackages [sondehub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sondehub-0.3.1.tar.gz tmp/sondehub-0.3.2.tar.gz --markdown 20230422/s/sondehub/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-22 10:49:45] INFO root fetch - processPackages [aliendev-api]: Downloading https://files.pythonhosted.org/packages/be/d7/8cf71772bdcce80d1ee38024c8ec2e229234c4041c9e5aa80323b460e374/aliendev_api-0.1.7.tar.gz
+[2023-04-22 10:49:45] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2023-04-22 10:49:45] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20230422/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
+[2023-04-22 10:49:45] INFO root fetch - processPackages [aliendev-api]: executing diffoscope
+[2023-04-22 10:49:45] INFO root fetch - processPackages [aliendev-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliendev_api-0.1.5.tar.gz tmp/aliendev_api-0.1.7.tar.gz --markdown 20230422/a/aliendev-api/0.1.5-0.1.7/diff.md --exclude *.pyd
+[2023-04-22 10:49:45] INFO root fetch - processPackages [featurebyte-freeware]: executing diffoscope
+[2023-04-22 10:49:45] INFO root fetch - processPackages [featurebyte-freeware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featurebyte_freeware-0.0.1a1.tar.gz tmp/featurebyte_freeware-0.2.12-cp39-cp39-win_amd64.whl.zip --markdown 20230422/f/featurebyte-freeware/0.0.1a1-0.2.12/diff.md --exclude *.pyd
+[2023-04-22 10:49:46] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2023-04-22 10:49:46] INFO root fetch - main [MainThread]: End processing [aliendev-cdk]: success
+[2023-04-22 10:49:46] INFO root fetch - main [MainThread]: End processing [sondehub]: success
+[2023-04-22 10:49:46] INFO root fetch - main [MainThread]: End processing [aliendev-api]: success
+[2023-04-22 10:49:46] INFO root fetch - main [MainThread]: End processing [featurebyte-freeware]: success
+[2023-04-22 10:50:02] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2023-04-22 10:50:02] INFO root fetch - main [MainThread]: Store serial: [17813402]
