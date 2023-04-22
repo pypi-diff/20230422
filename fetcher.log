@@ -7033,3 +7033,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 10:05:01] INFO root fetch - main [MainThread]: End processing [ats-case]: success
 [2023-04-22 10:05:04] INFO root fetch - main [MainThread]: End processing [binary-refinery]: success
 [2023-04-22 10:05:04] INFO root fetch - main [MainThread]: Store serial: [17813199]
+[2023-04-22 10:10:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813199]
+[2023-04-22 10:10:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-22 10:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yuna-db
+[2023-04-22 10:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyglove
+[2023-04-22 10:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeref
+[2023-04-22 10:10:13] INFO root fetch - processPackages [yeref]: New version: [0.1.38] Old Version: [0.1.37]
+[2023-04-22 10:10:13] INFO root fetch - processPackages [yuna-db]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-04-22 10:10:13] INFO root fetch - processPackages [pyglove]: New version: [0.3.1.dev20230422] Old Version: [0.3.1.dev20230421]
+[2023-04-22 10:10:13] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/38/89/63d82698a779a73322ae7e5198382f68f70ff37c137dde3c974966bc3447/yeref-0.1.38.tar.gz
+[2023-04-22 10:10:13] INFO root fetch - processPackages [yuna-db]: Downloading https://files.pythonhosted.org/packages/ec/98/bf98969b320e73c07ebb97abd007d4e67804769f3e29b917914127fef3fd/yuna-db-0.1.0.tar.gz
+[2023-04-22 10:10:13] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/e2/6f/d741dd4134c7c5e859ef52a5d421b5706ffb9ba430f56ee55e0323386774/pyglove-0.3.1.dev20230422.tar.gz
+[2023-04-22 10:10:13] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2023-04-22 10:10:13] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.1.37.tar.gz tmp/yeref-0.1.38.tar.gz --markdown 20230422/y/yeref/0.1.37-0.1.38/diff.md --exclude *.pyd
+[2023-04-22 10:10:13] INFO root fetch - processPackages [yuna-db]: executing diffoscope
+[2023-04-22 10:10:13] INFO root fetch - processPackages [yuna-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yuna-db-0.0.4.tar.gz tmp/yuna-db-0.1.0.tar.gz --markdown 20230422/y/yuna-db/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-04-22 10:10:13] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2023-04-22 10:10:13] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.3.1.dev20230421.tar.gz tmp/pyglove-0.3.1.dev20230422.tar.gz --markdown 20230422/p/pyglove/0.3.1.dev20230421-0.3.1.dev20230422/diff.md --exclude *.pyd
+[2023-04-22 10:10:14] INFO root fetch - main [MainThread]: End processing [yuna-db]: success
+[2023-04-22 10:10:14] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2023-04-22 10:10:15] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2023-04-22 10:10:15] INFO root fetch - main [MainThread]: Store serial: [17813209]
