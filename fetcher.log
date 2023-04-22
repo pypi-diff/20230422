@@ -10134,3 +10134,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 16:31:58] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-talk-with-chatgpt]: success
 [2023-04-22 16:31:58] INFO root fetch - main [MainThread]: End processing [argcomplete]: success
 [2023-04-22 16:31:58] INFO root fetch - main [MainThread]: Store serial: [17815054]
+[2023-04-22 16:37:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815054]
+[2023-04-22 16:37:07] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 16:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: foursight-core
+[2023-04-22 16:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eppy3000
+[2023-04-22 16:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: servicefoundry
+[2023-04-22 16:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bus-burgos
+[2023-04-22 16:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sphere-base
+[2023-04-22 16:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: je-api-testka
+[2023-04-22 16:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: psgtest
+[2023-04-22 16:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ypmp-example
+[2023-04-22 16:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: qworker
+[2023-04-22 16:37:07] INFO root fetch - processPackages [bus-burgos]: New version: [0.1.0] Old Version: [0.0.0]
+[2023-04-22 16:37:07] INFO root fetch - processPackages [qworker]: New version: [1.6.4] Old Version: [1.6.3]
+[2023-04-22 16:37:07] INFO root fetch - processPackages [je-api-testka]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 16:37:07] INFO root fetch - processPackages [eppy3000]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-22 16:37:07] INFO root fetch - processPackages [sphere-base]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-22 16:37:07] WARNING root fetch - processPackages [ypmp-example]: Skipping, unable to determine old version
+[2023-04-22 16:37:07] INFO root fetch - main [MainThread]: End processing [ypmp-example] error
+[2023-04-22 16:37:07] INFO root fetch - processPackages [psgtest]: New version: [3.2] Old Version: [3.0.2]
+[2023-04-22 16:37:07] INFO root fetch - processPackages [servicefoundry]: New version: [0.8.5rc1] Old Version: [0.8.4rc1]
+[2023-04-22 16:37:07] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-22 16:37:07] INFO root fetch - processPackages [bus-burgos]: Downloading https://files.pythonhosted.org/packages/2b/23/cb68e031a54bd05f4ed657440d51e6668c9c17cf63a1566887bb1d9be1f7/bus_burgos-0.0.0.tar.gz
+[2023-04-22 16:37:07] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 16:37:07] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230422/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-22 16:37:07] INFO root fetch - processPackages [sphere-base]: Downloading https://files.pythonhosted.org/packages/be/76/caa2fcb790837ab663494624e10e45895059eca5c3fd98145eb63842a4bd/sphere_base-0.1.5.tar.gz
+[2023-04-22 16:37:07] INFO root fetch - processPackages [servicefoundry]: Downloading https://files.pythonhosted.org/packages/2d/8f/87450445cd72c751c8438638c6f2a42ec8b582709d37398a31dc4119d8f3/servicefoundry-0.8.4rc1.tar.gz
+[2023-04-22 16:37:07] INFO root fetch - processPackages [eppy3000]: Downloading https://files.pythonhosted.org/packages/3c/44/6ed986456af3d5e426771f967aa88824f0a3c4d03cd04a546421c2253605/eppy3000-0.1.5.tar.gz
+[2023-04-22 16:37:07] INFO root fetch - processPackages [qworker]: Downloading https://files.pythonhosted.org/packages/35/59/3c51c14dd1f1f7cd8f3cbfbcb1e4364750ff1a6ff4996a8ecbbd2615fa31/qworker-1.6.4-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-22 16:37:07] INFO root fetch - processPackages [psgtest]: Downloading https://files.pythonhosted.org/packages/d5/e0/d1ad9c38ab6923b5b1add46b5cd065a6f72fa6ad2ccb9462711bb38fbfb1/psgtest-3.2.tar.gz
+[2023-04-22 16:37:07] INFO root fetch - processPackages [sphere-base]: executing diffoscope
+[2023-04-22 16:37:07] INFO root fetch - processPackages [sphere-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphere_base-0.1.4.tar.gz tmp/sphere_base-0.1.5.tar.gz --markdown 20230422/s/sphere-base/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-22 16:37:07] INFO root fetch - processPackages [je-api-testka]: executing diffoscope
+[2023-04-22 16:37:07] INFO root fetch - processPackages [je-api-testka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_api_testka-0.0.98.tar.gz tmp/je_api_testka-0.0.99.tar.gz --markdown 20230422/j/je-api-testka/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 16:37:07] INFO root fetch - processPackages [eppy3000]: executing diffoscope
+[2023-04-22 16:37:07] INFO root fetch - processPackages [eppy3000]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eppy3000-0.1.4.tar.gz tmp/eppy3000-0.1.5.tar.gz --markdown 20230422/e/eppy3000/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-22 16:37:07] INFO root fetch - processPackages [servicefoundry]: Downloading https://files.pythonhosted.org/packages/5c/30/13d41c3f086e4447b12399f686a719b4f505d8ff13dcf9e395e1e3387812/servicefoundry-0.8.5rc1.tar.gz
+[2023-04-22 16:37:07] INFO root fetch - processPackages [bus-burgos]: Downloading https://files.pythonhosted.org/packages/d3/45/d95b0735c5be24c3556aeb1933d93228d4b9722b537784ccabd2e494d237/bus_burgos-0.1.0.tar.gz
+[2023-04-22 16:37:07] INFO root fetch - processPackages [psgtest]: executing diffoscope
+[2023-04-22 16:37:07] INFO root fetch - processPackages [psgtest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psgtest-3.0.2.tar.gz tmp/psgtest-3.2.tar.gz --markdown 20230422/p/psgtest/3.0.2-3.2/diff.md --exclude *.pyd
+[2023-04-22 16:37:07] INFO root fetch - processPackages [qworker]: executing diffoscope
+[2023-04-22 16:37:07] INFO root fetch - processPackages [qworker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qworker-1.6.3.tar.gz tmp/qworker-1.6.4-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230422/q/qworker/1.6.3-1.6.4/diff.md --exclude *.pyd
+[2023-04-22 16:37:07] INFO root fetch - processPackages [servicefoundry]: executing diffoscope
+[2023-04-22 16:37:07] INFO root fetch - processPackages [servicefoundry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/servicefoundry-0.8.4rc1.tar.gz tmp/servicefoundry-0.8.5rc1.tar.gz --markdown 20230422/s/servicefoundry/0.8.4rc1-0.8.5rc1/diff.md --exclude *.pyd
+[2023-04-22 16:37:08] INFO root fetch - processPackages [bus-burgos]: executing diffoscope
+[2023-04-22 16:37:08] INFO root fetch - processPackages [bus-burgos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bus_burgos-0.0.0.tar.gz tmp/bus_burgos-0.1.0.tar.gz --markdown 20230422/b/bus-burgos/0.0.0-0.1.0/diff.md --exclude *.pyd
+[2023-04-22 16:37:09] INFO root fetch - main [MainThread]: End processing [je-api-testka]: success
+[2023-04-22 16:37:09] INFO root fetch - main [MainThread]: End processing [qworker]: success
+[2023-04-22 16:37:09] INFO root fetch - main [MainThread]: End processing [bus-burgos]: success
+[2023-04-22 16:37:09] INFO root fetch - main [MainThread]: End processing [eppy3000]: success
+[2023-04-22 16:37:09] INFO root fetch - main [MainThread]: End processing [psgtest]: success
+[2023-04-22 16:37:09] INFO root fetch - main [MainThread]: End processing [sphere-base]: success
+[2023-04-22 16:37:09] INFO root fetch - main [MainThread]: End processing [servicefoundry]: success
+[2023-04-22 16:37:23] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 16:37:23] INFO root fetch - main [MainThread]: Store serial: [17815087]
