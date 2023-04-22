@@ -4423,3 +4423,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 05:19:50] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-digitalocean]: success
 [2023-04-22 05:19:51] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-spotinst]: success
 [2023-04-22 05:19:51] INFO root fetch - main [MainThread]: Store serial: [17811804]
+[2023-04-22 05:25:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811804]
+[2023-04-22 05:25:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-22 05:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-ping
+[2023-04-22 05:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ws-cli-chat
+[2023-04-22 05:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-rename
+[2023-04-22 05:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zerocs
+[2023-04-22 05:25:08] INFO root fetch - processPackages [zerocs]: New version: [0.4] Old Version: [0.3]
+[2023-04-22 05:25:08] INFO root fetch - processPackages [nonebot-plugin-rename]: New version: [1.1.0] Old Version: [1.0.3]
+[2023-04-22 05:25:08] INFO root fetch - processPackages [nonebot-plugin-ping]: New version: [1.6.6] Old Version: [1.6.5]
+[2023-04-22 05:25:08] WARNING root fetch - processPackages [ws-cli-chat]: Skipping, unable to determine old version
+[2023-04-22 05:25:08] INFO root fetch - main [MainThread]: End processing [ws-cli-chat] error
+[2023-04-22 05:25:08] INFO root fetch - processPackages [nonebot-plugin-rename]: executing diffoscope
+[2023-04-22 05:25:08] INFO root fetch - processPackages [nonebot-plugin-rename]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_rename-1.0.3.tar.gz tmp/nonebot_plugin_rename-1.1.0.tar.gz --markdown 20230422/n/nonebot-plugin-rename/1.0.3-1.1.0/diff.md --exclude *.pyd
+[2023-04-22 05:25:08] INFO root fetch - processPackages [zerocs]: Downloading https://files.pythonhosted.org/packages/0b/50/c8a397cd063881d920377c7a32ea85e66fe1a80e4a9e6145b470b0f45a6c/zerocs-0.3.tar.gz
+[2023-04-22 05:25:09] INFO root fetch - processPackages [nonebot-plugin-ping]: Downloading https://files.pythonhosted.org/packages/ed/62/35eadb058e464236b9e1b0a05eed2856c0f9cedc81edea218bbe81da95f1/nonebot_plugin_ping-1.6.6.tar.gz
+[2023-04-22 05:25:09] INFO root fetch - processPackages [nonebot-plugin-ping]: executing diffoscope
+[2023-04-22 05:25:09] INFO root fetch - processPackages [nonebot-plugin-ping]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_ping-1.6.5.tar.gz tmp/nonebot_plugin_ping-1.6.6.tar.gz --markdown 20230422/n/nonebot-plugin-ping/1.6.5-1.6.6/diff.md --exclude *.pyd
+[2023-04-22 05:25:09] INFO root fetch - processPackages [zerocs]: Downloading https://files.pythonhosted.org/packages/fa/41/2c8fdb62821f22b1d5af6563f09926a014bebe6c26a316b7fa6cefe16609/zerocs-0.4.tar.gz
+[2023-04-22 05:25:09] INFO root fetch - processPackages [zerocs]: executing diffoscope
+[2023-04-22 05:25:09] INFO root fetch - processPackages [zerocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zerocs-0.3.tar.gz tmp/zerocs-0.4.tar.gz --markdown 20230422/z/zerocs/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-22 05:25:09] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-rename]: success
+[2023-04-22 05:25:10] INFO root fetch - main [MainThread]: End processing [zerocs]: success
+[2023-04-22 05:25:25] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-ping]: success
+[2023-04-22 05:25:25] INFO root fetch - main [MainThread]: Store serial: [17811818]
