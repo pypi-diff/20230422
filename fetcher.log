@@ -9727,3 +9727,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 15:39:27] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 15:39:28] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 15:39:28] INFO root fetch - main [MainThread]: Store serial: [17814841]
+[2023-04-22 15:44:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814841]
+[2023-04-22 15:44:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-22 15:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: imp3
+[2023-04-22 15:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: placeholders
+[2023-04-22 15:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sec-api
+[2023-04-22 15:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-api-generator
+[2023-04-22 15:44:38] INFO root fetch - processPackages [imp3]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-22 15:44:38] INFO root fetch - processPackages [placeholders]: New version: [2.2] Old Version: [2.1]
+[2023-04-22 15:44:38] INFO root fetch - processPackages [django-api-generator]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-22 15:44:38] INFO root fetch - processPackages [sec-api]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-22 15:44:39] INFO root fetch - processPackages [sec-api]: Downloading https://files.pythonhosted.org/packages/a6/46/7221a62ed4c983856d78a223cb6b0e58004eb919fbfa292bdfb40a13b703/sec-api-1.0.8.tar.gz
+[2023-04-22 15:44:39] INFO root fetch - processPackages [django-api-generator]: Downloading https://files.pythonhosted.org/packages/34/53/cb85f5fdc086a55907a625eaef6c3518fff03234292286282fabbd8a51ce/django-api-generator-1.0.8.tar.gz
+[2023-04-22 15:44:39] INFO root fetch - processPackages [placeholders]: Downloading https://files.pythonhosted.org/packages/cd/72/c182b08b13fde3d2b2c04d6ea48436821038b062e5120d397ea6ee3b7781/placeholders-2.2.tar.gz
+[2023-04-22 15:44:39] INFO root fetch - processPackages [placeholders]: executing diffoscope
+[2023-04-22 15:44:39] INFO root fetch - processPackages [placeholders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/placeholders-2.1.tar.gz tmp/placeholders-2.2.tar.gz --markdown 20230422/p/placeholders/2.1-2.2/diff.md --exclude *.pyd
+[2023-04-22 15:44:39] INFO root fetch - processPackages [imp3]: Downloading https://files.pythonhosted.org/packages/df/5c/3ac8b1057151437bc52f9765d1c0527bab7d9d0ca0fa54ccac13b46786d7/imp3-0.1.4.tar.gz
+[2023-04-22 15:44:39] INFO root fetch - processPackages [imp3]: executing diffoscope
+[2023-04-22 15:44:39] INFO root fetch - processPackages [imp3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imp3-0.1.3.tar.gz tmp/imp3-0.1.4.tar.gz --markdown 20230422/i/imp3/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-22 15:44:39] INFO root fetch - processPackages [django-api-generator]: Downloading https://files.pythonhosted.org/packages/0e/47/fd520eb57813135cd9547d8905cbdbe5052349f6713be3249e0502023fb1/django-api-generator-1.0.9.tar.gz
+[2023-04-22 15:44:39] INFO root fetch - processPackages [django-api-generator]: executing diffoscope
+[2023-04-22 15:44:39] INFO root fetch - processPackages [django-api-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-api-generator-1.0.8.tar.gz tmp/django-api-generator-1.0.9.tar.gz --markdown 20230422/d/django-api-generator/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-22 15:44:40] INFO root fetch - processPackages [sec-api]: Downloading https://files.pythonhosted.org/packages/19/ad/f62d1e39d337d79eee5e43e00cffd816cd6be1cd6ef340c86a9a26163f52/sec-api-1.0.9.tar.gz
+[2023-04-22 15:44:40] INFO root fetch - processPackages [sec-api]: executing diffoscope
+[2023-04-22 15:44:40] INFO root fetch - processPackages [sec-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sec-api-1.0.8.tar.gz tmp/sec-api-1.0.9.tar.gz --markdown 20230422/s/sec-api/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-22 15:44:40] INFO root fetch - main [MainThread]: End processing [placeholders]: success
+[2023-04-22 15:44:40] INFO root fetch - main [MainThread]: End processing [imp3]: success
+[2023-04-22 15:44:41] INFO root fetch - main [MainThread]: End processing [django-api-generator]: success
+[2023-04-22 15:44:41] INFO root fetch - main [MainThread]: End processing [sec-api]: success
+[2023-04-22 15:44:41] INFO root fetch - main [MainThread]: Store serial: [17814852]
