@@ -4170,3 +4170,34 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 04:37:27] INFO root fetch - main [MainThread]: End processing [mpb-lib]: success
 [2023-04-22 04:37:27] INFO root fetch - main [MainThread]: End processing [odoo8-addon-account-cutoff-base]: success
 [2023-04-22 04:37:27] INFO root fetch - main [MainThread]: Store serial: [17811682]
+[2023-04-22 04:42:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811682]
+[2023-04-22 04:42:35] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-22 04:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo8-addon-account-cutoff-base
+[2023-04-22 04:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sesg
+[2023-04-22 04:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: opvious
+[2023-04-22 04:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: celldancer
+[2023-04-22 04:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo8-addon-account-credit-control
+[2023-04-22 04:42:36] INFO root fetch - processPackages [sesg]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 04:42:36] INFO root fetch - processPackages [opvious]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-22 04:42:36] INFO root fetch - processPackages [celldancer]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-04-22 04:42:36] INFO root fetch - processPackages [opvious]: executing diffoscope
+[2023-04-22 04:42:36] INFO root fetch - processPackages [opvious]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opvious-0.9.5.tar.gz tmp/opvious-0.9.6.tar.gz --markdown 20230422/o/opvious/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-22 04:42:36] INFO root fetch - processPackages [odoo8-addon-account-cutoff-base]: New version: [8.0.0.1.0.99.dev66] Old Version: [8.0.0.1.0.99.dev65]
+[2023-04-22 04:42:36] INFO root fetch - processPackages [odoo8-addon-account-credit-control]: New version: [8.0.0.3.0.99.dev67] Old Version: [8.0.0.3.0.99.dev66]
+[2023-04-22 04:42:36] INFO root fetch - processPackages [sesg]: executing diffoscope
+[2023-04-22 04:42:36] INFO root fetch - processPackages [sesg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sesg-0.0.8.tar.gz tmp/sesg-0.0.9.tar.gz --markdown 20230422/s/sesg/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 04:42:36] INFO root fetch - processPackages [odoo8-addon-account-credit-control]: Downloading https://files.pythonhosted.org/packages/05/cc/2d9b0679f215897db57f3508d1928d94d2ca521f7b635c4e7120d9e48e59/odoo8_addon_account_credit_control-8.0.0.3.0.99.dev66-py2-none-any.whl
+[2023-04-22 04:42:36] INFO root fetch - processPackages [odoo8-addon-account-cutoff-base]: executing diffoscope
+[2023-04-22 04:42:36] INFO root fetch - processPackages [odoo8-addon-account-cutoff-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_account_cutoff_base-8.0.0.1.0.99.dev65-py2-none-any.whl.zip tmp/odoo8_addon_account_cutoff_base-8.0.0.1.0.99.dev66-py2-none-any.whl.zip --markdown 20230422/o/odoo8-addon-account-cutoff-base/8.0.0.1.0.99.dev65-8.0.0.1.0.99.dev66/diff.md --exclude *.pyd
+[2023-04-22 04:42:36] INFO root fetch - processPackages [celldancer]: Downloading https://files.pythonhosted.org/packages/87/7f/7c34ecbdbe855960c6c0911113533983d7fd1575875eb48aca4596861b61/celldancer-1.1.7.tar.gz
+[2023-04-22 04:42:36] INFO root fetch - processPackages [celldancer]: executing diffoscope
+[2023-04-22 04:42:36] INFO root fetch - processPackages [celldancer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/celldancer-1.1.6.tar.gz tmp/celldancer-1.1.7.tar.gz --markdown 20230422/c/celldancer/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-04-22 04:42:36] INFO root fetch - processPackages [odoo8-addon-account-credit-control]: Downloading https://files.pythonhosted.org/packages/11/33/84894b65f79963637608bee1e02201b9be1a3922efc73db6368cd22bd7b2/odoo8_addon_account_credit_control-8.0.0.3.0.99.dev67-py2-none-any.whl
+[2023-04-22 04:42:37] INFO root fetch - processPackages [odoo8-addon-account-credit-control]: executing diffoscope
+[2023-04-22 04:42:37] INFO root fetch - processPackages [odoo8-addon-account-credit-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_account_credit_control-8.0.0.3.0.99.dev66-py2-none-any.whl.zip tmp/odoo8_addon_account_credit_control-8.0.0.3.0.99.dev67-py2-none-any.whl.zip --markdown 20230422/o/odoo8-addon-account-credit-control/8.0.0.3.0.99.dev66-8.0.0.3.0.99.dev67/diff.md --exclude *.pyd
+[2023-04-22 04:42:37] INFO root fetch - main [MainThread]: End processing [sesg]: success
+[2023-04-22 04:42:37] INFO root fetch - main [MainThread]: End processing [opvious]: success
+[2023-04-22 04:42:37] INFO root fetch - main [MainThread]: End processing [odoo8-addon-account-cutoff-base]: success
+[2023-04-22 04:42:38] INFO root fetch - main [MainThread]: End processing [celldancer]: success
+[2023-04-22 04:42:39] INFO root fetch - main [MainThread]: End processing [odoo8-addon-account-credit-control]: success
+[2023-04-22 04:42:39] INFO root fetch - main [MainThread]: Store serial: [17811696]
