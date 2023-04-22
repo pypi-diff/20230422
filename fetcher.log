@@ -8592,3 +8592,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 13:29:50] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
 [2023-04-22 13:29:54] INFO root fetch - main [MainThread]: End processing [affine-transform]: success
 [2023-04-22 13:29:54] INFO root fetch - main [MainThread]: Store serial: [17814164]
+[2023-04-22 13:34:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814164]
+[2023-04-22 13:35:03] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 13:35:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: esprepomanager
+[2023-04-22 13:35:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: exciton
+[2023-04-22 13:35:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-dllib-spark3
+[2023-04-22 13:35:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-orca-spark3
+[2023-04-22 13:35:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigdl-friesian-spark3
+[2023-04-22 13:35:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bigdl-chronos-spark3
+[2023-04-22 13:35:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bigdl-spark3
+[2023-04-22 13:35:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyre-check-nightly
+[2023-04-22 13:35:03] INFO root fetch - processPackages [bigdl-orca-spark3]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-22 13:35:03] INFO root fetch - processPackages [esprepomanager]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-22 13:35:03] INFO root fetch - processPackages [exciton]: New version: [1.4.6] Old Version: [1.4.5]
+[2023-04-22 13:35:03] INFO root fetch - processPackages [bigdl-dllib-spark3]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-22 13:35:03] INFO root fetch - processPackages [bigdl-friesian-spark3]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-22 13:35:03] INFO root fetch - processPackages [bigdl-spark3]: New version: [2.4.0b20230421] Old Version: [2.3.0b20230420]
+[2023-04-22 13:35:03] INFO root fetch - processPackages [bigdl-chronos-spark3]: New version: [2.4.0b20230421] Old Version: [2.3.0b20230420]
+[2023-04-22 13:35:03] INFO root fetch - processPackages [pyre-check-nightly]: New version: [0.0.101682161865] Old Version: [0.0.101682075441]
+[2023-04-22 13:35:03] INFO root fetch - processPackages [bigdl-orca-spark3]: Downloading https://files.pythonhosted.org/packages/29/d6/cea74f0f5ccb6248d9d97fae168d7039fbce7a54d40873114f3c34b656ad/bigdl_orca_spark3-2.4.0b20230421-py3-none-manylinux1_x86_64.whl
+[2023-04-22 13:35:03] INFO root fetch - processPackages [esprepomanager]: Downloading https://files.pythonhosted.org/packages/cc/75/da6a9f9217883c5de381da1d34e9d29a9ecb7718f9adc6a2c5275f35daff/esprepomanager-1.2.0.tar.gz
+[2023-04-22 13:35:03] INFO root fetch - processPackages [bigdl-dllib-spark3]: Downloading https://files.pythonhosted.org/packages/94/97/7ee06d9da705197e48e201f0b8898282f3383e1415089c1f9b8f24b61b3d/bigdl-dllib-spark3-2.4.0b20230421.tar.gz
+[2023-04-22 13:35:03] INFO root fetch - processPackages [exciton]: Downloading https://files.pythonhosted.org/packages/8a/1c/9870ff3985cce3ee84b2bc90bae0efba5a4ddca99dbfacf7b58b0fe338f7/exciton-1.4.6-py3-none-any.whl
+[2023-04-22 13:35:03] INFO root fetch - processPackages [pyre-check-nightly]: Downloading https://files.pythonhosted.org/packages/e6/57/77ffcccb0e698db94885a4c131d3af023b66e0a02b8dde29bf9b11291a15/pyre-check-nightly-0.0.101682075441.tar.gz
+[2023-04-22 13:35:03] WARNING root fetch - processPackages [bigdl-orca-spark3]: Skipping package: exceeds size limit 20207386>=10485760
+[2023-04-22 13:35:03] INFO root fetch - main [MainThread]: End processing [bigdl-orca-spark3] error
+[2023-04-22 13:35:03] INFO root fetch - processPackages [bigdl-friesian-spark3]: Downloading https://files.pythonhosted.org/packages/4f/15/1d63f8d1f71a12b9c096bf525a72fc6f32582a58e37abf687ebc3da6d7d3/bigdl_friesian_spark3-2.4.0b20230422-py3-none-manylinux1_x86_64.whl
+[2023-04-22 13:35:03] INFO root fetch - processPackages [bigdl-chronos-spark3]: executing diffoscope
+[2023-04-22 13:35:03] INFO root fetch - processPackages [bigdl-chronos-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos_spark3-2.3.0b20230420-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_chronos_spark3-2.4.0b20230421-py3-none-manylinux1_x86_64.whl.zip --markdown 20230422/b/bigdl-chronos-spark3/2.3.0b20230420-2.4.0b20230421/diff.md --exclude *.pyd
+[2023-04-22 13:35:03] WARNING root fetch - processPackages [bigdl-dllib-spark3]: Skipping package: exceeds size limit 61251749>=10485760
+[2023-04-22 13:35:03] INFO root fetch - main [MainThread]: End processing [bigdl-dllib-spark3] error
+[2023-04-22 13:35:03] INFO root fetch - processPackages [exciton]: executing diffoscope
+[2023-04-22 13:35:03] INFO root fetch - processPackages [exciton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exciton-1.4.5-py3-none-any.whl.zip tmp/exciton-1.4.6-py3-none-any.whl.zip --markdown 20230422/e/exciton/1.4.5-1.4.6/diff.md --exclude *.pyd
+[2023-04-22 13:35:03] WARNING root fetch - processPackages [pyre-check-nightly]: Skipping package: exceeds size limit 23158303>=10485760
+[2023-04-22 13:35:03] INFO root fetch - main [MainThread]: End processing [pyre-check-nightly] error
+[2023-04-22 13:35:03] INFO root fetch - processPackages [bigdl-spark3]: executing diffoscope
+[2023-04-22 13:35:03] INFO root fetch - processPackages [bigdl-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_spark3-2.3.0b20230420-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_spark3-2.4.0b20230421-py3-none-manylinux1_x86_64.whl.zip --markdown 20230422/b/bigdl-spark3/2.3.0b20230420-2.4.0b20230421/diff.md --exclude *.pyd
+[2023-04-22 13:35:04] INFO root fetch - processPackages [esprepomanager]: Downloading https://files.pythonhosted.org/packages/9f/b4/1808bca1afc7da2daa3789afee8103758558c626b7b513586ba70575c90a/esprepomanager-1.2.1.tar.gz
+[2023-04-22 13:35:04] INFO root fetch - processPackages [bigdl-friesian-spark3]: executing diffoscope
+[2023-04-22 13:35:04] INFO root fetch - processPackages [bigdl-friesian-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_friesian_spark3-2.4.0b20230421-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_friesian_spark3-2.4.0b20230422-py3-none-manylinux1_x86_64.whl.zip --markdown 20230422/b/bigdl-friesian-spark3/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-22 13:35:04] INFO root fetch - processPackages [esprepomanager]: executing diffoscope
+[2023-04-22 13:35:04] INFO root fetch - processPackages [esprepomanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esprepomanager-1.2.0.tar.gz tmp/esprepomanager-1.2.1.tar.gz --markdown 20230422/e/esprepomanager/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-04-22 13:35:04] INFO root fetch - main [MainThread]: End processing [bigdl-spark3]: success
+[2023-04-22 13:35:05] INFO root fetch - main [MainThread]: End processing [exciton]: success
+[2023-04-22 13:35:05] INFO root fetch - main [MainThread]: End processing [esprepomanager]: success
+[2023-04-22 13:35:05] INFO root fetch - main [MainThread]: End processing [bigdl-friesian-spark3]: success
+[2023-04-22 13:35:05] INFO root fetch - main [MainThread]: End processing [bigdl-chronos-spark3]: success
+[2023-04-22 13:35:05] INFO root fetch - main [MainThread]: Store serial: [17814190]
