@@ -5738,3 +5738,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 07:37:39] INFO root fetch - main [MainThread]: End processing [many-abis]: success
 [2023-04-22 07:37:48] INFO root fetch - main [MainThread]: End processing [ovos-core]: success
 [2023-04-22 07:37:48] INFO root fetch - main [MainThread]: Store serial: [17812459]
+[2023-04-22 07:42:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812459]
+[2023-04-22 07:42:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 07:42:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pmserializer
+[2023-04-22 07:42:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pywebio
+[2023-04-22 07:42:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hyfi-template
+[2023-04-22 07:42:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spatbox
+[2023-04-22 07:42:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tiktok-uploader
+[2023-04-22 07:42:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: athena-ai
+[2023-04-22 07:42:57] INFO root fetch - processPackages [pmserializer]: New version: [2.0.0] Old Version: [1.0.1]
+[2023-04-22 07:42:57] INFO root fetch - processPackages [athena-ai]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-22 07:42:57] INFO root fetch - processPackages [hyfi-template]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 07:42:57] INFO root fetch - processPackages [tiktok-uploader]: New version: [1.0.0] Old Version: [0.1.2]
+[2023-04-22 07:42:57] INFO root fetch - processPackages [spatbox]: New version: [0.2.0] Old Version: [0.1.8]
+[2023-04-22 07:42:58] INFO root fetch - processPackages [pywebio]: New version: [1.8.2] Old Version: [1.8.1]
+[2023-04-22 07:42:58] INFO root fetch - processPackages [athena-ai]: executing diffoscope
+[2023-04-22 07:42:58] INFO root fetch - processPackages [athena-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athena_ai-0.0.6.tar.gz tmp/athena_ai-0.0.7.tar.gz --markdown 20230422/a/athena-ai/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-22 07:42:58] INFO root fetch - processPackages [pmserializer]: Downloading https://files.pythonhosted.org/packages/fe/78/37e99aaf7d3d4554111e39ab987908907974e1bd85d18e4fd781535b0314/pmserializer-1.0.1.tar.gz
+[2023-04-22 07:42:58] INFO root fetch - processPackages [hyfi-template]: Downloading https://files.pythonhosted.org/packages/1d/42/4474e227a9669746cf1396ddd5d61efe96ae85a13177e14cc89c0c71e30f/hyfi_template-0.1.9.tar.gz
+[2023-04-22 07:42:58] INFO root fetch - processPackages [tiktok-uploader]: Downloading https://files.pythonhosted.org/packages/19/bc/4b3293c35739c3a479c3c0d7b481e0e791a249e487d4271ba3da246880c0/tiktok_uploader-0.1.2.tar.gz
+[2023-04-22 07:42:58] INFO root fetch - processPackages [spatbox]: Downloading https://files.pythonhosted.org/packages/6f/5c/2fd4b221a35e6e91b225331fae0bc3e28ac3a1c2c06836a5c0de3102dfc2/spatbox-0.1.8.tar.gz
+[2023-04-22 07:42:58] INFO root fetch - processPackages [hyfi-template]: executing diffoscope
+[2023-04-22 07:42:58] INFO root fetch - processPackages [hyfi-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyfi_template-0.1.8.tar.gz tmp/hyfi_template-0.1.9.tar.gz --markdown 20230422/h/hyfi-template/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 07:42:58] INFO root fetch - processPackages [pmserializer]: Downloading https://files.pythonhosted.org/packages/11/d4/d3a58c2eb28f8947a30e44381eb51ef7ac37fe0b129090b689c69a5f61d1/pmserializer-2.0.0.tar.gz
+[2023-04-22 07:42:58] INFO root fetch - processPackages [pywebio]: Downloading https://files.pythonhosted.org/packages/a6/c3/022c2bf2864e6200d283480465b43b7a4cda89671566081b9a319233521c/pywebio-1.8.2.tar.gz
+[2023-04-22 07:42:58] INFO root fetch - processPackages [pmserializer]: executing diffoscope
+[2023-04-22 07:42:58] INFO root fetch - processPackages [pmserializer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pmserializer-1.0.1.tar.gz tmp/pmserializer-2.0.0.tar.gz --markdown 20230422/p/pmserializer/1.0.1-2.0.0/diff.md --exclude *.pyd
+[2023-04-22 07:42:58] INFO root fetch - processPackages [pywebio]: executing diffoscope
+[2023-04-22 07:42:58] INFO root fetch - processPackages [pywebio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywebio-1.8.1.tar.gz tmp/pywebio-1.8.2.tar.gz --markdown 20230422/p/pywebio/1.8.1-1.8.2/diff.md --exclude *.pyd
+[2023-04-22 07:42:58] INFO root fetch - processPackages [tiktok-uploader]: Downloading https://files.pythonhosted.org/packages/61/fe/438bdaa1433c94e1e328f164576f4485a5a129928f41e84140f8b637f007/tiktok_uploader-1.0.0.tar.gz
+[2023-04-22 07:42:58] WARNING root fetch - processPackages [spatbox]: Skipping package: exceeds size limit 24417461>=10485760
+[2023-04-22 07:42:58] INFO root fetch - main [MainThread]: End processing [spatbox] error
+[2023-04-22 07:42:58] INFO root fetch - processPackages [tiktok-uploader]: executing diffoscope
+[2023-04-22 07:42:58] INFO root fetch - processPackages [tiktok-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiktok_uploader-0.1.2.tar.gz tmp/tiktok_uploader-1.0.0.tar.gz --markdown 20230422/t/tiktok-uploader/0.1.2-1.0.0/diff.md --exclude *.pyd
+[2023-04-22 07:42:59] INFO root fetch - main [MainThread]: End processing [hyfi-template]: success
+[2023-04-22 07:42:59] INFO root fetch - main [MainThread]: End processing [athena-ai]: success
+[2023-04-22 07:42:59] INFO root fetch - main [MainThread]: End processing [pmserializer]: success
+[2023-04-22 07:42:59] INFO root fetch - main [MainThread]: End processing [tiktok-uploader]: success
+[2023-04-22 07:43:02] INFO root fetch - main [MainThread]: End processing [pywebio]: success
+[2023-04-22 07:43:02] INFO root fetch - main [MainThread]: Store serial: [17812474]
