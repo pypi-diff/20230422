@@ -12403,3 +12403,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 20:16:33] INFO root fetch - main [MainThread]: End processing [chessmaker]: success
 [2023-04-22 20:16:49] INFO root fetch - main [MainThread]: End processing [jestspectation]: success
 [2023-04-22 20:16:49] INFO root fetch - main [MainThread]: Store serial: [17816389]
+[2023-04-22 20:21:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816389]
+[2023-04-22 20:21:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-22 20:21:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: types-setuptools
+[2023-04-22 20:21:57] INFO root fetch - processPackages [types-setuptools]: New version: [67.7.0.0] Old Version: [67.6.0.8]
+[2023-04-22 20:21:58] INFO root fetch - processPackages [types-setuptools]: Downloading https://files.pythonhosted.org/packages/b8/7f/8d4b6a2ac7f7792cab397a4a7441c1913a4f065a78595214a37075c15c3f/types-setuptools-67.7.0.0.tar.gz
+[2023-04-22 20:21:58] INFO root fetch - processPackages [types-setuptools]: executing diffoscope
+[2023-04-22 20:21:58] INFO root fetch - processPackages [types-setuptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-setuptools-67.6.0.8.tar.gz tmp/types-setuptools-67.7.0.0.tar.gz --markdown 20230422/t/types-setuptools/67.6.0.8-67.7.0.0/diff.md --exclude *.pyd
+[2023-04-22 20:21:59] INFO root fetch - main [MainThread]: End processing [types-setuptools]: success
+[2023-04-22 20:21:59] INFO root fetch - main [MainThread]: Store serial: [17816392]
