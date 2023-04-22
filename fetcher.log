@@ -4102,3 +4102,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 04:27:00] INFO root fetch - main [MainThread]: End processing [StringFix]: success
 [2023-04-22 04:27:00] INFO root fetch - main [MainThread]: End processing [spiderx]: success
 [2023-04-22 04:27:00] INFO root fetch - main [MainThread]: Store serial: [17811630]
+[2023-04-22 04:32:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811630]
+[2023-04-22 04:32:09] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 04:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk8s-plus-26
+[2023-04-22 04:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aegea
+[2023-04-22 04:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iam-actions
+[2023-04-22 04:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk8s-plus-25
+[2023-04-22 04:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fluxrpc
+[2023-04-22 04:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fluxvault
+[2023-04-22 04:32:09] INFO root fetch - processPackages [cdk8s-plus-26]: New version: [2.3.4] Old Version: [2.3.3]
+[2023-04-22 04:32:09] INFO root fetch - processPackages [fluxrpc]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 04:32:09] INFO root fetch - processPackages [fluxvault]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 04:32:09] INFO root fetch - processPackages [cdk8s-plus-25]: New version: [2.7.4] Old Version: [2.7.3]
+[2023-04-22 04:32:09] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20230422] Old Version: [1.2.20230421]
+[2023-04-22 04:32:09] INFO root fetch - processPackages [aegea]: New version: [4.4.0] Old Version: [4.3.4]
+[2023-04-22 04:32:10] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/bd/e5/0f8b4959f3f2968b2dbd937d5afaa6bcb25874b368289b9424718e05134d/iam_actions-1.2.20230421.tar.gz
+[2023-04-22 04:32:10] INFO root fetch - processPackages [aegea]: Downloading https://files.pythonhosted.org/packages/e2/7d/ebf0a37606394f0103ef81287501cc6794760fe4f130227056bbc45afc41/aegea-4.3.4.tar.gz
+[2023-04-22 04:32:10] INFO root fetch - processPackages [fluxrpc]: executing diffoscope
+[2023-04-22 04:32:10] INFO root fetch - processPackages [fluxrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxrpc-0.9.8.tar.gz tmp/fluxrpc-0.9.9.tar.gz --markdown 20230422/f/fluxrpc/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 04:32:10] INFO root fetch - processPackages [cdk8s-plus-26]: executing diffoscope
+[2023-04-22 04:32:10] INFO root fetch - processPackages [cdk8s-plus-26]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-26-2.3.3.tar.gz tmp/cdk8s-plus-26-2.3.4.tar.gz --markdown 20230422/c/cdk8s-plus-26/2.3.3-2.3.4/diff.md --exclude *.pyd
+[2023-04-22 04:32:10] INFO root fetch - processPackages [aegea]: Downloading https://files.pythonhosted.org/packages/43/a3/0f565f96f0a1ebed4492183f0206b7f04637f28d0b085bc5b453943554bd/aegea-4.4.0.tar.gz
+[2023-04-22 04:32:10] INFO root fetch - processPackages [fluxvault]: executing diffoscope
+[2023-04-22 04:32:10] INFO root fetch - processPackages [fluxvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxvault-0.9.8.tar.gz tmp/fluxvault-0.9.9.tar.gz --markdown 20230422/f/fluxvault/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 04:32:10] INFO root fetch - processPackages [cdk8s-plus-25]: executing diffoscope
+[2023-04-22 04:32:10] INFO root fetch - processPackages [cdk8s-plus-25]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-25-2.7.3.tar.gz tmp/cdk8s-plus-25-2.7.4.tar.gz --markdown 20230422/c/cdk8s-plus-25/2.7.3-2.7.4/diff.md --exclude *.pyd
+[2023-04-22 04:32:10] INFO root fetch - processPackages [aegea]: executing diffoscope
+[2023-04-22 04:32:10] INFO root fetch - processPackages [aegea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aegea-4.3.4.tar.gz tmp/aegea-4.4.0.tar.gz --markdown 20230422/a/aegea/4.3.4-4.4.0/diff.md --exclude *.pyd
+[2023-04-22 04:32:11] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/e2/a9/166b4b55bc9d4733d83f8def1b5d502786db9a45ddb0c0322cf995f4b231/iam_actions-1.2.20230422.tar.gz
+[2023-04-22 04:32:11] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2023-04-22 04:32:11] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20230421.tar.gz tmp/iam_actions-1.2.20230422.tar.gz --markdown 20230422/i/iam-actions/1.2.20230421-1.2.20230422/diff.md --exclude *.pyd
+[2023-04-22 04:32:11] INFO root fetch - main [MainThread]: End processing [fluxrpc]: success
+[2023-04-22 04:32:11] INFO root fetch - main [MainThread]: End processing [fluxvault]: success
+[2023-04-22 04:32:11] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-26]: success
+[2023-04-22 04:32:12] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-25]: success
+[2023-04-22 04:32:12] INFO root fetch - main [MainThread]: End processing [aegea]: success
+[2023-04-22 04:32:16] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2023-04-22 04:32:16] INFO root fetch - main [MainThread]: Store serial: [17811650]
