@@ -7054,3 +7054,46 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 10:10:14] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2023-04-22 10:10:15] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2023-04-22 10:10:15] INFO root fetch - main [MainThread]: Store serial: [17813209]
+[2023-04-22 10:15:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813209]
+[2023-04-22 10:15:24] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 10:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yashpy
+[2023-04-22 10:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yashpy
+[2023-04-22 10:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pex
+[2023-04-22 10:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ats-case
+[2023-04-22 10:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: telespider
+[2023-04-22 10:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jinjamator
+[2023-04-22 10:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: thonny
+[2023-04-22 10:15:24] INFO root fetch - processPackages [yashpy]: New version: [0.2] Old Version: [0.1]
+[2023-04-22 10:15:24] INFO root fetch - processPackages [yashpy]: New version: [0.2] Old Version: [0.1]
+[2023-04-22 10:15:24] WARNING root fetch - processPackages [telespider]: Skipping, unable to determine old version
+[2023-04-22 10:15:24] INFO root fetch - main [MainThread]: End processing [telespider] error
+[2023-04-22 10:15:24] INFO root fetch - processPackages [jinjamator]: New version: [0.9.9] Old Version: [0.9.89]
+[2023-04-22 10:15:24] INFO root fetch - processPackages [ats-case]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-04-22 10:15:24] INFO root fetch - processPackages [thonny]: New version: [4.1.0b1.dev0] Old Version: [4.0.2]
+[2023-04-22 10:15:24] INFO root fetch - processPackages [pex]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-04-22 10:15:24] INFO root fetch - processPackages [jinjamator]: Downloading https://files.pythonhosted.org/packages/49/7d/b802c6432294caf43f3f8dfe6eea4f00b9ddb7b0aa78531e55cda6a1eef6/jinjamator-0.9.89-py3-none-any.whl
+[2023-04-22 10:15:24] INFO root fetch - processPackages [yashpy]: Downloading https://files.pythonhosted.org/packages/8d/dd/f2cd109897e47e123e3645dd7f27f8ec0dcd787d8cc1a2869ed30131e307/yashpy-0.1.tar.gz
+[2023-04-22 10:15:24] INFO root fetch - processPackages [yashpy]: Downloading https://files.pythonhosted.org/packages/8d/dd/f2cd109897e47e123e3645dd7f27f8ec0dcd787d8cc1a2869ed30131e307/yashpy-0.1.tar.gz
+[2023-04-22 10:15:24] WARNING root fetch - processPackages [jinjamator]: Skipping package: exceeds size limit 10805631>=10485760
+[2023-04-22 10:15:24] INFO root fetch - main [MainThread]: End processing [jinjamator] error
+[2023-04-22 10:15:24] INFO root fetch - processPackages [thonny]: Downloading https://files.pythonhosted.org/packages/41/e1/a25c8a131ffda27591cf6ebbffd4057bbc5e848ffb83aaddb28828ef882e/thonny-4.0.2.tar.gz
+[2023-04-22 10:15:24] INFO root fetch - processPackages [ats-case]: Downloading https://files.pythonhosted.org/packages/cf/02/0142926017396239ac917496f774cdf0dd0396e233f237ee73bbcfee17dd/ats_case-0.5.4.tar.gz
+[2023-04-22 10:15:24] INFO root fetch - processPackages [ats-case]: executing diffoscope
+[2023-04-22 10:15:24] INFO root fetch - processPackages [ats-case]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ats_case-0.5.3.tar.gz tmp/ats_case-0.5.4.tar.gz --markdown 20230422/a/ats-case/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-04-22 10:15:24] INFO root fetch - processPackages [thonny]: Downloading https://files.pythonhosted.org/packages/de/0b/699726f39d5070b707260469cb3048e7df22123b24083b0f20653837f464/thonny-4.1.0b1.dev0.tar.gz
+[2023-04-22 10:15:25] INFO root fetch - processPackages [yashpy]: Downloading https://files.pythonhosted.org/packages/cb/b6/2d14fb608481b73b499c0385729815e3c0b01655ada4a78142d82045c8a4/yashpy-0.2.tar.gz
+[2023-04-22 10:15:25] INFO root fetch - processPackages [pex]: executing diffoscope
+[2023-04-22 10:15:25] INFO root fetch - processPackages [pex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pex-2.1.98.tar.gz tmp/pex-2.1.99.tar.gz --markdown 20230422/p/pex/2.1.98-2.1.99/diff.md --exclude *.pyd
+[2023-04-22 10:15:25] INFO root fetch - processPackages [yashpy]: Downloading https://files.pythonhosted.org/packages/cb/b6/2d14fb608481b73b499c0385729815e3c0b01655ada4a78142d82045c8a4/yashpy-0.2.tar.gz
+[2023-04-22 10:15:25] INFO root fetch - processPackages [yashpy]: executing diffoscope
+[2023-04-22 10:15:25] INFO root fetch - processPackages [yashpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yashpy-0.1.tar.gz tmp/yashpy-0.2.tar.gz --markdown 20230422/y/yashpy/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-22 10:15:25] INFO root fetch - processPackages [yashpy]: executing diffoscope
+[2023-04-22 10:15:25] INFO root fetch - processPackages [yashpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yashpy-0.1.tar.gz tmp/yashpy-0.2.tar.gz --markdown 20230422/y/yashpy/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-22 10:15:25] INFO root fetch - processPackages [thonny]: executing diffoscope
+[2023-04-22 10:15:25] INFO root fetch - processPackages [thonny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thonny-4.0.2.tar.gz tmp/thonny-4.1.0b1.dev0.tar.gz --markdown 20230422/t/thonny/4.0.2-4.1.0b1.dev0/diff.md --exclude *.pyd
+[2023-04-22 10:15:25] INFO root fetch - main [MainThread]: End processing [ats-case]: success
+[2023-04-22 10:15:26] INFO root fetch - main [MainThread]: End processing [yashpy]: success
+[2023-04-22 10:15:26] INFO root fetch - main [MainThread]: End processing [yashpy]: success
+[2023-04-22 10:15:32] INFO root fetch - main [MainThread]: End processing [thonny]: success
+[2023-04-22 10:15:35] INFO root fetch - main [MainThread]: End processing [pex]: success
+[2023-04-22 10:15:35] INFO root fetch - main [MainThread]: Store serial: [17813240]
