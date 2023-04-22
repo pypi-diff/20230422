@@ -6240,3 +6240,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 08:35:40] INFO root fetch - main [MainThread]: End processing [brainanalysistool]: success
 [2023-04-22 08:36:00] INFO root fetch - main [MainThread]: End processing [fedml]: success
 [2023-04-22 08:36:00] INFO root fetch - main [MainThread]: Store serial: [17812737]
+[2023-04-22 08:41:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812737]
+[2023-04-22 08:41:08] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 08:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mrdoxmrgt
+[2023-04-22 08:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rest-framework-material
+[2023-04-22 08:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-can-gc
+[2023-04-22 08:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: QuickStart-Rhy
+[2023-04-22 08:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fredtools
+[2023-04-22 08:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo12-addon-sale-order-tag
+[2023-04-22 08:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo13-addon-sale-order-tag
+[2023-04-22 08:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lkmlfmt
+[2023-04-22 08:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyrew
+[2023-04-22 08:41:09] INFO root fetch - processPackages [mrdoxmrgt]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-22 08:41:09] WARNING root fetch - processPackages [python-can-gc]: Skipping, unable to determine old version
+[2023-04-22 08:41:09] INFO root fetch - main [MainThread]: End processing [python-can-gc] error
+[2023-04-22 08:41:09] INFO root fetch - processPackages [lkmlfmt]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-22 08:41:09] INFO root fetch - processPackages [fredtools]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-22 08:41:09] INFO root fetch - processPackages [pyrew]: New version: [0.6.2] Old Version: [0.5.2]
+[2023-04-22 08:41:09] INFO root fetch - processPackages [odoo12-addon-sale-order-tag]: New version: [12.0.1.0.0.99.dev8] Old Version: [12.0.1.0.0.99.dev4]
+[2023-04-22 08:41:09] INFO root fetch - processPackages [odoo13-addon-sale-order-tag]: New version: [13.0.1.0.2.dev7] Old Version: [13.0.1.0.2.dev6]
+[2023-04-22 08:41:09] INFO root fetch - processPackages [rest-framework-material]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-22 08:41:09] INFO root fetch - processPackages [QuickStart-Rhy]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-22 08:41:09] INFO root fetch - processPackages [rest-framework-material]: Downloading https://files.pythonhosted.org/packages/f3/92/d007ea409fd6be852378be26db09c127c099af67e155e890ac6aee403c72/rest_framework_material-0.1.2.tar.gz
+[2023-04-22 08:41:09] INFO root fetch - processPackages [fredtools]: Downloading https://files.pythonhosted.org/packages/d5/d0/f1fc013c3cc4eddac58e4dc5e9c539865696e5baa03ce2cc269a714b657a/fredtools-0.6.8-py3-none-any.whl
+[2023-04-22 08:41:09] INFO root fetch - processPackages [pyrew]: Downloading https://files.pythonhosted.org/packages/d4/e8/c5586d009166aefc8a99f0c637d7f397e030d8c38a3bb1e688532987f0f8/pyrew-0.5.2.tar.gz
+[2023-04-22 08:41:09] INFO root fetch - processPackages [mrdoxmrgt]: Downloading https://files.pythonhosted.org/packages/a9/e1/b0c74dd0c6026da8b6f466e6f815dd45d3aae72c44b478039c018d096177/mrdoxmrgt-0.0.8.tar.gz
+[2023-04-22 08:41:09] INFO root fetch - processPackages [mrdoxmrgt]: executing diffoscope
+[2023-04-22 08:41:09] INFO root fetch - processPackages [mrdoxmrgt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrdoxmrgt-0.0.7.tar.gz tmp/mrdoxmrgt-0.0.8.tar.gz --markdown 20230422/m/mrdoxmrgt/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-22 08:41:09] INFO root fetch - processPackages [odoo12-addon-sale-order-tag]: executing diffoscope
+[2023-04-22 08:41:09] INFO root fetch - processPackages [odoo12-addon-sale-order-tag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_sale_order_tag-12.0.1.0.0.99.dev4-py3-none-any.whl.zip tmp/odoo12_addon_sale_order_tag-12.0.1.0.0.99.dev8-py3-none-any.whl.zip --markdown 20230422/o/odoo12-addon-sale-order-tag/12.0.1.0.0.99.dev4-12.0.1.0.0.99.dev8/diff.md --exclude *.pyd
+[2023-04-22 08:41:09] INFO root fetch - processPackages [lkmlfmt]: Downloading https://files.pythonhosted.org/packages/44/ed/83cf2e6ca64c3ace23eb7ceb81bfa51e937b1d48beb05416961a15c82925/lkmlfmt-0.0.5.tar.gz
+[2023-04-22 08:41:09] INFO root fetch - processPackages [odoo13-addon-sale-order-tag]: Downloading https://files.pythonhosted.org/packages/82/ed/0c72dae6d8d4866ee932bd67a27f74026677d13b3e307c88ae014ecab1ce/odoo13_addon_sale_order_tag-13.0.1.0.2.dev7-py3-none-any.whl
+[2023-04-22 08:41:09] INFO root fetch - processPackages [rest-framework-material]: Downloading https://files.pythonhosted.org/packages/66/c0/f5f29b6c4b18531d8ff7c8e7b3279dbf28991597f5ab796f14d346bc93bc/rest_framework_material-0.1.3.tar.gz
+[2023-04-22 08:41:09] INFO root fetch - processPackages [QuickStart-Rhy]: executing diffoscope
+[2023-04-22 08:41:09] INFO root fetch - processPackages [QuickStart-Rhy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuickStart_Rhy-0.6.8.tar.gz tmp/QuickStart_Rhy-0.6.9.tar.gz --markdown 20230422/Q/QuickStart-Rhy/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-22 08:41:09] INFO root fetch - processPackages [pyrew]: Downloading https://files.pythonhosted.org/packages/0f/e1/0b971d07374d1b881cc36f9513a13e54e68a2139d26d3c3519c93ebe6432/pyrew-0.6.2.tar.gz
+[2023-04-22 08:41:09] INFO root fetch - processPackages [lkmlfmt]: executing diffoscope
+[2023-04-22 08:41:09] INFO root fetch - processPackages [lkmlfmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lkmlfmt-0.0.4.tar.gz tmp/lkmlfmt-0.0.5.tar.gz --markdown 20230422/l/lkmlfmt/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-22 08:41:09] INFO root fetch - processPackages [odoo13-addon-sale-order-tag]: executing diffoscope
+[2023-04-22 08:41:09] INFO root fetch - processPackages [odoo13-addon-sale-order-tag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_sale_order_tag-13.0.1.0.2.dev6-py3-none-any.whl.zip tmp/odoo13_addon_sale_order_tag-13.0.1.0.2.dev7-py3-none-any.whl.zip --markdown 20230422/o/odoo13-addon-sale-order-tag/13.0.1.0.2.dev6-13.0.1.0.2.dev7/diff.md --exclude *.pyd
+[2023-04-22 08:41:09] INFO root fetch - processPackages [rest-framework-material]: executing diffoscope
+[2023-04-22 08:41:09] INFO root fetch - processPackages [rest-framework-material]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rest_framework_material-0.1.2.tar.gz tmp/rest_framework_material-0.1.3.tar.gz --markdown 20230422/r/rest-framework-material/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-22 08:41:09] INFO root fetch - processPackages [fredtools]: Downloading https://files.pythonhosted.org/packages/e2/dc/be3d7c8d2dd0c27c957f25eafdfff7d7c0ae3b6bb2fabe88e2c73dedeb5b/fredtools-0.6.9-py3-none-any.whl
+[2023-04-22 08:41:09] INFO root fetch - processPackages [pyrew]: executing diffoscope
+[2023-04-22 08:41:09] INFO root fetch - processPackages [pyrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrew-0.5.2.tar.gz tmp/pyrew-0.6.2.tar.gz --markdown 20230422/p/pyrew/0.5.2-0.6.2/diff.md --exclude *.pyd
+[2023-04-22 08:41:09] INFO root fetch - processPackages [fredtools]: executing diffoscope
+[2023-04-22 08:41:09] INFO root fetch - processPackages [fredtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fredtools-0.6.8-py3-none-any.whl.zip tmp/fredtools-0.6.9-py3-none-any.whl.zip --markdown 20230422/f/fredtools/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-22 08:41:10] INFO root fetch - main [MainThread]: End processing [mrdoxmrgt]: success
+[2023-04-22 08:41:10] INFO root fetch - main [MainThread]: End processing [lkmlfmt]: success
+[2023-04-22 08:41:10] INFO root fetch - main [MainThread]: End processing [odoo12-addon-sale-order-tag]: success
+[2023-04-22 08:41:11] INFO root fetch - main [MainThread]: End processing [pyrew]: success
+[2023-04-22 08:41:11] INFO root fetch - main [MainThread]: End processing [fredtools]: success
+[2023-04-22 08:41:11] INFO root fetch - main [MainThread]: End processing [odoo13-addon-sale-order-tag]: success
+[2023-04-22 08:41:11] INFO root fetch - main [MainThread]: End processing [rest-framework-material]: success
+[2023-04-22 08:41:11] INFO root fetch - main [MainThread]: End processing [QuickStart-Rhy]: success
+[2023-04-22 08:41:11] INFO root fetch - main [MainThread]: Store serial: [17812764]
