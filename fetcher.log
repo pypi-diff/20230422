@@ -8085,3 +8085,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 12:29:33] INFO root fetch - main [MainThread]: End processing [githubkit]: success
 [2023-04-22 12:29:33] INFO root fetch - main [MainThread]: End processing [mia-accounting]: success
 [2023-04-22 12:29:33] INFO root fetch - main [MainThread]: Store serial: [17813885]
+[2023-04-22 12:34:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813885]
+[2023-04-22 12:34:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-22 12:34:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: myodan-tools
+[2023-04-22 12:34:43] WARNING root fetch - processPackages [myodan-tools]: Skipping, unable to determine old version
+[2023-04-22 12:34:43] INFO root fetch - main [MainThread]: End processing [myodan-tools] error
+[2023-04-22 12:34:43] INFO root fetch - main [MainThread]: Store serial: [17813900]
