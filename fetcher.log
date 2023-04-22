@@ -11649,3 +11649,93 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 18:57:10] INFO root fetch - main [MainThread]: End processing [censusdis]: success
 [2023-04-22 18:57:11] INFO root fetch - main [MainThread]: End processing [model-railway-signals]: success
 [2023-04-22 18:57:11] INFO root fetch - main [MainThread]: Store serial: [17815985]
+[2023-04-22 19:02:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815985]
+[2023-04-22 19:02:20] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-22 19:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chesscomwrapper
+[2023-04-22 19:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: graphsignal
+[2023-04-22 19:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: featurizerai
+[2023-04-22 19:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ripandtear
+[2023-04-22 19:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stockprice-cli
+[2023-04-22 19:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nautilus-sampler
+[2023-04-22 19:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: TheSilent
+[2023-04-22 19:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vector-quantize-pytorch
+[2023-04-22 19:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: custom-chat-gpt
+[2023-04-22 19:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: chesscomwrapper
+[2023-04-22 19:02:20] INFO root fetch - processPackages [chesscomwrapper]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-22 19:02:20] INFO root fetch - processPackages [nautilus-sampler]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-22 19:02:20] INFO root fetch - processPackages [custom-chat-gpt]: New version: [0.2.1] Old Version: [0.1.1]
+[2023-04-22 19:02:20] INFO root fetch - processPackages [featurizerai]: New version: [1.4.0] Old Version: [1.3.9]
+[2023-04-22 19:02:20] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-22 19:02:20] INFO root fetch - processPackages [chesscomwrapper]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-22 19:02:20] INFO root fetch - processPackages [stockprice-cli]: New version: [2.1.0] Old Version: [2.0.5]
+[2023-04-22 19:02:20] INFO root fetch - processPackages [graphsignal]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-22 19:02:20] INFO root fetch - processPackages [ripandtear]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-22 19:02:20] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 19:02:20] INFO root fetch - processPackages [chesscomwrapper]: Downloading https://files.pythonhosted.org/packages/67/ee/f8ae4cfda21544b9f1053326f5d8e9b0cd622c0c607ec8fa6dfc19435a9c/chesscomwrapper-0.0.5.tar.gz
+[2023-04-22 19:02:20] INFO root fetch - processPackages [chesscomwrapper]: Downloading https://files.pythonhosted.org/packages/67/ee/f8ae4cfda21544b9f1053326f5d8e9b0cd622c0c607ec8fa6dfc19435a9c/chesscomwrapper-0.0.5.tar.gz
+[2023-04-22 19:02:20] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-22 19:02:20] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230422/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 19:02:20] INFO root fetch - processPackages [featurizerai]: Downloading https://files.pythonhosted.org/packages/a1/06/9b539fd34fb89ab298e31f1a2fccb82bcc2cc5e9cd2f638cad252ad0b394/featurizerai-1.3.9.tar.gz
+[2023-04-22 19:02:20] INFO root fetch - processPackages [nautilus-sampler]: Downloading https://files.pythonhosted.org/packages/57/e3/182a1c3c4f7e94cedbdcbf89690cae4e7cc3d193f73862f03ca2563bf064/nautilus-sampler-0.5.0.tar.gz
+[2023-04-22 19:02:20] INFO root fetch - processPackages [custom-chat-gpt]: Downloading https://files.pythonhosted.org/packages/17/1b/1e0d36d1e8865df8e45f6b919ae6fe0cab85ce88f76cf728237fa2c0370a/custom_chat_gpt-0.1.1.tar.gz
+[2023-04-22 19:02:20] INFO root fetch - processPackages [vector-quantize-pytorch]: Downloading https://files.pythonhosted.org/packages/43/09/763a79added588dcb437243f3ecd9513698ca78e77537bd1008859d03012/vector_quantize_pytorch-1.2.1.tar.gz
+[2023-04-22 19:02:20] INFO root fetch - processPackages [graphsignal]: executing diffoscope
+[2023-04-22 19:02:20] INFO root fetch - processPackages [graphsignal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphsignal-0.9.4.tar.gz tmp/graphsignal-0.9.5.tar.gz --markdown 20230422/g/graphsignal/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-22 19:02:20] INFO root fetch - processPackages [ripandtear]: Downloading https://files.pythonhosted.org/packages/53/40/287276b134cd03f643f352c07a4a016787b187f55f43407a3cb954571a62/ripandtear-0.9.5.tar.gz
+[2023-04-22 19:02:20] INFO root fetch - processPackages [stockprice-cli]: Downloading https://files.pythonhosted.org/packages/48/68/fd120c038684b94fe8dd98d5290afd90ae301155186cb4f4e9ff77ecf240/stockprice_cli-2.0.5-py3-none-any.whl
+[2023-04-22 19:02:20] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-04-22 19:02:20] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.2.0.tar.gz tmp/vector_quantize_pytorch-1.2.1.tar.gz --markdown 20230422/v/vector-quantize-pytorch/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-04-22 19:02:20] INFO root fetch - processPackages [ripandtear]: executing diffoscope
+[2023-04-22 19:02:20] INFO root fetch - processPackages [ripandtear]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ripandtear-0.9.4.tar.gz tmp/ripandtear-0.9.5.tar.gz --markdown 20230422/r/ripandtear/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-22 19:02:20] INFO root fetch - processPackages [chesscomwrapper]: Downloading https://files.pythonhosted.org/packages/39/0c/0b78efe2ab20339b043c47420232fdf9462759069acf1c45019e934f4138/chesscomwrapper-0.0.6.tar.gz
+[2023-04-22 19:02:20] INFO root fetch - processPackages [chesscomwrapper]: Downloading https://files.pythonhosted.org/packages/39/0c/0b78efe2ab20339b043c47420232fdf9462759069acf1c45019e934f4138/chesscomwrapper-0.0.6.tar.gz
+[2023-04-22 19:02:20] INFO root fetch - processPackages [featurizerai]: Downloading https://files.pythonhosted.org/packages/bf/19/1f04f0220723b0123ae894cfb2209b5a297fc2d2ab13059ad4bafef85d07/featurizerai-1.4.0.tar.gz
+[2023-04-22 19:02:20] INFO root fetch - processPackages [chesscomwrapper]: executing diffoscope
+[2023-04-22 19:02:20] INFO root fetch - processPackages [chesscomwrapper]: executing diffoscope
+[2023-04-22 19:02:20] INFO root fetch - processPackages [chesscomwrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chesscomwrapper-0.0.5.tar.gz tmp/chesscomwrapper-0.0.6.tar.gz --markdown 20230422/c/chesscomwrapper/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-22 19:02:20] INFO root fetch - processPackages [chesscomwrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chesscomwrapper-0.0.5.tar.gz tmp/chesscomwrapper-0.0.6.tar.gz --markdown 20230422/c/chesscomwrapper/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-22 19:02:20] INFO root fetch - processPackages [featurizerai]: executing diffoscope
+[2023-04-22 19:02:20] INFO root fetch - processPackages [featurizerai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featurizerai-1.3.9.tar.gz tmp/featurizerai-1.4.0.tar.gz --markdown 20230422/f/featurizerai/1.3.9-1.4.0/diff.md --exclude *.pyd
+[2023-04-22 19:02:21] INFO root fetch - processPackages [custom-chat-gpt]: Downloading https://files.pythonhosted.org/packages/d0/c0/7bf7ec8bb05c10fb90170e1280ae7a875ad65c76998308ebf4af5d4ac6fb/custom_chat_gpt-0.2.1.tar.gz
+[2023-04-22 19:02:21] INFO root fetch - processPackages [nautilus-sampler]: Downloading https://files.pythonhosted.org/packages/73/9c/e3054468719cbee26e080e8454d566a5193deb964640882949d1b1dde849/nautilus-sampler-0.6.0.tar.gz
+[2023-04-22 19:02:21] INFO root fetch - processPackages [custom-chat-gpt]: executing diffoscope
+[2023-04-22 19:02:21] INFO root fetch - processPackages [stockprice-cli]: Downloading https://files.pythonhosted.org/packages/e1/65/b587e2c0fe7277b28858716baeb243fd81376d56045ba49842cf7ab82f63/stockprice_cli-2.1.0-py3-none-any.whl
+[2023-04-22 19:02:21] INFO root fetch - processPackages [custom-chat-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom_chat_gpt-0.1.1.tar.gz tmp/custom_chat_gpt-0.2.1.tar.gz --markdown 20230422/c/custom-chat-gpt/0.1.1-0.2.1/diff.md --exclude *.pyd
+[2023-04-22 19:02:21] INFO root fetch - processPackages [nautilus-sampler]: executing diffoscope
+[2023-04-22 19:02:21] INFO root fetch - processPackages [nautilus-sampler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nautilus-sampler-0.5.0.tar.gz tmp/nautilus-sampler-0.6.0.tar.gz --markdown 20230422/n/nautilus-sampler/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-22 19:02:21] INFO root fetch - processPackages [stockprice-cli]: executing diffoscope
+[2023-04-22 19:02:21] INFO root fetch - processPackages [stockprice-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stockprice_cli-2.0.5-py3-none-any.whl.zip tmp/stockprice_cli-2.1.0-py3-none-any.whl.zip --markdown 20230422/s/stockprice-cli/2.0.5-2.1.0/diff.md --exclude *.pyd
+[2023-04-22 19:02:22] INFO root fetch - processPackages [TheSilent]: Start processing: gokyuzu
+[2023-04-22 19:02:22] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2023-04-22 19:02:22] INFO root fetch - processPackages [gokyuzu]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-22 19:02:22] INFO root fetch - processPackages [vector-quantize-pytorch]: Start processing: pulumi-tailscale-native
+[2023-04-22 19:02:22] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-04-22 19:02:22] INFO root fetch - processPackages [pulumi-tailscale-native]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-04-22 19:02:22] INFO root fetch - processPackages [gokyuzu]: Downloading https://files.pythonhosted.org/packages/cc/a4/c420e463d4d5900593a06764c33de0a3f0708caf699a1832c1a9324c502d/gokyuzu-0.0.5.tar.gz
+[2023-04-22 19:02:22] INFO root fetch - processPackages [pulumi-tailscale-native]: executing diffoscope
+[2023-04-22 19:02:22] INFO root fetch - processPackages [pulumi-tailscale-native]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_tailscale_native-0.0.7.tar.gz tmp/pulumi_tailscale_native-0.0.9.tar.gz --markdown 20230422/p/pulumi-tailscale-native/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 19:02:22] INFO root fetch - processPackages [gokyuzu]: executing diffoscope
+[2023-04-22 19:02:22] INFO root fetch - processPackages [gokyuzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gokyuzu-0.0.4.tar.gz tmp/gokyuzu-0.0.5.tar.gz --markdown 20230422/g/gokyuzu/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-22 19:02:22] INFO root fetch - processPackages [ripandtear]: Start processing: histcite-python
+[2023-04-22 19:02:22] INFO root fetch - main [MainThread]: End processing [ripandtear]: success
+[2023-04-22 19:02:22] INFO root fetch - processPackages [histcite-python]: New version: [0.1.1] Old Version: [0.0.1]
+[2023-04-22 19:02:22] INFO root fetch - processPackages [stockprice-cli]: Start processing: featurizerai
+[2023-04-22 19:02:22] INFO root fetch - main [MainThread]: End processing [stockprice-cli]: success
+[2023-04-22 19:02:22] INFO root fetch - processPackages [featurizerai]: New version: [1.4.0] Old Version: [1.3.9]
+[2023-04-22 19:02:22] INFO root fetch - main [MainThread]: End processing [graphsignal]: success
+[2023-04-22 19:02:22] INFO root fetch - processPackages [featurizerai]: executing diffoscope
+[2023-04-22 19:02:22] INFO root fetch - processPackages [featurizerai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featurizerai-1.3.9.tar.gz tmp/featurizerai-1.4.0.tar.gz --markdown 20230422/f/featurizerai/1.3.9-1.4.0/diff.md --exclude *.pyd
+[2023-04-22 19:02:22] INFO root fetch - main [MainThread]: End processing [custom-chat-gpt]: success
+[2023-04-22 19:02:22] INFO root fetch - processPackages [histcite-python]: Downloading https://files.pythonhosted.org/packages/6c/e9/ff4175a6652de4010c9c07be4228b5ff23d66607b30d2e887e0a4920fa4b/histcite-python-0.0.1.tar.gz
+[2023-04-22 19:02:22] INFO root fetch - main [MainThread]: End processing [featurizerai]: success
+[2023-04-22 19:02:22] INFO root fetch - main [MainThread]: End processing [chesscomwrapper]: success
+[2023-04-22 19:02:22] INFO root fetch - main [MainThread]: End processing [chesscomwrapper]: success
+[2023-04-22 19:02:22] INFO root fetch - processPackages [histcite-python]: Downloading https://files.pythonhosted.org/packages/49/83/e9c68a21a9c18446b2ec1982c3522aec6175f44b5ea2ff9956530c54aecf/histcite-python-0.1.1.tar.gz
+[2023-04-22 19:02:23] INFO root fetch - processPackages [histcite-python]: executing diffoscope
+[2023-04-22 19:02:23] INFO root fetch - processPackages [histcite-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/histcite-python-0.0.1.tar.gz tmp/histcite-python-0.1.1.tar.gz --markdown 20230422/h/histcite-python/0.0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 19:02:23] INFO root fetch - main [MainThread]: End processing [nautilus-sampler]: success
+[2023-04-22 19:02:23] INFO root fetch - main [MainThread]: End processing [gokyuzu]: success
+[2023-04-22 19:02:23] INFO root fetch - main [MainThread]: End processing [featurizerai]: success
+[2023-04-22 19:02:23] INFO root fetch - main [MainThread]: End processing [pulumi-tailscale-native]: success
+[2023-04-22 19:02:24] INFO root fetch - main [MainThread]: End processing [histcite-python]: success
+[2023-04-22 19:02:24] INFO root fetch - main [MainThread]: Store serial: [17816030]
