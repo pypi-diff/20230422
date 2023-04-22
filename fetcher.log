@@ -4306,3 +4306,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 05:04:07] INFO root fetch - main [MainThread]: End processing [pydantic-br]: success
 [2023-04-22 05:04:07] INFO root fetch - main [MainThread]: End processing [python-cowsay]: success
 [2023-04-22 05:04:07] INFO root fetch - main [MainThread]: Store serial: [17811755]
+[2023-04-22 05:09:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811755]
+[2023-04-22 05:09:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-22 05:09:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hagis
+[2023-04-22 05:09:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ifunnygifmaker
+[2023-04-22 05:09:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: duckdb
+[2023-04-22 05:09:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aioqzone
+[2023-04-22 05:09:15] INFO root fetch - processPackages [ifunnygifmaker]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 05:09:15] INFO root fetch - processPackages [hagis]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-22 05:09:15] INFO root fetch - processPackages [aioqzone]: New version: [0.9.9.dev3] Old Version: [0.9.9.dev2]
+[2023-04-22 05:09:15] INFO root fetch - processPackages [duckdb]: New version: [0.7.2.dev2410] Old Version: [0.7.2.dev2366]
+[2023-04-22 05:09:15] INFO root fetch - processPackages [ifunnygifmaker]: executing diffoscope
+[2023-04-22 05:09:15] INFO root fetch - processPackages [ifunnygifmaker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifunnygifmaker-0.1.8.tar.gz tmp/ifunnygifmaker-0.1.9.tar.gz --markdown 20230422/i/ifunnygifmaker/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 05:09:16] INFO root fetch - processPackages [duckdb]: Downloading https://files.pythonhosted.org/packages/33/c3/beca6c94a74f4d3b454591a96c64cbd6411cba778950b490fc6964d79b3e/duckdb-0.7.2.dev2366.tar.gz
+[2023-04-22 05:09:16] INFO root fetch - processPackages [aioqzone]: executing diffoscope
+[2023-04-22 05:09:16] INFO root fetch - processPackages [aioqzone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioqzone-0.9.9.dev2.tar.gz tmp/aioqzone-0.9.9.dev3.tar.gz --markdown 20230422/a/aioqzone/0.9.9.dev2-0.9.9.dev3/diff.md --exclude *.pyd
+[2023-04-22 05:09:16] INFO root fetch - processPackages [hagis]: Downloading https://files.pythonhosted.org/packages/64/f9/53bb4723a146226e9570c38a3658864a583f19fa8e7d0a316d70413655f1/hagis-0.3.2.tar.gz
+[2023-04-22 05:09:16] INFO root fetch - processPackages [hagis]: executing diffoscope
+[2023-04-22 05:09:16] INFO root fetch - processPackages [hagis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagis-0.3.1.tar.gz tmp/hagis-0.3.2.tar.gz --markdown 20230422/h/hagis/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-22 05:09:16] INFO root fetch - processPackages [duckdb]: Downloading https://files.pythonhosted.org/packages/16/a0/d5ef98cc35f0e83b9d8a35ab77d37cf603534475b1a1739a1d047f8f5de0/duckdb-0.7.2.dev2410-cp36-cp36m-macosx_10_9_x86_64.whl
+[2023-04-22 05:09:16] WARNING root fetch - processPackages [duckdb]: Skipping package: exceeds size limit 14398281>=10485760
+[2023-04-22 05:09:16] INFO root fetch - main [MainThread]: End processing [duckdb] error
+[2023-04-22 05:09:16] INFO root fetch - main [MainThread]: End processing [ifunnygifmaker]: success
+[2023-04-22 05:09:17] INFO root fetch - main [MainThread]: End processing [hagis]: success
+[2023-04-22 05:09:17] INFO root fetch - main [MainThread]: End processing [aioqzone]: success
+[2023-04-22 05:09:17] INFO root fetch - main [MainThread]: Store serial: [17811766]
