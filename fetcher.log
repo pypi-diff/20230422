@@ -11739,3 +11739,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 19:02:23] INFO root fetch - main [MainThread]: End processing [pulumi-tailscale-native]: success
 [2023-04-22 19:02:24] INFO root fetch - main [MainThread]: End processing [histcite-python]: success
 [2023-04-22 19:02:24] INFO root fetch - main [MainThread]: Store serial: [17816030]
+[2023-04-22 19:07:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816030]
+[2023-04-22 19:07:33] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 19:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bayes-toolbox
+[2023-04-22 19:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: marvin
+[2023-04-22 19:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hyperparse
+[2023-04-22 19:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-partner-middlename
+[2023-04-22 19:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dbxconfig
+[2023-04-22 19:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nobus
+[2023-04-22 19:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: z4d-certified-devices
+[2023-04-22 19:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: esv-api-samhaswon
+[2023-04-22 19:07:33] INFO root fetch - processPackages [hyperparse]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-22 19:07:33] WARNING root fetch - processPackages [odoo-addon-partner-middlename]: Skipping, unable to determine old version
+[2023-04-22 19:07:33] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-middlename] error
+[2023-04-22 19:07:33] INFO root fetch - processPackages [z4d-certified-devices]: New version: [2.52] Old Version: [2.51]
+[2023-04-22 19:07:33] INFO root fetch - processPackages [bayes-toolbox]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-04-22 19:07:33] INFO root fetch - processPackages [dbxconfig]: New version: [2.0.3] Old Version: [2.0.1]
+[2023-04-22 19:07:33] INFO root fetch - processPackages [marvin]: New version: [0.8.0] Old Version: [0.7.6]
+[2023-04-22 19:07:33] INFO root fetch - processPackages [nobus]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-22 19:07:33] INFO root fetch - processPackages [esv-api-samhaswon]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 19:07:33] INFO root fetch - processPackages [bayes-toolbox]: Downloading https://files.pythonhosted.org/packages/c6/64/f4398c3373e31131cd7fbf8a34846e6b0675aa8c2ee2bacbee5773a569ec/bayes-toolbox-0.0.2.tar.gz
+[2023-04-22 19:07:33] INFO root fetch - processPackages [nobus]: Downloading https://files.pythonhosted.org/packages/f2/30/75702c4304c2b02ad6502883c2465835a504fb091cbdd192888d786b0969/nobus-0.1.2.tar.gz
+[2023-04-22 19:07:33] INFO root fetch - processPackages [dbxconfig]: Downloading https://files.pythonhosted.org/packages/43/19/f9d12c1d7cb0430fd9e54ca7ccfed5d7965d02f1ec5a382805df23a81778/dbxconfig-2.0.3.tar.gz
+[2023-04-22 19:07:33] INFO root fetch - processPackages [nobus]: executing diffoscope
+[2023-04-22 19:07:33] INFO root fetch - processPackages [nobus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nobus-0.1.1.tar.gz tmp/nobus-0.1.2.tar.gz --markdown 20230422/n/nobus/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-22 19:07:33] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/8d/a3/8a539efb8ddf43ff55b26829efbf13aa6e4ea330af12ce1af6ba5bd62a43/z4d-certified-devices-2.52.tar.gz
+[2023-04-22 19:07:33] INFO root fetch - processPackages [marvin]: Downloading https://files.pythonhosted.org/packages/6b/26/7c22037e47b5907a59bc4073aa3b1b8b7d8ece43276fee3d12a5c128f6ab/marvin-0.7.6.tar.gz
+[2023-04-22 19:07:33] INFO root fetch - processPackages [dbxconfig]: executing diffoscope
+[2023-04-22 19:07:33] INFO root fetch - processPackages [dbxconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbxconfig-2.0.1.tar.gz tmp/dbxconfig-2.0.3.tar.gz --markdown 20230422/d/dbxconfig/2.0.1-2.0.3/diff.md --exclude *.pyd
+[2023-04-22 19:07:33] INFO root fetch - processPackages [esv-api-samhaswon]: Downloading https://files.pythonhosted.org/packages/2d/51/550f991daaa118ca1fd9d4eeb9b989f3e3bc201e7317250d7b99a952c9c4/esv_api_samhaswon-0.0.1.tar.gz
+[2023-04-22 19:07:33] INFO root fetch - processPackages [hyperparse]: Downloading https://files.pythonhosted.org/packages/e7/e5/c93d0db36abd48cf44bff4e13aea067d044953522ea7ba72ae2b088f31f2/hyperparse-0.0.4.tar.gz
+[2023-04-22 19:07:33] INFO root fetch - processPackages [z4d-certified-devices]: executing diffoscope
+[2023-04-22 19:07:33] INFO root fetch - processPackages [z4d-certified-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z4d-certified-devices-2.51.tar.gz tmp/z4d-certified-devices-2.52.tar.gz --markdown 20230422/z/z4d-certified-devices/2.51-2.52/diff.md --exclude *.pyd
+[2023-04-22 19:07:33] WARNING root fetch - processPackages [marvin]: Skipping package: exceeds size limit 15858511>=10485760
+[2023-04-22 19:07:33] INFO root fetch - main [MainThread]: End processing [marvin] error
+[2023-04-22 19:07:33] INFO root fetch - processPackages [bayes-toolbox]: Downloading https://files.pythonhosted.org/packages/4b/cc/5e613ae2f1bc3218f2d1d25702cd8a053f6829e20cea8e10bacb9f4e07e9/bayes-toolbox-0.1.0.tar.gz
+[2023-04-22 19:07:33] INFO root fetch - processPackages [hyperparse]: executing diffoscope
+[2023-04-22 19:07:33] INFO root fetch - processPackages [hyperparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperparse-0.0.3.tar.gz tmp/hyperparse-0.0.4.tar.gz --markdown 20230422/h/hyperparse/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-22 19:07:33] INFO root fetch - processPackages [bayes-toolbox]: executing diffoscope
+[2023-04-22 19:07:33] INFO root fetch - processPackages [bayes-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bayes-toolbox-0.0.2.tar.gz tmp/bayes-toolbox-0.1.0.tar.gz --markdown 20230422/b/bayes-toolbox/0.0.2-0.1.0/diff.md --exclude *.pyd
+[2023-04-22 19:07:33] INFO root fetch - processPackages [esv-api-samhaswon]: Downloading https://files.pythonhosted.org/packages/8a/e4/3cd846bd90cdf0f118e1b7beaccd1911539f16051bd2d58fd5e342275499/esv_api_samhaswon-0.0.2.tar.gz
+[2023-04-22 19:07:34] INFO root fetch - processPackages [esv-api-samhaswon]: executing diffoscope
+[2023-04-22 19:07:34] INFO root fetch - processPackages [esv-api-samhaswon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esv_api_samhaswon-0.0.1.tar.gz tmp/esv_api_samhaswon-0.0.2.tar.gz --markdown 20230422/e/esv-api-samhaswon/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 19:07:34] INFO root fetch - main [MainThread]: End processing [nobus]: success
+[2023-04-22 19:07:34] INFO root fetch - main [MainThread]: End processing [dbxconfig]: success
+[2023-04-22 19:07:34] INFO root fetch - main [MainThread]: End processing [hyperparse]: success
+[2023-04-22 19:07:35] INFO root fetch - main [MainThread]: End processing [bayes-toolbox]: success
+[2023-04-22 19:07:35] INFO root fetch - main [MainThread]: End processing [esv-api-samhaswon]: success
+[2023-04-22 19:07:37] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
+[2023-04-22 19:07:37] INFO root fetch - main [MainThread]: Store serial: [17816063]
