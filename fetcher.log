@@ -4201,3 +4201,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 04:42:38] INFO root fetch - main [MainThread]: End processing [celldancer]: success
 [2023-04-22 04:42:39] INFO root fetch - main [MainThread]: End processing [odoo8-addon-account-credit-control]: success
 [2023-04-22 04:42:39] INFO root fetch - main [MainThread]: Store serial: [17811696]
+[2023-04-22 04:47:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811696]
+[2023-04-22 04:47:47] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 04:47:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ultima-scraper-collection
+[2023-04-22 04:47:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: monero-usd-price
+[2023-04-22 04:47:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: entx-py
+[2023-04-22 04:47:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: StringFix
+[2023-04-22 04:47:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: modelscope
+[2023-04-22 04:47:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: amendment-forecast
+[2023-04-22 04:47:47] INFO root fetch - processPackages [modelscope]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-04-22 04:47:47] INFO root fetch - processPackages [ultima-scraper-collection]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-22 04:47:47] INFO root fetch - processPackages [StringFix]: New version: [0.6.4] Old Version: [0.1.3]
+[2023-04-22 04:47:47] WARNING root fetch - processPackages [monero-usd-price]: Skipping, unable to determine old version
+[2023-04-22 04:47:47] INFO root fetch - main [MainThread]: End processing [monero-usd-price] error
+[2023-04-22 04:47:47] INFO root fetch - processPackages [modelscope]: executing diffoscope
+[2023-04-22 04:47:47] INFO root fetch - processPackages [modelscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelscope-1.5.0.tar.gz tmp/modelscope-1.5.1.tar.gz --markdown 20230422/m/modelscope/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-04-22 04:47:47] INFO root fetch - processPackages [entx-py]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-22 04:47:47] INFO root fetch - processPackages [StringFix]: executing diffoscope
+[2023-04-22 04:47:47] INFO root fetch - processPackages [StringFix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/StringFix-0.1.3.tar.gz tmp/StringFix-0.6.4.tar.gz --markdown 20230422/S/StringFix/0.1.3-0.6.4/diff.md --exclude *.pyd
+[2023-04-22 04:47:47] INFO root fetch - processPackages [amendment-forecast]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-04-22 04:47:47] INFO root fetch - processPackages [ultima-scraper-collection]: Downloading https://files.pythonhosted.org/packages/be/2d/6e57fc7e6736ae62918710adeb4820e4eb7508f6691fd4b021d0e32b1a11/ultima_scraper_collection-1.0.2.tar.gz
+[2023-04-22 04:47:47] INFO root fetch - processPackages [entx-py]: Downloading https://files.pythonhosted.org/packages/94/a9/06a336d81bfac9b7f93d650eb7a2ce68f711538457490ed89ddfc9c6347e/entx_py-1.0.1.tar.gz
+[2023-04-22 04:47:47] INFO root fetch - processPackages [ultima-scraper-collection]: executing diffoscope
+[2023-04-22 04:47:47] INFO root fetch - processPackages [ultima-scraper-collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultima_scraper_collection-1.0.1.tar.gz tmp/ultima_scraper_collection-1.0.2.tar.gz --markdown 20230422/u/ultima-scraper-collection/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-22 04:47:47] INFO root fetch - processPackages [entx-py]: Downloading https://files.pythonhosted.org/packages/83/1d/174e337d6ea5225db50c8f070baacc60a7a59c9962e6d73eed42240c7242/entx_py-1.0.2.tar.gz
+[2023-04-22 04:47:47] INFO root fetch - processPackages [amendment-forecast]: Downloading https://files.pythonhosted.org/packages/ce/d2/e37feca9103aab7e3743c3e26da835971862ea7d2b7784fad7c5a561048a/amendment_forecast-1.5.2.tar.gz
+[2023-04-22 04:47:47] INFO root fetch - processPackages [entx-py]: executing diffoscope
+[2023-04-22 04:47:47] INFO root fetch - processPackages [entx-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/entx_py-1.0.1.tar.gz tmp/entx_py-1.0.2.tar.gz --markdown 20230422/e/entx-py/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-22 04:47:48] INFO root fetch - processPackages [amendment-forecast]: executing diffoscope
+[2023-04-22 04:47:48] INFO root fetch - processPackages [amendment-forecast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amendment_forecast-1.5.1.tar.gz tmp/amendment_forecast-1.5.2.tar.gz --markdown 20230422/a/amendment-forecast/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-04-22 04:47:48] INFO root fetch - main [MainThread]: End processing [entx-py]: success
+[2023-04-22 04:47:49] INFO root fetch - main [MainThread]: End processing [ultima-scraper-collection]: success
+[2023-04-22 04:47:49] INFO root fetch - main [MainThread]: End processing [amendment-forecast]: success
+[2023-04-22 04:47:49] INFO root fetch - main [MainThread]: End processing [StringFix]: success
+[2023-04-22 04:48:33] INFO root fetch - main [MainThread]: End processing [modelscope]: success
+[2023-04-22 04:48:33] INFO root fetch - main [MainThread]: Store serial: [17811716]
