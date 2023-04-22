@@ -9962,3 +9962,67 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 16:10:54] INFO root fetch - main [MainThread]: End processing [sphere-base]: success
 [2023-04-22 16:10:55] INFO root fetch - main [MainThread]: End processing [stravalib]: success
 [2023-04-22 16:10:55] INFO root fetch - main [MainThread]: Store serial: [17814950]
+[2023-04-22 16:15:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814950]
+[2023-04-22 16:16:04] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-22 16:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fbgemm-gpu-nightly
+[2023-04-22 16:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: foursight-core
+[2023-04-22 16:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: foursight-core
+[2023-04-22 16:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cgpt
+[2023-04-22 16:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kweb
+[2023-04-22 16:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bigxml
+[2023-04-22 16:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fabrictestbed-extensions
+[2023-04-22 16:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nakuru-project-test
+[2023-04-22 16:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: simc-support
+[2023-04-22 16:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: networkx-robustness
+[2023-04-22 16:16:04] INFO root fetch - processPackages [cgpt]: New version: [1.2.1] Old Version: [1.1.29]
+[2023-04-22 16:16:04] INFO root fetch - processPackages [bigxml]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-22 16:16:04] INFO root fetch - processPackages [networkx-robustness]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-22 16:16:04] INFO root fetch - processPackages [kweb]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 16:16:04] WARNING root fetch - processPackages [nakuru-project-test]: Skipping, unable to determine old version
+[2023-04-22 16:16:04] INFO root fetch - processPackages [nakuru-project-test]: Start processing: gptdeploy
+[2023-04-22 16:16:04] INFO root fetch - main [MainThread]: End processing [nakuru-project-test] error
+[2023-04-22 16:16:04] INFO root fetch - processPackages [fabrictestbed-extensions]: New version: [1.4.3] Old Version: [1.4.2rc6]
+[2023-04-22 16:16:04] INFO root fetch - processPackages [simc-support]: New version: [9.2.5.3] Old Version: [9.2.5.2]
+[2023-04-22 16:16:04] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-22 16:16:04] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-22 16:16:04] INFO root fetch - processPackages [gptdeploy]: New version: [0.18.9] Old Version: [0.18.8]
+[2023-04-22 16:16:04] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2023.4.22] Old Version: [2023.4.20]
+[2023-04-22 16:16:04] INFO root fetch - processPackages [gptdeploy]: executing diffoscope
+[2023-04-22 16:16:04] INFO root fetch - processPackages [gptdeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptdeploy-0.18.8.tar.gz tmp/gptdeploy-0.18.9.tar.gz --markdown 20230422/g/gptdeploy/0.18.8-0.18.9/diff.md --exclude *.pyd
+[2023-04-22 16:16:04] INFO root fetch - processPackages [bigxml]: Downloading https://files.pythonhosted.org/packages/95/a7/d7197707b60c57b9a6c3c97cbdf134be172ca4b81e4fcfcdc60be81cf114/bigxml-0.8.0.tar.gz
+[2023-04-22 16:16:04] INFO root fetch - processPackages [networkx-robustness]: Downloading https://files.pythonhosted.org/packages/ed/57/797ddc097dd96954e251d5dc834db6ff2d785db8d2abf0fbb12bba004f82/networkx_robustness-0.0.5.tar.gz
+[2023-04-22 16:16:04] INFO root fetch - processPackages [fabrictestbed-extensions]: Downloading https://files.pythonhosted.org/packages/6c/d5/498e4a87998bdf215f7ba47b463f626fcc4d976f5ec7b95310e239749285/fabrictestbed-extensions-1.4.3.tar.gz
+[2023-04-22 16:16:04] INFO root fetch - processPackages [kweb]: Downloading https://files.pythonhosted.org/packages/73/2c/d23117030eb8e08150725fc1994b3b772bc8e2dbcbd04fe2a90cc14d3369/kweb-0.1.1.tar.gz
+[2023-04-22 16:16:04] INFO root fetch - processPackages [networkx-robustness]: executing diffoscope
+[2023-04-22 16:16:04] INFO root fetch - processPackages [networkx-robustness]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networkx_robustness-0.0.4.tar.gz tmp/networkx_robustness-0.0.5.tar.gz --markdown 20230422/n/networkx-robustness/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-22 16:16:04] INFO root fetch - processPackages [simc-support]: Downloading https://files.pythonhosted.org/packages/f2/2a/7c51939ccb108431387a296bc5c850bc5de94d88f9f5349f20368b0d95e5/simc_support-9.2.5.2.tar.gz
+[2023-04-22 16:16:04] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/1b/66/d29d2d682a031b71fb4283ff5365d2fdd32396ffccd0c55cb7464a47dab5/fbgemm_gpu_nightly-2023.4.20-cp39-cp39-manylinux1_x86_64.whl
+[2023-04-22 16:16:04] INFO root fetch - processPackages [kweb]: executing diffoscope
+[2023-04-22 16:16:04] INFO root fetch - processPackages [kweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kweb-0.1.0.tar.gz tmp/kweb-0.1.1.tar.gz --markdown 20230422/k/kweb/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 16:16:04] INFO root fetch - processPackages [fabrictestbed-extensions]: executing diffoscope
+[2023-04-22 16:16:04] INFO root fetch - processPackages [fabrictestbed-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fabrictestbed-extensions-1.4.2rc6.tar.gz tmp/fabrictestbed-extensions-1.4.3.tar.gz --markdown 20230422/f/fabrictestbed-extensions/1.4.2rc6-1.4.3/diff.md --exclude *.pyd
+[2023-04-22 16:16:04] INFO root fetch - processPackages [cgpt]: Downloading https://files.pythonhosted.org/packages/6d/fe/94191acacaa68083634ca6b71d5da6f853270d9c08381355b5b4a25e0745/cgpt-1.2.1.tar.gz
+[2023-04-22 16:16:04] INFO root fetch - processPackages [cgpt]: executing diffoscope
+[2023-04-22 16:16:04] INFO root fetch - processPackages [cgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cgpt-1.1.29.tar.gz tmp/cgpt-1.2.1.tar.gz --markdown 20230422/c/cgpt/1.1.29-1.2.1/diff.md --exclude *.pyd
+[2023-04-22 16:16:04] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 245754252>=10485760
+[2023-04-22 16:16:04] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2023-04-22 16:16:04] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 16:16:04] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230422/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-22 16:16:04] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 16:16:04] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230422/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-22 16:16:04] INFO root fetch - processPackages [simc-support]: Downloading https://files.pythonhosted.org/packages/7f/f2/94679bd3aff7cfce75541c456a83745c5be1b451e014726a9dceb888be9e/simc_support-9.2.5.3.tar.gz
+[2023-04-22 16:16:04] INFO root fetch - processPackages [bigxml]: Downloading https://files.pythonhosted.org/packages/a9/03/69a228f5ddc5999ae5004c4ffdaf81a8492139cb110c61755f4075617fcc/bigxml-0.9.0.tar.gz
+[2023-04-22 16:16:04] INFO root fetch - processPackages [simc-support]: executing diffoscope
+[2023-04-22 16:16:04] INFO root fetch - processPackages [simc-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simc_support-9.2.5.2.tar.gz tmp/simc_support-9.2.5.3.tar.gz --markdown 20230422/s/simc-support/9.2.5.2-9.2.5.3/diff.md --exclude *.pyd
+[2023-04-22 16:16:05] INFO root fetch - processPackages [bigxml]: executing diffoscope
+[2023-04-22 16:16:05] INFO root fetch - processPackages [bigxml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigxml-0.8.0.tar.gz tmp/bigxml-0.9.0.tar.gz --markdown 20230422/b/bigxml/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-22 16:16:05] INFO root fetch - main [MainThread]: End processing [networkx-robustness]: success
+[2023-04-22 16:16:06] INFO root fetch - main [MainThread]: End processing [fabrictestbed-extensions]: success
+[2023-04-22 16:16:06] INFO root fetch - main [MainThread]: End processing [gptdeploy]: success
+[2023-04-22 16:16:06] INFO root fetch - main [MainThread]: End processing [cgpt]: success
+[2023-04-22 16:16:06] INFO root fetch - main [MainThread]: End processing [kweb]: success
+[2023-04-22 16:16:07] INFO root fetch - main [MainThread]: End processing [bigxml]: success
+[2023-04-22 16:16:08] INFO root fetch - main [MainThread]: End processing [simc-support]: success
+[2023-04-22 16:16:20] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 16:16:22] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 16:16:22] INFO root fetch - main [MainThread]: Store serial: [17814986]
