@@ -9381,3 +9381,102 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 15:12:28] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
 [2023-04-22 15:12:42] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 15:12:42] INFO root fetch - main [MainThread]: Store serial: [17814645]
+[2023-04-22 15:17:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814645]
+[2023-04-22 15:17:50] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-22 15:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: buildington
+[2023-04-22 15:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: foursight-core
+[2023-04-22 15:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-sphinx
+[2023-04-22 15:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: placeholders
+[2023-04-22 15:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: foursight-core
+[2023-04-22 15:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdev-django
+[2023-04-22 15:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: foursight-core
+[2023-04-22 15:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pysparkplus
+[2023-04-22 15:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: digitize
+[2023-04-22 15:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: aprompt
+[2023-04-22 15:17:50] INFO root fetch - processPackages [buildington]: New version: [1.2] Old Version: [1.1]
+[2023-04-22 15:17:50] INFO root fetch - processPackages [digitize]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-22 15:17:50] INFO root fetch - processPackages [placeholders]: New version: [2.0] Old Version: [1.1]
+[2023-04-22 15:17:50] INFO root fetch - processPackages [pysparkplus]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 15:17:50] INFO root fetch - processPackages [aprompt]: New version: [3.0.1] Old Version: [3.0.0]
+[2023-04-22 15:17:50] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b24] Old Version: [4.1.0.1b23]
+[2023-04-22 15:17:50] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b24] Old Version: [4.1.0.1b23]
+[2023-04-22 15:17:50] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b24] Old Version: [4.1.0.1b23]
+[2023-04-22 15:17:50] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 15:17:51] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 15:17:51] INFO root fetch - processPackages [buildington]: Downloading https://files.pythonhosted.org/packages/87/c1/9a68ee523951ea2ce7512539de539753cc14183e78f5da0fc33d7cb181b5/buildington-1.1.tar.gz
+[2023-04-22 15:17:51] INFO root fetch - processPackages [placeholders]: Downloading https://files.pythonhosted.org/packages/6d/d7/e06b3354a2387b1bf35048f8b3ce71da3b17cddbfe6f968cadee5627a7a8/placeholders-1.1.tar.gz
+[2023-04-22 15:17:51] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/8e/58/30995b65ac8f35d1e919a5ea36bcd3a2982bc6168c5ca59246f90056cea0/foursight_core-4.1.0.1b23.tar.gz
+[2023-04-22 15:17:51] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/8e/58/30995b65ac8f35d1e919a5ea36bcd3a2982bc6168c5ca59246f90056cea0/foursight_core-4.1.0.1b23.tar.gz
+[2023-04-22 15:17:51] INFO root fetch - processPackages [digitize]: Downloading https://files.pythonhosted.org/packages/9a/44/f09a3a9263ba2ec0083596979b0c0befffdf1f640e7ae19ad327c216af68/digitize-1.0.0.tar.gz
+[2023-04-22 15:17:51] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-04-22 15:17:51] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230422/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 15:17:51] INFO root fetch - processPackages [aprompt]: Downloading https://files.pythonhosted.org/packages/5a/51/5bb77d752f1c9cb5ffb168316a888a6a7db24b71a27fbd51bc9c80c4bea3/aprompt-3.0.0.tar.gz
+[2023-04-22 15:17:51] INFO root fetch - processPackages [pysparkplus]: Downloading https://files.pythonhosted.org/packages/40/8a/f1a19011ca608f9f1d5035c2e743b304acbb496877090304318d0a931fc7/pysparkplus-0.0.1.tar.gz
+[2023-04-22 15:17:51] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/8e/58/30995b65ac8f35d1e919a5ea36bcd3a2982bc6168c5ca59246f90056cea0/foursight_core-4.1.0.1b23.tar.gz
+[2023-04-22 15:17:51] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-04-22 15:17:51] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230422/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 15:17:51] INFO root fetch - processPackages [buildington]: Downloading https://files.pythonhosted.org/packages/99/c4/cbb9bd106b3c7eeab4273034f4f2f4325f0874b14448704ed12ac6baf907/buildington-1.2.tar.gz
+[2023-04-22 15:17:51] INFO root fetch - processPackages [digitize]: Downloading https://files.pythonhosted.org/packages/28/a8/90a2dd2b234838233a5555c4936967321c4cadae99cb053738f1b54720b8/digitize-1.0.1.tar.gz
+[2023-04-22 15:17:51] INFO root fetch - processPackages [buildington]: executing diffoscope
+[2023-04-22 15:17:51] INFO root fetch - processPackages [buildington]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buildington-1.1.tar.gz tmp/buildington-1.2.tar.gz --markdown 20230422/b/buildington/1.1-1.2/diff.md --exclude *.pyd
+[2023-04-22 15:17:51] INFO root fetch - processPackages [pysparkplus]: Downloading https://files.pythonhosted.org/packages/06/c9/b6ba6b461dca917928361dd39c9c839e1506ed2a164eb054a67b4911174e/pysparkplus-0.0.2.tar.gz
+[2023-04-22 15:17:51] INFO root fetch - processPackages [digitize]: executing diffoscope
+[2023-04-22 15:17:51] INFO root fetch - processPackages [digitize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitize-1.0.0.tar.gz tmp/digitize-1.0.1.tar.gz --markdown 20230422/d/digitize/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 15:17:51] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/36/6d/56243c7f37d60577bd69509bb16ab3238f1d11c726b9e859fc6027e54a96/foursight_core-4.1.0.1b24.tar.gz
+[2023-04-22 15:17:51] INFO root fetch - processPackages [placeholders]: Downloading https://files.pythonhosted.org/packages/e7/32/e0cad168d7ce5ff2f3cbca792df1c757783c244c72fb575f3a8ecb8e5567/placeholders-2.0.tar.gz
+[2023-04-22 15:17:51] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/36/6d/56243c7f37d60577bd69509bb16ab3238f1d11c726b9e859fc6027e54a96/foursight_core-4.1.0.1b24.tar.gz
+[2023-04-22 15:17:51] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/36/6d/56243c7f37d60577bd69509bb16ab3238f1d11c726b9e859fc6027e54a96/foursight_core-4.1.0.1b24.tar.gz
+[2023-04-22 15:17:51] INFO root fetch - processPackages [pysparkplus]: executing diffoscope
+[2023-04-22 15:17:51] INFO root fetch - processPackages [pysparkplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkplus-0.0.1.tar.gz tmp/pysparkplus-0.0.2.tar.gz --markdown 20230422/p/pysparkplus/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 15:17:51] INFO root fetch - processPackages [placeholders]: executing diffoscope
+[2023-04-22 15:17:51] INFO root fetch - processPackages [placeholders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/placeholders-1.1.tar.gz tmp/placeholders-2.0.tar.gz --markdown 20230422/p/placeholders/1.1-2.0/diff.md --exclude *.pyd
+[2023-04-22 15:17:51] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 15:17:51] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b23.tar.gz tmp/foursight_core-4.1.0.1b24.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b23-4.1.0.1b24/diff.md --exclude *.pyd
+[2023-04-22 15:17:51] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 15:17:51] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b23.tar.gz tmp/foursight_core-4.1.0.1b24.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b23-4.1.0.1b24/diff.md --exclude *.pyd
+[2023-04-22 15:17:51] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 15:17:51] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b23.tar.gz tmp/foursight_core-4.1.0.1b24.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b23-4.1.0.1b24/diff.md --exclude *.pyd
+[2023-04-22 15:17:51] INFO root fetch - processPackages [aprompt]: Downloading https://files.pythonhosted.org/packages/cd/98/ebd6ccfca5cbe9f42dfc6f331aa27cbe62b626c29b4f91f4b58072959a68/aprompt-3.0.1.tar.gz
+[2023-04-22 15:17:51] INFO root fetch - processPackages [aprompt]: executing diffoscope
+[2023-04-22 15:17:51] INFO root fetch - processPackages [aprompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aprompt-3.0.0.tar.gz tmp/aprompt-3.0.1.tar.gz --markdown 20230422/a/aprompt/3.0.0-3.0.1/diff.md --exclude *.pyd
+[2023-04-22 15:17:52] INFO root fetch - processPackages [buildington]: Start processing: nbdev-apl
+[2023-04-22 15:17:52] INFO root fetch - main [MainThread]: End processing [buildington]: success
+[2023-04-22 15:17:52] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.729] Old Version: [0.0.728]
+[2023-04-22 15:17:52] INFO root fetch - processPackages [digitize]: Start processing: foursight-core
+[2023-04-22 15:17:52] INFO root fetch - main [MainThread]: End processing [digitize]: success
+[2023-04-22 15:17:52] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b25] Old Version: [4.1.0.1b24]
+[2023-04-22 15:17:52] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/2e/8c/310367daa222d939839f51582650050b5fdf81f3ae8c9d4a3dcd38c096a6/nbdev-apl-0.0.728.tar.gz
+[2023-04-22 15:17:52] INFO root fetch - processPackages [nbdev-sphinx]: Start processing: foursight-core
+[2023-04-22 15:17:52] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-04-22 15:17:53] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b25] Old Version: [4.1.0.1b24]
+[2023-04-22 15:17:53] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/b7/29/fa8618d5c3d744ddd87cbc61cadbf11680202dad9bcbebe17bd357dc0ca7/foursight_core-4.1.0.1b25.tar.gz
+[2023-04-22 15:17:53] INFO root fetch - processPackages [pysparkplus]: Start processing: foursight-core
+[2023-04-22 15:17:53] INFO root fetch - main [MainThread]: End processing [pysparkplus]: success
+[2023-04-22 15:17:53] INFO root fetch - processPackages [placeholders]: Start processing: domain-admin
+[2023-04-22 15:17:53] INFO root fetch - main [MainThread]: End processing [placeholders]: success
+[2023-04-22 15:17:53] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b25] Old Version: [4.1.0.1b24]
+[2023-04-22 15:17:53] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/b7/29/fa8618d5c3d744ddd87cbc61cadbf11680202dad9bcbebe17bd357dc0ca7/foursight_core-4.1.0.1b25.tar.gz
+[2023-04-22 15:17:53] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/b7/29/fa8618d5c3d744ddd87cbc61cadbf11680202dad9bcbebe17bd357dc0ca7/foursight_core-4.1.0.1b25.tar.gz
+[2023-04-22 15:17:53] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/4e/e7/96a8b4eac1490c4fb02e65a4813afeee69b96ac8d8996cf4228cd56877ab/nbdev-apl-0.0.729.tar.gz
+[2023-04-22 15:17:53] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 15:17:53] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b24.tar.gz tmp/foursight_core-4.1.0.1b25.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b24-4.1.0.1b25/diff.md --exclude *.pyd
+[2023-04-22 15:17:53] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 15:17:53] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-04-22 15:17:53] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.728.tar.gz tmp/nbdev-apl-0.0.729.tar.gz --markdown 20230422/n/nbdev-apl/0.0.728-0.0.729/diff.md --exclude *.pyd
+[2023-04-22 15:17:53] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b24.tar.gz tmp/foursight_core-4.1.0.1b25.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b24-4.1.0.1b25/diff.md --exclude *.pyd
+[2023-04-22 15:17:53] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 15:17:53] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b24.tar.gz tmp/foursight_core-4.1.0.1b25.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b24-4.1.0.1b25/diff.md --exclude *.pyd
+[2023-04-22 15:17:53] INFO root fetch - processPackages [domain-admin]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-22 15:17:53] INFO root fetch - processPackages [domain-admin]: executing diffoscope
+[2023-04-22 15:17:53] INFO root fetch - processPackages [domain-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domain-admin-1.2.8.tar.gz tmp/domain-admin-1.2.9.tar.gz --markdown 20230422/d/domain-admin/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-22 15:17:53] INFO root fetch - main [MainThread]: End processing [aprompt]: success
+[2023-04-22 15:17:54] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-04-22 15:17:54] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-04-22 15:17:54] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 15:17:54] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 15:17:55] INFO root fetch - main [MainThread]: End processing [domain-admin]: success
+[2023-04-22 15:17:56] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 15:17:56] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 15:17:56] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 15:17:57] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 15:17:57] INFO root fetch - main [MainThread]: Store serial: [17814689]
