@@ -12678,3 +12678,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 21:09:11] INFO root fetch - main [MainThread]: End processing [ifunnygifmaker]: success
 [2023-04-22 21:09:12] INFO root fetch - main [MainThread]: End processing [openpy-dsse]: success
 [2023-04-22 21:09:12] INFO root fetch - main [MainThread]: Store serial: [17816548]
+[2023-04-22 21:14:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816548]
+[2023-04-22 21:14:22] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 21:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aliendev-cdk
+[2023-04-22 21:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: itkwasm-compress-stringify-wasi
+[2023-04-22 21:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: naturalspeech2-pytorch
+[2023-04-22 21:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: itkwasm-compress-stringify-emscripten
+[2023-04-22 21:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fluxrpc
+[2023-04-22 21:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lndb
+[2023-04-22 21:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fluxvault
+[2023-04-22 21:14:22] INFO root fetch - processPackages [naturalspeech2-pytorch]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-22 21:14:22] WARNING root fetch - processPackages [itkwasm-compress-stringify-wasi]: Skipping, unable to determine old version
+[2023-04-22 21:14:22] WARNING root fetch - processPackages [itkwasm-compress-stringify-emscripten]: Skipping, unable to determine old version
+[2023-04-22 21:14:22] INFO root fetch - main [MainThread]: End processing [itkwasm-compress-stringify-wasi] error
+[2023-04-22 21:14:22] INFO root fetch - processPackages [fluxrpc]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 21:14:22] INFO root fetch - main [MainThread]: End processing [itkwasm-compress-stringify-emscripten] error
+[2023-04-22 21:14:22] INFO root fetch - processPackages [aliendev-cdk]: New version: [0.1.39] Old Version: [0.1.38]
+[2023-04-22 21:14:22] INFO root fetch - processPackages [lndb]: New version: [0.44.2] Old Version: [0.44.1]
+[2023-04-22 21:14:22] INFO root fetch - processPackages [fluxvault]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 21:14:22] INFO root fetch - processPackages [fluxrpc]: executing diffoscope
+[2023-04-22 21:14:22] INFO root fetch - processPackages [fluxrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxrpc-0.9.8.tar.gz tmp/fluxrpc-0.9.9.tar.gz --markdown 20230422/f/fluxrpc/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 21:14:22] INFO root fetch - processPackages [fluxvault]: executing diffoscope
+[2023-04-22 21:14:22] INFO root fetch - processPackages [fluxvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxvault-0.9.8.tar.gz tmp/fluxvault-0.9.9.tar.gz --markdown 20230422/f/fluxvault/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 21:14:22] INFO root fetch - processPackages [naturalspeech2-pytorch]: Downloading https://files.pythonhosted.org/packages/44/41/0e7b4ea3e466c28a56c1f677544ef44316844146882d7cc0ed6cf57e923c/naturalspeech2-pytorch-0.0.2.tar.gz
+[2023-04-22 21:14:23] INFO root fetch - processPackages [aliendev-cdk]: Downloading https://files.pythonhosted.org/packages/43/22/25c9e6b0293a972ada0a91dc02353566aaf6f6717517e4ffa01d8a3aba79/aliendev_cdk-0.1.39.tar.gz
+[2023-04-22 21:14:23] INFO root fetch - processPackages [lndb]: Downloading https://files.pythonhosted.org/packages/81/c5/f2b56aa24fdfaab83c844ed1caf3130ca17802d4ea7f4c1df07886f96197/lndb-0.44.2.tar.gz
+[2023-04-22 21:14:23] INFO root fetch - processPackages [lndb]: executing diffoscope
+[2023-04-22 21:14:23] INFO root fetch - processPackages [lndb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lndb-0.44.1.tar.gz tmp/lndb-0.44.2.tar.gz --markdown 20230422/l/lndb/0.44.1-0.44.2/diff.md --exclude *.pyd
+[2023-04-22 21:14:23] INFO root fetch - processPackages [naturalspeech2-pytorch]: Downloading https://files.pythonhosted.org/packages/ff/3b/b6dc09a27075542f8e9f6f803e407ef9d01649a59c570ccf785192177957/naturalspeech2-pytorch-0.0.3.tar.gz
+[2023-04-22 21:14:23] INFO root fetch - processPackages [aliendev-cdk]: executing diffoscope
+[2023-04-22 21:14:23] INFO root fetch - processPackages [aliendev-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliendev_cdk-0.1.38.tar.gz tmp/aliendev_cdk-0.1.39.tar.gz --markdown 20230422/a/aliendev-cdk/0.1.38-0.1.39/diff.md --exclude *.pyd
+[2023-04-22 21:14:23] INFO root fetch - processPackages [naturalspeech2-pytorch]: executing diffoscope
+[2023-04-22 21:14:23] INFO root fetch - processPackages [naturalspeech2-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naturalspeech2-pytorch-0.0.2.tar.gz tmp/naturalspeech2-pytorch-0.0.3.tar.gz --markdown 20230422/n/naturalspeech2-pytorch/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-22 21:14:23] INFO root fetch - main [MainThread]: End processing [fluxvault]: success
+[2023-04-22 21:14:24] INFO root fetch - main [MainThread]: End processing [fluxrpc]: success
+[2023-04-22 21:14:24] INFO root fetch - main [MainThread]: End processing [aliendev-cdk]: success
+[2023-04-22 21:14:24] INFO root fetch - main [MainThread]: End processing [naturalspeech2-pytorch]: success
+[2023-04-22 21:14:25] INFO root fetch - main [MainThread]: End processing [lndb]: success
+[2023-04-22 21:14:25] INFO root fetch - main [MainThread]: Store serial: [17816573]
