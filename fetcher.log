@@ -13330,3 +13330,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 22:30:04] INFO root fetch - main [MainThread]: End processing [kiara-plugin.core-types]: success
 [2023-04-22 22:30:04] INFO root fetch - main [MainThread]: End processing [kiara]: success
 [2023-04-22 22:30:04] INFO root fetch - main [MainThread]: Store serial: [17816937]
+[2023-04-22 22:35:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816937]
+[2023-04-22 22:35:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-22 22:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vollseg
+[2023-04-22 22:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dollar-templates
+[2023-04-22 22:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ver-super-mario-bros-la-pelicula-pelicula-completa-en-espanol
+[2023-04-22 22:35:14] INFO root fetch - processPackages [dollar-templates]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-22 22:35:14] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-22 22:35:14] WARNING root fetch - processPackages [ver-super-mario-bros-la-pelicula-pelicula-completa-en-espanol]: Skipping, unable to determine old version
+[2023-04-22 22:35:14] INFO root fetch - main [MainThread]: End processing [ver-super-mario-bros-la-pelicula-pelicula-completa-en-espanol] error
+[2023-04-22 22:35:15] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-22 22:35:15] INFO root fetch - processPackages [dollar-templates]: Downloading https://files.pythonhosted.org/packages/61/5d/7c05d8679b16a603c67ac949e1719f4e25339b4a4f80a8801309a8c63f71/dollar_templates-1.0.0.tar.gz
+[2023-04-22 22:35:15] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-22 22:35:15] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-22 22:35:15] INFO root fetch - processPackages [dollar-templates]: Downloading https://files.pythonhosted.org/packages/4e/3c/e12196d777717d53822b9b35344bf6d249e4f6704275267da48d66bab389/dollar_templates-1.0.1.tar.gz
+[2023-04-22 22:35:15] INFO root fetch - processPackages [dollar-templates]: executing diffoscope
+[2023-04-22 22:35:15] INFO root fetch - processPackages [dollar-templates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dollar_templates-1.0.0.tar.gz tmp/dollar_templates-1.0.1.tar.gz --markdown 20230422/d/dollar-templates/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 22:35:16] INFO root fetch - main [MainThread]: End processing [dollar-templates]: success
+[2023-04-22 22:35:16] INFO root fetch - main [MainThread]: Store serial: [17816948]
