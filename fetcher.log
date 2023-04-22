@@ -8040,3 +8040,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 12:24:14] INFO root fetch - main [MainThread]: End processing [yadisk]: success
 [2023-04-22 12:24:21] INFO root fetch - main [MainThread]: End processing [OctoBot-Trading]: success
 [2023-04-22 12:24:21] INFO root fetch - main [MainThread]: Store serial: [17813855]
+[2023-04-22 12:29:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813855]
+[2023-04-22 12:29:30] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 12:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: algorithmselector-ML
+[2023-04-22 12:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: githubkit
+[2023-04-22 12:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: issue-db-api
+[2023-04-22 12:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tastytrade-api
+[2023-04-22 12:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mia-accounting
+[2023-04-22 12:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: myodan-tools
+[2023-04-22 12:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: colorist
+[2023-04-22 12:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: python-ucto
+[2023-04-22 12:29:30] INFO root fetch - processPackages [githubkit]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-04-22 12:29:30] INFO root fetch - processPackages [issue-db-api]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-22 12:29:30] INFO root fetch - processPackages [python-ucto]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-04-22 12:29:30] WARNING root fetch - processPackages [algorithmselector-ML]: Skipping, unable to determine old version
+[2023-04-22 12:29:30] INFO root fetch - main [MainThread]: End processing [algorithmselector-ML] error
+[2023-04-22 12:29:30] INFO root fetch - processPackages [tastytrade-api]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-22 12:29:30] INFO root fetch - processPackages [colorist]: New version: [1.5.1] Old Version: [1.4.0]
+[2023-04-22 12:29:30] WARNING root fetch - processPackages [myodan-tools]: Skipping, unable to determine old version
+[2023-04-22 12:29:30] INFO root fetch - processPackages [mia-accounting]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-04-22 12:29:30] INFO root fetch - main [MainThread]: End processing [myodan-tools] error
+[2023-04-22 12:29:30] INFO root fetch - processPackages [issue-db-api]: Downloading https://files.pythonhosted.org/packages/28/5c/853d138c3f4f0da5aaa916133a7aab64a68752f490aab9b622628dd6fa5a/issue_db_api-0.6.0.tar.gz
+[2023-04-22 12:29:30] INFO root fetch - processPackages [tastytrade-api]: Downloading https://files.pythonhosted.org/packages/7d/91/94653c5551c1497f9c29f80acf1826ed0b100e8b5bce6788a80e0f699695/tastytrade-api-0.6.1.tar.gz
+[2023-04-22 12:29:30] INFO root fetch - processPackages [python-ucto]: Downloading https://files.pythonhosted.org/packages/fe/e1/5ec4fa4f659708056fc794ac02af8a1dce7471fbdd2dc67e94ad22171fdf/python-ucto-0.6.4.tar.gz
+[2023-04-22 12:29:30] INFO root fetch - processPackages [colorist]: Downloading https://files.pythonhosted.org/packages/ca/56/85ea91628e88b65f658e42e653e0938362d027c484d1510f86c3d4d0ac89/colorist-1.4.0.tar.gz
+[2023-04-22 12:29:30] INFO root fetch - processPackages [tastytrade-api]: executing diffoscope
+[2023-04-22 12:29:30] INFO root fetch - processPackages [tastytrade-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tastytrade-api-0.6.0.tar.gz tmp/tastytrade-api-0.6.1.tar.gz --markdown 20230422/t/tastytrade-api/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-22 12:29:30] INFO root fetch - processPackages [issue-db-api]: executing diffoscope
+[2023-04-22 12:29:30] INFO root fetch - processPackages [issue-db-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/issue_db_api-0.5.0.tar.gz tmp/issue_db_api-0.6.0.tar.gz --markdown 20230422/i/issue-db-api/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-22 12:29:30] INFO root fetch - processPackages [mia-accounting]: Downloading https://files.pythonhosted.org/packages/23/f1/8926ceb65b9a5b7a8ef32cc25a26d4bd4fff2296681159407f9b10f4c63c/mia-accounting-1.4.1.tar.gz
+[2023-04-22 12:29:30] INFO root fetch - processPackages [githubkit]: executing diffoscope
+[2023-04-22 12:29:30] INFO root fetch - processPackages [githubkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/githubkit-0.9.7.tar.gz tmp/githubkit-0.9.8.tar.gz --markdown 20230422/g/githubkit/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-04-22 12:29:30] INFO root fetch - processPackages [mia-accounting]: executing diffoscope
+[2023-04-22 12:29:30] INFO root fetch - processPackages [mia-accounting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mia-accounting-1.4.0.tar.gz tmp/mia-accounting-1.4.1.tar.gz --markdown 20230422/m/mia-accounting/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-22 12:29:30] INFO root fetch - processPackages [colorist]: Downloading https://files.pythonhosted.org/packages/aa/2c/41c6c1a527e110d3edc695082f92082db53d07632c8ffa35059eb1ca3412/colorist-1.5.1.tar.gz
+[2023-04-22 12:29:30] INFO root fetch - processPackages [colorist]: executing diffoscope
+[2023-04-22 12:29:30] INFO root fetch - processPackages [colorist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colorist-1.4.0.tar.gz tmp/colorist-1.5.1.tar.gz --markdown 20230422/c/colorist/1.4.0-1.5.1/diff.md --exclude *.pyd
+[2023-04-22 12:29:30] INFO root fetch - processPackages [python-ucto]: Downloading https://files.pythonhosted.org/packages/fb/2e/826764a39fff80259eb9b348a45ac60990912595e54e90628d5bac1e2070/python_ucto-0.6.5-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-22 12:29:30] WARNING root fetch - processPackages [python-ucto]: Skipping package: exceeds size limit 22212627>=10485760
+[2023-04-22 12:29:30] INFO root fetch - main [MainThread]: End processing [python-ucto] error
+[2023-04-22 12:29:31] INFO root fetch - main [MainThread]: End processing [tastytrade-api]: success
+[2023-04-22 12:29:31] INFO root fetch - main [MainThread]: End processing [issue-db-api]: success
+[2023-04-22 12:29:31] INFO root fetch - main [MainThread]: End processing [colorist]: success
+[2023-04-22 12:29:33] INFO root fetch - main [MainThread]: End processing [githubkit]: success
+[2023-04-22 12:29:33] INFO root fetch - main [MainThread]: End processing [mia-accounting]: success
+[2023-04-22 12:29:33] INFO root fetch - main [MainThread]: Store serial: [17813885]
