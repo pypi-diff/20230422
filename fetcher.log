@@ -11867,3 +11867,69 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 19:18:27] INFO root fetch - main [MainThread]: End processing [maxilearn]: success
 [2023-04-22 19:18:27] INFO root fetch - main [MainThread]: End processing [scholarmetrics]: success
 [2023-04-22 19:18:27] INFO root fetch - main [MainThread]: Store serial: [17816100]
+[2023-04-22 19:23:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816100]
+[2023-04-22 19:23:35] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-22 19:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbxconfig
+[2023-04-22 19:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rcmpy
+[2023-04-22 19:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nwebclient
+[2023-04-22 19:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: findmyorder
+[2023-04-22 19:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2023-04-22 19:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: safe-ds-examples
+[2023-04-22 19:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rod
+[2023-04-22 19:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spanishconjugator
+[2023-04-22 19:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: prettyqt
+[2023-04-22 19:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: gokyuzu
+[2023-04-22 19:23:35] INFO root fetch - processPackages [dbxconfig]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-04-22 19:23:35] INFO root fetch - processPackages [safe-ds-examples]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-22 19:23:35] INFO root fetch - processPackages [nwebclient]: New version: [1.0.76] Old Version: [1.0.75]
+[2023-04-22 19:23:35] INFO root fetch - processPackages [rcmpy]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-04-22 19:23:35] WARNING root fetch - processPackages [findmyorder]: Skipping, unable to determine old version
+[2023-04-22 19:23:35] INFO root fetch - processPackages [findmyorder]: Start processing: yaml-stripper
+[2023-04-22 19:23:35] INFO root fetch - main [MainThread]: End processing [findmyorder] error
+[2023-04-22 19:23:35] INFO root fetch - processPackages [gokyuzu]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-22 19:23:35] INFO root fetch - processPackages [rod]: New version: [0.1.dev83] Old Version: [0.1.dev81]
+[2023-04-22 19:23:35] INFO root fetch - processPackages [prettyqt]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-04-22 19:23:35] INFO root fetch - processPackages [yaml-stripper]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-22 19:23:35] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-22 19:23:35] INFO root fetch - processPackages [gokyuzu]: executing diffoscope
+[2023-04-22 19:23:35] INFO root fetch - processPackages [gokyuzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gokyuzu-0.0.5.tar.gz tmp/gokyuzu-0.0.6.tar.gz --markdown 20230422/g/gokyuzu/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-22 19:23:35] INFO root fetch - processPackages [dbxconfig]: Downloading https://files.pythonhosted.org/packages/4b/2b/8d857fc1f403778b70247509904ac8484462060d8ead7bcac3d72de25547/dbxconfig-2.0.5.tar.gz
+[2023-04-22 19:23:35] INFO root fetch - processPackages [safe-ds-examples]: Downloading https://files.pythonhosted.org/packages/c0/f2/e4cb1f76e32d962d1a2e54a697a348d7e0b656d3794a53c05653992b29a6/safe_ds_examples-0.9.0.tar.gz
+[2023-04-22 19:23:36] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-22 19:23:36] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-22 19:23:36] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230422/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-22 19:23:36] INFO root fetch - processPackages [rod]: Downloading https://files.pythonhosted.org/packages/be/88/cf90543f3a619abe5e9d2ad0a98129eedfa2c703ada31a641c8e75f99695/rod-0.1.dev83.tar.gz
+[2023-04-22 19:23:36] INFO root fetch - processPackages [rcmpy]: Downloading https://files.pythonhosted.org/packages/8f/b9/622131832bca82aa364db7d8abff4fd05934324d4468562181ebe297f74a/rcmpy-1.2.0.tar.gz
+[2023-04-22 19:23:36] INFO root fetch - processPackages [yaml-stripper]: Downloading https://files.pythonhosted.org/packages/33/1e/8ea9b82d6ae9e164c1feea172d9b7d6dbf10d375eeb3e6bd16d0fe8f030a/yaml-stripper-2.0.2.tar.gz
+[2023-04-22 19:23:36] INFO root fetch - processPackages [dbxconfig]: executing diffoscope
+[2023-04-22 19:23:36] INFO root fetch - processPackages [dbxconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbxconfig-2.0.4.tar.gz tmp/dbxconfig-2.0.5.tar.gz --markdown 20230422/d/dbxconfig/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-04-22 19:23:36] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-22 19:23:36] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230422/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-22 19:23:36] INFO root fetch - processPackages [prettyqt]: executing diffoscope
+[2023-04-22 19:23:36] INFO root fetch - processPackages [prettyqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prettyqt-1.9.1.tar.gz tmp/prettyqt-1.9.2.tar.gz --markdown 20230422/p/prettyqt/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-04-22 19:23:36] INFO root fetch - processPackages [rod]: executing diffoscope
+[2023-04-22 19:23:36] INFO root fetch - processPackages [yaml-stripper]: executing diffoscope
+[2023-04-22 19:23:36] INFO root fetch - processPackages [rod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rod-0.1.dev81.tar.gz tmp/rod-0.1.dev83.tar.gz --markdown 20230422/r/rod/0.1.dev81-0.1.dev83/diff.md --exclude *.pyd
+[2023-04-22 19:23:36] INFO root fetch - processPackages [yaml-stripper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yaml-stripper-2.0.1.tar.gz tmp/yaml-stripper-2.0.2.tar.gz --markdown 20230422/y/yaml-stripper/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-22 19:23:36] INFO root fetch - processPackages [rcmpy]: executing diffoscope
+[2023-04-22 19:23:36] INFO root fetch - processPackages [rcmpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rcmpy-1.1.1.tar.gz tmp/rcmpy-1.2.0.tar.gz --markdown 20230422/r/rcmpy/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-04-22 19:23:36] INFO root fetch - processPackages [nwebclient]: Downloading https://files.pythonhosted.org/packages/2f/3e/0b3bb7fe07224f1187b62ed77f4b0bd87f081c7ea55f494085e07aa430c5/nwebclient-1.0.76.tar.gz
+[2023-04-22 19:23:36] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-04-22 19:23:36] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.75.tar.gz tmp/nwebclient-1.0.76.tar.gz --markdown 20230422/n/nwebclient/1.0.75-1.0.76/diff.md --exclude *.pyd
+[2023-04-22 19:23:36] INFO root fetch - processPackages [safe-ds-examples]: Downloading https://files.pythonhosted.org/packages/d3/87/bf1fd5b20292fe74c4576d78c293e045945de174b8f02c63dcc8fc6dc39e/safe_ds_examples-0.9.1.tar.gz
+[2023-04-22 19:23:36] INFO root fetch - processPackages [safe-ds-examples]: executing diffoscope
+[2023-04-22 19:23:36] INFO root fetch - processPackages [safe-ds-examples]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safe_ds_examples-0.9.0.tar.gz tmp/safe_ds_examples-0.9.1.tar.gz --markdown 20230422/s/safe-ds-examples/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-22 19:23:37] INFO root fetch - processPackages [gokyuzu]: Start processing: lnschema_retro
+[2023-04-22 19:23:37] INFO root fetch - main [MainThread]: End processing [gokyuzu]: success
+[2023-04-22 19:23:37] ERROR root fetch - processPackages [lnschema_retro]: Unable to get metadata: No such project 'lnschema_retro'
+[2023-04-22 19:23:37] INFO root fetch - main [MainThread]: End processing [lnschema_retro] error
+[2023-04-22 19:23:37] INFO root fetch - main [MainThread]: End processing [dbxconfig]: success
+[2023-04-22 19:23:37] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-22 19:23:38] INFO root fetch - main [MainThread]: End processing [yaml-stripper]: success
+[2023-04-22 19:23:38] INFO root fetch - main [MainThread]: End processing [rod]: success
+[2023-04-22 19:23:38] INFO root fetch - main [MainThread]: End processing [rcmpy]: success
+[2023-04-22 19:23:38] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-04-22 19:23:38] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-22 19:23:38] INFO root fetch - main [MainThread]: End processing [safe-ds-examples]: success
+[2023-04-22 19:23:43] INFO root fetch - main [MainThread]: End processing [prettyqt]: success
+[2023-04-22 19:23:43] INFO root fetch - main [MainThread]: Store serial: [17816142]
