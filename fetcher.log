@@ -6885,3 +6885,26 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 09:44:10] INFO root fetch - main [MainThread]: End processing [odoo13-addon-cms-status-message]: success
 [2023-04-22 09:44:10] INFO root fetch - main [MainThread]: End processing [odoo10-addon-cms-status-message]: success
 [2023-04-22 09:44:10] INFO root fetch - main [MainThread]: Store serial: [17813110]
+[2023-04-22 09:49:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813110]
+[2023-04-22 09:49:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-22 09:49:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yuna-db
+[2023-04-22 09:49:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: open-space-toolkit-astrodynamics
+[2023-04-22 09:49:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keras-nightly
+[2023-04-22 09:49:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spiderx
+[2023-04-22 09:49:20] INFO root fetch - processPackages [spiderx]: New version: [1.8.9] Old Version: [1.8.2]
+[2023-04-22 09:49:20] WARNING root fetch - processPackages [yuna-db]: Skipping, unable to determine old version
+[2023-04-22 09:49:20] INFO root fetch - main [MainThread]: End processing [yuna-db] error
+[2023-04-22 09:49:20] INFO root fetch - processPackages [keras-nightly]: New version: [2.9.0.dev2022033107] Old Version: [2.9.0.dev2022033007]
+[2023-04-22 09:49:20] INFO root fetch - processPackages [open-space-toolkit-astrodynamics]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-22 09:49:20] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2023-04-22 09:49:20] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl.zip tmp/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl.zip --markdown 20230422/k/keras-nightly/2.9.0.dev2022033007-2.9.0.dev2022033107/diff.md --exclude *.pyd
+[2023-04-22 09:49:20] INFO root fetch - processPackages [open-space-toolkit-astrodynamics]: Downloading https://files.pythonhosted.org/packages/2a/af/041e7de843de50f43ec1925e9bd89996a9c37d8c145b75aca771caccde2b/open_space_toolkit_astrodynamics-0.9.2-py39-none-any.whl
+[2023-04-22 09:49:20] INFO root fetch - processPackages [spiderx]: executing diffoscope
+[2023-04-22 09:49:20] INFO root fetch - processPackages [spiderx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderx-1.8.2.tar.gz tmp/spiderx-1.8.9.tar.gz --markdown 20230422/s/spiderx/1.8.2-1.8.9/diff.md --exclude *.pyd
+[2023-04-22 09:49:21] INFO root fetch - processPackages [open-space-toolkit-astrodynamics]: Downloading https://files.pythonhosted.org/packages/c7/ff/670fe3cfb09ff46cfcd2aa0e6a5ee5bcebbd6d3b88d33fc50e4f8c38b2a5/open_space_toolkit_astrodynamics-0.9.3-py39-none-any.whl
+[2023-04-22 09:49:21] INFO root fetch - processPackages [open-space-toolkit-astrodynamics]: executing diffoscope
+[2023-04-22 09:49:21] INFO root fetch - processPackages [open-space-toolkit-astrodynamics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_space_toolkit_astrodynamics-0.9.2-py39-none-any.whl.zip tmp/open_space_toolkit_astrodynamics-0.9.3-py39-none-any.whl.zip --markdown 20230422/o/open-space-toolkit-astrodynamics/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-22 09:49:21] INFO root fetch - main [MainThread]: End processing [spiderx]: success
+[2023-04-22 09:49:28] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2023-04-22 09:49:29] INFO root fetch - main [MainThread]: End processing [open-space-toolkit-astrodynamics]: success
+[2023-04-22 09:49:29] INFO root fetch - main [MainThread]: Store serial: [17813131]
