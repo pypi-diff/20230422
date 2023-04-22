@@ -8960,3 +8960,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 14:17:23] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
 [2023-04-22 14:17:35] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 14:17:35] INFO root fetch - main [MainThread]: Store serial: [17814388]
+[2023-04-22 14:22:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814388]
+[2023-04-22 14:22:44] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 14:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: analysisbykwok
+[2023-04-22 14:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jsl-django-sitemap
+[2023-04-22 14:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iseroo-kotprog
+[2023-04-22 14:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: z4d-certified-devices
+[2023-04-22 14:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: auraboros
+[2023-04-22 14:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nomad-lab
+[2023-04-22 14:22:44] INFO root fetch - processPackages [auraboros]: New version: [0.9.0a0] Old Version: [0.8.0a0]
+[2023-04-22 14:22:44] INFO root fetch - processPackages [z4d-certified-devices]: New version: [2.51] Old Version: [2.50]
+[2023-04-22 14:22:45] INFO root fetch - processPackages [auraboros]: executing diffoscope
+[2023-04-22 14:22:45] INFO root fetch - processPackages [auraboros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auraboros-0.8.0a0.tar.gz tmp/auraboros-0.9.0a0.tar.gz --markdown 20230422/a/auraboros/0.8.0a0-0.9.0a0/diff.md --exclude *.pyd
+[2023-04-22 14:22:45] INFO root fetch - processPackages [analysisbykwok]: New version: [0.0.20] Old Version: [0.0.19]
+[2023-04-22 14:22:45] WARNING root fetch - processPackages [iseroo-kotprog]: Skipping, unable to determine old version
+[2023-04-22 14:22:45] INFO root fetch - main [MainThread]: End processing [iseroo-kotprog] error
+[2023-04-22 14:22:45] INFO root fetch - processPackages [jsl-django-sitemap]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-22 14:22:45] INFO root fetch - processPackages [nomad-lab]: New version: [1.1.9] Old Version: [1.1.7]
+[2023-04-22 14:22:45] INFO root fetch - processPackages [z4d-certified-devices]: executing diffoscope
+[2023-04-22 14:22:45] INFO root fetch - processPackages [z4d-certified-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z4d-certified-devices-2.50.tar.gz tmp/z4d-certified-devices-2.51.tar.gz --markdown 20230422/z/z4d-certified-devices/2.50-2.51/diff.md --exclude *.pyd
+[2023-04-22 14:22:45] INFO root fetch - processPackages [analysisbykwok]: Downloading https://files.pythonhosted.org/packages/1c/eb/22178db7631547c52b574befa081845454fdab9d8081d8b30238607cccdf/analysisbykwok-0.0.19.tar.gz
+[2023-04-22 14:22:45] INFO root fetch - processPackages [jsl-django-sitemap]: Downloading https://files.pythonhosted.org/packages/10/b9/4b3736aded3a94f7701b551e8d7cf4cd7b62464cdab4aae75faed1409ab6/jsl_django_sitemap-1.2.0.tar.gz
+[2023-04-22 14:22:45] INFO root fetch - processPackages [nomad-lab]: Downloading https://files.pythonhosted.org/packages/fc/3f/084466ccea12926b036519ca114648f3e0aa80344991c01e87ed71a86de5/nomad-lab-1.1.7.tar.gz
+[2023-04-22 14:22:45] INFO root fetch - processPackages [analysisbykwok]: Downloading https://files.pythonhosted.org/packages/10/65/f3bcc67689ce1610c6a3b3790d459008fb1e0f5516d1ab0cc9d430efc969/analysisbykwok-0.0.20.tar.gz
+[2023-04-22 14:22:45] INFO root fetch - processPackages [jsl-django-sitemap]: Downloading https://files.pythonhosted.org/packages/34/e2/bfe8446619d55aa88166d12ba127b4c100565a603aff28012c944e4584eb/jsl_django_sitemap-1.2.1.tar.gz
+[2023-04-22 14:22:45] INFO root fetch - processPackages [analysisbykwok]: executing diffoscope
+[2023-04-22 14:22:45] INFO root fetch - processPackages [analysisbykwok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/analysisbykwok-0.0.19.tar.gz tmp/analysisbykwok-0.0.20.tar.gz --markdown 20230422/a/analysisbykwok/0.0.19-0.0.20/diff.md --exclude *.pyd
+[2023-04-22 14:22:45] INFO root fetch - processPackages [jsl-django-sitemap]: executing diffoscope
+[2023-04-22 14:22:45] INFO root fetch - processPackages [jsl-django-sitemap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsl_django_sitemap-1.2.0.tar.gz tmp/jsl_django_sitemap-1.2.1.tar.gz --markdown 20230422/j/jsl-django-sitemap/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-04-22 14:22:45] WARNING root fetch - processPackages [nomad-lab]: Skipping package: exceeds size limit 20233557>=10485760
+[2023-04-22 14:22:45] INFO root fetch - main [MainThread]: End processing [nomad-lab] error
+[2023-04-22 14:22:46] INFO root fetch - main [MainThread]: End processing [analysisbykwok]: success
+[2023-04-22 14:22:46] INFO root fetch - main [MainThread]: End processing [jsl-django-sitemap]: success
+[2023-04-22 14:22:46] INFO root fetch - main [MainThread]: End processing [auraboros]: success
+[2023-04-22 14:22:48] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
+[2023-04-22 14:22:48] INFO root fetch - main [MainThread]: Store serial: [17814408]
