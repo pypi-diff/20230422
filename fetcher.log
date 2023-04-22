@@ -4447,3 +4447,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 05:25:10] INFO root fetch - main [MainThread]: End processing [zerocs]: success
 [2023-04-22 05:25:25] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-ping]: success
 [2023-04-22 05:25:25] INFO root fetch - main [MainThread]: Store serial: [17811818]
+[2023-04-22 05:30:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811818]
+[2023-04-22 05:30:33] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 05:30:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypcapkit
+[2023-04-22 05:30:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-workshop
+[2023-04-22 05:30:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: foursight-core
+[2023-04-22 05:30:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: athena-ai
+[2023-04-22 05:30:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scidb-py
+[2023-04-22 05:30:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: foursight-core
+[2023-04-22 05:30:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: now-lms
+[2023-04-22 05:30:34] INFO root fetch - processPackages [ovos-workshop]: New version: [0.0.9a1] Old Version: [0.0.9]
+[2023-04-22 05:30:34] INFO root fetch - processPackages [athena-ai]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 05:30:34] INFO root fetch - processPackages [ovos-workshop]: executing diffoscope
+[2023-04-22 05:30:34] INFO root fetch - processPackages [ovos-workshop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_workshop-0.0.9-py3-none-any.whl.zip tmp/ovos_workshop-0.0.9a1-py3-none-any.whl.zip --markdown 20230422/o/ovos-workshop/0.0.9-0.0.9a1/diff.md --exclude *.pyd
+[2023-04-22 05:30:34] INFO root fetch - processPackages [now-lms]: New version: [0.0.1a220230422] Old Version: [0.0.1a220230409]
+[2023-04-22 05:30:34] INFO root fetch - processPackages [pypcapkit]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-04-22 05:30:34] INFO root fetch - processPackages [scidb-py]: New version: [19.3.4] Old Version: [19.3.3]
+[2023-04-22 05:30:34] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b13] Old Version: [4.1.0.1b12]
+[2023-04-22 05:30:34] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b13] Old Version: [4.1.0.1b12]
+[2023-04-22 05:30:34] INFO root fetch - processPackages [athena-ai]: Downloading https://files.pythonhosted.org/packages/cc/53/1fae5692779870056f7a1d7dceaac7f044aa75ab4cabb199e99b679b3b94/athena_ai-0.0.1.tar.gz
+[2023-04-22 05:30:34] INFO root fetch - processPackages [scidb-py]: Downloading https://files.pythonhosted.org/packages/ef/52/dc4b1213c5d951ba4472e496bfa3e5a46ae32d96e8ed235a7c3384a8bc2c/scidb-py-19.3.3.tar.gz
+[2023-04-22 05:30:34] INFO root fetch - processPackages [now-lms]: Downloading https://files.pythonhosted.org/packages/27/42/95b363363a287ce65ce00ac6d0e9209721e8b33c49925274280e4f1f5d5f/now_lms-0.0.1a220230409.tar.gz
+[2023-04-22 05:30:34] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/d1/a3/ecb03b6faf39fb735fb80b0968de3be2055ec3179c46cb3f1270aa7d688b/foursight_core-4.1.0.1b12.tar.gz
+[2023-04-22 05:30:34] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/d1/a3/ecb03b6faf39fb735fb80b0968de3be2055ec3179c46cb3f1270aa7d688b/foursight_core-4.1.0.1b12.tar.gz
+[2023-04-22 05:30:34] INFO root fetch - processPackages [pypcapkit]: executing diffoscope
+[2023-04-22 05:30:34] INFO root fetch - processPackages [pypcapkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypcapkit-1.0.0b8.tar.gz tmp/pypcapkit-1.0.0b9.tar.gz --markdown 20230422/p/pypcapkit/1.0.0b8-1.0.0b9/diff.md --exclude *.pyd
+[2023-04-22 05:30:34] INFO root fetch - processPackages [athena-ai]: Downloading https://files.pythonhosted.org/packages/04/ff/12954c9fb9ea213ea08364acb35eac1bed8c349b6e569cf967e770467bfc/athena_ai-0.0.2.tar.gz
+[2023-04-22 05:30:34] INFO root fetch - processPackages [scidb-py]: Downloading https://files.pythonhosted.org/packages/4a/73/0690bc3c7428c4729a863152cd5ddd64ac98e28f32ac08701b47a9cd329f/scidb-py-19.3.4.tar.gz
+[2023-04-22 05:30:34] INFO root fetch - processPackages [athena-ai]: executing diffoscope
+[2023-04-22 05:30:34] INFO root fetch - processPackages [athena-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athena_ai-0.0.1.tar.gz tmp/athena_ai-0.0.2.tar.gz --markdown 20230422/a/athena-ai/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 05:30:34] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/e1/e3/b4b53ac6dfaeb9cc260eabec9349ec59195bc8dc09d840dba3fa1b92be40/foursight_core-4.1.0.1b13.tar.gz
+[2023-04-22 05:30:34] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/e1/e3/b4b53ac6dfaeb9cc260eabec9349ec59195bc8dc09d840dba3fa1b92be40/foursight_core-4.1.0.1b13.tar.gz
+[2023-04-22 05:30:34] INFO root fetch - processPackages [scidb-py]: executing diffoscope
+[2023-04-22 05:30:34] INFO root fetch - processPackages [scidb-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scidb-py-19.3.3.tar.gz tmp/scidb-py-19.3.4.tar.gz --markdown 20230422/s/scidb-py/19.3.3-19.3.4/diff.md --exclude *.pyd
+[2023-04-22 05:30:35] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 05:30:35] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b12.tar.gz tmp/foursight_core-4.1.0.1b13.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b12-4.1.0.1b13/diff.md --exclude *.pyd
+[2023-04-22 05:30:35] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 05:30:35] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b12.tar.gz tmp/foursight_core-4.1.0.1b13.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b12-4.1.0.1b13/diff.md --exclude *.pyd
+[2023-04-22 05:30:35] INFO root fetch - main [MainThread]: End processing [ovos-workshop]: success
+[2023-04-22 05:30:35] INFO root fetch - processPackages [now-lms]: Downloading https://files.pythonhosted.org/packages/1e/c1/b04c5c442ca393d7d8489a2c81d197209047f7c6e54b0ddf4e1598aaa430/now_lms-0.0.1a220230422.tar.gz
+[2023-04-22 05:30:35] INFO root fetch - main [MainThread]: End processing [athena-ai]: success
+[2023-04-22 05:30:36] INFO root fetch - main [MainThread]: End processing [scidb-py]: success
+[2023-04-22 05:30:36] INFO root fetch - processPackages [now-lms]: executing diffoscope
+[2023-04-22 05:30:36] INFO root fetch - processPackages [now-lms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/now_lms-0.0.1a220230409.tar.gz tmp/now_lms-0.0.1a220230422.tar.gz --markdown 20230422/n/now-lms/0.0.1a220230409-0.0.1a220230422/diff.md --exclude *.pyd
+[2023-04-22 05:30:36] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 05:30:36] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 05:30:38] INFO root fetch - main [MainThread]: End processing [pypcapkit]: success
+[2023-04-22 05:32:20] INFO root fetch - main [MainThread]: End processing [now-lms]: success
+[2023-04-22 05:32:20] INFO root fetch - main [MainThread]: Store serial: [17811847]
