@@ -12716,3 +12716,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 21:14:24] INFO root fetch - main [MainThread]: End processing [naturalspeech2-pytorch]: success
 [2023-04-22 21:14:25] INFO root fetch - main [MainThread]: End processing [lndb]: success
 [2023-04-22 21:14:25] INFO root fetch - main [MainThread]: Store serial: [17816573]
+[2023-04-22 21:19:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816573]
+[2023-04-22 21:19:34] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 21:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: base-class-autotests
+[2023-04-22 21:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zuspec-parser
+[2023-04-22 21:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: micromechanics-indentationGUI
+[2023-04-22 21:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Flet-Material-Design
+[2023-04-22 21:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zdt
+[2023-04-22 21:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ifunnygifmaker
+[2023-04-22 21:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyrobox
+[2023-04-22 21:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyprost
+[2023-04-22 21:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: esentity
+[2023-04-22 21:19:34] INFO root fetch - processPackages [micromechanics-indentationGUI]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 21:19:34] WARNING root fetch - processPackages [base-class-autotests]: Skipping, unable to determine old version
+[2023-04-22 21:19:34] INFO root fetch - main [MainThread]: End processing [base-class-autotests] error
+[2023-04-22 21:19:34] INFO root fetch - processPackages [ifunnygifmaker]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-22 21:19:34] INFO root fetch - processPackages [zuspec-parser]: New version: [0.0.1.4774281909] Old Version: [0.0.1.4669246303]
+[2023-04-22 21:19:34] INFO root fetch - processPackages [pyprost]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-22 21:19:34] INFO root fetch - processPackages [pyrobox]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-04-22 21:19:34] WARNING root fetch - processPackages [Flet-Material-Design]: Skipping, unable to determine old version
+[2023-04-22 21:19:34] INFO root fetch - processPackages [zdt]: New version: [2.2] Old Version: [2.1]
+[2023-04-22 21:19:34] INFO root fetch - main [MainThread]: End processing [Flet-Material-Design] error
+[2023-04-22 21:19:34] INFO root fetch - processPackages [esentity]: New version: [0.2.99] Old Version: [0.2.98]
+[2023-04-22 21:19:34] INFO root fetch - processPackages [micromechanics-indentationGUI]: executing diffoscope
+[2023-04-22 21:19:34] INFO root fetch - processPackages [micromechanics-indentationGUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micromechanics_indentationGUI-0.0.8-py3-none-any.whl.zip tmp/micromechanics_indentationGUI-0.0.9-py3-none-any.whl.zip --markdown 20230422/m/micromechanics-indentationGUI/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 21:19:34] INFO root fetch - processPackages [ifunnygifmaker]: Downloading https://files.pythonhosted.org/packages/bd/eb/dc6f7c8e290f1f4faa3c31b8e0cf30a8c22b0fd119aaf6612b8c63f2ff0e/ifunnygifmaker-0.2.2.tar.gz
+[2023-04-22 21:19:34] INFO root fetch - processPackages [zuspec-parser]: Downloading https://files.pythonhosted.org/packages/02/4e/3127b12634c41f24f202212a3678c4462cc8ba7c4ca1a38a35197448003d/zuspec_parser-0.0.1.4669246303-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-22 21:19:34] INFO root fetch - processPackages [pyrobox]: Downloading https://files.pythonhosted.org/packages/db/c2/80227b28c0306c0ada0e6a00e1f9ab2438774a9b967fff38f108da9b34f6/pyrobox-0.7.3.tar.gz
+[2023-04-22 21:19:34] INFO root fetch - processPackages [zdt]: Downloading https://files.pythonhosted.org/packages/60/90/9b1ab51c27118cfbc1d4060ce6907e586351a7cc3a7e9611dde906825f2c/zdt-2.1.tar.gz
+[2023-04-22 21:19:34] INFO root fetch - processPackages [esentity]: Downloading https://files.pythonhosted.org/packages/1e/9f/e0a6280d40e9cb6e3dfaa2e923b81a0d650931aa948d73ca9a8a3fbf219d/esentity-0.2.98.tar.gz
+[2023-04-22 21:19:34] INFO root fetch - processPackages [ifunnygifmaker]: executing diffoscope
+[2023-04-22 21:19:34] INFO root fetch - processPackages [ifunnygifmaker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifunnygifmaker-0.2.1.tar.gz tmp/ifunnygifmaker-0.2.2.tar.gz --markdown 20230422/i/ifunnygifmaker/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-22 21:19:34] INFO root fetch - processPackages [pyprost]: Downloading https://files.pythonhosted.org/packages/87/60/227488f9d6c76083b0c3e9f392422c5f7618400848cb0dd1187cf96dca7a/pyprost-0.2.9.tar.gz
+[2023-04-22 21:19:34] INFO root fetch - processPackages [pyrobox]: Downloading https://files.pythonhosted.org/packages/d8/6b/4dcb303f42dab8da0f23ee5f928e3a84b98dc0bb79ee7cf94069b427c63b/pyrobox-0.7.4.tar.gz
+[2023-04-22 21:19:34] INFO root fetch - processPackages [zdt]: Downloading https://files.pythonhosted.org/packages/38/94/051711c75be2f3fff543160844b5a685e46ff566fdd9e53dc8f0ec3fe7e9/zdt-2.2.tar.gz
+[2023-04-22 21:19:34] INFO root fetch - processPackages [pyprost]: executing diffoscope
+[2023-04-22 21:19:34] INFO root fetch - processPackages [pyprost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprost-0.2.8.tar.gz tmp/pyprost-0.2.9.tar.gz --markdown 20230422/p/pyprost/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-22 21:19:34] INFO root fetch - processPackages [pyrobox]: executing diffoscope
+[2023-04-22 21:19:34] INFO root fetch - processPackages [pyrobox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrobox-0.7.3.tar.gz tmp/pyrobox-0.7.4.tar.gz --markdown 20230422/p/pyrobox/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-04-22 21:19:34] INFO root fetch - processPackages [esentity]: Downloading https://files.pythonhosted.org/packages/c8/5b/c12322aa6c71e3e0da12b137cf7fef6f67acbd686b0adeaffba5426fd63b/esentity-0.2.99.tar.gz
+[2023-04-22 21:19:34] INFO root fetch - processPackages [zdt]: executing diffoscope
+[2023-04-22 21:19:34] INFO root fetch - processPackages [zdt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zdt-2.1.tar.gz tmp/zdt-2.2.tar.gz --markdown 20230422/z/zdt/2.1-2.2/diff.md --exclude *.pyd
+[2023-04-22 21:19:34] INFO root fetch - processPackages [esentity]: executing diffoscope
+[2023-04-22 21:19:34] INFO root fetch - processPackages [esentity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esentity-0.2.98.tar.gz tmp/esentity-0.2.99.tar.gz --markdown 20230422/e/esentity/0.2.98-0.2.99/diff.md --exclude *.pyd
+[2023-04-22 21:19:35] INFO root fetch - main [MainThread]: End processing [micromechanics-indentationGUI]: success
+[2023-04-22 21:19:35] INFO root fetch - processPackages [zuspec-parser]: Downloading https://files.pythonhosted.org/packages/1d/50/f7a37fd639b9e0d2ff4c6c063efaf96ebac16c68f7804c58a59d8659e097/zuspec_parser-0.0.1.4774281909-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-22 21:19:35] INFO root fetch - main [MainThread]: End processing [ifunnygifmaker]: success
+[2023-04-22 21:19:35] INFO root fetch - main [MainThread]: End processing [zdt]: success
+[2023-04-22 21:19:35] INFO root fetch - main [MainThread]: End processing [pyrobox]: success
+[2023-04-22 21:19:36] INFO root fetch - main [MainThread]: End processing [pyprost]: success
+[2023-04-22 21:19:36] INFO root fetch - main [MainThread]: End processing [esentity]: success
+[2023-04-22 21:19:36] INFO root fetch - processPackages [zuspec-parser]: executing diffoscope
+[2023-04-22 21:19:36] INFO root fetch - processPackages [zuspec-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_parser-0.0.1.4669246303-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_parser-0.0.1.4774281909-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230422/z/zuspec-parser/0.0.1.4669246303-0.0.1.4774281909/diff.md --exclude *.pyd
+[2023-04-22 21:20:32] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
+[2023-04-22 21:20:32] INFO root fetch - main [MainThread]: Store serial: [17816605]
