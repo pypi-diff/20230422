@@ -13459,3 +13459,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 22:45:57] INFO root fetch - main [MainThread]: End processing [bitdust]: success
 [2023-04-22 22:46:10] INFO root fetch - main [MainThread]: End processing [polars-u64-idx]: success
 [2023-04-22 22:46:10] INFO root fetch - main [MainThread]: Store serial: [17817006]
+[2023-04-22 22:51:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17817006]
+[2023-04-22 22:51:19] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 22:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jrnl
+[2023-04-22 22:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotPython
+[2023-04-22 22:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spotRiver
+[2023-04-22 22:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: github-issue-extractor
+[2023-04-22 22:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zdt
+[2023-04-22 22:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: unwanted-content-detector
+[2023-04-22 22:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alacorder
+[2023-04-22 22:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pybdsim
+[2023-04-22 22:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Conanmail
+[2023-04-22 22:51:19] INFO root fetch - processPackages [zdt]: New version: [2.4] Old Version: [2.3]
+[2023-04-22 22:51:19] INFO root fetch - processPackages [jrnl]: New version: [4.0b0] Old Version: [3.3b2]
+[2023-04-22 22:51:19] INFO root fetch - processPackages [alacorder]: New version: [79.6.3] Old Version: [79.6.2]
+[2023-04-22 22:51:19] INFO root fetch - processPackages [unwanted-content-detector]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-22 22:51:19] WARNING root fetch - processPackages [Conanmail]: Skipping, unable to determine old version
+[2023-04-22 22:51:19] INFO root fetch - main [MainThread]: End processing [Conanmail] error
+[2023-04-22 22:51:19] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-04-22 22:51:19] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-79.6.2.tar.gz tmp/alacorder-79.6.3.tar.gz --markdown 20230422/a/alacorder/79.6.2-79.6.3/diff.md --exclude *.pyd
+[2023-04-22 22:51:19] INFO root fetch - processPackages [spotRiver]: New version: [0.0.92] Old Version: [0.0.91]
+[2023-04-22 22:51:19] INFO root fetch - processPackages [github-issue-extractor]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 22:51:19] INFO root fetch - processPackages [pybdsim]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-04-22 22:51:19] INFO root fetch - processPackages [spotPython]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 22:51:20] INFO root fetch - processPackages [unwanted-content-detector]: executing diffoscope
+[2023-04-22 22:51:20] INFO root fetch - processPackages [unwanted-content-detector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unwanted_content_detector-0.1.1.tar.gz tmp/unwanted_content_detector-0.1.2.tar.gz --markdown 20230422/u/unwanted-content-detector/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-22 22:51:20] INFO root fetch - processPackages [jrnl]: Downloading https://files.pythonhosted.org/packages/bb/8c/c0e9f2243434a53de323f3915e3c66bde30615ad0054b62a3c3196e4896a/jrnl-3.3b2.tar.gz
+[2023-04-22 22:51:20] INFO root fetch - processPackages [zdt]: executing diffoscope
+[2023-04-22 22:51:20] INFO root fetch - processPackages [zdt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zdt-2.3.tar.gz tmp/zdt-2.4.tar.gz --markdown 20230422/z/zdt/2.3-2.4/diff.md --exclude *.pyd
+[2023-04-22 22:51:20] INFO root fetch - processPackages [github-issue-extractor]: Downloading https://files.pythonhosted.org/packages/dc/bc/4a5f2d14e93c290199afa28d7c68d8f60f14c7c05fde73167e0a47a816ab/github_issue_extractor-0.1.0.tar.gz
+[2023-04-22 22:51:20] INFO root fetch - processPackages [pybdsim]: Downloading https://files.pythonhosted.org/packages/b9/60/6624e0af5c54162a7b967608a45fcb56e8c7ab1601dcc60a311459a6b532/pybdsim-3.1.0.tar.gz
+[2023-04-22 22:51:20] INFO root fetch - processPackages [spotRiver]: Downloading https://files.pythonhosted.org/packages/ad/eb/6d3d04115a3bc9dacceb83a002cfccd6a2dc3ea732809a13afdabfa3bfe1/spotRiver-0.0.92.tar.gz
+[2023-04-22 22:51:20] INFO root fetch - processPackages [spotPython]: executing diffoscope
+[2023-04-22 22:51:20] INFO root fetch - processPackages [spotPython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotPython-0.0.8.tar.gz tmp/spotPython-0.0.9.tar.gz --markdown 20230422/s/spotPython/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 22:51:20] INFO root fetch - processPackages [spotRiver]: executing diffoscope
+[2023-04-22 22:51:20] INFO root fetch - processPackages [spotRiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotRiver-0.0.91.tar.gz tmp/spotRiver-0.0.92.tar.gz --markdown 20230422/s/spotRiver/0.0.91-0.0.92/diff.md --exclude *.pyd
+[2023-04-22 22:51:20] INFO root fetch - processPackages [jrnl]: Downloading https://files.pythonhosted.org/packages/11/1a/ef8b1956aab479efe3086bc7b129ff2286ea4222377922d38df85fb7806d/jrnl-4.0b0.tar.gz
+[2023-04-22 22:51:20] INFO root fetch - processPackages [github-issue-extractor]: Downloading https://files.pythonhosted.org/packages/f4/7c/d44e3921832943c933b61e2a305100fcb054fe20e3f2a745bb7432f5083a/github_issue_extractor-0.1.1.tar.gz
+[2023-04-22 22:51:20] INFO root fetch - processPackages [jrnl]: executing diffoscope
+[2023-04-22 22:51:20] INFO root fetch - processPackages [jrnl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jrnl-3.3b2.tar.gz tmp/jrnl-4.0b0.tar.gz --markdown 20230422/j/jrnl/3.3b2-4.0b0/diff.md --exclude *.pyd
+[2023-04-22 22:51:20] INFO root fetch - processPackages [github-issue-extractor]: executing diffoscope
+[2023-04-22 22:51:20] INFO root fetch - processPackages [github-issue-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/github_issue_extractor-0.1.0.tar.gz tmp/github_issue_extractor-0.1.1.tar.gz --markdown 20230422/g/github-issue-extractor/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 22:51:20] INFO root fetch - processPackages [pybdsim]: Downloading https://files.pythonhosted.org/packages/ae/c4/82707e97a5ca1868d3bd7428b3a86e61f64dcd700659245c21473bb69689/pybdsim-3.1.1.tar.gz
+[2023-04-22 22:51:21] INFO root fetch - main [MainThread]: End processing [unwanted-content-detector]: success
+[2023-04-22 22:51:21] INFO root fetch - main [MainThread]: End processing [zdt]: success
+[2023-04-22 22:51:21] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-04-22 22:51:21] INFO root fetch - processPackages [pybdsim]: executing diffoscope
+[2023-04-22 22:51:21] INFO root fetch - processPackages [pybdsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybdsim-3.1.0.tar.gz tmp/pybdsim-3.1.1.tar.gz --markdown 20230422/p/pybdsim/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-04-22 22:51:21] INFO root fetch - main [MainThread]: End processing [github-issue-extractor]: success
+[2023-04-22 22:51:22] INFO root fetch - main [MainThread]: End processing [spotRiver]: success
+[2023-04-22 22:51:22] INFO root fetch - main [MainThread]: End processing [spotPython]: success
+[2023-04-22 22:51:22] INFO root fetch - main [MainThread]: End processing [jrnl]: success
+[2023-04-22 22:51:23] INFO root fetch - main [MainThread]: End processing [pybdsim]: success
+[2023-04-22 22:51:23] INFO root fetch - main [MainThread]: Store serial: [17817044]
