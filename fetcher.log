@@ -11487,3 +11487,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 18:40:52] INFO root fetch - main [MainThread]: End processing [ohmyi3]: success
 [2023-04-22 18:41:27] INFO root fetch - main [MainThread]: End processing [dash-extensions]: success
 [2023-04-22 18:41:27] INFO root fetch - main [MainThread]: Store serial: [17815852]
+[2023-04-22 18:46:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815852]
+[2023-04-22 18:46:37] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 18:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hnswlib-temp
+[2023-04-22 18:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openmoss
+[2023-04-22 18:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xia-scw-instance
+[2023-04-22 18:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yashpy
+[2023-04-22 18:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyl3dmd
+[2023-04-22 18:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: smartsheet-pydantic
+[2023-04-22 18:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: edwh-migrate
+[2023-04-22 18:46:37] INFO root fetch - processPackages [yashpy]: New version: [0.4] Old Version: [0.3]
+[2023-04-22 18:46:37] WARNING root fetch - processPackages [hnswlib-temp]: Skipping, unable to determine old version
+[2023-04-22 18:46:37] INFO root fetch - main [MainThread]: End processing [hnswlib-temp] error
+[2023-04-22 18:46:37] WARNING root fetch - processPackages [smartsheet-pydantic]: Skipping, unable to determine old version
+[2023-04-22 18:46:37] INFO root fetch - main [MainThread]: End processing [smartsheet-pydantic] error
+[2023-04-22 18:46:37] INFO root fetch - processPackages [pyl3dmd]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-22 18:46:37] WARNING root fetch - processPackages [openmoss]: Skipping, unable to determine old version
+[2023-04-22 18:46:37] INFO root fetch - main [MainThread]: End processing [openmoss] error
+[2023-04-22 18:46:37] INFO root fetch - processPackages [xia-scw-instance]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 18:46:37] WARNING root fetch - processPackages [edwh-migrate]: Skipping, unable to determine old version
+[2023-04-22 18:46:37] INFO root fetch - main [MainThread]: End processing [edwh-migrate] error
+[2023-04-22 18:46:38] INFO root fetch - processPackages [pyl3dmd]: Downloading https://files.pythonhosted.org/packages/65/f1/ee625e0aae20b3bc5de97af075ab3c414747e24e91db922a192435ed36d5/pyl3dmd-0.0.9.tar.gz
+[2023-04-22 18:46:38] INFO root fetch - processPackages [yashpy]: Downloading https://files.pythonhosted.org/packages/86/20/e8f0a6ff20896165999018d080c62997b574c0b5ab47d50b1604fd3c1746/yashpy-0.4.tar.gz
+[2023-04-22 18:46:38] INFO root fetch - processPackages [yashpy]: executing diffoscope
+[2023-04-22 18:46:38] INFO root fetch - processPackages [yashpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yashpy-0.3.tar.gz tmp/yashpy-0.4.tar.gz --markdown 20230422/y/yashpy/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-22 18:46:38] INFO root fetch - processPackages [xia-scw-instance]: Downloading https://files.pythonhosted.org/packages/0b/3e/ccfa017cadbf93a4c9d841ceedca7d4d8fecdb2cf5b89da243b87595ccc0/xia_scw_instance-0.0.8-cp39-none-win_amd64.whl
+[2023-04-22 18:46:38] INFO root fetch - processPackages [pyl3dmd]: Downloading https://files.pythonhosted.org/packages/3a/08/cdcccc6f009455c67fd2e158b76969c152cd3468af9f12277ee5fd073210/pyl3dmd-0.1.0.tar.gz
+[2023-04-22 18:46:38] INFO root fetch - processPackages [pyl3dmd]: executing diffoscope
+[2023-04-22 18:46:38] INFO root fetch - processPackages [pyl3dmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyl3dmd-0.0.9.tar.gz tmp/pyl3dmd-0.1.0.tar.gz --markdown 20230422/p/pyl3dmd/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-22 18:46:38] INFO root fetch - processPackages [xia-scw-instance]: Downloading https://files.pythonhosted.org/packages/c7/25/3328fe3f28177852fbeba064922c0fed329475f10862da2ccec6ee47e0de/xia_scw_instance-0.0.9-cp39-none-win_amd64.whl
+[2023-04-22 18:46:38] INFO root fetch - processPackages [xia-scw-instance]: executing diffoscope
+[2023-04-22 18:46:38] INFO root fetch - processPackages [xia-scw-instance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_scw_instance-0.0.8-cp39-none-win_amd64.whl.zip tmp/xia_scw_instance-0.0.9-cp39-none-win_amd64.whl.zip --markdown 20230422/x/xia-scw-instance/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 18:46:39] INFO root fetch - main [MainThread]: End processing [yashpy]: success
+[2023-04-22 18:46:39] INFO root fetch - main [MainThread]: End processing [xia-scw-instance]: success
+[2023-04-22 18:46:39] INFO root fetch - main [MainThread]: End processing [pyl3dmd]: success
+[2023-04-22 18:46:39] INFO root fetch - main [MainThread]: Store serial: [17815889]
