@@ -5777,3 +5777,17 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 07:42:59] INFO root fetch - main [MainThread]: End processing [tiktok-uploader]: success
 [2023-04-22 07:43:02] INFO root fetch - main [MainThread]: End processing [pywebio]: success
 [2023-04-22 07:43:02] INFO root fetch - main [MainThread]: Store serial: [17812474]
+[2023-04-22 07:48:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812474]
+[2023-04-22 07:48:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-22 07:48:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mcqq-tool
+[2023-04-22 07:48:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrew
+[2023-04-22 07:48:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: FunID
+[2023-04-22 07:48:12] WARNING root fetch - processPackages [mcqq-tool]: Skipping, unable to determine old version
+[2023-04-22 07:48:12] INFO root fetch - main [MainThread]: End processing [mcqq-tool] error
+[2023-04-22 07:48:12] WARNING root fetch - processPackages [pyrew]: Skipping, unable to determine old version
+[2023-04-22 07:48:12] INFO root fetch - processPackages [FunID]: New version: [0.3.7] Old Version: [0.3.6.1]
+[2023-04-22 07:48:12] INFO root fetch - main [MainThread]: End processing [pyrew] error
+[2023-04-22 07:48:12] INFO root fetch - processPackages [FunID]: Downloading https://files.pythonhosted.org/packages/7c/19/cc41c29a0bc630bdc8a5ff93bb58cacc1ae756280b353b6b78d39c52bc85/FunID-0.3.6.1.tar.gz
+[2023-04-22 07:48:13] WARNING root fetch - processPackages [FunID]: Skipping package: exceeds size limit 65215716>=10485760
+[2023-04-22 07:48:13] INFO root fetch - main [MainThread]: End processing [FunID] error
+[2023-04-22 07:48:13] INFO root fetch - main [MainThread]: Store serial: [17812484]
