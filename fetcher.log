@@ -4574,3 +4574,70 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 05:37:36] INFO root fetch - main [MainThread]: End processing [odoo13-addon-contract]: success
 [2023-04-22 05:37:41] INFO root fetch - main [MainThread]: End processing [ovos-core]: success
 [2023-04-22 05:37:41] INFO root fetch - main [MainThread]: Store serial: [17811887]
+[2023-04-22 05:42:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811887]
+[2023-04-22 05:42:51] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-22 05:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: graph-envs
+[2023-04-22 05:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dino2
+[2023-04-22 05:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openabc
+[2023-04-22 05:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: twigs
+[2023-04-22 05:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: opencv-python-rolling
+[2023-04-22 05:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: opencv-contrib-python-rolling
+[2023-04-22 05:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: opencv-python-headless-rolling
+[2023-04-22 05:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: opencv-contrib-python-headless-rolling
+[2023-04-22 05:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gqylpy-datastruct
+[2023-04-22 05:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: odoo12-addon-crm-phonecall
+[2023-04-22 05:42:52] WARNING root fetch - processPackages [dino2]: Skipping, unable to determine old version
+[2023-04-22 05:42:52] INFO root fetch - processPackages [dino2]: Start processing: odoo12-addon-crm-claim
+[2023-04-22 05:42:52] INFO root fetch - main [MainThread]: End processing [dino2] error
+[2023-04-22 05:42:52] INFO root fetch - processPackages [openabc]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-22 05:42:52] INFO root fetch - processPackages [gqylpy-datastruct]: New version: [2.2.4] Old Version: [2.2.3]
+[2023-04-22 05:42:52] INFO root fetch - processPackages [graph-envs]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 05:42:52] INFO root fetch - processPackages [opencv-python-headless-rolling]: New version: [5.0.0.20221015] Old Version: [5.0.0.20221008]
+[2023-04-22 05:42:52] INFO root fetch - processPackages [odoo12-addon-crm-phonecall]: New version: [12.0.1.6.0.99.dev9] Old Version: [12.0.1.6.0.99.dev8]
+[2023-04-22 05:42:52] INFO root fetch - processPackages [opencv-contrib-python-headless-rolling]: New version: [5.0.0.20221015] Old Version: [5.0.0.20221008]
+[2023-04-22 05:42:52] INFO root fetch - processPackages [opencv-python-rolling]: New version: [5.0.0.20221015] Old Version: [5.0.0.20221008]
+[2023-04-22 05:42:52] INFO root fetch - processPackages [opencv-contrib-python-rolling]: New version: [5.0.0.20221015] Old Version: [5.0.0.20221008]
+[2023-04-22 05:42:52] INFO root fetch - processPackages [twigs]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-22 05:42:52] INFO root fetch - processPackages [odoo12-addon-crm-claim]: New version: [12.0.1.1.2.99.dev6] Old Version: [12.0.1.1.2.99.dev5]
+[2023-04-22 05:42:52] INFO root fetch - processPackages [gqylpy-datastruct]: Downloading https://files.pythonhosted.org/packages/9b/7a/8e2da291fedbd92973b7b3f7a2112456fd55101fe4ca8e33f1c65d5c8b10/gqylpy_datastruct-2.2.3-py3-none-any.whl
+[2023-04-22 05:42:52] INFO root fetch - processPackages [odoo12-addon-crm-phonecall]: Downloading https://files.pythonhosted.org/packages/ba/18/49ef4cc4dc26caf8c59dded3b67833ece07327c70fd9ba90a1c102e291af/odoo12_addon_crm_phonecall-12.0.1.6.0.99.dev8-py3-none-any.whl
+[2023-04-22 05:42:52] INFO root fetch - processPackages [opencv-python-headless-rolling]: Downloading https://files.pythonhosted.org/packages/7f/d0/e5b36f57680408f36da0f3aa7615e343b05d5b08ec0548429a4cbcd9665b/opencv_python_headless_rolling-5.0.0.20221008-cp37-abi3-macosx_11_0_arm64.whl
+[2023-04-22 05:42:52] INFO root fetch - processPackages [opencv-contrib-python-headless-rolling]: Downloading https://files.pythonhosted.org/packages/52/d9/7ef539a10bce311d1e398e2ef46180316e0709bb45fe3c96989015f61412/opencv_contrib_python_headless_rolling-5.0.0.20221008-cp37-abi3-macosx_11_0_arm64.whl
+[2023-04-22 05:42:52] INFO root fetch - processPackages [opencv-python-rolling]: Downloading https://files.pythonhosted.org/packages/32/6b/7a25c64d9114c7637e2850826c668c26d8ede5a8c04b15aa282508321da4/opencv_python_rolling-5.0.0.20221008-cp37-abi3-macosx_11_0_arm64.whl
+[2023-04-22 05:42:52] INFO root fetch - processPackages [opencv-contrib-python-rolling]: Downloading https://files.pythonhosted.org/packages/a3/97/2ea0710c3f154811d2c12291ed7a678dfa7a588f7a9e27440b9f9372a38a/opencv_contrib_python_rolling-5.0.0.20221008-cp37-abi3-macosx_11_0_arm64.whl
+[2023-04-22 05:42:52] INFO root fetch - processPackages [openabc]: Downloading https://files.pythonhosted.org/packages/41/f8/17fa7df8f8484551a45836f1a6e1ec7bf48d58cf503d1eedfb4b2b6cc81a/openabc-1.0.3.tar.gz
+[2023-04-22 05:42:52] INFO root fetch - processPackages [graph-envs]: executing diffoscope
+[2023-04-22 05:42:52] INFO root fetch - processPackages [graph-envs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graph-envs-0.0.8.tar.gz tmp/graph-envs-0.0.9.tar.gz --markdown 20230422/g/graph-envs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 05:42:52] INFO root fetch - processPackages [odoo12-addon-crm-claim]: Downloading https://files.pythonhosted.org/packages/8d/e0/5f36062b6797cf217552b657ffccff74138a99ad73cba8a8a4946ff2e28e/odoo12_addon_crm_claim-12.0.1.1.2.99.dev6-py3-none-any.whl
+[2023-04-22 05:42:52] INFO root fetch - processPackages [openabc]: executing diffoscope
+[2023-04-22 05:42:52] INFO root fetch - processPackages [openabc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openabc-1.0.2.tar.gz tmp/openabc-1.0.3.tar.gz --markdown 20230422/o/openabc/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-22 05:42:52] INFO root fetch - processPackages [twigs]: executing diffoscope
+[2023-04-22 05:42:52] INFO root fetch - processPackages [twigs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twigs-1.1.8.tar.gz tmp/twigs-1.1.9.tar.gz --markdown 20230422/t/twigs/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-22 05:42:52] INFO root fetch - processPackages [gqylpy-datastruct]: Downloading https://files.pythonhosted.org/packages/2c/37/c5cdef525a81d0a85839b41cf42c078932806d47e96a03d803030b7479f0/gqylpy_datastruct-2.2.4-py3-none-any.whl
+[2023-04-22 05:42:52] INFO root fetch - processPackages [odoo12-addon-crm-phonecall]: Downloading https://files.pythonhosted.org/packages/46/ea/ba57aac9ef264868e0b16d6c140e8b96f915bdb6087d2317999d1c98b65e/odoo12_addon_crm_phonecall-12.0.1.6.0.99.dev9-py3-none-any.whl
+[2023-04-22 05:42:52] INFO root fetch - processPackages [odoo12-addon-crm-claim]: executing diffoscope
+[2023-04-22 05:42:52] INFO root fetch - processPackages [odoo12-addon-crm-claim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_crm_claim-12.0.1.1.2.99.dev5-py3-none-any.whl.zip tmp/odoo12_addon_crm_claim-12.0.1.1.2.99.dev6-py3-none-any.whl.zip --markdown 20230422/o/odoo12-addon-crm-claim/12.0.1.1.2.99.dev5-12.0.1.1.2.99.dev6/diff.md --exclude *.pyd
+[2023-04-22 05:42:52] INFO root fetch - processPackages [gqylpy-datastruct]: executing diffoscope
+[2023-04-22 05:42:52] INFO root fetch - processPackages [gqylpy-datastruct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gqylpy_datastruct-2.2.3-py3-none-any.whl.zip tmp/gqylpy_datastruct-2.2.4-py3-none-any.whl.zip --markdown 20230422/g/gqylpy-datastruct/2.2.3-2.2.4/diff.md --exclude *.pyd
+[2023-04-22 05:42:52] WARNING root fetch - processPackages [opencv-python-headless-rolling]: Skipping package: exceeds size limit 32729352>=10485760
+[2023-04-22 05:42:52] INFO root fetch - processPackages [opencv-python-headless-rolling]: Start processing: HHLtools
+[2023-04-22 05:42:52] INFO root fetch - main [MainThread]: End processing [opencv-python-headless-rolling] error
+[2023-04-22 05:42:52] INFO root fetch - processPackages [HHLtools]: New version: [1.1.0] Old Version: [1.0.8.1]
+[2023-04-22 05:42:52] INFO root fetch - processPackages [odoo12-addon-crm-phonecall]: executing diffoscope
+[2023-04-22 05:42:52] INFO root fetch - processPackages [odoo12-addon-crm-phonecall]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_crm_phonecall-12.0.1.6.0.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_crm_phonecall-12.0.1.6.0.99.dev9-py3-none-any.whl.zip --markdown 20230422/o/odoo12-addon-crm-phonecall/12.0.1.6.0.99.dev8-12.0.1.6.0.99.dev9/diff.md --exclude *.pyd
+[2023-04-22 05:42:52] INFO root fetch - processPackages [HHLtools]: executing diffoscope
+[2023-04-22 05:42:52] INFO root fetch - processPackages [HHLtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HHLtools-1.0.8.1-py2.py3-none-any.whl.zip tmp/HHLtools-1.1.0-py2.py3-none-any.whl.zip --markdown 20230422/H/HHLtools/1.0.8.1-1.1.0/diff.md --exclude *.pyd
+[2023-04-22 05:42:53] WARNING root fetch - processPackages [opencv-python-rolling]: Skipping package: exceeds size limit 32729233>=10485760
+[2023-04-22 05:42:53] INFO root fetch - main [MainThread]: End processing [opencv-python-rolling] error
+[2023-04-22 05:42:53] WARNING root fetch - processPackages [opencv-contrib-python-headless-rolling]: Skipping package: exceeds size limit 42759572>=10485760
+[2023-04-22 05:42:53] INFO root fetch - main [MainThread]: End processing [opencv-contrib-python-headless-rolling] error
+[2023-04-22 05:42:53] WARNING root fetch - processPackages [opencv-contrib-python-rolling]: Skipping package: exceeds size limit 43085134>=10485760
+[2023-04-22 05:42:53] INFO root fetch - main [MainThread]: End processing [opencv-contrib-python-rolling] error
+[2023-04-22 05:42:53] INFO root fetch - main [MainThread]: End processing [graph-envs]: success
+[2023-04-22 05:42:53] INFO root fetch - main [MainThread]: End processing [gqylpy-datastruct]: success
+[2023-04-22 05:42:54] INFO root fetch - main [MainThread]: End processing [openabc]: success
+[2023-04-22 05:42:54] INFO root fetch - main [MainThread]: End processing [HHLtools]: success
+[2023-04-22 05:42:54] INFO root fetch - main [MainThread]: End processing [odoo12-addon-crm-claim]: success
+[2023-04-22 05:42:54] INFO root fetch - main [MainThread]: End processing [odoo12-addon-crm-phonecall]: success
+[2023-04-22 05:42:54] INFO root fetch - main [MainThread]: End processing [twigs]: success
+[2023-04-22 05:42:54] INFO root fetch - main [MainThread]: Store serial: [17811923]
