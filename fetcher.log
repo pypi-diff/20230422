@@ -13574,3 +13574,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 23:02:11] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 23:02:11] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 23:02:11] INFO root fetch - main [MainThread]: Store serial: [17817104]
+[2023-04-22 23:07:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17817104]
+[2023-04-22 23:07:20] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 23:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arkdata
+[2023-04-22 23:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: feature-selection-tools
+[2023-04-22 23:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tkutils
+[2023-04-22 23:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: foursight-core
+[2023-04-22 23:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: numering
+[2023-04-22 23:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: arkdata
+[2023-04-22 23:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aiogram-forms
+[2023-04-22 23:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: github-issue-extractor
+[2023-04-22 23:07:20] INFO root fetch - processPackages [arkdata]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-22 23:07:20] WARNING root fetch - processPackages [feature-selection-tools]: Skipping, unable to determine old version
+[2023-04-22 23:07:20] INFO root fetch - main [MainThread]: End processing [feature-selection-tools] error
+[2023-04-22 23:07:20] INFO root fetch - processPackages [arkdata]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-22 23:07:20] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.4b17] Old Version: [4.0.0]
+[2023-04-22 23:07:20] WARNING root fetch - processPackages [numering]: Skipping, unable to determine old version
+[2023-04-22 23:07:20] INFO root fetch - processPackages [github-issue-extractor]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 23:07:20] INFO root fetch - processPackages [tkutils]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-22 23:07:20] INFO root fetch - main [MainThread]: End processing [numering] error
+[2023-04-22 23:07:20] INFO root fetch - processPackages [aiogram-forms]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-22 23:07:20] INFO root fetch - processPackages [github-issue-extractor]: executing diffoscope
+[2023-04-22 23:07:20] INFO root fetch - processPackages [github-issue-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/github_issue_extractor-0.1.0.tar.gz tmp/github_issue_extractor-0.1.1.tar.gz --markdown 20230422/g/github-issue-extractor/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 23:07:20] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/06/26/f76048885800719aad91494aa5bb32ef01d4fd3e7c10887e7817083712c2/foursight_core-4.1.0.4b17.tar.gz
+[2023-04-22 23:07:20] INFO root fetch - processPackages [arkdata]: Downloading https://files.pythonhosted.org/packages/a5/d7/3bc98170533139827f92002dec09c52a8bd4aa8d9aa2edcf8e843b619d36/arkdata-1.0.7.tar.gz
+[2023-04-22 23:07:20] INFO root fetch - processPackages [arkdata]: Downloading https://files.pythonhosted.org/packages/a5/d7/3bc98170533139827f92002dec09c52a8bd4aa8d9aa2edcf8e843b619d36/arkdata-1.0.7.tar.gz
+[2023-04-22 23:07:20] INFO root fetch - processPackages [tkutils]: Downloading https://files.pythonhosted.org/packages/30/25/a336ba0fa029687c1987132410e9b5be29cdf972f8211d2a3bcdce0c6e62/tkutils-1.0.0.tar.gz
+[2023-04-22 23:07:20] INFO root fetch - processPackages [aiogram-forms]: Downloading https://files.pythonhosted.org/packages/60/12/f49c95efb1dbadeae5a8700f5603943febbbcac22e76e1fb58ff63f1f940/aiogram_forms-1.1.0.tar.gz
+[2023-04-22 23:07:20] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 23:07:20] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.0.0.tar.gz tmp/foursight_core-4.1.0.4b17.tar.gz --markdown 20230422/f/foursight-core/4.0.0-4.1.0.4b17/diff.md --exclude *.pyd
+[2023-04-22 23:07:21] INFO root fetch - processPackages [arkdata]: Downloading https://files.pythonhosted.org/packages/e5/0b/f5903b60f8a156c500f95835c46526626b399c8c6256779e594d22bd1010/arkdata-1.0.8.tar.gz
+[2023-04-22 23:07:21] INFO root fetch - processPackages [arkdata]: Downloading https://files.pythonhosted.org/packages/e5/0b/f5903b60f8a156c500f95835c46526626b399c8c6256779e594d22bd1010/arkdata-1.0.8.tar.gz
+[2023-04-22 23:07:21] INFO root fetch - processPackages [arkdata]: executing diffoscope
+[2023-04-22 23:07:21] INFO root fetch - processPackages [arkdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkdata-1.0.7.tar.gz tmp/arkdata-1.0.8.tar.gz --markdown 20230422/a/arkdata/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-22 23:07:21] INFO root fetch - processPackages [arkdata]: executing diffoscope
+[2023-04-22 23:07:21] INFO root fetch - processPackages [arkdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkdata-1.0.7.tar.gz tmp/arkdata-1.0.8.tar.gz --markdown 20230422/a/arkdata/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-22 23:07:21] INFO root fetch - processPackages [tkutils]: Downloading https://files.pythonhosted.org/packages/49/99/b64d11a7f8cc545fc79e7c7705f87d68ba954c148d1683fe84b55e787529/tkutils-1.1.0.tar.gz
+[2023-04-22 23:07:21] INFO root fetch - processPackages [aiogram-forms]: Downloading https://files.pythonhosted.org/packages/55/06/670b4bb3444af5614dc4088f9533a6962049e5f94752eca3199737e1c06e/aiogram_forms-1.1.1.tar.gz
+[2023-04-22 23:07:21] INFO root fetch - processPackages [tkutils]: executing diffoscope
+[2023-04-22 23:07:21] INFO root fetch - processPackages [tkutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkutils-1.0.0.tar.gz tmp/tkutils-1.1.0.tar.gz --markdown 20230422/t/tkutils/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-22 23:07:21] INFO root fetch - processPackages [aiogram-forms]: executing diffoscope
+[2023-04-22 23:07:21] INFO root fetch - processPackages [aiogram-forms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram_forms-1.1.0.tar.gz tmp/aiogram_forms-1.1.1.tar.gz --markdown 20230422/a/aiogram-forms/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-22 23:07:21] INFO root fetch - main [MainThread]: End processing [github-issue-extractor]: success
+[2023-04-22 23:07:22] INFO root fetch - main [MainThread]: End processing [tkutils]: success
+[2023-04-22 23:07:22] INFO root fetch - main [MainThread]: End processing [aiogram-forms]: success
+[2023-04-22 23:07:23] INFO root fetch - main [MainThread]: End processing [arkdata]: success
+[2023-04-22 23:07:24] INFO root fetch - main [MainThread]: End processing [arkdata]: success
+[2023-04-22 23:07:36] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 23:07:36] INFO root fetch - main [MainThread]: Store serial: [17817132]
