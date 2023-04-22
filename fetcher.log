@@ -11788,3 +11788,65 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 19:07:35] INFO root fetch - main [MainThread]: End processing [esv-api-samhaswon]: success
 [2023-04-22 19:07:37] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
 [2023-04-22 19:07:37] INFO root fetch - main [MainThread]: Store serial: [17816063]
+[2023-04-22 19:12:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816063]
+[2023-04-22 19:12:45] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-22 19:12:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fgo-api-types
+[2023-04-22 19:12:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-project-structure
+[2023-04-22 19:12:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: custom-chat-gpt
+[2023-04-22 19:12:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-scopes
+[2023-04-22 19:12:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gokyuzu
+[2023-04-22 19:12:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: QuNet
+[2023-04-22 19:12:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xkey
+[2023-04-22 19:12:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: py-Ayra
+[2023-04-22 19:12:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dbxconfig
+[2023-04-22 19:12:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: raypyc
+[2023-04-22 19:12:45] INFO root fetch - processPackages [django-scopes]: New version: [2.0.0] Old Version: [1.2.0.post1]
+[2023-04-22 19:12:45] INFO root fetch - processPackages [dbxconfig]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-04-22 19:12:45] WARNING root fetch - processPackages [xkey]: Skipping, unable to determine old version
+[2023-04-22 19:12:45] INFO root fetch - processPackages [gokyuzu]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-22 19:12:45] INFO root fetch - processPackages [QuNet]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-22 19:12:45] INFO root fetch - main [MainThread]: End processing [xkey] error
+[2023-04-22 19:12:45] INFO root fetch - processPackages [custom-chat-gpt]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-22 19:12:45] INFO root fetch - processPackages [python-project-structure]: New version: [0.8.9b7] Old Version: [0.8.9b0]
+[2023-04-22 19:12:45] INFO root fetch - processPackages [py-Ayra]: New version: [8.2.5] Old Version: [7.9.0]
+[2023-04-22 19:12:45] INFO root fetch - processPackages [fgo-api-types]: New version: [2023.4.22.17.7.38] Old Version: [2023.4.1.4.0.49]
+[2023-04-22 19:12:45] INFO root fetch - processPackages [raypyc]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-22 19:12:46] INFO root fetch - processPackages [gokyuzu]: Downloading https://files.pythonhosted.org/packages/5b/79/0c0cd0096a5f9c6cfc8dc5a659375292f64f8392a44d93f8e94c443eb077/gokyuzu-0.0.6.tar.gz
+[2023-04-22 19:12:46] INFO root fetch - processPackages [QuNet]: Downloading https://files.pythonhosted.org/packages/dd/ff/d52ef4f3702badb2b965ed11d28efa922877afe48d7211f5b389e5d704d6/QuNet-0.0.8-py3-none-any.whl
+[2023-04-22 19:12:46] INFO root fetch - processPackages [dbxconfig]: Downloading https://files.pythonhosted.org/packages/35/4f/e994ca02f00f2b63fed070a84fab6f31ae5e599ac2208822a9b6055c0239/dbxconfig-2.0.4.tar.gz
+[2023-04-22 19:12:46] INFO root fetch - processPackages [custom-chat-gpt]: Downloading https://files.pythonhosted.org/packages/63/07/82fddf85f16eb7eec1a2a05ac95cab04299166f010959e1a2e4e86d20aa3/custom_chat_gpt-0.2.2.tar.gz
+[2023-04-22 19:12:46] INFO root fetch - processPackages [fgo-api-types]: Downloading https://files.pythonhosted.org/packages/23/52/55c1cbdfd2bf6449e23fa71f158cd06cee70cf397c6e62f892766725743a/fgo_api_types-2023.4.1.4.0.49.tar.gz
+[2023-04-22 19:12:46] INFO root fetch - processPackages [django-scopes]: Downloading https://files.pythonhosted.org/packages/ee/74/27dcae7cdd9eecbd9c9c0f2e410a72f183dd73fbd2c6efb5a247f31154be/django-scopes-1.2.0.post1.tar.gz
+[2023-04-22 19:12:46] INFO root fetch - processPackages [raypyc]: Downloading https://files.pythonhosted.org/packages/17/09/fdb0fab9d1d6ca48f58d6576cdfc24596319d72b783b9369601d967e1184/raypyc-0.1.7.tar.gz
+[2023-04-22 19:12:46] INFO root fetch - processPackages [QuNet]: executing diffoscope
+[2023-04-22 19:12:46] INFO root fetch - processPackages [QuNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuNet-0.0.7-py3-none-any.whl.zip tmp/QuNet-0.0.8-py3-none-any.whl.zip --markdown 20230422/Q/QuNet/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-22 19:12:46] INFO root fetch - processPackages [py-Ayra]: Downloading https://files.pythonhosted.org/packages/8f/5f/fcb3b3c560ffc1cc1fa74afdc58d718c08f2f6770b1cc170fac3af60661d/py-Ayra-8.2.5.tar.gz
+[2023-04-22 19:12:46] INFO root fetch - processPackages [custom-chat-gpt]: executing diffoscope
+[2023-04-22 19:12:46] INFO root fetch - processPackages [custom-chat-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom_chat_gpt-0.2.1.tar.gz tmp/custom_chat_gpt-0.2.2.tar.gz --markdown 20230422/c/custom-chat-gpt/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-22 19:12:46] INFO root fetch - processPackages [dbxconfig]: executing diffoscope
+[2023-04-22 19:12:46] INFO root fetch - processPackages [dbxconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbxconfig-2.0.3.tar.gz tmp/dbxconfig-2.0.4.tar.gz --markdown 20230422/d/dbxconfig/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-04-22 19:12:46] INFO root fetch - processPackages [gokyuzu]: executing diffoscope
+[2023-04-22 19:12:46] INFO root fetch - processPackages [gokyuzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gokyuzu-0.0.5.tar.gz tmp/gokyuzu-0.0.6.tar.gz --markdown 20230422/g/gokyuzu/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-22 19:12:46] INFO root fetch - processPackages [py-Ayra]: executing diffoscope
+[2023-04-22 19:12:46] INFO root fetch - processPackages [py-Ayra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-Ayra-7.9.0.tar.gz tmp/py-Ayra-8.2.5.tar.gz --markdown 20230422/p/py-Ayra/7.9.0-8.2.5/diff.md --exclude *.pyd
+[2023-04-22 19:12:46] INFO root fetch - processPackages [python-project-structure]: executing diffoscope
+[2023-04-22 19:12:46] INFO root fetch - processPackages [python-project-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-project-structure-0.8.9b0.tar.gz tmp/python-project-structure-0.8.9b7.tar.gz --markdown 20230422/p/python-project-structure/0.8.9b0-0.8.9b7/diff.md --exclude *.pyd
+[2023-04-22 19:12:46] INFO root fetch - processPackages [fgo-api-types]: Downloading https://files.pythonhosted.org/packages/9c/4b/37141eac0b402750e973320b1ab2109838cff233bc48889fa69479d291f0/fgo_api_types-2023.4.22.17.7.38.tar.gz
+[2023-04-22 19:12:46] INFO root fetch - processPackages [django-scopes]: Downloading https://files.pythonhosted.org/packages/a5/d7/a26ccb685b64e8e0b21f107b01ea16636a899a380175fe29d7c01d3d8395/django-scopes-2.0.0.tar.gz
+[2023-04-22 19:12:46] INFO root fetch - processPackages [fgo-api-types]: executing diffoscope
+[2023-04-22 19:12:46] INFO root fetch - processPackages [fgo-api-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fgo_api_types-2023.4.1.4.0.49.tar.gz tmp/fgo_api_types-2023.4.22.17.7.38.tar.gz --markdown 20230422/f/fgo-api-types/2023.4.1.4.0.49-2023.4.22.17.7.38/diff.md --exclude *.pyd
+[2023-04-22 19:12:46] INFO root fetch - processPackages [django-scopes]: executing diffoscope
+[2023-04-22 19:12:46] INFO root fetch - processPackages [django-scopes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-scopes-1.2.0.post1.tar.gz tmp/django-scopes-2.0.0.tar.gz --markdown 20230422/d/django-scopes/1.2.0.post1-2.0.0/diff.md --exclude *.pyd
+[2023-04-22 19:12:46] INFO root fetch - processPackages [raypyc]: Downloading https://files.pythonhosted.org/packages/bb/7c/69b3e9a1f13e2eb314b894b69f60adad55fb1a98a841822c9315e6ef86ad/raypyc-0.1.8.tar.gz
+[2023-04-22 19:12:46] INFO root fetch - processPackages [raypyc]: executing diffoscope
+[2023-04-22 19:12:46] INFO root fetch - processPackages [raypyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raypyc-0.1.7.tar.gz tmp/raypyc-0.1.8.tar.gz --markdown 20230422/r/raypyc/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-22 19:12:47] INFO root fetch - main [MainThread]: End processing [QuNet]: success
+[2023-04-22 19:12:47] INFO root fetch - main [MainThread]: End processing [gokyuzu]: success
+[2023-04-22 19:12:47] INFO root fetch - main [MainThread]: End processing [custom-chat-gpt]: success
+[2023-04-22 19:12:47] INFO root fetch - main [MainThread]: End processing [dbxconfig]: success
+[2023-04-22 19:12:48] INFO root fetch - main [MainThread]: End processing [django-scopes]: success
+[2023-04-22 19:12:49] INFO root fetch - main [MainThread]: End processing [fgo-api-types]: success
+[2023-04-22 19:12:49] INFO root fetch - main [MainThread]: End processing [python-project-structure]: success
+[2023-04-22 19:12:50] INFO root fetch - main [MainThread]: End processing [py-Ayra]: success
+[2023-04-22 19:13:11] INFO root fetch - main [MainThread]: End processing [raypyc]: success
+[2023-04-22 19:13:11] INFO root fetch - main [MainThread]: Store serial: [17816094]
