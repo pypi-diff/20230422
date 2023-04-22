@@ -12203,3 +12203,55 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 19:54:59] INFO root fetch - processPackages [pkgdev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkgdev-0.2.4.tar.gz tmp/pkgdev-0.2.5.tar.gz --markdown 20230422/p/pkgdev/0.2.4-0.2.5/diff.md --exclude *.pyd
 [2023-04-22 19:55:01] INFO root fetch - main [MainThread]: End processing [pkgdev]: success
 [2023-04-22 19:55:01] INFO root fetch - main [MainThread]: Store serial: [17816294]
+[2023-04-22 20:00:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816294]
+[2023-04-22 20:00:10] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 20:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ox-script
+[2023-04-22 20:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-purecrypt
+[2023-04-22 20:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-models-connect
+[2023-04-22 20:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-object-safety
+[2023-04-22 20:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ForgePy
+[2023-04-22 20:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sunvox-dll-python
+[2023-04-22 20:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pytest-tmux
+[2023-04-22 20:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: py-purecrypt
+[2023-04-22 20:00:10] INFO root fetch - processPackages [odoo-models-connect]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-22 20:00:10] INFO root fetch - processPackages [py-purecrypt]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-04-22 20:00:10] INFO root fetch - processPackages [ForgePy]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-22 20:00:10] INFO root fetch - processPackages [py-purecrypt]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-04-22 20:00:10] INFO root fetch - processPackages [django-object-safety]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 20:00:10] INFO root fetch - processPackages [sunvox-dll-python]: New version: [0.3.5.2.1.0.3] Old Version: [0.3.4.2.1.0.2]
+[2023-04-22 20:00:10] INFO root fetch - processPackages [pytest-tmux]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-22 20:00:10] WARNING root fetch - processPackages [ox-script]: Skipping, unable to determine old version
+[2023-04-22 20:00:10] INFO root fetch - main [MainThread]: End processing [ox-script] error
+[2023-04-22 20:00:10] INFO root fetch - processPackages [odoo-models-connect]: executing diffoscope
+[2023-04-22 20:00:10] INFO root fetch - processPackages [odoo-models-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_models_connect-0.1.7.tar.gz tmp/odoo_models_connect-0.1.8.tar.gz --markdown 20230422/o/odoo-models-connect/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-22 20:00:10] INFO root fetch - processPackages [django-object-safety]: Downloading https://files.pythonhosted.org/packages/d2/41/25bde3bc924f728655082da3328fd96b2e006b15869ba1b2b564d9befa2e/django_object_safety-0.1.0.tar.gz
+[2023-04-22 20:00:10] INFO root fetch - processPackages [py-purecrypt]: Downloading https://files.pythonhosted.org/packages/ce/a3/ead662714cdb6ef4c40b2d55c5e6b131afe739a2d8717223963b5693a9a8/py-purecrypt-0.0.0.tar.gz
+[2023-04-22 20:00:10] INFO root fetch - processPackages [py-purecrypt]: Downloading https://files.pythonhosted.org/packages/ce/a3/ead662714cdb6ef4c40b2d55c5e6b131afe739a2d8717223963b5693a9a8/py-purecrypt-0.0.0.tar.gz
+[2023-04-22 20:00:10] INFO root fetch - processPackages [ForgePy]: Downloading https://files.pythonhosted.org/packages/d6/18/4e7b647fce6813501f6eb354aba710c94029c18033f0a2aee906ee62bc92/ForgePy-1.0.2.tar.gz
+[2023-04-22 20:00:10] INFO root fetch - processPackages [pytest-tmux]: Downloading https://files.pythonhosted.org/packages/f4/e3/c23e8257f2f1d92f048e3b1cd31a0088a99372be35802ff31e1a9181ab2a/pytest_tmux-0.0.3.tar.gz
+[2023-04-22 20:00:10] INFO root fetch - processPackages [sunvox-dll-python]: Downloading https://files.pythonhosted.org/packages/62/ad/34904fe266538d52320fd45344a1824ea081806711860cb32dd96ef422c2/sunvox_dll_python-0.3.4.2.1.0.2.tar.gz
+[2023-04-22 20:00:10] INFO root fetch - processPackages [ForgePy]: executing diffoscope
+[2023-04-22 20:00:10] INFO root fetch - processPackages [ForgePy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ForgePy-1.0.1.tar.gz tmp/ForgePy-1.0.2.tar.gz --markdown 20230422/F/ForgePy/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-22 20:00:10] INFO root fetch - processPackages [py-purecrypt]: Downloading https://files.pythonhosted.org/packages/d3/2a/fa3b9ef910ea347c63c3ccae6f9b7e7a74bafb95bacf94c6a9779feb0971/py-purecrypt-0.0.1.tar.gz
+[2023-04-22 20:00:10] INFO root fetch - processPackages [py-purecrypt]: Downloading https://files.pythonhosted.org/packages/d3/2a/fa3b9ef910ea347c63c3ccae6f9b7e7a74bafb95bacf94c6a9779feb0971/py-purecrypt-0.0.1.tar.gz
+[2023-04-22 20:00:10] INFO root fetch - processPackages [py-purecrypt]: executing diffoscope
+[2023-04-22 20:00:10] INFO root fetch - processPackages [py-purecrypt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-purecrypt-0.0.0.tar.gz tmp/py-purecrypt-0.0.1.tar.gz --markdown 20230422/p/py-purecrypt/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-04-22 20:00:10] INFO root fetch - processPackages [py-purecrypt]: executing diffoscope
+[2023-04-22 20:00:10] INFO root fetch - processPackages [py-purecrypt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-purecrypt-0.0.0.tar.gz tmp/py-purecrypt-0.0.1.tar.gz --markdown 20230422/p/py-purecrypt/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-04-22 20:00:10] INFO root fetch - processPackages [pytest-tmux]: Downloading https://files.pythonhosted.org/packages/2c/79/96555d649c2785bc3d57eb959f737fb8d9beaa2701ecc05f2a7d38470b04/pytest_tmux-0.0.4.tar.gz
+[2023-04-22 20:00:10] INFO root fetch - processPackages [pytest-tmux]: executing diffoscope
+[2023-04-22 20:00:10] INFO root fetch - processPackages [pytest-tmux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_tmux-0.0.3.tar.gz tmp/pytest_tmux-0.0.4.tar.gz --markdown 20230422/p/pytest-tmux/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-22 20:00:10] INFO root fetch - processPackages [django-object-safety]: Downloading https://files.pythonhosted.org/packages/6c/77/529cb1d26a4ab47dac7f047c7eadddace2493f1fbf8592a35d029db030e3/django_object_safety-0.1.1.tar.gz
+[2023-04-22 20:00:10] INFO root fetch - processPackages [django-object-safety]: executing diffoscope
+[2023-04-22 20:00:10] INFO root fetch - processPackages [django-object-safety]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_object_safety-0.1.0.tar.gz tmp/django_object_safety-0.1.1.tar.gz --markdown 20230422/d/django-object-safety/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 20:00:10] INFO root fetch - processPackages [sunvox-dll-python]: Downloading https://files.pythonhosted.org/packages/a0/b9/2a09c1f8ad13ba63b875d5d9cb5178a34ab9cda40be305040dfa11cd18ed/sunvox_dll_python-0.3.5.2.1.0.3.tar.gz
+[2023-04-22 20:00:11] INFO root fetch - processPackages [sunvox-dll-python]: executing diffoscope
+[2023-04-22 20:00:11] INFO root fetch - processPackages [sunvox-dll-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sunvox_dll_python-0.3.4.2.1.0.2.tar.gz tmp/sunvox_dll_python-0.3.5.2.1.0.3.tar.gz --markdown 20230422/s/sunvox-dll-python/0.3.4.2.1.0.2-0.3.5.2.1.0.3/diff.md --exclude *.pyd
+[2023-04-22 20:00:11] INFO root fetch - main [MainThread]: End processing [odoo-models-connect]: success
+[2023-04-22 20:00:11] INFO root fetch - main [MainThread]: End processing [ForgePy]: success
+[2023-04-22 20:00:11] INFO root fetch - main [MainThread]: End processing [py-purecrypt]: success
+[2023-04-22 20:00:11] INFO root fetch - main [MainThread]: End processing [py-purecrypt]: success
+[2023-04-22 20:00:11] INFO root fetch - main [MainThread]: End processing [django-object-safety]: success
+[2023-04-22 20:00:12] INFO root fetch - main [MainThread]: End processing [pytest-tmux]: success
+[2023-04-22 20:00:35] INFO root fetch - main [MainThread]: End processing [sunvox-dll-python]: success
+[2023-04-22 20:00:35] INFO root fetch - main [MainThread]: Store serial: [17816320]
