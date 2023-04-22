@@ -4044,3 +4044,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 04:16:38] INFO root fetch - main [MainThread]: End processing [fluxrpc]: success
 [2023-04-22 04:16:38] INFO root fetch - main [MainThread]: End processing [scimap]: success
 [2023-04-22 04:16:38] INFO root fetch - main [MainThread]: Store serial: [17811600]
+[2023-04-22 04:21:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811600]
+[2023-04-22 04:21:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-22 04:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fluxrpc
+[2023-04-22 04:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fluxvault
+[2023-04-22 04:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spark-sql-to-sqlite
+[2023-04-22 04:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aioqzone
+[2023-04-22 04:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vellum-ai
+[2023-04-22 04:21:46] INFO root fetch - processPackages [spark-sql-to-sqlite]: New version: [0.7] Old Version: [0.6]
+[2023-04-22 04:21:46] INFO root fetch - processPackages [fluxrpc]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 04:21:46] INFO root fetch - processPackages [fluxvault]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 04:21:47] INFO root fetch - processPackages [fluxvault]: executing diffoscope
+[2023-04-22 04:21:47] INFO root fetch - processPackages [fluxvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxvault-0.9.8.tar.gz tmp/fluxvault-0.9.9.tar.gz --markdown 20230422/f/fluxvault/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 04:21:47] INFO root fetch - processPackages [aioqzone]: New version: [0.9.9.dev3] Old Version: [0.9.9.dev2]
+[2023-04-22 04:21:47] INFO root fetch - processPackages [fluxrpc]: executing diffoscope
+[2023-04-22 04:21:47] WARNING root fetch - processPackages [vellum-ai]: Skipping, unable to determine old version
+[2023-04-22 04:21:47] INFO root fetch - processPackages [fluxrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxrpc-0.9.8.tar.gz tmp/fluxrpc-0.9.9.tar.gz --markdown 20230422/f/fluxrpc/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 04:21:47] INFO root fetch - main [MainThread]: End processing [vellum-ai] error
+[2023-04-22 04:21:47] INFO root fetch - processPackages [spark-sql-to-sqlite]: Downloading https://files.pythonhosted.org/packages/5e/10/59f844aa399f2b323c028b9f069498d57e8bd5f77e2cebba82e2463c0556/spark_sql_to_sqlite-0.7.tar.gz
+[2023-04-22 04:21:47] INFO root fetch - processPackages [spark-sql-to-sqlite]: executing diffoscope
+[2023-04-22 04:21:47] INFO root fetch - processPackages [spark-sql-to-sqlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spark_sql_to_sqlite-0.6.tar.gz tmp/spark_sql_to_sqlite-0.7.tar.gz --markdown 20230422/s/spark-sql-to-sqlite/0.6-0.7/diff.md --exclude *.pyd
+[2023-04-22 04:21:47] INFO root fetch - processPackages [aioqzone]: executing diffoscope
+[2023-04-22 04:21:47] INFO root fetch - processPackages [aioqzone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioqzone-0.9.9.dev2.tar.gz tmp/aioqzone-0.9.9.dev3.tar.gz --markdown 20230422/a/aioqzone/0.9.9.dev2-0.9.9.dev3/diff.md --exclude *.pyd
+[2023-04-22 04:21:48] INFO root fetch - main [MainThread]: End processing [fluxrpc]: success
+[2023-04-22 04:21:48] INFO root fetch - main [MainThread]: End processing [fluxvault]: success
+[2023-04-22 04:21:48] INFO root fetch - main [MainThread]: End processing [spark-sql-to-sqlite]: success
+[2023-04-22 04:21:48] INFO root fetch - main [MainThread]: End processing [aioqzone]: success
+[2023-04-22 04:21:48] INFO root fetch - main [MainThread]: Store serial: [17811616]
