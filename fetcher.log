@@ -7194,3 +7194,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 10:31:27] INFO root fetch - main [MainThread]: End processing [piknik]: success
 [2023-04-22 10:31:43] INFO root fetch - main [MainThread]: End processing [piknik]: success
 [2023-04-22 10:31:43] INFO root fetch - main [MainThread]: Store serial: [17813304]
+[2023-04-22 10:36:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813304]
+[2023-04-22 10:36:51] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 10:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mdid
+[2023-04-22 10:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plugwise-usb
+[2023-04-22 10:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shunting-yard
+[2023-04-22 10:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scSAMP
+[2023-04-22 10:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastadmin
+[2023-04-22 10:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: AISimuToolKit
+[2023-04-22 10:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aliendev-cdk
+[2023-04-22 10:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: utran
+[2023-04-22 10:36:51] INFO root fetch - processPackages [mdid]: New version: [3.7.6] Old Version: [3.7.5]
+[2023-04-22 10:36:51] INFO root fetch - processPackages [plugwise-usb]: New version: [0.31.0a4] Old Version: [0.31.0a3]
+[2023-04-22 10:36:51] INFO root fetch - processPackages [aliendev-cdk]: New version: [0.1.32] Old Version: [0.1.31]
+[2023-04-22 10:36:51] WARNING root fetch - processPackages [AISimuToolKit]: Skipping, unable to determine old version
+[2023-04-22 10:36:51] INFO root fetch - main [MainThread]: End processing [AISimuToolKit] error
+[2023-04-22 10:36:51] INFO root fetch - processPackages [utran]: New version: [1.1.0] Old Version: [1.0.3]
+[2023-04-22 10:36:51] WARNING root fetch - processPackages [scSAMP]: Skipping, unable to determine old version
+[2023-04-22 10:36:51] INFO root fetch - processPackages [shunting-yard]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-22 10:36:51] INFO root fetch - main [MainThread]: End processing [scSAMP] error
+[2023-04-22 10:36:51] INFO root fetch - processPackages [fastadmin]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-22 10:36:52] INFO root fetch - processPackages [shunting-yard]: executing diffoscope
+[2023-04-22 10:36:52] INFO root fetch - processPackages [shunting-yard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shunting-yard-1.0.8.tar.gz tmp/shunting-yard-1.0.9.tar.gz --markdown 20230422/s/shunting-yard/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-22 10:36:52] INFO root fetch - processPackages [utran]: Downloading https://files.pythonhosted.org/packages/53/b4/4d6f440d3d6ab1a8da5a9b540f25c4703a9d36c1a58582d57a4d0bff0b25/utran-1.0.3-py3-none-any.whl
+[2023-04-22 10:36:52] INFO root fetch - processPackages [mdid]: Downloading https://files.pythonhosted.org/packages/79/de/e60dea640caeb423f69f1105fec7a7163c78a924f1ccbf399b57e781a7c2/mdid-3.7.5-py3-none-any.whl
+[2023-04-22 10:36:52] INFO root fetch - processPackages [plugwise-usb]: executing diffoscope
+[2023-04-22 10:36:52] INFO root fetch - processPackages [plugwise-usb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plugwise_usb-0.31.0a3.tar.gz tmp/plugwise_usb-0.31.0a4.tar.gz --markdown 20230422/p/plugwise-usb/0.31.0a3-0.31.0a4/diff.md --exclude *.pyd
+[2023-04-22 10:36:52] INFO root fetch - processPackages [aliendev-cdk]: Downloading https://files.pythonhosted.org/packages/a0/e5/a3686fc3fd2f3042bab65badac0447c1f80fcddbda6293a8820513d134d2/aliendev_cdk-0.1.32.tar.gz
+[2023-04-22 10:36:52] INFO root fetch - processPackages [fastadmin]: executing diffoscope
+[2023-04-22 10:36:52] INFO root fetch - processPackages [fastadmin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastadmin-0.1.6.tar.gz tmp/fastadmin-0.1.7.tar.gz --markdown 20230422/f/fastadmin/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-22 10:36:52] INFO root fetch - processPackages [aliendev-cdk]: executing diffoscope
+[2023-04-22 10:36:52] INFO root fetch - processPackages [aliendev-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliendev_cdk-0.1.31.tar.gz tmp/aliendev_cdk-0.1.32.tar.gz --markdown 20230422/a/aliendev-cdk/0.1.31-0.1.32/diff.md --exclude *.pyd
+[2023-04-22 10:36:52] INFO root fetch - processPackages [utran]: Downloading https://files.pythonhosted.org/packages/5f/55/566f2c8c6f599034ea7be0657d90b0cc35a3341ebe4af57c29ea80fb9b80/utran-1.1.0-py3-none-any.whl
+[2023-04-22 10:36:52] INFO root fetch - processPackages [utran]: executing diffoscope
+[2023-04-22 10:36:52] INFO root fetch - processPackages [utran]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utran-1.0.3-py3-none-any.whl.zip tmp/utran-1.1.0-py3-none-any.whl.zip --markdown 20230422/u/utran/1.0.3-1.1.0/diff.md --exclude *.pyd
+[2023-04-22 10:36:52] WARNING root fetch - processPackages [mdid]: Skipping package: exceeds size limit 15736966>=10485760
+[2023-04-22 10:36:52] INFO root fetch - main [MainThread]: End processing [mdid] error
+[2023-04-22 10:36:53] INFO root fetch - main [MainThread]: End processing [shunting-yard]: success
+[2023-04-22 10:36:53] INFO root fetch - main [MainThread]: End processing [aliendev-cdk]: success
+[2023-04-22 10:36:53] INFO root fetch - main [MainThread]: End processing [plugwise-usb]: success
+[2023-04-22 10:36:53] INFO root fetch - main [MainThread]: End processing [utran]: success
+[2023-04-22 10:39:15] INFO root fetch - main [MainThread]: End processing [fastadmin]: success
+[2023-04-22 10:39:15] INFO root fetch - main [MainThread]: Store serial: [17813332]
