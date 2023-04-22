@@ -9884,3 +9884,49 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 16:00:16] INFO root fetch - main [MainThread]: End processing [plone.app.standardtiles]: success
 [2023-04-22 16:00:16] INFO root fetch - main [MainThread]: End processing [signify]: success
 [2023-04-22 16:00:16] INFO root fetch - main [MainThread]: Store serial: [17814909]
+[2023-04-22 16:05:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814909]
+[2023-04-22 16:05:26] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 16:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stormcatchments
+[2023-04-22 16:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: digitize
+[2023-04-22 16:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: df-config
+[2023-04-22 16:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: df-websockets
+[2023-04-22 16:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kweb
+[2023-04-22 16:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ezstools
+[2023-04-22 16:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alphaz
+[2023-04-22 16:05:26] INFO root fetch - processPackages [df-config]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-22 16:05:26] INFO root fetch - processPackages [stormcatchments]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-04-22 16:05:26] INFO root fetch - processPackages [alphaz]: New version: [0.7.5.5] Old Version: [0.7.5.4]
+[2023-04-22 16:05:26] INFO root fetch - processPackages [digitize]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-22 16:05:26] INFO root fetch - processPackages [ezstools]: New version: [2.5.1] Old Version: [2.5]
+[2023-04-22 16:05:26] INFO root fetch - processPackages [kweb]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-22 16:05:26] INFO root fetch - processPackages [df-websockets]: New version: [1.0.1] Old Version: [1.0.0b1]
+[2023-04-22 16:05:27] INFO root fetch - processPackages [alphaz]: executing diffoscope
+[2023-04-22 16:05:27] INFO root fetch - processPackages [alphaz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphaz-0.7.5.4.tar.gz tmp/alphaz-0.7.5.5.tar.gz --markdown 20230422/a/alphaz/0.7.5.4-0.7.5.5/diff.md --exclude *.pyd
+[2023-04-22 16:05:27] INFO root fetch - processPackages [df-config]: executing diffoscope
+[2023-04-22 16:05:27] INFO root fetch - processPackages [df-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/df_config-1.1.8.tar.gz tmp/df_config-1.1.9.tar.gz --markdown 20230422/d/df-config/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-22 16:05:27] INFO root fetch - processPackages [ezstools]: Downloading https://files.pythonhosted.org/packages/ac/ba/84bd6e61629679cde0fe380c80988cba9dc6d0a22ac05ea8c2dcb2cf2646/ezstools-2.5.1.tar.gz
+[2023-04-22 16:05:27] INFO root fetch - processPackages [stormcatchments]: Downloading https://files.pythonhosted.org/packages/15/86/fa5808227c7059fbde32463c22694c6a9ce9df676c52a483b7384b56040f/stormcatchments-0.3.1.tar.gz
+[2023-04-22 16:05:27] INFO root fetch - processPackages [digitize]: Downloading https://files.pythonhosted.org/packages/38/40/789fc2269db99379990bf0768bf22f0430870d26ed75aa2338e7f0614b8e/digitize-1.1.1.tar.gz
+[2023-04-22 16:05:27] INFO root fetch - processPackages [kweb]: Downloading https://files.pythonhosted.org/packages/ba/4c/e4f5fd216f1f5e3e58859a04fc1872db4048fce796f2da7c35afaab92749/kweb-0.0.9.tar.gz
+[2023-04-22 16:05:27] INFO root fetch - processPackages [df-websockets]: Downloading https://files.pythonhosted.org/packages/ba/31/1730adcab0961ab0b980e10b14a6ef1854f8368ae529a3796c8ab9d974da/df_websockets-1.0.0b1.tar.gz
+[2023-04-22 16:05:27] INFO root fetch - processPackages [digitize]: executing diffoscope
+[2023-04-22 16:05:27] INFO root fetch - processPackages [digitize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitize-1.1.0.tar.gz tmp/digitize-1.1.1.tar.gz --markdown 20230422/d/digitize/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-22 16:05:27] INFO root fetch - processPackages [ezstools]: executing diffoscope
+[2023-04-22 16:05:27] INFO root fetch - processPackages [ezstools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezstools-2.5.tar.gz tmp/ezstools-2.5.1.tar.gz --markdown 20230422/e/ezstools/2.5-2.5.1/diff.md --exclude *.pyd
+[2023-04-22 16:05:27] INFO root fetch - processPackages [kweb]: Downloading https://files.pythonhosted.org/packages/6f/ca/f3848343f4754b04f0f4c1700c7c7d0d4178931ad1e8cfbc350508037029/kweb-0.1.0.tar.gz
+[2023-04-22 16:05:27] INFO root fetch - processPackages [df-websockets]: Downloading https://files.pythonhosted.org/packages/87/62/bc9e70a2231b88f61f59d2e5d1111caf1145facc2a45ad3da17fdbd098d4/df_websockets-1.0.1.tar.gz
+[2023-04-22 16:05:27] INFO root fetch - processPackages [kweb]: executing diffoscope
+[2023-04-22 16:05:27] INFO root fetch - processPackages [kweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kweb-0.0.9.tar.gz tmp/kweb-0.1.0.tar.gz --markdown 20230422/k/kweb/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-22 16:05:27] INFO root fetch - processPackages [df-websockets]: executing diffoscope
+[2023-04-22 16:05:27] INFO root fetch - processPackages [df-websockets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/df_websockets-1.0.0b1.tar.gz tmp/df_websockets-1.0.1.tar.gz --markdown 20230422/d/df-websockets/1.0.0b1-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 16:05:28] INFO root fetch - processPackages [stormcatchments]: Downloading https://files.pythonhosted.org/packages/a1/df/780b33f4077619a86cf9ac1c0df4d4c0611d5a730b95c11332eada0af0b3/stormcatchments-0.4.0.tar.gz
+[2023-04-22 16:05:28] INFO root fetch - processPackages [stormcatchments]: executing diffoscope
+[2023-04-22 16:05:28] INFO root fetch - processPackages [stormcatchments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stormcatchments-0.3.1.tar.gz tmp/stormcatchments-0.4.0.tar.gz --markdown 20230422/s/stormcatchments/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-04-22 16:05:28] INFO root fetch - main [MainThread]: End processing [ezstools]: success
+[2023-04-22 16:05:28] INFO root fetch - main [MainThread]: End processing [digitize]: success
+[2023-04-22 16:05:28] INFO root fetch - main [MainThread]: End processing [df-config]: success
+[2023-04-22 16:05:29] INFO root fetch - main [MainThread]: End processing [kweb]: success
+[2023-04-22 16:05:30] INFO root fetch - main [MainThread]: End processing [stormcatchments]: success
+[2023-04-22 16:05:31] INFO root fetch - main [MainThread]: End processing [alphaz]: success
+[2023-04-22 16:05:43] INFO root fetch - main [MainThread]: End processing [df-websockets]: success
+[2023-04-22 16:05:43] INFO root fetch - main [MainThread]: Store serial: [17814931]
