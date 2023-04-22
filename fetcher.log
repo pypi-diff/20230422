@@ -12191,3 +12191,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 19:49:48] INFO root fetch - main [MainThread]: End processing [py-Ayra]: success
 [2023-04-22 19:49:50] INFO root fetch - main [MainThread]: End processing [itkwasm]: success
 [2023-04-22 19:49:50] INFO root fetch - main [MainThread]: Store serial: [17816285]
+[2023-04-22 19:54:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816285]
+[2023-04-22 19:54:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-22 19:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easybio
+[2023-04-22 19:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pkgdev
+[2023-04-22 19:54:58] WARNING root fetch - processPackages [easybio]: Skipping, unable to determine old version
+[2023-04-22 19:54:58] INFO root fetch - main [MainThread]: End processing [easybio] error
+[2023-04-22 19:54:58] INFO root fetch - processPackages [pkgdev]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-22 19:54:59] INFO root fetch - processPackages [pkgdev]: Downloading https://files.pythonhosted.org/packages/0b/97/6503795e0fd14c16cc4c4ab5e471d05fbfbec2a61c1dcd188cafddbb93a1/pkgdev-0.2.4.tar.gz
+[2023-04-22 19:54:59] INFO root fetch - processPackages [pkgdev]: executing diffoscope
+[2023-04-22 19:54:59] INFO root fetch - processPackages [pkgdev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkgdev-0.2.4.tar.gz tmp/pkgdev-0.2.5.tar.gz --markdown 20230422/p/pkgdev/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-22 19:55:01] INFO root fetch - main [MainThread]: End processing [pkgdev]: success
+[2023-04-22 19:55:01] INFO root fetch - main [MainThread]: Store serial: [17816294]
