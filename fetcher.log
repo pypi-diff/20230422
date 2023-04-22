@@ -3748,3 +3748,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 03:32:38] INFO root fetch - main [MainThread]: End processing [rewards-api]: success
 [2023-04-22 03:33:46] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2023-04-22 03:33:46] INFO root fetch - main [MainThread]: Store serial: [17811342]
+[2023-04-22 03:38:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811342]
+[2023-04-22 03:38:56] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-22 03:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flarespy
+[2023-04-22 03:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-lambda-layer-wget
+[2023-04-22 03:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coredis
+[2023-04-22 03:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torrent-hound
+[2023-04-22 03:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbdev-numpy
+[2023-04-22 03:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: FunnyNumbers
+[2023-04-22 03:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nbdev-pandas
+[2023-04-22 03:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: robloxpython
+[2023-04-22 03:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dkist-data-simulator
+[2023-04-22 03:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nbdev-pytorch
+[2023-04-22 03:38:56] INFO root fetch - processPackages [dkist-data-simulator]: New version: [3.1.5rc1] Old Version: [3.1.4]
+[2023-04-22 03:38:56] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 03:38:56] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 03:38:56] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 03:38:56] INFO root fetch - processPackages [torrent-hound]: New version: [2.0.1] Old Version: [2.0]
+[2023-04-22 03:38:56] WARNING root fetch - processPackages [FunnyNumbers]: Skipping, unable to determine old version
+[2023-04-22 03:38:56] INFO root fetch - processPackages [FunnyNumbers]: Start processing: nbdev-scipy
+[2023-04-22 03:38:56] INFO root fetch - main [MainThread]: End processing [FunnyNumbers] error
+[2023-04-22 03:38:56] WARNING root fetch - processPackages [robloxpython]: Skipping, unable to determine old version
+[2023-04-22 03:38:56] INFO root fetch - processPackages [flarespy]: New version: [0.8.3] Old Version: [0.8.2]
+[2023-04-22 03:38:56] INFO root fetch - main [MainThread]: End processing [robloxpython] error
+[2023-04-22 03:38:56] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-22 03:38:56] INFO root fetch - processPackages [coredis]: New version: [4.9.0] Old Version: [4.8.3]
+[2023-04-22 03:38:56] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-04-22 03:38:56] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230422/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 03:38:56] INFO root fetch - processPackages [dkist-data-simulator]: executing diffoscope
+[2023-04-22 03:38:56] INFO root fetch - processPackages [dkist-data-simulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkist_data_simulator-3.1.4.tar.gz tmp/dkist_data_simulator-3.1.5rc1.tar.gz --markdown 20230422/d/dkist-data-simulator/3.1.4-3.1.5rc1/diff.md --exclude *.pyd
+[2023-04-22 03:38:57] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 03:38:57] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-04-22 03:38:57] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230422/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 03:38:57] INFO root fetch - processPackages [flarespy]: Downloading https://files.pythonhosted.org/packages/f4/d3/2e4fadb4a7c46af76f6808f3665814d66378593bdbd33d959562bcbd817f/flarespy-0.8.2.tar.gz
+[2023-04-22 03:38:57] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-04-22 03:38:57] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230422/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 03:38:57] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-04-22 03:38:57] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230422/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 03:38:57] INFO root fetch - processPackages [torrent-hound]: Downloading https://files.pythonhosted.org/packages/b9/00/c1bfb2323afcbf70832312c1994e7cfc7e73edd0096dc9bd3e06bc1dfcf9/torrent-hound-2.0.1.tar.gz
+[2023-04-22 03:38:57] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-04-22 03:38:57] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230422/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-22 03:38:57] INFO root fetch - processPackages [torrent-hound]: executing diffoscope
+[2023-04-22 03:38:57] INFO root fetch - processPackages [torrent-hound]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torrent-hound-2.0.tar.gz tmp/torrent-hound-2.0.1.tar.gz --markdown 20230422/t/torrent-hound/2.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-22 03:38:57] INFO root fetch - processPackages [flarespy]: Downloading https://files.pythonhosted.org/packages/73/5a/d9397f6f7bbe35aff2139a82cc1210cf0e8486bcd23f71cc93ab6a69a312/flarespy-0.8.3.tar.gz
+[2023-04-22 03:38:57] INFO root fetch - processPackages [coredis]: executing diffoscope
+[2023-04-22 03:38:57] INFO root fetch - processPackages [coredis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coredis-4.8.3.tar.gz tmp/coredis-4.9.0.tar.gz --markdown 20230422/c/coredis/4.8.3-4.9.0/diff.md --exclude *.pyd
+[2023-04-22 03:38:57] INFO root fetch - processPackages [flarespy]: executing diffoscope
+[2023-04-22 03:38:57] INFO root fetch - processPackages [flarespy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flarespy-0.8.2.tar.gz tmp/flarespy-0.8.3.tar.gz --markdown 20230422/f/flarespy/0.8.2-0.8.3/diff.md --exclude *.pyd
+[2023-04-22 03:38:58] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-04-22 03:38:58] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-04-22 03:38:58] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-04-22 03:38:58] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-04-22 03:38:58] INFO root fetch - main [MainThread]: End processing [torrent-hound]: success
+[2023-04-22 03:38:58] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-04-22 03:38:59] INFO root fetch - main [MainThread]: End processing [dkist-data-simulator]: success
+[2023-04-22 03:38:59] INFO root fetch - main [MainThread]: End processing [coredis]: success
+[2023-04-22 03:39:00] INFO root fetch - main [MainThread]: End processing [flarespy]: success
+[2023-04-22 03:39:00] INFO root fetch - main [MainThread]: Store serial: [17811450]
