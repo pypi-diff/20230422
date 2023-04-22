@@ -12412,3 +12412,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 20:21:58] INFO root fetch - processPackages [types-setuptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-setuptools-67.6.0.8.tar.gz tmp/types-setuptools-67.7.0.0.tar.gz --markdown 20230422/t/types-setuptools/67.6.0.8-67.7.0.0/diff.md --exclude *.pyd
 [2023-04-22 20:21:59] INFO root fetch - main [MainThread]: End processing [types-setuptools]: success
 [2023-04-22 20:21:59] INFO root fetch - main [MainThread]: Store serial: [17816392]
+[2023-04-22 20:27:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816392]
+[2023-04-22 20:27:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 20:27:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coar
+[2023-04-22 20:27:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotdl
+[2023-04-22 20:27:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-Ayra
+[2023-04-22 20:27:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pystarshade
+[2023-04-22 20:27:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-models-connect
+[2023-04-22 20:27:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: firepup650
+[2023-04-22 20:27:08] WARNING root fetch - processPackages [coar]: Skipping, unable to determine old version
+[2023-04-22 20:27:08] INFO root fetch - main [MainThread]: End processing [coar] error
+[2023-04-22 20:27:08] INFO root fetch - processPackages [firepup650]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-22 20:27:08] INFO root fetch - processPackages [odoo-models-connect]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-22 20:27:08] INFO root fetch - processPackages [spotdl]: New version: [4.1.7] Old Version: [4.1.6]
+[2023-04-22 20:27:08] INFO root fetch - processPackages [py-Ayra]: New version: [8.2.7] Old Version: [8.2.6]
+[2023-04-22 20:27:08] WARNING root fetch - processPackages [pystarshade]: Skipping, unable to determine old version
+[2023-04-22 20:27:08] INFO root fetch - main [MainThread]: End processing [pystarshade] error
+[2023-04-22 20:27:08] INFO root fetch - processPackages [odoo-models-connect]: executing diffoscope
+[2023-04-22 20:27:08] INFO root fetch - processPackages [odoo-models-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_models_connect-0.1.7.tar.gz tmp/odoo_models_connect-0.1.8.tar.gz --markdown 20230422/o/odoo-models-connect/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-22 20:27:08] INFO root fetch - processPackages [spotdl]: Downloading https://files.pythonhosted.org/packages/6a/c2/0eeadd499603d70e35b8f2ce60bc790d7650302b6075dac4ab5717a1a41b/spotdl-4.1.6.tar.gz
+[2023-04-22 20:27:08] INFO root fetch - processPackages [py-Ayra]: Downloading https://files.pythonhosted.org/packages/a6/e0/eb4d8a0d3c287ae869b3c7369122b14f47cb2fbaf73613f74f8e6ab59687/py-Ayra-8.2.7.tar.gz
+[2023-04-22 20:27:08] INFO root fetch - processPackages [firepup650]: Downloading https://files.pythonhosted.org/packages/20/6e/272a8834dd4f80893b2fb79cced99fd8a49f4f0820ce42dc5e9f56fe1593/firepup650-1.0.5.tar.gz
+[2023-04-22 20:27:08] INFO root fetch - processPackages [py-Ayra]: executing diffoscope
+[2023-04-22 20:27:08] INFO root fetch - processPackages [firepup650]: executing diffoscope
+[2023-04-22 20:27:08] INFO root fetch - processPackages [py-Ayra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-Ayra-8.2.6.tar.gz tmp/py-Ayra-8.2.7.tar.gz --markdown 20230422/p/py-Ayra/8.2.6-8.2.7/diff.md --exclude *.pyd
+[2023-04-22 20:27:08] INFO root fetch - processPackages [firepup650]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firepup650-1.0.4.tar.gz tmp/firepup650-1.0.5.tar.gz --markdown 20230422/f/firepup650/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-22 20:27:08] INFO root fetch - processPackages [spotdl]: Downloading https://files.pythonhosted.org/packages/14/b7/b1e54747d111f98a8d73a730d5eca162e051da892b5d36f47d9abde9ce38/spotdl-4.1.7.tar.gz
+[2023-04-22 20:27:08] INFO root fetch - processPackages [spotdl]: executing diffoscope
+[2023-04-22 20:27:08] INFO root fetch - processPackages [spotdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotdl-4.1.6.tar.gz tmp/spotdl-4.1.7.tar.gz --markdown 20230422/s/spotdl/4.1.6-4.1.7/diff.md --exclude *.pyd
+[2023-04-22 20:27:09] INFO root fetch - main [MainThread]: End processing [odoo-models-connect]: success
+[2023-04-22 20:27:09] INFO root fetch - main [MainThread]: End processing [firepup650]: success
+[2023-04-22 20:27:10] INFO root fetch - main [MainThread]: End processing [py-Ayra]: success
+[2023-04-22 20:27:10] INFO root fetch - main [MainThread]: End processing [spotdl]: success
+[2023-04-22 20:27:10] INFO root fetch - main [MainThread]: Store serial: [17816414]
