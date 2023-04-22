@@ -10898,3 +10898,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 17:37:16] INFO root fetch - main [MainThread]: End processing [pyunifiprotect]: success
 [2023-04-22 17:37:29] INFO root fetch - main [MainThread]: End processing [nuvo-serial]: success
 [2023-04-22 17:37:29] INFO root fetch - main [MainThread]: Store serial: [17815484]
+[2023-04-22 17:42:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815484]
+[2023-04-22 17:42:38] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-22 17:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bioframe
+[2023-04-22 17:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: herojson
+[2023-04-22 17:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gpodder-export
+[2023-04-22 17:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gpodder-exporter
+[2023-04-22 17:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jupyter-cache
+[2023-04-22 17:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mlog-arithmetic-runner
+[2023-04-22 17:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pybliometrics
+[2023-04-22 17:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: xhs
+[2023-04-22 17:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pynecone-debounce-input
+[2023-04-22 17:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: blender-plots
+[2023-04-22 17:42:38] WARNING root fetch - processPackages [gpodder-export]: Skipping, unable to determine old version
+[2023-04-22 17:42:38] INFO root fetch - main [MainThread]: End processing [gpodder-export] error
+[2023-04-22 17:42:38] WARNING root fetch - processPackages [gpodder-exporter]: Skipping, unable to determine old version
+[2023-04-22 17:42:38] INFO root fetch - processPackages [bioframe]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-22 17:42:38] INFO root fetch - main [MainThread]: End processing [gpodder-exporter] error
+[2023-04-22 17:42:38] INFO root fetch - processPackages [mlog-arithmetic-runner]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-22 17:42:38] INFO root fetch - processPackages [jupyter-cache]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-22 17:42:38] INFO root fetch - processPackages [xhs]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-22 17:42:38] INFO root fetch - processPackages [pybliometrics]: New version: [3.5.2] Old Version: [3.5.1]
+[2023-04-22 17:42:38] WARNING root fetch - processPackages [herojson]: Skipping, unable to determine old version
+[2023-04-22 17:42:38] INFO root fetch - main [MainThread]: End processing [herojson] error
+[2023-04-22 17:42:38] WARNING root fetch - processPackages [blender-plots]: Skipping, unable to determine old version
+[2023-04-22 17:42:38] INFO root fetch - main [MainThread]: End processing [blender-plots] error
+[2023-04-22 17:42:38] WARNING root fetch - processPackages [pynecone-debounce-input]: Skipping, unable to determine old version
+[2023-04-22 17:42:38] INFO root fetch - main [MainThread]: End processing [pynecone-debounce-input] error
+[2023-04-22 17:42:38] INFO root fetch - processPackages [bioframe]: Downloading https://files.pythonhosted.org/packages/e6/cf/79bf3c4b96840729fd01211b52ad104dd5f8a2d99ad547a0c1c52c53e3ed/bioframe-0.4.0.tar.gz
+[2023-04-22 17:42:38] INFO root fetch - processPackages [pybliometrics]: Downloading https://files.pythonhosted.org/packages/6f/0e/b6ee0e8fae172ff0735f8cb24944a6f3f3621d2d0d45bb67eaf2db7826da/pybliometrics-3.5.1.tar.gz
+[2023-04-22 17:42:38] INFO root fetch - processPackages [mlog-arithmetic-runner]: Downloading https://files.pythonhosted.org/packages/31/09/19c14804fc0f3257928579632d6afa3decbc09501c30150b5dd5c8cb0973/mlog_arithmetic_runner-0.0.4-py3-none-any.whl
+[2023-04-22 17:42:39] INFO root fetch - processPackages [xhs]: Downloading https://files.pythonhosted.org/packages/da/72/007f52c79774d921d1c4cfb97e8b22fac748fe2412e8216e32bf6a02c58b/xhs-0.1.4.tar.gz
+[2023-04-22 17:42:39] INFO root fetch - processPackages [jupyter-cache]: Downloading https://files.pythonhosted.org/packages/69/64/08dcc1f6fc54a263525edd23b5d2754793470c1c41a8dd82d52406f8d876/jupyter-cache-0.6.1.tar.gz
+[2023-04-22 17:42:39] INFO root fetch - processPackages [jupyter-cache]: executing diffoscope
+[2023-04-22 17:42:39] INFO root fetch - processPackages [jupyter-cache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter-cache-0.6.0.tar.gz tmp/jupyter-cache-0.6.1.tar.gz --markdown 20230422/j/jupyter-cache/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-22 17:42:39] INFO root fetch - processPackages [bioframe]: Downloading https://files.pythonhosted.org/packages/28/30/aa3177c68a55c5e14e1dfa7a57c959fab8b41c7521e4d9f492a86b904534/bioframe-0.4.1.tar.gz
+[2023-04-22 17:42:39] INFO root fetch - processPackages [xhs]: executing diffoscope
+[2023-04-22 17:42:39] INFO root fetch - processPackages [xhs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xhs-0.1.3.tar.gz tmp/xhs-0.1.4.tar.gz --markdown 20230422/x/xhs/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-22 17:42:39] INFO root fetch - processPackages [bioframe]: executing diffoscope
+[2023-04-22 17:42:39] INFO root fetch - processPackages [bioframe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioframe-0.4.0.tar.gz tmp/bioframe-0.4.1.tar.gz --markdown 20230422/b/bioframe/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-22 17:42:39] INFO root fetch - processPackages [mlog-arithmetic-runner]: Downloading https://files.pythonhosted.org/packages/f0/69/5279508d79a4c727f025a666a44ddbd270a411feac57d4d8b5bfa96124fa/mlog_arithmetic_runner-0.0.5-py3-none-any.whl
+[2023-04-22 17:42:39] INFO root fetch - processPackages [pybliometrics]: Downloading https://files.pythonhosted.org/packages/98/da/7d7f2977299a1700bf21ab57f93abb6b95e439f31fa95d1440e8933a9cd6/pybliometrics-3.5.2.tar.gz
+[2023-04-22 17:42:39] INFO root fetch - processPackages [mlog-arithmetic-runner]: executing diffoscope
+[2023-04-22 17:42:39] INFO root fetch - processPackages [mlog-arithmetic-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlog_arithmetic_runner-0.0.4-py3-none-any.whl.zip tmp/mlog_arithmetic_runner-0.0.5-py3-none-any.whl.zip --markdown 20230422/m/mlog-arithmetic-runner/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-22 17:42:39] INFO root fetch - processPackages [pybliometrics]: executing diffoscope
+[2023-04-22 17:42:39] INFO root fetch - processPackages [pybliometrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybliometrics-3.5.1.tar.gz tmp/pybliometrics-3.5.2.tar.gz --markdown 20230422/p/pybliometrics/3.5.1-3.5.2/diff.md --exclude *.pyd
+[2023-04-22 17:42:40] INFO root fetch - main [MainThread]: End processing [xhs]: success
+[2023-04-22 17:42:40] INFO root fetch - main [MainThread]: End processing [jupyter-cache]: success
+[2023-04-22 17:42:40] INFO root fetch - main [MainThread]: End processing [bioframe]: success
+[2023-04-22 17:42:40] INFO root fetch - main [MainThread]: End processing [mlog-arithmetic-runner]: success
+[2023-04-22 17:42:41] INFO root fetch - main [MainThread]: End processing [pybliometrics]: success
+[2023-04-22 17:42:41] INFO root fetch - main [MainThread]: Store serial: [17815522]
