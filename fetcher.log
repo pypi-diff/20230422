@@ -6475,3 +6475,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 09:07:26] INFO root fetch - main [MainThread]: End processing [html2notion]: success
 [2023-04-22 09:07:26] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
 [2023-04-22 09:07:26] INFO root fetch - main [MainThread]: Store serial: [17812870]
+[2023-04-22 09:12:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812870]
+[2023-04-22 09:12:35] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 09:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-can-zlg-kerneldlls
+[2023-04-22 09:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-can-zlg
+[2023-04-22 09:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyrew
+[2023-04-22 09:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ctypestoast
+[2023-04-22 09:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: copier-template-tester
+[2023-04-22 09:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: transaction-accounts
+[2023-04-22 09:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tf-models-nightly
+[2023-04-22 09:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo12-addon-stock-cycle-count
+[2023-04-22 09:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gpt3discord
+[2023-04-22 09:12:35] INFO root fetch - processPackages [copier-template-tester]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-04-22 09:12:35] INFO root fetch - processPackages [pyrew]: New version: [0.7.0] Old Version: [0.6.3]
+[2023-04-22 09:12:35] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2023-04-22 09:12:35] INFO root fetch - processPackages [transaction-accounts]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 09:12:35] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2023-04-22 09:12:35] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20230422/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/diff.md --exclude *.pyd
+[2023-04-22 09:12:35] WARNING root fetch - processPackages [python-can-zlg-kerneldlls]: Skipping, unable to determine old version
+[2023-04-22 09:12:35] INFO root fetch - main [MainThread]: End processing [python-can-zlg-kerneldlls] error
+[2023-04-22 09:12:35] INFO root fetch - processPackages [copier-template-tester]: executing diffoscope
+[2023-04-22 09:12:35] INFO root fetch - processPackages [copier-template-tester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copier_template_tester-1.0.2.tar.gz tmp/copier_template_tester-1.1.0.tar.gz --markdown 20230422/c/copier-template-tester/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-04-22 09:12:35] WARNING root fetch - processPackages [ctypestoast]: Skipping, unable to determine old version
+[2023-04-22 09:12:35] INFO root fetch - processPackages [transaction-accounts]: executing diffoscope
+[2023-04-22 09:12:35] INFO root fetch - processPackages [transaction-accounts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transaction-accounts-0.0.1.tar.gz tmp/transaction-accounts-0.0.2.tar.gz --markdown 20230422/t/transaction-accounts/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 09:12:35] INFO root fetch - main [MainThread]: End processing [ctypestoast] error
+[2023-04-22 09:12:35] INFO root fetch - processPackages [gpt3discord]: New version: [9.1] Old Version: [9.0.4]
+[2023-04-22 09:12:35] INFO root fetch - processPackages [odoo12-addon-stock-cycle-count]: New version: [12.0.1.1.1.99.dev9] Old Version: [12.0.1.1.1.99.dev8]
+[2023-04-22 09:12:35] WARNING root fetch - processPackages [python-can-zlg]: Skipping, unable to determine old version
+[2023-04-22 09:12:35] INFO root fetch - main [MainThread]: End processing [python-can-zlg] error
+[2023-04-22 09:12:35] INFO root fetch - processPackages [pyrew]: Downloading https://files.pythonhosted.org/packages/a6/78/535b9824730436540c18d8f15f3fdd664120f0910fc705da76f8003c2cbf/pyrew-0.7.0.tar.gz
+[2023-04-22 09:12:35] INFO root fetch - processPackages [pyrew]: executing diffoscope
+[2023-04-22 09:12:35] INFO root fetch - processPackages [pyrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrew-0.6.3.tar.gz tmp/pyrew-0.7.0.tar.gz --markdown 20230422/p/pyrew/0.6.3-0.7.0/diff.md --exclude *.pyd
+[2023-04-22 09:12:36] INFO root fetch - processPackages [odoo12-addon-stock-cycle-count]: Downloading https://files.pythonhosted.org/packages/32/11/99fd9f8aa355ba5088cb3133b63a6dd88754671b56d8b0f9af7be3d8c29a/odoo12_addon_stock_cycle_count-12.0.1.1.1.99.dev9-py3-none-any.whl
+[2023-04-22 09:12:36] INFO root fetch - processPackages [gpt3discord]: executing diffoscope
+[2023-04-22 09:12:36] INFO root fetch - processPackages [gpt3discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt3discord-9.0.4.tar.gz tmp/gpt3discord-9.1.tar.gz --markdown 20230422/g/gpt3discord/9.0.4-9.1/diff.md --exclude *.pyd
+[2023-04-22 09:12:36] INFO root fetch - processPackages [odoo12-addon-stock-cycle-count]: executing diffoscope
+[2023-04-22 09:12:36] INFO root fetch - processPackages [odoo12-addon-stock-cycle-count]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_stock_cycle_count-12.0.1.1.1.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_stock_cycle_count-12.0.1.1.1.99.dev9-py3-none-any.whl.zip --markdown 20230422/o/odoo12-addon-stock-cycle-count/12.0.1.1.1.99.dev8-12.0.1.1.1.99.dev9/diff.md --exclude *.pyd
+[2023-04-22 09:12:36] INFO root fetch - main [MainThread]: End processing [copier-template-tester]: success
+[2023-04-22 09:12:36] INFO root fetch - main [MainThread]: End processing [transaction-accounts]: success
+[2023-04-22 09:12:37] INFO root fetch - main [MainThread]: End processing [pyrew]: success
+[2023-04-22 09:12:38] INFO root fetch - main [MainThread]: End processing [odoo12-addon-stock-cycle-count]: success
+[2023-04-22 09:12:38] INFO root fetch - main [MainThread]: End processing [gpt3discord]: success
+[2023-04-22 09:12:48] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2023-04-22 09:12:48] INFO root fetch - main [MainThread]: Store serial: [17812898]
