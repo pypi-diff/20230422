@@ -10097,3 +10097,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 16:26:46] INFO root fetch - main [MainThread]: End processing [openai-forward]: success
 [2023-04-22 16:26:48] INFO root fetch - main [MainThread]: End processing [RIFT]: success
 [2023-04-22 16:26:48] INFO root fetch - main [MainThread]: Store serial: [17815029]
+[2023-04-22 16:31:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815029]
+[2023-04-22 16:31:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 16:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: omglinegraphs
+[2023-04-22 16:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: publiczpt
+[2023-04-22 16:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: copier-template-tester
+[2023-04-22 16:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nakuru-project-test2
+[2023-04-22 16:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: binooculars
+[2023-04-22 16:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-plugin-talk-with-chatgpt
+[2023-04-22 16:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: argcomplete
+[2023-04-22 16:31:57] WARNING root fetch - processPackages [nakuru-project-test2]: Skipping, unable to determine old version
+[2023-04-22 16:31:57] INFO root fetch - main [MainThread]: End processing [nakuru-project-test2] error
+[2023-04-22 16:31:57] WARNING root fetch - processPackages [omglinegraphs]: Skipping, unable to determine old version
+[2023-04-22 16:31:57] INFO root fetch - main [MainThread]: End processing [omglinegraphs] error
+[2023-04-22 16:31:57] INFO root fetch - processPackages [binooculars]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 16:31:57] INFO root fetch - processPackages [copier-template-tester]: New version: [1.2.0rc1] Old Version: [1.2.0rc0]
+[2023-04-22 16:31:57] WARNING root fetch - processPackages [publiczpt]: Skipping, unable to determine old version
+[2023-04-22 16:31:57] INFO root fetch - main [MainThread]: End processing [publiczpt] error
+[2023-04-22 16:31:57] INFO root fetch - processPackages [nonebot-plugin-talk-with-chatgpt]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-22 16:31:57] INFO root fetch - processPackages [argcomplete]: New version: [3.0.6] Old Version: [3.0.5]
+[2023-04-22 16:31:57] INFO root fetch - processPackages [copier-template-tester]: executing diffoscope
+[2023-04-22 16:31:57] INFO root fetch - processPackages [copier-template-tester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copier_template_tester-1.2.0rc0.tar.gz tmp/copier_template_tester-1.2.0rc1.tar.gz --markdown 20230422/c/copier-template-tester/1.2.0rc0-1.2.0rc1/diff.md --exclude *.pyd
+[2023-04-22 16:31:57] INFO root fetch - processPackages [binooculars]: Downloading https://files.pythonhosted.org/packages/68/5f/4a1e085e55107fc243a6a7f7e44620b564cb02fcbb8471ed83023c17a54f/binooculars-0.0.1.tar.gz
+[2023-04-22 16:31:57] INFO root fetch - processPackages [argcomplete]: Downloading https://files.pythonhosted.org/packages/9d/50/e5b3e9824a387920c4b92870359c9f7dbf21a6cd6d3dff5bf4fd3b50237a/argcomplete-3.0.5.tar.gz
+[2023-04-22 16:31:57] INFO root fetch - processPackages [nonebot-plugin-talk-with-chatgpt]: Downloading https://files.pythonhosted.org/packages/d6/3d/138902682a2e6d8c628e6b823c9c0edcc42b91d773516569d6e1a2fcd84b/nonebot_plugin_talk_with_chatgpt-0.4.1.tar.gz
+[2023-04-22 16:31:57] INFO root fetch - processPackages [binooculars]: Downloading https://files.pythonhosted.org/packages/b4/b5/d112269cb8c5cc6f98a1697bc3ce01783a0942c4be71c526232bc45881cf/binooculars-0.0.2.tar.gz
+[2023-04-22 16:31:57] INFO root fetch - processPackages [binooculars]: executing diffoscope
+[2023-04-22 16:31:57] INFO root fetch - processPackages [binooculars]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binooculars-0.0.1.tar.gz tmp/binooculars-0.0.2.tar.gz --markdown 20230422/b/binooculars/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 16:31:57] INFO root fetch - processPackages [argcomplete]: Downloading https://files.pythonhosted.org/packages/6e/5b/9eae020dad132502efdb51408ba8a5b21afedcb738a98a307c6bfc21aaa8/argcomplete-3.0.6.tar.gz
+[2023-04-22 16:31:57] INFO root fetch - processPackages [nonebot-plugin-talk-with-chatgpt]: executing diffoscope
+[2023-04-22 16:31:57] INFO root fetch - processPackages [nonebot-plugin-talk-with-chatgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_talk_with_chatgpt-0.4.0.tar.gz tmp/nonebot_plugin_talk_with_chatgpt-0.4.1.tar.gz --markdown 20230422/n/nonebot-plugin-talk-with-chatgpt/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-22 16:31:57] INFO root fetch - processPackages [argcomplete]: executing diffoscope
+[2023-04-22 16:31:57] INFO root fetch - processPackages [argcomplete]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argcomplete-3.0.5.tar.gz tmp/argcomplete-3.0.6.tar.gz --markdown 20230422/a/argcomplete/3.0.5-3.0.6/diff.md --exclude *.pyd
+[2023-04-22 16:31:58] INFO root fetch - main [MainThread]: End processing [copier-template-tester]: success
+[2023-04-22 16:31:58] INFO root fetch - main [MainThread]: End processing [binooculars]: success
+[2023-04-22 16:31:58] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-talk-with-chatgpt]: success
+[2023-04-22 16:31:58] INFO root fetch - main [MainThread]: End processing [argcomplete]: success
+[2023-04-22 16:31:58] INFO root fetch - main [MainThread]: Store serial: [17815054]
