@@ -4274,3 +4274,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 04:58:55] INFO root fetch - processPackages [poe-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poe_api-0.3.0-py3-none-any.whl.zip tmp/poe_api-0.3.1-py3-none-any.whl.zip --markdown 20230422/p/poe-api/0.3.0-0.3.1/diff.md --exclude *.pyd
 [2023-04-22 04:58:56] INFO root fetch - main [MainThread]: End processing [poe-api]: success
 [2023-04-22 04:58:56] INFO root fetch - main [MainThread]: Store serial: [17811740]
+[2023-04-22 05:04:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811740]
+[2023-04-22 05:04:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-22 05:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: volsite-postgres-common
+[2023-04-22 05:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydantic-br
+[2023-04-22 05:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-cowsay
+[2023-04-22 05:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: opvious
+[2023-04-22 05:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zerocs
+[2023-04-22 05:04:05] INFO root fetch - processPackages [opvious]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-22 05:04:05] WARNING root fetch - processPackages [zerocs]: Skipping, unable to determine old version
+[2023-04-22 05:04:05] INFO root fetch - main [MainThread]: End processing [zerocs] error
+[2023-04-22 05:04:05] INFO root fetch - processPackages [opvious]: executing diffoscope
+[2023-04-22 05:04:05] INFO root fetch - processPackages [opvious]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opvious-0.9.5.tar.gz tmp/opvious-0.9.6.tar.gz --markdown 20230422/o/opvious/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-22 05:04:05] INFO root fetch - processPackages [volsite-postgres-common]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 05:04:05] INFO root fetch - processPackages [pydantic-br]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-22 05:04:05] INFO root fetch - processPackages [python-cowsay]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-04-22 05:04:05] INFO root fetch - processPackages [volsite-postgres-common]: Downloading https://files.pythonhosted.org/packages/a9/48/ece41cdd1f36d5b821f07299b965387a375ef3ddd0556318e57ad9018c7c/volsite_postgres_common-0.1.8.tar.gz
+[2023-04-22 05:04:06] INFO root fetch - processPackages [python-cowsay]: Downloading https://files.pythonhosted.org/packages/fc/28/ecc84836bfdb7be6d3d47d5d3cc924f6ade388520fb528b3011d4c8489e8/python-cowsay-1.0.2.tar.gz
+[2023-04-22 05:04:06] INFO root fetch - processPackages [pydantic-br]: Downloading https://files.pythonhosted.org/packages/a7/2a/a7ba037f3e13323b6f66338b00234a91b5b5b8c49ab7ad70b3e8037064bb/pydantic_br-0.2.0.tar.gz
+[2023-04-22 05:04:06] INFO root fetch - processPackages [python-cowsay]: Downloading https://files.pythonhosted.org/packages/30/c1/7d3a8ad816682b65a36c707dbe2d3bcbc43e5d4eb5f3c6bd69a53462add6/python-cowsay-1.1.0.tar.gz
+[2023-04-22 05:04:06] INFO root fetch - processPackages [pydantic-br]: Downloading https://files.pythonhosted.org/packages/64/30/953f630c5f421cf257836df59d3325bcdce120158ad401909f168463f4d9/pydantic_br-0.3.0.tar.gz
+[2023-04-22 05:04:06] INFO root fetch - processPackages [volsite-postgres-common]: Downloading https://files.pythonhosted.org/packages/ff/03/668bfd84cd84ef92e37f65f495239d8be55d05abd92dc4bd35f340822fce/volsite_postgres_common-0.1.9.tar.gz
+[2023-04-22 05:04:06] INFO root fetch - processPackages [pydantic-br]: executing diffoscope
+[2023-04-22 05:04:06] INFO root fetch - processPackages [pydantic-br]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_br-0.2.0.tar.gz tmp/pydantic_br-0.3.0.tar.gz --markdown 20230422/p/pydantic-br/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-22 05:04:06] INFO root fetch - processPackages [volsite-postgres-common]: executing diffoscope
+[2023-04-22 05:04:06] INFO root fetch - processPackages [volsite-postgres-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/volsite_postgres_common-0.1.8.tar.gz tmp/volsite_postgres_common-0.1.9.tar.gz --markdown 20230422/v/volsite-postgres-common/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 05:04:06] INFO root fetch - processPackages [python-cowsay]: executing diffoscope
+[2023-04-22 05:04:06] INFO root fetch - processPackages [python-cowsay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-cowsay-1.0.2.tar.gz tmp/python-cowsay-1.1.0.tar.gz --markdown 20230422/p/python-cowsay/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-04-22 05:04:06] INFO root fetch - main [MainThread]: End processing [opvious]: success
+[2023-04-22 05:04:07] INFO root fetch - main [MainThread]: End processing [volsite-postgres-common]: success
+[2023-04-22 05:04:07] INFO root fetch - main [MainThread]: End processing [pydantic-br]: success
+[2023-04-22 05:04:07] INFO root fetch - main [MainThread]: End processing [python-cowsay]: success
+[2023-04-22 05:04:07] INFO root fetch - main [MainThread]: Store serial: [17811755]
