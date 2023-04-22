@@ -13276,3 +13276,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 22:24:51] INFO root fetch - main [MainThread]: End processing [botterino]: success
 [2023-04-22 22:24:51] INFO root fetch - main [MainThread]: End processing [openpy-dsse]: success
 [2023-04-22 22:24:51] INFO root fetch - main [MainThread]: Store serial: [17816902]
+[2023-04-22 22:29:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816902]
+[2023-04-22 22:30:00] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 22:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kiara-plugin.core-types
+[2023-04-22 22:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zdt
+[2023-04-22 22:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kiara-plugin.tabular
+[2023-04-22 22:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: proxy-protocol
+[2023-04-22 22:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ScriptCollection
+[2023-04-22 22:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: repelis-ver-john-wick-4-la-pelicula-pelicula-completa-en-espanol
+[2023-04-22 22:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sunsynk
+[2023-04-22 22:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kiara
+[2023-04-22 22:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: audio-extract
+[2023-04-22 22:30:00] INFO root fetch - processPackages [kiara-plugin.tabular]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-22 22:30:00] INFO root fetch - processPackages [zdt]: New version: [2.4] Old Version: [2.3]
+[2023-04-22 22:30:00] INFO root fetch - processPackages [kiara-plugin.core-types]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-22 22:30:00] INFO root fetch - processPackages [proxy-protocol]: New version: [0.9.1] Old Version: [0.9.0rc2]
+[2023-04-22 22:30:00] INFO root fetch - processPackages [kiara]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-22 22:30:00] WARNING root fetch - processPackages [audio-extract]: Skipping, unable to determine old version
+[2023-04-22 22:30:00] WARNING root fetch - processPackages [repelis-ver-john-wick-4-la-pelicula-pelicula-completa-en-espanol]: Skipping, unable to determine old version
+[2023-04-22 22:30:00] INFO root fetch - main [MainThread]: End processing [audio-extract] error
+[2023-04-22 22:30:00] INFO root fetch - main [MainThread]: End processing [repelis-ver-john-wick-4-la-pelicula-pelicula-completa-en-espanol] error
+[2023-04-22 22:30:00] INFO root fetch - processPackages [sunsynk]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-22 22:30:00] INFO root fetch - processPackages [ScriptCollection]: New version: [3.3.9] Old Version: [3.3.8]
+[2023-04-22 22:30:00] INFO root fetch - processPackages [zdt]: Downloading https://files.pythonhosted.org/packages/18/3f/6cc41032a67051db6ca25bbce3c0601de519f192b63bb44549b8a28eb68e/zdt-2.4.tar.gz
+[2023-04-22 22:30:00] INFO root fetch - processPackages [proxy-protocol]: Downloading https://files.pythonhosted.org/packages/08/43/4775be3e5335421b435e8515c509770916979dafe9a663fe30f49c9baca4/proxy-protocol-0.9.0rc2.tar.gz
+[2023-04-22 22:30:00] INFO root fetch - processPackages [kiara-plugin.tabular]: Downloading https://files.pythonhosted.org/packages/8e/e9/0b21e5742a9e2e4172b29f51badbd5646d0fd2f0448cec209a28211e4929/kiara_plugin.tabular-0.4.8.tar.gz
+[2023-04-22 22:30:00] INFO root fetch - processPackages [kiara-plugin.core-types]: Downloading https://files.pythonhosted.org/packages/85/9d/17baaf4f003e1ba435c113ae559f4682f336febc817bd7d60bb2b46f7d94/kiara_plugin.core_types-0.4.8.tar.gz
+[2023-04-22 22:30:01] INFO root fetch - processPackages [kiara]: Downloading https://files.pythonhosted.org/packages/3f/79/fa4e8a6826f113046ada93d9b667f72636d2aff88f86e3f02e892002926a/kiara-0.4.8.tar.gz
+[2023-04-22 22:30:01] INFO root fetch - processPackages [zdt]: executing diffoscope
+[2023-04-22 22:30:01] INFO root fetch - processPackages [zdt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zdt-2.3.tar.gz tmp/zdt-2.4.tar.gz --markdown 20230422/z/zdt/2.3-2.4/diff.md --exclude *.pyd
+[2023-04-22 22:30:01] INFO root fetch - processPackages [sunsynk]: Downloading https://files.pythonhosted.org/packages/38/09/fa768498d884d1cc3d4d54221c348a13cc29bffb0286757e5f83b8434018/sunsynk-0.3.3.tar.gz
+[2023-04-22 22:30:01] INFO root fetch - processPackages [ScriptCollection]: executing diffoscope
+[2023-04-22 22:30:01] INFO root fetch - processPackages [ScriptCollection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScriptCollection-3.3.8-py3-none-any.whl.zip tmp/ScriptCollection-3.3.9-py3-none-any.whl.zip --markdown 20230422/S/ScriptCollection/3.3.8-3.3.9/diff.md --exclude *.pyd
+[2023-04-22 22:30:01] INFO root fetch - processPackages [sunsynk]: executing diffoscope
+[2023-04-22 22:30:01] INFO root fetch - processPackages [sunsynk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sunsynk-0.3.2.tar.gz tmp/sunsynk-0.3.3.tar.gz --markdown 20230422/s/sunsynk/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-22 22:30:01] INFO root fetch - processPackages [kiara-plugin.tabular]: Downloading https://files.pythonhosted.org/packages/ea/e5/eb641d760e93d7cecc1d4c05801550ab0157d160fbd0c2f4c1d8d1026517/kiara_plugin.tabular-0.4.9.tar.gz
+[2023-04-22 22:30:01] INFO root fetch - processPackages [kiara-plugin.core-types]: Downloading https://files.pythonhosted.org/packages/53/28/62211b163a4c4e975b523f309e38fc7fe2f8a01b9e7f36fb830b012e09b7/kiara_plugin.core_types-0.4.9.tar.gz
+[2023-04-22 22:30:01] INFO root fetch - processPackages [proxy-protocol]: Downloading https://files.pythonhosted.org/packages/79/10/d039fadca5dfb9370262d5766b082cb4bafdf675935b1fed7b6d42fef532/proxy-protocol-0.9.1.tar.gz
+[2023-04-22 22:30:01] INFO root fetch - processPackages [kiara]: Downloading https://files.pythonhosted.org/packages/05/0e/69cf34a19959bde095398297ff33bcf2421ec3ddc0ae7bafe46183d25333/kiara-0.4.9.tar.gz
+[2023-04-22 22:30:01] INFO root fetch - processPackages [kiara-plugin.tabular]: executing diffoscope
+[2023-04-22 22:30:01] INFO root fetch - processPackages [kiara-plugin.tabular]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiara_plugin.tabular-0.4.8.tar.gz tmp/kiara_plugin.tabular-0.4.9.tar.gz --markdown 20230422/k/kiara-plugin.tabular/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-22 22:30:01] INFO root fetch - processPackages [proxy-protocol]: executing diffoscope
+[2023-04-22 22:30:01] INFO root fetch - processPackages [proxy-protocol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxy-protocol-0.9.0rc2.tar.gz tmp/proxy-protocol-0.9.1.tar.gz --markdown 20230422/p/proxy-protocol/0.9.0rc2-0.9.1/diff.md --exclude *.pyd
+[2023-04-22 22:30:01] INFO root fetch - processPackages [kiara-plugin.core-types]: executing diffoscope
+[2023-04-22 22:30:01] INFO root fetch - processPackages [kiara-plugin.core-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiara_plugin.core_types-0.4.8.tar.gz tmp/kiara_plugin.core_types-0.4.9.tar.gz --markdown 20230422/k/kiara-plugin.core-types/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-22 22:30:01] INFO root fetch - processPackages [kiara]: executing diffoscope
+[2023-04-22 22:30:01] INFO root fetch - processPackages [kiara]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiara-0.4.8.tar.gz tmp/kiara-0.4.9.tar.gz --markdown 20230422/k/kiara/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-22 22:30:02] INFO root fetch - main [MainThread]: End processing [zdt]: success
+[2023-04-22 22:30:02] INFO root fetch - main [MainThread]: End processing [ScriptCollection]: success
+[2023-04-22 22:30:02] INFO root fetch - main [MainThread]: End processing [sunsynk]: success
+[2023-04-22 22:30:03] INFO root fetch - main [MainThread]: End processing [kiara-plugin.tabular]: success
+[2023-04-22 22:30:04] INFO root fetch - main [MainThread]: End processing [proxy-protocol]: success
+[2023-04-22 22:30:04] INFO root fetch - main [MainThread]: End processing [kiara-plugin.core-types]: success
+[2023-04-22 22:30:04] INFO root fetch - main [MainThread]: End processing [kiara]: success
+[2023-04-22 22:30:04] INFO root fetch - main [MainThread]: Store serial: [17816937]
