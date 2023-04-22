@@ -4236,3 +4236,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 04:47:49] INFO root fetch - main [MainThread]: End processing [StringFix]: success
 [2023-04-22 04:48:33] INFO root fetch - main [MainThread]: End processing [modelscope]: success
 [2023-04-22 04:48:33] INFO root fetch - main [MainThread]: Store serial: [17811716]
+[2023-04-22 04:53:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811716]
+[2023-04-22 04:53:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 04:53:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rous
+[2023-04-22 04:53:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cocotbext-vidio
+[2023-04-22 04:53:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zerocs
+[2023-04-22 04:53:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: drf-remotejwt
+[2023-04-22 04:53:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: importlib-metadata
+[2023-04-22 04:53:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pypcapkit
+[2023-04-22 04:53:42] INFO root fetch - processPackages [importlib-metadata]: New version: [6.5.0] Old Version: [6.4.1]
+[2023-04-22 04:53:42] WARNING root fetch - processPackages [rous]: Skipping, unable to determine old version
+[2023-04-22 04:53:42] WARNING root fetch - processPackages [zerocs]: Skipping, unable to determine old version
+[2023-04-22 04:53:42] INFO root fetch - main [MainThread]: End processing [rous] error
+[2023-04-22 04:53:42] INFO root fetch - main [MainThread]: End processing [zerocs] error
+[2023-04-22 04:53:42] WARNING root fetch - processPackages [cocotbext-vidio]: Skipping, unable to determine old version
+[2023-04-22 04:53:42] INFO root fetch - main [MainThread]: End processing [cocotbext-vidio] error
+[2023-04-22 04:53:42] INFO root fetch - processPackages [drf-remotejwt]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-22 04:53:42] INFO root fetch - processPackages [pypcapkit]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-04-22 04:53:42] INFO root fetch - processPackages [pypcapkit]: executing diffoscope
+[2023-04-22 04:53:42] INFO root fetch - processPackages [pypcapkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypcapkit-1.0.0b8.tar.gz tmp/pypcapkit-1.0.0b9.tar.gz --markdown 20230422/p/pypcapkit/1.0.0b8-1.0.0b9/diff.md --exclude *.pyd
+[2023-04-22 04:53:42] INFO root fetch - processPackages [drf-remotejwt]: Downloading https://files.pythonhosted.org/packages/c7/c8/9c16ba8a1c842a4aa473298d4eaeeaef0468513311d8990154b4539f16c1/drf_remotejwt-0.0.3.tar.gz
+[2023-04-22 04:53:42] INFO root fetch - processPackages [importlib-metadata]: executing diffoscope
+[2023-04-22 04:53:42] INFO root fetch - processPackages [importlib-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/importlib_metadata-6.4.1.tar.gz tmp/importlib_metadata-6.5.0.tar.gz --markdown 20230422/i/importlib-metadata/6.4.1-6.5.0/diff.md --exclude *.pyd
+[2023-04-22 04:53:43] INFO root fetch - processPackages [drf-remotejwt]: Downloading https://files.pythonhosted.org/packages/b7/c3/55ced92e996c832f043d397293edc12d5cc2e14325aa3c46776228cfb1b3/drf_remotejwt-0.0.4-py3-none-any.whl
+[2023-04-22 04:53:43] INFO root fetch - processPackages [drf-remotejwt]: executing diffoscope
+[2023-04-22 04:53:43] INFO root fetch - processPackages [drf-remotejwt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_remotejwt-0.0.3.tar.gz tmp/drf_remotejwt-0.0.4-py3-none-any.whl.zip --markdown 20230422/d/drf-remotejwt/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-22 04:53:44] INFO root fetch - main [MainThread]: End processing [drf-remotejwt]: success
+[2023-04-22 04:53:44] INFO root fetch - main [MainThread]: End processing [importlib-metadata]: success
+[2023-04-22 04:53:46] INFO root fetch - main [MainThread]: End processing [pypcapkit]: success
+[2023-04-22 04:53:46] INFO root fetch - main [MainThread]: Store serial: [17811737]
