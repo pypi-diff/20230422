@@ -9274,3 +9274,110 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 15:05:48] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 15:07:02] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2023-04-22 15:07:02] INFO root fetch - main [MainThread]: Store serial: [17814582]
+[2023-04-22 15:12:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814582]
+[2023-04-22 15:12:23] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-22 15:12:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drummachine
+[2023-04-22 15:12:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: networkx-robustness
+[2023-04-22 15:12:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jsl-django-sitemap
+[2023-04-22 15:12:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysui
+[2023-04-22 15:12:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbdev-stdlib
+[2023-04-22 15:12:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sosin
+[2023-04-22 15:12:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bluetree-shopify-book
+[2023-04-22 15:12:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: featurizerai
+[2023-04-22 15:12:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nbdev-numpy
+[2023-04-22 15:12:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: collective.elastic.plone
+[2023-04-22 15:12:23] INFO root fetch - processPackages [drummachine]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 15:12:23] INFO root fetch - processPackages [pysui]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-22 15:12:23] WARNING root fetch - processPackages [networkx-robustness]: Skipping, unable to determine old version
+[2023-04-22 15:12:23] INFO root fetch - processPackages [networkx-robustness]: Start processing: nbdev-pandas
+[2023-04-22 15:12:23] INFO root fetch - main [MainThread]: End processing [networkx-robustness] error
+[2023-04-22 15:12:23] INFO root fetch - processPackages [jsl-django-sitemap]: New version: [1.2.4] Old Version: [1.2.0]
+[2023-04-22 15:12:23] INFO root fetch - processPackages [featurizerai]: New version: [1.3.6] Old Version: [1.3.5]
+[2023-04-22 15:12:23] INFO root fetch - processPackages [collective.elastic.plone]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-22 15:12:23] INFO root fetch - processPackages [bluetree-shopify-book]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-22 15:12:23] INFO root fetch - processPackages [sosin]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-22 15:12:23] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 15:12:23] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 15:12:23] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 15:12:23] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-04-22 15:12:23] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230422/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 15:12:24] INFO root fetch - processPackages [featurizerai]: Downloading https://files.pythonhosted.org/packages/16/36/12e6a26f871404febcd655bbceb7a2d62b210ee555077ff0239f5f012429/featurizerai-1.3.5.tar.gz
+[2023-04-22 15:12:24] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-04-22 15:12:24] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230422/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 15:12:24] INFO root fetch - processPackages [pysui]: Downloading https://files.pythonhosted.org/packages/df/fd/8060c20cdf32607400911d43fc627a8bf48fe7571dc1992ab190b3274d7b/pysui-0.8.0-py3-none-any.whl
+[2023-04-22 15:12:24] INFO root fetch - processPackages [drummachine]: Downloading https://files.pythonhosted.org/packages/09/33/634d0009b2cc9404e1d660811dbf0c3b5936aa3b5f564ff00a62d3cefde6/drummachine-0.0.1.tar.gz
+[2023-04-22 15:12:24] INFO root fetch - processPackages [collective.elastic.plone]: Downloading https://files.pythonhosted.org/packages/0d/58/afd9eae40174a897eb762c77c82da087f956fe8f5f74c9df06fcc560b4ac/collective.elastic.plone-1.1.2.tar.gz
+[2023-04-22 15:12:24] INFO root fetch - processPackages [bluetree-shopify-book]: Downloading https://files.pythonhosted.org/packages/cb/8f/e52901c2f0161512b60c0e9ed9ed7567fa7ec1598629a4ab9f9ce9f19acf/bluetree_shopify_book-0.2.2.tar.gz
+[2023-04-22 15:12:24] INFO root fetch - processPackages [jsl-django-sitemap]: Downloading https://files.pythonhosted.org/packages/07/05/e0d168b85a311d377e2fd86ccfc69728ff1bbce070d7e97c93be943ae15d/jsl_django_sitemap-1.2.4.tar.gz
+[2023-04-22 15:12:24] INFO root fetch - processPackages [jsl-django-sitemap]: executing diffoscope
+[2023-04-22 15:12:24] INFO root fetch - processPackages [jsl-django-sitemap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsl_django_sitemap-1.2.0.tar.gz tmp/jsl_django_sitemap-1.2.4.tar.gz --markdown 20230422/j/jsl-django-sitemap/1.2.0-1.2.4/diff.md --exclude *.pyd
+[2023-04-22 15:12:24] INFO root fetch - processPackages [sosin]: Downloading https://files.pythonhosted.org/packages/8a/95/95815a04fc8e25a1de4f718fc36ef4c87e23646d2c19acf4550eac9eb8db/sosin-1.0.2.tar.gz
+[2023-04-22 15:12:24] INFO root fetch - processPackages [featurizerai]: Downloading https://files.pythonhosted.org/packages/16/89/bf94bec17812acef08471ae2b8f8696fce4ddea93e2a5353aa0b627bda1b/featurizerai-1.3.6.tar.gz
+[2023-04-22 15:12:24] INFO root fetch - processPackages [sosin]: executing diffoscope
+[2023-04-22 15:12:24] INFO root fetch - processPackages [sosin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sosin-1.0.1.tar.gz tmp/sosin-1.0.2.tar.gz --markdown 20230422/s/sosin/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-22 15:12:24] INFO root fetch - processPackages [featurizerai]: executing diffoscope
+[2023-04-22 15:12:24] INFO root fetch - processPackages [featurizerai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featurizerai-1.3.5.tar.gz tmp/featurizerai-1.3.6.tar.gz --markdown 20230422/f/featurizerai/1.3.5-1.3.6/diff.md --exclude *.pyd
+[2023-04-22 15:12:24] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-04-22 15:12:24] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230422/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 15:12:24] INFO root fetch - processPackages [pysui]: Downloading https://files.pythonhosted.org/packages/d0/d5/e2108ab88d1f544ccab9554dcf4127133263950ae9c3e3912ab5bb6db12a/pysui-0.9.0-py3-none-any.whl
+[2023-04-22 15:12:24] INFO root fetch - processPackages [drummachine]: Downloading https://files.pythonhosted.org/packages/15/59/54ddb4af4919bb9701c2a8c0c15b863aed5136feff7a0f5c1c541c391e80/drummachine-0.0.2.tar.gz
+[2023-04-22 15:12:24] INFO root fetch - processPackages [pysui]: executing diffoscope
+[2023-04-22 15:12:24] INFO root fetch - processPackages [pysui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysui-0.8.0-py3-none-any.whl.zip tmp/pysui-0.9.0-py3-none-any.whl.zip --markdown 20230422/p/pysui/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-22 15:12:24] INFO root fetch - processPackages [drummachine]: executing diffoscope
+[2023-04-22 15:12:24] INFO root fetch - processPackages [drummachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drummachine-0.0.1.tar.gz tmp/drummachine-0.0.2.tar.gz --markdown 20230422/d/drummachine/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 15:12:24] INFO root fetch - processPackages [collective.elastic.plone]: Downloading https://files.pythonhosted.org/packages/e7/3b/cdce1cfe4b78803d478e5fdde500c29314dbe549a07e00bf70127f774423/collective.elastic.plone-1.1.3.tar.gz
+[2023-04-22 15:12:24] INFO root fetch - processPackages [bluetree-shopify-book]: Downloading https://files.pythonhosted.org/packages/54/9e/5eaffa2765f78ea449cb946cd2b8f7f84599b43138d252398efc21809af1/bluetree_shopify_book-0.2.3.tar.gz
+[2023-04-22 15:12:24] INFO root fetch - processPackages [collective.elastic.plone]: executing diffoscope
+[2023-04-22 15:12:24] INFO root fetch - processPackages [collective.elastic.plone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/collective.elastic.plone-1.1.2.tar.gz tmp/collective.elastic.plone-1.1.3.tar.gz --markdown 20230422/c/collective.elastic.plone/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-22 15:12:24] INFO root fetch - processPackages [bluetree-shopify-book]: executing diffoscope
+[2023-04-22 15:12:24] INFO root fetch - processPackages [bluetree-shopify-book]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bluetree_shopify_book-0.2.2.tar.gz tmp/bluetree_shopify_book-0.2.3.tar.gz --markdown 20230422/b/bluetree-shopify-book/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-22 15:12:25] INFO root fetch - processPackages [featurizerai]: Start processing: featurizerai
+[2023-04-22 15:12:25] INFO root fetch - main [MainThread]: End processing [featurizerai]: success
+[2023-04-22 15:12:25] INFO root fetch - processPackages [featurizerai]: New version: [1.3.6] Old Version: [1.3.5]
+[2023-04-22 15:12:25] INFO root fetch - processPackages [jsl-django-sitemap]: Start processing: chinese-whispers
+[2023-04-22 15:12:25] INFO root fetch - main [MainThread]: End processing [jsl-django-sitemap]: success
+[2023-04-22 15:12:25] INFO root fetch - processPackages [drummachine]: Start processing: nbdev-pytorch
+[2023-04-22 15:12:25] INFO root fetch - main [MainThread]: End processing [drummachine]: success
+[2023-04-22 15:12:25] INFO root fetch - processPackages [nbdev-stdlib]: Start processing: histcite-python
+[2023-04-22 15:12:25] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-04-22 15:12:25] INFO root fetch - processPackages [sosin]: Start processing: image-to-arduino
+[2023-04-22 15:12:25] INFO root fetch - main [MainThread]: End processing [sosin]: success
+[2023-04-22 15:12:25] INFO root fetch - processPackages [chinese-whispers]: New version: [0.8.2rc1] Old Version: [0.8.1rc1]
+[2023-04-22 15:12:25] INFO root fetch - processPackages [featurizerai]: executing diffoscope
+[2023-04-22 15:12:25] INFO root fetch - processPackages [featurizerai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featurizerai-1.3.5.tar.gz tmp/featurizerai-1.3.6.tar.gz --markdown 20230422/f/featurizerai/1.3.5-1.3.6/diff.md --exclude *.pyd
+[2023-04-22 15:12:25] WARNING root fetch - processPackages [histcite-python]: Skipping, unable to determine old version
+[2023-04-22 15:12:25] INFO root fetch - processPackages [histcite-python]: Start processing: foursight-core
+[2023-04-22 15:12:25] INFO root fetch - main [MainThread]: End processing [histcite-python] error
+[2023-04-22 15:12:25] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 15:12:25] INFO root fetch - processPackages [image-to-arduino]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-22 15:12:25] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-22 15:12:26] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-04-22 15:12:26] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230422/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 15:12:26] INFO root fetch - processPackages [chinese-whispers]: Downloading https://files.pythonhosted.org/packages/a4/8b/b4406b6ab682c35e6bce3c6fb2d05782252f2d3c1da7623e9eecc7d1f895/chinese_whispers-0.8.1rc1.tar.gz
+[2023-04-22 15:12:26] INFO root fetch - processPackages [image-to-arduino]: Downloading https://files.pythonhosted.org/packages/f6/f9/57b54ed74b4c3615425910fafb1e45d99c77f0126d742fa0b79cd58af8ee/image_to_arduino-1.0.2.tar.gz
+[2023-04-22 15:12:26] INFO root fetch - processPackages [image-to-arduino]: executing diffoscope
+[2023-04-22 15:12:26] INFO root fetch - processPackages [image-to-arduino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_to_arduino-1.0.1.tar.gz tmp/image_to_arduino-1.0.2.tar.gz --markdown 20230422/i/image-to-arduino/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-22 15:12:26] INFO root fetch - processPackages [pysui]: Start processing: pyHRM
+[2023-04-22 15:12:26] INFO root fetch - main [MainThread]: End processing [pysui]: success
+[2023-04-22 15:12:26] WARNING root fetch - processPackages [pyHRM]: Skipping, unable to determine old version
+[2023-04-22 15:12:26] INFO root fetch - processPackages [pyHRM]: Start processing: nbdev-scipy
+[2023-04-22 15:12:26] INFO root fetch - main [MainThread]: End processing [pyHRM] error
+[2023-04-22 15:12:26] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 15:12:26] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230422/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-22 15:12:26] INFO root fetch - main [MainThread]: End processing [bluetree-shopify-book]: success
+[2023-04-22 15:12:26] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 15:12:26] INFO root fetch - processPackages [chinese-whispers]: Downloading https://files.pythonhosted.org/packages/99/8c/34a511b92bc1fd1d309844308c5ed97a8f8163a8ecaa96ffc76ccb68dff4/chinese_whispers-0.8.2rc1.tar.gz
+[2023-04-22 15:12:26] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-04-22 15:12:26] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230422/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 15:12:26] INFO root fetch - processPackages [chinese-whispers]: executing diffoscope
+[2023-04-22 15:12:26] INFO root fetch - processPackages [chinese-whispers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chinese_whispers-0.8.1rc1.tar.gz tmp/chinese_whispers-0.8.2rc1.tar.gz --markdown 20230422/c/chinese-whispers/0.8.1rc1-0.8.2rc1/diff.md --exclude *.pyd
+[2023-04-22 15:12:26] INFO root fetch - main [MainThread]: End processing [collective.elastic.plone]: success
+[2023-04-22 15:12:27] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-04-22 15:12:27] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-04-22 15:12:27] INFO root fetch - main [MainThread]: End processing [featurizerai]: success
+[2023-04-22 15:12:27] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-04-22 15:12:27] INFO root fetch - main [MainThread]: End processing [image-to-arduino]: success
+[2023-04-22 15:12:28] INFO root fetch - main [MainThread]: End processing [chinese-whispers]: success
+[2023-04-22 15:12:28] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-04-22 15:12:42] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 15:12:42] INFO root fetch - main [MainThread]: Store serial: [17814645]
