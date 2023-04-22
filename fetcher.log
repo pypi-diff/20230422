@@ -9792,3 +9792,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 15:49:53] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 15:49:54] INFO root fetch - main [MainThread]: End processing [alcf]: success
 [2023-04-22 15:49:54] INFO root fetch - main [MainThread]: Store serial: [17814868]
+[2023-04-22 15:54:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814868]
+[2023-04-22 15:55:02] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 15:55:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: foursight-core
+[2023-04-22 15:55:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bdgd-tools
+[2023-04-22 15:55:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: foursight-core
+[2023-04-22 15:55:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: foursight-core
+[2023-04-22 15:55:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: brownian-stock
+[2023-04-22 15:55:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: foursight-core
+[2023-04-22 15:55:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alacorder
+[2023-04-22 15:55:02] INFO root fetch - processPackages [bdgd-tools]: New version: [1.0.2] Old Version: [0.2.3]
+[2023-04-22 15:55:02] INFO root fetch - processPackages [brownian-stock]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 15:55:02] INFO root fetch - processPackages [alacorder]: New version: [79.6.2] Old Version: [79.6.1]
+[2023-04-22 15:55:02] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b40] Old Version: [4.1.0.1b39]
+[2023-04-22 15:55:02] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b40] Old Version: [4.1.0.1b39]
+[2023-04-22 15:55:02] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b40] Old Version: [4.1.0.1b39]
+[2023-04-22 15:55:02] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b40] Old Version: [4.1.0.1b39]
+[2023-04-22 15:55:02] INFO root fetch - processPackages [bdgd-tools]: Downloading https://files.pythonhosted.org/packages/b7/3f/478af89f5fbf96e1f0a62fa8b90d22ca7f0b5321043eb3d8a479a1630ad8/bdgd_tools-0.2.3.tar.gz
+[2023-04-22 15:55:02] INFO root fetch - processPackages [brownian-stock]: Downloading https://files.pythonhosted.org/packages/d8/67/4049f8084f938122e742c3e1f2f5fb7e8efd3c1b47e49af735f97299c1ac/brownian-stock-0.0.8.tar.gz
+[2023-04-22 15:55:02] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/26/ac/029b953003b5853d0776413ceac83d0973e5e1e2d2d0dcafd2d28c4623f4/foursight_core-4.1.0.1b39.tar.gz
+[2023-04-22 15:55:02] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/26/ac/029b953003b5853d0776413ceac83d0973e5e1e2d2d0dcafd2d28c4623f4/foursight_core-4.1.0.1b39.tar.gz
+[2023-04-22 15:55:03] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/26/ac/029b953003b5853d0776413ceac83d0973e5e1e2d2d0dcafd2d28c4623f4/foursight_core-4.1.0.1b39.tar.gz
+[2023-04-22 15:55:03] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/26/ac/029b953003b5853d0776413ceac83d0973e5e1e2d2d0dcafd2d28c4623f4/foursight_core-4.1.0.1b39.tar.gz
+[2023-04-22 15:55:03] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/6e/77/712d9882e4bf9a13ad7f476939b1f050410d827378fd616b3b257275c577/alacorder-79.6.2.tar.gz
+[2023-04-22 15:55:03] INFO root fetch - processPackages [brownian-stock]: Downloading https://files.pythonhosted.org/packages/a4/be/28c35d6cf73fe659cfedf1b64e95cb463d8dc9f28ef922ff0f59cc3718e2/brownian-stock-0.0.9.tar.gz
+[2023-04-22 15:55:03] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-04-22 15:55:03] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-79.6.1.tar.gz tmp/alacorder-79.6.2.tar.gz --markdown 20230422/a/alacorder/79.6.1-79.6.2/diff.md --exclude *.pyd
+[2023-04-22 15:55:03] INFO root fetch - processPackages [bdgd-tools]: Downloading https://files.pythonhosted.org/packages/64/ca/aed9d3f4d95f095f865e3ccffeb6d125a3c2a169def75e50907064cab83c/bdgd_tools-1.0.2.tar.gz
+[2023-04-22 15:55:03] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/3a/56/44cd492e3bf8cdb4d4812b7f2324cbce3aeb5b1baf43c43dc3d2080a6ede/foursight_core-4.1.0.1b40.tar.gz
+[2023-04-22 15:55:03] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/3a/56/44cd492e3bf8cdb4d4812b7f2324cbce3aeb5b1baf43c43dc3d2080a6ede/foursight_core-4.1.0.1b40.tar.gz
+[2023-04-22 15:55:03] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/3a/56/44cd492e3bf8cdb4d4812b7f2324cbce3aeb5b1baf43c43dc3d2080a6ede/foursight_core-4.1.0.1b40.tar.gz
+[2023-04-22 15:55:03] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/3a/56/44cd492e3bf8cdb4d4812b7f2324cbce3aeb5b1baf43c43dc3d2080a6ede/foursight_core-4.1.0.1b40.tar.gz
+[2023-04-22 15:55:03] INFO root fetch - processPackages [brownian-stock]: executing diffoscope
+[2023-04-22 15:55:03] INFO root fetch - processPackages [brownian-stock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brownian-stock-0.0.8.tar.gz tmp/brownian-stock-0.0.9.tar.gz --markdown 20230422/b/brownian-stock/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 15:55:03] INFO root fetch - processPackages [bdgd-tools]: executing diffoscope
+[2023-04-22 15:55:03] INFO root fetch - processPackages [bdgd-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdgd_tools-0.2.3.tar.gz tmp/bdgd_tools-1.0.2.tar.gz --markdown 20230422/b/bdgd-tools/0.2.3-1.0.2/diff.md --exclude *.pyd
+[2023-04-22 15:55:03] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 15:55:03] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 15:55:03] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b39.tar.gz tmp/foursight_core-4.1.0.1b40.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b39-4.1.0.1b40/diff.md --exclude *.pyd
+[2023-04-22 15:55:03] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b39.tar.gz tmp/foursight_core-4.1.0.1b40.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b39-4.1.0.1b40/diff.md --exclude *.pyd
+[2023-04-22 15:55:03] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 15:55:03] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b39.tar.gz tmp/foursight_core-4.1.0.1b40.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b39-4.1.0.1b40/diff.md --exclude *.pyd
+[2023-04-22 15:55:03] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 15:55:03] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b39.tar.gz tmp/foursight_core-4.1.0.1b40.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b39-4.1.0.1b40/diff.md --exclude *.pyd
+[2023-04-22 15:55:05] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 15:55:05] INFO root fetch - main [MainThread]: End processing [bdgd-tools]: success
+[2023-04-22 15:55:05] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 15:55:05] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 15:55:05] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-04-22 15:55:05] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 15:55:05] INFO root fetch - main [MainThread]: End processing [brownian-stock]: success
+[2023-04-22 15:55:05] INFO root fetch - main [MainThread]: Store serial: [17814892]
