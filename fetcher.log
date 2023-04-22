@@ -13767,3 +13767,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 23:23:38] INFO root fetch - main [MainThread]: End processing [psychonaut]: success
 [2023-04-22 23:23:53] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 23:23:53] INFO root fetch - main [MainThread]: Store serial: [17817259]
+[2023-04-22 23:28:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17817259]
+[2023-04-22 23:29:02] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 23:29:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastapi-class
+[2023-04-22 23:29:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypotlib
+[2023-04-22 23:29:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tkutils
+[2023-04-22 23:29:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ZaidPy
+[2023-04-22 23:29:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kicad-package-manager
+[2023-04-22 23:29:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: voyager-cpu
+[2023-04-22 23:29:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hyperfast-python-template
+[2023-04-22 23:29:02] INFO root fetch - processPackages [hyperfast-python-template]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-22 23:29:02] INFO root fetch - processPackages [pypotlib]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-22 23:29:02] INFO root fetch - processPackages [kicad-package-manager]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 23:29:02] INFO root fetch - processPackages [tkutils]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-22 23:29:02] INFO root fetch - processPackages [voyager-cpu]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-22 23:29:02] INFO root fetch - processPackages [ZaidPy]: New version: [0.2.1] Old Version: [0.0.1]
+[2023-04-22 23:29:02] INFO root fetch - processPackages [fastapi-class]: New version: [3.2.0] Old Version: [3.1.0]
+[2023-04-22 23:29:02] INFO root fetch - processPackages [hyperfast-python-template]: executing diffoscope
+[2023-04-22 23:29:02] INFO root fetch - processPackages [hyperfast-python-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperfast_python_template-0.2.8.tar.gz tmp/hyperfast_python_template-0.2.9.tar.gz --markdown 20230422/h/hyperfast-python-template/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-22 23:29:02] INFO root fetch - processPackages [fastapi-class]: Downloading https://files.pythonhosted.org/packages/99/50/08727e37640f669b32331a9f2b7c2c8df9ac86ee529e45bc50baf7aea824/fastapi_class-3.1.0.tar.gz
+[2023-04-22 23:29:02] INFO root fetch - processPackages [voyager-cpu]: Downloading https://files.pythonhosted.org/packages/01/92/72ff39665ca32027930e3d050d2d13a543a46afc536efa297a695976db64/voyager_cpu-0.2.4.tar.gz
+[2023-04-22 23:29:02] INFO root fetch - processPackages [tkutils]: Downloading https://files.pythonhosted.org/packages/48/0f/0ea4ed8147b3fcdc583eabef9e0862d640e15545ef6a23b540c8474ae8de/tkutils-1.1.1.tar.gz
+[2023-04-22 23:29:02] INFO root fetch - processPackages [ZaidPy]: Downloading https://files.pythonhosted.org/packages/cb/0b/42027286b85635d807ca91ecf20985bd3a89f7d5e5a9a4ef8653fbc17a52/ZaidPy-0.0.1.tar.gz
+[2023-04-22 23:29:02] INFO root fetch - processPackages [pypotlib]: Downloading https://files.pythonhosted.org/packages/59/bd/0da0ec3c13a2a610378abcc7d1b116315611d4bd85af806a24c4c198434b/pypotlib-0.0.5.tar.gz
+[2023-04-22 23:29:03] INFO root fetch - processPackages [tkutils]: executing diffoscope
+[2023-04-22 23:29:03] INFO root fetch - processPackages [tkutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkutils-1.1.0.tar.gz tmp/tkutils-1.1.1.tar.gz --markdown 20230422/t/tkutils/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-22 23:29:03] INFO root fetch - processPackages [pypotlib]: executing diffoscope
+[2023-04-22 23:29:03] INFO root fetch - processPackages [pypotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypotlib-0.0.4.tar.gz tmp/pypotlib-0.0.5.tar.gz --markdown 20230422/p/pypotlib/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-22 23:29:03] INFO root fetch - processPackages [voyager-cpu]: executing diffoscope
+[2023-04-22 23:29:03] INFO root fetch - processPackages [voyager-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voyager_cpu-0.2.3.tar.gz tmp/voyager_cpu-0.2.4.tar.gz --markdown 20230422/v/voyager-cpu/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-22 23:29:03] INFO root fetch - processPackages [kicad-package-manager]: executing diffoscope
+[2023-04-22 23:29:03] INFO root fetch - processPackages [kicad-package-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kicad_package_manager-0.0.8.tar.gz tmp/kicad_package_manager-0.0.9.tar.gz --markdown 20230422/k/kicad-package-manager/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 23:29:03] INFO root fetch - processPackages [fastapi-class]: Downloading https://files.pythonhosted.org/packages/8f/94/a6a3d268d79ad94c07c8b3327fa76a24a29b09fc84e59400541cd54fa966/fastapi_class-3.2.0.tar.gz
+[2023-04-22 23:29:03] INFO root fetch - processPackages [ZaidPy]: Downloading https://files.pythonhosted.org/packages/39/13/2bb37bfb357042a4d8eb81bf88673fce477cf93173bc66c3beb3e260f4a3/ZaidPy-0.2.1.tar.gz
+[2023-04-22 23:29:03] INFO root fetch - processPackages [fastapi-class]: executing diffoscope
+[2023-04-22 23:29:03] INFO root fetch - processPackages [fastapi-class]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_class-3.1.0.tar.gz tmp/fastapi_class-3.2.0.tar.gz --markdown 20230422/f/fastapi-class/3.1.0-3.2.0/diff.md --exclude *.pyd
+[2023-04-22 23:29:03] INFO root fetch - processPackages [ZaidPy]: executing diffoscope
+[2023-04-22 23:29:03] INFO root fetch - processPackages [ZaidPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ZaidPy-0.0.1.tar.gz tmp/ZaidPy-0.2.1.tar.gz --markdown 20230422/Z/ZaidPy/0.0.1-0.2.1/diff.md --exclude *.pyd
+[2023-04-22 23:29:04] INFO root fetch - main [MainThread]: End processing [hyperfast-python-template]: success
+[2023-04-22 23:29:04] INFO root fetch - main [MainThread]: End processing [pypotlib]: success
+[2023-04-22 23:29:04] INFO root fetch - main [MainThread]: End processing [ZaidPy]: success
+[2023-04-22 23:29:04] INFO root fetch - main [MainThread]: End processing [kicad-package-manager]: success
+[2023-04-22 23:29:04] INFO root fetch - main [MainThread]: End processing [tkutils]: success
+[2023-04-22 23:29:04] INFO root fetch - main [MainThread]: End processing [fastapi-class]: success
+[2023-04-22 23:29:05] INFO root fetch - main [MainThread]: End processing [voyager-cpu]: success
+[2023-04-22 23:29:05] INFO root fetch - main [MainThread]: Store serial: [17817279]
