@@ -7004,3 +7004,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 09:59:51] INFO root fetch - main [MainThread]: End processing [pytorch-optimizer]: success
 [2023-04-22 09:59:51] INFO root fetch - main [MainThread]: End processing [scSAMP]: success
 [2023-04-22 09:59:51] INFO root fetch - main [MainThread]: Store serial: [17813184]
+[2023-04-22 10:04:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813184]
+[2023-04-22 10:05:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-22 10:05:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: binary-refinery
+[2023-04-22 10:05:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yeref
+[2023-04-22 10:05:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ats-case
+[2023-04-22 10:05:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: trainerbase
+[2023-04-22 10:05:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: uuyoupinapi
+[2023-04-22 10:05:00] INFO root fetch - processPackages [ats-case]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-04-22 10:05:00] WARNING root fetch - processPackages [uuyoupinapi]: Skipping, unable to determine old version
+[2023-04-22 10:05:00] INFO root fetch - main [MainThread]: End processing [uuyoupinapi] error
+[2023-04-22 10:05:00] INFO root fetch - processPackages [yeref]: New version: [0.1.37] Old Version: [0.1.35]
+[2023-04-22 10:05:00] INFO root fetch - processPackages [binary-refinery]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-04-22 10:05:00] INFO root fetch - processPackages [trainerbase]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-04-22 10:05:00] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/03/de/f251b5512a4b52f0dd9b8ed46a93ddf558ba1c3274dd1064c9e5dce66dc2/yeref-0.1.37.tar.gz
+[2023-04-22 10:05:00] INFO root fetch - processPackages [ats-case]: Downloading https://files.pythonhosted.org/packages/89/ef/317776cec487aebce545a6a2b11c1b7b09d0b70594658325f43960a6555e/ats_case-0.5.3.tar.gz
+[2023-04-22 10:05:00] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2023-04-22 10:05:00] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.1.35.tar.gz tmp/yeref-0.1.37.tar.gz --markdown 20230422/y/yeref/0.1.35-0.1.37/diff.md --exclude *.pyd
+[2023-04-22 10:05:00] INFO root fetch - processPackages [binary-refinery]: Downloading https://files.pythonhosted.org/packages/f3/43/c19a960e3d5583b28efa6af939eb733d17bf0c8ea391b95a5794b1e8511e/binary-refinery-0.6.3.tar.gz
+[2023-04-22 10:05:00] INFO root fetch - processPackages [ats-case]: executing diffoscope
+[2023-04-22 10:05:00] INFO root fetch - processPackages [ats-case]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ats_case-0.5.2.tar.gz tmp/ats_case-0.5.3.tar.gz --markdown 20230422/a/ats-case/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-04-22 10:05:00] INFO root fetch - processPackages [trainerbase]: executing diffoscope
+[2023-04-22 10:05:00] INFO root fetch - processPackages [trainerbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TrainerBase-2.9.8.tar.gz tmp/TrainerBase-2.9.9.tar.gz --markdown 20230422/t/trainerbase/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-04-22 10:05:00] INFO root fetch - processPackages [binary-refinery]: executing diffoscope
+[2023-04-22 10:05:00] INFO root fetch - processPackages [binary-refinery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binary-refinery-0.6.2.tar.gz tmp/binary-refinery-0.6.3.tar.gz --markdown 20230422/b/binary-refinery/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-04-22 10:05:01] INFO root fetch - main [MainThread]: End processing [trainerbase]: success
+[2023-04-22 10:05:01] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2023-04-22 10:05:01] INFO root fetch - main [MainThread]: End processing [ats-case]: success
+[2023-04-22 10:05:04] INFO root fetch - main [MainThread]: End processing [binary-refinery]: success
+[2023-04-22 10:05:04] INFO root fetch - main [MainThread]: Store serial: [17813199]
