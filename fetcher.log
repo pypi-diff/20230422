@@ -4641,3 +4641,66 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 05:42:54] INFO root fetch - main [MainThread]: End processing [odoo12-addon-crm-phonecall]: success
 [2023-04-22 05:42:54] INFO root fetch - main [MainThread]: End processing [twigs]: success
 [2023-04-22 05:42:54] INFO root fetch - main [MainThread]: Store serial: [17811923]
+[2023-04-22 05:47:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811923]
+[2023-04-22 05:48:03] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 05:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rasterarea
+[2023-04-22 05:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addons-oca-crm
+[2023-04-22 05:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uwdtool
+[2023-04-22 05:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: systempath
+[2023-04-22 05:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo12-addon-privacy
+[2023-04-22 05:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo13-addon-privacy
+[2023-04-22 05:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo14-addon-privacy
+[2023-04-22 05:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fullctl
+[2023-04-22 05:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: odoo-addon-privacy
+[2023-04-22 05:48:03] INFO root fetch - processPackages [uwdtool]: New version: [1.0.1] Old Version: [1.0]
+[2023-04-22 05:48:03] INFO root fetch - processPackages [rasterarea]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-22 05:48:03] INFO root fetch - processPackages [systempath]: New version: [1.0a8] Old Version: [1.0.7]
+[2023-04-22 05:48:03] INFO root fetch - processPackages [odoo-addons-oca-crm]: New version: [16.0.20230309.1] Old Version: [16.0.20230308.0]
+[2023-04-22 05:48:03] INFO root fetch - processPackages [odoo13-addon-privacy]: New version: [13.0.1.0.2.dev6] Old Version: [13.0.1.0.2.dev5]
+[2023-04-22 05:48:03] INFO root fetch - processPackages [fullctl]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-04-22 05:48:03] INFO root fetch - processPackages [odoo-addon-privacy]: New version: [16.0.1.0.0.6] Old Version: [16.0.1.0.0.3]
+[2023-04-22 05:48:03] INFO root fetch - processPackages [odoo14-addon-privacy]: New version: [14.0.1.0.1.dev9] Old Version: [14.0.1.0.1.dev8]
+[2023-04-22 05:48:03] INFO root fetch - processPackages [odoo12-addon-privacy]: New version: [12.0.1.1.1.99.dev4] Old Version: [12.0.1.1.1.99.dev3]
+[2023-04-22 05:48:03] INFO root fetch - processPackages [uwdtool]: Downloading https://files.pythonhosted.org/packages/e2/00/a2b1fc3847b061155dcc3ccdf13004c84defe022963505315987475e57b9/uwdtool-1.0.tar.gz
+[2023-04-22 05:48:03] INFO root fetch - processPackages [systempath]: Downloading https://files.pythonhosted.org/packages/43/72/9be46774e1dc761d8fefd2b350aa0e31039170567b54fea79ffcbf02cb7e/systempath-1.0.7-py3-none-any.whl
+[2023-04-22 05:48:03] INFO root fetch - processPackages [odoo-addon-privacy]: Downloading https://files.pythonhosted.org/packages/57/9e/09f18159f0cfbd2492c73df7a513e35e9a9d5b39e58ad122b35be9cd6a96/odoo_addon_privacy-16.0.1.0.0.3-py3-none-any.whl
+[2023-04-22 05:48:03] INFO root fetch - processPackages [odoo12-addon-privacy]: Downloading https://files.pythonhosted.org/packages/b1/c9/25d60e75726e89a16afc04151d2e0fb1a9c589e54e67b12010ead83792c4/odoo12_addon_privacy-12.0.1.1.1.99.dev3-py3-none-any.whl
+[2023-04-22 05:48:03] INFO root fetch - processPackages [odoo13-addon-privacy]: Downloading https://files.pythonhosted.org/packages/95/5c/278f285d3d69ff608301d45ed6dc647473a16cb97db96bafcbd6f36bdcb0/odoo13_addon_privacy-13.0.1.0.2.dev5-py3-none-any.whl
+[2023-04-22 05:48:03] INFO root fetch - processPackages [odoo-addons-oca-crm]: Downloading https://files.pythonhosted.org/packages/f0/98/866b988e051df931d04de90e82c14e2d01d53ff83ecd501608e7b5f7df4c/odoo_addons_oca_crm-16.0.20230308.0-py3-none-any.whl
+[2023-04-22 05:48:03] INFO root fetch - processPackages [odoo14-addon-privacy]: Downloading https://files.pythonhosted.org/packages/24/4f/cc1bc68e1cfc5da739d6d98ae5b746695ea20a61bd2dbbc113a96d152739/odoo14_addon_privacy-14.0.1.0.1.dev8-py3-none-any.whl
+[2023-04-22 05:48:03] INFO root fetch - processPackages [rasterarea]: Downloading https://files.pythonhosted.org/packages/0a/8a/4b3e0087e0e0348a0c83ab996a48034a24210c4c9f51f09610934997990f/rasterarea-0.0.4.tar.gz
+[2023-04-22 05:48:03] INFO root fetch - processPackages [fullctl]: Downloading https://files.pythonhosted.org/packages/09/5a/0aafaa922ef72ee420e1681b3a14c246f2e1a95e58509b5b6c39976ebcd1/fullctl-1.3.0.tar.gz
+[2023-04-22 05:48:04] INFO root fetch - processPackages [uwdtool]: Downloading https://files.pythonhosted.org/packages/0a/bb/e851957be9ea16d745ee4fc2febfc3d47bfbfda4e64ae043ef3e66a06a22/uwdtool-1.0.1.tar.gz
+[2023-04-22 05:48:04] INFO root fetch - processPackages [rasterarea]: executing diffoscope
+[2023-04-22 05:48:04] INFO root fetch - processPackages [rasterarea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rasterarea-0.0.3.tar.gz tmp/rasterarea-0.0.4.tar.gz --markdown 20230422/r/rasterarea/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-22 05:48:04] INFO root fetch - processPackages [odoo12-addon-privacy]: Downloading https://files.pythonhosted.org/packages/cd/63/0a4b18dcf8bbe69e9b515e2b57659813669f1e6b872e41ef24459f645a7f/odoo12_addon_privacy-12.0.1.1.1.99.dev4-py3-none-any.whl
+[2023-04-22 05:48:04] INFO root fetch - processPackages [odoo13-addon-privacy]: Downloading https://files.pythonhosted.org/packages/b5/35/d384567d560c54cf189fe1f8eba9e39f0b1f14b32a072484feb0997fab86/odoo13_addon_privacy-13.0.1.0.2.dev6-py3-none-any.whl
+[2023-04-22 05:48:04] INFO root fetch - processPackages [systempath]: executing diffoscope
+[2023-04-22 05:48:04] INFO root fetch - processPackages [systempath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systempath-1.0.7-py3-none-any.whl.zip tmp/systempath-1.0a8-py3-none-any.whl.zip --markdown 20230422/s/systempath/1.0.7-1.0a8/diff.md --exclude *.pyd
+[2023-04-22 05:48:04] INFO root fetch - processPackages [uwdtool]: executing diffoscope
+[2023-04-22 05:48:04] INFO root fetch - processPackages [uwdtool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uwdtool-1.0.tar.gz tmp/uwdtool-1.0.1.tar.gz --markdown 20230422/u/uwdtool/1.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 05:48:04] INFO root fetch - processPackages [odoo-addons-oca-crm]: Downloading https://files.pythonhosted.org/packages/6f/d2/cc5e570c1cbbba0b1b024d369e75bc1648547559d520a57bcc68cb5c93af/odoo_addons_oca_crm-16.0.20230309.1-py3-none-any.whl
+[2023-04-22 05:48:04] INFO root fetch - processPackages [odoo14-addon-privacy]: Downloading https://files.pythonhosted.org/packages/05/82/d67d4f8c740c20980546c6168b535e894eae6a3c8ad46c74fa662291815a/odoo14_addon_privacy-14.0.1.0.1.dev9-py3-none-any.whl
+[2023-04-22 05:48:04] INFO root fetch - processPackages [fullctl]: executing diffoscope
+[2023-04-22 05:48:04] INFO root fetch - processPackages [fullctl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fullctl-1.2.0.tar.gz tmp/fullctl-1.3.0.tar.gz --markdown 20230422/f/fullctl/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-04-22 05:48:04] INFO root fetch - processPackages [odoo14-addon-privacy]: executing diffoscope
+[2023-04-22 05:48:04] INFO root fetch - processPackages [odoo14-addon-privacy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_privacy-14.0.1.0.1.dev8-py3-none-any.whl.zip tmp/odoo14_addon_privacy-14.0.1.0.1.dev9-py3-none-any.whl.zip --markdown 20230422/o/odoo14-addon-privacy/14.0.1.0.1.dev8-14.0.1.0.1.dev9/diff.md --exclude *.pyd
+[2023-04-22 05:48:04] INFO root fetch - processPackages [odoo12-addon-privacy]: executing diffoscope
+[2023-04-22 05:48:04] INFO root fetch - processPackages [odoo12-addon-privacy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_privacy-12.0.1.1.1.99.dev3-py3-none-any.whl.zip tmp/odoo12_addon_privacy-12.0.1.1.1.99.dev4-py3-none-any.whl.zip --markdown 20230422/o/odoo12-addon-privacy/12.0.1.1.1.99.dev3-12.0.1.1.1.99.dev4/diff.md --exclude *.pyd
+[2023-04-22 05:48:04] INFO root fetch - processPackages [odoo13-addon-privacy]: executing diffoscope
+[2023-04-22 05:48:04] INFO root fetch - processPackages [odoo13-addon-privacy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_privacy-13.0.1.0.2.dev5-py3-none-any.whl.zip tmp/odoo13_addon_privacy-13.0.1.0.2.dev6-py3-none-any.whl.zip --markdown 20230422/o/odoo13-addon-privacy/13.0.1.0.2.dev5-13.0.1.0.2.dev6/diff.md --exclude *.pyd
+[2023-04-22 05:48:04] INFO root fetch - processPackages [odoo-addons-oca-crm]: executing diffoscope
+[2023-04-22 05:48:04] INFO root fetch - processPackages [odoo-addons-oca-crm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_crm-16.0.20230308.0-py3-none-any.whl.zip tmp/odoo_addons_oca_crm-16.0.20230309.1-py3-none-any.whl.zip --markdown 20230422/o/odoo-addons-oca-crm/16.0.20230308.0-16.0.20230309.1/diff.md --exclude *.pyd
+[2023-04-22 05:48:04] INFO root fetch - processPackages [odoo-addon-privacy]: Downloading https://files.pythonhosted.org/packages/19/55/94b73c8038d8070b16672b18a05d3672ca7264b9228fb412be6686d6f926/odoo_addon_privacy-16.0.1.0.0.6-py3-none-any.whl
+[2023-04-22 05:48:04] INFO root fetch - processPackages [odoo-addon-privacy]: executing diffoscope
+[2023-04-22 05:48:04] INFO root fetch - processPackages [odoo-addon-privacy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_privacy-16.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_privacy-16.0.1.0.0.6-py3-none-any.whl.zip --markdown 20230422/o/odoo-addon-privacy/16.0.1.0.0.3-16.0.1.0.0.6/diff.md --exclude *.pyd
+[2023-04-22 05:48:05] INFO root fetch - main [MainThread]: End processing [uwdtool]: success
+[2023-04-22 05:48:05] INFO root fetch - main [MainThread]: End processing [systempath]: success
+[2023-04-22 05:48:05] INFO root fetch - main [MainThread]: End processing [rasterarea]: success
+[2023-04-22 05:48:05] INFO root fetch - main [MainThread]: End processing [odoo14-addon-privacy]: success
+[2023-04-22 05:48:05] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-crm]: success
+[2023-04-22 05:48:05] INFO root fetch - main [MainThread]: End processing [odoo13-addon-privacy]: success
+[2023-04-22 05:48:05] INFO root fetch - main [MainThread]: End processing [odoo-addon-privacy]: success
+[2023-04-22 05:48:05] INFO root fetch - main [MainThread]: End processing [odoo12-addon-privacy]: success
+[2023-04-22 05:48:09] INFO root fetch - main [MainThread]: End processing [fullctl]: success
+[2023-04-22 05:48:09] INFO root fetch - main [MainThread]: Store serial: [17811945]
