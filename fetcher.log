@@ -12653,3 +12653,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 21:04:01] INFO root fetch - main [MainThread]: End processing [torchgating]: success
 [2023-04-22 21:04:01] INFO root fetch - main [MainThread]: End processing [medium-api]: success
 [2023-04-22 21:04:01] INFO root fetch - main [MainThread]: Store serial: [17816528]
+[2023-04-22 21:09:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816528]
+[2023-04-22 21:09:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-22 21:09:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-audio-extract
+[2023-04-22 21:09:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openpy-dsse
+[2023-04-22 21:09:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ifunnygifmaker
+[2023-04-22 21:09:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tklinenums
+[2023-04-22 21:09:10] INFO root fetch - processPackages [openpy-dsse]: New version: [0.1.3] Old Version: [0.1.1]
+[2023-04-22 21:09:10] INFO root fetch - processPackages [tklinenums]: New version: [1.6.5] Old Version: [1.6.4]
+[2023-04-22 21:09:10] WARNING root fetch - processPackages [py-audio-extract]: Skipping, unable to determine old version
+[2023-04-22 21:09:10] INFO root fetch - main [MainThread]: End processing [py-audio-extract] error
+[2023-04-22 21:09:10] INFO root fetch - processPackages [ifunnygifmaker]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-22 21:09:10] INFO root fetch - processPackages [ifunnygifmaker]: Downloading https://files.pythonhosted.org/packages/f5/b8/c228302fc3c4900e91fdd8f86817bccf45ed80bb5b73604d9ddac8a0f533/ifunnygifmaker-0.2.0.tar.gz
+[2023-04-22 21:09:10] INFO root fetch - processPackages [tklinenums]: Downloading https://files.pythonhosted.org/packages/68/7f/731e653b4537af8a9d4c0dc9f7970c820a11a792924131fc17ffdbbba862/tklinenums-1.6.5.tar.gz
+[2023-04-22 21:09:10] INFO root fetch - processPackages [openpy-dsse]: Downloading https://files.pythonhosted.org/packages/8b/3e/a744ed9786cee161095c64090594a3ac2373d34d8288041bd9f3b1498585/openpy_dsse-0.1.3.tar.gz
+[2023-04-22 21:09:10] INFO root fetch - processPackages [tklinenums]: executing diffoscope
+[2023-04-22 21:09:10] INFO root fetch - processPackages [tklinenums]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tklinenums-1.6.4.tar.gz tmp/tklinenums-1.6.5.tar.gz --markdown 20230422/t/tklinenums/1.6.4-1.6.5/diff.md --exclude *.pyd
+[2023-04-22 21:09:10] INFO root fetch - processPackages [ifunnygifmaker]: Downloading https://files.pythonhosted.org/packages/4a/72/0dbd1bd9ef2eb673759ee141d390307dce4d1048a8b044f698eb15dbfa51/ifunnygifmaker-0.2.1.tar.gz
+[2023-04-22 21:09:10] INFO root fetch - processPackages [openpy-dsse]: executing diffoscope
+[2023-04-22 21:09:10] INFO root fetch - processPackages [openpy-dsse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openpy_dsse-0.1.1.tar.gz tmp/openpy_dsse-0.1.3.tar.gz --markdown 20230422/o/openpy-dsse/0.1.1-0.1.3/diff.md --exclude *.pyd
+[2023-04-22 21:09:10] INFO root fetch - processPackages [ifunnygifmaker]: executing diffoscope
+[2023-04-22 21:09:10] INFO root fetch - processPackages [ifunnygifmaker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifunnygifmaker-0.2.0.tar.gz tmp/ifunnygifmaker-0.2.1.tar.gz --markdown 20230422/i/ifunnygifmaker/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-22 21:09:11] INFO root fetch - main [MainThread]: End processing [tklinenums]: success
+[2023-04-22 21:09:11] INFO root fetch - main [MainThread]: End processing [ifunnygifmaker]: success
+[2023-04-22 21:09:12] INFO root fetch - main [MainThread]: End processing [openpy-dsse]: success
+[2023-04-22 21:09:12] INFO root fetch - main [MainThread]: Store serial: [17816548]
