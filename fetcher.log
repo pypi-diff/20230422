@@ -12597,3 +12597,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 20:53:07] INFO root fetch - main [MainThread]: End processing [openpy-dsse]: success
 [2023-04-22 20:53:40] INFO root fetch - main [MainThread]: End processing [AeroSandbox]: success
 [2023-04-22 20:53:40] INFO root fetch - main [MainThread]: Store serial: [17816496]
+[2023-04-22 20:58:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816496]
+[2023-04-22 20:58:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-22 20:58:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: browserpilot
+[2023-04-22 20:58:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opentsdb2py
+[2023-04-22 20:58:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cfr
+[2023-04-22 20:58:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spotify-recommender-api
+[2023-04-22 20:58:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aliendev-api
+[2023-04-22 20:58:49] INFO root fetch - processPackages [cfr]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-04-22 20:58:49] WARNING root fetch - processPackages [opentsdb2py]: Skipping, unable to determine old version
+[2023-04-22 20:58:49] INFO root fetch - main [MainThread]: End processing [opentsdb2py] error
+[2023-04-22 20:58:49] INFO root fetch - processPackages [aliendev-api]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-22 20:58:49] INFO root fetch - processPackages [browserpilot]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-22 20:58:49] INFO root fetch - processPackages [spotify-recommender-api]: New version: [4.0.0] Old Version: [3.9.5]
+[2023-04-22 20:58:49] INFO root fetch - processPackages [browserpilot]: Downloading https://files.pythonhosted.org/packages/de/61/722090eef93bd163ddd3d6a39bbccd7204256ee8da1ae9fd3905ef323441/browserpilot-0.2.8.tar.gz
+[2023-04-22 20:58:49] INFO root fetch - processPackages [aliendev-api]: Downloading https://files.pythonhosted.org/packages/56/d5/d49f3e0b8e5e50378c34095a688f2aa569aa5ec59cea3f68c675359a63dd/aliendev_api-0.1.8.tar.gz
+[2023-04-22 20:58:49] INFO root fetch - processPackages [spotify-recommender-api]: Downloading https://files.pythonhosted.org/packages/70/7a/59ac38de2aaf327986f6078a9aa8556fbc67c9433f3045f1afd95f959e82/spotify_recommender_api-3.9.5-py3-none-any.whl
+[2023-04-22 20:58:49] INFO root fetch - processPackages [cfr]: Downloading https://files.pythonhosted.org/packages/be/62/5c38e08809d8cc9f8ba953112791ad95e1dc96897ac37f65fa1b4cfb92aa/cfr-0.4.6.tar.gz
+[2023-04-22 20:58:49] INFO root fetch - processPackages [cfr]: executing diffoscope
+[2023-04-22 20:58:49] INFO root fetch - processPackages [cfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cfr-0.4.5.tar.gz tmp/cfr-0.4.6.tar.gz --markdown 20230422/c/cfr/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-04-22 20:58:49] INFO root fetch - processPackages [aliendev-api]: executing diffoscope
+[2023-04-22 20:58:49] INFO root fetch - processPackages [aliendev-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliendev_api-0.1.7.tar.gz tmp/aliendev_api-0.1.8.tar.gz --markdown 20230422/a/aliendev-api/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-22 20:58:49] INFO root fetch - processPackages [spotify-recommender-api]: Downloading https://files.pythonhosted.org/packages/0e/2b/18559c35393d6dd519be2090333d5d0826988a98b4d9bc5a32192f8b53e7/spotify_recommender_api-4.0.0-py3-none-any.whl
+[2023-04-22 20:58:49] INFO root fetch - processPackages [spotify-recommender-api]: executing diffoscope
+[2023-04-22 20:58:49] INFO root fetch - processPackages [spotify-recommender-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotify_recommender_api-3.9.5-py3-none-any.whl.zip tmp/spotify_recommender_api-4.0.0-py3-none-any.whl.zip --markdown 20230422/s/spotify-recommender-api/3.9.5-4.0.0/diff.md --exclude *.pyd
+[2023-04-22 20:58:49] INFO root fetch - processPackages [browserpilot]: Downloading https://files.pythonhosted.org/packages/41/33/61bf9755b7b95de4e1d44705fddce22a362b22b8f9d914b2fbfb27b66162/browserpilot-0.2.9.tar.gz
+[2023-04-22 20:58:49] INFO root fetch - processPackages [browserpilot]: executing diffoscope
+[2023-04-22 20:58:49] INFO root fetch - processPackages [browserpilot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/browserpilot-0.2.8.tar.gz tmp/browserpilot-0.2.9.tar.gz --markdown 20230422/b/browserpilot/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-22 20:58:50] INFO root fetch - main [MainThread]: End processing [aliendev-api]: success
+[2023-04-22 20:58:50] INFO root fetch - main [MainThread]: End processing [spotify-recommender-api]: success
+[2023-04-22 20:58:50] INFO root fetch - main [MainThread]: End processing [cfr]: success
+[2023-04-22 20:58:50] INFO root fetch - main [MainThread]: End processing [browserpilot]: success
+[2023-04-22 20:58:50] INFO root fetch - main [MainThread]: Store serial: [17816514]
