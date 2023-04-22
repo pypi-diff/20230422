@@ -4818,3 +4818,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 06:03:45] INFO root fetch - main [MainThread]: End processing [frechet-audio-distance]: success
 [2023-04-22 06:03:45] INFO root fetch - main [MainThread]: End processing [voice100]: success
 [2023-04-22 06:03:45] INFO root fetch - main [MainThread]: Store serial: [17812009]
+[2023-04-22 06:08:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812009]
+[2023-04-22 06:08:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-22 06:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netron
+[2023-04-22 06:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: orgee
+[2023-04-22 06:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: springpy
+[2023-04-22 06:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: HDRezka
+[2023-04-22 06:08:55] WARNING root fetch - processPackages [springpy]: Skipping, unable to determine old version
+[2023-04-22 06:08:55] INFO root fetch - main [MainThread]: End processing [springpy] error
+[2023-04-22 06:08:55] INFO root fetch - processPackages [orgee]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-22 06:08:55] INFO root fetch - processPackages [HDRezka]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-22 06:08:55] INFO root fetch - processPackages [netron]: New version: [6.8.3] Old Version: [6.8.2]
+[2023-04-22 06:08:55] INFO root fetch - processPackages [orgee]: Downloading https://files.pythonhosted.org/packages/78/25/3dafdb0d4f64d418240e79ed4bc1cf9053e61bca461a42004da1738aae88/orgee-0.0.4.tar.gz
+[2023-04-22 06:08:55] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/6d/b8/93769af09ddb766c9c6f405feb36bbb8d13d428af06c38706ad3ba44d2c3/netron-6.8.3-py3-none-any.whl
+[2023-04-22 06:08:55] INFO root fetch - processPackages [HDRezka]: Downloading https://files.pythonhosted.org/packages/ce/9b/ed66b684038f5ecf3ce1fd5d7f941bc661dedb17b3d48ff5b758409ac1e5/HDRezka-2.0.1.tar.gz
+[2023-04-22 06:08:56] INFO root fetch - processPackages [orgee]: Downloading https://files.pythonhosted.org/packages/18/f4/5ed2e1ca48f8e152d525ef575e6f6e891538cac9a304bff7f939735fd470/orgee-0.0.5.tar.gz
+[2023-04-22 06:08:56] INFO root fetch - processPackages [HDRezka]: executing diffoscope
+[2023-04-22 06:08:56] INFO root fetch - processPackages [HDRezka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HDRezka-2.0.0.tar.gz tmp/HDRezka-2.0.1.tar.gz --markdown 20230422/H/HDRezka/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-22 06:08:56] INFO root fetch - processPackages [orgee]: executing diffoscope
+[2023-04-22 06:08:56] INFO root fetch - processPackages [orgee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orgee-0.0.4.tar.gz tmp/orgee-0.0.5.tar.gz --markdown 20230422/o/orgee/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-22 06:08:56] INFO root fetch - processPackages [netron]: executing diffoscope
+[2023-04-22 06:08:56] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-6.8.2-py3-none-any.whl.zip tmp/netron-6.8.3-py3-none-any.whl.zip --markdown 20230422/n/netron/6.8.2-6.8.3/diff.md --exclude *.pyd
+[2023-04-22 06:08:57] INFO root fetch - main [MainThread]: End processing [HDRezka]: success
+[2023-04-22 06:08:57] INFO root fetch - main [MainThread]: End processing [orgee]: success
+[2023-04-22 06:11:56] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
+[2023-04-22 06:11:56] INFO root fetch - main [MainThread]: End processing [netron] error
+[2023-04-22 06:11:56] INFO root fetch - main [MainThread]: Store serial: [17812024]
