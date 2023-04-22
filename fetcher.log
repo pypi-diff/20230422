@@ -5791,3 +5791,13 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 07:48:13] WARNING root fetch - processPackages [FunID]: Skipping package: exceeds size limit 65215716>=10485760
 [2023-04-22 07:48:13] INFO root fetch - main [MainThread]: End processing [FunID] error
 [2023-04-22 07:48:13] INFO root fetch - main [MainThread]: Store serial: [17812484]
+[2023-04-22 07:53:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812484]
+[2023-04-22 07:53:21] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-22 07:53:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: social-auth-core
+[2023-04-22 07:53:21] INFO root fetch - processPackages [social-auth-core]: New version: [4.4.2] Old Version: [4.4.1]
+[2023-04-22 07:53:21] INFO root fetch - processPackages [social-auth-core]: Downloading https://files.pythonhosted.org/packages/14/60/0c4af9c7d01404bee0d68ae335978a74f939803e687c9fc45945a4e48928/social-auth-core-4.4.1.tar.gz
+[2023-04-22 07:53:23] INFO root fetch - processPackages [social-auth-core]: Downloading https://files.pythonhosted.org/packages/1d/4e/2f260bae864edf3e01944875421a63a920a6640e71bafd065594f37139fd/social-auth-core-4.4.2.tar.gz
+[2023-04-22 07:53:23] INFO root fetch - processPackages [social-auth-core]: executing diffoscope
+[2023-04-22 07:53:23] INFO root fetch - processPackages [social-auth-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/social-auth-core-4.4.1.tar.gz tmp/social-auth-core-4.4.2.tar.gz --markdown 20230422/s/social-auth-core/4.4.1-4.4.2/diff.md --exclude *.pyd
+[2023-04-22 07:53:26] INFO root fetch - main [MainThread]: End processing [social-auth-core]: success
+[2023-04-22 07:53:26] INFO root fetch - main [MainThread]: Store serial: [17812488]
