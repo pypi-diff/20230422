@@ -7236,3 +7236,64 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 10:36:53] INFO root fetch - main [MainThread]: End processing [utran]: success
 [2023-04-22 10:39:15] INFO root fetch - main [MainThread]: End processing [fastadmin]: success
 [2023-04-22 10:39:15] INFO root fetch - main [MainThread]: Store serial: [17813332]
+[2023-04-22 10:44:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813332]
+[2023-04-22 10:44:24] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-22 10:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: paper2cmap
+[2023-04-22 10:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Cryztalnitro
+[2023-04-22 10:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: audiodiffusion
+[2023-04-22 10:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-estimator-nightly
+[2023-04-22 10:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fluxrpc
+[2023-04-22 10:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: paper2cmap
+[2023-04-22 10:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aliendev-cdk
+[2023-04-22 10:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fluxvault
+[2023-04-22 10:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: kcli
+[2023-04-22 10:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tff-nightly
+[2023-04-22 10:44:24] INFO root fetch - processPackages [paper2cmap]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 10:44:24] WARNING root fetch - processPackages [Cryztalnitro]: Skipping, unable to determine old version
+[2023-04-22 10:44:24] INFO root fetch - processPackages [audiodiffusion]: New version: [1.5.3] Old Version: [1.5.2]
+[2023-04-22 10:44:24] INFO root fetch - main [MainThread]: End processing [Cryztalnitro] error
+[2023-04-22 10:44:24] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230421] Old Version: [0.0.1.dev20230420]
+[2023-04-22 10:44:24] INFO root fetch - processPackages [paper2cmap]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 10:44:24] INFO root fetch - processPackages [aliendev-cdk]: New version: [0.1.33] Old Version: [0.1.32]
+[2023-04-22 10:44:24] INFO root fetch - processPackages [fluxvault]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 10:44:24] INFO root fetch - processPackages [fluxrpc]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 10:44:24] INFO root fetch - processPackages [kcli]: New version: [99.0.202304220843] Old Version: [99.0.202304212216]
+[2023-04-22 10:44:24] INFO root fetch - processPackages [tf-estimator-nightly]: New version: [2.9.0.dev2022033108] Old Version: [2.9.0.dev2022033008]
+[2023-04-22 10:44:24] INFO root fetch - processPackages [paper2cmap]: Downloading https://files.pythonhosted.org/packages/a1/eb/b2d4260cd1c3e1907fa46c4dd5969d04e70848afc7aad185305eb7d5fb04/paper2cmap-0.1.0.tar.gz
+[2023-04-22 10:44:24] INFO root fetch - processPackages [paper2cmap]: Downloading https://files.pythonhosted.org/packages/a1/eb/b2d4260cd1c3e1907fa46c4dd5969d04e70848afc7aad185305eb7d5fb04/paper2cmap-0.1.0.tar.gz
+[2023-04-22 10:44:24] INFO root fetch - processPackages [fluxvault]: executing diffoscope
+[2023-04-22 10:44:24] INFO root fetch - processPackages [fluxvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxvault-0.9.8.tar.gz tmp/fluxvault-0.9.9.tar.gz --markdown 20230422/f/fluxvault/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 10:44:24] INFO root fetch - processPackages [audiodiffusion]: Downloading https://files.pythonhosted.org/packages/c9/d4/717910673acce3e73ac3f3ca6c66fc6d05ba38088116d60fa7f088e6bcc7/audiodiffusion-1.5.2.tar.gz
+[2023-04-22 10:44:24] INFO root fetch - processPackages [aliendev-cdk]: Downloading https://files.pythonhosted.org/packages/7f/97/e339b83cc56a51b5ab9fe850749673ecab5a70a1512d3fd2399a47603797/aliendev_cdk-0.1.33.tar.gz
+[2023-04-22 10:44:24] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/7f/a5/038e0c3397c96e6dcd495a56358b7f31fb4c15023c428e7d09e3f69f3996/kcli-99.0.202304212216-py3-none-any.whl
+[2023-04-22 10:44:24] INFO root fetch - processPackages [tff-nightly]: Downloading https://files.pythonhosted.org/packages/4e/95/a46855184c9a5b42189ac4b15a659bc6e3a4a41c7c9c43de3270f3a22fa9/tff_nightly-0.0.1.dev20230421-py2.py3-none-any.whl
+[2023-04-22 10:44:24] INFO root fetch - processPackages [fluxrpc]: executing diffoscope
+[2023-04-22 10:44:24] INFO root fetch - processPackages [fluxrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxrpc-0.9.8.tar.gz tmp/fluxrpc-0.9.9.tar.gz --markdown 20230422/f/fluxrpc/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 10:44:24] INFO root fetch - processPackages [paper2cmap]: Downloading https://files.pythonhosted.org/packages/49/45/29d5fa7a6030eb4a540a4b063f2c92b15ef2fb31246d3cc9b937cace53d6/paper2cmap-0.1.1.tar.gz
+[2023-04-22 10:44:24] INFO root fetch - processPackages [aliendev-cdk]: executing diffoscope
+[2023-04-22 10:44:24] INFO root fetch - processPackages [aliendev-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliendev_cdk-0.1.32.tar.gz tmp/aliendev_cdk-0.1.33.tar.gz --markdown 20230422/a/aliendev-cdk/0.1.32-0.1.33/diff.md --exclude *.pyd
+[2023-04-22 10:44:24] INFO root fetch - processPackages [paper2cmap]: Downloading https://files.pythonhosted.org/packages/49/45/29d5fa7a6030eb4a540a4b063f2c92b15ef2fb31246d3cc9b937cace53d6/paper2cmap-0.1.1.tar.gz
+[2023-04-22 10:44:24] INFO root fetch - processPackages [tf-estimator-nightly]: executing diffoscope
+[2023-04-22 10:44:24] INFO root fetch - processPackages [tf-estimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_estimator_nightly-2.9.0.dev2022033008-py2.py3-none-any.whl.zip tmp/tf_estimator_nightly-2.9.0.dev2022033108-py2.py3-none-any.whl.zip --markdown 20230422/t/tf-estimator-nightly/2.9.0.dev2022033008-2.9.0.dev2022033108/diff.md --exclude *.pyd
+[2023-04-22 10:44:24] INFO root fetch - processPackages [audiodiffusion]: Downloading https://files.pythonhosted.org/packages/be/84/8d75d08ef3b59d3e4941529571915e9b59dca6e828b170a9eb02888d1db1/audiodiffusion-1.5.3.tar.gz
+[2023-04-22 10:44:24] INFO root fetch - processPackages [paper2cmap]: executing diffoscope
+[2023-04-22 10:44:24] INFO root fetch - processPackages [paper2cmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper2cmap-0.1.0.tar.gz tmp/paper2cmap-0.1.1.tar.gz --markdown 20230422/p/paper2cmap/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 10:44:24] INFO root fetch - processPackages [paper2cmap]: executing diffoscope
+[2023-04-22 10:44:24] INFO root fetch - processPackages [paper2cmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper2cmap-0.1.0.tar.gz tmp/paper2cmap-0.1.1.tar.gz --markdown 20230422/p/paper2cmap/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 10:44:25] INFO root fetch - processPackages [audiodiffusion]: executing diffoscope
+[2023-04-22 10:44:25] INFO root fetch - processPackages [audiodiffusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiodiffusion-1.5.2.tar.gz tmp/audiodiffusion-1.5.3.tar.gz --markdown 20230422/a/audiodiffusion/1.5.2-1.5.3/diff.md --exclude *.pyd
+[2023-04-22 10:44:25] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/dc/3e/3fa3dfbfb4d2585a38be7eedb9b44062df3740156e85645b30ac4ab0197e/kcli-99.0.202304220843-py3-none-any.whl
+[2023-04-22 10:44:25] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-04-22 10:44:25] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230420-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230421-py2.py3-none-any.whl.zip --markdown 20230422/t/tff-nightly/0.0.1.dev20230420-0.0.1.dev20230421/diff.md --exclude *.pyd
+[2023-04-22 10:44:25] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-22 10:44:25] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304212216-py3-none-any.whl.zip tmp/kcli-99.0.202304220843-py3-none-any.whl.zip --markdown 20230422/k/kcli/99.0.202304212216-99.0.202304220843/diff.md --exclude *.pyd
+[2023-04-22 10:44:26] INFO root fetch - main [MainThread]: End processing [aliendev-cdk]: success
+[2023-04-22 10:44:26] INFO root fetch - main [MainThread]: End processing [paper2cmap]: success
+[2023-04-22 10:44:26] INFO root fetch - main [MainThread]: End processing [fluxrpc]: success
+[2023-04-22 10:44:26] INFO root fetch - main [MainThread]: End processing [paper2cmap]: success
+[2023-04-22 10:44:26] INFO root fetch - main [MainThread]: End processing [audiodiffusion]: success
+[2023-04-22 10:44:26] INFO root fetch - main [MainThread]: End processing [fluxvault]: success
+[2023-04-22 10:44:26] INFO root fetch - main [MainThread]: End processing [tf-estimator-nightly]: success
+[2023-04-22 10:44:28] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
+[2023-04-22 10:44:34] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-22 10:44:34] INFO root fetch - main [MainThread]: Store serial: [17813363]
