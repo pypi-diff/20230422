@@ -7796,3 +7796,26 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 11:53:01] INFO root fetch - main [MainThread]: End processing [pyathena]: success
 [2023-04-22 11:53:01] INFO root fetch - main [MainThread]: End processing [pydflow]: success
 [2023-04-22 11:53:01] INFO root fetch - main [MainThread]: Store serial: [17813710]
+[2023-04-22 11:58:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813710]
+[2023-04-22 11:58:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-22 11:58:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AL-Khatma-lib
+[2023-04-22 11:58:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: patpat
+[2023-04-22 11:58:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aniemore
+[2023-04-22 11:58:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MGD-Outliers
+[2023-04-22 11:58:10] INFO root fetch - processPackages [patpat]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-22 11:58:10] WARNING root fetch - processPackages [AL-Khatma-lib]: Skipping, unable to determine old version
+[2023-04-22 11:58:10] INFO root fetch - main [MainThread]: End processing [AL-Khatma-lib] error
+[2023-04-22 11:58:10] INFO root fetch - processPackages [aniemore]: New version: [1.1.1] Old Version: [1.0.6]
+[2023-04-22 11:58:10] WARNING root fetch - processPackages [MGD-Outliers]: Skipping, unable to determine old version
+[2023-04-22 11:58:10] INFO root fetch - main [MainThread]: End processing [MGD-Outliers] error
+[2023-04-22 11:58:10] INFO root fetch - processPackages [patpat]: Downloading https://files.pythonhosted.org/packages/72/16/4b2785202e59bc7d0ee80f92ff1772a4f43233202eb433a7e0d46f3c807a/patpat-1.1.0.tar.gz
+[2023-04-22 11:58:10] INFO root fetch - processPackages [aniemore]: Downloading https://files.pythonhosted.org/packages/4b/28/671ac4787c8a2ea7eed7042a6dda435672c1e0b998f7b927f2e04b1892d3/aniemore-1.0.6.tar.gz
+[2023-04-22 11:58:10] INFO root fetch - processPackages [aniemore]: Downloading https://files.pythonhosted.org/packages/40/88/d85e6d5a51ec972c84208281af2735ec0c57a20bd88b06bb657fc0a24923/aniemore-1.1.1.tar.gz
+[2023-04-22 11:58:10] INFO root fetch - processPackages [patpat]: Downloading https://files.pythonhosted.org/packages/c8/5f/2ebf86b513e288e3de675208f3c7b1336410bc7db0cc8d42f4b8b843e2f2/patpat-1.1.1.tar.gz
+[2023-04-22 11:58:10] INFO root fetch - processPackages [patpat]: executing diffoscope
+[2023-04-22 11:58:10] INFO root fetch - processPackages [patpat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/patpat-1.1.0.tar.gz tmp/patpat-1.1.1.tar.gz --markdown 20230422/p/patpat/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-22 11:58:10] INFO root fetch - processPackages [aniemore]: executing diffoscope
+[2023-04-22 11:58:10] INFO root fetch - processPackages [aniemore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aniemore-1.0.6.tar.gz tmp/aniemore-1.1.1.tar.gz --markdown 20230422/a/aniemore/1.0.6-1.1.1/diff.md --exclude *.pyd
+[2023-04-22 11:58:11] INFO root fetch - main [MainThread]: End processing [aniemore]: success
+[2023-04-22 11:58:11] INFO root fetch - main [MainThread]: End processing [patpat]: success
+[2023-04-22 11:58:11] INFO root fetch - main [MainThread]: Store serial: [17813724]
