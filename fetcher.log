@@ -11522,3 +11522,97 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 18:46:39] INFO root fetch - main [MainThread]: End processing [xia-scw-instance]: success
 [2023-04-22 18:46:39] INFO root fetch - main [MainThread]: End processing [pyl3dmd]: success
 [2023-04-22 18:46:39] INFO root fetch - main [MainThread]: Store serial: [17815889]
+[2023-04-22 18:51:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815889]
+[2023-04-22 18:51:49] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-22 18:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ArmaQDL
+[2023-04-22 18:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xia-engine-terraform
+[2023-04-22 18:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: esv-api-samhaswon
+[2023-04-22 18:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jupylite-duckdb
+[2023-04-22 18:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: docbuild
+[2023-04-22 18:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kaiju-tools
+[2023-04-22 18:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: polyaxon-sdk
+[2023-04-22 18:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mango-explorer-v4
+[2023-04-22 18:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: polyaxon
+[2023-04-22 18:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: hypertune
+[2023-04-22 18:51:49] INFO root fetch - processPackages [docbuild]: New version: [0.1.102] Old Version: [0.1.101]
+[2023-04-22 18:51:49] INFO root fetch - processPackages [xia-engine-terraform]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-04-22 18:51:49] INFO root fetch - processPackages [kaiju-tools]: New version: [2.0.50] Old Version: [2.0.49]
+[2023-04-22 18:51:49] INFO root fetch - processPackages [ArmaQDL]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-04-22 18:51:49] INFO root fetch - processPackages [jupylite-duckdb]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 18:51:49] WARNING root fetch - processPackages [esv-api-samhaswon]: Skipping, unable to determine old version
+[2023-04-22 18:51:49] INFO root fetch - processPackages [esv-api-samhaswon]: Start processing: haupt
+[2023-04-22 18:51:49] INFO root fetch - main [MainThread]: End processing [esv-api-samhaswon] error
+[2023-04-22 18:51:49] INFO root fetch - processPackages [mango-explorer-v4]: New version: [0.7.6] Old Version: [0.7.5]
+[2023-04-22 18:51:49] INFO root fetch - processPackages [hypertune]: New version: [1.1.0rc9] Old Version: [1.1.0rc8]
+[2023-04-22 18:51:49] INFO root fetch - processPackages [polyaxon-sdk]: New version: [2.0.0rc9] Old Version: [2.0.0rc8]
+[2023-04-22 18:51:49] INFO root fetch - processPackages [haupt]: New version: [2.0.0rc9] Old Version: [2.0.0rc8]
+[2023-04-22 18:51:49] INFO root fetch - processPackages [polyaxon]: New version: [2.0.0rc9] Old Version: [2.0.0rc8]
+[2023-04-22 18:51:49] INFO root fetch - processPackages [xia-engine-terraform]: executing diffoscope
+[2023-04-22 18:51:49] INFO root fetch - processPackages [xia-engine-terraform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine_terraform-0.0.7-cp39-none-win_amd64.whl.zip tmp/xia_engine_terraform-0.0.9-cp39-none-win_amd64.whl.zip --markdown 20230422/x/xia-engine-terraform/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 18:51:49] INFO root fetch - processPackages [jupylite-duckdb]: executing diffoscope
+[2023-04-22 18:51:49] INFO root fetch - processPackages [jupylite-duckdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupylite_duckdb-0.0.8-py3-none-any.whl.zip tmp/jupylite_duckdb-0.0.9-py3-none-any.whl.zip --markdown 20230422/j/jupylite-duckdb/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 18:51:49] INFO root fetch - processPackages [kaiju-tools]: Downloading https://files.pythonhosted.org/packages/5d/bc/d7073eb59e2828838c33b39adc99afdc1cafc2adbee062584c8cf6acc9a8/kaiju_tools-2.0.49-py3-none-any.whl
+[2023-04-22 18:51:49] INFO root fetch - processPackages [ArmaQDL]: Downloading https://files.pythonhosted.org/packages/2f/9a/24f6b0ffa96d5e0d0d72bec3c1104feff73ce7105f733792204ea54729d5/armaqdl-0.6.1.tar.gz
+[2023-04-22 18:51:49] INFO root fetch - processPackages [mango-explorer-v4]: Downloading https://files.pythonhosted.org/packages/92/16/e94faac6748d544d2a42afc4477bd085fbb5935c669a49b4a3ab0962385c/mango_explorer_v4-0.7.6.tar.gz
+[2023-04-22 18:51:49] INFO root fetch - processPackages [mango-explorer-v4]: executing diffoscope
+[2023-04-22 18:51:49] INFO root fetch - processPackages [mango-explorer-v4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mango_explorer_v4-0.7.5.tar.gz tmp/mango_explorer_v4-0.7.6.tar.gz --markdown 20230422/m/mango-explorer-v4/0.7.5-0.7.6/diff.md --exclude *.pyd
+[2023-04-22 18:51:49] INFO root fetch - processPackages [docbuild]: Downloading https://files.pythonhosted.org/packages/cd/f1/cd547c51f568e2385e253fdea6761af43b668e50b47d08b43fb862f5e2e9/docbuild-0.1.102.tar.gz
+[2023-04-22 18:51:49] INFO root fetch - processPackages [docbuild]: executing diffoscope
+[2023-04-22 18:51:49] INFO root fetch - processPackages [docbuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docbuild-0.1.101.tar.gz tmp/docbuild-0.1.102.tar.gz --markdown 20230422/d/docbuild/0.1.101-0.1.102/diff.md --exclude *.pyd
+[2023-04-22 18:51:49] INFO root fetch - processPackages [polyaxon-sdk]: executing diffoscope
+[2023-04-22 18:51:49] INFO root fetch - processPackages [polyaxon-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyaxon-sdk-2.0.0rc8.tar.gz tmp/polyaxon-sdk-2.0.0rc9.tar.gz --markdown 20230422/p/polyaxon-sdk/2.0.0rc8-2.0.0rc9/diff.md --exclude *.pyd
+[2023-04-22 18:51:49] INFO root fetch - processPackages [haupt]: executing diffoscope
+[2023-04-22 18:51:49] INFO root fetch - processPackages [haupt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haupt-2.0.0rc8.tar.gz tmp/haupt-2.0.0rc9.tar.gz --markdown 20230422/h/haupt/2.0.0rc8-2.0.0rc9/diff.md --exclude *.pyd
+[2023-04-22 18:51:49] INFO root fetch - processPackages [hypertune]: executing diffoscope
+[2023-04-22 18:51:49] INFO root fetch - processPackages [hypertune]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypertune-1.1.0rc8.tar.gz tmp/hypertune-1.1.0rc9.tar.gz --markdown 20230422/h/hypertune/1.1.0rc8-1.1.0rc9/diff.md --exclude *.pyd
+[2023-04-22 18:51:49] INFO root fetch - processPackages [polyaxon]: executing diffoscope
+[2023-04-22 18:51:49] INFO root fetch - processPackages [polyaxon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyaxon-2.0.0rc8.tar.gz tmp/polyaxon-2.0.0rc9.tar.gz --markdown 20230422/p/polyaxon/2.0.0rc8-2.0.0rc9/diff.md --exclude *.pyd
+[2023-04-22 18:51:50] INFO root fetch - processPackages [kaiju-tools]: Downloading https://files.pythonhosted.org/packages/bc/35/fa88859a2237c5324f2eecf11c2d262e610a1e71d460820227fee2c4735e/kaiju_tools-2.0.50-py3-none-any.whl
+[2023-04-22 18:51:50] INFO root fetch - processPackages [ArmaQDL]: Downloading https://files.pythonhosted.org/packages/1a/41/feed17464607fff7dcaf771c2f6d3a4ec841d62300dddcd44293fab27d3a/armaqdl-0.7.0.tar.gz
+[2023-04-22 18:51:50] INFO root fetch - processPackages [kaiju-tools]: executing diffoscope
+[2023-04-22 18:51:50] INFO root fetch - processPackages [kaiju-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaiju_tools-2.0.49-py3-none-any.whl.zip tmp/kaiju_tools-2.0.50-py3-none-any.whl.zip --markdown 20230422/k/kaiju-tools/2.0.49-2.0.50/diff.md --exclude *.pyd
+[2023-04-22 18:51:50] INFO root fetch - processPackages [ArmaQDL]: executing diffoscope
+[2023-04-22 18:51:50] INFO root fetch - processPackages [ArmaQDL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/armaqdl-0.6.1.tar.gz tmp/armaqdl-0.7.0.tar.gz --markdown 20230422/A/ArmaQDL/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-04-22 18:51:50] INFO root fetch - processPackages [xia-engine-terraform]: Start processing: traceml
+[2023-04-22 18:51:50] INFO root fetch - main [MainThread]: End processing [xia-engine-terraform]: success
+[2023-04-22 18:51:50] INFO root fetch - processPackages [traceml]: New version: [1.1.0rc9] Old Version: [1.1.0rc8]
+[2023-04-22 18:51:51] INFO root fetch - processPackages [jupylite-duckdb]: Start processing: df-websockets
+[2023-04-22 18:51:51] INFO root fetch - main [MainThread]: End processing [jupylite-duckdb]: success
+[2023-04-22 18:51:51] INFO root fetch - processPackages [df-websockets]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-22 18:51:51] INFO root fetch - processPackages [df-websockets]: Downloading https://files.pythonhosted.org/packages/f2/ff/78e0297ece4aabcd685c92e5486e454bfa73ce252108608714bd7343c823/df_websockets-1.0.2.tar.gz
+[2023-04-22 18:51:51] INFO root fetch - processPackages [traceml]: executing diffoscope
+[2023-04-22 18:51:51] INFO root fetch - processPackages [traceml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traceml-1.1.0rc8.tar.gz tmp/traceml-1.1.0rc9.tar.gz --markdown 20230422/t/traceml/1.1.0rc8-1.1.0rc9/diff.md --exclude *.pyd
+[2023-04-22 18:51:51] INFO root fetch - processPackages [df-websockets]: Downloading https://files.pythonhosted.org/packages/9b/dd/f8f12f7451d21c56fb7aa929087662ba72b1f79d2a19170e26255c9dcecd/df_websockets-1.0.3.tar.gz
+[2023-04-22 18:51:51] INFO root fetch - processPackages [df-websockets]: executing diffoscope
+[2023-04-22 18:51:51] INFO root fetch - processPackages [df-websockets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/df_websockets-1.0.2.tar.gz tmp/df_websockets-1.0.3.tar.gz --markdown 20230422/d/df-websockets/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-22 18:51:51] INFO root fetch - processPackages [ArmaQDL]: Start processing: df-config
+[2023-04-22 18:51:51] INFO root fetch - main [MainThread]: End processing [ArmaQDL]: success
+[2023-04-22 18:51:51] INFO root fetch - processPackages [df-config]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-22 18:51:51] INFO root fetch - processPackages [hypertune]: Start processing: orso
+[2023-04-22 18:51:51] INFO root fetch - main [MainThread]: End processing [hypertune]: success
+[2023-04-22 18:51:51] INFO root fetch - processPackages [orso]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 18:51:51] INFO root fetch - processPackages [df-config]: executing diffoscope
+[2023-04-22 18:51:51] INFO root fetch - processPackages [df-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/df_config-1.1.8.tar.gz tmp/df_config-1.1.9.tar.gz --markdown 20230422/d/df-config/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-22 18:51:51] INFO root fetch - processPackages [docbuild]: Start processing: PyTurboJPEG
+[2023-04-22 18:51:51] INFO root fetch - main [MainThread]: End processing [docbuild]: success
+[2023-04-22 18:51:51] INFO root fetch - processPackages [PyTurboJPEG]: New version: [1.7.1] Old Version: [1.7.0]
+[2023-04-22 18:51:52] INFO root fetch - processPackages [orso]: executing diffoscope
+[2023-04-22 18:51:52] INFO root fetch - processPackages [orso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orso-0.0.8.tar.gz tmp/orso-0.0.9.tar.gz --markdown 20230422/o/orso/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 18:51:52] INFO root fetch - processPackages [PyTurboJPEG]: Downloading https://files.pythonhosted.org/packages/26/28/fe06582ced95e3673ba30728f889b6ba97ecd1ff9d05f9641d69c7d1a568/PyTurboJPEG-1.7.0.tar.gz
+[2023-04-22 18:51:52] INFO root fetch - processPackages [kaiju-tools]: Start processing: hnswlib-embedinai
+[2023-04-22 18:51:52] INFO root fetch - main [MainThread]: End processing [kaiju-tools]: success
+[2023-04-22 18:51:52] INFO root fetch - processPackages [PyTurboJPEG]: Downloading https://files.pythonhosted.org/packages/fe/89/990eefabeda21226e749bcc4fea7925bbbe87f6e7323cb0da6efa3bebd6a/PyTurboJPEG-1.7.1.tar.gz
+[2023-04-22 18:51:52] INFO root fetch - processPackages [PyTurboJPEG]: executing diffoscope
+[2023-04-22 18:51:52] INFO root fetch - processPackages [PyTurboJPEG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyTurboJPEG-1.7.0.tar.gz tmp/PyTurboJPEG-1.7.1.tar.gz --markdown 20230422/P/PyTurboJPEG/1.7.0-1.7.1/diff.md --exclude *.pyd
+[2023-04-22 18:51:52] INFO root fetch - main [MainThread]: End processing [mango-explorer-v4]: success
+[2023-04-22 18:51:52] WARNING root fetch - processPackages [hnswlib-embedinai]: Skipping, unable to determine old version
+[2023-04-22 18:51:52] INFO root fetch - main [MainThread]: End processing [hnswlib-embedinai] error
+[2023-04-22 18:51:53] INFO root fetch - main [MainThread]: End processing [df-websockets]: success
+[2023-04-22 18:51:53] INFO root fetch - main [MainThread]: End processing [orso]: success
+[2023-04-22 18:51:53] INFO root fetch - main [MainThread]: End processing [df-config]: success
+[2023-04-22 18:51:53] INFO root fetch - main [MainThread]: End processing [PyTurboJPEG]: success
+[2023-04-22 18:51:54] INFO root fetch - main [MainThread]: End processing [traceml]: success
+[2023-04-22 18:51:55] INFO root fetch - main [MainThread]: End processing [haupt]: success
+[2023-04-22 18:51:56] INFO root fetch - main [MainThread]: End processing [polyaxon]: success
+[2023-04-22 18:51:59] INFO root fetch - main [MainThread]: End processing [polyaxon-sdk]: success
+[2023-04-22 18:51:59] INFO root fetch - main [MainThread]: Store serial: [17815958]
