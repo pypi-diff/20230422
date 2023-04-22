@@ -7819,3 +7819,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 11:58:11] INFO root fetch - main [MainThread]: End processing [aniemore]: success
 [2023-04-22 11:58:11] INFO root fetch - main [MainThread]: End processing [patpat]: success
 [2023-04-22 11:58:11] INFO root fetch - main [MainThread]: Store serial: [17813724]
+[2023-04-22 12:03:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813724]
+[2023-04-22 12:03:21] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 12:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wrts
+[2023-04-22 12:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mdapy
+[2023-04-22 12:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: z4d-certified-devices
+[2023-04-22 12:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: telespider
+[2023-04-22 12:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gptdeploy
+[2023-04-22 12:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: CirclesS3Storage
+[2023-04-22 12:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: QuNet
+[2023-04-22 12:03:21] INFO root fetch - processPackages [CirclesS3Storage]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 12:03:21] INFO root fetch - processPackages [wrts]: New version: [0.5.0] Old Version: [0.4.1]
+[2023-04-22 12:03:21] INFO root fetch - processPackages [telespider]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-22 12:03:21] INFO root fetch - processPackages [gptdeploy]: New version: [0.18.9] Old Version: [0.18.8]
+[2023-04-22 12:03:21] INFO root fetch - processPackages [mdapy]: New version: [0.8.6] Old Version: [0.8.5]
+[2023-04-22 12:03:21] INFO root fetch - processPackages [z4d-certified-devices]: New version: [2.50] Old Version: [2.49]
+[2023-04-22 12:03:21] INFO root fetch - processPackages [QuNet]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-22 12:03:21] INFO root fetch - processPackages [mdapy]: Downloading https://files.pythonhosted.org/packages/3b/b4/0c2318538e96e10e5c5f4fbcbfd350abeec08c6682d020ca31ab8758456f/mdapy-0.8.5-cp39-cp39-win_amd64.whl
+[2023-04-22 12:03:21] INFO root fetch - processPackages [CirclesS3Storage]: Downloading https://files.pythonhosted.org/packages/41/da/34073540dfb64098b6175aea6ee5aeaaba5497fe591a0a89a712c59cef4d/CirclesS3Storage-0.0.1.tar.gz
+[2023-04-22 12:03:22] INFO root fetch - processPackages [wrts]: Downloading https://files.pythonhosted.org/packages/77/a3/197f89e25e90959e6c477ee616d1aac851396a3ca63c389c470f24e0e507/wrts-0.4.1.tar.gz
+[2023-04-22 12:03:22] INFO root fetch - processPackages [telespider]: Downloading https://files.pythonhosted.org/packages/d3/3a/f4d2f56652e1cc9db5264ea06d7e7e357111fd18d078f19ae6fa81c7b0b5/telespider-0.2.4.tar.gz
+[2023-04-22 12:03:22] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/08/0c/ec4bcbbaf558b29ba230e7df6ce0ac8a7a2ae8abf1dd5897c170634d45f0/z4d-certified-devices-2.50.tar.gz
+[2023-04-22 12:03:22] INFO root fetch - processPackages [telespider]: executing diffoscope
+[2023-04-22 12:03:22] INFO root fetch - processPackages [telespider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telespider-0.2.3.tar.gz tmp/telespider-0.2.4.tar.gz --markdown 20230422/t/telespider/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-22 12:03:22] INFO root fetch - processPackages [QuNet]: Downloading https://files.pythonhosted.org/packages/a4/6d/5d5c20274961d7e2b2954c6c34ce965dc6ddfac2d44539dab4dde78fca4e/QuNet-0.0.5-py3-none-any.whl
+[2023-04-22 12:03:22] INFO root fetch - processPackages [z4d-certified-devices]: executing diffoscope
+[2023-04-22 12:03:22] INFO root fetch - processPackages [z4d-certified-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z4d-certified-devices-2.49.tar.gz tmp/z4d-certified-devices-2.50.tar.gz --markdown 20230422/z/z4d-certified-devices/2.49-2.50/diff.md --exclude *.pyd
+[2023-04-22 12:03:22] INFO root fetch - processPackages [CirclesS3Storage]: Downloading https://files.pythonhosted.org/packages/14/e9/547df0fa1ce9b714f6003c26cf8dce90a82b5163b37b8cdb06d10665c3bf/CirclesS3Storage-0.0.2.tar.gz
+[2023-04-22 12:03:22] INFO root fetch - processPackages [gptdeploy]: executing diffoscope
+[2023-04-22 12:03:22] INFO root fetch - processPackages [gptdeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptdeploy-0.18.8.tar.gz tmp/gptdeploy-0.18.9.tar.gz --markdown 20230422/g/gptdeploy/0.18.8-0.18.9/diff.md --exclude *.pyd
+[2023-04-22 12:03:22] INFO root fetch - processPackages [mdapy]: Downloading https://files.pythonhosted.org/packages/dc/3e/ddbcfe26f9514a6fd74bd469b3fb7582cd2d6bd3d8572e70d2f655e7c569/mdapy-0.8.6-cp39-cp39-win_amd64.whl
+[2023-04-22 12:03:22] INFO root fetch - processPackages [wrts]: Downloading https://files.pythonhosted.org/packages/ec/a2/fcfd05a91729ae1c5005e501b0a5b98af89ef9c3c0a7f226e846e40b78a5/wrts-0.5.0.tar.gz
+[2023-04-22 12:03:22] INFO root fetch - processPackages [QuNet]: executing diffoscope
+[2023-04-22 12:03:22] INFO root fetch - processPackages [QuNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuNet-0.0.4-py3-none-any.whl.zip tmp/QuNet-0.0.5-py3-none-any.whl.zip --markdown 20230422/Q/QuNet/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-22 12:03:22] INFO root fetch - processPackages [CirclesS3Storage]: executing diffoscope
+[2023-04-22 12:03:22] INFO root fetch - processPackages [CirclesS3Storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CirclesS3Storage-0.0.1.tar.gz tmp/CirclesS3Storage-0.0.2.tar.gz --markdown 20230422/C/CirclesS3Storage/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 12:03:22] INFO root fetch - processPackages [wrts]: executing diffoscope
+[2023-04-22 12:03:22] INFO root fetch - processPackages [wrts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wrts-0.4.1.tar.gz tmp/wrts-0.5.0.tar.gz --markdown 20230422/w/wrts/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2023-04-22 12:03:22] INFO root fetch - processPackages [mdapy]: executing diffoscope
+[2023-04-22 12:03:22] INFO root fetch - processPackages [mdapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdapy-0.8.5-cp39-cp39-win_amd64.whl.zip tmp/mdapy-0.8.6-cp39-cp39-win_amd64.whl.zip --markdown 20230422/m/mdapy/0.8.5-0.8.6/diff.md --exclude *.pyd
+[2023-04-22 12:03:23] INFO root fetch - main [MainThread]: End processing [telespider]: success
+[2023-04-22 12:03:23] INFO root fetch - main [MainThread]: End processing [QuNet]: success
+[2023-04-22 12:03:23] INFO root fetch - main [MainThread]: End processing [gptdeploy]: success
+[2023-04-22 12:03:23] INFO root fetch - main [MainThread]: End processing [CirclesS3Storage]: success
+[2023-04-22 12:03:23] INFO root fetch - main [MainThread]: End processing [wrts]: success
+[2023-04-22 12:03:23] INFO root fetch - main [MainThread]: End processing [mdapy]: success
+[2023-04-22 12:03:26] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
+[2023-04-22 12:03:26] INFO root fetch - main [MainThread]: Store serial: [17813754]
