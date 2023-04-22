@@ -5148,3 +5148,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 06:40:55] INFO root fetch - main [MainThread]: End processing [aws-prototyping-sdk.cloudscape-react-ts-website]: success
 [2023-04-22 06:40:56] INFO root fetch - main [MainThread]: End processing [aws-prototyping-sdk.type-safe-api]: success
 [2023-04-22 06:40:56] INFO root fetch - main [MainThread]: Store serial: [17812185]
+[2023-04-22 06:46:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812185]
+[2023-04-22 06:46:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-22 06:46:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apysc
+[2023-04-22 06:46:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hyfi
+[2023-04-22 06:46:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deepsecrets
+[2023-04-22 06:46:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: athena-ai
+[2023-04-22 06:46:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-genshinuid
+[2023-04-22 06:46:05] INFO root fetch - processPackages [athena-ai]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-22 06:46:05] INFO root fetch - processPackages [hyfi]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-22 06:46:05] INFO root fetch - processPackages [apysc]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-04-22 06:46:05] INFO root fetch - processPackages [hyfi]: executing diffoscope
+[2023-04-22 06:46:05] INFO root fetch - processPackages [hyfi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyfi-0.2.8.tar.gz tmp/hyfi-0.2.9.tar.gz --markdown 20230422/h/hyfi/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-22 06:46:05] INFO root fetch - processPackages [nonebot-plugin-genshinuid]: New version: [4.0.5] Old Version: [4.0.4]
+[2023-04-22 06:46:05] WARNING root fetch - processPackages [deepsecrets]: Skipping, unable to determine old version
+[2023-04-22 06:46:05] INFO root fetch - main [MainThread]: End processing [deepsecrets] error
+[2023-04-22 06:46:05] INFO root fetch - processPackages [athena-ai]: Downloading https://files.pythonhosted.org/packages/a0/43/b6cb2ea42c3bea8cd461f4868e1865c083ea2273dfd0a785b06db9b586a2/athena_ai-0.0.5.tar.gz
+[2023-04-22 06:46:05] INFO root fetch - processPackages [athena-ai]: executing diffoscope
+[2023-04-22 06:46:05] INFO root fetch - processPackages [athena-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athena_ai-0.0.4.tar.gz tmp/athena_ai-0.0.5.tar.gz --markdown 20230422/a/athena-ai/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-22 06:46:05] INFO root fetch - processPackages [nonebot-plugin-genshinuid]: Downloading https://files.pythonhosted.org/packages/e1/1a/ea2e518e7f97121888a4e5d37b5abcd20c3be48ba0b301a499c1b2b53bce/nonebot_plugin_genshinuid-4.0.5.tar.gz
+[2023-04-22 06:46:05] INFO root fetch - processPackages [apysc]: executing diffoscope
+[2023-04-22 06:46:06] INFO root fetch - processPackages [apysc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apysc-2.7.8.tar.gz tmp/apysc-2.7.9.tar.gz --markdown 20230422/a/apysc/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-04-22 06:46:06] INFO root fetch - processPackages [nonebot-plugin-genshinuid]: executing diffoscope
+[2023-04-22 06:46:06] INFO root fetch - processPackages [nonebot-plugin-genshinuid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_genshinuid-4.0.4.tar.gz tmp/nonebot_plugin_genshinuid-4.0.5.tar.gz --markdown 20230422/n/nonebot-plugin-genshinuid/4.0.4-4.0.5/diff.md --exclude *.pyd
+[2023-04-22 06:46:06] INFO root fetch - main [MainThread]: End processing [hyfi]: success
+[2023-04-22 06:46:06] INFO root fetch - main [MainThread]: End processing [athena-ai]: success
+[2023-04-22 06:46:07] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-genshinuid]: success
+[2023-04-22 06:46:14] INFO root fetch - main [MainThread]: End processing [apysc]: success
+[2023-04-22 06:46:14] INFO root fetch - main [MainThread]: Store serial: [17812203]
