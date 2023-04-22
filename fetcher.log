@@ -13239,3 +13239,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 22:19:40] INFO root fetch - main [MainThread]: End processing [workflow-templater]: success
 [2023-04-22 22:19:40] INFO root fetch - main [MainThread]: End processing [pyeasee]: success
 [2023-04-22 22:19:40] INFO root fetch - main [MainThread]: Store serial: [17816875]
+[2023-04-22 22:24:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816875]
+[2023-04-22 22:24:49] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 22:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dol
+[2023-04-22 22:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openpy-dsse
+[2023-04-22 22:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-04-22 22:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2023-04-22 22:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: botterino
+[2023-04-22 22:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: repelis-ver-super-mario-bros-la-pelicula-pelicula-completa-en-espanol
+[2023-04-22 22:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dedust
+[2023-04-22 22:24:49] INFO root fetch - processPackages [openpy-dsse]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-22 22:24:49] INFO root fetch - processPackages [dol]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-22 22:24:49] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-22 22:24:49] WARNING root fetch - processPackages [dedust]: Skipping, unable to determine old version
+[2023-04-22 22:24:49] WARNING root fetch - processPackages [repelis-ver-super-mario-bros-la-pelicula-pelicula-completa-en-espanol]: Skipping, unable to determine old version
+[2023-04-22 22:24:49] INFO root fetch - main [MainThread]: End processing [dedust] error
+[2023-04-22 22:24:49] INFO root fetch - main [MainThread]: End processing [repelis-ver-super-mario-bros-la-pelicula-pelicula-completa-en-espanol] error
+[2023-04-22 22:24:49] INFO root fetch - processPackages [botterino]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-04-22 22:24:49] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-22 22:24:49] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-22 22:24:49] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230422/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-22 22:24:49] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-22 22:24:49] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230422/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-22 22:24:50] INFO root fetch - processPackages [openpy-dsse]: Downloading https://files.pythonhosted.org/packages/20/67/9214c3d8f58b1014797817ac18cd4c74c264d0e57421a2cfa7c4079faf49/openpy_dsse-0.1.4.tar.gz
+[2023-04-22 22:24:50] INFO root fetch - processPackages [botterino]: Downloading https://files.pythonhosted.org/packages/7e/70/04d0cdf32c2d81d9f48044be9aa2f3f6188a31f57cd10335dba74d095a1a/botterino-0.4.5.tar.gz
+[2023-04-22 22:24:50] INFO root fetch - processPackages [openpy-dsse]: executing diffoscope
+[2023-04-22 22:24:50] INFO root fetch - processPackages [openpy-dsse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openpy_dsse-0.1.3.tar.gz tmp/openpy_dsse-0.1.4.tar.gz --markdown 20230422/o/openpy-dsse/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-22 22:24:50] INFO root fetch - processPackages [dol]: executing diffoscope
+[2023-04-22 22:24:50] INFO root fetch - processPackages [dol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dol-0.1.98.tar.gz tmp/dol-0.1.99.tar.gz --markdown 20230422/d/dol/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-22 22:24:50] INFO root fetch - processPackages [botterino]: Downloading https://files.pythonhosted.org/packages/33/70/218acc534d05d346bc29a97097b8dc4d8847c22d5442187e4236c4ec8bbf/botterino-0.4.6.tar.gz
+[2023-04-22 22:24:50] INFO root fetch - processPackages [botterino]: executing diffoscope
+[2023-04-22 22:24:50] INFO root fetch - processPackages [botterino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botterino-0.4.5.tar.gz tmp/botterino-0.4.6.tar.gz --markdown 20230422/b/botterino/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-04-22 22:24:51] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-22 22:24:51] INFO root fetch - main [MainThread]: End processing [dol]: success
+[2023-04-22 22:24:51] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-22 22:24:51] INFO root fetch - main [MainThread]: End processing [botterino]: success
+[2023-04-22 22:24:51] INFO root fetch - main [MainThread]: End processing [openpy-dsse]: success
+[2023-04-22 22:24:51] INFO root fetch - main [MainThread]: Store serial: [17816902]
