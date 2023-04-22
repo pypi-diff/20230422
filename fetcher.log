@@ -11616,3 +11616,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 18:51:56] INFO root fetch - main [MainThread]: End processing [polyaxon]: success
 [2023-04-22 18:51:59] INFO root fetch - main [MainThread]: End processing [polyaxon-sdk]: success
 [2023-04-22 18:51:59] INFO root fetch - main [MainThread]: Store serial: [17815958]
+[2023-04-22 18:57:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815958]
+[2023-04-22 18:57:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-22 18:57:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: censusdis
+[2023-04-22 18:57:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flexypy
+[2023-04-22 18:57:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: featurizerai
+[2023-04-22 18:57:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: diagonal-b6
+[2023-04-22 18:57:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: model-railway-signals
+[2023-04-22 18:57:08] INFO root fetch - processPackages [featurizerai]: New version: [1.3.8] Old Version: [1.3.7]
+[2023-04-22 18:57:08] INFO root fetch - processPackages [flexypy]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-22 18:57:08] INFO root fetch - processPackages [censusdis]: New version: [0.9.0] Old Version: [0.8.8]
+[2023-04-22 18:57:08] WARNING root fetch - processPackages [diagonal-b6]: Skipping, unable to determine old version
+[2023-04-22 18:57:08] INFO root fetch - main [MainThread]: End processing [diagonal-b6] error
+[2023-04-22 18:57:08] INFO root fetch - processPackages [model-railway-signals]: New version: [3.3.0] Old Version: [3.2.0]
+[2023-04-22 18:57:08] INFO root fetch - processPackages [flexypy]: Downloading https://files.pythonhosted.org/packages/96/e3/416dc7e1093c3b3048f6e19dc86640bfc0c56910446ebd91e414cacc18eb/flexypy-0.0.4.tar.gz
+[2023-04-22 18:57:09] INFO root fetch - processPackages [censusdis]: Downloading https://files.pythonhosted.org/packages/fd/18/5b7c72ee455cfb3948d868d748bf89555d2c149579a30e4a42a2e072e5bc/censusdis-0.8.8.tar.gz
+[2023-04-22 18:57:09] INFO root fetch - processPackages [featurizerai]: Downloading https://files.pythonhosted.org/packages/1e/68/872819c9ceaa4f07520b8a8fc1d895a7eb4596a90a5d5fe92d0ecd5dfde2/featurizerai-1.3.8.tar.gz
+[2023-04-22 18:57:09] INFO root fetch - processPackages [model-railway-signals]: Downloading https://files.pythonhosted.org/packages/b3/8c/c2a6cd684814fe460230646112b480739fd7b283ad43c9017c3d31c6d0cc/model-railway-signals-3.2.0.tar.gz
+[2023-04-22 18:57:09] INFO root fetch - processPackages [featurizerai]: executing diffoscope
+[2023-04-22 18:57:09] INFO root fetch - processPackages [featurizerai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featurizerai-1.3.7.tar.gz tmp/featurizerai-1.3.8.tar.gz --markdown 20230422/f/featurizerai/1.3.7-1.3.8/diff.md --exclude *.pyd
+[2023-04-22 18:57:09] INFO root fetch - processPackages [flexypy]: Downloading https://files.pythonhosted.org/packages/38/db/3279684e14cccc5909c6551ee32449828e0b4d81b643d8d05c077ecfcace/flexypy-0.0.5.tar.gz
+[2023-04-22 18:57:09] INFO root fetch - processPackages [flexypy]: executing diffoscope
+[2023-04-22 18:57:09] INFO root fetch - processPackages [flexypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flexypy-0.0.4.tar.gz tmp/flexypy-0.0.5.tar.gz --markdown 20230422/f/flexypy/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-22 18:57:09] INFO root fetch - processPackages [model-railway-signals]: Downloading https://files.pythonhosted.org/packages/22/69/0ea054ef53af87e85970a950b23760b4682c67a590c2b9ab049f2f4b58db/model-railway-signals-3.3.0.tar.gz
+[2023-04-22 18:57:09] INFO root fetch - processPackages [censusdis]: Downloading https://files.pythonhosted.org/packages/01/ee/d48301c7bc70fbf6b088f2a29da50d64b9841cdbb919002dc1bcf8082a3a/censusdis-0.9.0.tar.gz
+[2023-04-22 18:57:09] INFO root fetch - processPackages [model-railway-signals]: executing diffoscope
+[2023-04-22 18:57:09] INFO root fetch - processPackages [model-railway-signals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model-railway-signals-3.2.0.tar.gz tmp/model-railway-signals-3.3.0.tar.gz --markdown 20230422/m/model-railway-signals/3.2.0-3.3.0/diff.md --exclude *.pyd
+[2023-04-22 18:57:09] INFO root fetch - processPackages [censusdis]: executing diffoscope
+[2023-04-22 18:57:09] INFO root fetch - processPackages [censusdis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/censusdis-0.8.8.tar.gz tmp/censusdis-0.9.0.tar.gz --markdown 20230422/c/censusdis/0.8.8-0.9.0/diff.md --exclude *.pyd
+[2023-04-22 18:57:10] INFO root fetch - main [MainThread]: End processing [featurizerai]: success
+[2023-04-22 18:57:10] INFO root fetch - main [MainThread]: End processing [flexypy]: success
+[2023-04-22 18:57:10] INFO root fetch - main [MainThread]: End processing [censusdis]: success
+[2023-04-22 18:57:11] INFO root fetch - main [MainThread]: End processing [model-railway-signals]: success
+[2023-04-22 18:57:11] INFO root fetch - main [MainThread]: Store serial: [17815985]
