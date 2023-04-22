@@ -941,3 +941,50 @@
 [2023-04-22 02:02:01] INFO root fetch - main [MainThread]: End processing [fluxrpc]: success
 [2023-04-22 02:02:01] INFO root fetch - main [MainThread]: End processing [llama-cpp-python]: success
 [2023-04-22 02:02:01] INFO root fetch - main [MainThread]: Store serial: [17809789]
+[2023-04-22 02:07:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17809789]
+[2023-04-22 02:07:09] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 02:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ja2mqtt
+[2023-04-22 02:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: raster-tools
+[2023-04-22 02:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sdbhvkjsdfgvouikjsd
+[2023-04-22 02:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchdatasets-nightly
+[2023-04-22 02:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mct-nightly
+[2023-04-22 02:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jaxkern-nightly
+[2023-04-22 02:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jaxutils-nightly
+[2023-04-22 02:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pasimple
+[2023-04-22 02:07:09] INFO root fetch - processPackages [raster-tools]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-22 02:07:09] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20230421] Old Version: [0.0.8.dev20230420]
+[2023-04-22 02:07:09] INFO root fetch - processPackages [sdbhvkjsdfgvouikjsd]: New version: [2.7.15] Old Version: [2.7.14]
+[2023-04-22 02:07:09] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-04-22 02:07:09] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1682035401] Old Version: [1681948988]
+[2023-04-22 02:07:10] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9042023.post411] Old Version: [1.8.0.9032023.post431]
+[2023-04-22 02:07:10] INFO root fetch - processPackages [pasimple]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 02:07:10] INFO root fetch - processPackages [ja2mqtt]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-22 02:07:10] INFO root fetch - processPackages [raster-tools]: executing diffoscope
+[2023-04-22 02:07:10] INFO root fetch - processPackages [raster-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raster-tools-0.1.4.tar.gz tmp/raster-tools-0.1.5.tar.gz --markdown 20230422/r/raster-tools/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-22 02:07:10] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-04-22 02:07:10] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230422/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-04-22 02:07:10] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-04-22 02:07:10] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9032023.post431.tar.gz tmp/mct-nightly-1.8.0.9042023.post411.tar.gz --markdown 20230422/m/mct-nightly/1.8.0.9032023.post431-1.8.0.9042023.post411/diff.md --exclude *.pyd
+[2023-04-22 02:07:10] ERROR root fetch - processPackages [sdbhvkjsdfgvouikjsd]: Unable to fetch info: No such project/version 'sdbhvkjsdfgvouikjsd' 2.7.15
+[2023-04-22 02:07:10] INFO root fetch - main [MainThread]: End processing [sdbhvkjsdfgvouikjsd] error
+[2023-04-22 02:07:10] INFO root fetch - processPackages [torchdatasets-nightly]: Downloading https://files.pythonhosted.org/packages/ea/cf/7542b6f1b01fae36036312fe7d7f189d3b0d970a4acba375c73dc33d97fd/torchdatasets-nightly-1682035401.tar.gz
+[2023-04-22 02:07:10] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/17/da/afaf71f00677e64182d00f5ed8e6a18be3e31dca0d081d6764347731a534/jaxutils-nightly-0.0.8.dev20230421.tar.gz
+[2023-04-22 02:07:10] INFO root fetch - processPackages [pasimple]: Downloading https://files.pythonhosted.org/packages/26/16/c5dd66425ce24143185bf49227b616bc99e176f3d740eabaccdaac2d763c/pasimple-0.0.1.tar.gz
+[2023-04-22 02:07:10] INFO root fetch - processPackages [ja2mqtt]: Downloading https://files.pythonhosted.org/packages/ac/fc/afd22d378380cfdacfa8c7b736aefd11345e62500723bdbdbb14cb58f124/ja2mqtt-1.0.3.tar.gz
+[2023-04-22 02:07:10] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-04-22 02:07:10] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1681948988.tar.gz tmp/torchdatasets-nightly-1682035401.tar.gz --markdown 20230422/t/torchdatasets-nightly/1681948988-1682035401/diff.md --exclude *.pyd
+[2023-04-22 02:07:10] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2023-04-22 02:07:10] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20230420.tar.gz tmp/jaxutils-nightly-0.0.8.dev20230421.tar.gz --markdown 20230422/j/jaxutils-nightly/0.0.8.dev20230420-0.0.8.dev20230421/diff.md --exclude *.pyd
+[2023-04-22 02:07:10] INFO root fetch - processPackages [pasimple]: Downloading https://files.pythonhosted.org/packages/90/c3/5edce0ced2c6656fdf3f7d22ee596834e5a359a5737cacac5203d2593895/pasimple-0.0.2.tar.gz
+[2023-04-22 02:07:10] INFO root fetch - processPackages [ja2mqtt]: executing diffoscope
+[2023-04-22 02:07:10] INFO root fetch - processPackages [ja2mqtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ja2mqtt-1.0.2.tar.gz tmp/ja2mqtt-1.0.3.tar.gz --markdown 20230422/j/ja2mqtt/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-22 02:07:10] INFO root fetch - processPackages [pasimple]: executing diffoscope
+[2023-04-22 02:07:10] INFO root fetch - processPackages [pasimple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pasimple-0.0.1.tar.gz tmp/pasimple-0.0.2.tar.gz --markdown 20230422/p/pasimple/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 02:07:11] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2023-04-22 02:07:11] INFO root fetch - main [MainThread]: End processing [raster-tools]: success
+[2023-04-22 02:07:11] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2023-04-22 02:07:11] INFO root fetch - main [MainThread]: End processing [torchdatasets-nightly]: success
+[2023-04-22 02:07:11] INFO root fetch - main [MainThread]: End processing [pasimple]: success
+[2023-04-22 02:07:15] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2023-04-22 02:07:26] INFO root fetch - main [MainThread]: End processing [ja2mqtt]: success
+[2023-04-22 02:07:26] INFO root fetch - main [MainThread]: Store serial: [17809818]
