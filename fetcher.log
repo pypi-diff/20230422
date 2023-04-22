@@ -8091,3 +8091,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 12:34:43] WARNING root fetch - processPackages [myodan-tools]: Skipping, unable to determine old version
 [2023-04-22 12:34:43] INFO root fetch - main [MainThread]: End processing [myodan-tools] error
 [2023-04-22 12:34:43] INFO root fetch - main [MainThread]: Store serial: [17813900]
+[2023-04-22 12:39:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813900]
+[2023-04-22 12:39:51] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 12:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kcli
+[2023-04-22 12:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chesscomwrapper
+[2023-04-22 12:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hnhm
+[2023-04-22 12:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dycw-utilities
+[2023-04-22 12:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gptdeploy
+[2023-04-22 12:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: myodan-tools
+[2023-04-22 12:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Alapchari
+[2023-04-22 12:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: myodan-tools
+[2023-04-22 12:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: consistent
+[2023-04-22 12:39:51] WARNING root fetch - processPackages [chesscomwrapper]: Skipping, unable to determine old version
+[2023-04-22 12:39:51] INFO root fetch - main [MainThread]: End processing [chesscomwrapper] error
+[2023-04-22 12:39:51] INFO root fetch - processPackages [hnhm]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-22 12:39:51] INFO root fetch - processPackages [gptdeploy]: New version: [0.18.9] Old Version: [0.18.8]
+[2023-04-22 12:39:51] INFO root fetch - processPackages [myodan-tools]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-22 12:39:51] INFO root fetch - processPackages [myodan-tools]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-22 12:39:51] INFO root fetch - processPackages [dycw-utilities]: New version: [0.9.0] Old Version: [0.8.8]
+[2023-04-22 12:39:51] INFO root fetch - processPackages [kcli]: New version: [99.0.202304221034] Old Version: [99.0.202304220843]
+[2023-04-22 12:39:52] WARNING root fetch - processPackages [Alapchari]: Skipping, unable to determine old version
+[2023-04-22 12:39:52] INFO root fetch - main [MainThread]: End processing [Alapchari] error
+[2023-04-22 12:39:52] INFO root fetch - processPackages [consistent]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 12:39:52] INFO root fetch - processPackages [gptdeploy]: executing diffoscope
+[2023-04-22 12:39:52] INFO root fetch - processPackages [gptdeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptdeploy-0.18.8.tar.gz tmp/gptdeploy-0.18.9.tar.gz --markdown 20230422/g/gptdeploy/0.18.8-0.18.9/diff.md --exclude *.pyd
+[2023-04-22 12:39:52] INFO root fetch - processPackages [hnhm]: Downloading https://files.pythonhosted.org/packages/38/62/9d7f6bad111f2fa09ddc609be7fee7be2145dc40fc03dbcfe8255a4d7108/hnhm-0.0.4.tar.gz
+[2023-04-22 12:39:52] INFO root fetch - processPackages [myodan-tools]: Downloading https://files.pythonhosted.org/packages/e1/10/3be9957b6fd1dcdd275dd2d5ec2f48ef23545821f2d35541bf854c58f5be/myodan-tools-0.0.2.tar.gz
+[2023-04-22 12:39:52] INFO root fetch - processPackages [myodan-tools]: Downloading https://files.pythonhosted.org/packages/e1/10/3be9957b6fd1dcdd275dd2d5ec2f48ef23545821f2d35541bf854c58f5be/myodan-tools-0.0.2.tar.gz
+[2023-04-22 12:39:52] INFO root fetch - processPackages [consistent]: Downloading https://files.pythonhosted.org/packages/88/88/5b49d0dab715963b59e129fc88c7be7019f8265cc0c9c75078f8b6486b31/consistent-0.0.1.tar.gz
+[2023-04-22 12:39:52] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/e2/45/747c4b01ee95d3a503f3d8e3a7eebce870292e5510fecad79d3ee01b24df/kcli-99.0.202304221034-py3-none-any.whl
+[2023-04-22 12:39:52] INFO root fetch - processPackages [hnhm]: Downloading https://files.pythonhosted.org/packages/5a/ef/57450ac72a02ac59b0664645224367789b4b0ab45759d77c854023082d92/hnhm-0.0.5.tar.gz
+[2023-04-22 12:39:52] INFO root fetch - processPackages [dycw-utilities]: executing diffoscope
+[2023-04-22 12:39:52] INFO root fetch - processPackages [dycw-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dycw_utilities-0.8.8.tar.gz tmp/dycw_utilities-0.9.0.tar.gz --markdown 20230422/d/dycw-utilities/0.8.8-0.9.0/diff.md --exclude *.pyd
+[2023-04-22 12:39:52] INFO root fetch - processPackages [myodan-tools]: Downloading https://files.pythonhosted.org/packages/c9/a3/6fb3e25469307b5a43cbc1dc3625ed95a7e795be7b52883e65ebed8c5f49/myodan-tools-0.0.3.tar.gz
+[2023-04-22 12:39:52] INFO root fetch - processPackages [myodan-tools]: Downloading https://files.pythonhosted.org/packages/c9/a3/6fb3e25469307b5a43cbc1dc3625ed95a7e795be7b52883e65ebed8c5f49/myodan-tools-0.0.3.tar.gz
+[2023-04-22 12:39:52] INFO root fetch - processPackages [consistent]: Downloading https://files.pythonhosted.org/packages/e2/ed/4892e6c49770294399e960dbd419f54e58c88d7f6e3585b4475015f1121a/consistent-0.0.2.tar.gz
+[2023-04-22 12:39:52] INFO root fetch - processPackages [hnhm]: executing diffoscope
+[2023-04-22 12:39:52] INFO root fetch - processPackages [hnhm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hnhm-0.0.4.tar.gz tmp/hnhm-0.0.5.tar.gz --markdown 20230422/h/hnhm/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-22 12:39:52] INFO root fetch - processPackages [myodan-tools]: executing diffoscope
+[2023-04-22 12:39:52] INFO root fetch - processPackages [myodan-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myodan-tools-0.0.2.tar.gz tmp/myodan-tools-0.0.3.tar.gz --markdown 20230422/m/myodan-tools/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-22 12:39:52] INFO root fetch - processPackages [myodan-tools]: executing diffoscope
+[2023-04-22 12:39:52] INFO root fetch - processPackages [myodan-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myodan-tools-0.0.2.tar.gz tmp/myodan-tools-0.0.3.tar.gz --markdown 20230422/m/myodan-tools/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-22 12:39:52] INFO root fetch - processPackages [consistent]: executing diffoscope
+[2023-04-22 12:39:52] INFO root fetch - processPackages [consistent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/consistent-0.0.1.tar.gz tmp/consistent-0.0.2.tar.gz --markdown 20230422/c/consistent/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 12:39:52] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-22 12:39:52] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304220843-py3-none-any.whl.zip tmp/kcli-99.0.202304221034-py3-none-any.whl.zip --markdown 20230422/k/kcli/99.0.202304220843-99.0.202304221034/diff.md --exclude *.pyd
+[2023-04-22 12:39:53] INFO root fetch - main [MainThread]: End processing [gptdeploy]: success
+[2023-04-22 12:39:53] INFO root fetch - main [MainThread]: End processing [myodan-tools]: success
+[2023-04-22 12:39:53] INFO root fetch - main [MainThread]: End processing [myodan-tools]: success
+[2023-04-22 12:39:53] INFO root fetch - main [MainThread]: End processing [consistent]: success
+[2023-04-22 12:39:53] INFO root fetch - main [MainThread]: End processing [hnhm]: success
+[2023-04-22 12:39:56] INFO root fetch - main [MainThread]: End processing [dycw-utilities]: success
+[2023-04-22 12:40:00] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-22 12:40:00] INFO root fetch - main [MainThread]: Store serial: [17813930]
