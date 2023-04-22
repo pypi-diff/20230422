@@ -12351,3 +12351,55 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 20:11:06] INFO root fetch - main [MainThread]: End processing [open-space-toolkit-simulation]: success
 [2023-04-22 20:11:17] INFO root fetch - main [MainThread]: End processing [edc-microbiology]: success
 [2023-04-22 20:11:17] INFO root fetch - main [MainThread]: Store serial: [17816369]
+[2023-04-22 20:16:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816369]
+[2023-04-22 20:16:30] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 20:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: intecomm-rando
+[2023-04-22 20:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygismeteo-base
+[2023-04-22 20:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tksheet
+[2023-04-22 20:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jestspectation
+[2023-04-22 20:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: intecomm-eligibility
+[2023-04-22 20:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chessmaker
+[2023-04-22 20:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: chessmaker
+[2023-04-22 20:16:30] INFO root fetch - processPackages [pygismeteo-base]: New version: [4.4.1] Old Version: [4.4.0]
+[2023-04-22 20:16:30] INFO root fetch - processPackages [intecomm-rando]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-22 20:16:30] INFO root fetch - processPackages [jestspectation]: New version: [1.0.0] Old Version: [0.9.1]
+[2023-04-22 20:16:30] INFO root fetch - processPackages [chessmaker]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-04-22 20:16:30] INFO root fetch - processPackages [intecomm-eligibility]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-22 20:16:30] INFO root fetch - processPackages [chessmaker]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-04-22 20:16:30] INFO root fetch - processPackages [tksheet]: New version: [6.0.0] Old Version: [5.6.8]
+[2023-04-22 20:16:31] INFO root fetch - processPackages [pygismeteo-base]: Downloading https://files.pythonhosted.org/packages/b1/0f/d4faf29e79f0e4c9e5645f6cc4df1a33906d4e117b6d944f68ece5c7dc34/pygismeteo_base-4.4.0.tar.gz
+[2023-04-22 20:16:31] INFO root fetch - processPackages [chessmaker]: Downloading https://files.pythonhosted.org/packages/70/90/0882769e2e017c446faee5ae29c9d9900cad8b333948c96010ace779717f/chessmaker-0.3.2.tar.gz
+[2023-04-22 20:16:31] INFO root fetch - processPackages [intecomm-rando]: Downloading https://files.pythonhosted.org/packages/aa/3e/9c126718957be40db2a2019f9a96337716fa962d6ca655551e9c9af2cc2c/intecomm-rando-0.1.5.tar.gz
+[2023-04-22 20:16:31] INFO root fetch - processPackages [chessmaker]: Downloading https://files.pythonhosted.org/packages/70/90/0882769e2e017c446faee5ae29c9d9900cad8b333948c96010ace779717f/chessmaker-0.3.2.tar.gz
+[2023-04-22 20:16:31] INFO root fetch - processPackages [jestspectation]: Downloading https://files.pythonhosted.org/packages/2b/83/5eabc678e799f13452cd752afd5f8385b373c82cc01d1b226ecc82b2844c/Jestspectation-0.9.1.tar.gz
+[2023-04-22 20:16:31] INFO root fetch - processPackages [tksheet]: Downloading https://files.pythonhosted.org/packages/02/82/a109346a743f4cec222240a4078cbba587ef648e10d86074fbafac070fa5/tksheet-5.6.8.tar.gz
+[2023-04-22 20:16:31] INFO root fetch - processPackages [intecomm-eligibility]: Downloading https://files.pythonhosted.org/packages/a1/9c/e416484c1b88832c295783097e5372575af9e23ad40c346cd50aea0c9a53/intecomm-eligibility-0.1.4.tar.gz
+[2023-04-22 20:16:31] INFO root fetch - processPackages [intecomm-rando]: Downloading https://files.pythonhosted.org/packages/bb/0d/94ab1762b15558accb01a4364fa1e36cbac7f12b5ca1a35fd3c8dc854ae3/intecomm-rando-0.1.6.tar.gz
+[2023-04-22 20:16:31] INFO root fetch - processPackages [pygismeteo-base]: Downloading https://files.pythonhosted.org/packages/16/d8/d3df7b11b012de2ea5a2f3e8bd716cc91db68b3aa3876b72d2f9c5b13882/pygismeteo_base-4.4.1.tar.gz
+[2023-04-22 20:16:31] INFO root fetch - processPackages [intecomm-eligibility]: Downloading https://files.pythonhosted.org/packages/a9/03/dfcd6e21bab3da2ed277fd3b2113c5992efaa39fdb8b1a55c380eafab1c7/intecomm-eligibility-0.1.5.tar.gz
+[2023-04-22 20:16:31] INFO root fetch - processPackages [tksheet]: Downloading https://files.pythonhosted.org/packages/2c/f9/966c30f85ae0f01be3eececc7c731787996d6d11d950732fa3f25573f667/tksheet-6.0.0.tar.gz
+[2023-04-22 20:16:31] INFO root fetch - processPackages [chessmaker]: Downloading https://files.pythonhosted.org/packages/94/3e/f83191b0db7f2cf835f317497808478fdc959ef62b9e2a907dcd3f1b9c30/chessmaker-0.4.0.tar.gz
+[2023-04-22 20:16:31] INFO root fetch - processPackages [chessmaker]: Downloading https://files.pythonhosted.org/packages/94/3e/f83191b0db7f2cf835f317497808478fdc959ef62b9e2a907dcd3f1b9c30/chessmaker-0.4.0.tar.gz
+[2023-04-22 20:16:31] INFO root fetch - processPackages [intecomm-rando]: executing diffoscope
+[2023-04-22 20:16:31] INFO root fetch - processPackages [intecomm-rando]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intecomm-rando-0.1.5.tar.gz tmp/intecomm-rando-0.1.6.tar.gz --markdown 20230422/i/intecomm-rando/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-22 20:16:31] INFO root fetch - processPackages [jestspectation]: Downloading https://files.pythonhosted.org/packages/f8/74/9c2960790ab19f7a6530fd74f0722b098d04740e0e438361d2f85cf985fc/jestspectation-1.0.0.tar.gz
+[2023-04-22 20:16:31] INFO root fetch - processPackages [intecomm-eligibility]: executing diffoscope
+[2023-04-22 20:16:31] INFO root fetch - processPackages [intecomm-eligibility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intecomm-eligibility-0.1.4.tar.gz tmp/intecomm-eligibility-0.1.5.tar.gz --markdown 20230422/i/intecomm-eligibility/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-22 20:16:31] INFO root fetch - processPackages [pygismeteo-base]: executing diffoscope
+[2023-04-22 20:16:31] INFO root fetch - processPackages [pygismeteo-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygismeteo_base-4.4.0.tar.gz tmp/pygismeteo_base-4.4.1.tar.gz --markdown 20230422/p/pygismeteo-base/4.4.0-4.4.1/diff.md --exclude *.pyd
+[2023-04-22 20:16:31] INFO root fetch - processPackages [tksheet]: executing diffoscope
+[2023-04-22 20:16:31] INFO root fetch - processPackages [tksheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tksheet-5.6.8.tar.gz tmp/tksheet-6.0.0.tar.gz --markdown 20230422/t/tksheet/5.6.8-6.0.0/diff.md --exclude *.pyd
+[2023-04-22 20:16:31] INFO root fetch - processPackages [chessmaker]: executing diffoscope
+[2023-04-22 20:16:31] INFO root fetch - processPackages [chessmaker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chessmaker-0.3.2.tar.gz tmp/chessmaker-0.4.0.tar.gz --markdown 20230422/c/chessmaker/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-04-22 20:16:31] INFO root fetch - processPackages [chessmaker]: executing diffoscope
+[2023-04-22 20:16:31] INFO root fetch - processPackages [chessmaker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chessmaker-0.3.2.tar.gz tmp/chessmaker-0.4.0.tar.gz --markdown 20230422/c/chessmaker/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-04-22 20:16:31] INFO root fetch - processPackages [jestspectation]: executing diffoscope
+[2023-04-22 20:16:31] INFO root fetch - processPackages [jestspectation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jestspectation-0.9.1.tar.gz tmp/jestspectation-1.0.0.tar.gz --markdown 20230422/j/jestspectation/0.9.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-22 20:16:33] INFO root fetch - main [MainThread]: End processing [intecomm-eligibility]: success
+[2023-04-22 20:16:33] INFO root fetch - main [MainThread]: End processing [pygismeteo-base]: success
+[2023-04-22 20:16:33] INFO root fetch - main [MainThread]: End processing [intecomm-rando]: success
+[2023-04-22 20:16:33] INFO root fetch - main [MainThread]: End processing [chessmaker]: success
+[2023-04-22 20:16:33] INFO root fetch - main [MainThread]: End processing [tksheet]: success
+[2023-04-22 20:16:33] INFO root fetch - main [MainThread]: End processing [chessmaker]: success
+[2023-04-22 20:16:49] INFO root fetch - main [MainThread]: End processing [jestspectation]: success
+[2023-04-22 20:16:49] INFO root fetch - main [MainThread]: Store serial: [17816389]
