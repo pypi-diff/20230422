@@ -6328,3 +6328,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 08:46:22] INFO root fetch - main [MainThread]: End processing [baiduspiderCreatedByHanXu]: success
 [2023-04-22 08:46:22] INFO root fetch - main [MainThread]: End processing [django-utilitas]: success
 [2023-04-22 08:46:22] INFO root fetch - main [MainThread]: Store serial: [17812777]
+[2023-04-22 08:51:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812777]
+[2023-04-22 08:51:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 08:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tabularcompare
+[2023-04-22 08:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BingImageSpiderCreatedByHanXu
+[2023-04-22 08:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: so-vits-svc-fork
+[2023-04-22 08:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pythoness
+[2023-04-22 08:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: StringFix
+[2023-04-22 08:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyrew
+[2023-04-22 08:51:30] INFO root fetch - processPackages [StringFix]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-22 08:51:30] INFO root fetch - processPackages [tabularcompare]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-22 08:51:30] WARNING root fetch - processPackages [pythoness]: Skipping, unable to determine old version
+[2023-04-22 08:51:30] INFO root fetch - main [MainThread]: End processing [pythoness] error
+[2023-04-22 08:51:30] INFO root fetch - processPackages [pyrew]: New version: [0.6.2] Old Version: [0.5.2]
+[2023-04-22 08:51:30] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.9.5] Old Version: [3.9.4]
+[2023-04-22 08:51:31] INFO root fetch - processPackages [pyrew]: executing diffoscope
+[2023-04-22 08:51:31] INFO root fetch - processPackages [pyrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrew-0.5.2.tar.gz tmp/pyrew-0.6.2.tar.gz --markdown 20230422/p/pyrew/0.5.2-0.6.2/diff.md --exclude *.pyd
+[2023-04-22 08:51:31] WARNING root fetch - processPackages [BingImageSpiderCreatedByHanXu]: Skipping, unable to determine old version
+[2023-04-22 08:51:31] INFO root fetch - main [MainThread]: End processing [BingImageSpiderCreatedByHanXu] error
+[2023-04-22 08:51:31] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-22 08:51:31] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.9.4.tar.gz tmp/so_vits_svc_fork-3.9.5.tar.gz --markdown 20230422/s/so-vits-svc-fork/3.9.4-3.9.5/diff.md --exclude *.pyd
+[2023-04-22 08:51:31] INFO root fetch - processPackages [tabularcompare]: executing diffoscope
+[2023-04-22 08:51:31] INFO root fetch - processPackages [tabularcompare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tabularcompare-0.0.2.tar.gz tmp/tabularcompare-0.0.3.tar.gz --markdown 20230422/t/tabularcompare/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-22 08:51:31] INFO root fetch - processPackages [StringFix]: Downloading https://files.pythonhosted.org/packages/16/98/53ceb7512802682585ffa63b1122444b90920aa9d4791a39506ae2e62084/StringFix-0.6.9.tar.gz
+[2023-04-22 08:51:31] INFO root fetch - processPackages [StringFix]: executing diffoscope
+[2023-04-22 08:51:31] INFO root fetch - processPackages [StringFix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/StringFix-0.6.8.tar.gz tmp/StringFix-0.6.9.tar.gz --markdown 20230422/S/StringFix/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-22 08:51:31] INFO root fetch - main [MainThread]: End processing [pyrew]: success
+[2023-04-22 08:51:32] INFO root fetch - main [MainThread]: End processing [tabularcompare]: success
+[2023-04-22 08:51:32] INFO root fetch - main [MainThread]: End processing [StringFix]: success
+[2023-04-22 08:51:32] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-04-22 08:51:32] INFO root fetch - main [MainThread]: Store serial: [17812798]
