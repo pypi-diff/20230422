@@ -13898,3 +13898,46 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 23:39:43] INFO root fetch - main [MainThread]: End processing [lamindb]: success
 [2023-04-22 23:39:43] INFO root fetch - main [MainThread]: End processing [stoobly-agent]: success
 [2023-04-22 23:39:43] INFO root fetch - main [MainThread]: Store serial: [17817358]
+[2023-04-22 23:44:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17817358]
+[2023-04-22 23:44:52] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 23:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ofunctions.network
+[2023-04-22 23:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oking
+[2023-04-22 23:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: psychonaut
+[2023-04-22 23:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: entelecheia
+[2023-04-22 23:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yq
+[2023-04-22 23:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: super-simple-stretch-api
+[2023-04-22 23:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pymap
+[2023-04-22 23:44:52] INFO root fetch - processPackages [psychonaut]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 23:44:52] INFO root fetch - processPackages [entelecheia]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-22 23:44:52] INFO root fetch - processPackages [psychonaut]: executing diffoscope
+[2023-04-22 23:44:52] INFO root fetch - processPackages [psychonaut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psychonaut-0.0.1.tar.gz tmp/psychonaut-0.0.2.tar.gz --markdown 20230422/p/psychonaut/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 23:44:52] INFO root fetch - processPackages [ofunctions.network]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-04-22 23:44:52] INFO root fetch - processPackages [oking]: New version: [4.1.99] Old Version: [4.1.98]
+[2023-04-22 23:44:52] WARNING root fetch - processPackages [super-simple-stretch-api]: Skipping, unable to determine old version
+[2023-04-22 23:44:52] INFO root fetch - main [MainThread]: End processing [super-simple-stretch-api] error
+[2023-04-22 23:44:52] INFO root fetch - processPackages [yq]: New version: [3.2.2] Old Version: [3.2.1]
+[2023-04-22 23:44:52] INFO root fetch - processPackages [pymap]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-04-22 23:44:52] INFO root fetch - processPackages [entelecheia]: Downloading https://files.pythonhosted.org/packages/a1/68/bddf110446723975dadac361f37cb69172a835b9184ec6a5863f92810cb0/entelecheia-0.1.2.tar.gz
+[2023-04-22 23:44:52] INFO root fetch - processPackages [ofunctions.network]: Downloading https://files.pythonhosted.org/packages/51/93/0c662cb1aff67b629135a96cb11c7f21480072a365fa35a1a985807f7d8c/ofunctions.network-1.3.2.tar.gz
+[2023-04-22 23:44:52] INFO root fetch - processPackages [oking]: Downloading https://files.pythonhosted.org/packages/10/e0/bc03eb0f51c985363e25571936de0258a0f3e5e43f8525986b708e4f2e81/oking-4.1.98.tar.gz
+[2023-04-22 23:44:52] INFO root fetch - processPackages [yq]: Downloading https://files.pythonhosted.org/packages/82/09/110ed5ef1e1afb4e87e256b322f88bbfaa9fe59eb5f30d1764e0741c0735/yq-3.2.1.tar.gz
+[2023-04-22 23:44:52] INFO root fetch - processPackages [pymap]: Downloading https://files.pythonhosted.org/packages/2a/5a/5f6cd5528d334cc9d4bef58ab2008b92d3ea2677f433cc2750f52df784c3/pymap-0.9.6.tar.gz
+[2023-04-22 23:44:52] WARNING root fetch - processPackages [oking]: Skipping package: exceeds size limit 82479280>=10485760
+[2023-04-22 23:44:52] INFO root fetch - main [MainThread]: End processing [oking] error
+[2023-04-22 23:44:52] INFO root fetch - processPackages [entelecheia]: executing diffoscope
+[2023-04-22 23:44:52] INFO root fetch - processPackages [entelecheia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/entelecheia-0.1.1.tar.gz tmp/entelecheia-0.1.2.tar.gz --markdown 20230422/e/entelecheia/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-22 23:44:52] INFO root fetch - processPackages [yq]: Downloading https://files.pythonhosted.org/packages/90/a0/ddb66d2e527626288a9b526af5c21bc0e590622faa1d0425808ad75f6bc5/yq-3.2.2.tar.gz
+[2023-04-22 23:44:52] INFO root fetch - processPackages [ofunctions.network]: Downloading https://files.pythonhosted.org/packages/2b/ce/e25e911c0c5e4f62530e5d76b124fd8dc60de5cebdc957b9c08586baf772/ofunctions.network-1.3.3.tar.gz
+[2023-04-22 23:44:52] INFO root fetch - processPackages [yq]: executing diffoscope
+[2023-04-22 23:44:52] INFO root fetch - processPackages [yq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yq-3.2.1.tar.gz tmp/yq-3.2.2.tar.gz --markdown 20230422/y/yq/3.2.1-3.2.2/diff.md --exclude *.pyd
+[2023-04-22 23:44:53] INFO root fetch - processPackages [ofunctions.network]: executing diffoscope
+[2023-04-22 23:44:53] INFO root fetch - processPackages [ofunctions.network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ofunctions.network-1.3.2.tar.gz tmp/ofunctions.network-1.3.3.tar.gz --markdown 20230422/o/ofunctions.network/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-04-22 23:44:53] INFO root fetch - processPackages [pymap]: Downloading https://files.pythonhosted.org/packages/99/7c/f35c4b4960d80c3cf6279248e6d0b2ab6874188d4f955c4089d7905c8e31/pymap-0.9.7.tar.gz
+[2023-04-22 23:44:53] INFO root fetch - main [MainThread]: End processing [psychonaut]: success
+[2023-04-22 23:44:53] INFO root fetch - processPackages [pymap]: executing diffoscope
+[2023-04-22 23:44:53] INFO root fetch - processPackages [pymap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymap-0.9.6.tar.gz tmp/pymap-0.9.7.tar.gz --markdown 20230422/p/pymap/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-04-22 23:44:53] INFO root fetch - main [MainThread]: End processing [entelecheia]: success
+[2023-04-22 23:44:53] INFO root fetch - main [MainThread]: End processing [yq]: success
+[2023-04-22 23:44:54] INFO root fetch - main [MainThread]: End processing [ofunctions.network]: success
+[2023-04-22 23:44:55] INFO root fetch - main [MainThread]: End processing [pymap]: success
+[2023-04-22 23:44:55] INFO root fetch - main [MainThread]: Store serial: [17817389]
