@@ -8277,3 +8277,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 12:58:35] INFO root fetch - main [MainThread]: End processing [khl]: success
 [2023-04-22 12:58:35] INFO root fetch - main [MainThread]: End processing [dcm-processor]: success
 [2023-04-22 12:58:35] INFO root fetch - main [MainThread]: Store serial: [17813999]
+[2023-04-22 13:03:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813999]
+[2023-04-22 13:03:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-22 13:03:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gptdeploy
+[2023-04-22 13:03:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrew
+[2023-04-22 13:03:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: df-config
+[2023-04-22 13:03:44] INFO root fetch - processPackages [pyrew]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-22 13:03:44] INFO root fetch - processPackages [gptdeploy]: New version: [0.18.9] Old Version: [0.18.8]
+[2023-04-22 13:03:44] INFO root fetch - processPackages [df-config]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-22 13:03:44] INFO root fetch - processPackages [pyrew]: executing diffoscope
+[2023-04-22 13:03:44] INFO root fetch - processPackages [pyrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrew-0.9.2.tar.gz tmp/pyrew-0.9.3.tar.gz --markdown 20230422/p/pyrew/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-22 13:03:44] INFO root fetch - processPackages [gptdeploy]: executing diffoscope
+[2023-04-22 13:03:44] INFO root fetch - processPackages [gptdeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptdeploy-0.18.8.tar.gz tmp/gptdeploy-0.18.9.tar.gz --markdown 20230422/g/gptdeploy/0.18.8-0.18.9/diff.md --exclude *.pyd
+[2023-04-22 13:03:44] INFO root fetch - processPackages [df-config]: Downloading https://files.pythonhosted.org/packages/09/91/df36954d7f97ae19a46241196d5ae26563010e569c1db34ee364330db382/df_config-1.1.8.tar.gz
+[2023-04-22 13:03:45] INFO root fetch - processPackages [df-config]: Downloading https://files.pythonhosted.org/packages/b4/ad/2b2b0a0d45e34bce362659c39c446e5470998570dbb424c47f25b2f25f3e/df_config-1.1.9.tar.gz
+[2023-04-22 13:03:45] INFO root fetch - processPackages [df-config]: executing diffoscope
+[2023-04-22 13:03:45] INFO root fetch - processPackages [df-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/df_config-1.1.8.tar.gz tmp/df_config-1.1.9.tar.gz --markdown 20230422/d/df-config/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-22 13:03:45] INFO root fetch - main [MainThread]: End processing [pyrew]: success
+[2023-04-22 13:03:45] INFO root fetch - main [MainThread]: End processing [gptdeploy]: success
+[2023-04-22 13:03:46] INFO root fetch - main [MainThread]: End processing [df-config]: success
+[2023-04-22 13:03:46] INFO root fetch - main [MainThread]: Store serial: [17814009]
