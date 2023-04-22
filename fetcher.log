@@ -10454,3 +10454,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 16:58:42] INFO root fetch - main [MainThread]: End processing [torchgating]: success
 [2023-04-22 16:58:57] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 16:58:57] INFO root fetch - main [MainThread]: Store serial: [17815248]
+[2023-04-22 17:04:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815248]
+[2023-04-22 17:04:06] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 17:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iode
+[2023-04-22 17:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wbpFilebrowser
+[2023-04-22 17:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdime
+[2023-04-22 17:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zyf
+[2023-04-22 17:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: foursight-core
+[2023-04-22 17:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rattail
+[2023-04-22 17:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: echohue
+[2023-04-22 17:04:06] INFO root fetch - processPackages [iode]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 17:04:06] INFO root fetch - processPackages [wbpFilebrowser]: New version: [0.1.6] Old Version: [0.1.4]
+[2023-04-22 17:04:06] INFO root fetch - processPackages [echohue]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-22 17:04:06] INFO root fetch - processPackages [zyf]: New version: [1.1] Old Version: [1.0]
+[2023-04-22 17:04:06] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.4b2] Old Version: [4.0.0]
+[2023-04-22 17:04:06] INFO root fetch - processPackages [nbdime]: New version: [3.2.0] Old Version: [3.1.1]
+[2023-04-22 17:04:06] INFO root fetch - processPackages [rattail]: New version: [0.9.99] Old Version: [0.9.98]
+[2023-04-22 17:04:06] INFO root fetch - processPackages [iode]: Downloading https://files.pythonhosted.org/packages/7e/d6/2942c3cdc3c72f291246ca94697147246f4b7385aacf649cac0b980c5c77/iode-0.0.1.tar.gz
+[2023-04-22 17:04:06] INFO root fetch - processPackages [wbpFilebrowser]: Downloading https://files.pythonhosted.org/packages/57/cb/181566f4e1a9f9c172426c684670616503a04a167570aa8b7aac8b295fb2/wbpFilebrowser-0.1.4.tar.gz
+[2023-04-22 17:04:06] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/25/84/a8425b72accf21376717dee579cb97285f4ed9a4df0be3fede41c044e71b/foursight_core-4.1.0.4b2.tar.gz
+[2023-04-22 17:04:06] INFO root fetch - processPackages [nbdime]: Downloading https://files.pythonhosted.org/packages/e1/36/28232d030c1b4a25116799f1aa3cd26208964f302daa324c314fd576820a/nbdime-3.1.1.tar.gz
+[2023-04-22 17:04:06] INFO root fetch - processPackages [echohue]: Downloading https://files.pythonhosted.org/packages/22/c9/7ff2f6bbe7870e1800a9f28d22d1c7b6fc1c93aca07553fa0c7d5ab3f921/echohue-0.1.2.tar.gz
+[2023-04-22 17:04:06] INFO root fetch - processPackages [zyf]: Downloading https://files.pythonhosted.org/packages/a6/99/5dc7b62cd89e7d62b9812ec0b803f0a2e52418290cf853ffa4b490b442d1/zyf-1.0.tar.gz
+[2023-04-22 17:04:06] INFO root fetch - processPackages [rattail]: Downloading https://files.pythonhosted.org/packages/8a/ab/1d0b66effa702be7aef6de038a0b9a0727d9d4053df5c56aa1ee5b1d9b45/rattail-0.9.98.tar.gz
+[2023-04-22 17:04:06] INFO root fetch - processPackages [echohue]: executing diffoscope
+[2023-04-22 17:04:06] INFO root fetch - processPackages [echohue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/echohue-0.1.1.tar.gz tmp/echohue-0.1.2.tar.gz --markdown 20230422/e/echohue/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-22 17:04:07] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 17:04:07] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.0.0.tar.gz tmp/foursight_core-4.1.0.4b2.tar.gz --markdown 20230422/f/foursight-core/4.0.0-4.1.0.4b2/diff.md --exclude *.pyd
+[2023-04-22 17:04:07] INFO root fetch - processPackages [iode]: executing diffoscope
+[2023-04-22 17:04:07] INFO root fetch - processPackages [iode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iode-0.0.1.tar.gz tmp/iode-0.0.2.tar.gz --markdown 20230422/i/iode/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 17:04:07] INFO root fetch - processPackages [wbpFilebrowser]: Downloading https://files.pythonhosted.org/packages/e4/12/edc675829c864aab8b163fd852c6bbe3e57caffa40da522f95829c0ad771/wbpFilebrowser-0.1.6.tar.gz
+[2023-04-22 17:04:07] INFO root fetch - processPackages [wbpFilebrowser]: executing diffoscope
+[2023-04-22 17:04:07] INFO root fetch - processPackages [wbpFilebrowser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wbpFilebrowser-0.1.4.tar.gz tmp/wbpFilebrowser-0.1.6.tar.gz --markdown 20230422/w/wbpFilebrowser/0.1.4-0.1.6/diff.md --exclude *.pyd
+[2023-04-22 17:04:07] INFO root fetch - processPackages [zyf]: Downloading https://files.pythonhosted.org/packages/e2/c0/bdfd607771430779c25a026f3bc0e4d21ba60676effc7b612d8573285ba3/zyf-1.1.tar.gz
+[2023-04-22 17:04:07] INFO root fetch - processPackages [zyf]: executing diffoscope
+[2023-04-22 17:04:07] INFO root fetch - processPackages [zyf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zyf-1.0.tar.gz tmp/zyf-1.1.tar.gz --markdown 20230422/z/zyf/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-22 17:04:07] INFO root fetch - processPackages [rattail]: Downloading https://files.pythonhosted.org/packages/1e/c3/79e6d80f4a830a425f80fae7cf7f242293341bfd63e5d6f25421dfd44465/rattail-0.9.99.tar.gz
+[2023-04-22 17:04:07] INFO root fetch - processPackages [rattail]: executing diffoscope
+[2023-04-22 17:04:07] INFO root fetch - processPackages [rattail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rattail-0.9.98.tar.gz tmp/rattail-0.9.99.tar.gz --markdown 20230422/r/rattail/0.9.98-0.9.99/diff.md --exclude *.pyd
+[2023-04-22 17:04:08] INFO root fetch - main [MainThread]: End processing [echohue]: success
+[2023-04-22 17:04:08] INFO root fetch - main [MainThread]: End processing [iode]: success
+[2023-04-22 17:04:08] INFO root fetch - main [MainThread]: End processing [wbpFilebrowser]: success
+[2023-04-22 17:04:08] INFO root fetch - processPackages [nbdime]: Downloading https://files.pythonhosted.org/packages/60/a4/0745920f04986eaf47447a18cf445a179d76cf5789430badf4b681a50ec3/nbdime-3.2.0.tar.gz
+[2023-04-22 17:04:08] INFO root fetch - processPackages [nbdime]: executing diffoscope
+[2023-04-22 17:04:08] INFO root fetch - processPackages [nbdime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdime-3.1.1.tar.gz tmp/nbdime-3.2.0.tar.gz --markdown 20230422/n/nbdime/3.1.1-3.2.0/diff.md --exclude *.pyd
+[2023-04-22 17:04:08] INFO root fetch - main [MainThread]: End processing [zyf]: success
+[2023-04-22 17:04:11] INFO root fetch - main [MainThread]: End processing [rattail]: success
+[2023-04-22 17:04:22] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 17:04:46] INFO root fetch - main [MainThread]: End processing [nbdime]: success
+[2023-04-22 17:04:46] INFO root fetch - main [MainThread]: Store serial: [17815270]
