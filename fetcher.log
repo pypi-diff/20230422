@@ -7637,3 +7637,46 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 11:26:51] INFO root fetch - main [MainThread]: End processing [sqlalchemy-window]: success
 [2023-04-22 11:26:53] INFO root fetch - main [MainThread]: End processing [pip]: success
 [2023-04-22 11:26:53] INFO root fetch - main [MainThread]: Store serial: [17813586]
+[2023-04-22 11:31:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813586]
+[2023-04-22 11:32:03] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 11:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: discord-rich-help.py
+[2023-04-22 11:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: proceduraldata
+[2023-04-22 11:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-intent-plugin-adapt
+[2023-04-22 11:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: telespider
+[2023-04-22 11:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tastytrade-api
+[2023-04-22 11:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: amino.api
+[2023-04-22 11:32:03] INFO root fetch - processPackages [telespider]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-22 11:32:03] INFO root fetch - processPackages [ovos-intent-plugin-adapt]: New version: [0.0.0a7] Old Version: [0.0.0a6]
+[2023-04-22 11:32:03] INFO root fetch - processPackages [discord-rich-help.py]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 11:32:03] INFO root fetch - processPackages [tastytrade-api]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-22 11:32:03] INFO root fetch - processPackages [amino.api]: New version: [1.1] Old Version: [1.0b2]
+[2023-04-22 11:32:03] INFO root fetch - processPackages [proceduraldata]: New version: [2.0.4] Old Version: [1.1.3]
+[2023-04-22 11:32:03] INFO root fetch - processPackages [telespider]: Downloading https://files.pythonhosted.org/packages/b6/de/1f9c68744dc16d6335d97252fcdf2381ab1406877226a7dc8f0c58c2ce22/telespider-0.2.2.tar.gz
+[2023-04-22 11:32:03] INFO root fetch - processPackages [ovos-intent-plugin-adapt]: Downloading https://files.pythonhosted.org/packages/7f/c3/7e2cf1b4a8f98aba096fd9631bd29560db0e79de907c4bd08de25d7f109e/ovos_intent_plugin_adapt-0.0.0a6-py3-none-any.whl
+[2023-04-22 11:32:03] INFO root fetch - processPackages [proceduraldata]: Downloading https://files.pythonhosted.org/packages/aa/0f/5f49a8d6ccdd268497919ea447583d3de649b2f8c76ca76c074933e3c88e/proceduraldata-1.1.3.tar.gz
+[2023-04-22 11:32:03] INFO root fetch - processPackages [discord-rich-help.py]: Downloading https://files.pythonhosted.org/packages/29/7d/1ae5c7fceb9f3911a6feaa26274de88dc8beef7aeb4ff6256b48776ee994/discord-rich-help.py-0.1.0.tar.gz
+[2023-04-22 11:32:03] INFO root fetch - processPackages [tastytrade-api]: Downloading https://files.pythonhosted.org/packages/f7/f6/8215c2a11761de6c7023fb14d07550fdb91478633567be3d54567be3f0b4/tastytrade-api-0.6.0.tar.gz
+[2023-04-22 11:32:03] INFO root fetch - processPackages [amino.api]: Downloading https://files.pythonhosted.org/packages/0d/28/6156ee169daaaa98472d61a366fb96d10f9cbd1dbfb128452e73a1e258c7/amino.api-1.1.tar.gz
+[2023-04-22 11:32:04] INFO root fetch - processPackages [telespider]: Downloading https://files.pythonhosted.org/packages/7b/09/879394cdcbe41b198c030e5a0722a5d80b20e321101a6c8b2308ce6fed59/telespider-0.2.3.tar.gz
+[2023-04-22 11:32:04] INFO root fetch - processPackages [discord-rich-help.py]: Downloading https://files.pythonhosted.org/packages/9c/3a/d64ec74c604114a116367fb38582491d85800e1d2b02b9915023eb568169/discord-rich-help.py-0.1.1.tar.gz
+[2023-04-22 11:32:04] INFO root fetch - processPackages [ovos-intent-plugin-adapt]: Downloading https://files.pythonhosted.org/packages/11/c1/212d7f975fb4da91b7e301eff3bc21ce55555bee5bf61c8a4854bc5e87ed/ovos_intent_plugin_adapt-0.0.0a7-py3-none-any.whl
+[2023-04-22 11:32:04] INFO root fetch - processPackages [tastytrade-api]: executing diffoscope
+[2023-04-22 11:32:04] INFO root fetch - processPackages [tastytrade-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tastytrade-api-0.5.0.tar.gz tmp/tastytrade-api-0.6.0.tar.gz --markdown 20230422/t/tastytrade-api/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-22 11:32:04] INFO root fetch - processPackages [amino.api]: executing diffoscope
+[2023-04-22 11:32:04] INFO root fetch - processPackages [amino.api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amino.api-1.0b2.tar.gz tmp/amino.api-1.1.tar.gz --markdown 20230422/a/amino.api/1.0b2-1.1/diff.md --exclude *.pyd
+[2023-04-22 11:32:04] INFO root fetch - processPackages [proceduraldata]: Downloading https://files.pythonhosted.org/packages/78/c1/047b2cb73015d61fa2fdb6a641ddb72692cdcf9fc9325551e96c26f6d7f5/proceduraldata-2.0.4.tar.gz
+[2023-04-22 11:32:04] INFO root fetch - processPackages [discord-rich-help.py]: executing diffoscope
+[2023-04-22 11:32:04] INFO root fetch - processPackages [discord-rich-help.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord-rich-help.py-0.1.0.tar.gz tmp/discord-rich-help.py-0.1.1.tar.gz --markdown 20230422/d/discord-rich-help.py/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 11:32:04] INFO root fetch - processPackages [telespider]: executing diffoscope
+[2023-04-22 11:32:04] INFO root fetch - processPackages [telespider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telespider-0.2.2.tar.gz tmp/telespider-0.2.3.tar.gz --markdown 20230422/t/telespider/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-22 11:32:04] INFO root fetch - processPackages [ovos-intent-plugin-adapt]: executing diffoscope
+[2023-04-22 11:32:04] INFO root fetch - processPackages [ovos-intent-plugin-adapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_intent_plugin_adapt-0.0.0a6-py3-none-any.whl.zip tmp/ovos_intent_plugin_adapt-0.0.0a7-py3-none-any.whl.zip --markdown 20230422/o/ovos-intent-plugin-adapt/0.0.0a6-0.0.0a7/diff.md --exclude *.pyd
+[2023-04-22 11:32:04] INFO root fetch - processPackages [proceduraldata]: executing diffoscope
+[2023-04-22 11:32:04] INFO root fetch - processPackages [proceduraldata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proceduraldata-1.1.3.tar.gz tmp/proceduraldata-2.0.4.tar.gz --markdown 20230422/p/proceduraldata/1.1.3-2.0.4/diff.md --exclude *.pyd
+[2023-04-22 11:32:05] INFO root fetch - main [MainThread]: End processing [amino.api]: success
+[2023-04-22 11:32:05] INFO root fetch - main [MainThread]: End processing [telespider]: success
+[2023-04-22 11:32:05] INFO root fetch - main [MainThread]: End processing [tastytrade-api]: success
+[2023-04-22 11:32:05] INFO root fetch - main [MainThread]: End processing [discord-rich-help.py]: success
+[2023-04-22 11:32:05] INFO root fetch - main [MainThread]: End processing [ovos-intent-plugin-adapt]: success
+[2023-04-22 11:32:06] INFO root fetch - main [MainThread]: End processing [proceduraldata]: success
+[2023-04-22 11:32:06] INFO root fetch - main [MainThread]: Store serial: [17813609]
