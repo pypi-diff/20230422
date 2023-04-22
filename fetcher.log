@@ -9230,3 +9230,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 15:00:06] INFO root fetch - main [MainThread]: End processing [importlib-metadata]: success
 [2023-04-22 15:00:21] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 15:00:21] INFO root fetch - main [MainThread]: Store serial: [17814559]
+[2023-04-22 15:05:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814559]
+[2023-04-22 15:05:30] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 15:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tinyfk
+[2023-04-22 15:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: esprepomanager
+[2023-04-22 15:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: paper-admin
+[2023-04-22 15:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: featurizerai
+[2023-04-22 15:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fbgemm-gpu-nightly-cpu
+[2023-04-22 15:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: foursight-core
+[2023-04-22 15:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: foursight-core
+[2023-04-22 15:05:30] INFO root fetch - processPackages [featurizerai]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-04-22 15:05:30] INFO root fetch - processPackages [tinyfk]: New version: [0.6.0.dev8] Old Version: [0.6.0.dev7]
+[2023-04-22 15:05:30] INFO root fetch - processPackages [esprepomanager]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-04-22 15:05:30] INFO root fetch - processPackages [paper-admin]: New version: [6.0.0rc3] Old Version: [6.0.0rc2]
+[2023-04-22 15:05:30] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-22 15:05:30] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-22 15:05:30] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2023.4.22] Old Version: [2023.4.21]
+[2023-04-22 15:05:30] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 15:05:30] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230422/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-22 15:05:30] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 15:05:30] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230422/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-22 15:05:30] INFO root fetch - processPackages [featurizerai]: Downloading https://files.pythonhosted.org/packages/77/78/2c53a235837cc53def80abfec492413ee7b6e91694b8e9bcab4cb2628f53/featurizerai-1.3.4.tar.gz
+[2023-04-22 15:05:30] INFO root fetch - processPackages [esprepomanager]: Downloading https://files.pythonhosted.org/packages/60/56/e5f60dd8fb3841263492b516c60d1b947df1ccc62c9c27ca1e4c0ee74d94/esprepomanager-1.2.4.tar.gz
+[2023-04-22 15:05:30] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/2e/7b/3a38e555c70a859fea0d98d95deb9dca45a2ef45fa2fad70dc31e67e9c8d/fbgemm_gpu_nightly_cpu-2023.4.21-cp39-cp39-manylinux1_x86_64.whl
+[2023-04-22 15:05:30] INFO root fetch - processPackages [tinyfk]: Downloading https://files.pythonhosted.org/packages/bd/a0/efdb970458dfcdb2e89433443ad06877675ca1e0c81c99c0505e2ce6c1d6/tinyfk-0.6.0.dev8.tar.gz
+[2023-04-22 15:05:30] INFO root fetch - processPackages [featurizerai]: executing diffoscope
+[2023-04-22 15:05:30] INFO root fetch - processPackages [featurizerai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featurizerai-1.3.3.tar.gz tmp/featurizerai-1.3.4.tar.gz --markdown 20230422/f/featurizerai/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-04-22 15:05:30] INFO root fetch - processPackages [paper-admin]: Downloading https://files.pythonhosted.org/packages/e2/1f/c87de03529994860c45d474286dadbcb84ad42af67575d7bd571a40b5ee3/paper-admin-6.0.0rc3.tar.gz
+[2023-04-22 15:05:30] INFO root fetch - processPackages [esprepomanager]: executing diffoscope
+[2023-04-22 15:05:30] INFO root fetch - processPackages [esprepomanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esprepomanager-1.2.3.tar.gz tmp/esprepomanager-1.2.4.tar.gz --markdown 20230422/e/esprepomanager/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-04-22 15:05:31] INFO root fetch - processPackages [paper-admin]: executing diffoscope
+[2023-04-22 15:05:31] INFO root fetch - processPackages [paper-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper-admin-6.0.0rc2.tar.gz tmp/paper-admin-6.0.0rc3.tar.gz --markdown 20230422/p/paper-admin/6.0.0rc2-6.0.0rc3/diff.md --exclude *.pyd
+[2023-04-22 15:05:31] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/4c/af/733acdcca5fcff958376c8ebf1e08507bd9a8e1e77204845481ea6e7cddb/fbgemm_gpu_nightly_cpu-2023.4.22-cp39-cp39-manylinux1_x86_64.whl
+[2023-04-22 15:05:31] INFO root fetch - main [MainThread]: End processing [featurizerai]: success
+[2023-04-22 15:05:32] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2023-04-22 15:05:32] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2023.4.21-cp39-cp39-manylinux1_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2023.4.22-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20230422/f/fbgemm-gpu-nightly-cpu/2023.4.21-2023.4.22/diff.md --exclude *.pyd
+[2023-04-22 15:05:32] INFO root fetch - main [MainThread]: End processing [esprepomanager]: success
+[2023-04-22 15:05:32] INFO root fetch - processPackages [tinyfk]: executing diffoscope
+[2023-04-22 15:05:32] INFO root fetch - processPackages [tinyfk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyfk-0.6.0.dev7.tar.gz tmp/tinyfk-0.6.0.dev8.tar.gz --markdown 20230422/t/tinyfk/0.6.0.dev7-0.6.0.dev8/diff.md --exclude *.pyd
+[2023-04-22 15:05:39] INFO root fetch - main [MainThread]: End processing [paper-admin]: success
+[2023-04-22 15:05:46] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 15:05:47] INFO root fetch - main [MainThread]: End processing [tinyfk]: success
+[2023-04-22 15:05:48] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 15:07:02] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2023-04-22 15:07:02] INFO root fetch - main [MainThread]: Store serial: [17814582]
