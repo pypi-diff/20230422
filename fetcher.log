@@ -11160,3 +11160,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 17:58:42] INFO root fetch - main [MainThread]: End processing [ddtcv]: success
 [2023-04-22 17:58:42] INFO root fetch - main [MainThread]: End processing [wagtail-markdown]: success
 [2023-04-22 17:58:42] INFO root fetch - main [MainThread]: Store serial: [17815637]
+[2023-04-22 18:03:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815637]
+[2023-04-22 18:03:51] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 18:03:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pandasflow
+[2023-04-22 18:03:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyathena
+[2023-04-22 18:03:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: telegram-pay
+[2023-04-22 18:03:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyathena
+[2023-04-22 18:03:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: liftcord
+[2023-04-22 18:03:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sc8prx
+[2023-04-22 18:03:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: redshift-tools
+[2023-04-22 18:03:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sc8pr
+[2023-04-22 18:03:51] INFO root fetch - processPackages [liftcord]: New version: [7.1] Old Version: [26.2]
+[2023-04-22 18:03:51] INFO root fetch - processPackages [pyathena]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-04-22 18:03:51] INFO root fetch - processPackages [telegram-pay]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-22 18:03:51] INFO root fetch - processPackages [pandasflow]: New version: [0.2.0] Old Version: [0.1.7]
+[2023-04-22 18:03:51] INFO root fetch - processPackages [pyathena]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-04-22 18:03:51] INFO root fetch - processPackages [pyathena]: executing diffoscope
+[2023-04-22 18:03:51] INFO root fetch - processPackages [pyathena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAthena-2.9.5.tar.gz tmp/PyAthena-2.9.6.tar.gz --markdown 20230422/p/pyathena/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-04-22 18:03:51] INFO root fetch - processPackages [sc8prx]: New version: [3.0b0] Old Version: [3.0.2]
+[2023-04-22 18:03:51] WARNING root fetch - processPackages [redshift-tools]: Skipping, unable to determine old version
+[2023-04-22 18:03:51] INFO root fetch - main [MainThread]: End processing [redshift-tools] error
+[2023-04-22 18:03:51] INFO root fetch - processPackages [pyathena]: executing diffoscope
+[2023-04-22 18:03:51] INFO root fetch - processPackages [pyathena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAthena-2.9.5.tar.gz tmp/PyAthena-2.9.6.tar.gz --markdown 20230422/p/pyathena/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-04-22 18:03:51] INFO root fetch - processPackages [sc8pr]: New version: [3.0b0] Old Version: [3.0a2]
+[2023-04-22 18:03:51] INFO root fetch - processPackages [liftcord]: Downloading https://files.pythonhosted.org/packages/53/ca/9f3ef0efd2f85cb86a4bc6e640ea24ffdc8ee11b402292ccbae1341a398e/liftcord-26.2.tar.gz
+[2023-04-22 18:03:51] INFO root fetch - processPackages [telegram-pay]: Downloading https://files.pythonhosted.org/packages/4c/d2/3fbea439fdcc993c0fce2825d39e980823ed47912ad892b89f8bf93a5173/telegram_pay-0.1.2.tar.gz
+[2023-04-22 18:03:51] INFO root fetch - processPackages [sc8prx]: Downloading https://files.pythonhosted.org/packages/f3/fe/c246715b4efc7c82b2e7d247fc8cc2d7007c075133c87c898dc0953727ae/sc8prx-3.0.2.tar.gz
+[2023-04-22 18:03:52] INFO root fetch - processPackages [pandasflow]: Downloading https://files.pythonhosted.org/packages/27/03/4e331028ab493ff3bcfb02661149159775a7326ff0961be8f04e6fe697c4/pandasflow-0.2.0.tar.gz
+[2023-04-22 18:03:52] INFO root fetch - processPackages [pandasflow]: executing diffoscope
+[2023-04-22 18:03:52] INFO root fetch - processPackages [pandasflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandasflow-0.1.7.tar.gz tmp/pandasflow-0.2.0.tar.gz --markdown 20230422/p/pandasflow/0.1.7-0.2.0/diff.md --exclude *.pyd
+[2023-04-22 18:03:52] INFO root fetch - processPackages [liftcord]: executing diffoscope
+[2023-04-22 18:03:52] INFO root fetch - processPackages [liftcord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liftcord-26.2.tar.gz tmp/liftcord-7.1.tar.gz --markdown 20230422/l/liftcord/26.2-7.1/diff.md --exclude *.pyd
+[2023-04-22 18:03:52] INFO root fetch - processPackages [sc8pr]: Downloading https://files.pythonhosted.org/packages/ab/a4/4c8eddf009ab3d13f8981be007d3b595a080f06d1705e7b3b0a7a9a006f8/sc8pr-3.0a2.tar.gz
+[2023-04-22 18:03:52] INFO root fetch - processPackages [telegram-pay]: Downloading https://files.pythonhosted.org/packages/16/94/112b8e4c5e7640e079e6e9938132317bb84a0cb522b792549dbead798b0a/telegram_pay-0.1.3.tar.gz
+[2023-04-22 18:03:52] INFO root fetch - processPackages [telegram-pay]: executing diffoscope
+[2023-04-22 18:03:52] INFO root fetch - processPackages [telegram-pay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegram_pay-0.1.2.tar.gz tmp/telegram_pay-0.1.3.tar.gz --markdown 20230422/t/telegram-pay/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-22 18:03:52] INFO root fetch - processPackages [sc8prx]: Downloading https://files.pythonhosted.org/packages/bb/d5/9b62ca9d4caa9c8875bd1948668fce45e9b3fbe764591848710bb55965bf/sc8prx-3.0b0.tar.gz
+[2023-04-22 18:03:52] INFO root fetch - processPackages [sc8pr]: Downloading https://files.pythonhosted.org/packages/92/cd/78c38faa7c052837cc867449813071b3f1b64518607f07507a34388e1c0e/sc8pr-3.0b0.tar.gz
+[2023-04-22 18:03:52] INFO root fetch - processPackages [sc8prx]: executing diffoscope
+[2023-04-22 18:03:52] INFO root fetch - processPackages [sc8prx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc8prx-3.0.2.tar.gz tmp/sc8prx-3.0b0.tar.gz --markdown 20230422/s/sc8prx/3.0.2-3.0b0/diff.md --exclude *.pyd
+[2023-04-22 18:03:52] INFO root fetch - processPackages [sc8pr]: executing diffoscope
+[2023-04-22 18:03:52] INFO root fetch - processPackages [sc8pr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc8pr-3.0a2.tar.gz tmp/sc8pr-3.0b0.tar.gz --markdown 20230422/s/sc8pr/3.0a2-3.0b0/diff.md --exclude *.pyd
+[2023-04-22 18:03:53] INFO root fetch - main [MainThread]: End processing [pandasflow]: success
+[2023-04-22 18:03:53] INFO root fetch - main [MainThread]: End processing [telegram-pay]: success
+[2023-04-22 18:03:53] INFO root fetch - main [MainThread]: End processing [sc8prx]: success
+[2023-04-22 18:03:53] INFO root fetch - main [MainThread]: End processing [pyathena]: success
+[2023-04-22 18:03:54] INFO root fetch - main [MainThread]: End processing [pyathena]: success
+[2023-04-22 18:03:54] INFO root fetch - main [MainThread]: End processing [sc8pr]: success
+[2023-04-22 18:03:56] INFO root fetch - main [MainThread]: End processing [liftcord]: success
+[2023-04-22 18:03:56] INFO root fetch - main [MainThread]: Store serial: [17815663]
