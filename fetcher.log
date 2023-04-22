@@ -11446,3 +11446,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 18:35:37] INFO root fetch - main [MainThread]: End processing [buteo]: success
 [2023-04-22 18:35:40] INFO root fetch - main [MainThread]: End processing [aesara-nightly]: success
 [2023-04-22 18:35:40] INFO root fetch - main [MainThread]: Store serial: [17815828]
+[2023-04-22 18:40:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815828]
+[2023-04-22 18:40:49] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 18:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langchain
+[2023-04-22 18:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: octopus-ml
+[2023-04-22 18:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dash-extensions
+[2023-04-22 18:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tokenring
+[2023-04-22 18:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pydantic-view
+[2023-04-22 18:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ohmyi3
+[2023-04-22 18:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: videochat
+[2023-04-22 18:40:49] INFO root fetch - processPackages [tokenring]: New version: [2023.4.22] Old Version: [0.0.1]
+[2023-04-22 18:40:49] WARNING root fetch - processPackages [pydantic-view]: Skipping, unable to determine old version
+[2023-04-22 18:40:49] INFO root fetch - main [MainThread]: End processing [pydantic-view] error
+[2023-04-22 18:40:49] INFO root fetch - processPackages [ohmyi3]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-22 18:40:49] INFO root fetch - processPackages [dash-extensions]: New version: [1.0.0rc1] Old Version: [0.1.9rc2]
+[2023-04-22 18:40:49] WARNING root fetch - processPackages [videochat]: Skipping, unable to determine old version
+[2023-04-22 18:40:49] INFO root fetch - main [MainThread]: End processing [videochat] error
+[2023-04-22 18:40:49] INFO root fetch - processPackages [octopus-ml]: New version: [3.2.0] Old Version: [3.0.0]
+[2023-04-22 18:40:49] INFO root fetch - processPackages [langchain]: New version: [0.0.99rc0] Old Version: [0.0.99]
+[2023-04-22 18:40:49] INFO root fetch - processPackages [tokenring]: Downloading https://files.pythonhosted.org/packages/df/73/2c76f41c2542b70fbd34b2e54c9e7b3d1960cc7d091b465eebbbe4fc47ea/tokenring-0.0.1.tar.gz
+[2023-04-22 18:40:49] INFO root fetch - processPackages [octopus-ml]: Downloading https://files.pythonhosted.org/packages/60/6f/1616ae261673d5c2710e9ac04d34cbc137e064b8d114bd37bd6f8e55d5f8/octopus-ml-3.0.0.tar.gz
+[2023-04-22 18:40:49] INFO root fetch - processPackages [dash-extensions]: Downloading https://files.pythonhosted.org/packages/69/1b/123a5f88a4e36cb652de09b1f1fba470fca9478aea0e94207c52e8e608cf/dash-extensions-0.1.9rc2.tar.gz
+[2023-04-22 18:40:49] INFO root fetch - processPackages [tokenring]: Downloading https://files.pythonhosted.org/packages/7c/1c/494493e2af11f69d479af1567adcf7a6e9b902e1f4b15c1b3eb0e9f8d040/tokenring-2023.4.22.tar.gz
+[2023-04-22 18:40:49] INFO root fetch - processPackages [langchain]: executing diffoscope
+[2023-04-22 18:40:49] INFO root fetch - processPackages [langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-0.0.99.tar.gz tmp/langchain-0.0.99rc0.tar.gz --markdown 20230422/l/langchain/0.0.99-0.0.99rc0/diff.md --exclude *.pyd
+[2023-04-22 18:40:50] INFO root fetch - processPackages [ohmyi3]: Downloading https://files.pythonhosted.org/packages/14/9b/94cf8b478da15c2ff778c273a9bd902006d6fb242e3aaf9b9492e17b84b5/ohmyi3-0.1.3.tar.gz
+[2023-04-22 18:40:50] INFO root fetch - processPackages [tokenring]: executing diffoscope
+[2023-04-22 18:40:50] INFO root fetch - processPackages [tokenring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tokenring-0.0.1.tar.gz tmp/tokenring-2023.4.22.tar.gz --markdown 20230422/t/tokenring/0.0.1-2023.4.22/diff.md --exclude *.pyd
+[2023-04-22 18:40:50] INFO root fetch - processPackages [octopus-ml]: Downloading https://files.pythonhosted.org/packages/03/a6/1c51b723a2f5faf2fc05d8ec100a281dfdc1dd04d6adecbf29f927c3cba1/octopus-ml-3.2.0.tar.gz
+[2023-04-22 18:40:50] INFO root fetch - processPackages [ohmyi3]: executing diffoscope
+[2023-04-22 18:40:50] INFO root fetch - processPackages [ohmyi3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ohmyi3-0.1.2.tar.gz tmp/ohmyi3-0.1.3.tar.gz --markdown 20230422/o/ohmyi3/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-22 18:40:50] INFO root fetch - processPackages [octopus-ml]: executing diffoscope
+[2023-04-22 18:40:50] INFO root fetch - processPackages [octopus-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octopus-ml-3.0.0.tar.gz tmp/octopus-ml-3.2.0.tar.gz --markdown 20230422/o/octopus-ml/3.0.0-3.2.0/diff.md --exclude *.pyd
+[2023-04-22 18:40:50] INFO root fetch - processPackages [dash-extensions]: Downloading https://files.pythonhosted.org/packages/1f/63/69d65c7c96da764f61655c16499ec69f9b9e87ca7e612d0bb00392783427/dash_extensions-1.0.0rc1.tar.gz
+[2023-04-22 18:40:50] INFO root fetch - processPackages [dash-extensions]: executing diffoscope
+[2023-04-22 18:40:50] INFO root fetch - processPackages [dash-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash-extensions-0.1.9rc2.tar.gz tmp/dash_extensions-1.0.0rc1.tar.gz --markdown 20230422/d/dash-extensions/0.1.9rc2-1.0.0rc1/diff.md --exclude *.pyd
+[2023-04-22 18:40:51] INFO root fetch - main [MainThread]: End processing [tokenring]: success
+[2023-04-22 18:40:51] INFO root fetch - main [MainThread]: End processing [octopus-ml]: success
+[2023-04-22 18:40:52] INFO root fetch - main [MainThread]: End processing [langchain]: success
+[2023-04-22 18:40:52] INFO root fetch - main [MainThread]: End processing [ohmyi3]: success
+[2023-04-22 18:41:27] INFO root fetch - main [MainThread]: End processing [dash-extensions]: success
+[2023-04-22 18:41:27] INFO root fetch - main [MainThread]: Store serial: [17815852]
