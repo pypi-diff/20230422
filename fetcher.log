@@ -5597,3 +5597,55 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 07:20:41] INFO root fetch - main [MainThread]: End processing [odoo-addon-mgmtsystem-hazard]: success
 [2023-04-22 07:21:51] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2023-04-22 07:21:51] INFO root fetch - main [MainThread]: Store serial: [17812376]
+[2023-04-22 07:26:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812376]
+[2023-04-22 07:27:00] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 07:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo12-addon-quality-control-issue
+[2023-04-22 07:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo12-addon-mrp-production-request
+[2023-04-22 07:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo12-addon-quality-control-team
+[2023-04-22 07:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-mrp-lot-number-propagation
+[2023-04-22 07:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kennard-stone
+[2023-04-22 07:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lndb
+[2023-04-22 07:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mrdoxmrgt
+[2023-04-22 07:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pytreeclass
+[2023-04-22 07:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: wizcli
+[2023-04-22 07:27:00] INFO root fetch - processPackages [odoo-addon-mrp-lot-number-propagation]: New version: [15.0.0.3.0] Old Version: [15.0.0.2.0.2]
+[2023-04-22 07:27:00] INFO root fetch - processPackages [mrdoxmrgt]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-22 07:27:00] INFO root fetch - processPackages [odoo-addon-mrp-lot-number-propagation]: executing diffoscope
+[2023-04-22 07:27:00] INFO root fetch - processPackages [odoo-addon-mrp-lot-number-propagation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mrp_lot_number_propagation-15.0.0.2.0.2-py3-none-any.whl.zip tmp/odoo_addon_mrp_lot_number_propagation-15.0.0.3.0-py3-none-any.whl.zip --markdown 20230422/o/odoo-addon-mrp-lot-number-propagation/15.0.0.2.0.2-15.0.0.3.0/diff.md --exclude *.pyd
+[2023-04-22 07:27:00] INFO root fetch - processPackages [kennard-stone]: New version: [2.0.0] Old Version: [1.1.2]
+[2023-04-22 07:27:00] INFO root fetch - processPackages [odoo12-addon-quality-control-issue]: New version: [12.0.1.0.1.99.dev9] Old Version: [12.0.1.0.1.99.dev8]
+[2023-04-22 07:27:00] INFO root fetch - processPackages [odoo12-addon-quality-control-team]: New version: [12.0.1.1.1.99.dev8] Old Version: [12.0.1.1.1.99.dev7]
+[2023-04-22 07:27:00] INFO root fetch - processPackages [lndb]: New version: [0.44.0] Old Version: [0.43.0]
+[2023-04-22 07:27:00] INFO root fetch - processPackages [odoo12-addon-mrp-production-request]: New version: [12.0.1.0.1.99.dev9] Old Version: [12.0.1.0.1.99.dev8]
+[2023-04-22 07:27:00] WARNING root fetch - processPackages [wizcli]: Skipping, unable to determine old version
+[2023-04-22 07:27:00] INFO root fetch - main [MainThread]: End processing [wizcli] error
+[2023-04-22 07:27:00] INFO root fetch - processPackages [pytreeclass]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-22 07:27:01] INFO root fetch - processPackages [mrdoxmrgt]: Downloading https://files.pythonhosted.org/packages/40/96/aa792b14a47dcdee4b2b2f414658b8f3625bb68e73d78f028b5886a694d1/mrdoxmrgt-0.0.3.tar.gz
+[2023-04-22 07:27:01] INFO root fetch - processPackages [kennard-stone]: Downloading https://files.pythonhosted.org/packages/10/04/0b6b7fb56a26011dc507dcd769c0374eceb921e6df9c70f7473e6d2b9d9c/kennard_stone-1.1.2.tar.gz
+[2023-04-22 07:27:01] INFO root fetch - processPackages [odoo12-addon-quality-control-team]: Downloading https://files.pythonhosted.org/packages/c4/8c/b71c1abc2b0ba5e010586c7ae5efd87ee2033509a4699924090ca8d40d74/odoo12_addon_quality_control_team-12.0.1.1.1.99.dev8-py3-none-any.whl
+[2023-04-22 07:27:01] INFO root fetch - processPackages [mrdoxmrgt]: executing diffoscope
+[2023-04-22 07:27:01] INFO root fetch - processPackages [mrdoxmrgt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrdoxmrgt-0.0.2.tar.gz tmp/mrdoxmrgt-0.0.3.tar.gz --markdown 20230422/m/mrdoxmrgt/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-22 07:27:01] INFO root fetch - processPackages [odoo12-addon-quality-control-issue]: executing diffoscope
+[2023-04-22 07:27:01] INFO root fetch - processPackages [odoo12-addon-quality-control-issue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_quality_control_issue-12.0.1.0.1.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_quality_control_issue-12.0.1.0.1.99.dev9-py3-none-any.whl.zip --markdown 20230422/o/odoo12-addon-quality-control-issue/12.0.1.0.1.99.dev8-12.0.1.0.1.99.dev9/diff.md --exclude *.pyd
+[2023-04-22 07:27:01] INFO root fetch - processPackages [lndb]: Downloading https://files.pythonhosted.org/packages/9e/57/6ac2fb6991315acfabf11bdb47646fa2995bd43b2830368341e1d6cd028e/lndb-0.44.0.tar.gz
+[2023-04-22 07:27:01] INFO root fetch - processPackages [odoo12-addon-mrp-production-request]: executing diffoscope
+[2023-04-22 07:27:01] INFO root fetch - processPackages [odoo12-addon-mrp-production-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_mrp_production_request-12.0.1.0.1.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_mrp_production_request-12.0.1.0.1.99.dev9-py3-none-any.whl.zip --markdown 20230422/o/odoo12-addon-mrp-production-request/12.0.1.0.1.99.dev8-12.0.1.0.1.99.dev9/diff.md --exclude *.pyd
+[2023-04-22 07:27:01] INFO root fetch - processPackages [pytreeclass]: Downloading https://files.pythonhosted.org/packages/a0/f3/a27e658a16c535e2a923998a72e335a67f6621df16905efcef8d9fd92d73/pytreeclass-0.3.1.tar.gz
+[2023-04-22 07:27:01] INFO root fetch - processPackages [odoo12-addon-quality-control-team]: executing diffoscope
+[2023-04-22 07:27:01] INFO root fetch - processPackages [odoo12-addon-quality-control-team]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_quality_control_team-12.0.1.1.1.99.dev7-py3-none-any.whl.zip tmp/odoo12_addon_quality_control_team-12.0.1.1.1.99.dev8-py3-none-any.whl.zip --markdown 20230422/o/odoo12-addon-quality-control-team/12.0.1.1.1.99.dev7-12.0.1.1.1.99.dev8/diff.md --exclude *.pyd
+[2023-04-22 07:27:01] INFO root fetch - processPackages [kennard-stone]: Downloading https://files.pythonhosted.org/packages/73/2c/24817cea8b63cc4864e2f31b44af6262943c9be2dd1bcbc9f15abf1ae743/kennard_stone-2.0.0.tar.gz
+[2023-04-22 07:27:01] INFO root fetch - processPackages [lndb]: executing diffoscope
+[2023-04-22 07:27:01] INFO root fetch - processPackages [lndb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lndb-0.43.0.tar.gz tmp/lndb-0.44.0.tar.gz --markdown 20230422/l/lndb/0.43.0-0.44.0/diff.md --exclude *.pyd
+[2023-04-22 07:27:01] INFO root fetch - processPackages [pytreeclass]: executing diffoscope
+[2023-04-22 07:27:01] INFO root fetch - processPackages [pytreeclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytreeclass-0.3.0.tar.gz tmp/pytreeclass-0.3.1.tar.gz --markdown 20230422/p/pytreeclass/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-22 07:27:01] INFO root fetch - processPackages [kennard-stone]: executing diffoscope
+[2023-04-22 07:27:01] INFO root fetch - processPackages [kennard-stone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kennard_stone-1.1.2.tar.gz tmp/kennard_stone-2.0.0.tar.gz --markdown 20230422/k/kennard-stone/1.1.2-2.0.0/diff.md --exclude *.pyd
+[2023-04-22 07:27:02] INFO root fetch - main [MainThread]: End processing [odoo-addon-mrp-lot-number-propagation]: success
+[2023-04-22 07:27:02] INFO root fetch - main [MainThread]: End processing [mrdoxmrgt]: success
+[2023-04-22 07:27:02] INFO root fetch - main [MainThread]: End processing [odoo12-addon-quality-control-team]: success
+[2023-04-22 07:27:02] INFO root fetch - main [MainThread]: End processing [odoo12-addon-quality-control-issue]: success
+[2023-04-22 07:27:02] INFO root fetch - main [MainThread]: End processing [kennard-stone]: success
+[2023-04-22 07:27:03] INFO root fetch - main [MainThread]: End processing [pytreeclass]: success
+[2023-04-22 07:27:03] INFO root fetch - main [MainThread]: End processing [lndb]: success
+[2023-04-22 07:27:03] INFO root fetch - main [MainThread]: End processing [odoo12-addon-mrp-production-request]: success
+[2023-04-22 07:27:03] INFO root fetch - main [MainThread]: Store serial: [17812401]
