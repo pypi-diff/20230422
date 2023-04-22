@@ -13185,3 +13185,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 22:14:20] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2023-04-22 22:14:28] INFO root fetch - main [MainThread]: End processing [connexion]: success
 [2023-04-22 22:14:28] INFO root fetch - main [MainThread]: Store serial: [17816843]
+[2023-04-22 22:19:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816843]
+[2023-04-22 22:19:38] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 22:19:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyeasee
+[2023-04-22 22:19:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyhtml-desktop
+[2023-04-22 22:19:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: circuitpython-bmp180
+[2023-04-22 22:19:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ovos-intent-plugin-adapt
+[2023-04-22 22:19:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: replit-bot
+[2023-04-22 22:19:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: workflow-templater
+[2023-04-22 22:19:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: full-online-john-wick-4-izle-filmizi-hd-izle-john-wick-chapter-4-turkce-dublaj-altyazi
+[2023-04-22 22:19:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aiopywttr
+[2023-04-22 22:19:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pywttr
+[2023-04-22 22:19:38] INFO root fetch - processPackages [pyhtml-desktop]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-22 22:19:38] INFO root fetch - processPackages [pyeasee]: New version: [0.7.52] Old Version: [0.7.51]
+[2023-04-22 22:19:38] INFO root fetch - processPackages [workflow-templater]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-22 22:19:38] INFO root fetch - processPackages [aiopywttr]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-04-22 22:19:38] WARNING root fetch - processPackages [circuitpython-bmp180]: Skipping, unable to determine old version
+[2023-04-22 22:19:38] INFO root fetch - processPackages [ovos-intent-plugin-adapt]: New version: [0.0.0a9] Old Version: [0.0.0a8]
+[2023-04-22 22:19:38] WARNING root fetch - processPackages [full-online-john-wick-4-izle-filmizi-hd-izle-john-wick-chapter-4-turkce-dublaj-altyazi]: Skipping, unable to determine old version
+[2023-04-22 22:19:38] INFO root fetch - main [MainThread]: End processing [circuitpython-bmp180] error
+[2023-04-22 22:19:38] INFO root fetch - main [MainThread]: End processing [full-online-john-wick-4-izle-filmizi-hd-izle-john-wick-chapter-4-turkce-dublaj-altyazi] error
+[2023-04-22 22:19:38] INFO root fetch - processPackages [pywttr]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-04-22 22:19:38] INFO root fetch - processPackages [replit-bot]: New version: [4.2.9] Old Version: [4.2.8]
+[2023-04-22 22:19:38] INFO root fetch - processPackages [pyeasee]: Downloading https://files.pythonhosted.org/packages/75/6f/2932b933f673bc930c3b8100c6c9b8de5a8e79a890e4a436a22273c3e3c4/pyeasee-0.7.51.tar.gz
+[2023-04-22 22:19:38] INFO root fetch - processPackages [pyhtml-desktop]: Downloading https://files.pythonhosted.org/packages/a7/5c/b2759020617c9661ee8ad4c700eb6b7324e72895a499841dd77c0fa89f6d/pyhtml_desktop-1.1.3.tar.gz
+[2023-04-22 22:19:38] INFO root fetch - processPackages [aiopywttr]: Downloading https://files.pythonhosted.org/packages/23/f0/a3229611efc7045d1bede3463239a3171e524691f52b9fc64a2940c29596/aiopywttr-2.1.0.tar.gz
+[2023-04-22 22:19:38] INFO root fetch - processPackages [ovos-intent-plugin-adapt]: Downloading https://files.pythonhosted.org/packages/3a/db/70a6f3a5f29e08597102a00196840587416363a4c29eae113604626b61a7/ovos_intent_plugin_adapt-0.0.0a9-py3-none-any.whl
+[2023-04-22 22:19:38] INFO root fetch - processPackages [workflow-templater]: Downloading https://files.pythonhosted.org/packages/ff/f3/01335d7d117dfc8e3e858138846dcad19ed3a511b53328ff69cd6f02031e/workflow_templater-0.2.8.tar.gz
+[2023-04-22 22:19:38] INFO root fetch - processPackages [pywttr]: Downloading https://files.pythonhosted.org/packages/63/64/45f6e9d09c31c8171fd667ca128d38c518502cb29ad6240333a04e8cbe9c/pywttr-2.1.0.tar.gz
+[2023-04-22 22:19:38] INFO root fetch - processPackages [pyhtml-desktop]: executing diffoscope
+[2023-04-22 22:19:38] INFO root fetch - processPackages [pyhtml-desktop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhtml_desktop-1.1.2.tar.gz tmp/pyhtml_desktop-1.1.3.tar.gz --markdown 20230422/p/pyhtml-desktop/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-22 22:19:38] INFO root fetch - processPackages [ovos-intent-plugin-adapt]: executing diffoscope
+[2023-04-22 22:19:38] INFO root fetch - processPackages [ovos-intent-plugin-adapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_intent_plugin_adapt-0.0.0a8-py3-none-any.whl.zip tmp/ovos_intent_plugin_adapt-0.0.0a9-py3-none-any.whl.zip --markdown 20230422/o/ovos-intent-plugin-adapt/0.0.0a8-0.0.0a9/diff.md --exclude *.pyd
+[2023-04-22 22:19:39] INFO root fetch - processPackages [replit-bot]: executing diffoscope
+[2023-04-22 22:19:39] INFO root fetch - processPackages [replit-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replit-bot-4.2.8.tar.gz tmp/replit-bot-4.2.9.tar.gz --markdown 20230422/r/replit-bot/4.2.8-4.2.9/diff.md --exclude *.pyd
+[2023-04-22 22:19:39] INFO root fetch - processPackages [pyeasee]: Downloading https://files.pythonhosted.org/packages/0f/93/448f73a88c2e386c95afb48dba97a2f42ace9589778531bcc471918ceb9d/pyeasee-0.7.52.tar.gz
+[2023-04-22 22:19:39] INFO root fetch - processPackages [aiopywttr]: Downloading https://files.pythonhosted.org/packages/f8/15/0014964be1c7b3925bcae9fc6794e7cd2fbf019110f82a1f72208b645fa4/aiopywttr-2.2.0.tar.gz
+[2023-04-22 22:19:39] INFO root fetch - processPackages [pyeasee]: executing diffoscope
+[2023-04-22 22:19:39] INFO root fetch - processPackages [pyeasee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeasee-0.7.51.tar.gz tmp/pyeasee-0.7.52.tar.gz --markdown 20230422/p/pyeasee/0.7.51-0.7.52/diff.md --exclude *.pyd
+[2023-04-22 22:19:39] INFO root fetch - processPackages [workflow-templater]: Downloading https://files.pythonhosted.org/packages/97/b5/d7dee5f107cbfe25d096f0e4f7fff3c8b6bf7e8fd0e564ab5a52dfe3cbed/workflow_templater-0.2.9.tar.gz
+[2023-04-22 22:19:39] INFO root fetch - processPackages [pywttr]: Downloading https://files.pythonhosted.org/packages/03/0c/6d54f9a6b0e44d520bd4092d9277412d87fc743f68564b4c5a2af0338407/pywttr-2.2.0.tar.gz
+[2023-04-22 22:19:39] INFO root fetch - processPackages [aiopywttr]: executing diffoscope
+[2023-04-22 22:19:39] INFO root fetch - processPackages [aiopywttr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiopywttr-2.1.0.tar.gz tmp/aiopywttr-2.2.0.tar.gz --markdown 20230422/a/aiopywttr/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-04-22 22:19:39] INFO root fetch - processPackages [workflow-templater]: executing diffoscope
+[2023-04-22 22:19:39] INFO root fetch - processPackages [workflow-templater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/workflow_templater-0.2.8.tar.gz tmp/workflow_templater-0.2.9.tar.gz --markdown 20230422/w/workflow-templater/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-22 22:19:39] INFO root fetch - processPackages [pywttr]: executing diffoscope
+[2023-04-22 22:19:39] INFO root fetch - processPackages [pywttr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywttr-2.1.0.tar.gz tmp/pywttr-2.2.0.tar.gz --markdown 20230422/p/pywttr/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-04-22 22:19:40] INFO root fetch - main [MainThread]: End processing [pyhtml-desktop]: success
+[2023-04-22 22:19:40] INFO root fetch - main [MainThread]: End processing [ovos-intent-plugin-adapt]: success
+[2023-04-22 22:19:40] INFO root fetch - main [MainThread]: End processing [aiopywttr]: success
+[2023-04-22 22:19:40] INFO root fetch - main [MainThread]: End processing [replit-bot]: success
+[2023-04-22 22:19:40] INFO root fetch - main [MainThread]: End processing [pywttr]: success
+[2023-04-22 22:19:40] INFO root fetch - main [MainThread]: End processing [workflow-templater]: success
+[2023-04-22 22:19:40] INFO root fetch - main [MainThread]: End processing [pyeasee]: success
+[2023-04-22 22:19:40] INFO root fetch - main [MainThread]: Store serial: [17816875]
