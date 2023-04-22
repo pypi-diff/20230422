@@ -13692,3 +13692,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 23:13:02] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 23:13:02] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 23:13:02] INFO root fetch - main [MainThread]: Store serial: [17817215]
+[2023-04-22 23:18:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17817215]
+[2023-04-22 23:18:11] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 23:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: foursight-core
+[2023-04-22 23:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: infrabed
+[2023-04-22 23:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pygnuutils
+[2023-04-22 23:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: proxy-protocol
+[2023-04-22 23:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Conanmail
+[2023-04-22 23:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: osrs-lib
+[2023-04-22 23:18:11] INFO root fetch - processPackages [infrabed]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 23:18:11] INFO root fetch - processPackages [pygnuutils]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-22 23:18:11] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-22 23:18:11] INFO root fetch - processPackages [proxy-protocol]: New version: [0.9.1] Old Version: [0.9.0rc2]
+[2023-04-22 23:18:11] INFO root fetch - processPackages [Conanmail]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-22 23:18:11] INFO root fetch - processPackages [osrs-lib]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-22 23:18:11] INFO root fetch - processPackages [proxy-protocol]: executing diffoscope
+[2023-04-22 23:18:11] INFO root fetch - processPackages [proxy-protocol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxy-protocol-0.9.0rc2.tar.gz tmp/proxy-protocol-0.9.1.tar.gz --markdown 20230422/p/proxy-protocol/0.9.0rc2-0.9.1/diff.md --exclude *.pyd
+[2023-04-22 23:18:11] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 23:18:11] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230422/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-22 23:18:11] INFO root fetch - processPackages [infrabed]: Downloading https://files.pythonhosted.org/packages/6a/68/683aa171017595316b491a5cf5602768dd0932236782ec6aa802456fd0d1/infrabed-0.0.2.tar.gz
+[2023-04-22 23:18:11] INFO root fetch - processPackages [pygnuutils]: Downloading https://files.pythonhosted.org/packages/b5/e5/d62b0cb91a97007032e0ab4442b28f5ae954076f32accbc6a9f2da67aabc/pygnuutils-0.0.6.tar.gz
+[2023-04-22 23:18:11] INFO root fetch - processPackages [Conanmail]: Downloading https://files.pythonhosted.org/packages/f5/5c/d3be76de47f15c869ba32eb7f363515e0292ede1e2926f7934ed919b7fb2/Conanmail-1.0.3-py3-none-any.whl
+[2023-04-22 23:18:11] INFO root fetch - processPackages [osrs-lib]: Downloading https://files.pythonhosted.org/packages/21/96/d4e2743f48657d4817240cfbef04717e248739ed4f1c52fa315868c138d1/osrs-lib-0.1.2.tar.gz
+[2023-04-22 23:18:11] INFO root fetch - processPackages [infrabed]: executing diffoscope
+[2023-04-22 23:18:11] INFO root fetch - processPackages [infrabed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infrabed-0.0.1.tar.gz tmp/infrabed-0.0.2.tar.gz --markdown 20230422/i/infrabed/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 23:18:11] INFO root fetch - processPackages [Conanmail]: executing diffoscope
+[2023-04-22 23:18:11] INFO root fetch - processPackages [Conanmail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Conanmail-1.0.2-py3-none-any.whl.zip tmp/Conanmail-1.0.3-py3-none-any.whl.zip --markdown 20230422/C/Conanmail/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-22 23:18:11] INFO root fetch - processPackages [osrs-lib]: executing diffoscope
+[2023-04-22 23:18:11] INFO root fetch - processPackages [osrs-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osrs-lib-0.1.1.tar.gz tmp/osrs-lib-0.1.2.tar.gz --markdown 20230422/o/osrs-lib/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-22 23:18:11] INFO root fetch - processPackages [pygnuutils]: Downloading https://files.pythonhosted.org/packages/8f/49/a4f64f6770dc47f6b8fceac062928f1c3a46d78f4982712914b1efd7b3f4/pygnuutils-0.0.7.tar.gz
+[2023-04-22 23:18:12] INFO root fetch - processPackages [pygnuutils]: executing diffoscope
+[2023-04-22 23:18:12] INFO root fetch - processPackages [pygnuutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygnuutils-0.0.6.tar.gz tmp/pygnuutils-0.0.7.tar.gz --markdown 20230422/p/pygnuutils/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-22 23:18:12] INFO root fetch - main [MainThread]: End processing [infrabed]: success
+[2023-04-22 23:18:12] INFO root fetch - main [MainThread]: End processing [proxy-protocol]: success
+[2023-04-22 23:18:12] INFO root fetch - main [MainThread]: End processing [osrs-lib]: success
+[2023-04-22 23:18:12] INFO root fetch - main [MainThread]: End processing [Conanmail]: success
+[2023-04-22 23:18:13] INFO root fetch - main [MainThread]: End processing [pygnuutils]: success
+[2023-04-22 23:18:27] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 23:18:27] INFO root fetch - main [MainThread]: Store serial: [17817232]
