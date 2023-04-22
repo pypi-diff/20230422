@@ -9480,3 +9480,79 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 15:17:56] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 15:17:57] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 15:17:57] INFO root fetch - main [MainThread]: Store serial: [17814689]
+[2023-04-22 15:23:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814689]
+[2023-04-22 15:23:06] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-22 15:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: domain-admin
+[2023-04-22 15:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: foursight-core
+[2023-04-22 15:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: espeak-phonemizer-windows
+[2023-04-22 15:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: foursight-core
+[2023-04-22 15:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: materialyoucolor
+[2023-04-22 15:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hpr-scratcher
+[2023-04-22 15:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: digitize
+[2023-04-22 15:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: v2conf
+[2023-04-22 15:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyHRM
+[2023-04-22 15:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: foursight-core
+[2023-04-22 15:23:07] INFO root fetch - processPackages [v2conf]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 15:23:07] INFO root fetch - processPackages [domain-admin]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-22 15:23:07] INFO root fetch - processPackages [digitize]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-22 15:23:07] WARNING root fetch - processPackages [pyHRM]: Skipping, unable to determine old version
+[2023-04-22 15:23:07] INFO root fetch - processPackages [pyHRM]: Start processing: digitize
+[2023-04-22 15:23:07] INFO root fetch - main [MainThread]: End processing [pyHRM] error
+[2023-04-22 15:23:07] INFO root fetch - processPackages [espeak-phonemizer-windows]: New version: [1.0.4] Old Version: [1.0.3.post0]
+[2023-04-22 15:23:07] INFO root fetch - processPackages [hpr-scratcher]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-22 15:23:07] INFO root fetch - processPackages [materialyoucolor]: New version: [1.0.1] Old Version: [1.0]
+[2023-04-22 15:23:07] INFO root fetch - processPackages [digitize]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-22 15:23:07] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b28] Old Version: [4.1.0.1b27]
+[2023-04-22 15:23:07] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b28] Old Version: [4.1.0.1b27]
+[2023-04-22 15:23:07] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b28] Old Version: [4.1.0.1b27]
+[2023-04-22 15:23:07] INFO root fetch - processPackages [domain-admin]: executing diffoscope
+[2023-04-22 15:23:07] INFO root fetch - processPackages [domain-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domain-admin-1.2.8.tar.gz tmp/domain-admin-1.2.9.tar.gz --markdown 20230422/d/domain-admin/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-22 15:23:07] INFO root fetch - processPackages [materialyoucolor]: Downloading https://files.pythonhosted.org/packages/ca/c6/6b96f3dc6e75c5a4869064ff11e901b7c60d800a185ea20c46b18799e0b8/materialyoucolor-1.0.tar.gz
+[2023-04-22 15:23:07] INFO root fetch - processPackages [v2conf]: Downloading https://files.pythonhosted.org/packages/d1/ed/1edadab2d5acb80c133320283bcc43e7bf7481bbe6cb0eb02b218927b939/v2conf-0.1.0.tar.gz
+[2023-04-22 15:23:07] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/9f/12/49a5d0d163d7db17d97297d1379c8547d1094d5606f00e9e61d55977f439/foursight_core-4.1.0.1b27.tar.gz
+[2023-04-22 15:23:07] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/9f/12/49a5d0d163d7db17d97297d1379c8547d1094d5606f00e9e61d55977f439/foursight_core-4.1.0.1b27.tar.gz
+[2023-04-22 15:23:07] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/9f/12/49a5d0d163d7db17d97297d1379c8547d1094d5606f00e9e61d55977f439/foursight_core-4.1.0.1b27.tar.gz
+[2023-04-22 15:23:07] INFO root fetch - processPackages [espeak-phonemizer-windows]: Downloading https://files.pythonhosted.org/packages/61/8f/81b717258a7ccbd6f535ea04977725a48c366107bb3fa71ca2d9e0458dcc/espeak_phonemizer_windows-1.0.3.post0.tar.gz
+[2023-04-22 15:23:07] INFO root fetch - processPackages [digitize]: Downloading https://files.pythonhosted.org/packages/9d/c7/67823746c9f08755446079d731904c27adc8294ca5cf4f9dd4e5be1e6347/digitize-1.1.0.tar.gz
+[2023-04-22 15:23:07] INFO root fetch - processPackages [hpr-scratcher]: Downloading https://files.pythonhosted.org/packages/3f/04/8e5f92d9cbdb5193e006f1673870001ec49d249018e0d3c5ac398c6a5e62/hpr_scratcher-0.6.0.tar.gz
+[2023-04-22 15:23:07] INFO root fetch - processPackages [digitize]: Downloading https://files.pythonhosted.org/packages/9d/c7/67823746c9f08755446079d731904c27adc8294ca5cf4f9dd4e5be1e6347/digitize-1.1.0.tar.gz
+[2023-04-22 15:23:07] INFO root fetch - processPackages [v2conf]: Downloading https://files.pythonhosted.org/packages/d5/36/94ff61c52b2ff48f11e08bb8fa2ba7b7ce9a60b7c3587fc873e4494c00e4/v2conf-0.1.1.tar.gz
+[2023-04-22 15:23:07] INFO root fetch - processPackages [materialyoucolor]: Downloading https://files.pythonhosted.org/packages/1c/90/cad0f64e4a615d9ea39c935f30da4b83745f99a9702bb4d0f10348e13006/materialyoucolor-1.0.1.tar.gz
+[2023-04-22 15:23:07] INFO root fetch - processPackages [digitize]: executing diffoscope
+[2023-04-22 15:23:07] INFO root fetch - processPackages [digitize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitize-1.0.0.tar.gz tmp/digitize-1.1.0.tar.gz --markdown 20230422/d/digitize/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-22 15:23:07] INFO root fetch - processPackages [digitize]: executing diffoscope
+[2023-04-22 15:23:07] INFO root fetch - processPackages [digitize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitize-1.0.0.tar.gz tmp/digitize-1.1.0.tar.gz --markdown 20230422/d/digitize/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-22 15:23:07] INFO root fetch - processPackages [hpr-scratcher]: executing diffoscope
+[2023-04-22 15:23:07] INFO root fetch - processPackages [hpr-scratcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hpr_scratcher-0.5.0.tar.gz tmp/hpr_scratcher-0.6.0.tar.gz --markdown 20230422/h/hpr-scratcher/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-22 15:23:07] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/85/03/02e740bbeda4e0316e7d572e8d21778efddab88abd1cd49fb211d2ec06d3/foursight_core-4.1.0.1b28.tar.gz
+[2023-04-22 15:23:07] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/85/03/02e740bbeda4e0316e7d572e8d21778efddab88abd1cd49fb211d2ec06d3/foursight_core-4.1.0.1b28.tar.gz
+[2023-04-22 15:23:07] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/85/03/02e740bbeda4e0316e7d572e8d21778efddab88abd1cd49fb211d2ec06d3/foursight_core-4.1.0.1b28.tar.gz
+[2023-04-22 15:23:07] INFO root fetch - processPackages [v2conf]: executing diffoscope
+[2023-04-22 15:23:07] INFO root fetch - processPackages [v2conf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/v2conf-0.1.0.tar.gz tmp/v2conf-0.1.1.tar.gz --markdown 20230422/v/v2conf/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 15:23:07] INFO root fetch - processPackages [materialyoucolor]: executing diffoscope
+[2023-04-22 15:23:07] INFO root fetch - processPackages [materialyoucolor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/materialyoucolor-1.0.tar.gz tmp/materialyoucolor-1.0.1.tar.gz --markdown 20230422/m/materialyoucolor/1.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 15:23:07] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 15:23:07] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b27.tar.gz tmp/foursight_core-4.1.0.1b28.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b27-4.1.0.1b28/diff.md --exclude *.pyd
+[2023-04-22 15:23:07] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 15:23:07] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 15:23:07] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b27.tar.gz tmp/foursight_core-4.1.0.1b28.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b27-4.1.0.1b28/diff.md --exclude *.pyd
+[2023-04-22 15:23:07] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b27.tar.gz tmp/foursight_core-4.1.0.1b28.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b27-4.1.0.1b28/diff.md --exclude *.pyd
+[2023-04-22 15:23:08] INFO root fetch - processPackages [espeak-phonemizer-windows]: Downloading https://files.pythonhosted.org/packages/d9/6c/23c1c0bf0340f8191b6e4a32257e3b6281fa2feb6b53d2248290209f67cb/espeak_phonemizer_windows-1.0.4-py3-none-any.whl
+[2023-04-22 15:23:08] INFO root fetch - processPackages [digitize]: Start processing: nanolayer
+[2023-04-22 15:23:08] INFO root fetch - main [MainThread]: End processing [digitize]: success
+[2023-04-22 15:23:08] INFO root fetch - processPackages [nanolayer]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-22 15:23:08] INFO root fetch - main [MainThread]: End processing [digitize]: success
+[2023-04-22 15:23:08] INFO root fetch - main [MainThread]: End processing [hpr-scratcher]: success
+[2023-04-22 15:23:09] INFO root fetch - processPackages [nanolayer]: executing diffoscope
+[2023-04-22 15:23:09] INFO root fetch - processPackages [nanolayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanolayer-0.4.8-py3-none-any.whl.zip tmp/nanolayer-0.4.9-py3-none-any.whl.zip --markdown 20230422/n/nanolayer/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-22 15:23:09] INFO root fetch - main [MainThread]: End processing [v2conf]: success
+[2023-04-22 15:23:09] INFO root fetch - main [MainThread]: End processing [materialyoucolor]: success
+[2023-04-22 15:23:09] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 15:23:09] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 15:23:09] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 15:23:10] INFO root fetch - processPackages [espeak-phonemizer-windows]: executing diffoscope
+[2023-04-22 15:23:10] INFO root fetch - processPackages [espeak-phonemizer-windows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espeak_phonemizer_windows-1.0.3.post0.tar.gz tmp/espeak_phonemizer_windows-1.0.4-py3-none-any.whl.zip --markdown 20230422/e/espeak-phonemizer-windows/1.0.3.post0-1.0.4/diff.md --exclude *.pyd
+[2023-04-22 15:23:10] INFO root fetch - main [MainThread]: End processing [nanolayer]: success
+[2023-04-22 15:23:11] INFO root fetch - main [MainThread]: End processing [domain-admin]: success
+[2023-04-22 15:23:12] INFO root fetch - main [MainThread]: End processing [espeak-phonemizer-windows]: success
+[2023-04-22 15:23:12] INFO root fetch - main [MainThread]: Store serial: [17814728]
