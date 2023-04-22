@@ -6076,3 +6076,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 08:14:43] INFO root fetch - main [MainThread]: End processing [odoo14-addon-project-milestone]: success
 [2023-04-22 08:14:43] INFO root fetch - main [MainThread]: End processing [tabularcompare]: success
 [2023-04-22 08:14:43] INFO root fetch - main [MainThread]: Store serial: [17812602]
+[2023-04-22 08:19:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812602]
+[2023-04-22 08:19:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 08:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo12-addon-purchase-request
+[2023-04-22 08:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-admin-material-dashboard
+[2023-04-22 08:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: structlog-sentry-logger
+[2023-04-22 08:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mrdoxmrgt
+[2023-04-22 08:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pylywsdxx
+[2023-04-22 08:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pretext
+[2023-04-22 08:19:52] INFO root fetch - processPackages [pretext]: New version: [1.5.3.dev20230421] Old Version: [1.5.3.dev20230420]
+[2023-04-22 08:19:52] INFO root fetch - processPackages [mrdoxmrgt]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-22 08:19:52] INFO root fetch - processPackages [django-admin-material-dashboard]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-22 08:19:52] INFO root fetch - processPackages [odoo12-addon-purchase-request]: New version: [12.0.5.3.1.99.dev9] Old Version: [12.0.5.3.1.99.dev8]
+[2023-04-22 08:19:52] INFO root fetch - processPackages [pylywsdxx]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-04-22 08:19:52] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2023-04-22 08:19:52] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-1.5.3.dev20230420.tar.gz tmp/pretext-1.5.3.dev20230421.tar.gz --markdown 20230422/p/pretext/1.5.3.dev20230420-1.5.3.dev20230421/diff.md --exclude *.pyd
+[2023-04-22 08:19:52] INFO root fetch - processPackages [structlog-sentry-logger]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-22 08:19:52] INFO root fetch - processPackages [mrdoxmrgt]: Downloading https://files.pythonhosted.org/packages/7a/7f/71c0f38edb1140a607d29f123eca8af47b590f20773e4607504d99c6d675/mrdoxmrgt-0.0.5.tar.gz
+[2023-04-22 08:19:52] INFO root fetch - processPackages [django-admin-material-dashboard]: Downloading https://files.pythonhosted.org/packages/63/43/b0dd0e08ef0e82768cf683ae06a298b5ebc7dc0a80c771fc21953d65e4d5/django-admin-material-dashboard-1.0.8.tar.gz
+[2023-04-22 08:19:52] INFO root fetch - processPackages [structlog-sentry-logger]: Downloading https://files.pythonhosted.org/packages/5f/f9/748096110547c83d440772b2781c02058c4bf66b65ad7fcb8c6ceb16a31b/structlog_sentry_logger-1.0.0-cp39-cp39-win_amd64.whl
+[2023-04-22 08:19:52] INFO root fetch - processPackages [mrdoxmrgt]: executing diffoscope
+[2023-04-22 08:19:52] INFO root fetch - processPackages [mrdoxmrgt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrdoxmrgt-0.0.4.tar.gz tmp/mrdoxmrgt-0.0.5.tar.gz --markdown 20230422/m/mrdoxmrgt/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-22 08:19:52] WARNING root fetch - processPackages [django-admin-material-dashboard]: Skipping package: exceeds size limit 15035287>=10485760
+[2023-04-22 08:19:52] INFO root fetch - main [MainThread]: End processing [django-admin-material-dashboard] error
+[2023-04-22 08:19:52] INFO root fetch - processPackages [pylywsdxx]: Downloading https://files.pythonhosted.org/packages/76/8c/175f7d0e056b745f6847cfcbcf8d8e2369882fd98a8715e0ace297232bf3/pylywsdxx-1.4.2.tar.gz
+[2023-04-22 08:19:52] INFO root fetch - processPackages [odoo12-addon-purchase-request]: executing diffoscope
+[2023-04-22 08:19:52] INFO root fetch - processPackages [odoo12-addon-purchase-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_purchase_request-12.0.5.3.1.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_purchase_request-12.0.5.3.1.99.dev9-py3-none-any.whl.zip --markdown 20230422/o/odoo12-addon-purchase-request/12.0.5.3.1.99.dev8-12.0.5.3.1.99.dev9/diff.md --exclude *.pyd
+[2023-04-22 08:19:52] INFO root fetch - processPackages [pylywsdxx]: executing diffoscope
+[2023-04-22 08:19:52] INFO root fetch - processPackages [pylywsdxx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylywsdxx-1.4.1.tar.gz tmp/pylywsdxx-1.4.2.tar.gz --markdown 20230422/p/pylywsdxx/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-04-22 08:19:52] INFO root fetch - processPackages [structlog-sentry-logger]: Downloading https://files.pythonhosted.org/packages/73/13/2afc9c5b9419e29ec8cb447b5e820dedb2b69930badb91021ec5495b2512/structlog_sentry_logger-1.0.1-cp39-cp39-win_amd64.whl
+[2023-04-22 08:19:52] INFO root fetch - processPackages [structlog-sentry-logger]: executing diffoscope
+[2023-04-22 08:19:52] INFO root fetch - processPackages [structlog-sentry-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structlog_sentry_logger-1.0.0-cp39-cp39-win_amd64.whl.zip tmp/structlog_sentry_logger-1.0.1-cp39-cp39-win_amd64.whl.zip --markdown 20230422/s/structlog-sentry-logger/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 08:19:53] INFO root fetch - main [MainThread]: End processing [mrdoxmrgt]: success
+[2023-04-22 08:19:53] INFO root fetch - main [MainThread]: End processing [pylywsdxx]: success
+[2023-04-22 08:19:53] INFO root fetch - main [MainThread]: End processing [structlog-sentry-logger]: success
+[2023-04-22 08:19:54] INFO root fetch - main [MainThread]: End processing [odoo12-addon-purchase-request]: success
+[2023-04-22 08:20:00] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2023-04-22 08:20:00] INFO root fetch - main [MainThread]: Store serial: [17812674]
