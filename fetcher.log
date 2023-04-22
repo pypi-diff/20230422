@@ -12495,3 +12495,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 20:32:21] INFO root fetch - main [MainThread]: End processing [pandas-dq]: success
 [2023-04-22 20:32:21] INFO root fetch - main [MainThread]: End processing [qgis-plugin-ci]: success
 [2023-04-22 20:32:21] INFO root fetch - main [MainThread]: Store serial: [17816438]
+[2023-04-22 20:37:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816438]
+[2023-04-22 20:37:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-22 20:37:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pandasflow
+[2023-04-22 20:37:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbxconfig
+[2023-04-22 20:37:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TheSilent
+[2023-04-22 20:37:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyfredapi
+[2023-04-22 20:37:31] INFO root fetch - processPackages [pandasflow]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-22 20:37:31] INFO root fetch - processPackages [pyfredapi]: New version: [0.6.0] Old Version: [0.5.4]
+[2023-04-22 20:37:31] INFO root fetch - processPackages [dbxconfig]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-04-22 20:37:31] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 20:37:31] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-22 20:37:31] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230422/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 20:37:31] INFO root fetch - processPackages [dbxconfig]: Downloading https://files.pythonhosted.org/packages/90/c2/dc5b1565609c63f4443bb6a007da3cd2bd11919fb7942cdf748a87cf2eee/dbxconfig-2.1.1.tar.gz
+[2023-04-22 20:37:31] INFO root fetch - processPackages [pyfredapi]: Downloading https://files.pythonhosted.org/packages/0f/be/a3fe23977bf30c7339efb3a0783b920a7269c1756eb53b941d365354fdbe/pyfredapi-0.6.0.tar.gz
+[2023-04-22 20:37:31] INFO root fetch - processPackages [pandasflow]: Downloading https://files.pythonhosted.org/packages/58/a3/c65cd9f06ac0ca8db79c2e4279df9cd0ae020e7b4f8ebb79fd5da72bd78b/pandasflow-0.3.1.tar.gz
+[2023-04-22 20:37:31] INFO root fetch - processPackages [dbxconfig]: executing diffoscope
+[2023-04-22 20:37:31] INFO root fetch - processPackages [dbxconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbxconfig-2.1.0.tar.gz tmp/dbxconfig-2.1.1.tar.gz --markdown 20230422/d/dbxconfig/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-04-22 20:37:31] INFO root fetch - processPackages [pandasflow]: executing diffoscope
+[2023-04-22 20:37:31] INFO root fetch - processPackages [pandasflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandasflow-0.3.0.tar.gz tmp/pandasflow-0.3.1.tar.gz --markdown 20230422/p/pandasflow/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-22 20:37:31] INFO root fetch - processPackages [pyfredapi]: executing diffoscope
+[2023-04-22 20:37:31] INFO root fetch - processPackages [pyfredapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfredapi-0.5.4.tar.gz tmp/pyfredapi-0.6.0.tar.gz --markdown 20230422/p/pyfredapi/0.5.4-0.6.0/diff.md --exclude *.pyd
+[2023-04-22 20:37:32] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2023-04-22 20:37:32] INFO root fetch - main [MainThread]: End processing [dbxconfig]: success
+[2023-04-22 20:37:33] INFO root fetch - main [MainThread]: End processing [pyfredapi]: success
+[2023-04-22 20:37:33] INFO root fetch - main [MainThread]: End processing [pandasflow]: success
+[2023-04-22 20:37:33] INFO root fetch - main [MainThread]: Store serial: [17816449]
