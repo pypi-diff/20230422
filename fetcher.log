@@ -4742,3 +4742,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 05:53:20] INFO root fetch - main [MainThread]: End processing [StringFix]: success
 [2023-04-22 05:53:22] INFO root fetch - main [MainThread]: End processing [pypcapkit]: success
 [2023-04-22 05:53:22] INFO root fetch - main [MainThread]: Store serial: [17811964]
+[2023-04-22 05:58:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811964]
+[2023-04-22 05:58:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-22 05:58:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: analyzequicker
+[2023-04-22 05:58:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-poe-chat
+[2023-04-22 05:58:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: karrio.dpdhl
+[2023-04-22 05:58:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TPLUtils
+[2023-04-22 05:58:32] INFO root fetch - processPackages [TPLUtils]: New version: [0.0.1a0] Old Version: [0.0.1]
+[2023-04-22 05:58:32] INFO root fetch - processPackages [nonebot-poe-chat]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-22 05:58:32] WARNING root fetch - processPackages [analyzequicker]: Skipping, unable to determine old version
+[2023-04-22 05:58:32] INFO root fetch - main [MainThread]: End processing [analyzequicker] error
+[2023-04-22 05:58:32] INFO root fetch - processPackages [karrio.dpdhl]: New version: [2023.4.2] Old Version: [2023.4]
+[2023-04-22 05:58:32] INFO root fetch - processPackages [TPLUtils]: Downloading https://files.pythonhosted.org/packages/0d/77/b50b36fe105118e80d34644bf3b5c2af54635a942992dada6e6bce114d24/TPLUtils-0.0.1.tar.gz
+[2023-04-22 05:58:32] INFO root fetch - processPackages [nonebot-poe-chat]: Downloading https://files.pythonhosted.org/packages/c5/14/09335ab4234eba9fe2ce578297e3be1140ab1a74b16c3254c475c8ca9ab1/nonebot_poe_chat-0.0.4.tar.gz
+[2023-04-22 05:58:32] INFO root fetch - processPackages [nonebot-poe-chat]: executing diffoscope
+[2023-04-22 05:58:32] INFO root fetch - processPackages [nonebot-poe-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_poe_chat-0.0.3.tar.gz tmp/nonebot_poe_chat-0.0.4.tar.gz --markdown 20230422/n/nonebot-poe-chat/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-22 05:58:32] INFO root fetch - processPackages [karrio.dpdhl]: Downloading https://files.pythonhosted.org/packages/2e/55/e19d7b63baebc182edfe736b7d723ac24ceb622498e8ff54020281c0bb48/karrio.dpdhl-2023.4.2-py3-none-any.whl
+[2023-04-22 05:58:32] INFO root fetch - processPackages [TPLUtils]: Downloading https://files.pythonhosted.org/packages/25/68/acc232c9fac758e3775fe9f084631e0839444ad0c6740f57e78c3e73ced8/TPLUtils-0.0.1a0.tar.gz
+[2023-04-22 05:58:32] INFO root fetch - processPackages [karrio.dpdhl]: executing diffoscope
+[2023-04-22 05:58:32] INFO root fetch - processPackages [karrio.dpdhl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karrio.dpdhl-2023.4-py3-none-any.whl.zip tmp/karrio.dpdhl-2023.4.2-py3-none-any.whl.zip --markdown 20230422/k/karrio.dpdhl/2023.4-2023.4.2/diff.md --exclude *.pyd
+[2023-04-22 05:58:33] INFO root fetch - processPackages [TPLUtils]: executing diffoscope
+[2023-04-22 05:58:33] INFO root fetch - processPackages [TPLUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TPLUtils-0.0.1.tar.gz tmp/TPLUtils-0.0.1a0.tar.gz --markdown 20230422/T/TPLUtils/0.0.1-0.0.1a0/diff.md --exclude *.pyd
+[2023-04-22 05:58:33] INFO root fetch - main [MainThread]: End processing [nonebot-poe-chat]: success
+[2023-04-22 05:58:33] INFO root fetch - main [MainThread]: End processing [karrio.dpdhl]: success
+[2023-04-22 05:58:34] INFO root fetch - main [MainThread]: End processing [TPLUtils]: success
+[2023-04-22 05:58:34] INFO root fetch - main [MainThread]: Store serial: [17811983]
