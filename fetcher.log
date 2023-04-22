@@ -6845,3 +6845,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 09:38:58] INFO root fetch - main [MainThread]: End processing [odoo8-addon-website-slides]: success
 [2023-04-22 09:38:58] INFO root fetch - main [MainThread]: End processing [streaming-form-data]: success
 [2023-04-22 09:38:58] INFO root fetch - main [MainThread]: Store serial: [17813072]
+[2023-04-22 09:44:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813072]
+[2023-04-22 09:44:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 09:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mtpandas
+[2023-04-22 09:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo10-addon-cms-status-message
+[2023-04-22 09:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo11-addon-cms-status-message
+[2023-04-22 09:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo13-addon-cms-status-message
+[2023-04-22 09:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rssfixer
+[2023-04-22 09:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: DendroPy
+[2023-04-22 09:44:08] INFO root fetch - processPackages [odoo10-addon-cms-status-message]: New version: [10.0.1.1.0.99.dev4] Old Version: [10.0.1.1.0.99.dev3]
+[2023-04-22 09:44:08] INFO root fetch - processPackages [odoo11-addon-cms-status-message]: New version: [11.0.1.3.0.99.dev7] Old Version: [11.0.1.3.0.99.dev6]
+[2023-04-22 09:44:08] INFO root fetch - processPackages [DendroPy]: New version: [4.6.0] Old Version: [4.5.2]
+[2023-04-22 09:44:08] INFO root fetch - processPackages [odoo13-addon-cms-status-message]: New version: [13.0.1.0.2.dev3] Old Version: [13.0.1.0.2.dev2]
+[2023-04-22 09:44:08] INFO root fetch - processPackages [rssfixer]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-22 09:44:08] INFO root fetch - processPackages [mtpandas]: New version: [1.9.202208120520] Old Version: [1.9.202208011136]
+[2023-04-22 09:44:08] INFO root fetch - processPackages [mtpandas]: executing diffoscope
+[2023-04-22 09:44:08] INFO root fetch - processPackages [mtpandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtpandas-1.9.202208011136-py3-none-any.whl.zip tmp/mtpandas-1.9.202208120520-py3-none-any.whl.zip --markdown 20230422/m/mtpandas/1.9.202208011136-1.9.202208120520/diff.md --exclude *.pyd
+[2023-04-22 09:44:08] INFO root fetch - processPackages [odoo13-addon-cms-status-message]: Downloading https://files.pythonhosted.org/packages/a1/07/b0b51b5e552b31cad87e7d0094745b0427b2dfe5e5c669ac5e0a5462892d/odoo13_addon_cms_status_message-13.0.1.0.2.dev2-py3-none-any.whl
+[2023-04-22 09:44:08] INFO root fetch - processPackages [DendroPy]: Downloading https://files.pythonhosted.org/packages/f9/10/125c181b1d97ffc4661a60ec897cfe058dc46cb53900d807819464c3510f/DendroPy-4.5.2.tar.gz
+[2023-04-22 09:44:08] INFO root fetch - processPackages [odoo10-addon-cms-status-message]: Downloading https://files.pythonhosted.org/packages/37/a1/97e25ea90b68e3145bceb9d12dceb827713ebef829c77f114eeadd01fbb3/odoo10_addon_cms_status_message-10.0.1.1.0.99.dev3-py2-none-any.whl
+[2023-04-22 09:44:08] INFO root fetch - processPackages [odoo11-addon-cms-status-message]: Downloading https://files.pythonhosted.org/packages/06/ba/8fba60c5f7950f85bcead6445f4c3690533199e6124f1bdc1e9974ead244/odoo11_addon_cms_status_message-11.0.1.3.0.99.dev6-py2.py3-none-any.whl
+[2023-04-22 09:44:08] WARNING root fetch - processPackages [DendroPy]: Skipping package: exceeds size limit 15201088>=10485760
+[2023-04-22 09:44:08] INFO root fetch - main [MainThread]: End processing [DendroPy] error
+[2023-04-22 09:44:08] INFO root fetch - processPackages [rssfixer]: Downloading https://files.pythonhosted.org/packages/75/e3/715f7e061e8beb7f314e0c52a1bc4d29fdd4638958a6d38773b420a2c984/rssfixer-0.0.7.tar.gz
+[2023-04-22 09:44:09] INFO root fetch - processPackages [odoo13-addon-cms-status-message]: Downloading https://files.pythonhosted.org/packages/68/49/56c32f60a5c9ad01282c656cd00793bd6085daec5cb36b80003ad2bfe6b3/odoo13_addon_cms_status_message-13.0.1.0.2.dev3-py3-none-any.whl
+[2023-04-22 09:44:09] INFO root fetch - processPackages [odoo10-addon-cms-status-message]: Downloading https://files.pythonhosted.org/packages/21/93/0e2cef8b0507a7ae33ff355facc727648c7bd23f4998da18f8de6ea4666e/odoo10_addon_cms_status_message-10.0.1.1.0.99.dev4-py2-none-any.whl
+[2023-04-22 09:44:09] INFO root fetch - processPackages [rssfixer]: executing diffoscope
+[2023-04-22 09:44:09] INFO root fetch - processPackages [rssfixer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rssfixer-0.0.6.tar.gz tmp/rssfixer-0.0.7.tar.gz --markdown 20230422/r/rssfixer/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-22 09:44:09] INFO root fetch - processPackages [odoo11-addon-cms-status-message]: Downloading https://files.pythonhosted.org/packages/da/6e/c7b74e454165fb856c88cdfa9286a83d125a4d9865958b8442c2df344f7f/odoo11_addon_cms_status_message-11.0.1.3.0.99.dev7-py2.py3-none-any.whl
+[2023-04-22 09:44:09] INFO root fetch - processPackages [odoo10-addon-cms-status-message]: executing diffoscope
+[2023-04-22 09:44:09] INFO root fetch - processPackages [odoo10-addon-cms-status-message]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo10_addon_cms_status_message-10.0.1.1.0.99.dev3-py2-none-any.whl.zip tmp/odoo10_addon_cms_status_message-10.0.1.1.0.99.dev4-py2-none-any.whl.zip --markdown 20230422/o/odoo10-addon-cms-status-message/10.0.1.1.0.99.dev3-10.0.1.1.0.99.dev4/diff.md --exclude *.pyd
+[2023-04-22 09:44:09] INFO root fetch - processPackages [odoo13-addon-cms-status-message]: executing diffoscope
+[2023-04-22 09:44:09] INFO root fetch - processPackages [odoo13-addon-cms-status-message]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_cms_status_message-13.0.1.0.2.dev2-py3-none-any.whl.zip tmp/odoo13_addon_cms_status_message-13.0.1.0.2.dev3-py3-none-any.whl.zip --markdown 20230422/o/odoo13-addon-cms-status-message/13.0.1.0.2.dev2-13.0.1.0.2.dev3/diff.md --exclude *.pyd
+[2023-04-22 09:44:09] INFO root fetch - processPackages [odoo11-addon-cms-status-message]: executing diffoscope
+[2023-04-22 09:44:09] INFO root fetch - processPackages [odoo11-addon-cms-status-message]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_cms_status_message-11.0.1.3.0.99.dev6-py2.py3-none-any.whl.zip tmp/odoo11_addon_cms_status_message-11.0.1.3.0.99.dev7-py2.py3-none-any.whl.zip --markdown 20230422/o/odoo11-addon-cms-status-message/11.0.1.3.0.99.dev6-11.0.1.3.0.99.dev7/diff.md --exclude *.pyd
+[2023-04-22 09:44:10] INFO root fetch - main [MainThread]: End processing [mtpandas]: success
+[2023-04-22 09:44:10] INFO root fetch - main [MainThread]: End processing [odoo11-addon-cms-status-message]: success
+[2023-04-22 09:44:10] INFO root fetch - main [MainThread]: End processing [rssfixer]: success
+[2023-04-22 09:44:10] INFO root fetch - main [MainThread]: End processing [odoo13-addon-cms-status-message]: success
+[2023-04-22 09:44:10] INFO root fetch - main [MainThread]: End processing [odoo10-addon-cms-status-message]: success
+[2023-04-22 09:44:10] INFO root fetch - main [MainThread]: Store serial: [17813110]
