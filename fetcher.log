@@ -5080,3 +5080,71 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 06:35:43] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
 [2023-04-22 06:35:43] INFO root fetch - main [MainThread]: End processing [netron] error
 [2023-04-22 06:35:43] INFO root fetch - main [MainThread]: Store serial: [17812143]
+[2023-04-22 06:40:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812143]
+[2023-04-22 06:40:52] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-22 06:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: astronomica
+[2023-04-22 06:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aws-prototyping-sdk.aws-arch
+[2023-04-22 06:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aws-prototyping-sdk
+[2023-04-22 06:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aws-prototyping-sdk.cloudscape-react-ts-website
+[2023-04-22 06:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aws-prototyping-sdk.identity
+[2023-04-22 06:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aws-prototyping-sdk.nx-monorepo
+[2023-04-22 06:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aws-prototyping-sdk.open-api-gateway
+[2023-04-22 06:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aws-prototyping-sdk.pdk-nag
+[2023-04-22 06:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aws-prototyping-sdk.pipeline
+[2023-04-22 06:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: aws-prototyping-sdk.static-website
+[2023-04-22 06:40:52] INFO root fetch - processPackages [astronomica]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk.aws-arch]: New version: [0.17.1] Old Version: [0.17.0]
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk.pdk-nag]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk.cloudscape-react-ts-website]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk.static-website]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk.identity]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk.nx-monorepo]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk.pipeline]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk.open-api-gateway]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-22 06:40:52] INFO root fetch - processPackages [astronomica]: Downloading https://files.pythonhosted.org/packages/5a/b1/13fdc124c4ded7106e858dfa6c54fde1440fdd0658f207722caf09ce699e/astronomica-0.0.8.tar.gz
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk.aws-arch]: Downloading https://files.pythonhosted.org/packages/a4/83/f9669fb0ba47ff4264c9c548b2f3ad9f6f47c41d15dac5ce987778def117/aws_prototyping_sdk.aws_arch-0.17.0.tar.gz
+[2023-04-22 06:40:52] WARNING root fetch - processPackages [aws-prototyping-sdk.aws-arch]: Skipping package: exceeds size limit 19287426>=10485760
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk.aws-arch]: Start processing: aws-prototyping-sdk.type-safe-api
+[2023-04-22 06:40:52] INFO root fetch - main [MainThread]: End processing [aws-prototyping-sdk.aws-arch] error
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk.pdk-nag]: executing diffoscope
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk.pdk-nag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_prototyping_sdk.pdk_nag-0.9.3.tar.gz tmp/aws_prototyping_sdk.pdk_nag-0.9.4.tar.gz --markdown 20230422/a/aws-prototyping-sdk.pdk-nag/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-22 06:40:52] INFO root fetch - processPackages [astronomica]: Downloading https://files.pythonhosted.org/packages/7e/1f/f2cd7b957af545990b9521dbd80823c6d0707c6fe13b50314bfc321f2bc4/astronomica-0.0.9.tar.gz
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk]: executing diffoscope
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_prototyping_sdk-0.9.3.tar.gz tmp/aws_prototyping_sdk-0.9.4.tar.gz --markdown 20230422/a/aws-prototyping-sdk/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk.nx-monorepo]: executing diffoscope
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk.cloudscape-react-ts-website]: executing diffoscope
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk.nx-monorepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_prototyping_sdk.nx_monorepo-0.9.3.tar.gz tmp/aws_prototyping_sdk.nx_monorepo-0.9.4.tar.gz --markdown 20230422/a/aws-prototyping-sdk.nx-monorepo/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-22 06:40:52] INFO root fetch - processPackages [aws-prototyping-sdk.cloudscape-react-ts-website]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_prototyping_sdk.cloudscape_react_ts_website-0.9.3.tar.gz tmp/aws_prototyping_sdk.cloudscape_react_ts_website-0.9.4.tar.gz --markdown 20230422/a/aws-prototyping-sdk.cloudscape-react-ts-website/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-22 06:40:53] INFO root fetch - processPackages [aws-prototyping-sdk.identity]: executing diffoscope
+[2023-04-22 06:40:53] INFO root fetch - processPackages [aws-prototyping-sdk.identity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_prototyping_sdk.identity-0.9.3.tar.gz tmp/aws_prototyping_sdk.identity-0.9.4.tar.gz --markdown 20230422/a/aws-prototyping-sdk.identity/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-22 06:40:53] INFO root fetch - processPackages [aws-prototyping-sdk.pipeline]: executing diffoscope
+[2023-04-22 06:40:53] INFO root fetch - processPackages [aws-prototyping-sdk.pipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_prototyping_sdk.pipeline-0.9.3.tar.gz tmp/aws_prototyping_sdk.pipeline-0.9.4.tar.gz --markdown 20230422/a/aws-prototyping-sdk.pipeline/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-22 06:40:53] INFO root fetch - processPackages [aws-prototyping-sdk.type-safe-api]: New version: [0.17.1] Old Version: [0.17.0]
+[2023-04-22 06:40:53] INFO root fetch - processPackages [aws-prototyping-sdk.static-website]: executing diffoscope
+[2023-04-22 06:40:53] INFO root fetch - processPackages [aws-prototyping-sdk.static-website]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_prototyping_sdk.static_website-0.9.3.tar.gz tmp/aws_prototyping_sdk.static_website-0.9.4.tar.gz --markdown 20230422/a/aws-prototyping-sdk.static-website/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-22 06:40:53] INFO root fetch - processPackages [aws-prototyping-sdk.open-api-gateway]: executing diffoscope
+[2023-04-22 06:40:53] INFO root fetch - processPackages [aws-prototyping-sdk.open-api-gateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_prototyping_sdk.open_api_gateway-0.9.3.tar.gz tmp/aws_prototyping_sdk.open_api_gateway-0.9.4.tar.gz --markdown 20230422/a/aws-prototyping-sdk.open-api-gateway/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-22 06:40:53] INFO root fetch - processPackages [astronomica]: executing diffoscope
+[2023-04-22 06:40:53] INFO root fetch - processPackages [astronomica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astronomica-0.0.8.tar.gz tmp/astronomica-0.0.9.tar.gz --markdown 20230422/a/astronomica/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 06:40:53] INFO root fetch - processPackages [aws-prototyping-sdk.type-safe-api]: Downloading https://files.pythonhosted.org/packages/cd/06/ccd220c9690e190a9266ed2a088dab673089d1f37fe551225dec0ff1ad96/aws_prototyping_sdk.type_safe_api-0.17.0.tar.gz
+[2023-04-22 06:40:53] INFO root fetch - processPackages [aws-prototyping-sdk.type-safe-api]: Downloading https://files.pythonhosted.org/packages/03/1b/96f9c748ef8b8374285fd98b22e01cef94f2ebc31dab0eb777b2381a3d46/aws_prototyping_sdk.type_safe_api-0.17.1.tar.gz
+[2023-04-22 06:40:53] INFO root fetch - processPackages [aws-prototyping-sdk.type-safe-api]: executing diffoscope
+[2023-04-22 06:40:53] INFO root fetch - processPackages [aws-prototyping-sdk.type-safe-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_prototyping_sdk.type_safe_api-0.17.0.tar.gz tmp/aws_prototyping_sdk.type_safe_api-0.17.1.tar.gz --markdown 20230422/a/aws-prototyping-sdk.type-safe-api/0.17.0-0.17.1/diff.md --exclude *.pyd
+[2023-04-22 06:40:54] INFO root fetch - processPackages [aws-prototyping-sdk.pdk-nag]: Start processing: dragonfile
+[2023-04-22 06:40:54] INFO root fetch - main [MainThread]: End processing [aws-prototyping-sdk.pdk-nag]: success
+[2023-04-22 06:40:54] WARNING root fetch - processPackages [dragonfile]: Skipping, unable to determine old version
+[2023-04-22 06:40:54] INFO root fetch - processPackages [dragonfile]: Start processing: pythonsite
+[2023-04-22 06:40:54] INFO root fetch - main [MainThread]: End processing [dragonfile] error
+[2023-04-22 06:40:54] WARNING root fetch - processPackages [pythonsite]: Skipping, unable to determine old version
+[2023-04-22 06:40:54] INFO root fetch - main [MainThread]: End processing [pythonsite] error
+[2023-04-22 06:40:54] INFO root fetch - main [MainThread]: End processing [aws-prototyping-sdk.static-website]: success
+[2023-04-22 06:40:54] INFO root fetch - main [MainThread]: End processing [aws-prototyping-sdk.pipeline]: success
+[2023-04-22 06:40:54] INFO root fetch - main [MainThread]: End processing [aws-prototyping-sdk.identity]: success
+[2023-04-22 06:40:54] INFO root fetch - main [MainThread]: End processing [aws-prototyping-sdk]: success
+[2023-04-22 06:40:54] INFO root fetch - main [MainThread]: End processing [aws-prototyping-sdk.open-api-gateway]: success
+[2023-04-22 06:40:54] INFO root fetch - main [MainThread]: End processing [astronomica]: success
+[2023-04-22 06:40:55] INFO root fetch - main [MainThread]: End processing [aws-prototyping-sdk.nx-monorepo]: success
+[2023-04-22 06:40:55] INFO root fetch - main [MainThread]: End processing [aws-prototyping-sdk.cloudscape-react-ts-website]: success
+[2023-04-22 06:40:56] INFO root fetch - main [MainThread]: End processing [aws-prototyping-sdk.type-safe-api]: success
+[2023-04-22 06:40:56] INFO root fetch - main [MainThread]: Store serial: [17812185]
