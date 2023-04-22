@@ -12294,3 +12294,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 20:05:51] INFO root fetch - main [MainThread]: End processing [edc-pharmacy]: success
 [2023-04-22 20:05:51] INFO root fetch - main [MainThread]: End processing [wwdtm]: success
 [2023-04-22 20:05:51] INFO root fetch - main [MainThread]: Store serial: [17816337]
+[2023-04-22 20:10:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816337]
+[2023-04-22 20:11:00] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 20:11:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: configurable-argparse-DavidRodriguezSoaresCUI
+[2023-04-22 20:11:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: open-space-toolkit-simulation
+[2023-04-22 20:11:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edc-microbiology
+[2023-04-22 20:11:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-object-safety
+[2023-04-22 20:11:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-object-safety
+[2023-04-22 20:11:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: graphql-http-server
+[2023-04-22 20:11:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: edc-visit-schedule
+[2023-04-22 20:11:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-object-safety
+[2023-04-22 20:11:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: helloconfig
+[2023-04-22 20:11:00] WARNING root fetch - processPackages [configurable-argparse-DavidRodriguezSoaresCUI]: Skipping, unable to determine old version
+[2023-04-22 20:11:00] INFO root fetch - main [MainThread]: End processing [configurable-argparse-DavidRodriguezSoaresCUI] error
+[2023-04-22 20:11:00] INFO root fetch - processPackages [graphql-http-server]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-04-22 20:11:00] INFO root fetch - processPackages [open-space-toolkit-simulation]: New version: [0.5.0] Old Version: [0.4.4]
+[2023-04-22 20:11:00] INFO root fetch - processPackages [django-object-safety]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-22 20:11:00] INFO root fetch - processPackages [django-object-safety]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-22 20:11:00] INFO root fetch - processPackages [edc-microbiology]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 20:11:00] WARNING root fetch - processPackages [helloconfig]: Skipping, unable to determine old version
+[2023-04-22 20:11:00] INFO root fetch - main [MainThread]: End processing [helloconfig] error
+[2023-04-22 20:11:00] INFO root fetch - processPackages [django-object-safety]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-22 20:11:00] INFO root fetch - processPackages [edc-visit-schedule]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-22 20:11:00] INFO root fetch - processPackages [django-object-safety]: Downloading https://files.pythonhosted.org/packages/93/95/7c0747682b1c59a17a395f9098a27ba90caa18cc31e50ba91bd00db27b72/django_object_safety-0.1.3.tar.gz
+[2023-04-22 20:11:00] INFO root fetch - processPackages [django-object-safety]: Downloading https://files.pythonhosted.org/packages/93/95/7c0747682b1c59a17a395f9098a27ba90caa18cc31e50ba91bd00db27b72/django_object_safety-0.1.3.tar.gz
+[2023-04-22 20:11:00] INFO root fetch - processPackages [open-space-toolkit-simulation]: Downloading https://files.pythonhosted.org/packages/87/43/ace982f0ef12cf158afcc9e9f30c45d6d665950bb26dc44ad561d023964b/open_space_toolkit_simulation-0.4.4-py39-none-any.whl
+[2023-04-22 20:11:00] INFO root fetch - processPackages [django-object-safety]: Downloading https://files.pythonhosted.org/packages/93/95/7c0747682b1c59a17a395f9098a27ba90caa18cc31e50ba91bd00db27b72/django_object_safety-0.1.3.tar.gz
+[2023-04-22 20:11:00] INFO root fetch - processPackages [graphql-http-server]: Downloading https://files.pythonhosted.org/packages/37/27/f7180fa1e0cd051e28aa50d76c0ae961f2d34644dc436c8804cda9847c4f/graphql_http_server-1.4.1.tar.gz
+[2023-04-22 20:11:00] INFO root fetch - processPackages [edc-visit-schedule]: Downloading https://files.pythonhosted.org/packages/55/62/08b5eb66559fe5f11493a7403cf1549605588ac96f1433e68190de33a591/edc_visit_schedule-0.3.8-py3-none-any.whl
+[2023-04-22 20:11:00] INFO root fetch - processPackages [edc-microbiology]: Downloading https://files.pythonhosted.org/packages/b5/18/748e8690b6c4ab223e1d54a630e84111708fb2dd82f1dabc224f7f9da214/edc-microbiology-0.1.8.tar.gz
+[2023-04-22 20:11:00] INFO root fetch - processPackages [graphql-http-server]: executing diffoscope
+[2023-04-22 20:11:00] INFO root fetch - processPackages [graphql-http-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql_http_server-1.4.0.tar.gz tmp/graphql_http_server-1.4.1.tar.gz --markdown 20230422/g/graphql-http-server/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-22 20:11:01] INFO root fetch - processPackages [django-object-safety]: Downloading https://files.pythonhosted.org/packages/68/d6/1e09089a1157dea8a28d18e17ce3814a151f5e1ab0706a6bb5429fb6e245/django_object_safety-0.1.4.tar.gz
+[2023-04-22 20:11:01] INFO root fetch - processPackages [django-object-safety]: Downloading https://files.pythonhosted.org/packages/68/d6/1e09089a1157dea8a28d18e17ce3814a151f5e1ab0706a6bb5429fb6e245/django_object_safety-0.1.4.tar.gz
+[2023-04-22 20:11:01] INFO root fetch - processPackages [django-object-safety]: Downloading https://files.pythonhosted.org/packages/68/d6/1e09089a1157dea8a28d18e17ce3814a151f5e1ab0706a6bb5429fb6e245/django_object_safety-0.1.4.tar.gz
+[2023-04-22 20:11:01] INFO root fetch - processPackages [open-space-toolkit-simulation]: Downloading https://files.pythonhosted.org/packages/d3/9d/309f49fb5c62e45e02799ce850b4d4c9c488033bc52131eddeda1fc2ced4/open_space_toolkit_simulation-0.5.0-py39-none-any.whl
+[2023-04-22 20:11:01] INFO root fetch - processPackages [edc-visit-schedule]: Downloading https://files.pythonhosted.org/packages/d5/72/3df1323c5292ddeb8587bdab58504a97371317f435cce78a6e93a1c6561a/edc_visit_schedule-0.3.9-py3-none-any.whl
+[2023-04-22 20:11:01] INFO root fetch - processPackages [edc-microbiology]: Downloading https://files.pythonhosted.org/packages/2d/ca/da76e05fe8a34ef452638758ca6f05bde9daf8b367680d10d07778ce5727/edc-microbiology-0.1.9.tar.gz
+[2023-04-22 20:11:01] INFO root fetch - processPackages [django-object-safety]: executing diffoscope
+[2023-04-22 20:11:01] INFO root fetch - processPackages [django-object-safety]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_object_safety-0.1.3.tar.gz tmp/django_object_safety-0.1.4.tar.gz --markdown 20230422/d/django-object-safety/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-22 20:11:01] INFO root fetch - processPackages [django-object-safety]: executing diffoscope
+[2023-04-22 20:11:01] INFO root fetch - processPackages [django-object-safety]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_object_safety-0.1.3.tar.gz tmp/django_object_safety-0.1.4.tar.gz --markdown 20230422/d/django-object-safety/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-22 20:11:01] INFO root fetch - processPackages [django-object-safety]: executing diffoscope
+[2023-04-22 20:11:01] INFO root fetch - processPackages [django-object-safety]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_object_safety-0.1.3.tar.gz tmp/django_object_safety-0.1.4.tar.gz --markdown 20230422/d/django-object-safety/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-22 20:11:01] INFO root fetch - processPackages [edc-microbiology]: executing diffoscope
+[2023-04-22 20:11:01] INFO root fetch - processPackages [edc-microbiology]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-microbiology-0.1.8.tar.gz tmp/edc-microbiology-0.1.9.tar.gz --markdown 20230422/e/edc-microbiology/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 20:11:01] INFO root fetch - processPackages [open-space-toolkit-simulation]: executing diffoscope
+[2023-04-22 20:11:01] INFO root fetch - processPackages [open-space-toolkit-simulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_space_toolkit_simulation-0.4.4-py39-none-any.whl.zip tmp/open_space_toolkit_simulation-0.5.0-py39-none-any.whl.zip --markdown 20230422/o/open-space-toolkit-simulation/0.4.4-0.5.0/diff.md --exclude *.pyd
+[2023-04-22 20:11:01] INFO root fetch - processPackages [edc-visit-schedule]: executing diffoscope
+[2023-04-22 20:11:01] INFO root fetch - processPackages [edc-visit-schedule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_visit_schedule-0.3.8-py3-none-any.whl.zip tmp/edc_visit_schedule-0.3.9-py3-none-any.whl.zip --markdown 20230422/e/edc-visit-schedule/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-22 20:11:02] INFO root fetch - main [MainThread]: End processing [graphql-http-server]: success
+[2023-04-22 20:11:02] INFO root fetch - main [MainThread]: End processing [django-object-safety]: success
+[2023-04-22 20:11:02] INFO root fetch - main [MainThread]: End processing [django-object-safety]: success
+[2023-04-22 20:11:02] INFO root fetch - main [MainThread]: End processing [django-object-safety]: success
+[2023-04-22 20:11:03] INFO root fetch - main [MainThread]: End processing [edc-visit-schedule]: success
+[2023-04-22 20:11:06] INFO root fetch - main [MainThread]: End processing [open-space-toolkit-simulation]: success
+[2023-04-22 20:11:17] INFO root fetch - main [MainThread]: End processing [edc-microbiology]: success
+[2023-04-22 20:11:17] INFO root fetch - main [MainThread]: Store serial: [17816369]
