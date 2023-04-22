@@ -7866,3 +7866,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 12:03:23] INFO root fetch - main [MainThread]: End processing [mdapy]: success
 [2023-04-22 12:03:26] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
 [2023-04-22 12:03:26] INFO root fetch - main [MainThread]: Store serial: [17813754]
+[2023-04-22 12:08:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813754]
+[2023-04-22 12:08:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 12:08:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: elefantolib
+[2023-04-22 12:08:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: styledlogger
+[2023-04-22 12:08:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-today-waifu
+[2023-04-22 12:08:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: styledlogger
+[2023-04-22 12:08:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CirclesS3Storage
+[2023-04-22 12:08:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: doc-transformers
+[2023-04-22 12:08:36] INFO root fetch - processPackages [elefantolib]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-04-22 12:08:36] INFO root fetch - processPackages [styledlogger]: New version: [0.0.3] Old Version: [0.0.1]
+[2023-04-22 12:08:36] INFO root fetch - processPackages [CirclesS3Storage]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-22 12:08:36] INFO root fetch - processPackages [nonebot-plugin-today-waifu]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-22 12:08:36] INFO root fetch - processPackages [doc-transformers]: New version: [1.0.1] Old Version: [1.0]
+[2023-04-22 12:08:36] INFO root fetch - processPackages [styledlogger]: New version: [0.0.3] Old Version: [0.0.1]
+[2023-04-22 12:08:36] INFO root fetch - processPackages [elefantolib]: Downloading https://files.pythonhosted.org/packages/b8/dc/08fc4adeaea4fd19cbc7d5cbe81cc8d53722723b718edb300115f0dc10d2/elefantolib-0.8.0.tar.gz
+[2023-04-22 12:08:36] INFO root fetch - processPackages [doc-transformers]: Downloading https://files.pythonhosted.org/packages/e4/a2/d8ab2807c60c913ee52ca1821f9e4a57dde78e12ecd7c5751c709efbfcc4/doc_transformers-1.0.tar.gz
+[2023-04-22 12:08:36] INFO root fetch - processPackages [nonebot-plugin-today-waifu]: Downloading https://files.pythonhosted.org/packages/86/28/97c1ba3f4cbd33b2cd5f269d8567a1c4742704fddb68acf170d0f5cf7074/nonebot_plugin_today_waifu-0.1.1.tar.gz
+[2023-04-22 12:08:36] INFO root fetch - processPackages [styledlogger]: Downloading https://files.pythonhosted.org/packages/a2/53/1a574bec91aa1a8f9bf80cf28c639e8e1b3350b8cb7e273fd2793d62aa97/styledlogger-0.0.1.tar.gz
+[2023-04-22 12:08:36] INFO root fetch - processPackages [styledlogger]: Downloading https://files.pythonhosted.org/packages/a2/53/1a574bec91aa1a8f9bf80cf28c639e8e1b3350b8cb7e273fd2793d62aa97/styledlogger-0.0.1.tar.gz
+[2023-04-22 12:08:36] INFO root fetch - processPackages [CirclesS3Storage]: Downloading https://files.pythonhosted.org/packages/51/12/f18cfce96263da3a50128369eeb1ec082ded3ff4464f403ca39fe6fcb563/CirclesS3Storage-0.0.3.tar.gz
+[2023-04-22 12:08:36] INFO root fetch - processPackages [CirclesS3Storage]: executing diffoscope
+[2023-04-22 12:08:36] INFO root fetch - processPackages [CirclesS3Storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CirclesS3Storage-0.0.2.tar.gz tmp/CirclesS3Storage-0.0.3.tar.gz --markdown 20230422/C/CirclesS3Storage/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-22 12:08:36] INFO root fetch - processPackages [elefantolib]: Downloading https://files.pythonhosted.org/packages/88/ba/f84bd671af152d81f3517bdcb3f757575ae352c614034a22beb61b7baf61/elefantolib-0.8.1.tar.gz
+[2023-04-22 12:08:36] INFO root fetch - processPackages [doc-transformers]: Downloading https://files.pythonhosted.org/packages/ae/a2/56f16ccbf8a7050b95641ac48ed430f910645ef72104dac14b224976dcb2/doc_transformers-1.0.1.tar.gz
+[2023-04-22 12:08:36] INFO root fetch - processPackages [styledlogger]: Downloading https://files.pythonhosted.org/packages/ac/79/0a569c10e23aabfd1ae687cb5ee937b0b443b5b0748053f81eec6ce8c8b6/styledlogger-0.0.3.tar.gz
+[2023-04-22 12:08:36] INFO root fetch - processPackages [styledlogger]: Downloading https://files.pythonhosted.org/packages/ac/79/0a569c10e23aabfd1ae687cb5ee937b0b443b5b0748053f81eec6ce8c8b6/styledlogger-0.0.3.tar.gz
+[2023-04-22 12:08:36] INFO root fetch - processPackages [elefantolib]: executing diffoscope
+[2023-04-22 12:08:36] INFO root fetch - processPackages [elefantolib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elefantolib-0.8.0.tar.gz tmp/elefantolib-0.8.1.tar.gz --markdown 20230422/e/elefantolib/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-04-22 12:08:36] INFO root fetch - processPackages [nonebot-plugin-today-waifu]: Downloading https://files.pythonhosted.org/packages/89/80/b0d3aaecd1c20735e55730b995df0f6f89144ebce3db0c891927530ef8b9/nonebot_plugin_today_waifu-0.1.2.tar.gz
+[2023-04-22 12:08:36] INFO root fetch - processPackages [doc-transformers]: executing diffoscope
+[2023-04-22 12:08:36] INFO root fetch - processPackages [doc-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doc_transformers-1.0.tar.gz tmp/doc_transformers-1.0.1.tar.gz --markdown 20230422/d/doc-transformers/1.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 12:08:36] INFO root fetch - processPackages [nonebot-plugin-today-waifu]: executing diffoscope
+[2023-04-22 12:08:36] INFO root fetch - processPackages [nonebot-plugin-today-waifu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_today_waifu-0.1.1.tar.gz tmp/nonebot_plugin_today_waifu-0.1.2.tar.gz --markdown 20230422/n/nonebot-plugin-today-waifu/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-22 12:08:36] INFO root fetch - processPackages [styledlogger]: executing diffoscope
+[2023-04-22 12:08:36] INFO root fetch - processPackages [styledlogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/styledlogger-0.0.1.tar.gz tmp/styledlogger-0.0.3.tar.gz --markdown 20230422/s/styledlogger/0.0.1-0.0.3/diff.md --exclude *.pyd
+[2023-04-22 12:08:36] INFO root fetch - processPackages [styledlogger]: executing diffoscope
+[2023-04-22 12:08:36] INFO root fetch - processPackages [styledlogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/styledlogger-0.0.1.tar.gz tmp/styledlogger-0.0.3.tar.gz --markdown 20230422/s/styledlogger/0.0.1-0.0.3/diff.md --exclude *.pyd
+[2023-04-22 12:08:37] INFO root fetch - main [MainThread]: End processing [CirclesS3Storage]: success
+[2023-04-22 12:08:37] INFO root fetch - main [MainThread]: End processing [elefantolib]: success
+[2023-04-22 12:08:38] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-today-waifu]: success
+[2023-04-22 12:08:38] INFO root fetch - main [MainThread]: End processing [styledlogger]: success
+[2023-04-22 12:08:38] INFO root fetch - main [MainThread]: End processing [styledlogger]: success
+[2023-04-22 12:08:38] INFO root fetch - main [MainThread]: End processing [doc-transformers]: success
+[2023-04-22 12:08:38] INFO root fetch - main [MainThread]: Store serial: [17813772]
