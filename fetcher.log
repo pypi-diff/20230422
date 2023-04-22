@@ -4010,3 +4010,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 04:11:27] INFO root fetch - main [MainThread]: End processing [prettyqt]: success
 [2023-04-22 04:11:27] INFO root fetch - main [MainThread]: End processing [smartchart]: success
 [2023-04-22 04:11:27] INFO root fetch - main [MainThread]: Store serial: [17811572]
+[2023-04-22 04:16:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811572]
+[2023-04-22 04:16:36] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 04:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fluxrpc
+[2023-04-22 04:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fluxvault
+[2023-04-22 04:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ctef
+[2023-04-22 04:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scimap
+[2023-04-22 04:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-roborock
+[2023-04-22 04:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: markit-rs-recorder
+[2023-04-22 04:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rapidpe-rift-pipe
+[2023-04-22 04:16:36] INFO root fetch - processPackages [fluxvault]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 04:16:36] INFO root fetch - processPackages [fluxrpc]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 04:16:36] INFO root fetch - processPackages [rapidpe-rift-pipe]: New version: [0.1.1.dev20230421] Old Version: [0.1.0]
+[2023-04-22 04:16:36] INFO root fetch - processPackages [python-roborock]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-22 04:16:36] INFO root fetch - processPackages [scimap]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-22 04:16:36] WARNING root fetch - processPackages [ctef]: Skipping, unable to determine old version
+[2023-04-22 04:16:36] INFO root fetch - main [MainThread]: End processing [ctef] error
+[2023-04-22 04:16:36] INFO root fetch - processPackages [fluxvault]: executing diffoscope
+[2023-04-22 04:16:36] INFO root fetch - processPackages [fluxvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxvault-0.9.8.tar.gz tmp/fluxvault-0.9.9.tar.gz --markdown 20230422/f/fluxvault/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 04:16:36] WARNING root fetch - processPackages [markit-rs-recorder]: Skipping, unable to determine old version
+[2023-04-22 04:16:36] INFO root fetch - main [MainThread]: End processing [markit-rs-recorder] error
+[2023-04-22 04:16:36] INFO root fetch - processPackages [fluxrpc]: executing diffoscope
+[2023-04-22 04:16:36] INFO root fetch - processPackages [fluxrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxrpc-0.9.8.tar.gz tmp/fluxrpc-0.9.9.tar.gz --markdown 20230422/f/fluxrpc/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 04:16:36] INFO root fetch - processPackages [scimap]: executing diffoscope
+[2023-04-22 04:16:36] INFO root fetch - processPackages [scimap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scimap-1.0.1.tar.gz tmp/scimap-1.0.2.tar.gz --markdown 20230422/s/scimap/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-22 04:16:36] INFO root fetch - processPackages [rapidpe-rift-pipe]: executing diffoscope
+[2023-04-22 04:16:36] INFO root fetch - processPackages [rapidpe-rift-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpe_rift_pipe-0.1.0.tar.gz tmp/rapidpe_rift_pipe-0.1.1.dev20230421.tar.gz --markdown 20230422/r/rapidpe-rift-pipe/0.1.0-0.1.1.dev20230421/diff.md --exclude *.pyd
+[2023-04-22 04:16:36] INFO root fetch - processPackages [python-roborock]: executing diffoscope
+[2023-04-22 04:16:36] INFO root fetch - processPackages [python-roborock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_roborock-0.6.8.tar.gz tmp/python_roborock-0.6.9.tar.gz --markdown 20230422/p/python-roborock/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-22 04:16:37] INFO root fetch - main [MainThread]: End processing [fluxvault]: success
+[2023-04-22 04:16:37] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
+[2023-04-22 04:16:38] INFO root fetch - main [MainThread]: End processing [python-roborock]: success
+[2023-04-22 04:16:38] INFO root fetch - main [MainThread]: End processing [fluxrpc]: success
+[2023-04-22 04:16:38] INFO root fetch - main [MainThread]: End processing [scimap]: success
+[2023-04-22 04:16:38] INFO root fetch - main [MainThread]: Store serial: [17811600]
