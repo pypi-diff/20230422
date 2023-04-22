@@ -6358,3 +6358,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 08:51:32] INFO root fetch - main [MainThread]: End processing [StringFix]: success
 [2023-04-22 08:51:32] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
 [2023-04-22 08:51:32] INFO root fetch - main [MainThread]: Store serial: [17812798]
+[2023-04-22 08:56:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812798]
+[2023-04-22 08:56:41] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 08:56:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-intent-plugin-adapt
+[2023-04-22 08:56:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kodekloud-downloader
+[2023-04-22 08:56:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dpsa4fl-bindings
+[2023-04-22 08:56:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Anilist
+[2023-04-22 08:56:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: satcfdi
+[2023-04-22 08:56:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: checkpoint-tool
+[2023-04-22 08:56:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-chatglm
+[2023-04-22 08:56:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ytmusicapi
+[2023-04-22 08:56:41] INFO root fetch - processPackages [satcfdi]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-04-22 08:56:41] INFO root fetch - processPackages [Anilist]: New version: [0.8.0] Old Version: [0.5.0]
+[2023-04-22 08:56:41] WARNING root fetch - processPackages [ovos-intent-plugin-adapt]: Skipping, unable to determine old version
+[2023-04-22 08:56:41] INFO root fetch - main [MainThread]: End processing [ovos-intent-plugin-adapt] error
+[2023-04-22 08:56:41] INFO root fetch - processPackages [kodekloud-downloader]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-22 08:56:41] INFO root fetch - processPackages [nonebot-plugin-chatglm]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-22 08:56:41] INFO root fetch - processPackages [ytmusicapi]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-22 08:56:41] INFO root fetch - processPackages [dpsa4fl-bindings]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 08:56:41] WARNING root fetch - processPackages [checkpoint-tool]: Skipping, unable to determine old version
+[2023-04-22 08:56:41] INFO root fetch - main [MainThread]: End processing [checkpoint-tool] error
+[2023-04-22 08:56:41] INFO root fetch - processPackages [satcfdi]: executing diffoscope
+[2023-04-22 08:56:41] INFO root fetch - processPackages [satcfdi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satcfdi-4.0.8.tar.gz tmp/satcfdi-4.0.9.tar.gz --markdown 20230422/s/satcfdi/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-04-22 08:56:41] INFO root fetch - processPackages [Anilist]: Downloading https://files.pythonhosted.org/packages/cc/6b/619b95770d83267be1ed0b924a97f2183c42b762407cd9f6f826b7941f28/Anilist-0.8.0.tar.gz
+[2023-04-22 08:56:41] INFO root fetch - processPackages [nonebot-plugin-chatglm]: Downloading https://files.pythonhosted.org/packages/6c/eb/435fd5da023bea0447dd13991387665b3523e67ef9d1a725691428fa0a34/nonebot-plugin-chatglm-0.1.4.tar.gz
+[2023-04-22 08:56:41] INFO root fetch - processPackages [Anilist]: executing diffoscope
+[2023-04-22 08:56:41] INFO root fetch - processPackages [Anilist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Anilist-0.5.0.tar.gz tmp/Anilist-0.8.0.tar.gz --markdown 20230422/A/Anilist/0.5.0-0.8.0/diff.md --exclude *.pyd
+[2023-04-22 08:56:41] INFO root fetch - processPackages [kodekloud-downloader]: Downloading https://files.pythonhosted.org/packages/e4/f9/fd1ec1aba73d64869792d8525eb8ca509dc1e512b805edef899cd550f3c3/kodekloud-downloader-0.0.5.tar.gz
+[2023-04-22 08:56:41] INFO root fetch - processPackages [ytmusicapi]: Downloading https://files.pythonhosted.org/packages/d9/27/0643b6ee42ccbc71c8aaddb2060115b5bf9ce70c7d7ae91459ea56e2ccaa/ytmusicapi-1.0.2.tar.gz
+[2023-04-22 08:56:41] INFO root fetch - processPackages [kodekloud-downloader]: executing diffoscope
+[2023-04-22 08:56:41] INFO root fetch - processPackages [kodekloud-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kodekloud-downloader-0.0.4.tar.gz tmp/kodekloud-downloader-0.0.5.tar.gz --markdown 20230422/k/kodekloud-downloader/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-22 08:56:41] INFO root fetch - processPackages [dpsa4fl-bindings]: executing diffoscope
+[2023-04-22 08:56:41] INFO root fetch - processPackages [dpsa4fl-bindings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dpsa4fl_bindings-0.1.8.tar.gz tmp/dpsa4fl_bindings-0.1.9.tar.gz --markdown 20230422/d/dpsa4fl-bindings/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 08:56:41] INFO root fetch - processPackages [nonebot-plugin-chatglm]: Downloading https://files.pythonhosted.org/packages/1b/e7/c70f60e93033880b90d4dceb7a9e38893570bf09bfbf7ff68681732d71c8/nonebot-plugin-chatglm-0.1.5.tar.gz
+[2023-04-22 08:56:41] INFO root fetch - processPackages [ytmusicapi]: executing diffoscope
+[2023-04-22 08:56:41] INFO root fetch - processPackages [ytmusicapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytmusicapi-1.0.1.tar.gz tmp/ytmusicapi-1.0.2.tar.gz --markdown 20230422/y/ytmusicapi/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-22 08:56:41] INFO root fetch - processPackages [nonebot-plugin-chatglm]: executing diffoscope
+[2023-04-22 08:56:41] INFO root fetch - processPackages [nonebot-plugin-chatglm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-chatglm-0.1.4.tar.gz tmp/nonebot-plugin-chatglm-0.1.5.tar.gz --markdown 20230422/n/nonebot-plugin-chatglm/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-22 08:56:42] INFO root fetch - main [MainThread]: End processing [Anilist]: success
+[2023-04-22 08:56:42] INFO root fetch - main [MainThread]: End processing [kodekloud-downloader]: success
+[2023-04-22 08:56:42] INFO root fetch - main [MainThread]: End processing [dpsa4fl-bindings]: success
+[2023-04-22 08:56:43] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-chatglm]: success
+[2023-04-22 08:56:43] INFO root fetch - main [MainThread]: End processing [ytmusicapi]: success
+[2023-04-22 08:56:46] INFO root fetch - main [MainThread]: End processing [satcfdi]: success
+[2023-04-22 08:56:46] INFO root fetch - main [MainThread]: Store serial: [17812829]
