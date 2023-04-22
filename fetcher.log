@@ -9072,3 +9072,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 14:33:37] INFO root fetch - main [MainThread]: End processing [otlmow-model]: success
 [2023-04-22 14:34:06] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
 [2023-04-22 14:34:06] INFO root fetch - main [MainThread]: Store serial: [17814448]
+[2023-04-22 14:39:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814448]
+[2023-04-22 14:39:15] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 14:39:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydifact
+[2023-04-22 14:39:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: foursight-core
+[2023-04-22 14:39:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-amazon-ad-api
+[2023-04-22 14:39:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: telenvi
+[2023-04-22 14:39:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tensorcircuit-nightly
+[2023-04-22 14:39:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: astro-toolbox
+[2023-04-22 14:39:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xia-scw-instance
+[2023-04-22 14:39:15] INFO root fetch - processPackages [pydifact]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-22 14:39:15] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.2b2] Old Version: [4.1.0.2b1]
+[2023-04-22 14:39:15] INFO root fetch - processPackages [python-amazon-ad-api]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-22 14:39:15] INFO root fetch - processPackages [telenvi]: New version: [5.0.5] Old Version: [5.0.4]
+[2023-04-22 14:39:15] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.8.0.dev20230421] Old Version: [0.8.0.dev20230420]
+[2023-04-22 14:39:15] INFO root fetch - processPackages [xia-scw-instance]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-22 14:39:15] INFO root fetch - processPackages [astro-toolbox]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-22 14:39:15] INFO root fetch - processPackages [pydifact]: Downloading https://files.pythonhosted.org/packages/95/f7/73f450869019f8c3550580a65c41ad8a1fd092771c724b88265b506c0521/pydifact-0.1.5.tar.gz
+[2023-04-22 14:39:15] INFO root fetch - processPackages [telenvi]: Downloading https://files.pythonhosted.org/packages/28/b0/d397ca631f0e8b42841a1ab13736ec5648b76ddbdd93ee9d30e8ffa3e686/telenvi-5.0.5.tar.gz
+[2023-04-22 14:39:15] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/36/5c/41372ba4f62208d3455b9b490a909613376ca86cbf86138528f965fd1f44/foursight_core-4.1.0.2b2.tar.gz
+[2023-04-22 14:39:15] INFO root fetch - processPackages [xia-scw-instance]: Downloading https://files.pythonhosted.org/packages/ee/a6/90c916b0cb1c060e6651c381cc550d3d9c5eaaaef993bb8b14ffc906b758/xia_scw_instance-0.0.7-cp39-none-win_amd64.whl
+[2023-04-22 14:39:15] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/a7/14/5fb293045f9e1af4f7550efdb43f87d3941672887cd2413b874d751329d1/tensorcircuit-nightly-0.8.0.dev20230421.tar.gz
+[2023-04-22 14:39:15] INFO root fetch - processPackages [python-amazon-ad-api]: Downloading https://files.pythonhosted.org/packages/2a/b2/8f337ed613699a62d96c925cab8ed5e2e4067c9b1a600a312278cba56c10/python-amazon-ad-api-0.4.4.tar.gz
+[2023-04-22 14:39:15] INFO root fetch - processPackages [telenvi]: executing diffoscope
+[2023-04-22 14:39:15] INFO root fetch - processPackages [telenvi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telenvi-5.0.4.tar.gz tmp/telenvi-5.0.5.tar.gz --markdown 20230422/t/telenvi/5.0.4-5.0.5/diff.md --exclude *.pyd
+[2023-04-22 14:39:15] INFO root fetch - processPackages [astro-toolbox]: Downloading https://files.pythonhosted.org/packages/2f/f7/0b706901234c32f68352b95cf541c94c1e978202d76191019328f6bf19aa/astro-toolbox-0.1.2.tar.gz
+[2023-04-22 14:39:15] INFO root fetch - processPackages [pydifact]: Downloading https://files.pythonhosted.org/packages/32/3e/283218a3c61fb41a1500111080de9bf31f299f8af1f18d4a39a65e787cde/pydifact-0.1.6.tar.gz
+[2023-04-22 14:39:16] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 14:39:16] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.2b1.tar.gz tmp/foursight_core-4.1.0.2b2.tar.gz --markdown 20230422/f/foursight-core/4.1.0.2b1-4.1.0.2b2/diff.md --exclude *.pyd
+[2023-04-22 14:39:16] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2023-04-22 14:39:16] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.8.0.dev20230420.tar.gz tmp/tensorcircuit-nightly-0.8.0.dev20230421.tar.gz --markdown 20230422/t/tensorcircuit-nightly/0.8.0.dev20230420-0.8.0.dev20230421/diff.md --exclude *.pyd
+[2023-04-22 14:39:16] INFO root fetch - processPackages [python-amazon-ad-api]: executing diffoscope
+[2023-04-22 14:39:16] INFO root fetch - processPackages [python-amazon-ad-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-amazon-ad-api-0.4.3.tar.gz tmp/python-amazon-ad-api-0.4.4.tar.gz --markdown 20230422/p/python-amazon-ad-api/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-22 14:39:16] INFO root fetch - processPackages [pydifact]: executing diffoscope
+[2023-04-22 14:39:16] INFO root fetch - processPackages [pydifact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydifact-0.1.5.tar.gz tmp/pydifact-0.1.6.tar.gz --markdown 20230422/p/pydifact/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-22 14:39:16] INFO root fetch - processPackages [astro-toolbox]: executing diffoscope
+[2023-04-22 14:39:16] INFO root fetch - processPackages [astro-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astro-toolbox-0.1.1.tar.gz tmp/astro-toolbox-0.1.2.tar.gz --markdown 20230422/a/astro-toolbox/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-22 14:39:16] INFO root fetch - processPackages [xia-scw-instance]: Downloading https://files.pythonhosted.org/packages/9a/28/bb21ec05f59fb5c9a949161fd98fac7184dd54e455dfc8bd9bcecc309fed/xia_scw_instance-0.0.8-cp39-none-macosx_11_0_x86_64.whl
+[2023-04-22 14:39:16] INFO root fetch - processPackages [xia-scw-instance]: executing diffoscope
+[2023-04-22 14:39:16] INFO root fetch - processPackages [xia-scw-instance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_scw_instance-0.0.7-cp39-none-win_amd64.whl.zip tmp/xia_scw_instance-0.0.8-cp39-none-macosx_11_0_x86_64.whl.zip --markdown 20230422/x/xia-scw-instance/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-22 14:39:17] INFO root fetch - main [MainThread]: End processing [telenvi]: success
+[2023-04-22 14:39:17] INFO root fetch - main [MainThread]: End processing [pydifact]: success
+[2023-04-22 14:39:17] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 14:39:17] INFO root fetch - main [MainThread]: End processing [xia-scw-instance]: success
+[2023-04-22 14:39:17] INFO root fetch - main [MainThread]: End processing [python-amazon-ad-api]: success
+[2023-04-22 14:39:18] INFO root fetch - main [MainThread]: End processing [astro-toolbox]: success
+[2023-04-22 14:39:18] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2023-04-22 14:39:18] INFO root fetch - main [MainThread]: Store serial: [17814468]
