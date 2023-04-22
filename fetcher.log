@@ -7160,3 +7160,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 10:25:56] INFO root fetch - main [MainThread]: End processing [nparse]: success
 [2023-04-22 10:26:15] INFO root fetch - main [MainThread]: End processing [Office365-REST-Python-Client]: success
 [2023-04-22 10:26:15] INFO root fetch - main [MainThread]: Store serial: [17813279]
+[2023-04-22 10:31:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813279]
+[2023-04-22 10:31:26] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 10:31:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: piknik
+[2023-04-22 10:31:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrew
+[2023-04-22 10:31:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeref
+[2023-04-22 10:31:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: databaseutils
+[2023-04-22 10:31:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: piknik
+[2023-04-22 10:31:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: BingImageSpiderCreatedByHanXu
+[2023-04-22 10:31:26] INFO root fetch - processPackages [piknik]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-22 10:31:26] INFO root fetch - processPackages [piknik]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-22 10:31:26] INFO root fetch - processPackages [pyrew]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-22 10:31:26] WARNING root fetch - processPackages [databaseutils]: Skipping, unable to determine old version
+[2023-04-22 10:31:26] INFO root fetch - main [MainThread]: End processing [databaseutils] error
+[2023-04-22 10:31:26] WARNING root fetch - processPackages [BingImageSpiderCreatedByHanXu]: Skipping, unable to determine old version
+[2023-04-22 10:31:26] INFO root fetch - processPackages [yeref]: New version: [0.1.39] Old Version: [0.1.38]
+[2023-04-22 10:31:26] INFO root fetch - main [MainThread]: End processing [BingImageSpiderCreatedByHanXu] error
+[2023-04-22 10:31:26] INFO root fetch - processPackages [pyrew]: Downloading https://files.pythonhosted.org/packages/6a/7a/52d5b2e1d6c668cd214d828ab9f3583cf234a045d21b7e7c41f93c44ef14/pyrew-0.8.0.tar.gz
+[2023-04-22 10:31:26] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/39/4c/fd8297a0ba2736f4fc9dc66cebe7a5f9f02e410fb73f209f3ae67ea985d0/yeref-0.1.39.tar.gz
+[2023-04-22 10:31:26] INFO root fetch - processPackages [piknik]: Downloading https://files.pythonhosted.org/packages/d2/9d/ae919559cf29acef8493531b673be7654a875c357d11770f88a8a5958c8b/piknik-0.3.9.tar.gz
+[2023-04-22 10:31:26] INFO root fetch - processPackages [piknik]: Downloading https://files.pythonhosted.org/packages/d2/9d/ae919559cf29acef8493531b673be7654a875c357d11770f88a8a5958c8b/piknik-0.3.9.tar.gz
+[2023-04-22 10:31:26] INFO root fetch - processPackages [piknik]: executing diffoscope
+[2023-04-22 10:31:26] INFO root fetch - processPackages [piknik]: executing diffoscope
+[2023-04-22 10:31:26] INFO root fetch - processPackages [piknik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piknik-0.3.8.tar.gz tmp/piknik-0.3.9.tar.gz --markdown 20230422/p/piknik/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-22 10:31:26] INFO root fetch - processPackages [piknik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piknik-0.3.8.tar.gz tmp/piknik-0.3.9.tar.gz --markdown 20230422/p/piknik/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-22 10:31:26] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2023-04-22 10:31:26] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.1.38.tar.gz tmp/yeref-0.1.39.tar.gz --markdown 20230422/y/yeref/0.1.38-0.1.39/diff.md --exclude *.pyd
+[2023-04-22 10:31:26] INFO root fetch - processPackages [pyrew]: Downloading https://files.pythonhosted.org/packages/d0/66/e710907ddd6bf8b72a9f4663048bc6e28b859d01b1c60610eecff77e3234/pyrew-0.9.0.tar.gz
+[2023-04-22 10:31:26] INFO root fetch - processPackages [pyrew]: executing diffoscope
+[2023-04-22 10:31:26] INFO root fetch - processPackages [pyrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrew-0.8.0.tar.gz tmp/pyrew-0.9.0.tar.gz --markdown 20230422/p/pyrew/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-22 10:31:27] INFO root fetch - main [MainThread]: End processing [pyrew]: success
+[2023-04-22 10:31:27] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2023-04-22 10:31:27] INFO root fetch - main [MainThread]: End processing [piknik]: success
+[2023-04-22 10:31:43] INFO root fetch - main [MainThread]: End processing [piknik]: success
+[2023-04-22 10:31:43] INFO root fetch - main [MainThread]: Store serial: [17813304]
