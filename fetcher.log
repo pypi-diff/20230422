@@ -8297,3 +8297,75 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 13:03:45] INFO root fetch - main [MainThread]: End processing [gptdeploy]: success
 [2023-04-22 13:03:46] INFO root fetch - main [MainThread]: End processing [df-config]: success
 [2023-04-22 13:03:46] INFO root fetch - main [MainThread]: Store serial: [17814009]
+[2023-04-22 13:08:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814009]
+[2023-04-22 13:08:55] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-22 13:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: buildington
+[2023-04-22 13:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: myodan-tools
+[2023-04-22 13:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-nano
+[2023-04-22 13:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-chronos
+[2023-04-22 13:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigdl-serving
+[2023-04-22 13:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kinisi
+[2023-04-22 13:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: autoscale-agent
+[2023-04-22 13:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: chesscomwrapper
+[2023-04-22 13:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: lnschema_lamin1
+[2023-04-22 13:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: featurizerai
+[2023-04-22 13:08:55] WARNING root fetch - processPackages [buildington]: Skipping, unable to determine old version
+[2023-04-22 13:08:55] INFO root fetch - processPackages [buildington]: Start processing: sv-ttk
+[2023-04-22 13:08:55] INFO root fetch - main [MainThread]: End processing [buildington] error
+[2023-04-22 13:08:55] INFO root fetch - processPackages [myodan-tools]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-22 13:08:55] INFO root fetch - processPackages [kinisi]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-04-22 13:08:55] INFO root fetch - processPackages [autoscale-agent]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 13:08:55] INFO root fetch - processPackages [sv-ttk]: New version: [2.4.4] Old Version: [2.4.3]
+[2023-04-22 13:08:55] INFO root fetch - processPackages [chesscomwrapper]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 13:08:55] INFO root fetch - processPackages [bigdl-serving]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-22 13:08:55] INFO root fetch - processPackages [lnschema_lamin1]: New version: [0.15.1] Old Version: [0.15.0]
+[2023-04-22 13:08:55] INFO root fetch - processPackages [bigdl-chronos]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-22 13:08:55] INFO root fetch - processPackages [bigdl-nano]: New version: [2.4.0b20230422] Old Version: [2.4.0b20230421]
+[2023-04-22 13:08:55] INFO root fetch - processPackages [featurizerai]: New version: [1.3.0] Old Version: [1.2.8]
+[2023-04-22 13:08:55] INFO root fetch - processPackages [sv-ttk]: executing diffoscope
+[2023-04-22 13:08:55] INFO root fetch - processPackages [sv-ttk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sv_ttk-2.4.3.tar.gz tmp/sv_ttk-2.4.4.tar.gz --markdown 20230422/s/sv-ttk/2.4.3-2.4.4/diff.md --exclude *.pyd
+[2023-04-22 13:08:55] INFO root fetch - processPackages [myodan-tools]: Downloading https://files.pythonhosted.org/packages/92/43/2329bdf8d0f14de783975ec21a04fcd56f3c71aaa9e9ce21ffee20ba7f4d/myodan-tools-0.0.8.tar.gz
+[2023-04-22 13:08:55] INFO root fetch - processPackages [lnschema_lamin1]: Downloading https://files.pythonhosted.org/packages/a1/38/9d1a95a36bf854f2d15e576208d4f4dea8a44875498de054f44bc9228cb4/lnschema_lamin1-0.15.0.tar.gz
+[2023-04-22 13:08:55] INFO root fetch - processPackages [chesscomwrapper]: Downloading https://files.pythonhosted.org/packages/3a/69/7bf1ac96f0eccd4cb77d595bc04ff59c770f718ad789c042f87695d42fce/chesscomwrapper-0.0.1.tar.gz
+[2023-04-22 13:08:55] INFO root fetch - processPackages [autoscale-agent]: Downloading https://files.pythonhosted.org/packages/6a/c9/8a55226849fe3fc6b64d949214af83f5a1dbb15d573ad571fbe8563ac38d/autoscale_agent-0.1.0.tar.gz
+[2023-04-22 13:08:55] INFO root fetch - processPackages [bigdl-serving]: Downloading https://files.pythonhosted.org/packages/5b/53/af5203c2191a8290288de96c9fcf1819a61b97d0f88c2e3c241f3ee41edf/bigdl_serving-2.4.0b20230422-py2.py3-none-any.whl
+[2023-04-22 13:08:55] INFO root fetch - processPackages [myodan-tools]: executing diffoscope
+[2023-04-22 13:08:55] INFO root fetch - processPackages [myodan-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myodan-tools-0.0.7.tar.gz tmp/myodan-tools-0.0.8.tar.gz --markdown 20230422/m/myodan-tools/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-22 13:08:55] INFO root fetch - processPackages [featurizerai]: Downloading https://files.pythonhosted.org/packages/c7/b0/31bfd4c64b4f351a79ef747101a66dfa487845a80af8fb354f4cf8140b28/featurizerai-1.2.8.tar.gz
+[2023-04-22 13:08:55] INFO root fetch - processPackages [kinisi]: Downloading https://files.pythonhosted.org/packages/2d/1a/138cbd9d6769581020a6eefc7a1dcdaae15df43b7c5f020685860a6e677a/kinisi-0.6.5.tar.gz
+[2023-04-22 13:08:55] INFO root fetch - processPackages [bigdl-serving]: executing diffoscope
+[2023-04-22 13:08:55] INFO root fetch - processPackages [bigdl-serving]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_serving-2.4.0b20230421-py2.py3-none-any.whl.zip tmp/bigdl_serving-2.4.0b20230422-py2.py3-none-any.whl.zip --markdown 20230422/b/bigdl-serving/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-22 13:08:55] INFO root fetch - processPackages [bigdl-chronos]: Downloading https://files.pythonhosted.org/packages/63/e0/eb51ab14903742e0eacff64968a9a05a485e7568fcf2b700ca26571ff328/bigdl_chronos-2.4.0b20230422-py3-none-win_amd64.whl
+[2023-04-22 13:08:55] INFO root fetch - processPackages [bigdl-nano]: Downloading https://files.pythonhosted.org/packages/88/98/4272b304ace3664abfda8adff806fa898183df8ba533cf210ea0fcd500ad/bigdl_nano-2.4.0b20230422-py3-none-win_amd64.whl
+[2023-04-22 13:08:55] INFO root fetch - processPackages [autoscale-agent]: Downloading https://files.pythonhosted.org/packages/fd/b8/c9359aba6b0a420a32812e7b9009e4f7c94326589903eaa97ab088ac8592/autoscale_agent-0.1.1.tar.gz
+[2023-04-22 13:08:55] INFO root fetch - processPackages [featurizerai]: Downloading https://files.pythonhosted.org/packages/f3/4c/cfb6d38f660ba755ca5d134708136eacab3ddb183a1f7064220e563d90c5/featurizerai-1.3.0.tar.gz
+[2023-04-22 13:08:55] INFO root fetch - processPackages [kinisi]: executing diffoscope
+[2023-04-22 13:08:55] INFO root fetch - processPackages [kinisi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kinisi-0.6.4.tar.gz tmp/kinisi-0.6.5.tar.gz --markdown 20230422/k/kinisi/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2023-04-22 13:08:55] INFO root fetch - processPackages [autoscale-agent]: executing diffoscope
+[2023-04-22 13:08:55] INFO root fetch - processPackages [autoscale-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoscale_agent-0.1.0.tar.gz tmp/autoscale_agent-0.1.1.tar.gz --markdown 20230422/a/autoscale-agent/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 13:08:56] INFO root fetch - processPackages [chesscomwrapper]: Downloading https://files.pythonhosted.org/packages/f5/90/c4a332d474e1e4034a6a0541a0f3f801b6b950ce416c42ab5e74b2f0040e/chesscomwrapper-0.0.2.tar.gz
+[2023-04-22 13:08:56] INFO root fetch - processPackages [lnschema_lamin1]: Downloading https://files.pythonhosted.org/packages/1d/e5/c245d6357a30a45a09f0c8453ba42b25e0d1f4a856c8716dafe4e9d937f2/lnschema_lamin1-0.15.1.tar.gz
+[2023-04-22 13:08:56] INFO root fetch - processPackages [chesscomwrapper]: executing diffoscope
+[2023-04-22 13:08:56] INFO root fetch - processPackages [chesscomwrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chesscomwrapper-0.0.1.tar.gz tmp/chesscomwrapper-0.0.2.tar.gz --markdown 20230422/c/chesscomwrapper/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 13:08:56] INFO root fetch - processPackages [featurizerai]: executing diffoscope
+[2023-04-22 13:08:56] INFO root fetch - processPackages [featurizerai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featurizerai-1.2.8.tar.gz tmp/featurizerai-1.3.0.tar.gz --markdown 20230422/f/featurizerai/1.2.8-1.3.0/diff.md --exclude *.pyd
+[2023-04-22 13:08:56] INFO root fetch - processPackages [lnschema_lamin1]: executing diffoscope
+[2023-04-22 13:08:56] INFO root fetch - processPackages [lnschema_lamin1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_lamin1-0.15.0.tar.gz tmp/lnschema_lamin1-0.15.1.tar.gz --markdown 20230422/l/lnschema_lamin1/0.15.0-0.15.1/diff.md --exclude *.pyd
+[2023-04-22 13:08:56] INFO root fetch - processPackages [bigdl-chronos]: executing diffoscope
+[2023-04-22 13:08:56] INFO root fetch - processPackages [bigdl-chronos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos-2.4.0b20230421-py3-none-win_amd64.whl.zip tmp/bigdl_chronos-2.4.0b20230422-py3-none-win_amd64.whl.zip --markdown 20230422/b/bigdl-chronos/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-22 13:08:56] INFO root fetch - processPackages [bigdl-nano]: executing diffoscope
+[2023-04-22 13:08:56] INFO root fetch - processPackages [bigdl-nano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_nano-2.4.0b20230421-py3-none-win_amd64.whl.zip tmp/bigdl_nano-2.4.0b20230422-py3-none-win_amd64.whl.zip --markdown 20230422/b/bigdl-nano/2.4.0b20230421-2.4.0b20230422/diff.md --exclude *.pyd
+[2023-04-22 13:08:57] INFO root fetch - processPackages [sv-ttk]: Start processing: pysparkplus
+[2023-04-22 13:08:57] INFO root fetch - main [MainThread]: End processing [sv-ttk]: success
+[2023-04-22 13:08:57] INFO root fetch - main [MainThread]: End processing [myodan-tools]: success
+[2023-04-22 13:08:57] WARNING root fetch - processPackages [pysparkplus]: Skipping, unable to determine old version
+[2023-04-22 13:08:57] INFO root fetch - main [MainThread]: End processing [pysparkplus] error
+[2023-04-22 13:08:57] INFO root fetch - main [MainThread]: End processing [bigdl-serving]: success
+[2023-04-22 13:08:57] INFO root fetch - main [MainThread]: End processing [autoscale-agent]: success
+[2023-04-22 13:08:57] INFO root fetch - main [MainThread]: End processing [featurizerai]: success
+[2023-04-22 13:08:57] INFO root fetch - main [MainThread]: End processing [chesscomwrapper]: success
+[2023-04-22 13:08:57] INFO root fetch - main [MainThread]: End processing [lnschema_lamin1]: success
+[2023-04-22 13:08:58] INFO root fetch - main [MainThread]: End processing [bigdl-chronos]: success
+[2023-04-22 13:08:59] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
+[2023-04-22 13:08:59] INFO root fetch - main [MainThread]: End processing [kinisi]: success
+[2023-04-22 13:08:59] INFO root fetch - main [MainThread]: Store serial: [17814047]
