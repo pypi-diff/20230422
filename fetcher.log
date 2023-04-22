@@ -1603,3 +1603,138 @@
 [2023-04-22 02:48:34] INFO root fetch - main [MainThread]: End processing [airbyte]: success
 [2023-04-22 02:48:40] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2023-04-22 02:48:40] INFO root fetch - main [MainThread]: Store serial: [17810171]
+[2023-04-22 02:53:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17810171]
+[2023-04-22 02:53:49] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 02:53:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rewards-api
+[2023-04-22 02:53:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-seasnake
+[2023-04-22 02:53:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: policyengine-us
+[2023-04-22 02:53:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-databrew-cicd
+[2023-04-22 02:53:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: projen
+[2023-04-22 02:53:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yaml-stripper
+[2023-04-22 02:53:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bioversions
+[2023-04-22 02:53:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pycde
+[2023-04-22 02:53:49] INFO root fetch - processPackages [yaml-stripper]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-22 02:53:49] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-04-22 02:53:50] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-22 02:53:50] INFO root fetch - processPackages [policyengine-us]: New version: [0.297.0] Old Version: [0.296.0]
+[2023-04-22 02:53:50] INFO root fetch - processPackages [pycde]: New version: [0.2.1.dev9] Old Version: [0.2.1.dev80]
+[2023-04-22 02:53:50] INFO root fetch - processPackages [rewards-api]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-22 02:53:50] INFO root fetch - processPackages [projen]: New version: [0.71.9] Old Version: [0.71.8]
+[2023-04-22 02:53:50] WARNING root fetch - processPackages [py-seasnake]: Skipping, unable to determine old version
+[2023-04-22 02:53:50] INFO root fetch - main [MainThread]: End processing [py-seasnake] error
+[2023-04-22 02:53:50] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2023-04-22 02:53:50] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20230422/b/bioversions/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-04-22 02:53:50] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2023-04-22 02:53:50] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20230422/c/cdk-databrew-cicd/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-22 02:53:50] INFO root fetch - processPackages [rewards-api]: Downloading https://files.pythonhosted.org/packages/45/df/1be85fd8e04d86e9a259cb01676a47ec18908fc09be7a994f8b4e9cdd135/rewards_api-0.0.5.tar.gz
+[2023-04-22 02:53:50] INFO root fetch - processPackages [projen]: executing diffoscope
+[2023-04-22 02:53:50] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.71.8.tar.gz tmp/projen-0.71.9.tar.gz --markdown 20230422/p/projen/0.71.8-0.71.9/diff.md --exclude *.pyd
+[2023-04-22 02:53:50] INFO root fetch - processPackages [yaml-stripper]: Downloading https://files.pythonhosted.org/packages/80/0e/af2474458050d9536ba9e335362d739a3a5e1695ef655b1d397d33faa16e/yaml-stripper-2.0.1.tar.gz
+[2023-04-22 02:53:50] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/10/f6/d3485ba4a0e81a64ba8283b96bbf29b13b8cb749d911be7fa74a3e431b7b/policyengine-us-0.297.0.tar.gz
+[2023-04-22 02:53:50] INFO root fetch - processPackages [yaml-stripper]: executing diffoscope
+[2023-04-22 02:53:50] INFO root fetch - processPackages [yaml-stripper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yaml-stripper-2.0.0.tar.gz tmp/yaml-stripper-2.0.1.tar.gz --markdown 20230422/y/yaml-stripper/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-22 02:53:50] INFO root fetch - processPackages [pycde]: executing diffoscope
+[2023-04-22 02:53:50] INFO root fetch - processPackages [pycde]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycde-0.2.1.dev80-cp39-cp39-win_amd64.whl.zip tmp/pycde-0.2.1.dev9-cp39-cp39-win_amd64.whl.zip --markdown 20230422/p/pycde/0.2.1.dev80-0.2.1.dev9/diff.md --exclude *.pyd
+[2023-04-22 02:53:50] INFO root fetch - processPackages [rewards-api]: Downloading https://files.pythonhosted.org/packages/65/f0/d6873a598de6aa85b45b3b55a23d98bfd432f46473cd1d06b3e5a0eff4af/rewards_api-0.0.6.tar.gz
+[2023-04-22 02:53:50] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-04-22 02:53:50] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.296.0.tar.gz tmp/policyengine-us-0.297.0.tar.gz --markdown 20230422/p/policyengine-us/0.296.0-0.297.0/diff.md --exclude *.pyd
+[2023-04-22 02:53:50] INFO root fetch - processPackages [rewards-api]: executing diffoscope
+[2023-04-22 02:53:50] INFO root fetch - processPackages [rewards-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rewards_api-0.0.5.tar.gz tmp/rewards_api-0.0.6.tar.gz --markdown 20230422/r/rewards-api/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-22 02:53:51] INFO root fetch - main [MainThread]: End processing [yaml-stripper]: success
+[2023-04-22 02:53:52] INFO root fetch - main [MainThread]: End processing [rewards-api]: success
+[2023-04-22 02:53:53] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2023-04-22 02:53:54] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2023-04-22 02:54:10] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2023-04-22 02:54:31] ERROR root fetch - processPackages [pycde]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 127, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140330405994016)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/ar.py", line 71, in compare_details
+    Difference.from_text_readers(
+  File "/srv/diffoscope/diffoscope/difference.py", line 258, in from_text_readers
+    return Difference.from_feeder(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 127, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140330540212592)
+
+[2023-04-22 02:54:31] INFO root fetch - main [MainThread]: End processing [pycde] error
+[2023-04-22 02:54:59] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2023-04-22 02:54:59] INFO root fetch - main [MainThread]: Store serial: [17810197]
