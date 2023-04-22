@@ -7337,3 +7337,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 10:49:46] INFO root fetch - main [MainThread]: End processing [featurebyte-freeware]: success
 [2023-04-22 10:50:02] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2023-04-22 10:50:02] INFO root fetch - main [MainThread]: Store serial: [17813402]
+[2023-04-22 10:55:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813402]
+[2023-04-22 10:55:10] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 10:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: KwoksNote
+[2023-04-22 10:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: OctoBot-Backtesting
+[2023-04-22 10:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: z4d-certified-devices
+[2023-04-22 10:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: telespider
+[2023-04-22 10:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: triplify-csv
+[2023-04-22 10:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gdtoolkit
+[2023-04-22 10:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cushy-storage
+[2023-04-22 10:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: paper2cmap
+[2023-04-22 10:55:10] INFO root fetch - processPackages [z4d-certified-devices]: New version: [2.49] Old Version: [2.48]
+[2023-04-22 10:55:10] INFO root fetch - processPackages [KwoksNote]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-22 10:55:10] INFO root fetch - processPackages [paper2cmap]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-22 10:55:10] INFO root fetch - processPackages [cushy-storage]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-22 10:55:10] INFO root fetch - processPackages [gdtoolkit]: New version: [4.0.1] Old Version: [4.0.0]
+[2023-04-22 10:55:10] INFO root fetch - processPackages [telespider]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-22 10:55:10] INFO root fetch - processPackages [OctoBot-Backtesting]: New version: [1.8.2] Old Version: [1.8.1]
+[2023-04-22 10:55:10] INFO root fetch - processPackages [triplify-csv]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-22 10:55:11] INFO root fetch - processPackages [telespider]: Downloading https://files.pythonhosted.org/packages/53/83/6a314e6cf870b414b61f0b7d0eca91867e3c2c30fd97c137544e1a3ca283/telespider-0.2.0.tar.gz
+[2023-04-22 10:55:11] INFO root fetch - processPackages [KwoksNote]: Downloading https://files.pythonhosted.org/packages/f9/be/0dcf568dff63da2ad1cd542637d72683ed08ad1cbdde16898822b28b658e/KwoksNote-0.0.2.tar.gz
+[2023-04-22 10:55:11] INFO root fetch - processPackages [triplify-csv]: Downloading https://files.pythonhosted.org/packages/77/92/86bb84d9ea054f3bb46d0e6daa74f14769c91b59efee570a7cff36ec6b15/triplify_csv-0.2.1.tar.gz
+[2023-04-22 10:55:11] INFO root fetch - processPackages [gdtoolkit]: Downloading https://files.pythonhosted.org/packages/1f/0b/9362ac7083cf0eb63bfe7ac9d23dd1866dbac727dc9a8ba51d09f05ff06b/gdtoolkit-4.0.0.tar.gz
+[2023-04-22 10:55:11] INFO root fetch - processPackages [paper2cmap]: Downloading https://files.pythonhosted.org/packages/10/f6/1dbdaff29e49bd650e5f40e8f839d8ac8b1a64c3facbfab47864511f3a6f/paper2cmap-0.1.2.tar.gz
+[2023-04-22 10:55:11] INFO root fetch - processPackages [paper2cmap]: executing diffoscope
+[2023-04-22 10:55:11] INFO root fetch - processPackages [paper2cmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper2cmap-0.1.1.tar.gz tmp/paper2cmap-0.1.2.tar.gz --markdown 20230422/p/paper2cmap/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-22 10:55:11] INFO root fetch - processPackages [telespider]: executing diffoscope
+[2023-04-22 10:55:11] INFO root fetch - processPackages [telespider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telespider-0.1.1.tar.gz tmp/telespider-0.2.0.tar.gz --markdown 20230422/t/telespider/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-22 10:55:11] INFO root fetch - processPackages [cushy-storage]: Downloading https://files.pythonhosted.org/packages/d6/85/7ef0f61d944b4dd670ff168f4a04988ac9778f9bae1444f42a23476bfbc5/cushy-storage-1.0.2.tar.gz
+[2023-04-22 10:55:11] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/8f/16/46c896feef570c83c5aa54ce4a3fd244dc1a6c97de779d4fa0163eca4d71/z4d-certified-devices-2.49.tar.gz
+[2023-04-22 10:55:11] INFO root fetch - processPackages [OctoBot-Backtesting]: Downloading https://files.pythonhosted.org/packages/a0/fc/b2f3a98c40c77c424c6c4f418827acdb6be78bdb607d13c4fa987715ca55/OctoBot-Backtesting-1.8.2.tar.gz
+[2023-04-22 10:55:11] INFO root fetch - processPackages [cushy-storage]: executing diffoscope
+[2023-04-22 10:55:11] INFO root fetch - processPackages [cushy-storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cushy-storage-1.0.1.tar.gz tmp/cushy-storage-1.0.2.tar.gz --markdown 20230422/c/cushy-storage/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-22 10:55:11] INFO root fetch - processPackages [OctoBot-Backtesting]: executing diffoscope
+[2023-04-22 10:55:11] INFO root fetch - processPackages [OctoBot-Backtesting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoBot-Backtesting-1.8.1.tar.gz tmp/OctoBot-Backtesting-1.8.2.tar.gz --markdown 20230422/O/OctoBot-Backtesting/1.8.1-1.8.2/diff.md --exclude *.pyd
+[2023-04-22 10:55:11] INFO root fetch - processPackages [z4d-certified-devices]: executing diffoscope
+[2023-04-22 10:55:11] INFO root fetch - processPackages [z4d-certified-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z4d-certified-devices-2.48.tar.gz tmp/z4d-certified-devices-2.49.tar.gz --markdown 20230422/z/z4d-certified-devices/2.48-2.49/diff.md --exclude *.pyd
+[2023-04-22 10:55:11] INFO root fetch - processPackages [gdtoolkit]: Downloading https://files.pythonhosted.org/packages/64/b9/fbeb0514773079299d12cf300b4ee205f14d3690cdbf781017758ab01608/gdtoolkit-4.0.1.tar.gz
+[2023-04-22 10:55:11] INFO root fetch - processPackages [triplify-csv]: Downloading https://files.pythonhosted.org/packages/57/e5/13d8b1ab4961850c9eb614228d001817a50d4cb3b9af35e970b384633c21/triplify_csv-0.2.2.tar.gz
+[2023-04-22 10:55:11] INFO root fetch - processPackages [KwoksNote]: Downloading https://files.pythonhosted.org/packages/7d/b4/94055aa9bd0a86f3f5ba4277eef831489bd5835400e3ed12d2db24a31844/KwoksNote-0.0.3.tar.gz
+[2023-04-22 10:55:11] INFO root fetch - processPackages [gdtoolkit]: executing diffoscope
+[2023-04-22 10:55:11] INFO root fetch - processPackages [gdtoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdtoolkit-4.0.0.tar.gz tmp/gdtoolkit-4.0.1.tar.gz --markdown 20230422/g/gdtoolkit/4.0.0-4.0.1/diff.md --exclude *.pyd
+[2023-04-22 10:55:11] INFO root fetch - processPackages [triplify-csv]: executing diffoscope
+[2023-04-22 10:55:11] INFO root fetch - processPackages [triplify-csv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/triplify_csv-0.2.1.tar.gz tmp/triplify_csv-0.2.2.tar.gz --markdown 20230422/t/triplify-csv/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-22 10:55:11] INFO root fetch - processPackages [KwoksNote]: executing diffoscope
+[2023-04-22 10:55:11] INFO root fetch - processPackages [KwoksNote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/KwoksNote-0.0.2.tar.gz tmp/KwoksNote-0.0.3.tar.gz --markdown 20230422/K/KwoksNote/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-22 10:55:12] INFO root fetch - main [MainThread]: End processing [telespider]: success
+[2023-04-22 10:55:12] INFO root fetch - main [MainThread]: End processing [paper2cmap]: success
+[2023-04-22 10:55:12] INFO root fetch - main [MainThread]: End processing [KwoksNote]: success
+[2023-04-22 10:55:12] INFO root fetch - main [MainThread]: End processing [cushy-storage]: success
+[2023-04-22 10:55:12] INFO root fetch - main [MainThread]: End processing [triplify-csv]: success
+[2023-04-22 10:55:14] INFO root fetch - main [MainThread]: End processing [OctoBot-Backtesting]: success
+[2023-04-22 10:55:17] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
+[2023-04-22 10:55:27] INFO root fetch - main [MainThread]: End processing [gdtoolkit]: success
+[2023-04-22 10:55:27] INFO root fetch - main [MainThread]: Store serial: [17813428]
