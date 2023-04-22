@@ -10949,3 +10949,70 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 17:42:40] INFO root fetch - main [MainThread]: End processing [mlog-arithmetic-runner]: success
 [2023-04-22 17:42:41] INFO root fetch - main [MainThread]: End processing [pybliometrics]: success
 [2023-04-22 17:42:41] INFO root fetch - main [MainThread]: Store serial: [17815522]
+[2023-04-22 17:47:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815522]
+[2023-04-22 17:47:49] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-22 17:47:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zuspec-arl-dm
+[2023-04-22 17:47:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wbpNamespace
+[2023-04-22 17:47:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: transaction-accounts
+[2023-04-22 17:47:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: salix-containers
+[2023-04-22 17:47:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: matugen
+[2023-04-22 17:47:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: CLIbrary
+[2023-04-22 17:47:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ypmp-example
+[2023-04-22 17:47:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: zuspec-be-sw
+[2023-04-22 17:47:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: TheSilent
+[2023-04-22 17:47:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: jupylite-duckdb
+[2023-04-22 17:47:49] INFO root fetch - processPackages [wbpNamespace]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-22 17:47:49] INFO root fetch - processPackages [zuspec-arl-dm]: New version: [0.0.1.4773515999] Old Version: [0.0.1.4709178815]
+[2023-04-22 17:47:49] INFO root fetch - processPackages [transaction-accounts]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-22 17:47:49] INFO root fetch - processPackages [CLIbrary]: New version: [1.8.1] Old Version: [1.7.2]
+[2023-04-22 17:47:49] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 17:47:49] INFO root fetch - processPackages [matugen]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-22 17:47:49] INFO root fetch - processPackages [zuspec-be-sw]: New version: [0.0.1.4773523268] Old Version: [0.0.1.4760571145]
+[2023-04-22 17:47:49] WARNING root fetch - processPackages [ypmp-example]: Skipping, unable to determine old version
+[2023-04-22 17:47:49] INFO root fetch - processPackages [salix-containers]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-22 17:47:49] INFO root fetch - processPackages [ypmp-example]: Start processing: pyeal
+[2023-04-22 17:47:49] INFO root fetch - main [MainThread]: End processing [ypmp-example] error
+[2023-04-22 17:47:49] INFO root fetch - processPackages [jupylite-duckdb]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 17:47:49] INFO root fetch - processPackages [pyeal]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-22 17:47:49] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-22 17:47:49] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230422/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 17:47:49] INFO root fetch - processPackages [jupylite-duckdb]: executing diffoscope
+[2023-04-22 17:47:49] INFO root fetch - processPackages [jupylite-duckdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupylite_duckdb-0.0.8-py3-none-any.whl.zip tmp/jupylite_duckdb-0.0.9-py3-none-any.whl.zip --markdown 20230422/j/jupylite-duckdb/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 17:47:49] INFO root fetch - processPackages [transaction-accounts]: Downloading https://files.pythonhosted.org/packages/a5/15/1c50c6d762374dd1292f63ef309073ba60ce28fcbe2a3ea4a57ba63a0c2d/transaction-accounts-0.0.3.tar.gz
+[2023-04-22 17:47:49] INFO root fetch - processPackages [matugen]: Downloading https://files.pythonhosted.org/packages/2c/18/b0634927e2550495ee8f78cd49bbfb5447bec842887ea81004c9632136b5/matugen-0.4.1.tar.gz
+[2023-04-22 17:47:49] INFO root fetch - processPackages [wbpNamespace]: Downloading https://files.pythonhosted.org/packages/eb/9e/74d7a9440ab55d54f5f25ef0ddc63a8ba331fd0741cfd0421157fc06be2f/wbpNamespace-0.1.7.tar.gz
+[2023-04-22 17:47:49] INFO root fetch - processPackages [salix-containers]: Downloading https://files.pythonhosted.org/packages/39/24/b73579aa374636b125bb4dc1fa2ce2149ede49442ac6638495f4800b470e/salix-containers-0.4.1.tar.gz
+[2023-04-22 17:47:49] INFO root fetch - processPackages [pyeal]: Downloading https://files.pythonhosted.org/packages/eb/6d/6e79ba882ab358c073fd48cf9c908cb2e21f8a32d6a78a53add12115d74f/pyeal-0.6.0-py2.py3-none-any.whl
+[2023-04-22 17:47:49] INFO root fetch - processPackages [zuspec-be-sw]: Downloading https://files.pythonhosted.org/packages/2b/5f/f078cd7b1262ef9409957310f5aa7a72fa6dfb110a23ef4579cd59b4d876/zuspec_be_sw-0.0.1.4773523268-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-22 17:47:50] INFO root fetch - processPackages [zuspec-arl-dm]: Downloading https://files.pythonhosted.org/packages/31/ea/6883a84c0ecb339c06c00ea7374fe0aff576f3a2b5f7b74e129c23ca5666/zuspec_arl_dm-0.0.1.4773515999-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-22 17:47:50] INFO root fetch - processPackages [CLIbrary]: Downloading https://files.pythonhosted.org/packages/a3/73/c499bcbe98cc3fd4c0d6f5fe755b8cbf55ff9196e0aa4395e12a4ddf2cbf/clibrary-1.8.1.tar.gz
+[2023-04-22 17:47:50] INFO root fetch - processPackages [matugen]: executing diffoscope
+[2023-04-22 17:47:50] INFO root fetch - processPackages [matugen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matugen-0.4.0.tar.gz tmp/matugen-0.4.1.tar.gz --markdown 20230422/m/matugen/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-22 17:47:50] INFO root fetch - processPackages [salix-containers]: executing diffoscope
+[2023-04-22 17:47:50] INFO root fetch - processPackages [salix-containers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salix-containers-0.4.0.tar.gz tmp/salix-containers-0.4.1.tar.gz --markdown 20230422/s/salix-containers/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-22 17:47:50] INFO root fetch - processPackages [wbpNamespace]: Downloading https://files.pythonhosted.org/packages/61/8e/9645acde66bacc30b2db39148d1e7eb75283dad3e422d95f0f17d48a0107/wbpNamespace-0.1.8.tar.gz
+[2023-04-22 17:47:50] INFO root fetch - processPackages [transaction-accounts]: Downloading https://files.pythonhosted.org/packages/e2/2d/67af53564ffc493983e64f14947c3051417a860db79e62eb04082c3be449/transaction-accounts-0.0.4.tar.gz
+[2023-04-22 17:47:50] INFO root fetch - processPackages [CLIbrary]: executing diffoscope
+[2023-04-22 17:47:50] INFO root fetch - processPackages [CLIbrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clibrary-1.7.2.tar.gz tmp/clibrary-1.8.1.tar.gz --markdown 20230422/C/CLIbrary/1.7.2-1.8.1/diff.md --exclude *.pyd
+[2023-04-22 17:47:50] INFO root fetch - processPackages [zuspec-arl-dm]: executing diffoscope
+[2023-04-22 17:47:50] INFO root fetch - processPackages [zuspec-arl-dm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_arl_dm-0.0.1.4709178815-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_arl_dm-0.0.1.4773515999-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230422/z/zuspec-arl-dm/0.0.1.4709178815-0.0.1.4773515999/diff.md --exclude *.pyd
+[2023-04-22 17:47:50] INFO root fetch - processPackages [pyeal]: Downloading https://files.pythonhosted.org/packages/f9/b6/3c646e15635c0ed747d33ef72f732f832f625d2533c40f5fea3b0f952b4f/pyeal-0.7.0.tar.gz
+[2023-04-22 17:47:50] INFO root fetch - processPackages [wbpNamespace]: executing diffoscope
+[2023-04-22 17:47:50] INFO root fetch - processPackages [wbpNamespace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wbpNamespace-0.1.7.tar.gz tmp/wbpNamespace-0.1.8.tar.gz --markdown 20230422/w/wbpNamespace/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-22 17:47:50] INFO root fetch - processPackages [transaction-accounts]: executing diffoscope
+[2023-04-22 17:47:50] INFO root fetch - processPackages [transaction-accounts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transaction-accounts-0.0.3.tar.gz tmp/transaction-accounts-0.0.4.tar.gz --markdown 20230422/t/transaction-accounts/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-22 17:47:50] INFO root fetch - processPackages [pyeal]: executing diffoscope
+[2023-04-22 17:47:50] INFO root fetch - processPackages [pyeal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeal-0.6.0-py2.py3-none-any.whl.zip tmp/pyeal-0.7.0.tar.gz --markdown 20230422/p/pyeal/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-22 17:47:50] INFO root fetch - processPackages [zuspec-be-sw]: executing diffoscope
+[2023-04-22 17:47:50] INFO root fetch - processPackages [zuspec-be-sw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_be_sw-0.0.1.4760571145-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_be_sw-0.0.1.4773523268-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230422/z/zuspec-be-sw/0.0.1.4760571145-0.0.1.4773523268/diff.md --exclude *.pyd
+[2023-04-22 17:47:51] INFO root fetch - main [MainThread]: End processing [jupylite-duckdb]: success
+[2023-04-22 17:47:51] INFO root fetch - main [MainThread]: End processing [matugen]: success
+[2023-04-22 17:47:51] INFO root fetch - main [MainThread]: End processing [salix-containers]: success
+[2023-04-22 17:47:51] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2023-04-22 17:47:51] INFO root fetch - main [MainThread]: End processing [CLIbrary]: success
+[2023-04-22 17:47:51] INFO root fetch - main [MainThread]: End processing [pyeal]: success
+[2023-04-22 17:47:51] INFO root fetch - main [MainThread]: End processing [wbpNamespace]: success
+[2023-04-22 17:47:52] INFO root fetch - main [MainThread]: End processing [transaction-accounts]: success
+[2023-04-22 17:47:56] INFO root fetch - main [MainThread]: End processing [zuspec-be-sw]: success
+[2023-04-22 17:48:06] INFO root fetch - main [MainThread]: End processing [zuspec-arl-dm]: success
+[2023-04-22 17:48:06] INFO root fetch - main [MainThread]: Store serial: [17815560]
