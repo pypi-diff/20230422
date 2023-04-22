@@ -11209,3 +11209,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 18:03:54] INFO root fetch - main [MainThread]: End processing [sc8pr]: success
 [2023-04-22 18:03:56] INFO root fetch - main [MainThread]: End processing [liftcord]: success
 [2023-04-22 18:03:56] INFO root fetch - main [MainThread]: Store serial: [17815663]
+[2023-04-22 18:09:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815663]
+[2023-04-22 18:09:05] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 18:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DRSlib-DavidRodriguezSoaresCUI
+[2023-04-22 18:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyathena
+[2023-04-22 18:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: notification-service-nightly
+[2023-04-22 18:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ai-flow-nightly
+[2023-04-22 18:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pepperbot-gpt-example
+[2023-04-22 18:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: voyager-cpu
+[2023-04-22 18:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ocp-tessellate
+[2023-04-22 18:09:05] INFO root fetch - processPackages [DRSlib-DavidRodriguezSoaresCUI]: New version: [0.7.0] Old Version: [0.6.dev1]
+[2023-04-22 18:09:05] INFO root fetch - processPackages [pyathena]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-04-22 18:09:05] INFO root fetch - processPackages [ai-flow-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-22 18:09:05] INFO root fetch - processPackages [notification-service-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-22 18:09:05] INFO root fetch - processPackages [ai-flow-nightly]: executing diffoscope
+[2023-04-22 18:09:05] INFO root fetch - processPackages [ai-flow-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_flow_nightly-2023.4.8.tar.gz tmp/ai_flow_nightly-2023.4.9.tar.gz --markdown 20230422/a/ai-flow-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-22 18:09:05] WARNING root fetch - processPackages [pepperbot-gpt-example]: Skipping, unable to determine old version
+[2023-04-22 18:09:05] INFO root fetch - main [MainThread]: End processing [pepperbot-gpt-example] error
+[2023-04-22 18:09:05] INFO root fetch - processPackages [voyager-cpu]: New version: [0.2.1] Old Version: [0.2]
+[2023-04-22 18:09:05] INFO root fetch - processPackages [ocp-tessellate]: New version: [1.0.0rc9] Old Version: [1.0.0rc8]
+[2023-04-22 18:09:05] INFO root fetch - processPackages [pyathena]: executing diffoscope
+[2023-04-22 18:09:05] INFO root fetch - processPackages [pyathena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAthena-2.9.5.tar.gz tmp/PyAthena-2.9.6.tar.gz --markdown 20230422/p/pyathena/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-04-22 18:09:05] INFO root fetch - processPackages [notification-service-nightly]: executing diffoscope
+[2023-04-22 18:09:05] INFO root fetch - processPackages [notification-service-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notification_service_nightly-2023.4.8.tar.gz tmp/notification_service_nightly-2023.4.9.tar.gz --markdown 20230422/n/notification-service-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-22 18:09:05] INFO root fetch - processPackages [DRSlib-DavidRodriguezSoaresCUI]: Downloading https://files.pythonhosted.org/packages/b9/c6/313a19d717eff53e8f119af9885b7229c5c9d61c61aef41b44695fe72dae/DRSlib-DavidRodriguezSoaresCUI-0.6.dev1.tar.gz
+[2023-04-22 18:09:05] INFO root fetch - processPackages [voyager-cpu]: Downloading https://files.pythonhosted.org/packages/0e/ad/f59fab70c7e22b04cd2286ba8c80e722a1bff912deab1c1488bdc5ca62e4/voyager_cpu-0.2.1.tar.gz
+[2023-04-22 18:09:05] INFO root fetch - processPackages [ocp-tessellate]: Downloading https://files.pythonhosted.org/packages/9c/4f/a97a1ad8a0b9bebb0fb0243a3ee4efeb891ec96a856cb03669e4b1f16125/ocp_tessellate-1.0.0rc8.tar.gz
+[2023-04-22 18:09:05] INFO root fetch - processPackages [voyager-cpu]: executing diffoscope
+[2023-04-22 18:09:05] INFO root fetch - processPackages [voyager-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voyager_cpu-0.2.tar.gz tmp/voyager_cpu-0.2.1.tar.gz --markdown 20230422/v/voyager-cpu/0.2-0.2.1/diff.md --exclude *.pyd
+[2023-04-22 18:09:05] INFO root fetch - processPackages [DRSlib-DavidRodriguezSoaresCUI]: Downloading https://files.pythonhosted.org/packages/91/4e/8a30bd0099ef54e14739010b5be536d2b54a7c827232db40b8fc94c90fd3/DRSlib-DavidRodriguezSoaresCUI-0.7.0.tar.gz
+[2023-04-22 18:09:05] INFO root fetch - processPackages [DRSlib-DavidRodriguezSoaresCUI]: executing diffoscope
+[2023-04-22 18:09:05] INFO root fetch - processPackages [DRSlib-DavidRodriguezSoaresCUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DRSlib-DavidRodriguezSoaresCUI-0.6.dev1.tar.gz tmp/DRSlib-DavidRodriguezSoaresCUI-0.7.0.tar.gz --markdown 20230422/D/DRSlib-DavidRodriguezSoaresCUI/0.6.dev1-0.7.0/diff.md --exclude *.pyd
+[2023-04-22 18:09:06] INFO root fetch - processPackages [ocp-tessellate]: Downloading https://files.pythonhosted.org/packages/80/27/b916b42fd1a3b39ff39946389120e10e004cf6e2f7c5edeeecf6431b6fe0/ocp_tessellate-1.0.0rc9.tar.gz
+[2023-04-22 18:09:06] INFO root fetch - processPackages [ocp-tessellate]: executing diffoscope
+[2023-04-22 18:09:06] INFO root fetch - processPackages [ocp-tessellate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ocp_tessellate-1.0.0rc8.tar.gz tmp/ocp_tessellate-1.0.0rc9.tar.gz --markdown 20230422/o/ocp-tessellate/1.0.0rc8-1.0.0rc9/diff.md --exclude *.pyd
+[2023-04-22 18:09:06] INFO root fetch - main [MainThread]: End processing [pyathena]: success
+[2023-04-22 18:09:07] INFO root fetch - main [MainThread]: End processing [notification-service-nightly]: success
+[2023-04-22 18:09:07] INFO root fetch - main [MainThread]: End processing [DRSlib-DavidRodriguezSoaresCUI]: success
+[2023-04-22 18:09:07] INFO root fetch - main [MainThread]: End processing [ocp-tessellate]: success
+[2023-04-22 18:09:08] INFO root fetch - main [MainThread]: End processing [voyager-cpu]: success
+[2023-04-22 18:09:08] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
+[2023-04-22 18:09:08] INFO root fetch - main [MainThread]: Store serial: [17815707]
