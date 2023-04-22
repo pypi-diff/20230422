@@ -12445,3 +12445,53 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 20:27:10] INFO root fetch - main [MainThread]: End processing [py-Ayra]: success
 [2023-04-22 20:27:10] INFO root fetch - main [MainThread]: End processing [spotdl]: success
 [2023-04-22 20:27:10] INFO root fetch - main [MainThread]: Store serial: [17816414]
+[2023-04-22 20:32:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816414]
+[2023-04-22 20:32:19] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 20:32:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gokyuzu
+[2023-04-22 20:32:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qgis-plugin-ci
+[2023-04-22 20:32:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pandas-dq
+[2023-04-22 20:32:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: maxilearn
+[2023-04-22 20:32:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quantplay
+[2023-04-22 20:32:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: landsat9-lc
+[2023-04-22 20:32:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dbxconfig
+[2023-04-22 20:32:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: chessmaker
+[2023-04-22 20:32:19] INFO root fetch - processPackages [pandas-dq]: New version: [1.9] Old Version: [1.8]
+[2023-04-22 20:32:19] INFO root fetch - processPackages [dbxconfig]: New version: [2.1.0] Old Version: [2.0.6]
+[2023-04-22 20:32:19] INFO root fetch - processPackages [quantplay]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-22 20:32:19] INFO root fetch - processPackages [qgis-plugin-ci]: New version: [2.7.2] Old Version: [2.7.0b5]
+[2023-04-22 20:32:19] WARNING root fetch - processPackages [landsat9-lc]: Skipping, unable to determine old version
+[2023-04-22 20:32:19] INFO root fetch - main [MainThread]: End processing [landsat9-lc] error
+[2023-04-22 20:32:19] INFO root fetch - processPackages [maxilearn]: New version: [4.2] Old Version: [4.1]
+[2023-04-22 20:32:19] INFO root fetch - processPackages [chessmaker]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-22 20:32:19] INFO root fetch - processPackages [gokyuzu]: New version: [1.0.0] Old Version: [0.0.7]
+[2023-04-22 20:32:19] INFO root fetch - processPackages [maxilearn]: executing diffoscope
+[2023-04-22 20:32:19] INFO root fetch - processPackages [maxilearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maxilearn-4.1.tar.gz tmp/maxilearn-4.2.tar.gz --markdown 20230422/m/maxilearn/4.1-4.2/diff.md --exclude *.pyd
+[2023-04-22 20:32:19] INFO root fetch - processPackages [chessmaker]: Downloading https://files.pythonhosted.org/packages/22/d1/0072d314ab2b9fe8ab638c996f8e26b03f157c415a76e09134a2d67458fe/chessmaker-0.4.1.tar.gz
+[2023-04-22 20:32:19] INFO root fetch - processPackages [pandas-dq]: Downloading https://files.pythonhosted.org/packages/ea/89/78ecd443ca257d3a3106418e8a3ac293f9c77a3a93bd8ae6bf466d0f3d1b/pandas_dq-1.8.tar.gz
+[2023-04-22 20:32:19] INFO root fetch - processPackages [gokyuzu]: Downloading https://files.pythonhosted.org/packages/f8/02/3a98dd191d2d795155cc667348016c463c740ce6460a947376665b38f516/gokyuzu-0.0.7.tar.gz
+[2023-04-22 20:32:19] INFO root fetch - processPackages [qgis-plugin-ci]: Downloading https://files.pythonhosted.org/packages/95/c1/08bf81d5ac74d0ed078bcb85fe0d837b983150d61f78f843306a62458e26/qgis-plugin-ci-2.7.0b5.tar.gz
+[2023-04-22 20:32:19] INFO root fetch - processPackages [dbxconfig]: Downloading https://files.pythonhosted.org/packages/4e/bb/387d0f5c14ae5a881a54590c904b691be04e03de6eaa84cd9700dff00b0a/dbxconfig-2.0.6.tar.gz
+[2023-04-22 20:32:19] INFO root fetch - processPackages [chessmaker]: executing diffoscope
+[2023-04-22 20:32:19] INFO root fetch - processPackages [chessmaker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chessmaker-0.4.0.tar.gz tmp/chessmaker-0.4.1.tar.gz --markdown 20230422/c/chessmaker/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-22 20:32:19] INFO root fetch - processPackages [quantplay]: executing diffoscope
+[2023-04-22 20:32:19] INFO root fetch - processPackages [quantplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantplay-1.2.8.tar.gz tmp/quantplay-1.2.9.tar.gz --markdown 20230422/q/quantplay/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-22 20:32:19] INFO root fetch - processPackages [dbxconfig]: Downloading https://files.pythonhosted.org/packages/45/45/d3d1b0514cefa3f2a95e608d0be6d32bbb9e9d581d94ed80047cdd74b600/dbxconfig-2.1.0.tar.gz
+[2023-04-22 20:32:19] INFO root fetch - processPackages [pandas-dq]: Downloading https://files.pythonhosted.org/packages/f6/ca/bb9f8644f28b85d96ef767e6899f2a2137af0dc9dd30935a4b6a02007507/pandas_dq-1.9.tar.gz
+[2023-04-22 20:32:19] INFO root fetch - processPackages [dbxconfig]: executing diffoscope
+[2023-04-22 20:32:19] INFO root fetch - processPackages [dbxconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbxconfig-2.0.6.tar.gz tmp/dbxconfig-2.1.0.tar.gz --markdown 20230422/d/dbxconfig/2.0.6-2.1.0/diff.md --exclude *.pyd
+[2023-04-22 20:32:19] INFO root fetch - processPackages [qgis-plugin-ci]: Downloading https://files.pythonhosted.org/packages/7d/58/2378f3a0dbedbb4ba61694f780488e761bc9652acdb4b2ece10716f6bdd9/qgis-plugin-ci-2.7.2.tar.gz
+[2023-04-22 20:32:19] INFO root fetch - processPackages [gokyuzu]: Downloading https://files.pythonhosted.org/packages/2c/66/37434b865d6f072cd73c8a76035c52c7feef2c92d270125f05cb93dcc619/gokyuzu-1.0.0.tar.gz
+[2023-04-22 20:32:19] INFO root fetch - processPackages [qgis-plugin-ci]: executing diffoscope
+[2023-04-22 20:32:19] INFO root fetch - processPackages [qgis-plugin-ci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qgis-plugin-ci-2.7.0b5.tar.gz tmp/qgis-plugin-ci-2.7.2.tar.gz --markdown 20230422/q/qgis-plugin-ci/2.7.0b5-2.7.2/diff.md --exclude *.pyd
+[2023-04-22 20:32:19] INFO root fetch - processPackages [gokyuzu]: executing diffoscope
+[2023-04-22 20:32:19] INFO root fetch - processPackages [gokyuzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gokyuzu-0.0.7.tar.gz tmp/gokyuzu-1.0.0.tar.gz --markdown 20230422/g/gokyuzu/0.0.7-1.0.0/diff.md --exclude *.pyd
+[2023-04-22 20:32:19] INFO root fetch - processPackages [pandas-dq]: executing diffoscope
+[2023-04-22 20:32:19] INFO root fetch - processPackages [pandas-dq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandas_dq-1.8.tar.gz tmp/pandas_dq-1.9.tar.gz --markdown 20230422/p/pandas-dq/1.8-1.9/diff.md --exclude *.pyd
+[2023-04-22 20:32:20] INFO root fetch - main [MainThread]: End processing [maxilearn]: success
+[2023-04-22 20:32:20] INFO root fetch - main [MainThread]: End processing [chessmaker]: success
+[2023-04-22 20:32:20] INFO root fetch - main [MainThread]: End processing [dbxconfig]: success
+[2023-04-22 20:32:20] INFO root fetch - main [MainThread]: End processing [gokyuzu]: success
+[2023-04-22 20:32:21] INFO root fetch - main [MainThread]: End processing [quantplay]: success
+[2023-04-22 20:32:21] INFO root fetch - main [MainThread]: End processing [pandas-dq]: success
+[2023-04-22 20:32:21] INFO root fetch - main [MainThread]: End processing [qgis-plugin-ci]: success
+[2023-04-22 20:32:21] INFO root fetch - main [MainThread]: Store serial: [17816438]
