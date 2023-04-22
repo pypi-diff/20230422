@@ -988,3 +988,68 @@
 [2023-04-22 02:07:15] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2023-04-22 02:07:26] INFO root fetch - main [MainThread]: End processing [ja2mqtt]: success
 [2023-04-22 02:07:26] INFO root fetch - main [MainThread]: Store serial: [17809818]
+[2023-04-22 02:12:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17809818]
+[2023-04-22 02:12:35] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-22 02:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchlayers-nightly
+[2023-04-22 02:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: not1mm
+[2023-04-22 02:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk8s-redis
+[2023-04-22 02:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-aws-discord-notifiers
+[2023-04-22 02:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: openbb-nightly
+[2023-04-22 02:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pepperize.cdk-github
+[2023-04-22 02:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: constructs
+[2023-04-22 02:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: speakeasy-client-sdk-python
+[2023-04-22 02:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdk-common
+[2023-04-22 02:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdklabs.codepipeline-extensions
+[2023-04-22 02:12:35] INFO root fetch - processPackages [openbb-nightly]: New version: [3.0.0rc2.dev20230421] Old Version: [3.0.0rc2.dev20230420]
+[2023-04-22 02:12:35] INFO root fetch - processPackages [not1mm]: New version: [23.4.6] Old Version: [23.4.5]
+[2023-04-22 02:12:35] INFO root fetch - processPackages [speakeasy-client-sdk-python]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-22 02:12:35] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 02:12:35] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 02:12:35] INFO root fetch - processPackages [pepperize.cdk-github]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 02:12:35] INFO root fetch - processPackages [cdk8s-redis]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-22 02:12:35] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: Downloading https://files.pythonhosted.org/packages/df/6c/78f1bfa2ffc81709ec21b0077aff92b7460ad1f071d595e2d767653cedc0/cdklabs.codepipeline-extensions-0.0.98.tar.gz
+[2023-04-22 02:12:35] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-22 02:12:35] INFO root fetch - processPackages [constructs]: New version: [3.4.99] Old Version: [3.4.98]
+[2023-04-22 02:12:35] INFO root fetch - processPackages [torchlayers-nightly]: New version: [1682122021] Old Version: [1682035607]
+[2023-04-22 02:12:35] WARNING root fetch - processPackages [cdklabs.codepipeline-extensions]: Skipping package: exceeds size limit 12637726>=10485760
+[2023-04-22 02:12:35] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: Start processing: ovos-backend-client
+[2023-04-22 02:12:35] INFO root fetch - main [MainThread]: End processing [cdklabs.codepipeline-extensions] error
+[2023-04-22 02:12:35] INFO root fetch - processPackages [ovos-backend-client]: New version: [0.0.7a3] Old Version: [0.0.7a2]
+[2023-04-22 02:12:35] INFO root fetch - processPackages [not1mm]: executing diffoscope
+[2023-04-22 02:12:35] INFO root fetch - processPackages [not1mm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not1mm-23.4.5.tar.gz tmp/not1mm-23.4.6.tar.gz --markdown 20230422/n/not1mm/23.4.5-23.4.6/diff.md --exclude *.pyd
+[2023-04-22 02:12:35] INFO root fetch - processPackages [cdk8s-redis]: executing diffoscope
+[2023-04-22 02:12:35] INFO root fetch - processPackages [cdk8s-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-redis-0.1.98.tar.gz tmp/cdk8s-redis-0.1.99.tar.gz --markdown 20230422/c/cdk8s-redis/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-22 02:12:35] INFO root fetch - processPackages [constructs]: executing diffoscope
+[2023-04-22 02:12:35] INFO root fetch - processPackages [constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constructs-3.4.98.tar.gz tmp/constructs-3.4.99.tar.gz --markdown 20230422/c/constructs/3.4.98-3.4.99/diff.md --exclude *.pyd
+[2023-04-22 02:12:35] INFO root fetch - processPackages [speakeasy-client-sdk-python]: executing diffoscope
+[2023-04-22 02:12:35] INFO root fetch - processPackages [speakeasy-client-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speakeasy-client-sdk-python-1.9.0.tar.gz tmp/speakeasy-client-sdk-python-1.9.1.tar.gz --markdown 20230422/s/speakeasy-client-sdk-python/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-22 02:12:35] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2023-04-22 02:12:35] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20230422/c/cdk-common/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-22 02:12:35] INFO root fetch - processPackages [pepperize.cdk-github]: executing diffoscope
+[2023-04-22 02:12:35] INFO root fetch - processPackages [pepperize.cdk-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-github-0.0.98.tar.gz tmp/pepperize.cdk-github-0.0.99.tar.gz --markdown 20230422/p/pepperize.cdk-github/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 02:12:35] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: executing diffoscope
+[2023-04-22 02:12:35] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aws-discord-notifiers-0.0.8.tar.gz tmp/cdk-aws-discord-notifiers-0.0.9.tar.gz --markdown 20230422/c/cdk-aws-discord-notifiers/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 02:12:35] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/40/cf/d3b768697edfd4d5eeed0b9291e5a08f4e5d544cf31a0e8b01dd896895a5/openbb_nightly-3.0.0rc2.dev20230421.tar.gz
+[2023-04-22 02:12:35] INFO root fetch - processPackages [ovos-backend-client]: executing diffoscope
+[2023-04-22 02:12:35] INFO root fetch - processPackages [ovos-backend-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-backend-client-0.0.7a2.tar.gz tmp/ovos-backend-client-0.0.7a3.tar.gz --markdown 20230422/o/ovos-backend-client/0.0.7a2-0.0.7a3/diff.md --exclude *.pyd
+[2023-04-22 02:12:36] INFO root fetch - processPackages [torchlayers-nightly]: Downloading https://files.pythonhosted.org/packages/5f/9e/f5691c9cbd87a1fe968d2b9b67b897f96b32f0ad26a919b0737dc43c09be/torchlayers-nightly-1682122021.tar.gz
+[2023-04-22 02:12:36] INFO root fetch - processPackages [torchlayers-nightly]: executing diffoscope
+[2023-04-22 02:12:36] INFO root fetch - processPackages [torchlayers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlayers-nightly-1682035607.tar.gz tmp/torchlayers-nightly-1682122021.tar.gz --markdown 20230422/t/torchlayers-nightly/1682035607-1682122021/diff.md --exclude *.pyd
+[2023-04-22 02:12:37] INFO root fetch - processPackages [cdk8s-redis]: Start processing: cdk-events-notify
+[2023-04-22 02:12:37] INFO root fetch - main [MainThread]: End processing [cdk8s-redis]: success
+[2023-04-22 02:12:37] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-22 02:12:37] INFO root fetch - main [MainThread]: End processing [constructs]: success
+[2023-04-22 02:12:37] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-github]: success
+[2023-04-22 02:12:37] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2023-04-22 02:12:37] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.0.98.tar.gz tmp/cdk-events-notify-2.0.99.tar.gz --markdown 20230422/c/cdk-events-notify/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-22 02:12:37] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2023-04-22 02:12:37] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2023-04-22 02:12:37] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-3.0.0rc2.dev20230420.tar.gz tmp/openbb_nightly-3.0.0rc2.dev20230421.tar.gz --markdown 20230422/o/openbb-nightly/3.0.0rc2.dev20230420-3.0.0rc2.dev20230421/diff.md --exclude *.pyd
+[2023-04-22 02:12:37] INFO root fetch - main [MainThread]: End processing [ovos-backend-client]: success
+[2023-04-22 02:12:38] INFO root fetch - main [MainThread]: End processing [torchlayers-nightly]: success
+[2023-04-22 02:12:38] INFO root fetch - main [MainThread]: End processing [speakeasy-client-sdk-python]: success
+[2023-04-22 02:12:38] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2023-04-22 02:12:39] INFO root fetch - main [MainThread]: End processing [cdk-aws-discord-notifiers]: success
+[2023-04-22 02:12:40] INFO root fetch - main [MainThread]: End processing [not1mm]: success
+[2023-04-22 02:12:51] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2023-04-22 02:12:51] INFO root fetch - main [MainThread]: Store serial: [17809857]
