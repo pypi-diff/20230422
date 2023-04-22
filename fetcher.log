@@ -12989,3 +12989,59 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 21:53:12] INFO root fetch - main [MainThread]: End processing [aiopygismeteo]: success
 [2023-04-22 21:53:12] INFO root fetch - main [MainThread]: End processing [SunsetSettings]: success
 [2023-04-22 21:53:12] INFO root fetch - main [MainThread]: Store serial: [17816719]
+[2023-04-22 21:58:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816719]
+[2023-04-22 21:58:21] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 21:58:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vtece4564-gamelib
+[2023-04-22 21:58:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eons
+[2023-04-22 21:58:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: athena-ai
+[2023-04-22 21:58:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-project-structure
+[2023-04-22 21:58:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastapi-async-langchain
+[2023-04-22 21:58:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: erscipcard
+[2023-04-22 21:58:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: stashapp-tools
+[2023-04-22 21:58:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: py-file-type
+[2023-04-22 21:58:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: secure-package-template
+[2023-04-22 21:58:21] INFO root fetch - processPackages [athena-ai]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 21:58:21] INFO root fetch - processPackages [vtece4564-gamelib]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-22 21:58:21] INFO root fetch - processPackages [erscipcard]: New version: [1.18.1] Old Version: [1.18]
+[2023-04-22 21:58:21] INFO root fetch - processPackages [fastapi-async-langchain]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-22 21:58:21] INFO root fetch - processPackages [py-file-type]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-22 21:58:21] INFO root fetch - processPackages [python-project-structure]: New version: [0.8.9b7] Old Version: [0.8.9b0]
+[2023-04-22 21:58:21] INFO root fetch - processPackages [secure-package-template]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-22 21:58:21] INFO root fetch - processPackages [stashapp-tools]: New version: [0.2.9] Old Version: [0.2.7]
+[2023-04-22 21:58:21] INFO root fetch - processPackages [eons]: New version: [2.5.0] Old Version: [2.4.0]
+[2023-04-22 21:58:21] INFO root fetch - processPackages [python-project-structure]: executing diffoscope
+[2023-04-22 21:58:21] INFO root fetch - processPackages [python-project-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-project-structure-0.8.9b0.tar.gz tmp/python-project-structure-0.8.9b7.tar.gz --markdown 20230422/p/python-project-structure/0.8.9b0-0.8.9b7/diff.md --exclude *.pyd
+[2023-04-22 21:58:21] INFO root fetch - processPackages [erscipcard]: Downloading https://files.pythonhosted.org/packages/6e/26/c9ddadd9f897c1f45cccebd82c683982045669883b64b03a4a3c332c9005/erscipcard-1.18.tar.gz
+[2023-04-22 21:58:21] INFO root fetch - processPackages [vtece4564-gamelib]: Downloading https://files.pythonhosted.org/packages/70/83/dae908a187a6ff3c8b5b69ce03f4c209160f09a8e0375afa94b77c7e18bb/vtece4564-gamelib-0.0.7.tar.gz
+[2023-04-22 21:58:21] INFO root fetch - processPackages [py-file-type]: Downloading https://files.pythonhosted.org/packages/81/f3/95daacf2228fddd87b1025dcdb07caf6e3a36ed5afca96185606f9810abf/py_file_type-1.0.0.tar.gz
+[2023-04-22 21:58:21] INFO root fetch - processPackages [vtece4564-gamelib]: executing diffoscope
+[2023-04-22 21:58:21] INFO root fetch - processPackages [vtece4564-gamelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vtece4564-gamelib-0.0.6.tar.gz tmp/vtece4564-gamelib-0.0.7.tar.gz --markdown 20230422/v/vtece4564-gamelib/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-22 21:58:21] INFO root fetch - processPackages [fastapi-async-langchain]: Downloading https://files.pythonhosted.org/packages/d7/ae/9054319ee282afa2c915c3802374d718b79831b3b97890414fb55a638547/fastapi_async_langchain-0.2.0.tar.gz
+[2023-04-22 21:58:22] INFO root fetch - processPackages [secure-package-template]: Downloading https://files.pythonhosted.org/packages/e4/b9/28edb97d171346660eea88ca7556672306c589f1eaab934d2a765faef8ae/secure_package_template-0.7.1.tar.gz
+[2023-04-22 21:58:22] INFO root fetch - processPackages [fastapi-async-langchain]: executing diffoscope
+[2023-04-22 21:58:22] INFO root fetch - processPackages [fastapi-async-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_async_langchain-0.1.1.tar.gz tmp/fastapi_async_langchain-0.2.0.tar.gz --markdown 20230422/f/fastapi-async-langchain/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-22 21:58:22] INFO root fetch - processPackages [athena-ai]: Downloading https://files.pythonhosted.org/packages/d7/c7/6efa48ab5309d314a5c26e3f3e0ae062394e2dfb4771f4e97fc90bfc53aa/athena_ai-0.0.9.tar.gz
+[2023-04-22 21:58:22] INFO root fetch - processPackages [stashapp-tools]: executing diffoscope
+[2023-04-22 21:58:22] INFO root fetch - processPackages [stashapp-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stashapp-tools-0.2.7.tar.gz tmp/stashapp-tools-0.2.9.tar.gz --markdown 20230422/s/stashapp-tools/0.2.7-0.2.9/diff.md --exclude *.pyd
+[2023-04-22 21:58:22] INFO root fetch - processPackages [secure-package-template]: executing diffoscope
+[2023-04-22 21:58:22] INFO root fetch - processPackages [secure-package-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secure_package_template-0.7.0.tar.gz tmp/secure_package_template-0.7.1.tar.gz --markdown 20230422/s/secure-package-template/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-22 21:58:22] INFO root fetch - processPackages [erscipcard]: Downloading https://files.pythonhosted.org/packages/61/e8/d291d6aa2530ddcaed7be1cc61ba430eb501daf10dd94aa4b92d81d13239/erscipcard-1.18.1.tar.gz
+[2023-04-22 21:58:22] INFO root fetch - processPackages [eons]: Downloading https://files.pythonhosted.org/packages/cd/a2/8e79abdecda6cf1bc2e73e3c866cf6966d176ffb81321db0adedabe3c816/eons-2.5.0.tar.gz
+[2023-04-22 21:58:22] INFO root fetch - processPackages [py-file-type]: Downloading https://files.pythonhosted.org/packages/cb/5a/e7d9e1e30d77e24c6a0053e3cbca0367700eb6c37750f098cb2b6ba7089f/py_file_type-1.1.0.tar.gz
+[2023-04-22 21:58:22] INFO root fetch - processPackages [eons]: executing diffoscope
+[2023-04-22 21:58:22] INFO root fetch - processPackages [eons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eons-2.4.0.tar.gz tmp/eons-2.5.0.tar.gz --markdown 20230422/e/eons/2.4.0-2.5.0/diff.md --exclude *.pyd
+[2023-04-22 21:58:22] INFO root fetch - processPackages [erscipcard]: executing diffoscope
+[2023-04-22 21:58:22] INFO root fetch - processPackages [erscipcard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/erscipcard-1.18.tar.gz tmp/erscipcard-1.18.1.tar.gz --markdown 20230422/e/erscipcard/1.18-1.18.1/diff.md --exclude *.pyd
+[2023-04-22 21:58:22] WARNING root fetch - processPackages [athena-ai]: Skipping package: exceeds size limit 16014836>=10485760
+[2023-04-22 21:58:22] INFO root fetch - main [MainThread]: End processing [athena-ai] error
+[2023-04-22 21:58:22] INFO root fetch - processPackages [py-file-type]: executing diffoscope
+[2023-04-22 21:58:22] INFO root fetch - processPackages [py-file-type]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_file_type-1.0.0.tar.gz tmp/py_file_type-1.1.0.tar.gz --markdown 20230422/p/py-file-type/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-22 21:58:23] INFO root fetch - main [MainThread]: End processing [fastapi-async-langchain]: success
+[2023-04-22 21:58:23] INFO root fetch - main [MainThread]: End processing [stashapp-tools]: success
+[2023-04-22 21:58:23] INFO root fetch - main [MainThread]: End processing [secure-package-template]: success
+[2023-04-22 21:58:23] INFO root fetch - main [MainThread]: End processing [vtece4564-gamelib]: success
+[2023-04-22 21:58:23] INFO root fetch - main [MainThread]: End processing [eons]: success
+[2023-04-22 21:58:23] INFO root fetch - main [MainThread]: End processing [py-file-type]: success
+[2023-04-22 21:58:24] INFO root fetch - main [MainThread]: End processing [python-project-structure]: success
+[2023-04-22 21:58:38] INFO root fetch - main [MainThread]: End processing [erscipcard]: success
+[2023-04-22 21:58:38] INFO root fetch - main [MainThread]: Store serial: [17816745]
