@@ -917,3 +917,27 @@
 [2023-04-22 01:56:49] INFO root fetch - main [MainThread]: End processing [pyudev]: success
 [2023-04-22 01:56:51] INFO root fetch - main [MainThread]: End processing [pytplot-mpl-temp]: success
 [2023-04-22 01:56:51] INFO root fetch - main [MainThread]: Store serial: [17809776]
+[2023-04-22 02:01:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17809776]
+[2023-04-22 02:01:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-22 02:01:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fluxrpc
+[2023-04-22 02:01:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fluxvault
+[2023-04-22 02:01:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spark-sql-to-sqlite
+[2023-04-22 02:01:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llama-cpp-python
+[2023-04-22 02:01:59] INFO root fetch - processPackages [fluxvault]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 02:01:59] INFO root fetch - processPackages [spark-sql-to-sqlite]: New version: [0.6] Old Version: [0.5]
+[2023-04-22 02:01:59] INFO root fetch - processPackages [fluxrpc]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 02:01:59] INFO root fetch - processPackages [llama-cpp-python]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 02:01:59] INFO root fetch - processPackages [fluxvault]: executing diffoscope
+[2023-04-22 02:01:59] INFO root fetch - processPackages [fluxvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxvault-0.9.8.tar.gz tmp/fluxvault-0.9.9.tar.gz --markdown 20230422/f/fluxvault/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 02:01:59] INFO root fetch - processPackages [fluxrpc]: executing diffoscope
+[2023-04-22 02:01:59] INFO root fetch - processPackages [fluxrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxrpc-0.9.8.tar.gz tmp/fluxrpc-0.9.9.tar.gz --markdown 20230422/f/fluxrpc/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 02:02:00] INFO root fetch - processPackages [spark-sql-to-sqlite]: Downloading https://files.pythonhosted.org/packages/ca/f6/bc78ddef69e25a5f20f4b409e05f487b21079706564a5982099eb880dea6/spark_sql_to_sqlite-0.6.tar.gz
+[2023-04-22 02:02:00] INFO root fetch - processPackages [spark-sql-to-sqlite]: executing diffoscope
+[2023-04-22 02:02:00] INFO root fetch - processPackages [spark-sql-to-sqlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spark_sql_to_sqlite-0.5.tar.gz tmp/spark_sql_to_sqlite-0.6.tar.gz --markdown 20230422/s/spark-sql-to-sqlite/0.5-0.6/diff.md --exclude *.pyd
+[2023-04-22 02:02:00] INFO root fetch - processPackages [llama-cpp-python]: executing diffoscope
+[2023-04-22 02:02:00] INFO root fetch - processPackages [llama-cpp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_cpp_python-0.1.8.tar.gz tmp/llama_cpp_python-0.1.9.tar.gz --markdown 20230422/l/llama-cpp-python/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 02:02:00] INFO root fetch - main [MainThread]: End processing [fluxvault]: success
+[2023-04-22 02:02:01] INFO root fetch - main [MainThread]: End processing [spark-sql-to-sqlite]: success
+[2023-04-22 02:02:01] INFO root fetch - main [MainThread]: End processing [fluxrpc]: success
+[2023-04-22 02:02:01] INFO root fetch - main [MainThread]: End processing [llama-cpp-python]: success
+[2023-04-22 02:02:01] INFO root fetch - main [MainThread]: Store serial: [17809789]
