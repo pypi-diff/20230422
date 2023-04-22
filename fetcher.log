@@ -5040,3 +5040,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 06:27:34] INFO root fetch - main [MainThread]: End processing [voice100-runtime]: success
 [2023-04-22 06:27:34] INFO root fetch - main [MainThread]: End processing [odoo12-addon-iot]: success
 [2023-04-22 06:27:34] INFO root fetch - main [MainThread]: Store serial: [17812123]
+[2023-04-22 06:32:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812123]
+[2023-04-22 06:32:43] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 06:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netron
+[2023-04-22 06:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypcapkit
+[2023-04-22 06:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-document-page-approval
+[2023-04-22 06:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pythonsite
+[2023-04-22 06:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: docformatter
+[2023-04-22 06:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pythonsite
+[2023-04-22 06:32:43] INFO root fetch - processPackages [netron]: New version: [6.8.3] Old Version: [6.8.2]
+[2023-04-22 06:32:43] INFO root fetch - processPackages [pypcapkit]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-04-22 06:32:43] INFO root fetch - processPackages [pythonsite]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 06:32:43] INFO root fetch - processPackages [pythonsite]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 06:32:43] INFO root fetch - processPackages [odoo-addon-document-page-approval]: New version: [16.0.1.1.0.1] Old Version: [16.0.1.1.0]
+[2023-04-22 06:32:43] INFO root fetch - processPackages [docformatter]: New version: [1.6.1] Old Version: [1.6.0]
+[2023-04-22 06:32:43] INFO root fetch - processPackages [netron]: executing diffoscope
+[2023-04-22 06:32:43] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-6.8.2-py3-none-any.whl.zip tmp/netron-6.8.3-py3-none-any.whl.zip --markdown 20230422/n/netron/6.8.2-6.8.3/diff.md --exclude *.pyd
+[2023-04-22 06:32:43] INFO root fetch - processPackages [pypcapkit]: executing diffoscope
+[2023-04-22 06:32:43] INFO root fetch - processPackages [pypcapkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypcapkit-1.0.0b8.tar.gz tmp/pypcapkit-1.0.0b9.tar.gz --markdown 20230422/p/pypcapkit/1.0.0b8-1.0.0b9/diff.md --exclude *.pyd
+[2023-04-22 06:32:43] INFO root fetch - processPackages [odoo-addon-document-page-approval]: executing diffoscope
+[2023-04-22 06:32:43] INFO root fetch - processPackages [odoo-addon-document-page-approval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_document_page_approval-16.0.1.1.0-py3-none-any.whl.zip tmp/odoo_addon_document_page_approval-16.0.1.1.0.1-py3-none-any.whl.zip --markdown 20230422/o/odoo-addon-document-page-approval/16.0.1.1.0-16.0.1.1.0.1/diff.md --exclude *.pyd
+[2023-04-22 06:32:43] INFO root fetch - processPackages [pythonsite]: Downloading https://files.pythonhosted.org/packages/cf/f1/b558f24fef181264145b4ab9599af1ee8644281374abef8bfe1c3ad8cfe8/pythonsite-0.0.1.tar.gz
+[2023-04-22 06:32:43] INFO root fetch - processPackages [pythonsite]: Downloading https://files.pythonhosted.org/packages/cf/f1/b558f24fef181264145b4ab9599af1ee8644281374abef8bfe1c3ad8cfe8/pythonsite-0.0.1.tar.gz
+[2023-04-22 06:32:43] INFO root fetch - processPackages [docformatter]: Downloading https://files.pythonhosted.org/packages/0f/d6/39b4b8711a69617dbaeeaf116880701879dbf3fd67b2fb2aa061b766d265/docformatter-1.6.0.tar.gz
+[2023-04-22 06:32:43] INFO root fetch - processPackages [docformatter]: Downloading https://files.pythonhosted.org/packages/ae/df/efc5a9334a4c99d27f2b8521950dafd81b03438d92d396115c5705129ced/docformatter-1.6.1.tar.gz
+[2023-04-22 06:32:43] INFO root fetch - processPackages [pythonsite]: Downloading https://files.pythonhosted.org/packages/d9/fc/7807134effb58ec6d49af2b4052b884679c2e3760bd029eb4e3ad9cb9ba5/pythonsite-0.0.2.tar.gz
+[2023-04-22 06:32:43] INFO root fetch - processPackages [pythonsite]: Downloading https://files.pythonhosted.org/packages/d9/fc/7807134effb58ec6d49af2b4052b884679c2e3760bd029eb4e3ad9cb9ba5/pythonsite-0.0.2.tar.gz
+[2023-04-22 06:32:43] INFO root fetch - processPackages [docformatter]: executing diffoscope
+[2023-04-22 06:32:43] INFO root fetch - processPackages [docformatter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docformatter-1.6.0.tar.gz tmp/docformatter-1.6.1.tar.gz --markdown 20230422/d/docformatter/1.6.0-1.6.1/diff.md --exclude *.pyd
+[2023-04-22 06:32:43] INFO root fetch - processPackages [pythonsite]: executing diffoscope
+[2023-04-22 06:32:43] INFO root fetch - processPackages [pythonsite]: executing diffoscope
+[2023-04-22 06:32:43] INFO root fetch - processPackages [pythonsite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythonsite-0.0.1.tar.gz tmp/pythonsite-0.0.2.tar.gz --markdown 20230422/p/pythonsite/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 06:32:43] INFO root fetch - processPackages [pythonsite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythonsite-0.0.1.tar.gz tmp/pythonsite-0.0.2.tar.gz --markdown 20230422/p/pythonsite/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 06:32:44] INFO root fetch - main [MainThread]: End processing [pythonsite]: success
+[2023-04-22 06:32:45] INFO root fetch - main [MainThread]: End processing [docformatter]: success
+[2023-04-22 06:32:45] INFO root fetch - main [MainThread]: End processing [pythonsite]: success
+[2023-04-22 06:32:45] INFO root fetch - main [MainThread]: End processing [odoo-addon-document-page-approval]: success
+[2023-04-22 06:32:47] INFO root fetch - main [MainThread]: End processing [pypcapkit]: success
+[2023-04-22 06:35:43] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
+[2023-04-22 06:35:43] INFO root fetch - main [MainThread]: End processing [netron] error
+[2023-04-22 06:35:43] INFO root fetch - main [MainThread]: Store serial: [17812143]
