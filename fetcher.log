@@ -7910,3 +7910,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 12:08:38] INFO root fetch - main [MainThread]: End processing [styledlogger]: success
 [2023-04-22 12:08:38] INFO root fetch - main [MainThread]: End processing [doc-transformers]: success
 [2023-04-22 12:08:38] INFO root fetch - main [MainThread]: Store serial: [17813772]
+[2023-04-22 12:13:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813772]
+[2023-04-22 12:13:46] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 12:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: printf-log-formatter
+[2023-04-22 12:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: voyager-cpu
+[2023-04-22 12:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: imp3
+[2023-04-22 12:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: instawow
+[2023-04-22 12:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sdkit
+[2023-04-22 12:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: consistent
+[2023-04-22 12:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: esprepomanager
+[2023-04-22 12:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: CirclesS3Storage
+[2023-04-22 12:13:46] WARNING root fetch - processPackages [voyager-cpu]: Skipping, unable to determine old version
+[2023-04-22 12:13:46] INFO root fetch - main [MainThread]: End processing [voyager-cpu] error
+[2023-04-22 12:13:46] INFO root fetch - processPackages [imp3]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 12:13:46] INFO root fetch - processPackages [printf-log-formatter]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-22 12:13:46] INFO root fetch - processPackages [sdkit]: New version: [1.0.9] Old Version: [1.0.81]
+[2023-04-22 12:13:46] INFO root fetch - processPackages [instawow]: New version: [2.2.0] Old Version: [2.1.1]
+[2023-04-22 12:13:46] WARNING root fetch - processPackages [consistent]: Skipping, unable to determine old version
+[2023-04-22 12:13:46] INFO root fetch - main [MainThread]: End processing [consistent] error
+[2023-04-22 12:13:46] INFO root fetch - processPackages [CirclesS3Storage]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-22 12:13:46] INFO root fetch - processPackages [esprepomanager]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-22 12:13:46] INFO root fetch - processPackages [CirclesS3Storage]: executing diffoscope
+[2023-04-22 12:13:46] INFO root fetch - processPackages [CirclesS3Storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CirclesS3Storage-0.0.2.tar.gz tmp/CirclesS3Storage-0.0.3.tar.gz --markdown 20230422/C/CirclesS3Storage/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-22 12:13:46] INFO root fetch - processPackages [imp3]: Downloading https://files.pythonhosted.org/packages/0b/68/5a3e182d45b95719b25bccf476a27bb8000552821c8e9d1ed9bf0cf06d76/imp3-0.1.0.tar.gz
+[2023-04-22 12:13:46] INFO root fetch - processPackages [printf-log-formatter]: Downloading https://files.pythonhosted.org/packages/f2/65/fe6a28f40954e37b43a06c8e92237ee9ca3c63c22f5975364b67699f3842/printf_log_formatter-0.1.0.tar.gz
+[2023-04-22 12:13:46] INFO root fetch - processPackages [sdkit]: Downloading https://files.pythonhosted.org/packages/09/c2/955b30db731ff1dc587cde25e51cc9ec2ce7964681ba5c2ddab2ee7d2d4c/sdkit-1.0.81.tar.gz
+[2023-04-22 12:13:46] INFO root fetch - processPackages [instawow]: Downloading https://files.pythonhosted.org/packages/00/6c/b57abe1cdcbc9773f69c86e7ac7fb991ed021cd922cda7aae4ac75f8d5ec/instawow-2.1.1.tar.gz
+[2023-04-22 12:13:46] INFO root fetch - processPackages [imp3]: Downloading https://files.pythonhosted.org/packages/f3/37/087a934d0b5dfd9ca1f152287351e6616a9cb5dd7c98c87b64e4be13b7b4/imp3-0.1.1.tar.gz
+[2023-04-22 12:13:46] INFO root fetch - processPackages [printf-log-formatter]: Downloading https://files.pythonhosted.org/packages/d2/f1/2e02b8e5b18dd044bbee537d315deabc1b6debadb21373724ade65b40c90/printf_log_formatter-0.2.0-py3-none-win_amd64.whl
+[2023-04-22 12:13:46] INFO root fetch - processPackages [esprepomanager]: Downloading https://files.pythonhosted.org/packages/6d/a8/cfda9702ad00a4ab940cf72400c754184931646f02edb4920e20990e3c75/esprepomanager-1.1.1.tar.gz
+[2023-04-22 12:13:46] INFO root fetch - processPackages [sdkit]: executing diffoscope
+[2023-04-22 12:13:46] INFO root fetch - processPackages [sdkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdkit-1.0.81.tar.gz tmp/sdkit-1.0.9.tar.gz --markdown 20230422/s/sdkit/1.0.81-1.0.9/diff.md --exclude *.pyd
+[2023-04-22 12:13:46] INFO root fetch - processPackages [imp3]: executing diffoscope
+[2023-04-22 12:13:46] INFO root fetch - processPackages [imp3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imp3-0.1.0.tar.gz tmp/imp3-0.1.1.tar.gz --markdown 20230422/i/imp3/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 12:13:47] INFO root fetch - processPackages [printf-log-formatter]: executing diffoscope
+[2023-04-22 12:13:47] INFO root fetch - processPackages [printf-log-formatter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/printf_log_formatter-0.1.0.tar.gz tmp/printf_log_formatter-0.2.0-py3-none-win_amd64.whl.zip --markdown 20230422/p/printf-log-formatter/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-22 12:13:47] INFO root fetch - processPackages [esprepomanager]: executing diffoscope
+[2023-04-22 12:13:47] INFO root fetch - processPackages [esprepomanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esprepomanager-1.1.0.tar.gz tmp/esprepomanager-1.1.1.tar.gz --markdown 20230422/e/esprepomanager/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-22 12:13:47] INFO root fetch - processPackages [instawow]: Downloading https://files.pythonhosted.org/packages/79/5e/5c63f127332c7af342a6ceb066021ba2d47e0c96641b10423e16f020e5ce/instawow-2.2.0.tar.gz
+[2023-04-22 12:13:47] INFO root fetch - processPackages [instawow]: executing diffoscope
+[2023-04-22 12:13:47] INFO root fetch - processPackages [instawow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/instawow-2.1.1.tar.gz tmp/instawow-2.2.0.tar.gz --markdown 20230422/i/instawow/2.1.1-2.2.0/diff.md --exclude *.pyd
+[2023-04-22 12:13:47] INFO root fetch - main [MainThread]: End processing [CirclesS3Storage]: success
+[2023-04-22 12:13:48] INFO root fetch - main [MainThread]: End processing [printf-log-formatter]: success
+[2023-04-22 12:13:48] INFO root fetch - main [MainThread]: End processing [esprepomanager]: success
+[2023-04-22 12:13:48] INFO root fetch - main [MainThread]: End processing [imp3]: success
+[2023-04-22 12:13:48] INFO root fetch - main [MainThread]: End processing [sdkit]: success
+[2023-04-22 12:13:51] INFO root fetch - main [MainThread]: End processing [instawow]: success
+[2023-04-22 12:13:51] INFO root fetch - main [MainThread]: Store serial: [17813811]
