@@ -4992,3 +4992,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 06:17:12] INFO root fetch - main [MainThread]: End processing [odoo-addon-helpdesk-mgmt]: success
 [2023-04-22 06:17:12] INFO root fetch - main [MainThread]: End processing [oaklib]: success
 [2023-04-22 06:17:12] INFO root fetch - main [MainThread]: Store serial: [17812091]
+[2023-04-22 06:22:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812091]
+[2023-04-22 06:22:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-22 06:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-hr-branch
+[2023-04-22 06:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-hr-contract-multi-job
+[2023-04-22 06:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addons-oca-hr
+[2023-04-22 06:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: loopgpt
+[2023-04-22 06:22:22] WARNING root fetch - processPackages [odoo-addon-hr-branch]: Skipping, unable to determine old version
+[2023-04-22 06:22:22] WARNING root fetch - processPackages [odoo-addon-hr-contract-multi-job]: Skipping, unable to determine old version
+[2023-04-22 06:22:22] INFO root fetch - main [MainThread]: End processing [odoo-addon-hr-branch] error
+[2023-04-22 06:22:22] INFO root fetch - main [MainThread]: End processing [odoo-addon-hr-contract-multi-job] error
+[2023-04-22 06:22:22] INFO root fetch - processPackages [odoo-addons-oca-hr]: New version: [16.0.20230418.0] Old Version: [16.0.20230220.1]
+[2023-04-22 06:22:22] INFO root fetch - processPackages [loopgpt]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 06:22:23] INFO root fetch - processPackages [odoo-addons-oca-hr]: executing diffoscope
+[2023-04-22 06:22:23] INFO root fetch - processPackages [odoo-addons-oca-hr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_hr-16.0.20230220.1-py3-none-any.whl.zip tmp/odoo_addons_oca_hr-16.0.20230418.0-py3-none-any.whl.zip --markdown 20230422/o/odoo-addons-oca-hr/16.0.20230220.1-16.0.20230418.0/diff.md --exclude *.pyd
+[2023-04-22 06:22:23] INFO root fetch - processPackages [loopgpt]: Downloading https://files.pythonhosted.org/packages/61/66/99c47e13b5d18407fb1bacf705dd1818fa0146ee32a0490722c87e8a822f/loopgpt-0.0.9.tar.gz
+[2023-04-22 06:22:23] INFO root fetch - processPackages [loopgpt]: executing diffoscope
+[2023-04-22 06:22:23] INFO root fetch - processPackages [loopgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loopgpt-0.0.8.tar.gz tmp/loopgpt-0.0.9.tar.gz --markdown 20230422/l/loopgpt/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 06:22:24] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-hr]: success
+[2023-04-22 06:22:24] INFO root fetch - main [MainThread]: End processing [loopgpt]: success
+[2023-04-22 06:22:24] INFO root fetch - main [MainThread]: Store serial: [17812105]
