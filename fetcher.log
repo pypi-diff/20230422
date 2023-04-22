@@ -6587,3 +6587,68 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 09:18:03] INFO root fetch - main [MainThread]: End processing [sharingiscaring]: success
 [2023-04-22 09:18:06] INFO root fetch - main [MainThread]: End processing [satcfdi]: success
 [2023-04-22 09:18:06] INFO root fetch - main [MainThread]: Store serial: [17812925]
+[2023-04-22 09:23:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812925]
+[2023-04-22 09:23:15] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-22 09:23:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dvinfo
+[2023-04-22 09:23:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coconut-develop
+[2023-04-22 09:23:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spiderx
+[2023-04-22 09:23:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ovos-intent-plugin-adapt
+[2023-04-22 09:23:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dvinfo
+[2023-04-22 09:23:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo13-addon-hr-timesheet-sheet
+[2023-04-22 09:23:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo12-addon-hr-timesheet-sheet
+[2023-04-22 09:23:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aligo
+[2023-04-22 09:23:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: odoo-addon-hr-timesheet-sheet
+[2023-04-22 09:23:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyiotown
+[2023-04-22 09:23:15] INFO root fetch - processPackages [spiderx]: New version: [1.8.9] Old Version: [1.8.2]
+[2023-04-22 09:23:15] WARNING root fetch - processPackages [ovos-intent-plugin-adapt]: Skipping, unable to determine old version
+[2023-04-22 09:23:15] INFO root fetch - processPackages [ovos-intent-plugin-adapt]: Start processing: raga-cli
+[2023-04-22 09:23:15] INFO root fetch - main [MainThread]: End processing [ovos-intent-plugin-adapt] error
+[2023-04-22 09:23:15] INFO root fetch - processPackages [coconut-develop]: New version: [3.0.0a0.dev9] Old Version: [3.0.0a0.dev8]
+[2023-04-22 09:23:15] INFO root fetch - processPackages [pyiotown]: New version: [0.4.3.dev7] Old Version: [0.4.3.dev6]
+[2023-04-22 09:23:15] INFO root fetch - processPackages [raga-cli]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-22 09:23:15] INFO root fetch - processPackages [dvinfo]: New version: [0.1.1] Old Version: [0.1]
+[2023-04-22 09:23:15] INFO root fetch - processPackages [dvinfo]: New version: [0.1.1] Old Version: [0.1]
+[2023-04-22 09:23:15] INFO root fetch - processPackages [aligo]: New version: [5.5.9] Old Version: [5.5.8]
+[2023-04-22 09:23:15] INFO root fetch - processPackages [pyiotown]: executing diffoscope
+[2023-04-22 09:23:15] INFO root fetch - processPackages [odoo-addon-hr-timesheet-sheet]: New version: [15.0.1.1.0.9] Old Version: [15.0.1.1.0.8]
+[2023-04-22 09:23:15] INFO root fetch - processPackages [pyiotown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyiotown-0.4.3.dev6-py3-none-any.whl.zip tmp/pyiotown-0.4.3.dev7-py3-none-any.whl.zip --markdown 20230422/p/pyiotown/0.4.3.dev6-0.4.3.dev7/diff.md --exclude *.pyd
+[2023-04-22 09:23:15] INFO root fetch - processPackages [odoo13-addon-hr-timesheet-sheet]: New version: [13.0.1.2.1.dev9] Old Version: [13.0.1.2.1.dev8]
+[2023-04-22 09:23:15] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet]: New version: [12.0.3.7.6.99.dev9] Old Version: [12.0.3.7.6.99.dev8]
+[2023-04-22 09:23:15] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2023-04-22 09:23:15] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.0.0a0.dev8.tar.gz tmp/coconut-develop-3.0.0a0.dev9.tar.gz --markdown 20230422/c/coconut-develop/3.0.0a0.dev8-3.0.0a0.dev9/diff.md --exclude *.pyd
+[2023-04-22 09:23:15] INFO root fetch - processPackages [spiderx]: executing diffoscope
+[2023-04-22 09:23:15] INFO root fetch - processPackages [spiderx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderx-1.8.2.tar.gz tmp/spiderx-1.8.9.tar.gz --markdown 20230422/s/spiderx/1.8.2-1.8.9/diff.md --exclude *.pyd
+[2023-04-22 09:23:15] INFO root fetch - processPackages [dvinfo]: Downloading https://files.pythonhosted.org/packages/2a/7f/a6cdadc918e22e698c207bb92920a61d981f3be5578ad920505ac7d21556/dvinfo-0.1.tar.gz
+[2023-04-22 09:23:15] INFO root fetch - processPackages [dvinfo]: Downloading https://files.pythonhosted.org/packages/2a/7f/a6cdadc918e22e698c207bb92920a61d981f3be5578ad920505ac7d21556/dvinfo-0.1.tar.gz
+[2023-04-22 09:23:15] INFO root fetch - processPackages [raga-cli]: Downloading https://files.pythonhosted.org/packages/da/3c/fcf34d8fe4e619da0511076ca75d9e85a560e4638e76eb2b185cf15ef7fd/raga-cli-0.0.8.tar.gz
+[2023-04-22 09:23:15] INFO root fetch - processPackages [aligo]: Downloading https://files.pythonhosted.org/packages/ac/ff/031aa97e3a50cf587203e2c352d14e083062b911cd81563cfb445beca77d/aligo-5.5.8.tar.gz
+[2023-04-22 09:23:15] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet]: Downloading https://files.pythonhosted.org/packages/ad/5e/1bdb9ec0c613514d21f64c33f22ea3559bb0a34656379a2c6f2b07c2db78/odoo12_addon_hr_timesheet_sheet-12.0.3.7.6.99.dev8-py3-none-any.whl
+[2023-04-22 09:23:16] INFO root fetch - processPackages [raga-cli]: executing diffoscope
+[2023-04-22 09:23:16] INFO root fetch - processPackages [raga-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raga-cli-0.0.7.tar.gz tmp/raga-cli-0.0.8.tar.gz --markdown 20230422/r/raga-cli/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-22 09:23:16] INFO root fetch - processPackages [odoo-addon-hr-timesheet-sheet]: executing diffoscope
+[2023-04-22 09:23:16] INFO root fetch - processPackages [odoo-addon-hr-timesheet-sheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_hr_timesheet_sheet-15.0.1.1.0.8-py3-none-any.whl.zip tmp/odoo_addon_hr_timesheet_sheet-15.0.1.1.0.9-py3-none-any.whl.zip --markdown 20230422/o/odoo-addon-hr-timesheet-sheet/15.0.1.1.0.8-15.0.1.1.0.9/diff.md --exclude *.pyd
+[2023-04-22 09:23:16] INFO root fetch - processPackages [odoo13-addon-hr-timesheet-sheet]: executing diffoscope
+[2023-04-22 09:23:16] INFO root fetch - processPackages [odoo13-addon-hr-timesheet-sheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_hr_timesheet_sheet-13.0.1.2.1.dev8-py3-none-any.whl.zip tmp/odoo13_addon_hr_timesheet_sheet-13.0.1.2.1.dev9-py3-none-any.whl.zip --markdown 20230422/o/odoo13-addon-hr-timesheet-sheet/13.0.1.2.1.dev8-13.0.1.2.1.dev9/diff.md --exclude *.pyd
+[2023-04-22 09:23:16] INFO root fetch - processPackages [dvinfo]: Downloading https://files.pythonhosted.org/packages/fe/89/a7f777d16d9714082062fa8c3418c3ce41fb7096a2f54cccaa9c49c5bd08/dvinfo-0.1.1.tar.gz
+[2023-04-22 09:23:16] INFO root fetch - processPackages [dvinfo]: Downloading https://files.pythonhosted.org/packages/fe/89/a7f777d16d9714082062fa8c3418c3ce41fb7096a2f54cccaa9c49c5bd08/dvinfo-0.1.1.tar.gz
+[2023-04-22 09:23:16] INFO root fetch - processPackages [aligo]: Downloading https://files.pythonhosted.org/packages/fa/04/05f3c9f676a1692655a4de2ed2743934d80a7c1e40bc042f99c5c32f64e6/aligo-5.5.9.tar.gz
+[2023-04-22 09:23:16] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet]: Downloading https://files.pythonhosted.org/packages/c5/95/d7ac4d0bb78705709049b242708f10445917dee221ab1d2dba91d5f69c84/odoo12_addon_hr_timesheet_sheet-12.0.3.7.6.99.dev9-py3-none-any.whl
+[2023-04-22 09:23:16] INFO root fetch - processPackages [dvinfo]: executing diffoscope
+[2023-04-22 09:23:16] INFO root fetch - processPackages [dvinfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvinfo-0.1.tar.gz tmp/dvinfo-0.1.1.tar.gz --markdown 20230422/d/dvinfo/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 09:23:16] INFO root fetch - processPackages [dvinfo]: executing diffoscope
+[2023-04-22 09:23:16] INFO root fetch - processPackages [dvinfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvinfo-0.1.tar.gz tmp/dvinfo-0.1.1.tar.gz --markdown 20230422/d/dvinfo/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 09:23:16] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet]: executing diffoscope
+[2023-04-22 09:23:16] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_hr_timesheet_sheet-12.0.3.7.6.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_hr_timesheet_sheet-12.0.3.7.6.99.dev9-py3-none-any.whl.zip --markdown 20230422/o/odoo12-addon-hr-timesheet-sheet/12.0.3.7.6.99.dev8-12.0.3.7.6.99.dev9/diff.md --exclude *.pyd
+[2023-04-22 09:23:16] INFO root fetch - processPackages [aligo]: executing diffoscope
+[2023-04-22 09:23:16] INFO root fetch - processPackages [aligo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aligo-5.5.8.tar.gz tmp/aligo-5.5.9.tar.gz --markdown 20230422/a/aligo/5.5.8-5.5.9/diff.md --exclude *.pyd
+[2023-04-22 09:23:17] INFO root fetch - main [MainThread]: End processing [pyiotown]: success
+[2023-04-22 09:23:17] INFO root fetch - main [MainThread]: End processing [raga-cli]: success
+[2023-04-22 09:23:17] INFO root fetch - main [MainThread]: End processing [dvinfo]: success
+[2023-04-22 09:23:17] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
+[2023-04-22 09:23:17] INFO root fetch - main [MainThread]: End processing [dvinfo]: success
+[2023-04-22 09:23:17] INFO root fetch - main [MainThread]: End processing [spiderx]: success
+[2023-04-22 09:23:18] INFO root fetch - main [MainThread]: End processing [odoo-addon-hr-timesheet-sheet]: success
+[2023-04-22 09:23:18] INFO root fetch - main [MainThread]: End processing [odoo13-addon-hr-timesheet-sheet]: success
+[2023-04-22 09:23:18] INFO root fetch - main [MainThread]: End processing [aligo]: success
+[2023-04-22 09:23:18] INFO root fetch - main [MainThread]: End processing [odoo12-addon-hr-timesheet-sheet]: success
+[2023-04-22 09:23:18] INFO root fetch - main [MainThread]: Store serial: [17812957]
