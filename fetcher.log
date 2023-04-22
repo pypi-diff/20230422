@@ -8535,3 +8535,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 13:24:37] INFO root fetch - main [MainThread]: End processing [bigdl-friesian-spark2]: success
 [2023-04-22 13:24:38] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2023-04-22 13:24:38] INFO root fetch - main [MainThread]: Store serial: [17814131]
+[2023-04-22 13:29:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814131]
+[2023-04-22 13:29:48] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-22 13:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: image-to-arduino
+[2023-04-22 13:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: image-to-arduino
+[2023-04-22 13:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-runcode
+[2023-04-22 13:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchx-nightly
+[2023-04-22 13:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torchserve-nightly
+[2023-04-22 13:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torch-model-archiver-nightly
+[2023-04-22 13:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torch-workflow-archiver-nightly
+[2023-04-22 13:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: torchrec-nightly
+[2023-04-22 13:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fastapi-mvc-framework
+[2023-04-22 13:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: affine-transform
+[2023-04-22 13:29:48] INFO root fetch - processPackages [image-to-arduino]: New version: [1.0.1] Old Version: [1.0]
+[2023-04-22 13:29:48] INFO root fetch - processPackages [image-to-arduino]: New version: [1.0.1] Old Version: [1.0]
+[2023-04-22 13:29:48] INFO root fetch - processPackages [affine-transform]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-22 13:29:48] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-22 13:29:48] INFO root fetch - processPackages [fastapi-mvc-framework]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-04-22 13:29:48] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-22 13:29:48] INFO root fetch - processPackages [torchserve-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-22 13:29:48] INFO root fetch - processPackages [torchrec-nightly]: New version: [2023.4.9] Old Version: [2023.4.7]
+[2023-04-22 13:29:48] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-22 13:29:48] WARNING root fetch - processPackages [nonebot-plugin-runcode]: Skipping, unable to determine old version
+[2023-04-22 13:29:48] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-runcode] error
+[2023-04-22 13:29:48] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/00/82/319f3c998c1b886c648e7560fce0ad6d68fa06b6b8807405ce7adbe77519/torchserve_nightly-2023.4.8-py3-none-any.whl
+[2023-04-22 13:29:48] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2023-04-22 13:29:48] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2023.4.8-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2023.4.9-py3-none-any.whl.zip --markdown 20230422/t/torch-model-archiver-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-22 13:29:48] INFO root fetch - processPackages [torchrec-nightly]: executing diffoscope
+[2023-04-22 13:29:48] INFO root fetch - processPackages [torchrec-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrec_nightly-2023.4.7-py39-none-any.whl.zip tmp/torchrec_nightly-2023.4.9-py39-none-any.whl.zip --markdown 20230422/t/torchrec-nightly/2023.4.7-2023.4.9/diff.md --exclude *.pyd
+[2023-04-22 13:29:48] INFO root fetch - processPackages [image-to-arduino]: Downloading https://files.pythonhosted.org/packages/a7/00/5d39880228cfb156fe45580cf3351826cebafb733d221bf8beff23b4c708/image_to_arduino-1.0.tar.gz
+[2023-04-22 13:29:48] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-04-22 13:29:48] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.4.8-py3-none-any.whl.zip tmp/torchx_nightly-2023.4.9-py3-none-any.whl.zip --markdown 20230422/t/torchx-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-22 13:29:48] INFO root fetch - processPackages [image-to-arduino]: Downloading https://files.pythonhosted.org/packages/a7/00/5d39880228cfb156fe45580cf3351826cebafb733d221bf8beff23b4c708/image_to_arduino-1.0.tar.gz
+[2023-04-22 13:29:48] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2023-04-22 13:29:48] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2023.4.8-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2023.4.9-py3-none-any.whl.zip --markdown 20230422/t/torch-workflow-archiver-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-22 13:29:48] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 23695640>=10485760
+[2023-04-22 13:29:48] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2023-04-22 13:29:48] INFO root fetch - processPackages [affine-transform]: Downloading https://files.pythonhosted.org/packages/96/f5/12137b89a200064bfc37d02ff8a031af315870f0a5e40e804dca2fe440d9/affine_transform-0.2.9.tar.gz
+[2023-04-22 13:29:48] INFO root fetch - processPackages [image-to-arduino]: Downloading https://files.pythonhosted.org/packages/44/7c/6bda34d661558542b34540a5f61b57e0e88b78cfa9614abb8e20f1a143e2/image_to_arduino-1.0.1.tar.gz
+[2023-04-22 13:29:48] INFO root fetch - processPackages [image-to-arduino]: Downloading https://files.pythonhosted.org/packages/44/7c/6bda34d661558542b34540a5f61b57e0e88b78cfa9614abb8e20f1a143e2/image_to_arduino-1.0.1.tar.gz
+[2023-04-22 13:29:48] INFO root fetch - processPackages [fastapi-mvc-framework]: Downloading https://files.pythonhosted.org/packages/0a/16/a6b3e6173f6fcabcd3597ed4877a2042ed73bd8527d7775ae661e9e4aa1e/fastapi_mvc_framework-1.2.4.tar.gz
+[2023-04-22 13:29:49] INFO root fetch - processPackages [affine-transform]: executing diffoscope
+[2023-04-22 13:29:49] INFO root fetch - processPackages [affine-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/affine_transform-0.2.8.tar.gz tmp/affine_transform-0.2.9.tar.gz --markdown 20230422/a/affine-transform/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-22 13:29:49] INFO root fetch - processPackages [image-to-arduino]: executing diffoscope
+[2023-04-22 13:29:49] INFO root fetch - processPackages [image-to-arduino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_to_arduino-1.0.tar.gz tmp/image_to_arduino-1.0.1.tar.gz --markdown 20230422/i/image-to-arduino/1.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 13:29:49] INFO root fetch - processPackages [image-to-arduino]: executing diffoscope
+[2023-04-22 13:29:49] INFO root fetch - processPackages [image-to-arduino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_to_arduino-1.0.tar.gz tmp/image_to_arduino-1.0.1.tar.gz --markdown 20230422/i/image-to-arduino/1.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 13:29:49] INFO root fetch - processPackages [fastapi-mvc-framework]: executing diffoscope
+[2023-04-22 13:29:49] INFO root fetch - processPackages [fastapi-mvc-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_mvc_framework-1.2.3.tar.gz tmp/fastapi_mvc_framework-1.2.4.tar.gz --markdown 20230422/f/fastapi-mvc-framework/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-04-22 13:29:49] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2023-04-22 13:29:49] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2023-04-22 13:29:50] INFO root fetch - main [MainThread]: End processing [image-to-arduino]: success
+[2023-04-22 13:29:50] INFO root fetch - main [MainThread]: End processing [image-to-arduino]: success
+[2023-04-22 13:29:50] INFO root fetch - main [MainThread]: End processing [fastapi-mvc-framework]: success
+[2023-04-22 13:29:50] INFO root fetch - main [MainThread]: End processing [torchrec-nightly]: success
+[2023-04-22 13:29:50] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2023-04-22 13:29:54] INFO root fetch - main [MainThread]: End processing [affine-transform]: success
+[2023-04-22 13:29:54] INFO root fetch - main [MainThread]: Store serial: [17814164]
