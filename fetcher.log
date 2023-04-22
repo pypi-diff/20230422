@@ -12565,3 +12565,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 20:47:54] INFO root fetch - main [MainThread]: End processing [i2]: success
 [2023-04-22 20:47:55] INFO root fetch - main [MainThread]: End processing [gitblog2]: success
 [2023-04-22 20:47:55] INFO root fetch - main [MainThread]: Store serial: [17816479]
+[2023-04-22 20:53:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816479]
+[2023-04-22 20:53:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-22 20:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchgating
+[2023-04-22 20:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: db-components
+[2023-04-22 20:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: leuci-pol
+[2023-04-22 20:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openpy-dsse
+[2023-04-22 20:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: AeroSandbox
+[2023-04-22 20:53:04] INFO root fetch - processPackages [torchgating]: New version: [0.1.2a0] Old Version: [0.1.1a0]
+[2023-04-22 20:53:04] WARNING root fetch - processPackages [db-components]: Skipping, unable to determine old version
+[2023-04-22 20:53:04] INFO root fetch - main [MainThread]: End processing [db-components] error
+[2023-04-22 20:53:04] INFO root fetch - processPackages [AeroSandbox]: New version: [4.0.7] Old Version: [4.0.6]
+[2023-04-22 20:53:04] INFO root fetch - processPackages [openpy-dsse]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-22 20:53:04] INFO root fetch - processPackages [leuci-pol]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 20:53:05] INFO root fetch - processPackages [torchgating]: executing diffoscope
+[2023-04-22 20:53:05] INFO root fetch - processPackages [torchgating]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchgating-0.1.1a0.tar.gz tmp/torchgating-0.1.2a0.tar.gz --markdown 20230422/t/torchgating/0.1.1a0-0.1.2a0/diff.md --exclude *.pyd
+[2023-04-22 20:53:05] INFO root fetch - processPackages [openpy-dsse]: Downloading https://files.pythonhosted.org/packages/d8/6c/01e565265603c7ca433a4551880d87facc70d674a4b41fa73c26b953964d/openpy_dsse-0.1.1.tar.gz
+[2023-04-22 20:53:05] INFO root fetch - processPackages [leuci-pol]: Downloading https://files.pythonhosted.org/packages/5f/d1/4957f96d594b9f52a647954d2f395b95a9f663e993976b1dd95ca28695dd/leuci-pol-0.0.8.tar.gz
+[2023-04-22 20:53:05] INFO root fetch - processPackages [AeroSandbox]: Downloading https://files.pythonhosted.org/packages/fa/df/7e23adac57cb649d8b019d4e82e14f2b24a204c4281bdc4b5406bc9c5719/AeroSandbox-4.0.6.tar.gz
+[2023-04-22 20:53:05] INFO root fetch - processPackages [openpy-dsse]: Downloading https://files.pythonhosted.org/packages/99/0a/124b1a38de8f9e8d13c039fed113acdb572163601733717d4d736e25a5b2/openpy_dsse-0.1.2.tar.gz
+[2023-04-22 20:53:05] INFO root fetch - processPackages [leuci-pol]: Downloading https://files.pythonhosted.org/packages/ba/52/0e8b23909efc0e5b7a78f5704e0a10943de0379212ca92d48c2feb9607d8/leuci-pol-0.0.9.tar.gz
+[2023-04-22 20:53:05] INFO root fetch - processPackages [openpy-dsse]: executing diffoscope
+[2023-04-22 20:53:05] INFO root fetch - processPackages [openpy-dsse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openpy_dsse-0.1.1.tar.gz tmp/openpy_dsse-0.1.2.tar.gz --markdown 20230422/o/openpy-dsse/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-22 20:53:05] INFO root fetch - processPackages [leuci-pol]: executing diffoscope
+[2023-04-22 20:53:05] INFO root fetch - processPackages [leuci-pol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-pol-0.0.8.tar.gz tmp/leuci-pol-0.0.9.tar.gz --markdown 20230422/l/leuci-pol/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 20:53:05] INFO root fetch - processPackages [AeroSandbox]: Downloading https://files.pythonhosted.org/packages/cc/51/511690f9b6a1b548c174fd1e298d8dec76ee6512c8298c4ad2882d83dba9/AeroSandbox-4.0.7.tar.gz
+[2023-04-22 20:53:05] INFO root fetch - processPackages [AeroSandbox]: executing diffoscope
+[2023-04-22 20:53:05] INFO root fetch - processPackages [AeroSandbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AeroSandbox-4.0.6.tar.gz tmp/AeroSandbox-4.0.7.tar.gz --markdown 20230422/A/AeroSandbox/4.0.6-4.0.7/diff.md --exclude *.pyd
+[2023-04-22 20:53:06] INFO root fetch - main [MainThread]: End processing [torchgating]: success
+[2023-04-22 20:53:06] INFO root fetch - main [MainThread]: End processing [leuci-pol]: success
+[2023-04-22 20:53:07] INFO root fetch - main [MainThread]: End processing [openpy-dsse]: success
+[2023-04-22 20:53:40] INFO root fetch - main [MainThread]: End processing [AeroSandbox]: success
+[2023-04-22 20:53:40] INFO root fetch - main [MainThread]: Store serial: [17816496]
