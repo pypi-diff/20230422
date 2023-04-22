@@ -1819,3 +1819,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 03:05:23] INFO root fetch - main [MainThread]: End processing [eppy3000]: success
 [2023-04-22 03:05:24] INFO root fetch - main [MainThread]: End processing [eelbrain]: success
 [2023-04-22 03:05:24] INFO root fetch - main [MainThread]: Store serial: [17810241]
+[2023-04-22 03:10:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17810241]
+[2023-04-22 03:10:32] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 03:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-workshop
+[2023-04-22 03:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: athena-ai
+[2023-04-22 03:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: binance-historical-data
+[2023-04-22 03:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: liftcord
+[2023-04-22 03:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wsiserver
+[2023-04-22 03:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-sops-secrets
+[2023-04-22 03:10:32] INFO root fetch - processPackages [ovos-workshop]: New version: [0.0.9a1] Old Version: [0.0.9]
+[2023-04-22 03:10:32] INFO root fetch - processPackages [liftcord]: New version: [7.1] Old Version: [25.7]
+[2023-04-22 03:10:32] WARNING root fetch - processPackages [athena-ai]: Skipping, unable to determine old version
+[2023-04-22 03:10:32] INFO root fetch - main [MainThread]: End processing [athena-ai] error
+[2023-04-22 03:10:32] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-22 03:10:32] INFO root fetch - processPackages [ovos-workshop]: executing diffoscope
+[2023-04-22 03:10:32] INFO root fetch - processPackages [ovos-workshop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_workshop-0.0.9-py3-none-any.whl.zip tmp/ovos_workshop-0.0.9a1-py3-none-any.whl.zip --markdown 20230422/o/ovos-workshop/0.0.9-0.0.9a1/diff.md --exclude *.pyd
+[2023-04-22 03:10:32] WARNING root fetch - processPackages [wsiserver]: Skipping, unable to determine old version
+[2023-04-22 03:10:32] INFO root fetch - main [MainThread]: End processing [wsiserver] error
+[2023-04-22 03:10:32] INFO root fetch - processPackages [binance-historical-data]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 03:10:32] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-04-22 03:10:32] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.8.tar.gz tmp/cdk-sops-secrets-1.2.9.tar.gz --markdown 20230422/c/cdk-sops-secrets/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-22 03:10:32] INFO root fetch - processPackages [liftcord]: Downloading https://files.pythonhosted.org/packages/ea/8b/8257bc1a154cdfc71d4ba516d519e2f83ea062dac13f9601ff379197acfd/liftcord-25.7.tar.gz
+[2023-04-22 03:10:33] INFO root fetch - processPackages [liftcord]: executing diffoscope
+[2023-04-22 03:10:33] INFO root fetch - processPackages [liftcord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liftcord-25.7.tar.gz tmp/liftcord-7.1.tar.gz --markdown 20230422/l/liftcord/25.7-7.1/diff.md --exclude *.pyd
+[2023-04-22 03:10:33] INFO root fetch - processPackages [binance-historical-data]: executing diffoscope
+[2023-04-22 03:10:33] INFO root fetch - processPackages [binance-historical-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binance_historical_data-0.1.8.tar.gz tmp/binance_historical_data-0.1.9.tar.gz --markdown 20230422/b/binance-historical-data/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 03:10:33] INFO root fetch - main [MainThread]: End processing [ovos-workshop]: success
+[2023-04-22 03:10:34] INFO root fetch - main [MainThread]: End processing [binance-historical-data]: success
+[2023-04-22 03:10:34] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
+[2023-04-22 03:10:34] INFO root fetch - main [MainThread]: End processing [liftcord]: success
+[2023-04-22 03:10:34] INFO root fetch - main [MainThread]: Store serial: [17810258]
