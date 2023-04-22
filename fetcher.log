@@ -8895,3 +8895,68 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 14:11:46] INFO root fetch - main [MainThread]: End processing [fmdt-python]: success
 [2023-04-22 14:12:07] INFO root fetch - main [MainThread]: End processing [django-localflavor]: success
 [2023-04-22 14:12:07] INFO root fetch - main [MainThread]: Store serial: [17814346]
+[2023-04-22 14:17:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814346]
+[2023-04-22 14:17:18] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-22 14:17:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: finstmt
+[2023-04-22 14:17:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ResponsePrediction
+[2023-04-22 14:17:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deutschebahn
+[2023-04-22 14:17:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: foursight-core
+[2023-04-22 14:17:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: czech-workdays-holidays
+[2023-04-22 14:17:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pytorch-optimizer
+[2023-04-22 14:17:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: z4d-certified-devices
+[2023-04-22 14:17:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: qtaf
+[2023-04-22 14:17:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: notpy
+[2023-04-22 14:17:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: akshare
+[2023-04-22 14:17:18] WARNING root fetch - processPackages [ResponsePrediction]: Skipping, unable to determine old version
+[2023-04-22 14:17:18] INFO root fetch - processPackages [ResponsePrediction]: Start processing: pyHRM
+[2023-04-22 14:17:18] INFO root fetch - processPackages [deutschebahn]: New version: [1.3.0] Old Version: [1.2.2]
+[2023-04-22 14:17:18] INFO root fetch - main [MainThread]: End processing [ResponsePrediction] error
+[2023-04-22 14:17:18] INFO root fetch - processPackages [finstmt]: New version: [1.4.0] Old Version: [1.3.0]
+[2023-04-22 14:17:18] INFO root fetch - processPackages [notpy]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-22 14:17:18] INFO root fetch - processPackages [qtaf]: New version: [5.6.1] Old Version: [5.6.0]
+[2023-04-22 14:17:18] INFO root fetch - processPackages [pytorch-optimizer]: New version: [2.6.1] Old Version: [2.6.0]
+[2023-04-22 14:17:18] INFO root fetch - processPackages [czech-workdays-holidays]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-22 14:17:18] INFO root fetch - processPackages [z4d-certified-devices]: New version: [2.51] Old Version: [2.50]
+[2023-04-22 14:17:18] WARNING root fetch - processPackages [pyHRM]: Skipping, unable to determine old version
+[2023-04-22 14:17:18] INFO root fetch - main [MainThread]: End processing [pyHRM] error
+[2023-04-22 14:17:18] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.2b1] Old Version: [4.0.0]
+[2023-04-22 14:17:18] INFO root fetch - processPackages [akshare]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-22 14:17:18] INFO root fetch - processPackages [deutschebahn]: Downloading https://files.pythonhosted.org/packages/88/41/af6fef5b8d2a1d46dae7b113c82e55fcca847d1b9aba4e7b1ab0b242889b/deutschebahn-1.2.2.tar.gz
+[2023-04-22 14:17:18] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/67/e1/8522399f125ac09bbca6660db9c5a363c73cfcce658e9bf4d5db56b1c4f6/foursight_core-4.0.0.tar.gz
+[2023-04-22 14:17:18] INFO root fetch - processPackages [pytorch-optimizer]: Downloading https://files.pythonhosted.org/packages/f2/28/257a65fef694095042bc87b473a44a0fab6a58daf051267b8f83ab6382ee/pytorch_optimizer-2.6.1.tar.gz
+[2023-04-22 14:17:18] INFO root fetch - processPackages [notpy]: Downloading https://files.pythonhosted.org/packages/d9/7c/27dca4beca4242db777a8f49c47f7fc4b588b90aafec3597d89776ed74fe/notpy-0.0.4.tar.gz
+[2023-04-22 14:17:18] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/8d/c7/ba562b3fafde36926db8d3c1812071ae6479a8e292dd6ff32636c5b3065a/z4d-certified-devices-2.51.tar.gz
+[2023-04-22 14:17:18] INFO root fetch - processPackages [czech-workdays-holidays]: Downloading https://files.pythonhosted.org/packages/8a/6f/8853bc2e6f16d94f984c482eb8239dccc51e7004638368565fc67e02ac27/czech_workdays_holidays-0.1.3.tar.gz
+[2023-04-22 14:17:19] INFO root fetch - processPackages [qtaf]: Downloading https://files.pythonhosted.org/packages/52/41/94ce9f552e5c19f0091ed537564fed297474f46a35b6791bc61772b3c311/qtaf-5.6.1.tar.gz
+[2023-04-22 14:17:19] INFO root fetch - processPackages [pytorch-optimizer]: executing diffoscope
+[2023-04-22 14:17:19] INFO root fetch - processPackages [pytorch-optimizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch_optimizer-2.6.0.tar.gz tmp/pytorch_optimizer-2.6.1.tar.gz --markdown 20230422/p/pytorch-optimizer/2.6.0-2.6.1/diff.md --exclude *.pyd
+[2023-04-22 14:17:19] INFO root fetch - processPackages [deutschebahn]: Downloading https://files.pythonhosted.org/packages/ff/96/1512b75075f62e5932000b2a5ab00147fd90c7a7a3c14ae20ac2afb6eb7f/deutschebahn-1.3.0.tar.gz
+[2023-04-22 14:17:19] INFO root fetch - processPackages [finstmt]: Downloading https://files.pythonhosted.org/packages/29/88/9e41f33b9b6fe3332dcc2176e5734780b92c84a4708542feacd92761f22e/finstmt-1.3.0.tar.gz
+[2023-04-22 14:17:19] INFO root fetch - processPackages [notpy]: executing diffoscope
+[2023-04-22 14:17:19] INFO root fetch - processPackages [czech-workdays-holidays]: executing diffoscope
+[2023-04-22 14:17:19] INFO root fetch - processPackages [notpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notpy-0.0.3.tar.gz tmp/notpy-0.0.4.tar.gz --markdown 20230422/n/notpy/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-22 14:17:19] INFO root fetch - processPackages [czech-workdays-holidays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czech_workdays_holidays-0.1.2.tar.gz tmp/czech_workdays_holidays-0.1.3.tar.gz --markdown 20230422/c/czech-workdays-holidays/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-22 14:17:19] INFO root fetch - processPackages [z4d-certified-devices]: executing diffoscope
+[2023-04-22 14:17:19] INFO root fetch - processPackages [z4d-certified-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z4d-certified-devices-2.50.tar.gz tmp/z4d-certified-devices-2.51.tar.gz --markdown 20230422/z/z4d-certified-devices/2.50-2.51/diff.md --exclude *.pyd
+[2023-04-22 14:17:19] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/fd/e0/c37309b90a1ba2b6221059debca57fda9c79e4f199309cac7e1ef1a07781/foursight_core-4.1.0.2b1.tar.gz
+[2023-04-22 14:17:19] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2023-04-22 14:17:19] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.8.tar.gz tmp/akshare-1.9.9.tar.gz --markdown 20230422/a/akshare/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-22 14:17:19] INFO root fetch - processPackages [qtaf]: executing diffoscope
+[2023-04-22 14:17:19] INFO root fetch - processPackages [qtaf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtaf-5.6.0.tar.gz tmp/qtaf-5.6.1.tar.gz --markdown 20230422/q/qtaf/5.6.0-5.6.1/diff.md --exclude *.pyd
+[2023-04-22 14:17:19] INFO root fetch - processPackages [deutschebahn]: executing diffoscope
+[2023-04-22 14:17:19] INFO root fetch - processPackages [deutschebahn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deutschebahn-1.2.2.tar.gz tmp/deutschebahn-1.3.0.tar.gz --markdown 20230422/d/deutschebahn/1.2.2-1.3.0/diff.md --exclude *.pyd
+[2023-04-22 14:17:19] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 14:17:19] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.0.0.tar.gz tmp/foursight_core-4.1.0.2b1.tar.gz --markdown 20230422/f/foursight-core/4.0.0-4.1.0.2b1/diff.md --exclude *.pyd
+[2023-04-22 14:17:19] INFO root fetch - processPackages [finstmt]: Downloading https://files.pythonhosted.org/packages/cf/58/db6797ccb2e0e03357c9e2b36ea308dc01b3b86acece1e2545921a22efc4/finstmt-1.4.0.tar.gz
+[2023-04-22 14:17:19] INFO root fetch - processPackages [finstmt]: executing diffoscope
+[2023-04-22 14:17:19] INFO root fetch - processPackages [finstmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finstmt-1.3.0.tar.gz tmp/finstmt-1.4.0.tar.gz --markdown 20230422/f/finstmt/1.3.0-1.4.0/diff.md --exclude *.pyd
+[2023-04-22 14:17:20] INFO root fetch - main [MainThread]: End processing [notpy]: success
+[2023-04-22 14:17:20] INFO root fetch - main [MainThread]: End processing [czech-workdays-holidays]: success
+[2023-04-22 14:17:20] INFO root fetch - main [MainThread]: End processing [deutschebahn]: success
+[2023-04-22 14:17:21] INFO root fetch - main [MainThread]: End processing [qtaf]: success
+[2023-04-22 14:17:21] INFO root fetch - main [MainThread]: End processing [finstmt]: success
+[2023-04-22 14:17:21] INFO root fetch - main [MainThread]: End processing [pytorch-optimizer]: success
+[2023-04-22 14:17:23] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2023-04-22 14:17:23] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
+[2023-04-22 14:17:35] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 14:17:35] INFO root fetch - main [MainThread]: Store serial: [17814388]
