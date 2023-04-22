@@ -10743,3 +10743,95 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 17:26:14] INFO root fetch - main [MainThread]: End processing [yerbamate]: success
 [2023-04-22 17:26:17] INFO root fetch - main [MainThread]: End processing [sqllineage]: success
 [2023-04-22 17:26:17] INFO root fetch - main [MainThread]: Store serial: [17815399]
+[2023-04-22 17:31:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815399]
+[2023-04-22 17:31:27] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-22 17:31:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poetry-polylith-plugin
+[2023-04-22 17:31:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gdsfactory
+[2023-04-22 17:31:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nobus
+[2023-04-22 17:31:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: czech-workdays-holidays
+[2023-04-22 17:31:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: czech-workdays-holidays
+[2023-04-22 17:31:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: salix-containers
+[2023-04-22 17:31:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: qsteemp
+[2023-04-22 17:31:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rewards-api
+[2023-04-22 17:31:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: moto
+[2023-04-22 17:31:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nobus
+[2023-04-22 17:31:27] INFO root fetch - processPackages [czech-workdays-holidays]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-22 17:31:27] INFO root fetch - processPackages [poetry-polylith-plugin]: New version: [1.6.0] Old Version: [1.5.2]
+[2023-04-22 17:31:27] INFO root fetch - processPackages [nobus]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 17:31:27] INFO root fetch - processPackages [nobus]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 17:31:27] INFO root fetch - processPackages [rewards-api]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-22 17:31:27] INFO root fetch - processPackages [salix-containers]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-04-22 17:31:27] INFO root fetch - processPackages [czech-workdays-holidays]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-22 17:31:27] WARNING root fetch - processPackages [qsteemp]: Skipping, unable to determine old version
+[2023-04-22 17:31:27] INFO root fetch - processPackages [qsteemp]: Start processing: lutv
+[2023-04-22 17:31:27] INFO root fetch - main [MainThread]: End processing [qsteemp] error
+[2023-04-22 17:31:27] INFO root fetch - processPackages [gdsfactory]: New version: [6.9.0] Old Version: [6.89.0]
+[2023-04-22 17:31:27] INFO root fetch - processPackages [lutv]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-22 17:31:27] INFO root fetch - processPackages [moto]: New version: [4.1.8.dev9] Old Version: [4.1.8.dev8]
+[2023-04-22 17:31:27] INFO root fetch - processPackages [poetry-polylith-plugin]: executing diffoscope
+[2023-04-22 17:31:27] INFO root fetch - processPackages [poetry-polylith-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_polylith_plugin-1.5.2.tar.gz tmp/poetry_polylith_plugin-1.6.0.tar.gz --markdown 20230422/p/poetry-polylith-plugin/1.5.2-1.6.0/diff.md --exclude *.pyd
+[2023-04-22 17:31:27] INFO root fetch - processPackages [czech-workdays-holidays]: Downloading https://files.pythonhosted.org/packages/33/a8/2c94e2fc2dba8bd5b76b1fb1e0e9af2b49f9e5d52c9e727e5f389979f18a/czech_workdays_holidays-0.1.5.tar.gz
+[2023-04-22 17:31:27] INFO root fetch - processPackages [czech-workdays-holidays]: Downloading https://files.pythonhosted.org/packages/33/a8/2c94e2fc2dba8bd5b76b1fb1e0e9af2b49f9e5d52c9e727e5f389979f18a/czech_workdays_holidays-0.1.5.tar.gz
+[2023-04-22 17:31:27] INFO root fetch - processPackages [nobus]: Downloading https://files.pythonhosted.org/packages/f4/d1/ff7fb6856a492785a53fb0f8dbb4dc342d2176c910c47165bb8218b142d9/nobus-0.1.0.tar.gz
+[2023-04-22 17:31:27] INFO root fetch - processPackages [nobus]: Downloading https://files.pythonhosted.org/packages/f4/d1/ff7fb6856a492785a53fb0f8dbb4dc342d2176c910c47165bb8218b142d9/nobus-0.1.0.tar.gz
+[2023-04-22 17:31:27] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-04-22 17:31:27] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.8.dev8.tar.gz tmp/moto-4.1.8.dev9.tar.gz --markdown 20230422/m/moto/4.1.8.dev8-4.1.8.dev9/diff.md --exclude *.pyd
+[2023-04-22 17:31:27] INFO root fetch - processPackages [gdsfactory]: Downloading https://files.pythonhosted.org/packages/00/8c/efc486acd7d5cbff6c68473851fa5df9f6d77de32a666b1f788184b07316/gdsfactory-6.89.0.tar.gz
+[2023-04-22 17:31:27] INFO root fetch - processPackages [rewards-api]: Downloading https://files.pythonhosted.org/packages/a3/72/281d2e495022c12eaf5abb235710e5f2cdd224b5caa750704c578c09b235/rewards_api-0.1.0.tar.gz
+[2023-04-22 17:31:27] INFO root fetch - processPackages [salix-containers]: Downloading https://files.pythonhosted.org/packages/bd/d0/e27665772dc595a0a5f42e0c912103d25e58f9826da06438e8f5bd62037e/salix-containers-0.4.0.tar.gz
+[2023-04-22 17:31:27] INFO root fetch - processPackages [lutv]: Downloading https://files.pythonhosted.org/packages/6e/0b/192da04df7048b56ca7d2e72d7b07427ba07cd66ba11ad741257cdec38c5/lutv-1.0.3.tar.gz
+[2023-04-22 17:31:27] INFO root fetch - processPackages [rewards-api]: executing diffoscope
+[2023-04-22 17:31:27] INFO root fetch - processPackages [rewards-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rewards_api-0.0.9.tar.gz tmp/rewards_api-0.1.0.tar.gz --markdown 20230422/r/rewards-api/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-22 17:31:27] INFO root fetch - processPackages [nobus]: Downloading https://files.pythonhosted.org/packages/92/1f/e096b7754b6dec441f8bea1b3e7ce7ba69b6a9f31d2536783358308156a8/nobus-0.1.1.tar.gz
+[2023-04-22 17:31:27] INFO root fetch - processPackages [nobus]: Downloading https://files.pythonhosted.org/packages/92/1f/e096b7754b6dec441f8bea1b3e7ce7ba69b6a9f31d2536783358308156a8/nobus-0.1.1.tar.gz
+[2023-04-22 17:31:27] INFO root fetch - processPackages [salix-containers]: executing diffoscope
+[2023-04-22 17:31:27] INFO root fetch - processPackages [czech-workdays-holidays]: Downloading https://files.pythonhosted.org/packages/c3/f7/d409b8e4efbf0a198356f1aefcd9e6d9512f09dce59bea2fe5d2c3eaf803/czech_workdays_holidays-0.1.6.tar.gz
+[2023-04-22 17:31:27] INFO root fetch - processPackages [salix-containers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salix-containers-0.3.1.tar.gz tmp/salix-containers-0.4.0.tar.gz --markdown 20230422/s/salix-containers/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-04-22 17:31:27] INFO root fetch - processPackages [czech-workdays-holidays]: Downloading https://files.pythonhosted.org/packages/c3/f7/d409b8e4efbf0a198356f1aefcd9e6d9512f09dce59bea2fe5d2c3eaf803/czech_workdays_holidays-0.1.6.tar.gz
+[2023-04-22 17:31:27] INFO root fetch - processPackages [lutv]: executing diffoscope
+[2023-04-22 17:31:27] INFO root fetch - processPackages [lutv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lutv-1.0.2.tar.gz tmp/lutv-1.0.3.tar.gz --markdown 20230422/l/lutv/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-22 17:31:27] INFO root fetch - processPackages [gdsfactory]: Downloading https://files.pythonhosted.org/packages/51/e1/bea9be10e53a3f646a2bc569ab98aa0db7b687da72ac78a2d51eac5c8a5e/gdsfactory-6.9.0.tar.gz
+[2023-04-22 17:31:27] INFO root fetch - processPackages [nobus]: executing diffoscope
+[2023-04-22 17:31:27] INFO root fetch - processPackages [nobus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nobus-0.1.0.tar.gz tmp/nobus-0.1.1.tar.gz --markdown 20230422/n/nobus/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 17:31:27] INFO root fetch - processPackages [nobus]: executing diffoscope
+[2023-04-22 17:31:27] INFO root fetch - processPackages [nobus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nobus-0.1.0.tar.gz tmp/nobus-0.1.1.tar.gz --markdown 20230422/n/nobus/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 17:31:27] INFO root fetch - processPackages [czech-workdays-holidays]: executing diffoscope
+[2023-04-22 17:31:27] INFO root fetch - processPackages [czech-workdays-holidays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czech_workdays_holidays-0.1.5.tar.gz tmp/czech_workdays_holidays-0.1.6.tar.gz --markdown 20230422/c/czech-workdays-holidays/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-22 17:31:27] INFO root fetch - processPackages [czech-workdays-holidays]: executing diffoscope
+[2023-04-22 17:31:27] INFO root fetch - processPackages [czech-workdays-holidays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czech_workdays_holidays-0.1.5.tar.gz tmp/czech_workdays_holidays-0.1.6.tar.gz --markdown 20230422/c/czech-workdays-holidays/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-22 17:31:27] WARNING root fetch - processPackages [gdsfactory]: Skipping package: exceeds size limit 11141129>=10485760
+[2023-04-22 17:31:27] INFO root fetch - processPackages [gdsfactory]: Start processing: jupylite-duckdb
+[2023-04-22 17:31:27] INFO root fetch - main [MainThread]: End processing [gdsfactory] error
+[2023-04-22 17:31:27] INFO root fetch - processPackages [jupylite-duckdb]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 17:31:28] INFO root fetch - processPackages [jupylite-duckdb]: Downloading https://files.pythonhosted.org/packages/e3/40/5f9d3796dc02573fdb32e169e1dd598ddf40c97b4fb1b24780c86ccbc6c2/jupylite_duckdb-0.0.8-py3-none-any.whl
+[2023-04-22 17:31:28] INFO root fetch - processPackages [jupylite-duckdb]: Downloading https://files.pythonhosted.org/packages/f1/7d/2d20540e0c5433b024cc7d415e8fd1798842b2b83bab70918ab1db37c696/jupylite_duckdb-0.0.9-py3-none-any.whl
+[2023-04-22 17:31:28] INFO root fetch - processPackages [jupylite-duckdb]: executing diffoscope
+[2023-04-22 17:31:28] INFO root fetch - processPackages [jupylite-duckdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupylite_duckdb-0.0.8-py3-none-any.whl.zip tmp/jupylite_duckdb-0.0.9-py3-none-any.whl.zip --markdown 20230422/j/jupylite-duckdb/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 17:31:29] INFO root fetch - processPackages [poetry-polylith-plugin]: Start processing: Simba-UW-tf-dev
+[2023-04-22 17:31:29] INFO root fetch - main [MainThread]: End processing [poetry-polylith-plugin]: success
+[2023-04-22 17:31:29] INFO root fetch - processPackages [salix-containers]: Start processing: esprepomanager
+[2023-04-22 17:31:29] INFO root fetch - main [MainThread]: End processing [salix-containers]: success
+[2023-04-22 17:31:29] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.57.3] Old Version: [1.57.2]
+[2023-04-22 17:31:29] INFO root fetch - processPackages [esprepomanager]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-22 17:31:29] INFO root fetch - processPackages [nobus]: Start processing: pydflow
+[2023-04-22 17:31:29] INFO root fetch - main [MainThread]: End processing [nobus]: success
+[2023-04-22 17:31:29] INFO root fetch - processPackages [pydflow]: New version: [1.6.99] Old Version: [1.6.98]
+[2023-04-22 17:31:29] INFO root fetch - main [MainThread]: End processing [lutv]: success
+[2023-04-22 17:31:29] INFO root fetch - main [MainThread]: End processing [rewards-api]: success
+[2023-04-22 17:31:29] INFO root fetch - main [MainThread]: End processing [czech-workdays-holidays]: success
+[2023-04-22 17:31:29] INFO root fetch - processPackages [pydflow]: executing diffoscope
+[2023-04-22 17:31:29] INFO root fetch - processPackages [pydflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydflow-1.6.98.tar.gz tmp/pydflow-1.6.99.tar.gz --markdown 20230422/p/pydflow/1.6.98-1.6.99/diff.md --exclude *.pyd
+[2023-04-22 17:31:29] INFO root fetch - main [MainThread]: End processing [nobus]: success
+[2023-04-22 17:31:29] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/0d/c0/3241ad2d3b005896209d14e430a3bfc5e179c24ed9bc7aecaa402513f159/Simba-UW-tf-dev-1.57.3.tar.gz
+[2023-04-22 17:31:29] INFO root fetch - processPackages [esprepomanager]: Downloading https://files.pythonhosted.org/packages/1b/82/a6f57f827e86ef9287c053db4deef5ad07497af7cdb004c761febb625a37/esprepomanager-1.2.5.tar.gz
+[2023-04-22 17:31:29] INFO root fetch - main [MainThread]: End processing [czech-workdays-holidays]: success
+[2023-04-22 17:31:29] INFO root fetch - processPackages [esprepomanager]: executing diffoscope
+[2023-04-22 17:31:29] INFO root fetch - processPackages [esprepomanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esprepomanager-1.2.4.tar.gz tmp/esprepomanager-1.2.5.tar.gz --markdown 20230422/e/esprepomanager/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-22 17:31:29] INFO root fetch - main [MainThread]: End processing [jupylite-duckdb]: success
+[2023-04-22 17:31:30] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2023-04-22 17:31:30] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.57.2.tar.gz tmp/Simba-UW-tf-dev-1.57.3.tar.gz --markdown 20230422/S/Simba-UW-tf-dev/1.57.2-1.57.3/diff.md --exclude *.pyd
+[2023-04-22 17:31:30] INFO root fetch - main [MainThread]: End processing [esprepomanager]: success
+[2023-04-22 17:31:30] INFO root fetch - main [MainThread]: End processing [pydflow]: success
+[2023-04-22 17:31:34] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2023-04-22 17:32:02] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2023-04-22 17:32:02] INFO root fetch - main [MainThread]: Store serial: [17815443]
