@@ -10503,3 +10503,74 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 17:04:22] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 17:04:46] INFO root fetch - main [MainThread]: End processing [nbdime]: success
 [2023-04-22 17:04:46] INFO root fetch - main [MainThread]: Store serial: [17815270]
+[2023-04-22 17:10:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815270]
+[2023-04-22 17:10:05] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-22 17:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unit-simple
+[2023-04-22 17:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mixalime
+[2023-04-22 17:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Glymur
+[2023-04-22 17:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bus-burgos
+[2023-04-22 17:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cgpt
+[2023-04-22 17:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: herojson
+[2023-04-22 17:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ooo-dev-tools
+[2023-04-22 17:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dictgen
+[2023-04-22 17:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: openduck
+[2023-04-22 17:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: df-websockets
+[2023-04-22 17:10:05] INFO root fetch - processPackages [cgpt]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-22 17:10:05] INFO root fetch - processPackages [bus-burgos]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 17:10:05] WARNING root fetch - processPackages [herojson]: Skipping, unable to determine old version
+[2023-04-22 17:10:05] INFO root fetch - processPackages [unit-simple]: New version: [1.0.4] Old Version: [1.0.0]
+[2023-04-22 17:10:05] INFO root fetch - processPackages [herojson]: Start processing: tensorflow-text-nightly
+[2023-04-22 17:10:05] INFO root fetch - main [MainThread]: End processing [herojson] error
+[2023-04-22 17:10:05] INFO root fetch - processPackages [Glymur]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 17:10:05] INFO root fetch - processPackages [mixalime]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-04-22 17:10:05] INFO root fetch - processPackages [ooo-dev-tools]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-22 17:10:05] INFO root fetch - processPackages [df-websockets]: New version: [1.0.1] Old Version: [1.0.0b1]
+[2023-04-22 17:10:05] INFO root fetch - processPackages [tensorflow-text-nightly]: New version: [2.13.0.dev20230421] Old Version: [2.13.0.dev20230420]
+[2023-04-22 17:10:05] WARNING root fetch - processPackages [openduck]: Skipping, unable to determine old version
+[2023-04-22 17:10:05] INFO root fetch - processPackages [openduck]: Start processing: doc-transformers
+[2023-04-22 17:10:05] INFO root fetch - main [MainThread]: End processing [openduck] error
+[2023-04-22 17:10:05] WARNING root fetch - processPackages [dictgen]: Skipping, unable to determine old version
+[2023-04-22 17:10:05] INFO root fetch - processPackages [dictgen]: Start processing: foursight-core
+[2023-04-22 17:10:05] INFO root fetch - main [MainThread]: End processing [dictgen] error
+[2023-04-22 17:10:05] INFO root fetch - processPackages [doc-transformers]: New version: [1.0.1] Old Version: [1.0]
+[2023-04-22 17:10:05] INFO root fetch - processPackages [df-websockets]: executing diffoscope
+[2023-04-22 17:10:05] INFO root fetch - processPackages [df-websockets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/df_websockets-1.0.0b1.tar.gz tmp/df_websockets-1.0.1.tar.gz --markdown 20230422/d/df-websockets/1.0.0b1-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 17:10:05] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-22 17:10:05] INFO root fetch - processPackages [cgpt]: Downloading https://files.pythonhosted.org/packages/73/47/c547033b8a2a007283b28e20a002781936c465a33aff17ab13e2732d6ab4/cgpt-1.2.2.tar.gz
+[2023-04-22 17:10:05] INFO root fetch - processPackages [doc-transformers]: executing diffoscope
+[2023-04-22 17:10:05] INFO root fetch - processPackages [doc-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doc_transformers-1.0.tar.gz tmp/doc_transformers-1.0.1.tar.gz --markdown 20230422/d/doc-transformers/1.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 17:10:05] INFO root fetch - processPackages [Glymur]: Downloading https://files.pythonhosted.org/packages/d2/9d/82b9b6e5c3af06405942e67be9eebb30f96507f8e9b60e8ce198503eadcb/Glymur-0.9.8.tar.gz
+[2023-04-22 17:10:05] INFO root fetch - processPackages [bus-burgos]: Downloading https://files.pythonhosted.org/packages/c2/ea/0dfff1ea653cc41f1e2fbaf2af3ed1ed109aee08b961aa8ca43a1641e940/bus_burgos-0.1.1.tar.gz
+[2023-04-22 17:10:05] INFO root fetch - processPackages [ooo-dev-tools]: Downloading https://files.pythonhosted.org/packages/8b/e8/3e56ada0f8d37583fd19e0b3440848eb3bbf603781781d61de410340b6a2/ooo_dev_tools-0.9.3.tar.gz
+[2023-04-22 17:10:05] INFO root fetch - processPackages [unit-simple]: Downloading https://files.pythonhosted.org/packages/0e/e2/6a246a344c0e655b9b95eec6f49fb1392de145473f1076097179043b5b44/unit_simple-1.0.0.tar.gz
+[2023-04-22 17:10:06] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 17:10:06] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230422/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-22 17:10:06] INFO root fetch - processPackages [cgpt]: executing diffoscope
+[2023-04-22 17:10:06] INFO root fetch - processPackages [cgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cgpt-1.2.1.tar.gz tmp/cgpt-1.2.2.tar.gz --markdown 20230422/c/cgpt/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-22 17:10:06] INFO root fetch - processPackages [bus-burgos]: executing diffoscope
+[2023-04-22 17:10:06] INFO root fetch - processPackages [bus-burgos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bus_burgos-0.1.0.tar.gz tmp/bus_burgos-0.1.1.tar.gz --markdown 20230422/b/bus-burgos/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 17:10:06] INFO root fetch - processPackages [mixalime]: executing diffoscope
+[2023-04-22 17:10:06] INFO root fetch - processPackages [mixalime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixalime-2.9.8.tar.gz tmp/mixalime-2.9.9.tar.gz --markdown 20230422/m/mixalime/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-04-22 17:10:06] INFO root fetch - processPackages [tensorflow-text-nightly]: Downloading https://files.pythonhosted.org/packages/1c/43/5df1857fae9fdeec1a966e85e1434e6a6356307ec2859a5e3bfe906ac163/tensorflow_text_nightly-2.13.0.dev20230421-cp39-cp39-macosx_10_9_x86_64.whl
+[2023-04-22 17:10:06] INFO root fetch - processPackages [unit-simple]: Downloading https://files.pythonhosted.org/packages/3a/6e/d194a723bc3977f0a28aead53fe9a8ba2ddab72547eca31d5a9bce46d5e1/unit_simple-1.0.4.tar.gz
+[2023-04-22 17:10:06] INFO root fetch - processPackages [ooo-dev-tools]: Downloading https://files.pythonhosted.org/packages/25/2f/bf861cbc1f05bbf4621ee118e773f7671855c0298ebae29b9bc4a1ca9167/ooo_dev_tools-0.9.4.tar.gz
+[2023-04-22 17:10:06] INFO root fetch - processPackages [unit-simple]: executing diffoscope
+[2023-04-22 17:10:06] INFO root fetch - processPackages [unit-simple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unit_simple-1.0.0.tar.gz tmp/unit_simple-1.0.4.tar.gz --markdown 20230422/u/unit-simple/1.0.0-1.0.4/diff.md --exclude *.pyd
+[2023-04-22 17:10:06] INFO root fetch - processPackages [ooo-dev-tools]: executing diffoscope
+[2023-04-22 17:10:06] INFO root fetch - processPackages [ooo-dev-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ooo_dev_tools-0.9.3.tar.gz tmp/ooo_dev_tools-0.9.4.tar.gz --markdown 20230422/o/ooo-dev-tools/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-22 17:10:07] INFO root fetch - processPackages [Glymur]: Downloading https://files.pythonhosted.org/packages/56/28/0ea97d18c1c3be44dc10d9ddb64269f5ee73f9dc08284a679f4a2da1962c/Glymur-0.9.9.tar.gz
+[2023-04-22 17:10:07] INFO root fetch - main [MainThread]: End processing [doc-transformers]: success
+[2023-04-22 17:10:07] INFO root fetch - processPackages [tensorflow-text-nightly]: executing diffoscope
+[2023-04-22 17:10:07] INFO root fetch - processPackages [tensorflow-text-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorflow_text_nightly-2.13.0.dev20230420-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/tensorflow_text_nightly-2.13.0.dev20230421-cp39-cp39-macosx_10_9_x86_64.whl.zip --markdown 20230422/t/tensorflow-text-nightly/2.13.0.dev20230420-2.13.0.dev20230421/diff.md --exclude *.pyd
+[2023-04-22 17:10:07] INFO root fetch - main [MainThread]: End processing [df-websockets]: success
+[2023-04-22 17:10:07] INFO root fetch - main [MainThread]: End processing [bus-burgos]: success
+[2023-04-22 17:10:07] INFO root fetch - main [MainThread]: End processing [cgpt]: success
+[2023-04-22 17:10:07] INFO root fetch - main [MainThread]: End processing [unit-simple]: success
+[2023-04-22 17:10:07] INFO root fetch - processPackages [Glymur]: executing diffoscope
+[2023-04-22 17:10:07] INFO root fetch - processPackages [Glymur]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Glymur-0.9.8.tar.gz tmp/Glymur-0.9.9.tar.gz --markdown 20230422/G/Glymur/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 17:10:09] INFO root fetch - main [MainThread]: End processing [Glymur]: success
+[2023-04-22 17:10:09] INFO root fetch - main [MainThread]: End processing [mixalime]: success
+[2023-04-22 17:10:16] INFO root fetch - main [MainThread]: End processing [ooo-dev-tools]: success
+[2023-04-22 17:10:21] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
+[2023-04-22 17:10:22] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 17:10:22] INFO root fetch - main [MainThread]: Store serial: [17815321]
