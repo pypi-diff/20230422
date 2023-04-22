@@ -11412,3 +11412,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 18:25:12] INFO root fetch - main [MainThread]: End processing [sqllineage]: success
 [2023-04-22 18:25:13] INFO root fetch - main [MainThread]: End processing [sparrow-python]: success
 [2023-04-22 18:25:13] INFO root fetch - main [MainThread]: Store serial: [17815815]
+[2023-04-22 18:30:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815815]
+[2023-04-22 18:30:23] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-22 18:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbxconfig
+[2023-04-22 18:30:23] INFO root fetch - processPackages [dbxconfig]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-22 18:30:23] INFO root fetch - processPackages [dbxconfig]: Downloading https://files.pythonhosted.org/packages/ba/3a/fdce540980a8dd46cee2b2353f4c329520a4dfd436ba869be77f478fb423/dbxconfig-2.0.1.tar.gz
+[2023-04-22 18:30:23] INFO root fetch - processPackages [dbxconfig]: executing diffoscope
+[2023-04-22 18:30:23] INFO root fetch - processPackages [dbxconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbxconfig-2.0.0.tar.gz tmp/dbxconfig-2.0.1.tar.gz --markdown 20230422/d/dbxconfig/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-22 18:30:24] INFO root fetch - main [MainThread]: End processing [dbxconfig]: success
+[2023-04-22 18:30:24] INFO root fetch - main [MainThread]: Store serial: [17815818]
