@@ -13121,3 +13121,67 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 22:09:02] INFO root fetch - main [MainThread]: End processing [pyhtml-desktop]: success
 [2023-04-22 22:09:02] INFO root fetch - main [MainThread]: End processing [embedin]: success
 [2023-04-22 22:09:02] INFO root fetch - main [MainThread]: Store serial: [17816786]
+[2023-04-22 22:14:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816786]
+[2023-04-22 22:14:11] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-22 22:14:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: erscipcard
+[2023-04-22 22:14:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: connexion
+[2023-04-22 22:14:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dollar-templates
+[2023-04-22 22:14:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aim-ui
+[2023-04-22 22:14:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: asdm
+[2023-04-22 22:14:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fluxrpc
+[2023-04-22 22:14:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: voyager-cpu
+[2023-04-22 22:14:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aim
+[2023-04-22 22:14:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: vollseg
+[2023-04-22 22:14:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: fluxvault
+[2023-04-22 22:14:11] INFO root fetch - processPackages [erscipcard]: New version: [1.18.2] Old Version: [1.18.1]
+[2023-04-22 22:14:11] INFO root fetch - processPackages [aim-ui]: New version: [4.0.0.dev3] Old Version: [4.0.0.dev2]
+[2023-04-22 22:14:11] INFO root fetch - processPackages [voyager-cpu]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-22 22:14:11] WARNING root fetch - processPackages [dollar-templates]: Skipping, unable to determine old version
+[2023-04-22 22:14:11] INFO root fetch - processPackages [dollar-templates]: Start processing: super-mario-kardesler-filmi-izle-2023-filmi-turkce-dublaj
+[2023-04-22 22:14:11] INFO root fetch - main [MainThread]: End processing [dollar-templates] error
+[2023-04-22 22:14:11] WARNING root fetch - processPackages [asdm]: Skipping, unable to determine old version
+[2023-04-22 22:14:11] INFO root fetch - processPackages [fluxrpc]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 22:14:11] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-22 22:14:11] INFO root fetch - processPackages [asdm]: Start processing: nwebclient
+[2023-04-22 22:14:11] INFO root fetch - main [MainThread]: End processing [asdm] error
+[2023-04-22 22:14:11] INFO root fetch - processPackages [fluxvault]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 22:14:11] INFO root fetch - processPackages [connexion]: New version: [3.0.0a5] Old Version: [3.0.0a4]
+[2023-04-22 22:14:11] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/d6/c0/8412600d01de28dac29fc7f2821e1c045150709439ee3cb7a4fd3bce8312/aim-ui-4.0.0.dev2.tar.gz
+[2023-04-22 22:14:11] INFO root fetch - processPackages [nwebclient]: New version: [1.0.76] Old Version: [1.0.75]
+[2023-04-22 22:14:11] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-22 22:14:11] INFO root fetch - processPackages [aim]: New version: [4.0.0.dev3] Old Version: [4.0.0.dev2]
+[2023-04-22 22:14:11] INFO root fetch - processPackages [fluxrpc]: executing diffoscope
+[2023-04-22 22:14:11] INFO root fetch - processPackages [fluxrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxrpc-0.9.8.tar.gz tmp/fluxrpc-0.9.9.tar.gz --markdown 20230422/f/fluxrpc/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 22:14:11] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-22 22:14:11] INFO root fetch - processPackages [vollseg]: Start processing: py-file-type
+[2023-04-22 22:14:11] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-22 22:14:11] WARNING root fetch - processPackages [py-file-type]: Skipping, unable to determine old version
+[2023-04-22 22:14:11] INFO root fetch - main [MainThread]: End processing [py-file-type] error
+[2023-04-22 22:14:11] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-04-22 22:14:11] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.75.tar.gz tmp/nwebclient-1.0.76.tar.gz --markdown 20230422/n/nwebclient/1.0.75-1.0.76/diff.md --exclude *.pyd
+[2023-04-22 22:14:11] INFO root fetch - processPackages [fluxvault]: executing diffoscope
+[2023-04-22 22:14:11] INFO root fetch - processPackages [fluxvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxvault-0.9.8.tar.gz tmp/fluxvault-0.9.9.tar.gz --markdown 20230422/f/fluxvault/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 22:14:11] INFO root fetch - processPackages [erscipcard]: Downloading https://files.pythonhosted.org/packages/2e/12/83e8c190af276d77db93893c52048dc5c3375561ab04375cb15a4c4ba9a7/erscipcard-1.18.2.tar.gz
+[2023-04-22 22:14:11] WARNING root fetch - processPackages [super-mario-kardesler-filmi-izle-2023-filmi-turkce-dublaj]: Skipping, unable to determine old version
+[2023-04-22 22:14:11] INFO root fetch - main [MainThread]: End processing [super-mario-kardesler-filmi-izle-2023-filmi-turkce-dublaj] error
+[2023-04-22 22:14:11] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 27060349>=10485760
+[2023-04-22 22:14:11] INFO root fetch - processPackages [voyager-cpu]: Downloading https://files.pythonhosted.org/packages/d2/a3/473e31b07a7ed310217a0fbdc85459f34ac6a7159a2f1d94bebaa086dddd/voyager_cpu-0.2.3.tar.gz
+[2023-04-22 22:14:11] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2023-04-22 22:14:11] INFO root fetch - processPackages [connexion]: Downloading https://files.pythonhosted.org/packages/73/0b/c022fa2e020afe0b1df56cc0c069b4321219bb066e26f5a8028a775266f5/connexion-3.0.0a4.tar.gz
+[2023-04-22 22:14:12] INFO root fetch - processPackages [erscipcard]: executing diffoscope
+[2023-04-22 22:14:12] INFO root fetch - processPackages [erscipcard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/erscipcard-1.18.1.tar.gz tmp/erscipcard-1.18.2.tar.gz --markdown 20230422/e/erscipcard/1.18.1-1.18.2/diff.md --exclude *.pyd
+[2023-04-22 22:14:12] INFO root fetch - processPackages [voyager-cpu]: executing diffoscope
+[2023-04-22 22:14:12] INFO root fetch - processPackages [voyager-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voyager_cpu-0.2.2.tar.gz tmp/voyager_cpu-0.2.3.tar.gz --markdown 20230422/v/voyager-cpu/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-22 22:14:12] INFO root fetch - processPackages [aim]: executing diffoscope
+[2023-04-22 22:14:12] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.0.dev2.tar.gz tmp/aim-4.0.0.dev3.tar.gz --markdown 20230422/a/aim/4.0.0.dev2-4.0.0.dev3/diff.md --exclude *.pyd
+[2023-04-22 22:14:12] INFO root fetch - processPackages [connexion]: Downloading https://files.pythonhosted.org/packages/f0/cd/b9df871ed0998049334a4390be63d4e6372165a4875a0a530366a096ce16/connexion-3.0.0a5.tar.gz
+[2023-04-22 22:14:12] INFO root fetch - processPackages [connexion]: executing diffoscope
+[2023-04-22 22:14:12] INFO root fetch - processPackages [connexion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connexion-3.0.0a4.tar.gz tmp/connexion-3.0.0a5.tar.gz --markdown 20230422/c/connexion/3.0.0a4-3.0.0a5/diff.md --exclude *.pyd
+[2023-04-22 22:14:13] INFO root fetch - main [MainThread]: End processing [fluxvault]: success
+[2023-04-22 22:14:13] INFO root fetch - main [MainThread]: End processing [fluxrpc]: success
+[2023-04-22 22:14:13] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-04-22 22:14:13] INFO root fetch - main [MainThread]: End processing [erscipcard]: success
+[2023-04-22 22:14:14] INFO root fetch - main [MainThread]: End processing [voyager-cpu]: success
+[2023-04-22 22:14:20] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2023-04-22 22:14:28] INFO root fetch - main [MainThread]: End processing [connexion]: success
+[2023-04-22 22:14:28] INFO root fetch - main [MainThread]: Store serial: [17816843]
