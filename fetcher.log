@@ -5410,3 +5410,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 06:56:58] INFO root fetch - main [MainThread]: End processing [drf-remotejwt]: success
 [2023-04-22 06:56:59] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-it-fiscalcode]: success
 [2023-04-22 06:56:59] INFO root fetch - main [MainThread]: Store serial: [17812281]
+[2023-04-22 07:02:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812281]
+[2023-04-22 07:02:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 07:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dragonfile
+[2023-04-22 07:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypcapkit
+[2023-04-22 07:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: JsonDatabaseZ
+[2023-04-22 07:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: athena-ai
+[2023-04-22 07:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lnhub_rest
+[2023-04-22 07:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ovos-workshop
+[2023-04-22 07:02:08] INFO root fetch - processPackages [pypcapkit]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-04-22 07:02:08] INFO root fetch - processPackages [ovos-workshop]: New version: [0.0.9a1] Old Version: [0.0.9]
+[2023-04-22 07:02:08] WARNING root fetch - processPackages [JsonDatabaseZ]: Skipping, unable to determine old version
+[2023-04-22 07:02:08] INFO root fetch - main [MainThread]: End processing [JsonDatabaseZ] error
+[2023-04-22 07:02:08] INFO root fetch - processPackages [athena-ai]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-22 07:02:08] INFO root fetch - processPackages [dragonfile]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-22 07:02:08] INFO root fetch - processPackages [lnhub_rest]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-04-22 07:02:08] INFO root fetch - processPackages [ovos-workshop]: executing diffoscope
+[2023-04-22 07:02:08] INFO root fetch - processPackages [ovos-workshop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_workshop-0.0.9-py3-none-any.whl.zip tmp/ovos_workshop-0.0.9a1-py3-none-any.whl.zip --markdown 20230422/o/ovos-workshop/0.0.9-0.0.9a1/diff.md --exclude *.pyd
+[2023-04-22 07:02:08] INFO root fetch - processPackages [pypcapkit]: executing diffoscope
+[2023-04-22 07:02:08] INFO root fetch - processPackages [pypcapkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypcapkit-1.0.0b8.tar.gz tmp/pypcapkit-1.0.0b9.tar.gz --markdown 20230422/p/pypcapkit/1.0.0b8-1.0.0b9/diff.md --exclude *.pyd
+[2023-04-22 07:02:08] INFO root fetch - processPackages [dragonfile]: Downloading https://files.pythonhosted.org/packages/04/00/7b4a102f9e12c7e2614cc93fc50ec3ea3231de3175691af5e1323d354e46/dragonfile-1.0.0-py3-none-any.whl
+[2023-04-22 07:02:08] INFO root fetch - processPackages [athena-ai]: Downloading https://files.pythonhosted.org/packages/43/29/aabfaacedd53cab423ad22663f0b162cba64fe6bc57cc9a932dcc94d1b00/athena_ai-0.0.6.tar.gz
+[2023-04-22 07:02:08] INFO root fetch - processPackages [lnhub_rest]: Downloading https://files.pythonhosted.org/packages/77/82/55d3eac92f01dac05b3ee0e48ada4e32e292410099a29eb4235b4669e13e/lnhub_rest-0.8.2.tar.gz
+[2023-04-22 07:02:08] INFO root fetch - processPackages [dragonfile]: Downloading https://files.pythonhosted.org/packages/9b/f2/90f8c30d4103ff7a3f237359b297981cc88b779c4f5df7bf807bb410a442/dragonfile-1.0.1-py3-none-any.whl
+[2023-04-22 07:02:08] INFO root fetch - processPackages [athena-ai]: Downloading https://files.pythonhosted.org/packages/f8/da/b28571a4f87c95f2efaf39b74b7cfdb6809f54b61ddfb38e0df417f329f9/athena_ai-0.0.7.tar.gz
+[2023-04-22 07:02:08] INFO root fetch - processPackages [lnhub_rest]: executing diffoscope
+[2023-04-22 07:02:08] INFO root fetch - processPackages [lnhub_rest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnhub_rest-0.8.1.tar.gz tmp/lnhub_rest-0.8.2.tar.gz --markdown 20230422/l/lnhub_rest/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-04-22 07:02:08] INFO root fetch - processPackages [dragonfile]: executing diffoscope
+[2023-04-22 07:02:08] INFO root fetch - processPackages [dragonfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfile-1.0.0-py3-none-any.whl.zip tmp/dragonfile-1.0.1-py3-none-any.whl.zip --markdown 20230422/d/dragonfile/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-22 07:02:09] INFO root fetch - processPackages [athena-ai]: executing diffoscope
+[2023-04-22 07:02:09] INFO root fetch - processPackages [athena-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athena_ai-0.0.6.tar.gz tmp/athena_ai-0.0.7.tar.gz --markdown 20230422/a/athena-ai/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-22 07:02:09] INFO root fetch - main [MainThread]: End processing [ovos-workshop]: success
+[2023-04-22 07:02:09] INFO root fetch - main [MainThread]: End processing [dragonfile]: success
+[2023-04-22 07:02:10] INFO root fetch - main [MainThread]: End processing [athena-ai]: success
+[2023-04-22 07:02:11] INFO root fetch - main [MainThread]: End processing [lnhub_rest]: success
+[2023-04-22 07:02:11] INFO root fetch - main [MainThread]: End processing [pypcapkit]: success
+[2023-04-22 07:02:11] INFO root fetch - main [MainThread]: Store serial: [17812302]
