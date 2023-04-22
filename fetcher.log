@@ -10188,3 +10188,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 16:37:09] INFO root fetch - main [MainThread]: End processing [servicefoundry]: success
 [2023-04-22 16:37:23] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 16:37:23] INFO root fetch - main [MainThread]: Store serial: [17815087]
+[2023-04-22 16:42:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815087]
+[2023-04-22 16:42:32] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-22 16:42:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: image-file-validator
+[2023-04-22 16:42:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: publiczpt
+[2023-04-22 16:42:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aliendev-cdk
+[2023-04-22 16:42:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: baopig
+[2023-04-22 16:42:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: foursight-core
+[2023-04-22 16:42:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torrent-hound
+[2023-04-22 16:42:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: echohue
+[2023-04-22 16:42:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: foursight-core
+[2023-04-22 16:42:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: foursight-core
+[2023-04-22 16:42:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: stormcatchments
+[2023-04-22 16:42:32] WARNING root fetch - processPackages [image-file-validator]: Skipping, unable to determine old version
+[2023-04-22 16:42:32] INFO root fetch - main [MainThread]: End processing [image-file-validator] error
+[2023-04-22 16:42:32] INFO root fetch - processPackages [aliendev-cdk]: New version: [0.1.35] Old Version: [0.1.34]
+[2023-04-22 16:42:32] INFO root fetch - processPackages [baopig]: New version: [0.20.5] Old Version: [0.20.4]
+[2023-04-22 16:42:32] INFO root fetch - processPackages [torrent-hound]: New version: [2.1.0] Old Version: [2.0.1]
+[2023-04-22 16:42:32] INFO root fetch - processPackages [stormcatchments]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-04-22 16:42:32] INFO root fetch - processPackages [echohue]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-22 16:42:32] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b45] Old Version: [4.1.0.1b44]
+[2023-04-22 16:42:32] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b45] Old Version: [4.1.0.1b44]
+[2023-04-22 16:42:32] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b45] Old Version: [4.1.0.1b44]
+[2023-04-22 16:42:32] INFO root fetch - processPackages [stormcatchments]: executing diffoscope
+[2023-04-22 16:42:32] INFO root fetch - processPackages [stormcatchments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stormcatchments-0.3.1.tar.gz tmp/stormcatchments-0.4.0.tar.gz --markdown 20230422/s/stormcatchments/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-04-22 16:42:32] ERROR root fetch - processPackages [publiczpt]: Unable to get metadata: No such project 'publiczpt'
+[2023-04-22 16:42:32] INFO root fetch - main [MainThread]: End processing [publiczpt] error
+[2023-04-22 16:42:32] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/e3/0b/07d776edccdeb72cc4d52d0de21f5a27da545ae552291ba70a79a09ecc62/foursight_core-4.1.0.1b44.tar.gz
+[2023-04-22 16:42:32] INFO root fetch - processPackages [aliendev-cdk]: Downloading https://files.pythonhosted.org/packages/fa/0d/8b6bbb0e0f0e17a58621e0096dccb2bd8915f2c09fef75a7910975333a71/aliendev_cdk-0.1.35.tar.gz
+[2023-04-22 16:42:32] INFO root fetch - processPackages [torrent-hound]: Downloading https://files.pythonhosted.org/packages/aa/ed/f83520a591aac2c6a0792f0b3309f0b501545ff4b393caa9d7fde385a954/torrent-hound-2.1.0.tar.gz
+[2023-04-22 16:42:32] INFO root fetch - processPackages [echohue]: Downloading https://files.pythonhosted.org/packages/1e/75/5d75a322218fe3ea0987c33616abfe84d52c9d5325d6677750fdce14381f/echohue-0.1.0.tar.gz
+[2023-04-22 16:42:32] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/e3/0b/07d776edccdeb72cc4d52d0de21f5a27da545ae552291ba70a79a09ecc62/foursight_core-4.1.0.1b44.tar.gz
+[2023-04-22 16:42:32] INFO root fetch - processPackages [baopig]: Downloading https://files.pythonhosted.org/packages/95/1c/5858d2cefdcb51e7d018443d4ddab1a42ea80007bc4cdf8ed140f8ce5cf1/baopig-0.20.5-py3-none-any.whl
+[2023-04-22 16:42:32] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/e3/0b/07d776edccdeb72cc4d52d0de21f5a27da545ae552291ba70a79a09ecc62/foursight_core-4.1.0.1b44.tar.gz
+[2023-04-22 16:42:32] INFO root fetch - processPackages [torrent-hound]: executing diffoscope
+[2023-04-22 16:42:32] INFO root fetch - processPackages [torrent-hound]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torrent-hound-2.0.1.tar.gz tmp/torrent-hound-2.1.0.tar.gz --markdown 20230422/t/torrent-hound/2.0.1-2.1.0/diff.md --exclude *.pyd
+[2023-04-22 16:42:32] INFO root fetch - processPackages [baopig]: executing diffoscope
+[2023-04-22 16:42:32] INFO root fetch - processPackages [baopig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baopig-0.20.4-py3-none-any.whl.zip tmp/baopig-0.20.5-py3-none-any.whl.zip --markdown 20230422/b/baopig/0.20.4-0.20.5/diff.md --exclude *.pyd
+[2023-04-22 16:42:32] INFO root fetch - processPackages [aliendev-cdk]: executing diffoscope
+[2023-04-22 16:42:32] INFO root fetch - processPackages [aliendev-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliendev_cdk-0.1.34.tar.gz tmp/aliendev_cdk-0.1.35.tar.gz --markdown 20230422/a/aliendev-cdk/0.1.34-0.1.35/diff.md --exclude *.pyd
+[2023-04-22 16:42:32] INFO root fetch - processPackages [echohue]: Downloading https://files.pythonhosted.org/packages/b4/5d/e7280258cc4fb194701bfed21777fa2ae4ae379dcc62147e6465319ee051/echohue-0.1.1.tar.gz
+[2023-04-22 16:42:32] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/29/9e/598a6aae02d4f56a4bd01d2f4d457e63eb3bb9f4983c217ba1cf65524657/foursight_core-4.1.0.1b45.tar.gz
+[2023-04-22 16:42:32] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/29/9e/598a6aae02d4f56a4bd01d2f4d457e63eb3bb9f4983c217ba1cf65524657/foursight_core-4.1.0.1b45.tar.gz
+[2023-04-22 16:42:32] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/29/9e/598a6aae02d4f56a4bd01d2f4d457e63eb3bb9f4983c217ba1cf65524657/foursight_core-4.1.0.1b45.tar.gz
+[2023-04-22 16:42:32] INFO root fetch - processPackages [echohue]: executing diffoscope
+[2023-04-22 16:42:32] INFO root fetch - processPackages [echohue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/echohue-0.1.0.tar.gz tmp/echohue-0.1.1.tar.gz --markdown 20230422/e/echohue/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-22 16:42:33] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 16:42:33] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 16:42:33] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b44.tar.gz tmp/foursight_core-4.1.0.1b45.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b44-4.1.0.1b45/diff.md --exclude *.pyd
+[2023-04-22 16:42:33] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b44.tar.gz tmp/foursight_core-4.1.0.1b45.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b44-4.1.0.1b45/diff.md --exclude *.pyd
+[2023-04-22 16:42:33] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 16:42:33] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b44.tar.gz tmp/foursight_core-4.1.0.1b45.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b44-4.1.0.1b45/diff.md --exclude *.pyd
+[2023-04-22 16:42:33] INFO root fetch - main [MainThread]: End processing [torrent-hound]: success
+[2023-04-22 16:42:33] INFO root fetch - main [MainThread]: End processing [aliendev-cdk]: success
+[2023-04-22 16:42:34] INFO root fetch - main [MainThread]: End processing [echohue]: success
+[2023-04-22 16:42:34] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 16:42:34] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 16:42:34] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 16:42:36] INFO root fetch - main [MainThread]: End processing [stormcatchments]: success
+[2023-04-22 16:42:36] INFO root fetch - main [MainThread]: End processing [baopig]: success
+[2023-04-22 16:42:36] INFO root fetch - main [MainThread]: Store serial: [17815124]
