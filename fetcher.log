@@ -8780,3 +8780,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 13:55:55] INFO root fetch - processPackages [wafl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wafl-0.0.8-py3-none-any.whl.zip tmp/wafl-0.0.9-py3-none-any.whl.zip --markdown 20230422/w/wafl/0.0.8-0.0.9/diff.md --exclude *.pyd
 [2023-04-22 13:55:56] INFO root fetch - main [MainThread]: End processing [wafl]: success
 [2023-04-22 13:55:56] INFO root fetch - main [MainThread]: Store serial: [17814283]
+[2023-04-22 14:01:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814283]
+[2023-04-22 14:01:05] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 14:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: baopig
+[2023-04-22 14:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: graphql-service-framework
+[2023-04-22 14:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torcheval-nightly
+[2023-04-22 14:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyspoa
+[2023-04-22 14:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-ctp
+[2023-04-22 14:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyHRM
+[2023-04-22 14:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: git-viewer
+[2023-04-22 14:01:05] INFO root fetch - processPackages [baopig]: New version: [0.20.2] Old Version: [0.20.1]
+[2023-04-22 14:01:05] INFO root fetch - processPackages [graphql-service-framework]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-22 14:01:05] INFO root fetch - processPackages [py-ctp]: New version: [6.6.8.20230422] Old Version: [6.6.8.20220915]
+[2023-04-22 14:01:05] INFO root fetch - processPackages [git-viewer]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-04-22 14:01:05] WARNING root fetch - processPackages [pyHRM]: Skipping, unable to determine old version
+[2023-04-22 14:01:05] INFO root fetch - main [MainThread]: End processing [pyHRM] error
+[2023-04-22 14:01:05] INFO root fetch - processPackages [pyspoa]: New version: [0.0.9] Old Version: [0.0.8a0]
+[2023-04-22 14:01:05] INFO root fetch - processPackages [torcheval-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-22 14:01:05] INFO root fetch - processPackages [baopig]: Downloading https://files.pythonhosted.org/packages/80/73/7c83d4826807e0c3fee2643ff8937e60bbbe0b72e85b672e59b0119d602e/baopig-0.20.1-py3-none-any.whl
+[2023-04-22 14:01:05] INFO root fetch - processPackages [git-viewer]: Downloading https://files.pythonhosted.org/packages/d2/39/367931b3c32ec2d2b9a8be49634844aeafec1c539fcac42498251a37e9bd/git-viewer-1.8.1.tar.gz
+[2023-04-22 14:01:05] INFO root fetch - processPackages [py-ctp]: Downloading https://files.pythonhosted.org/packages/43/32/98be0ebd43260f6c6ec6d202307f3e199ca3fb3f34864daf2ea09aadb3cb/py_ctp-6.6.8.20220915.tar.gz
+[2023-04-22 14:01:05] INFO root fetch - processPackages [pyspoa]: Downloading https://files.pythonhosted.org/packages/2f/ac/7dfde27fb46b63c49021d6e3ee4b37918b815416de03414c44c960533359/pyspoa-0.0.8a0.tar.gz
+[2023-04-22 14:01:05] INFO root fetch - processPackages [graphql-service-framework]: executing diffoscope
+[2023-04-22 14:01:05] INFO root fetch - processPackages [graphql-service-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql_service_framework-1.0.8.tar.gz tmp/graphql_service_framework-1.0.9.tar.gz --markdown 20230422/g/graphql-service-framework/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-22 14:01:05] INFO root fetch - processPackages [torcheval-nightly]: executing diffoscope
+[2023-04-22 14:01:05] INFO root fetch - processPackages [torcheval-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torcheval-nightly-2023.4.8.tar.gz tmp/torcheval-nightly-2023.4.9.tar.gz --markdown 20230422/t/torcheval-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-22 14:01:05] INFO root fetch - processPackages [git-viewer]: Downloading https://files.pythonhosted.org/packages/42/27/f521b2790d1536ad690f0a5a134b82c1fd55b4d211d2626841c09030476d/git-viewer-1.9.0.tar.gz
+[2023-04-22 14:01:05] INFO root fetch - processPackages [baopig]: Downloading https://files.pythonhosted.org/packages/97/8e/11a311716a3026692aea101efd93e832d35cd15beeac1f0e43c797e0b8df/baopig-0.20.2-py3-none-any.whl
+[2023-04-22 14:01:05] INFO root fetch - processPackages [git-viewer]: executing diffoscope
+[2023-04-22 14:01:05] INFO root fetch - processPackages [git-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git-viewer-1.8.1.tar.gz tmp/git-viewer-1.9.0.tar.gz --markdown 20230422/g/git-viewer/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-04-22 14:01:05] INFO root fetch - processPackages [pyspoa]: Downloading https://files.pythonhosted.org/packages/1c/85/248ffedc72c656ef6fbd4fcd436719b9f133a102cbd220c7ce83bfb6d870/pyspoa-0.0.9-cp39-cp39-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
+[2023-04-22 14:01:06] INFO root fetch - processPackages [baopig]: executing diffoscope
+[2023-04-22 14:01:06] INFO root fetch - processPackages [baopig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baopig-0.20.1-py3-none-any.whl.zip tmp/baopig-0.20.2-py3-none-any.whl.zip --markdown 20230422/b/baopig/0.20.1-0.20.2/diff.md --exclude *.pyd
+[2023-04-22 14:01:06] INFO root fetch - processPackages [py-ctp]: Downloading https://files.pythonhosted.org/packages/4b/20/0a1d96959fe41c2fcb34f22bf07ac0b49e96b446cb002f01021703f907f8/py_ctp-6.6.8.20230422.tar.gz
+[2023-04-22 14:01:06] INFO root fetch - processPackages [pyspoa]: executing diffoscope
+[2023-04-22 14:01:06] INFO root fetch - processPackages [pyspoa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyspoa-0.0.8a0.tar.gz tmp/pyspoa-0.0.9-cp39-cp39-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.zip --markdown 20230422/p/pyspoa/0.0.8a0-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 14:01:06] INFO root fetch - main [MainThread]: End processing [graphql-service-framework]: success
+[2023-04-22 14:01:07] INFO root fetch - main [MainThread]: End processing [git-viewer]: success
+[2023-04-22 14:01:07] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
+[2023-04-22 14:01:07] INFO root fetch - processPackages [py-ctp]: executing diffoscope
+[2023-04-22 14:01:07] INFO root fetch - processPackages [py-ctp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_ctp-6.6.8.20220915.tar.gz tmp/py_ctp-6.6.8.20230422.tar.gz --markdown 20230422/p/py-ctp/6.6.8.20220915-6.6.8.20230422/diff.md --exclude *.pyd
+[2023-04-22 14:01:07] INFO root fetch - main [MainThread]: End processing [pyspoa]: success
+[2023-04-22 14:01:09] INFO root fetch - main [MainThread]: End processing [baopig]: success
+[2023-04-22 14:01:10] INFO root fetch - main [MainThread]: End processing [py-ctp]: success
+[2023-04-22 14:01:10] INFO root fetch - main [MainThread]: Store serial: [17814313]
