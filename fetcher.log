@@ -3805,3 +3805,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 03:38:59] INFO root fetch - main [MainThread]: End processing [coredis]: success
 [2023-04-22 03:39:00] INFO root fetch - main [MainThread]: End processing [flarespy]: success
 [2023-04-22 03:39:00] INFO root fetch - main [MainThread]: Store serial: [17811450]
+[2023-04-22 03:44:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17811450]
+[2023-04-22 03:44:09] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-22 03:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-sphinx
+[2023-04-22 03:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gpt-gateway
+[2023-04-22 03:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-django
+[2023-04-22 03:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysnmp-lextudio
+[2023-04-22 03:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pylovelace.kernel
+[2023-04-22 03:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nagerapi
+[2023-04-22 03:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nbdev-apl
+[2023-04-22 03:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gpt-gateway
+[2023-04-22 03:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: proactive
+[2023-04-22 03:44:09] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 03:44:09] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 03:44:09] INFO root fetch - processPackages [proactive]: New version: [8.4.11] Old Version: [8.4.10]
+[2023-04-22 03:44:09] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.727] Old Version: [0.0.726]
+[2023-04-22 03:44:09] INFO root fetch - processPackages [proactive]: Downloading https://files.pythonhosted.org/packages/36/67/8f2441cbc911f3a57a2168b0e419b0751450a04c18791e6ba642af1085d8/proactive-8.4.10.zip
+[2023-04-22 03:44:09] INFO root fetch - processPackages [pylovelace.kernel]: New version: [2023.1.6] Old Version: [2023.1.5]
+[2023-04-22 03:44:09] INFO root fetch - processPackages [gpt-gateway]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-22 03:44:09] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-04-22 03:44:09] INFO root fetch - processPackages [gpt-gateway]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-22 03:44:09] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230422/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 03:44:09] INFO root fetch - processPackages [pysnmp-lextudio]: New version: [5.0.26] Old Version: [5.0.25]
+[2023-04-22 03:44:09] WARNING root fetch - processPackages [nagerapi]: Skipping, unable to determine old version
+[2023-04-22 03:44:09] INFO root fetch - main [MainThread]: End processing [nagerapi] error
+[2023-04-22 03:44:09] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-04-22 03:44:09] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230422/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 03:44:10] INFO root fetch - processPackages [gpt-gateway]: Downloading https://files.pythonhosted.org/packages/a5/f2/a20b7f9f1df4e829273755f636d4418318b7c7bb2b43f542960318a17469/gpt_gateway-0.0.4.tar.gz
+[2023-04-22 03:44:10] INFO root fetch - processPackages [gpt-gateway]: Downloading https://files.pythonhosted.org/packages/a5/f2/a20b7f9f1df4e829273755f636d4418318b7c7bb2b43f542960318a17469/gpt_gateway-0.0.4.tar.gz
+[2023-04-22 03:44:10] INFO root fetch - processPackages [pysnmp-lextudio]: Downloading https://files.pythonhosted.org/packages/48/66/1f3625fa6e3e503512b859a18b8072e2545398d39cd8e57bdbc9fb20314d/pysnmp_lextudio-5.0.25.tar.gz
+[2023-04-22 03:44:10] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/1f/84/7dc61fef7dffdc201c9f8f79c8c7dac3fccf692832330ef0d09f2380ca2e/nbdev-apl-0.0.727.tar.gz
+[2023-04-22 03:44:10] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-04-22 03:44:10] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.726.tar.gz tmp/nbdev-apl-0.0.727.tar.gz --markdown 20230422/n/nbdev-apl/0.0.726-0.0.727/diff.md --exclude *.pyd
+[2023-04-22 03:44:10] INFO root fetch - processPackages [pylovelace.kernel]: Downloading https://files.pythonhosted.org/packages/6c/d2/8d2bb0b01aca6cbcf4c12bb9de18309433a6201eae57fcbb111de1758edb/pylovelace.kernel-2023.1.6-cp310-none-any.whl
+[2023-04-22 03:44:10] INFO root fetch - processPackages [gpt-gateway]: Downloading https://files.pythonhosted.org/packages/8b/f5/8bc516df86c596e35a717d4b4ed6323e23be669d4ec7e314853f846b6fb6/gpt_gateway-0.0.5.tar.gz
+[2023-04-22 03:44:10] INFO root fetch - processPackages [gpt-gateway]: Downloading https://files.pythonhosted.org/packages/8b/f5/8bc516df86c596e35a717d4b4ed6323e23be669d4ec7e314853f846b6fb6/gpt_gateway-0.0.5.tar.gz
+[2023-04-22 03:44:10] INFO root fetch - processPackages [pylovelace.kernel]: executing diffoscope
+[2023-04-22 03:44:10] INFO root fetch - processPackages [pylovelace.kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylovelace.kernel-2023.1.5-cp312-none-any.whl.zip tmp/pylovelace.kernel-2023.1.6-cp310-none-any.whl.zip --markdown 20230422/p/pylovelace.kernel/2023.1.5-2023.1.6/diff.md --exclude *.pyd
+[2023-04-22 03:44:10] INFO root fetch - processPackages [pysnmp-lextudio]: Downloading https://files.pythonhosted.org/packages/f0/35/cb74fbc31e3e0e7eba194a4a6a33783e84c6494624dbaee57b5fdaae7f6e/pysnmp_lextudio-5.0.26.tar.gz
+[2023-04-22 03:44:10] INFO root fetch - processPackages [gpt-gateway]: executing diffoscope
+[2023-04-22 03:44:10] INFO root fetch - processPackages [gpt-gateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_gateway-0.0.4.tar.gz tmp/gpt_gateway-0.0.5.tar.gz --markdown 20230422/g/gpt-gateway/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-22 03:44:10] INFO root fetch - processPackages [gpt-gateway]: executing diffoscope
+[2023-04-22 03:44:10] INFO root fetch - processPackages [gpt-gateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_gateway-0.0.4.tar.gz tmp/gpt_gateway-0.0.5.tar.gz --markdown 20230422/g/gpt-gateway/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-22 03:44:10] INFO root fetch - processPackages [pysnmp-lextudio]: executing diffoscope
+[2023-04-22 03:44:10] INFO root fetch - processPackages [pysnmp-lextudio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysnmp_lextudio-5.0.25.tar.gz tmp/pysnmp_lextudio-5.0.26.tar.gz --markdown 20230422/p/pysnmp-lextudio/5.0.25-5.0.26/diff.md --exclude *.pyd
+[2023-04-22 03:44:10] WARNING root fetch - processPackages [proactive]: Skipping package: exceeds size limit 18979361>=10485760
+[2023-04-22 03:44:10] INFO root fetch - main [MainThread]: End processing [proactive] error
+[2023-04-22 03:44:11] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-04-22 03:44:11] INFO root fetch - main [MainThread]: End processing [pylovelace.kernel]: success
+[2023-04-22 03:44:11] INFO root fetch - main [MainThread]: End processing [gpt-gateway]: success
+[2023-04-22 03:44:11] INFO root fetch - main [MainThread]: End processing [gpt-gateway]: success
+[2023-04-22 03:44:11] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-04-22 03:44:11] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-04-22 03:44:14] INFO root fetch - main [MainThread]: End processing [pysnmp-lextudio]: success
+[2023-04-22 03:44:14] INFO root fetch - main [MainThread]: Store serial: [17811480]
