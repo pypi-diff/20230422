@@ -11100,3 +11100,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 17:53:31] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-04-22 17:53:31] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-04-22 17:53:31] INFO root fetch - main [MainThread]: Store serial: [17815603]
+[2023-04-22 17:58:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815603]
+[2023-04-22 17:58:40] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-22 17:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jupylite-duckdb
+[2023-04-22 17:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-test-BensingIO
+[2023-04-22 17:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smartsheet-pydantic
+[2023-04-22 17:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wagtail-markdown
+[2023-04-22 17:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gokyuzu
+[2023-04-22 17:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jupylite-duckdb
+[2023-04-22 17:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: TheSilent
+[2023-04-22 17:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyathena
+[2023-04-22 17:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ddtcv
+[2023-04-22 17:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: gen-odoo-readme
+[2023-04-22 17:58:40] INFO root fetch - processPackages [wagtail-markdown]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-22 17:58:40] WARNING root fetch - processPackages [python-test-BensingIO]: Skipping, unable to determine old version
+[2023-04-22 17:58:40] WARNING root fetch - processPackages [smartsheet-pydantic]: Skipping, unable to determine old version
+[2023-04-22 17:58:40] INFO root fetch - processPackages [jupylite-duckdb]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 17:58:40] INFO root fetch - processPackages [python-test-BensingIO]: Start processing: QuNet
+[2023-04-22 17:58:40] INFO root fetch - main [MainThread]: End processing [python-test-BensingIO] error
+[2023-04-22 17:58:40] INFO root fetch - processPackages [gokyuzu]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-22 17:58:40] INFO root fetch - main [MainThread]: End processing [smartsheet-pydantic] error
+[2023-04-22 17:58:40] INFO root fetch - processPackages [ddtcv]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-22 17:58:40] INFO root fetch - processPackages [gen-odoo-readme]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-22 17:58:40] INFO root fetch - processPackages [jupylite-duckdb]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 17:58:40] INFO root fetch - processPackages [QuNet]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-22 17:58:40] INFO root fetch - processPackages [pyathena]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-04-22 17:58:40] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-22 17:58:40] INFO root fetch - processPackages [jupylite-duckdb]: executing diffoscope
+[2023-04-22 17:58:40] INFO root fetch - processPackages [jupylite-duckdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupylite_duckdb-0.0.8-py3-none-any.whl.zip tmp/jupylite_duckdb-0.0.9-py3-none-any.whl.zip --markdown 20230422/j/jupylite-duckdb/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 17:58:40] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-22 17:58:40] INFO root fetch - processPackages [jupylite-duckdb]: executing diffoscope
+[2023-04-22 17:58:40] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230422/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-22 17:58:40] INFO root fetch - processPackages [jupylite-duckdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupylite_duckdb-0.0.8-py3-none-any.whl.zip tmp/jupylite_duckdb-0.0.9-py3-none-any.whl.zip --markdown 20230422/j/jupylite-duckdb/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 17:58:40] INFO root fetch - processPackages [pyathena]: executing diffoscope
+[2023-04-22 17:58:40] INFO root fetch - processPackages [pyathena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAthena-2.9.5.tar.gz tmp/PyAthena-2.9.6.tar.gz --markdown 20230422/p/pyathena/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-04-22 17:58:40] INFO root fetch - processPackages [gokyuzu]: Downloading https://files.pythonhosted.org/packages/8a/1e/3b900a8a2f7625573c29375bf76d618f580f99ea9ed86aca33788a05488f/gokyuzu-0.0.4.tar.gz
+[2023-04-22 17:58:40] INFO root fetch - processPackages [wagtail-markdown]: Downloading https://files.pythonhosted.org/packages/3e/78/41004f78c8d4c0efc4cb5ff05509e40aabd1102da9c1e903274104c9f77a/wagtail-markdown-0.8.0.tar.gz
+[2023-04-22 17:58:40] INFO root fetch - processPackages [ddtcv]: Downloading https://files.pythonhosted.org/packages/44/ce/00f7893e90ba647536d18fa1a0da807998284cf8f05c160e6bc7c7a9c146/ddtcv-0.1.3.tar.gz
+[2023-04-22 17:58:40] INFO root fetch - processPackages [QuNet]: Downloading https://files.pythonhosted.org/packages/af/6d/23acef9fdf3628acf2fb5e483db3c53cb811242569cc098b51165f63a036/QuNet-0.0.7-py3-none-any.whl
+[2023-04-22 17:58:40] INFO root fetch - processPackages [gokyuzu]: executing diffoscope
+[2023-04-22 17:58:40] INFO root fetch - processPackages [gokyuzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gokyuzu-0.0.3.tar.gz tmp/gokyuzu-0.0.4.tar.gz --markdown 20230422/g/gokyuzu/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-22 17:58:40] INFO root fetch - processPackages [QuNet]: executing diffoscope
+[2023-04-22 17:58:40] INFO root fetch - processPackages [QuNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuNet-0.0.6-py3-none-any.whl.zip tmp/QuNet-0.0.7-py3-none-any.whl.zip --markdown 20230422/Q/QuNet/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-22 17:58:40] INFO root fetch - processPackages [ddtcv]: executing diffoscope
+[2023-04-22 17:58:40] INFO root fetch - processPackages [ddtcv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddtcv-0.1.2.tar.gz tmp/ddtcv-0.1.3.tar.gz --markdown 20230422/d/ddtcv/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-22 17:58:40] INFO root fetch - processPackages [gen-odoo-readme]: Downloading https://files.pythonhosted.org/packages/c5/03/d01c56edfe27774dbec37392f223492c750fedcbd02ef76741a636e50f68/gen-odoo-readme-0.1.7.tar.gz
+[2023-04-22 17:58:40] INFO root fetch - processPackages [gen-odoo-readme]: executing diffoscope
+[2023-04-22 17:58:40] INFO root fetch - processPackages [gen-odoo-readme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gen-odoo-readme-0.1.6.tar.gz tmp/gen-odoo-readme-0.1.7.tar.gz --markdown 20230422/g/gen-odoo-readme/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-22 17:58:40] INFO root fetch - processPackages [wagtail-markdown]: Downloading https://files.pythonhosted.org/packages/49/8e/0ec176f655f4c2e61894848c99dfc2c3a58f2f5ff29839ece3f7ea20119b/wagtail-markdown-0.9.0.tar.gz
+[2023-04-22 17:58:41] INFO root fetch - processPackages [wagtail-markdown]: executing diffoscope
+[2023-04-22 17:58:41] INFO root fetch - processPackages [wagtail-markdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail-markdown-0.8.0.tar.gz tmp/wagtail-markdown-0.9.0.tar.gz --markdown 20230422/w/wagtail-markdown/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-22 17:58:42] INFO root fetch - main [MainThread]: End processing [jupylite-duckdb]: success
+[2023-04-22 17:58:42] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2023-04-22 17:58:42] INFO root fetch - main [MainThread]: End processing [QuNet]: success
+[2023-04-22 17:58:42] INFO root fetch - main [MainThread]: End processing [jupylite-duckdb]: success
+[2023-04-22 17:58:42] INFO root fetch - main [MainThread]: End processing [gen-odoo-readme]: success
+[2023-04-22 17:58:42] INFO root fetch - main [MainThread]: End processing [gokyuzu]: success
+[2023-04-22 17:58:42] INFO root fetch - main [MainThread]: End processing [pyathena]: success
+[2023-04-22 17:58:42] INFO root fetch - main [MainThread]: End processing [ddtcv]: success
+[2023-04-22 17:58:42] INFO root fetch - main [MainThread]: End processing [wagtail-markdown]: success
+[2023-04-22 17:58:42] INFO root fetch - main [MainThread]: Store serial: [17815637]
