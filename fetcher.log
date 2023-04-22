@@ -9140,3 +9140,49 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 14:44:28] INFO root fetch - main [MainThread]: End processing [featurizerai]: success
 [2023-04-22 14:44:28] INFO root fetch - main [MainThread]: End processing [GoogleBard]: success
 [2023-04-22 14:44:28] INFO root fetch - main [MainThread]: Store serial: [17814489]
+[2023-04-22 14:49:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814489]
+[2023-04-22 14:49:40] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-22 14:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: manticore
+[2023-04-22 14:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zigzag-dse
+[2023-04-22 14:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: imp3
+[2023-04-22 14:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sohuprompt
+[2023-04-22 14:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: leagueclientlivedata
+[2023-04-22 14:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: os2ds-rules
+[2023-04-22 14:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pendirequests
+[2023-04-22 14:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: zigzag-dse
+[2023-04-22 14:49:40] INFO root fetch - processPackages [zigzag-dse]: New version: [2.3.3] Old Version: [2.3.2]
+[2023-04-22 14:49:40] INFO root fetch - processPackages [imp3]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-22 14:49:40] INFO root fetch - processPackages [sohuprompt]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-22 14:49:40] WARNING root fetch - processPackages [pendirequests]: Skipping, unable to determine old version
+[2023-04-22 14:49:40] WARNING root fetch - processPackages [leagueclientlivedata]: Skipping, unable to determine old version
+[2023-04-22 14:49:40] INFO root fetch - main [MainThread]: End processing [pendirequests] error
+[2023-04-22 14:49:40] INFO root fetch - main [MainThread]: End processing [leagueclientlivedata] error
+[2023-04-22 14:49:40] INFO root fetch - processPackages [os2ds-rules]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-22 14:49:40] INFO root fetch - processPackages [manticore]: New version: [0.3.8.dev230422] Old Version: [0.3.8.dev230421]
+[2023-04-22 14:49:40] INFO root fetch - processPackages [zigzag-dse]: New version: [2.3.3] Old Version: [2.3.2]
+[2023-04-22 14:49:40] INFO root fetch - processPackages [imp3]: Downloading https://files.pythonhosted.org/packages/3c/1a/69de0ba8a407373835dba7aec3ec6fd1a0e1ca3e94b2d1b538bd3a976d90/imp3-0.1.2.tar.gz
+[2023-04-22 14:49:41] INFO root fetch - processPackages [manticore]: Downloading https://files.pythonhosted.org/packages/e6/56/fcea5c5307f492346c376489ae4f7c1d627bc3c818426c5edec6ab6adc78/manticore-0.3.8.dev230422.tar.gz
+[2023-04-22 14:49:41] INFO root fetch - processPackages [sohuprompt]: Downloading https://files.pythonhosted.org/packages/72/1d/e55348f4acafd831edf23edaecc59e7debdb34a046de18d867d70a2f19cb/sohuprompt-1.0.1.tar.gz
+[2023-04-22 14:49:41] INFO root fetch - processPackages [zigzag-dse]: Downloading https://files.pythonhosted.org/packages/df/73/dd1c6e6a1a3fec2270c68e535052e13ea9d28ca54fbea635bd0d0ee6c737/zigzag-dse-2.3.3.tar.gz
+[2023-04-22 14:49:41] INFO root fetch - processPackages [zigzag-dse]: Downloading https://files.pythonhosted.org/packages/df/73/dd1c6e6a1a3fec2270c68e535052e13ea9d28ca54fbea635bd0d0ee6c737/zigzag-dse-2.3.3.tar.gz
+[2023-04-22 14:49:41] INFO root fetch - processPackages [os2ds-rules]: Downloading https://files.pythonhosted.org/packages/e9/fa/3db7ecd7ad1d62a3c439a36b5188a58f2f8597b07e10b56562a479eadf37/os2ds-rules-0.0.4.tar.gz
+[2023-04-22 14:49:41] INFO root fetch - processPackages [imp3]: executing diffoscope
+[2023-04-22 14:49:41] INFO root fetch - processPackages [imp3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imp3-0.1.1.tar.gz tmp/imp3-0.1.2.tar.gz --markdown 20230422/i/imp3/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-22 14:49:41] INFO root fetch - processPackages [manticore]: executing diffoscope
+[2023-04-22 14:49:41] INFO root fetch - processPackages [manticore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manticore-0.3.8.dev230421.tar.gz tmp/manticore-0.3.8.dev230422.tar.gz --markdown 20230422/m/manticore/0.3.8.dev230421-0.3.8.dev230422/diff.md --exclude *.pyd
+[2023-04-22 14:49:41] INFO root fetch - processPackages [os2ds-rules]: executing diffoscope
+[2023-04-22 14:49:41] INFO root fetch - processPackages [os2ds-rules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/os2ds-rules-0.0.3.tar.gz tmp/os2ds-rules-0.0.4.tar.gz --markdown 20230422/o/os2ds-rules/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-22 14:49:41] INFO root fetch - processPackages [sohuprompt]: Downloading https://files.pythonhosted.org/packages/b4/07/c281460bc9191461fe6b271d8bf3408d13daebcb2ead044ea98e69ed0029/sohuprompt-1.0.2.tar.gz
+[2023-04-22 14:49:41] INFO root fetch - processPackages [sohuprompt]: executing diffoscope
+[2023-04-22 14:49:41] INFO root fetch - processPackages [sohuprompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sohuprompt-1.0.1.tar.gz tmp/sohuprompt-1.0.2.tar.gz --markdown 20230422/s/sohuprompt/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-22 14:49:41] INFO root fetch - processPackages [zigzag-dse]: executing diffoscope
+[2023-04-22 14:49:41] INFO root fetch - processPackages [zigzag-dse]: executing diffoscope
+[2023-04-22 14:49:41] INFO root fetch - processPackages [zigzag-dse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zigzag-dse-2.3.2.tar.gz tmp/zigzag-dse-2.3.3.tar.gz --markdown 20230422/z/zigzag-dse/2.3.2-2.3.3/diff.md --exclude *.pyd
+[2023-04-22 14:49:41] INFO root fetch - processPackages [zigzag-dse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zigzag-dse-2.3.2.tar.gz tmp/zigzag-dse-2.3.3.tar.gz --markdown 20230422/z/zigzag-dse/2.3.2-2.3.3/diff.md --exclude *.pyd
+[2023-04-22 14:49:42] INFO root fetch - main [MainThread]: End processing [imp3]: success
+[2023-04-22 14:49:42] INFO root fetch - main [MainThread]: End processing [os2ds-rules]: success
+[2023-04-22 14:49:43] INFO root fetch - main [MainThread]: End processing [manticore]: success
+[2023-04-22 14:49:43] INFO root fetch - main [MainThread]: End processing [sohuprompt]: success
+[2023-04-22 14:49:44] INFO root fetch - main [MainThread]: End processing [zigzag-dse]: success
+[2023-04-22 14:49:44] INFO root fetch - main [MainThread]: End processing [zigzag-dse]: success
+[2023-04-22 14:49:44] INFO root fetch - main [MainThread]: Store serial: [17814528]
