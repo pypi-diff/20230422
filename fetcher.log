@@ -12095,3 +12095,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 19:39:23] INFO root fetch - main [MainThread]: End processing [humanreadable]: success
 [2023-04-22 19:39:24] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-requests]: success
 [2023-04-22 19:39:24] INFO root fetch - main [MainThread]: Store serial: [17816226]
+[2023-04-22 19:44:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816226]
+[2023-04-22 19:44:34] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 19:44:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pandasflow
+[2023-04-22 19:44:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modern-python-package
+[2023-04-22 19:44:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: opvious
+[2023-04-22 19:44:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: snowddl
+[2023-04-22 19:44:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: maxilearn
+[2023-04-22 19:44:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ox-script
+[2023-04-22 19:44:34] INFO root fetch - processPackages [pandasflow]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-04-22 19:44:34] INFO root fetch - processPackages [ox-script]: New version: [0.2.1] Old Version: [0.1.1]
+[2023-04-22 19:44:34] INFO root fetch - processPackages [opvious]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-22 19:44:34] WARNING root fetch - processPackages [modern-python-package]: Skipping, unable to determine old version
+[2023-04-22 19:44:34] INFO root fetch - main [MainThread]: End processing [modern-python-package] error
+[2023-04-22 19:44:34] INFO root fetch - processPackages [maxilearn]: New version: [4.2] Old Version: [4.1]
+[2023-04-22 19:44:34] INFO root fetch - processPackages [snowddl]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-22 19:44:34] INFO root fetch - processPackages [opvious]: executing diffoscope
+[2023-04-22 19:44:34] INFO root fetch - processPackages [opvious]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opvious-0.9.5.tar.gz tmp/opvious-0.9.6.tar.gz --markdown 20230422/o/opvious/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-22 19:44:34] INFO root fetch - processPackages [ox-script]: Downloading https://files.pythonhosted.org/packages/66/f9/2065bac0b14fa0eea715072a9bc054665d5e54097bfb07f7971a08f1fa0e/ox-script-0.1.1.tar.gz
+[2023-04-22 19:44:34] INFO root fetch - processPackages [pandasflow]: Downloading https://files.pythonhosted.org/packages/fd/44/68155bdea1c21bc1bdbd10270fec8f0d79de7bc3dc5334044df811138024/pandasflow-0.3.0.tar.gz
+[2023-04-22 19:44:34] INFO root fetch - processPackages [snowddl]: Downloading https://files.pythonhosted.org/packages/de/fb/cfd61d54e05e02fe6de2cc9e2c72dd3a952770c7781bfa63593b47647600/snowddl-0.9.8.tar.gz
+[2023-04-22 19:44:34] INFO root fetch - processPackages [maxilearn]: Downloading https://files.pythonhosted.org/packages/92/be/8126e191f70d1a7b8beaf5a0986ab9b7874bd716a92301f4867aee0c70ec/maxilearn-4.2.tar.gz
+[2023-04-22 19:44:34] INFO root fetch - processPackages [pandasflow]: executing diffoscope
+[2023-04-22 19:44:34] INFO root fetch - processPackages [pandasflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandasflow-0.2.2.tar.gz tmp/pandasflow-0.3.0.tar.gz --markdown 20230422/p/pandasflow/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-04-22 19:44:35] INFO root fetch - processPackages [maxilearn]: executing diffoscope
+[2023-04-22 19:44:35] INFO root fetch - processPackages [maxilearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maxilearn-4.1.tar.gz tmp/maxilearn-4.2.tar.gz --markdown 20230422/m/maxilearn/4.1-4.2/diff.md --exclude *.pyd
+[2023-04-22 19:44:35] INFO root fetch - processPackages [ox-script]: Downloading https://files.pythonhosted.org/packages/fd/5b/989d92b9cd1f2a265704bf77da75934b1e4e9039924ea66d8a2efdfb0f3a/ox-script-0.2.1.tar.gz
+[2023-04-22 19:44:35] INFO root fetch - processPackages [ox-script]: executing diffoscope
+[2023-04-22 19:44:35] INFO root fetch - processPackages [ox-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ox-script-0.1.1.tar.gz tmp/ox-script-0.2.1.tar.gz --markdown 20230422/o/ox-script/0.1.1-0.2.1/diff.md --exclude *.pyd
+[2023-04-22 19:44:35] INFO root fetch - processPackages [snowddl]: Downloading https://files.pythonhosted.org/packages/30/b1/743904be3436bae396d5a7d758a63419ad2a611878e2b644c34e43e5266b/snowddl-0.9.9.tar.gz
+[2023-04-22 19:44:35] INFO root fetch - processPackages [snowddl]: executing diffoscope
+[2023-04-22 19:44:35] INFO root fetch - processPackages [snowddl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snowddl-0.9.8.tar.gz tmp/snowddl-0.9.9.tar.gz --markdown 20230422/s/snowddl/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-22 19:44:35] INFO root fetch - main [MainThread]: End processing [opvious]: success
+[2023-04-22 19:44:36] INFO root fetch - main [MainThread]: End processing [maxilearn]: success
+[2023-04-22 19:44:36] INFO root fetch - main [MainThread]: End processing [ox-script]: success
+[2023-04-22 19:44:36] INFO root fetch - main [MainThread]: End processing [pandasflow]: success
+[2023-04-22 19:44:37] INFO root fetch - main [MainThread]: End processing [snowddl]: success
+[2023-04-22 19:44:37] INFO root fetch - main [MainThread]: Store serial: [17816244]
