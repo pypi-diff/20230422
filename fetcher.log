@@ -8182,3 +8182,70 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 12:48:10] ERROR root fetch - processPackages [mkdocs-material]: Timeout during execution of pkgdiff
 [2023-04-22 12:48:10] INFO root fetch - main [MainThread]: End processing [mkdocs-material] error
 [2023-04-22 12:48:10] INFO root fetch - main [MainThread]: Store serial: [17813956]
+[2023-04-22 12:53:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17813956]
+[2023-04-22 12:53:20] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-22 12:53:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autoscale-agent
+[2023-04-22 12:53:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: myodan-tools
+[2023-04-22 12:53:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: garages-burgos
+[2023-04-22 12:53:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: myodan-tools
+[2023-04-22 12:53:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nanolayer
+[2023-04-22 12:53:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: graphql-api
+[2023-04-22 12:53:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: navarp
+[2023-04-22 12:53:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jija
+[2023-04-22 12:53:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: common-as
+[2023-04-22 12:53:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: gptdeploy
+[2023-04-22 12:53:20] INFO root fetch - processPackages [nanolayer]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-22 12:53:20] INFO root fetch - processPackages [myodan-tools]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-22 12:53:20] INFO root fetch - processPackages [myodan-tools]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-22 12:53:20] INFO root fetch - processPackages [graphql-api]: New version: [1.3.0] Old Version: [1.2.9]
+[2023-04-22 12:53:20] INFO root fetch - processPackages [navarp]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-04-22 12:53:20] INFO root fetch - processPackages [common-as]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-04-22 12:53:20] INFO root fetch - processPackages [garages-burgos]: New version: [1.1.2] Old Version: [1.1.0]
+[2023-04-22 12:53:20] WARNING root fetch - processPackages [autoscale-agent]: Skipping, unable to determine old version
+[2023-04-22 12:53:20] INFO root fetch - processPackages [jija]: New version: [0.3] Old Version: [0.2.1]
+[2023-04-22 12:53:20] INFO root fetch - processPackages [autoscale-agent]: Start processing: scrape-schema
+[2023-04-22 12:53:20] INFO root fetch - processPackages [gptdeploy]: New version: [0.18.9] Old Version: [0.18.8]
+[2023-04-22 12:53:20] INFO root fetch - main [MainThread]: End processing [autoscale-agent] error
+[2023-04-22 12:53:20] INFO root fetch - processPackages [scrape-schema]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-22 12:53:20] INFO root fetch - processPackages [nanolayer]: executing diffoscope
+[2023-04-22 12:53:20] INFO root fetch - processPackages [nanolayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanolayer-0.4.8-py3-none-any.whl.zip tmp/nanolayer-0.4.9-py3-none-any.whl.zip --markdown 20230422/n/nanolayer/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-22 12:53:20] INFO root fetch - processPackages [gptdeploy]: executing diffoscope
+[2023-04-22 12:53:20] INFO root fetch - processPackages [gptdeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptdeploy-0.18.8.tar.gz tmp/gptdeploy-0.18.9.tar.gz --markdown 20230422/g/gptdeploy/0.18.8-0.18.9/diff.md --exclude *.pyd
+[2023-04-22 12:53:20] INFO root fetch - processPackages [scrape-schema]: executing diffoscope
+[2023-04-22 12:53:20] INFO root fetch - processPackages [scrape-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrape_schema-0.0.3.tar.gz tmp/scrape_schema-0.0.4.tar.gz --markdown 20230422/s/scrape-schema/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-22 12:53:20] INFO root fetch - processPackages [myodan-tools]: Downloading https://files.pythonhosted.org/packages/e4/5c/1e58479589c05abf00213e66a853bd2609a3f647a78c20909a0d604ef39a/myodan-tools-0.0.5.tar.gz
+[2023-04-22 12:53:20] INFO root fetch - processPackages [myodan-tools]: Downloading https://files.pythonhosted.org/packages/e4/5c/1e58479589c05abf00213e66a853bd2609a3f647a78c20909a0d604ef39a/myodan-tools-0.0.5.tar.gz
+[2023-04-22 12:53:20] INFO root fetch - processPackages [navarp]: Downloading https://files.pythonhosted.org/packages/a0/10/801270c109aec2206ed2070448add313bb7cc523778e023d3c0b1fc29161/navarp-1.4.0.tar.gz
+[2023-04-22 12:53:20] INFO root fetch - processPackages [garages-burgos]: Downloading https://files.pythonhosted.org/packages/d5/4e/3da2e2a5d45cdd623811c49d1c11a05d1a01b82328a50aabeb9f8e95fa97/garages_burgos-1.1.0.tar.gz
+[2023-04-22 12:53:20] INFO root fetch - processPackages [graphql-api]: Downloading https://files.pythonhosted.org/packages/81/2d/71ccef0173c07361d62bd36e0f21eba3f62d72fecf1b093f2621e64232bb/graphql-api-1.3.0.tar.gz
+[2023-04-22 12:53:20] INFO root fetch - processPackages [common-as]: Downloading https://files.pythonhosted.org/packages/c5/e5/c06ca5e4423f7f162bf35357bc624695c27d5bc6b68969dc2f3ec531565e/common_as-1.3.2.tar.gz
+[2023-04-22 12:53:20] INFO root fetch - processPackages [jija]: Downloading https://files.pythonhosted.org/packages/0a/ac/d7fbd88d97e6e5dda3b053ea8a8697f3406ab4d57d5bfa6ccdaee91998a6/jija-0.3.tar.gz
+[2023-04-22 12:53:20] INFO root fetch - processPackages [myodan-tools]: Downloading https://files.pythonhosted.org/packages/5c/70/c744a4e8c0f6ce86878d0ffd1dd0b4f2eeb5c96a55bd69cdb650c119da7f/myodan-tools-0.0.6.tar.gz
+[2023-04-22 12:53:20] INFO root fetch - processPackages [myodan-tools]: Downloading https://files.pythonhosted.org/packages/5c/70/c744a4e8c0f6ce86878d0ffd1dd0b4f2eeb5c96a55bd69cdb650c119da7f/myodan-tools-0.0.6.tar.gz
+[2023-04-22 12:53:20] INFO root fetch - processPackages [graphql-api]: executing diffoscope
+[2023-04-22 12:53:20] INFO root fetch - processPackages [graphql-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql-api-1.2.9.tar.gz tmp/graphql-api-1.3.0.tar.gz --markdown 20230422/g/graphql-api/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2023-04-22 12:53:20] INFO root fetch - processPackages [myodan-tools]: executing diffoscope
+[2023-04-22 12:53:20] INFO root fetch - processPackages [myodan-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myodan-tools-0.0.5.tar.gz tmp/myodan-tools-0.0.6.tar.gz --markdown 20230422/m/myodan-tools/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-22 12:53:20] INFO root fetch - processPackages [myodan-tools]: executing diffoscope
+[2023-04-22 12:53:20] INFO root fetch - processPackages [myodan-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myodan-tools-0.0.5.tar.gz tmp/myodan-tools-0.0.6.tar.gz --markdown 20230422/m/myodan-tools/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-22 12:53:20] INFO root fetch - processPackages [navarp]: Downloading https://files.pythonhosted.org/packages/01/5a/6c478acdb21ff72dd39aee01f754358c7f4651660f6586764b92b7081ee8/navarp-1.5.0.tar.gz
+[2023-04-22 12:53:20] INFO root fetch - processPackages [jija]: executing diffoscope
+[2023-04-22 12:53:20] INFO root fetch - processPackages [jija]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jija-0.2.1.tar.gz tmp/jija-0.3.tar.gz --markdown 20230422/j/jija/0.2.1-0.3/diff.md --exclude *.pyd
+[2023-04-22 12:53:20] INFO root fetch - processPackages [common-as]: executing diffoscope
+[2023-04-22 12:53:20] INFO root fetch - processPackages [common-as]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/common_as-1.3.1.tar.gz tmp/common_as-1.3.2.tar.gz --markdown 20230422/c/common-as/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-04-22 12:53:20] INFO root fetch - processPackages [garages-burgos]: Downloading https://files.pythonhosted.org/packages/44/45/4fd2e2b627ef8ed8f0076f3f79faec8f5d16b4337a37540befb4370a8242/garages_burgos-1.1.2.tar.gz
+[2023-04-22 12:53:20] INFO root fetch - processPackages [garages-burgos]: executing diffoscope
+[2023-04-22 12:53:20] INFO root fetch - processPackages [garages-burgos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garages_burgos-1.1.0.tar.gz tmp/garages_burgos-1.1.2.tar.gz --markdown 20230422/g/garages-burgos/1.1.0-1.1.2/diff.md --exclude *.pyd
+[2023-04-22 12:53:20] INFO root fetch - processPackages [navarp]: executing diffoscope
+[2023-04-22 12:53:20] INFO root fetch - processPackages [navarp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/navarp-1.4.0.tar.gz tmp/navarp-1.5.0.tar.gz --markdown 20230422/n/navarp/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-04-22 12:53:21] INFO root fetch - main [MainThread]: End processing [scrape-schema]: success
+[2023-04-22 12:53:21] INFO root fetch - main [MainThread]: End processing [nanolayer]: success
+[2023-04-22 12:53:22] INFO root fetch - main [MainThread]: End processing [gptdeploy]: success
+[2023-04-22 12:53:22] INFO root fetch - main [MainThread]: End processing [myodan-tools]: success
+[2023-04-22 12:53:22] INFO root fetch - main [MainThread]: End processing [graphql-api]: success
+[2023-04-22 12:53:22] INFO root fetch - main [MainThread]: End processing [myodan-tools]: success
+[2023-04-22 12:53:22] INFO root fetch - main [MainThread]: End processing [garages-burgos]: success
+[2023-04-22 12:53:22] INFO root fetch - main [MainThread]: End processing [common-as]: success
+[2023-04-22 12:53:22] INFO root fetch - main [MainThread]: End processing [jija]: success
+[2023-04-22 12:53:23] INFO root fetch - main [MainThread]: End processing [navarp]: success
+[2023-04-22 12:53:23] INFO root fetch - main [MainThread]: Store serial: [17813987]
