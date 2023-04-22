@@ -12629,3 +12629,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 20:58:50] INFO root fetch - main [MainThread]: End processing [cfr]: success
 [2023-04-22 20:58:50] INFO root fetch - main [MainThread]: End processing [browserpilot]: success
 [2023-04-22 20:58:50] INFO root fetch - main [MainThread]: Store serial: [17816514]
+[2023-04-22 21:03:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816514]
+[2023-04-22 21:03:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-22 21:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchgating
+[2023-04-22 21:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pystarshade
+[2023-04-22 21:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aliendev-api
+[2023-04-22 21:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: medium-api
+[2023-04-22 21:03:59] INFO root fetch - processPackages [medium-api]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-04-22 21:03:59] INFO root fetch - processPackages [torchgating]: New version: [0.1.2a0] Old Version: [0.1.1b0]
+[2023-04-22 21:03:59] INFO root fetch - processPackages [aliendev-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 21:03:59] WARNING root fetch - processPackages [pystarshade]: Skipping, unable to determine old version
+[2023-04-22 21:03:59] INFO root fetch - main [MainThread]: End processing [pystarshade] error
+[2023-04-22 21:03:59] INFO root fetch - processPackages [torchgating]: Downloading https://files.pythonhosted.org/packages/b7/3f/75148bbea6293a8be353daf8a0466b5699f5eb53d4121317c7cc60b3f3f4/torchgating-0.1.1b0.tar.gz
+[2023-04-22 21:03:59] INFO root fetch - processPackages [medium-api]: Downloading https://files.pythonhosted.org/packages/91/4d/b9575a882c5db4887a8a3ccfbcc8961d58aaf682bc7eda25e515c293afde/medium-api-0.5.3.tar.gz
+[2023-04-22 21:04:00] INFO root fetch - processPackages [aliendev-api]: Downloading https://files.pythonhosted.org/packages/07/9c/725c56ad38260f82e4152b1014654009eac10d88171b89470db63d1703dd/aliendev_api-0.1.9.tar.gz
+[2023-04-22 21:04:00] INFO root fetch - processPackages [medium-api]: executing diffoscope
+[2023-04-22 21:04:00] INFO root fetch - processPackages [medium-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medium-api-0.5.2.tar.gz tmp/medium-api-0.5.3.tar.gz --markdown 20230422/m/medium-api/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-04-22 21:04:00] INFO root fetch - processPackages [aliendev-api]: executing diffoscope
+[2023-04-22 21:04:00] INFO root fetch - processPackages [aliendev-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliendev_api-0.1.8.tar.gz tmp/aliendev_api-0.1.9.tar.gz --markdown 20230422/a/aliendev-api/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 21:04:00] INFO root fetch - processPackages [torchgating]: executing diffoscope
+[2023-04-22 21:04:00] INFO root fetch - processPackages [torchgating]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchgating-0.1.1b0.tar.gz tmp/torchgating-0.1.2a0.tar.gz --markdown 20230422/t/torchgating/0.1.1b0-0.1.2a0/diff.md --exclude *.pyd
+[2023-04-22 21:04:01] INFO root fetch - main [MainThread]: End processing [aliendev-api]: success
+[2023-04-22 21:04:01] INFO root fetch - main [MainThread]: End processing [torchgating]: success
+[2023-04-22 21:04:01] INFO root fetch - main [MainThread]: End processing [medium-api]: success
+[2023-04-22 21:04:01] INFO root fetch - main [MainThread]: Store serial: [17816528]
