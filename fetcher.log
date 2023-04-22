@@ -8369,3 +8369,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 13:08:59] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
 [2023-04-22 13:08:59] INFO root fetch - main [MainThread]: End processing [kinisi]: success
 [2023-04-22 13:08:59] INFO root fetch - main [MainThread]: Store serial: [17814047]
+[2023-04-22 13:14:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814047]
+[2023-04-22 13:14:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 13:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: javaman
+[2023-04-22 13:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: affine-transform
+[2023-04-22 13:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chesscomwrapper
+[2023-04-22 13:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: medspellchecker
+[2023-04-22 13:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autoscale-agent
+[2023-04-22 13:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: myodan-tools
+[2023-04-22 13:14:08] INFO root fetch - processPackages [chesscomwrapper]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-22 13:14:08] INFO root fetch - processPackages [javaman]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-22 13:14:08] INFO root fetch - processPackages [medspellchecker]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 13:14:08] INFO root fetch - processPackages [affine-transform]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-22 13:14:08] INFO root fetch - processPackages [autoscale-agent]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-22 13:14:08] INFO root fetch - processPackages [myodan-tools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 13:14:08] INFO root fetch - processPackages [affine-transform]: Downloading https://files.pythonhosted.org/packages/21/59/77c05c893cc53dd45a27c8fb57caaf5a3b93d84155bcd1e866ef89bea41a/affine_transform-0.2.7.tar.gz
+[2023-04-22 13:14:08] INFO root fetch - processPackages [javaman]: Downloading https://files.pythonhosted.org/packages/3d/22/addb17301baafa0043f229b6252dfa81137199e42c035a17dda11747e714/javaman-1.0.8.tar.gz
+[2023-04-22 13:14:08] INFO root fetch - processPackages [chesscomwrapper]: Downloading https://files.pythonhosted.org/packages/49/c6/ee4a5ed9e551aff8bf43862c888bab92a9ecf62c640eb2d02fd0530ed246/chesscomwrapper-0.0.3.tar.gz
+[2023-04-22 13:14:08] INFO root fetch - processPackages [medspellchecker]: Downloading https://files.pythonhosted.org/packages/f7/94/911e123c9dc96eb846ab4d302a05cdab0a36629eb648a61841ad9691cb78/medspellchecker-0.0.1.tar.gz
+[2023-04-22 13:14:08] INFO root fetch - processPackages [myodan-tools]: Downloading https://files.pythonhosted.org/packages/f2/0a/e829bd6633daa29afd1c9833c9ce323ceae43fa4d2b7a85eb8c9f548128b/myodan-tools-0.0.9.tar.gz
+[2023-04-22 13:14:08] INFO root fetch - processPackages [autoscale-agent]: Downloading https://files.pythonhosted.org/packages/61/a5/293dd41927491d341a366cf350beba9965c188a7e737e4e29d56b60187de/autoscale_agent-0.1.2.tar.gz
+[2023-04-22 13:14:08] INFO root fetch - processPackages [chesscomwrapper]: executing diffoscope
+[2023-04-22 13:14:08] INFO root fetch - processPackages [chesscomwrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chesscomwrapper-0.0.2.tar.gz tmp/chesscomwrapper-0.0.3.tar.gz --markdown 20230422/c/chesscomwrapper/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-22 13:14:08] INFO root fetch - processPackages [autoscale-agent]: executing diffoscope
+[2023-04-22 13:14:08] INFO root fetch - processPackages [autoscale-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoscale_agent-0.1.1.tar.gz tmp/autoscale_agent-0.1.2.tar.gz --markdown 20230422/a/autoscale-agent/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-22 13:14:08] INFO root fetch - processPackages [myodan-tools]: executing diffoscope
+[2023-04-22 13:14:08] INFO root fetch - processPackages [myodan-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myodan-tools-0.0.8.tar.gz tmp/myodan-tools-0.0.9.tar.gz --markdown 20230422/m/myodan-tools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 13:14:09] INFO root fetch - processPackages [medspellchecker]: Downloading https://files.pythonhosted.org/packages/db/22/fc2d23d64e5963156849cd292e295d829614f351fb7be8e0411790dde9b9/medspellchecker-0.0.2.tar.gz
+[2023-04-22 13:14:09] INFO root fetch - processPackages [affine-transform]: Downloading https://files.pythonhosted.org/packages/8b/5f/dcaa6abce11ce9537185f9383eb67557c3a400f8fb89ef20a54bd2ffef49/affine_transform-0.2.8.tar.gz
+[2023-04-22 13:14:09] INFO root fetch - processPackages [medspellchecker]: executing diffoscope
+[2023-04-22 13:14:09] INFO root fetch - processPackages [medspellchecker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medspellchecker-0.0.1.tar.gz tmp/medspellchecker-0.0.2.tar.gz --markdown 20230422/m/medspellchecker/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 13:14:09] INFO root fetch - processPackages [javaman]: Downloading https://files.pythonhosted.org/packages/e3/44/b2b08af05d517d9493e70979048cc38a51a9ee64952fbd4f9657628cf7c8/javaman-1.0.9.tar.gz
+[2023-04-22 13:14:09] INFO root fetch - processPackages [affine-transform]: executing diffoscope
+[2023-04-22 13:14:09] INFO root fetch - processPackages [affine-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/affine_transform-0.2.7.tar.gz tmp/affine_transform-0.2.8.tar.gz --markdown 20230422/a/affine-transform/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-22 13:14:09] INFO root fetch - processPackages [javaman]: executing diffoscope
+[2023-04-22 13:14:09] INFO root fetch - processPackages [javaman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/javaman-1.0.8.tar.gz tmp/javaman-1.0.9.tar.gz --markdown 20230422/j/javaman/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-22 13:14:09] INFO root fetch - main [MainThread]: End processing [autoscale-agent]: success
+[2023-04-22 13:14:09] INFO root fetch - main [MainThread]: End processing [myodan-tools]: success
+[2023-04-22 13:14:10] INFO root fetch - main [MainThread]: End processing [chesscomwrapper]: success
+[2023-04-22 13:14:10] INFO root fetch - main [MainThread]: End processing [javaman]: success
+[2023-04-22 13:14:10] INFO root fetch - main [MainThread]: End processing [medspellchecker]: success
+[2023-04-22 13:14:12] INFO root fetch - main [MainThread]: End processing [affine-transform]: success
+[2023-04-22 13:14:12] INFO root fetch - main [MainThread]: Store serial: [17814063]
