@@ -6113,3 +6113,19 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 08:19:54] INFO root fetch - main [MainThread]: End processing [odoo12-addon-purchase-request]: success
 [2023-04-22 08:20:00] INFO root fetch - main [MainThread]: End processing [pretext]: success
 [2023-04-22 08:20:00] INFO root fetch - main [MainThread]: Store serial: [17812674]
+[2023-04-22 08:25:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17812674]
+[2023-04-22 08:25:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-22 08:25:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cupoch
+[2023-04-22 08:25:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uuyoupinapi
+[2023-04-22 08:25:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fake-bpy-module-latest
+[2023-04-22 08:25:10] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20230421] Old Version: [20230420]
+[2023-04-22 08:25:10] INFO root fetch - processPackages [cupoch]: New version: [0.2.7.2] Old Version: [0.2.7.1]
+[2023-04-22 08:25:10] WARNING root fetch - processPackages [uuyoupinapi]: Skipping, unable to determine old version
+[2023-04-22 08:25:10] INFO root fetch - main [MainThread]: End processing [uuyoupinapi] error
+[2023-04-22 08:25:10] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2023-04-22 08:25:10] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bpy-module-latest-20230420.tar.gz tmp/fake-bpy-module-latest-20230421.tar.gz --markdown 20230422/f/fake-bpy-module-latest/20230420-20230421/diff.md --exclude *.pyd
+[2023-04-22 08:25:10] INFO root fetch - processPackages [cupoch]: Downloading https://files.pythonhosted.org/packages/68/ca/fd30efd1ca07fa7bbe7aaec393e6b8575edf465ff7115b3c706805d3c00d/cupoch-0.2.7.1-cp39-cp39-win_amd64.whl
+[2023-04-22 08:25:10] WARNING root fetch - processPackages [cupoch]: Skipping package: exceeds size limit 19253079>=10485760
+[2023-04-22 08:25:10] INFO root fetch - main [MainThread]: End processing [cupoch] error
+[2023-04-22 08:25:17] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2023-04-22 08:25:17] INFO root fetch - main [MainThread]: Store serial: [17812684]
