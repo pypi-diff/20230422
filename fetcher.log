@@ -9626,3 +9626,46 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 15:28:39] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-04-22 15:28:43] INFO root fetch - main [MainThread]: End processing [printf-log-formatter]: success
 [2023-04-22 15:28:43] INFO root fetch - main [MainThread]: Store serial: [17814786]
+[2023-04-22 15:33:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814786]
+[2023-04-22 15:33:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 15:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: networkx-robustness
+[2023-04-22 15:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: foursight-core
+[2023-04-22 15:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbt-spark
+[2023-04-22 15:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: QuNet
+[2023-04-22 15:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: foursight-core
+[2023-04-22 15:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: telenvi
+[2023-04-22 15:33:57] INFO root fetch - processPackages [networkx-robustness]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-22 15:33:57] INFO root fetch - processPackages [QuNet]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-22 15:33:57] INFO root fetch - processPackages [dbt-spark]: New version: [1.5.0rc1] Old Version: [1.5.0b4]
+[2023-04-22 15:33:57] INFO root fetch - processPackages [telenvi]: New version: [5.0.6] Old Version: [5.0.5]
+[2023-04-22 15:33:57] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b31] Old Version: [4.1.0.1b30]
+[2023-04-22 15:33:57] INFO root fetch - processPackages [foursight-core]: New version: [4.1.0.1b31] Old Version: [4.1.0.1b30]
+[2023-04-22 15:33:57] INFO root fetch - processPackages [networkx-robustness]: Downloading https://files.pythonhosted.org/packages/ae/11/30f1d30a9f453f5e87889e8d1589681e789c10947aa513d8c60e3fea37ae/networkx_robustness-0.0.2.tar.gz
+[2023-04-22 15:33:57] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/e6/5f/9554739be886b3cdb9394719cd255b0d2c3850221eb072c5fb644b3ed93c/foursight_core-4.1.0.1b30.tar.gz
+[2023-04-22 15:33:57] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/e6/5f/9554739be886b3cdb9394719cd255b0d2c3850221eb072c5fb644b3ed93c/foursight_core-4.1.0.1b30.tar.gz
+[2023-04-22 15:33:57] INFO root fetch - processPackages [QuNet]: Downloading https://files.pythonhosted.org/packages/5a/ad/7fbbb9d9f0fb301f0e27bfba90775464481f710cb31ce58b548330ef4968/QuNet-0.0.6-py3-none-any.whl
+[2023-04-22 15:33:57] INFO root fetch - processPackages [dbt-spark]: Downloading https://files.pythonhosted.org/packages/e9/dc/a9dbe25ed22ab169a095e24c41fc508fca93f62a8aca2a7fe14d0938bf92/dbt-spark-1.5.0b4.tar.gz
+[2023-04-22 15:33:57] INFO root fetch - processPackages [telenvi]: Downloading https://files.pythonhosted.org/packages/c4/3f/d6481545b90e035e27fdbbc6ff3d7550b678be9fdc221aa8be352d1a693d/telenvi-5.0.6.tar.gz
+[2023-04-22 15:33:57] INFO root fetch - processPackages [QuNet]: executing diffoscope
+[2023-04-22 15:33:57] INFO root fetch - processPackages [QuNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuNet-0.0.5-py3-none-any.whl.zip tmp/QuNet-0.0.6-py3-none-any.whl.zip --markdown 20230422/Q/QuNet/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-22 15:33:58] INFO root fetch - processPackages [networkx-robustness]: Downloading https://files.pythonhosted.org/packages/36/85/acaa3d944f8d596deed040233e4ed77bc7e6a845eae819f696c0d31f3202/networkx_robustness-0.0.3.tar.gz
+[2023-04-22 15:33:58] INFO root fetch - processPackages [telenvi]: executing diffoscope
+[2023-04-22 15:33:58] INFO root fetch - processPackages [telenvi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telenvi-5.0.5.tar.gz tmp/telenvi-5.0.6.tar.gz --markdown 20230422/t/telenvi/5.0.5-5.0.6/diff.md --exclude *.pyd
+[2023-04-22 15:33:58] INFO root fetch - processPackages [dbt-spark]: Downloading https://files.pythonhosted.org/packages/80/a8/733a298a09c4d876d7c431bbc2dc9ef06eefbfc52ba8438b68f6857efacc/dbt-spark-1.5.0rc1.tar.gz
+[2023-04-22 15:33:58] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/44/dd/5482cd5601f30243e3ab79b75e24c9cc8152505b21a4f2081ebc50ba65aa/foursight_core-4.1.0.1b31.tar.gz
+[2023-04-22 15:33:58] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/44/dd/5482cd5601f30243e3ab79b75e24c9cc8152505b21a4f2081ebc50ba65aa/foursight_core-4.1.0.1b31.tar.gz
+[2023-04-22 15:33:58] INFO root fetch - processPackages [networkx-robustness]: executing diffoscope
+[2023-04-22 15:33:58] INFO root fetch - processPackages [networkx-robustness]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networkx_robustness-0.0.2.tar.gz tmp/networkx_robustness-0.0.3.tar.gz --markdown 20230422/n/networkx-robustness/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-22 15:33:58] INFO root fetch - processPackages [dbt-spark]: executing diffoscope
+[2023-04-22 15:33:58] INFO root fetch - processPackages [dbt-spark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-spark-1.5.0b4.tar.gz tmp/dbt-spark-1.5.0rc1.tar.gz --markdown 20230422/d/dbt-spark/1.5.0b4-1.5.0rc1/diff.md --exclude *.pyd
+[2023-04-22 15:33:58] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 15:33:58] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b30.tar.gz tmp/foursight_core-4.1.0.1b31.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b30-4.1.0.1b31/diff.md --exclude *.pyd
+[2023-04-22 15:33:58] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 15:33:58] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.1.0.1b30.tar.gz tmp/foursight_core-4.1.0.1b31.tar.gz --markdown 20230422/f/foursight-core/4.1.0.1b30-4.1.0.1b31/diff.md --exclude *.pyd
+[2023-04-22 15:33:59] INFO root fetch - main [MainThread]: End processing [QuNet]: success
+[2023-04-22 15:33:59] INFO root fetch - main [MainThread]: End processing [telenvi]: success
+[2023-04-22 15:33:59] INFO root fetch - main [MainThread]: End processing [networkx-robustness]: success
+[2023-04-22 15:33:59] INFO root fetch - main [MainThread]: End processing [dbt-spark]: success
+[2023-04-22 15:33:59] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 15:33:59] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 15:33:59] INFO root fetch - main [MainThread]: Store serial: [17814804]
