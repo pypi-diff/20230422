@@ -10248,3 +10248,81 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 16:42:36] INFO root fetch - main [MainThread]: End processing [stormcatchments]: success
 [2023-04-22 16:42:36] INFO root fetch - main [MainThread]: End processing [baopig]: success
 [2023-04-22 16:42:36] INFO root fetch - main [MainThread]: Store serial: [17815124]
+[2023-04-22 16:47:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17815124]
+[2023-04-22 16:47:45] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-22 16:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: foursight-core
+[2023-04-22 16:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-poe-chat
+[2023-04-22 16:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: publiczpt
+[2023-04-22 16:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flamapy-smt
+[2023-04-22 16:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aliendev-cdk
+[2023-04-22 16:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: foursight-core
+[2023-04-22 16:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: foursight-core
+[2023-04-22 16:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: qworker
+[2023-04-22 16:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: herojson
+[2023-04-22 16:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: foursight-core
+[2023-04-22 16:47:45] INFO root fetch - processPackages [flamapy-smt]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-22 16:47:45] INFO root fetch - processPackages [aliendev-cdk]: New version: [0.1.36] Old Version: [0.1.35]
+[2023-04-22 16:47:45] WARNING root fetch - processPackages [publiczpt]: Skipping, unable to determine old version
+[2023-04-22 16:47:45] INFO root fetch - processPackages [publiczpt]: Start processing: tinyOpenAI
+[2023-04-22 16:47:45] INFO root fetch - main [MainThread]: End processing [publiczpt] error
+[2023-04-22 16:47:45] WARNING root fetch - processPackages [herojson]: Skipping, unable to determine old version
+[2023-04-22 16:47:45] INFO root fetch - processPackages [herojson]: Start processing: reytool
+[2023-04-22 16:47:45] INFO root fetch - main [MainThread]: End processing [herojson] error
+[2023-04-22 16:47:45] INFO root fetch - processPackages [nonebot-poe-chat]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-22 16:47:45] INFO root fetch - processPackages [qworker]: New version: [1.6.5] Old Version: [1.6.4]
+[2023-04-22 16:47:45] INFO root fetch - processPackages [tinyOpenAI]: New version: [0.13] Old Version: [0.12]
+[2023-04-22 16:47:45] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-22 16:47:45] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-22 16:47:45] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-22 16:47:45] INFO root fetch - processPackages [reytool]: New version: [0.99] Old Version: [0.98]
+[2023-04-22 16:47:45] INFO root fetch - processPackages [foursight-core]: New version: [4.0.0] Old Version: [3.3.2.2b1]
+[2023-04-22 16:47:45] INFO root fetch - processPackages [reytool]: executing diffoscope
+[2023-04-22 16:47:45] INFO root fetch - processPackages [reytool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reytool-0.98-py3-none-any.whl.zip tmp/reytool-0.99-py3-none-any.whl.zip --markdown 20230422/r/reytool/0.98-0.99/diff.md --exclude *.pyd
+[2023-04-22 16:47:45] INFO root fetch - processPackages [flamapy-smt]: Downloading https://files.pythonhosted.org/packages/23/82/87af6a16ff7df30cbe8c8c3e1d3a985fe6f02bf189b8e7aeb8d91e3682bb/flamapy-smt-1.2.2.tar.gz
+[2023-04-22 16:47:45] INFO root fetch - processPackages [tinyOpenAI]: Downloading https://files.pythonhosted.org/packages/c5/4d/b86f70f94e2902768f32803e89e94f37454035d103ad529f3ce8a65c58c9/tinyOpenAI-0.12.tar.gz
+[2023-04-22 16:47:45] INFO root fetch - processPackages [aliendev-cdk]: Downloading https://files.pythonhosted.org/packages/65/2c/fd90869f9c73056418ce55814145eca96b0a0f313665d516b40e791f856c/aliendev_cdk-0.1.36.tar.gz
+[2023-04-22 16:47:45] INFO root fetch - processPackages [qworker]: Downloading https://files.pythonhosted.org/packages/13/61/4df80615356c8158ae03f5bb6dbf057f21487ac42e4fcd00d87f20f0c8e0/qworker-1.6.5-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-22 16:47:45] INFO root fetch - processPackages [nonebot-poe-chat]: Downloading https://files.pythonhosted.org/packages/6d/10/4b2cc033bdbd2c4a476143d5f21cd5d559df3c6ab7b5e209f669f32e3576/nonebot_poe_chat-0.0.5.tar.gz
+[2023-04-22 16:47:46] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 16:47:46] INFO root fetch - processPackages [aliendev-cdk]: executing diffoscope
+[2023-04-22 16:47:46] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230422/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-22 16:47:46] INFO root fetch - processPackages [aliendev-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliendev_cdk-0.1.35.tar.gz tmp/aliendev_cdk-0.1.36.tar.gz --markdown 20230422/a/aliendev-cdk/0.1.35-0.1.36/diff.md --exclude *.pyd
+[2023-04-22 16:47:46] INFO root fetch - processPackages [flamapy-smt]: Downloading https://files.pythonhosted.org/packages/50/a0/7230e30c4036575e7fa11df9d1567f17f47eff1e4f759b6581f3f13a19b1/flamapy-smt-1.2.3.tar.gz
+[2023-04-22 16:47:46] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 16:47:46] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230422/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-22 16:47:46] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 16:47:46] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230422/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-22 16:47:46] INFO root fetch - processPackages [qworker]: executing diffoscope
+[2023-04-22 16:47:46] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-04-22 16:47:46] INFO root fetch - processPackages [tinyOpenAI]: Downloading https://files.pythonhosted.org/packages/3e/70/bca8121f08ee4bf4963cf3e027c4a8f3d4b317b39f35883f79a42316d747/tinyOpenAI-0.13.tar.gz
+[2023-04-22 16:47:46] INFO root fetch - processPackages [qworker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qworker-1.6.4-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/qworker-1.6.5-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230422/q/qworker/1.6.4-1.6.5/diff.md --exclude *.pyd
+[2023-04-22 16:47:46] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-3.3.2.2b1.tar.gz tmp/foursight_core-4.0.0.tar.gz --markdown 20230422/f/foursight-core/3.3.2.2b1-4.0.0/diff.md --exclude *.pyd
+[2023-04-22 16:47:46] INFO root fetch - processPackages [nonebot-poe-chat]: Downloading https://files.pythonhosted.org/packages/31/89/db8902c9abef659738f7beef20d54be21b8abe9ff71e1fcca97ff8805b34/nonebot_poe_chat-0.0.6.tar.gz
+[2023-04-22 16:47:46] INFO root fetch - processPackages [tinyOpenAI]: executing diffoscope
+[2023-04-22 16:47:46] INFO root fetch - processPackages [flamapy-smt]: executing diffoscope
+[2023-04-22 16:47:46] INFO root fetch - processPackages [flamapy-smt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flamapy-smt-1.2.2.tar.gz tmp/flamapy-smt-1.2.3.tar.gz --markdown 20230422/f/flamapy-smt/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-22 16:47:46] INFO root fetch - processPackages [tinyOpenAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyOpenAI-0.12.tar.gz tmp/tinyOpenAI-0.13.tar.gz --markdown 20230422/t/tinyOpenAI/0.12-0.13/diff.md --exclude *.pyd
+[2023-04-22 16:47:46] INFO root fetch - processPackages [nonebot-poe-chat]: executing diffoscope
+[2023-04-22 16:47:46] INFO root fetch - processPackages [nonebot-poe-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_poe_chat-0.0.5.tar.gz tmp/nonebot_poe_chat-0.0.6.tar.gz --markdown 20230422/n/nonebot-poe-chat/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-22 16:47:47] INFO root fetch - processPackages [reytool]: Start processing: mpservice
+[2023-04-22 16:47:47] INFO root fetch - main [MainThread]: End processing [reytool]: success
+[2023-04-22 16:47:47] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2023-04-22 16:47:47] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2023-04-22 16:47:47] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20230422/m/mpservice/0.9.9-0.9.9.post1/diff.md --exclude *.pyd
+[2023-04-22 16:47:47] INFO root fetch - processPackages [aliendev-cdk]: Start processing: reyworm
+[2023-04-22 16:47:47] INFO root fetch - main [MainThread]: End processing [aliendev-cdk]: success
+[2023-04-22 16:47:47] INFO root fetch - processPackages [reyworm]: New version: [0.4] Old Version: [0.3]
+[2023-04-22 16:47:47] INFO root fetch - main [MainThread]: End processing [tinyOpenAI]: success
+[2023-04-22 16:47:48] INFO root fetch - main [MainThread]: End processing [flamapy-smt]: success
+[2023-04-22 16:47:48] INFO root fetch - main [MainThread]: End processing [nonebot-poe-chat]: success
+[2023-04-22 16:47:48] INFO root fetch - processPackages [reyworm]: Downloading https://files.pythonhosted.org/packages/3b/3a/bef6419b80bde9f5aaf651ec270a7899c7cd26ef6ef05434bf864fae16f2/reyworm-0.4-py3-none-any.whl
+[2023-04-22 16:47:48] INFO root fetch - processPackages [reyworm]: executing diffoscope
+[2023-04-22 16:47:48] INFO root fetch - processPackages [reyworm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reyworm-0.3-py3-none-any.whl.zip tmp/reyworm-0.4-py3-none-any.whl.zip --markdown 20230422/r/reyworm/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-22 16:47:48] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2023-04-22 16:47:49] INFO root fetch - main [MainThread]: End processing [reyworm]: success
+[2023-04-22 16:47:53] INFO root fetch - main [MainThread]: End processing [qworker]: success
+[2023-04-22 16:48:03] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 16:48:03] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 16:48:03] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 16:48:04] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-04-22 16:48:04] INFO root fetch - main [MainThread]: Store serial: [17815178]
