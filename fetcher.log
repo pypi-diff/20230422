@@ -12255,3 +12255,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 20:00:12] INFO root fetch - main [MainThread]: End processing [pytest-tmux]: success
 [2023-04-22 20:00:35] INFO root fetch - main [MainThread]: End processing [sunvox-dll-python]: success
 [2023-04-22 20:00:35] INFO root fetch - main [MainThread]: Store serial: [17816320]
+[2023-04-22 20:05:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17816320]
+[2023-04-22 20:05:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-22 20:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-models-connect
+[2023-04-22 20:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-purecrypt
+[2023-04-22 20:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gs-peer-connection
+[2023-04-22 20:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ForgePy
+[2023-04-22 20:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edc-pharmacy
+[2023-04-22 20:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wwdtm
+[2023-04-22 20:05:48] INFO root fetch - processPackages [py-purecrypt]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 20:05:48] INFO root fetch - processPackages [gs-peer-connection]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-22 20:05:48] INFO root fetch - processPackages [ForgePy]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-22 20:05:48] INFO root fetch - processPackages [odoo-models-connect]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-22 20:05:48] INFO root fetch - processPackages [edc-pharmacy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-22 20:05:49] INFO root fetch - processPackages [odoo-models-connect]: executing diffoscope
+[2023-04-22 20:05:49] INFO root fetch - processPackages [odoo-models-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_models_connect-0.1.7.tar.gz tmp/odoo_models_connect-0.1.8.tar.gz --markdown 20230422/o/odoo-models-connect/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-22 20:05:49] INFO root fetch - processPackages [wwdtm]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-22 20:05:49] INFO root fetch - processPackages [ForgePy]: Downloading https://files.pythonhosted.org/packages/95/57/4ce50d1d879e1eabb6f71f774971418a9ea5e63d0e691ceb58db07588e11/ForgePy-1.0.3.tar.gz
+[2023-04-22 20:05:49] INFO root fetch - processPackages [edc-pharmacy]: Downloading https://files.pythonhosted.org/packages/d8/fd/29ba85dbb1a66fdc98d26e782a7eda1905ff01caa1381d521720403282cd/edc-pharmacy-0.1.8.tar.gz
+[2023-04-22 20:05:49] INFO root fetch - processPackages [py-purecrypt]: Downloading https://files.pythonhosted.org/packages/69/be/b7f18fda05a98f864dbcd234acd20b107d520001c72db5a3cd98dc0d0578/py-purecrypt-0.0.2.tar.gz
+[2023-04-22 20:05:49] INFO root fetch - processPackages [ForgePy]: executing diffoscope
+[2023-04-22 20:05:49] INFO root fetch - processPackages [ForgePy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ForgePy-1.0.2.tar.gz tmp/ForgePy-1.0.3.tar.gz --markdown 20230422/F/ForgePy/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-22 20:05:49] INFO root fetch - processPackages [py-purecrypt]: executing diffoscope
+[2023-04-22 20:05:49] INFO root fetch - processPackages [py-purecrypt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-purecrypt-0.0.1.tar.gz tmp/py-purecrypt-0.0.2.tar.gz --markdown 20230422/p/py-purecrypt/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 20:05:49] INFO root fetch - processPackages [wwdtm]: Downloading https://files.pythonhosted.org/packages/39/84/5beb3484f338900257d52bb0039b3ea62a15fed9c398e465560a47954c7c/wwdtm-2.0.8.tar.gz
+[2023-04-22 20:05:49] INFO root fetch - processPackages [gs-peer-connection]: executing diffoscope
+[2023-04-22 20:05:49] INFO root fetch - processPackages [gs-peer-connection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs-peer-connection-0.0.8.tar.gz tmp/gs-peer-connection-0.0.9.tar.gz --markdown 20230422/g/gs-peer-connection/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 20:05:49] INFO root fetch - processPackages [edc-pharmacy]: Downloading https://files.pythonhosted.org/packages/76/98/716ce513dd96a255a4e89d06aee44a862e1236127efdc48e078ab9c8ecd1/edc-pharmacy-0.1.9.tar.gz
+[2023-04-22 20:05:49] INFO root fetch - processPackages [wwdtm]: Downloading https://files.pythonhosted.org/packages/ea/1d/7c52ab8cb2bd834d569cf5bb50e092db4a281be19f7f8f1e6a5497df60ef/wwdtm-2.0.9.tar.gz
+[2023-04-22 20:05:49] INFO root fetch - processPackages [edc-pharmacy]: executing diffoscope
+[2023-04-22 20:05:49] INFO root fetch - processPackages [edc-pharmacy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-pharmacy-0.1.8.tar.gz tmp/edc-pharmacy-0.1.9.tar.gz --markdown 20230422/e/edc-pharmacy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-22 20:05:49] INFO root fetch - processPackages [wwdtm]: executing diffoscope
+[2023-04-22 20:05:49] INFO root fetch - processPackages [wwdtm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwdtm-2.0.8.tar.gz tmp/wwdtm-2.0.9.tar.gz --markdown 20230422/w/wwdtm/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-04-22 20:05:50] INFO root fetch - main [MainThread]: End processing [odoo-models-connect]: success
+[2023-04-22 20:05:50] INFO root fetch - main [MainThread]: End processing [py-purecrypt]: success
+[2023-04-22 20:05:50] INFO root fetch - main [MainThread]: End processing [ForgePy]: success
+[2023-04-22 20:05:50] INFO root fetch - main [MainThread]: End processing [gs-peer-connection]: success
+[2023-04-22 20:05:51] INFO root fetch - main [MainThread]: End processing [edc-pharmacy]: success
+[2023-04-22 20:05:51] INFO root fetch - main [MainThread]: End processing [wwdtm]: success
+[2023-04-22 20:05:51] INFO root fetch - main [MainThread]: Store serial: [17816337]
