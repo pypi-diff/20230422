@@ -8730,3 +8730,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-22 13:45:28] INFO root fetch - main [MainThread]: End processing [transon]: success
 [2023-04-22 13:45:34] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-04-22 13:45:34] INFO root fetch - main [MainThread]: Store serial: [17814245]
+[2023-04-22 13:50:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17814245]
+[2023-04-22 13:50:43] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-22 13:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: balcony
+[2023-04-22 13:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: curriculum-analysis
+[2023-04-22 13:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: statistical-fairness
+[2023-04-22 13:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: asyncio-simple-http-server
+[2023-04-22 13:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: graphql-http-server
+[2023-04-22 13:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: czech-workdays-holidays
+[2023-04-22 13:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: esprepomanager
+[2023-04-22 13:50:43] INFO root fetch - processPackages [balcony]: New version: [0.0.9] Old Version: [0.0.84]
+[2023-04-22 13:50:43] WARNING root fetch - processPackages [statistical-fairness]: Skipping, unable to determine old version
+[2023-04-22 13:50:43] INFO root fetch - main [MainThread]: End processing [statistical-fairness] error
+[2023-04-22 13:50:43] WARNING root fetch - processPackages [curriculum-analysis]: Skipping, unable to determine old version
+[2023-04-22 13:50:43] INFO root fetch - main [MainThread]: End processing [curriculum-analysis] error
+[2023-04-22 13:50:43] INFO root fetch - processPackages [czech-workdays-holidays]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-22 13:50:43] INFO root fetch - processPackages [graphql-http-server]: New version: [1.4.0] Old Version: [1.3.9]
+[2023-04-22 13:50:43] INFO root fetch - processPackages [asyncio-simple-http-server]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-22 13:50:43] INFO root fetch - processPackages [esprepomanager]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-22 13:50:43] INFO root fetch - processPackages [balcony]: Downloading https://files.pythonhosted.org/packages/25/3c/0ccb96d22f7ea2a6d9bced72f9423bc862f9d29404330e9c344373ae3e20/balcony-0.0.84.tar.gz
+[2023-04-22 13:50:43] INFO root fetch - processPackages [czech-workdays-holidays]: Downloading https://files.pythonhosted.org/packages/85/26/3eb36cc9a9418f485964d57e2591e1e0dd106a4f4c150ee48ad4f37aee5f/czech_workdays_holidays-0.1.1.tar.gz
+[2023-04-22 13:50:43] INFO root fetch - processPackages [graphql-http-server]: Downloading https://files.pythonhosted.org/packages/13/f6/7c6a2b5c41fe8262b4d6e17697b426753c707560d8626dacb44d484c5b71/graphql_http_server-1.3.9.tar.gz
+[2023-04-22 13:50:43] INFO root fetch - processPackages [asyncio-simple-http-server]: Downloading https://files.pythonhosted.org/packages/69/94/051a0077cf4082a92d597ac6d67508ffb1afd4e1def2d4b7df7d2f48d5ef/asyncio_simple_http_server-0.0.1.tar.gz
+[2023-04-22 13:50:43] INFO root fetch - processPackages [esprepomanager]: Downloading https://files.pythonhosted.org/packages/03/99/ebcd956a11571f63463573bcb407fc392c5a4896008d78b8ed6e7ed9f69d/esprepomanager-1.2.2.tar.gz
+[2023-04-22 13:50:43] INFO root fetch - processPackages [esprepomanager]: executing diffoscope
+[2023-04-22 13:50:43] INFO root fetch - processPackages [esprepomanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esprepomanager-1.2.1.tar.gz tmp/esprepomanager-1.2.2.tar.gz --markdown 20230422/e/esprepomanager/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-22 13:50:43] INFO root fetch - processPackages [czech-workdays-holidays]: Downloading https://files.pythonhosted.org/packages/df/4f/32f7d36c1963a5a48b4aac16072b9f88b9bd14b1c1005e4b3e9bb2b8f326/czech_workdays_holidays-0.1.2.tar.gz
+[2023-04-22 13:50:44] INFO root fetch - processPackages [asyncio-simple-http-server]: Downloading https://files.pythonhosted.org/packages/3a/2d/0f8aacca795d0504876318827062db46377b84e77c1e56b1a7985d437c49/asyncio_simple_http_server-0.0.2.tar.gz
+[2023-04-22 13:50:44] INFO root fetch - processPackages [graphql-http-server]: Downloading https://files.pythonhosted.org/packages/59/05/8e572a7e21cb6789a6d3463ef94de10c0e88202e09097c06bb254fea81f8/graphql_http_server-1.4.0.tar.gz
+[2023-04-22 13:50:44] INFO root fetch - processPackages [balcony]: executing diffoscope
+[2023-04-22 13:50:44] INFO root fetch - processPackages [balcony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balcony-0.0.84.tar.gz tmp/balcony-0.0.9.tar.gz --markdown 20230422/b/balcony/0.0.84-0.0.9/diff.md --exclude *.pyd
+[2023-04-22 13:50:44] INFO root fetch - processPackages [czech-workdays-holidays]: executing diffoscope
+[2023-04-22 13:50:44] INFO root fetch - processPackages [czech-workdays-holidays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czech_workdays_holidays-0.1.1.tar.gz tmp/czech_workdays_holidays-0.1.2.tar.gz --markdown 20230422/c/czech-workdays-holidays/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-22 13:50:44] INFO root fetch - processPackages [asyncio-simple-http-server]: executing diffoscope
+[2023-04-22 13:50:44] INFO root fetch - processPackages [asyncio-simple-http-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asyncio_simple_http_server-0.0.1.tar.gz tmp/asyncio_simple_http_server-0.0.2.tar.gz --markdown 20230422/a/asyncio-simple-http-server/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-22 13:50:44] INFO root fetch - processPackages [graphql-http-server]: executing diffoscope
+[2023-04-22 13:50:44] INFO root fetch - processPackages [graphql-http-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230422:/home/abi/fetcher/20230422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql_http_server-1.3.9.tar.gz tmp/graphql_http_server-1.4.0.tar.gz --markdown 20230422/g/graphql-http-server/1.3.9-1.4.0/diff.md --exclude *.pyd
+[2023-04-22 13:50:45] INFO root fetch - main [MainThread]: End processing [esprepomanager]: success
+[2023-04-22 13:50:45] INFO root fetch - main [MainThread]: End processing [balcony]: success
+[2023-04-22 13:50:45] INFO root fetch - main [MainThread]: End processing [czech-workdays-holidays]: success
+[2023-04-22 13:50:45] INFO root fetch - main [MainThread]: End processing [graphql-http-server]: success
+[2023-04-22 13:50:45] INFO root fetch - main [MainThread]: End processing [asyncio-simple-http-server]: success
+[2023-04-22 13:50:45] INFO root fetch - main [MainThread]: Store serial: [17814281]
